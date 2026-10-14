@@ -12,7 +12,7 @@ import { copyBlock } from './block-view.js';
 export const FORMATS = MENU.filter((t) => t !== 'notes');
 export const formatName = (t) => BLOCKS[t]?.name || t;
 
-const DEFAULT_SKILLS = { fill: ['Escrita'], deck: ['Fala'], challenge: ['Fala'], image: ['Fala'], explanation: ['Leitura'], table: ['Leitura'], text: ['Leitura'] };
+const DEFAULT_SKILLS = { fill: ['Escrita'], choice: ['Leitura'], match: ['Leitura'], deck: ['Fala'], challenge: ['Fala'], image: ['Fala'], explanation: ['Leitura'], table: ['Leitura'], text: ['Leitura'] };
 
 export const formatBadge = (type) => h('span.format-badge', { class: `f-${type}` }, svgIcon(ICONS[type], 15), formatName(type));
 

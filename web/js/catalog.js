@@ -37,6 +37,6 @@ export const MAP_STATUS = {
 /** Sugestões de etiqueta "Conteúdo" nos modelos: tudo do mapa + temas de vocabulário. */
 export const CONTENT_SUGGESTIONS = [
   ...MAP_SECTIONS.flatMap((s) => s.items),
-  'Conversation', 'Vocabulary', 'Natural disasters', 'Travel', 'Work', 'Food', 'Family', 'Daily routine',
-  'Shopping', 'Health', 'Technology', 'Hobbies', 'Weather', 'Pronunciation',
+  'Conversation', 'Vocabulary', 'Phrasal verbs', 'IELTS', 'Reading', 'Writing', 'Natural disasters', 'Travel', 'Work', 'Food', 'Family', 'Daily routine',
+  'Shopping', 'Health', 'Technology', 'Hobbies', 'Weather', 'Pronunciation', 'Science', 'News',
 ];

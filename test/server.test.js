@@ -13,7 +13,7 @@ let proc;
 
 before(async () => {
   proc = spawn(process.execPath, ['server/start.js'], {
-    env: { ...process.env, PORT: String(PORT), TALKBOX_DATA: DATA },
+    env: { ...process.env, PORT: String(PORT), TALKBOX_DATA: DATA, TALKBOX_CONTENT: path.join(DATA, 'sem-conteudo') },
     stdio: 'pipe',
   });
   for (let i = 0; i < 50; i++) {

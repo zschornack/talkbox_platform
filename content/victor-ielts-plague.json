@@ -1,0 +1,1249 @@
+{
+ "id": "victor-ielts-plague-2026-10-14",
+ "student": {
+  "name": "Victor",
+  "level": "B2",
+  "goal": "Preparação para o IELTS",
+  "notes": "Estudando para o IELTS. Nível B2 estimado: confirme o nível, a nota (band) que ele quer e a data da prova."
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Health scares · warm-up",
+   "tags": {
+    "content": [
+     "Health",
+     "News",
+     "Conversation"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP · BEFORE YOU READ",
+    "html": "Look at the title: <b>Plague scare in Siberia</b>. What do you think happened?",
+    "words": [],
+    "cats": [
+     {
+      "name": "Before you read",
+      "qs": [
+       "What do you know about the plague? When and where did it happen in history?",
+       "Have you ever been in quarantine? What was it like?",
+       "What's the most serious illness you've ever had?",
+       "How do you usually react when you see scary health news?"
+      ]
+     },
+     {
+      "name": "News & trust",
+      "qs": [
+       "Where do you usually get your news from? Do you trust it?",
+       "Have you ever believed a piece of news that turned out to be false?",
+       "Why do you think newspapers love stories about diseases?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "reading",
+   "title": "Reading · Plague scare in Siberia",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Reading",
+     "Health",
+     "News",
+     "Present Perfect"
+    ],
+    "levels": [
+     "B2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "READING · PLAGUE SCARE IN SIBERIA",
+    "html": "The USA <b>has raised concerns</b> after a worker at a plague research laboratory in Siberia died. Some newspapers suspect that she died after <b>coming into contact with</b> plague bacteria. The 28-year-old worker died after developing <b>severe</b> pneumonia. Local reports say she may have broken a test tube containing plague bacteria. Dozens of hospital workers <b>have been quarantined</b>. Officials are <b>monitoring</b> people who were in contact with the woman who died. Russia has said the woman’s death was from “pneumonia <b>of an unknown origin</b>” and not plague. US Secretary of State Marco Rubio said there was no “<b>cause for alarm</b>”. He said officials should “<b>keep an eye on</b> it”.<br><br>Pneumonic plague can be <b>deadly</b>. It attacks the lungs and can cause death 18 to 24 hours after symptoms begin. It is <b>highly contagious</b>, so it can spread quickly. It can move from person to person through the air when an infected person coughs or sneezes. The disease can be treated with antibiotics. However, antibiotics work best when they are given as soon as symptoms appear. Pneumonic plague is different from COVID-19, which is caused by a virus and not a bacterium. COVID-19 spreads much more easily around the world than plague. Microbiologist Dr Simon Clarke told the BBC: “Pneumonic plague can spread from person to person, and that is why there is the concern around this.”<br><br><i>IELTS tip: skim the whole text in 2 minutes first, then read again to answer the questions.</i>"
+   }
+  },
+  {
+   "key": "tfng",
+   "title": "True / False / Not Given · Plague in Siberia",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Reading",
+     "Health"
+    ],
+    "levels": [
+     "B2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "IELTS READING · TRUE, FALSE OR NOT GIVEN?",
+    "html": "<b>True</b> = the text says this. <b>False</b> = the text says the opposite. <b>Not Given</b> = the text doesn’t say. Justify every answer with words from the text!",
+    "instant": false,
+    "items": [
+     {
+      "before": "The worker who died was in her late twenties.",
+      "options": [
+       "True",
+       "False",
+       "Not Given"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "Local reports are certain that she broke a test tube.",
+      "options": [
+       "True",
+       "False",
+       "Not Given"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "Russia has said that the woman died of plague.",
+      "options": [
+       "True",
+       "False",
+       "Not Given"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "Some hospital staff have been kept away from other people.",
+      "options": [
+       "True",
+       "False",
+       "Not Given"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "Marco Rubio has visited the laboratory in Siberia.",
+      "options": [
+       "True",
+       "False",
+       "Not Given"
+      ],
+      "answer": 2,
+      "after": ""
+     },
+     {
+      "before": "Pneumonic plague can kill someone within a day after the first symptoms.",
+      "options": [
+       "True",
+       "False",
+       "Not Given"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "Antibiotics are useless against pneumonic plague.",
+      "options": [
+       "True",
+       "False",
+       "Not Given"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "Antibiotics are more effective when they are given early.",
+      "options": [
+       "True",
+       "False",
+       "Not Given"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "COVID-19 and pneumonic plague are caused by the same kind of germ.",
+      "options": [
+       "True",
+       "False",
+       "Not Given"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "Dr Simon Clarke has studied plague for many years.",
+      "options": [
+       "True",
+       "False",
+       "Not Given"
+      ],
+      "answer": 2,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "vocab",
+   "title": "Vocabulary · health news (Plague in Siberia)",
+   "tags": {
+    "content": [
+     "Vocabulary",
+     "Health",
+     "IELTS"
+    ],
+    "levels": [
+     "B2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "match",
+    "label": "VOCABULARY · FROM THE TEXT",
+    "html": "Match the expressions from the text (1–10) to their meanings (A–J). Then use three of them to summarise the story.",
+    "pairs": [
+     {
+      "left": "raise concerns",
+      "right": "make people worried about something"
+     },
+     {
+      "left": "come into contact with",
+      "right": "touch or be very near someone or something"
+     },
+     {
+      "left": "severe",
+      "right": "very serious"
+     },
+     {
+      "left": "quarantine (someone)",
+      "right": "keep people apart so a disease doesn’t spread"
+     },
+     {
+      "left": "monitor",
+      "right": "watch or check something carefully over a period of time"
+     },
+     {
+      "left": "of unknown origin",
+      "right": "nobody knows where it came from"
+     },
+     {
+      "left": "cause for alarm",
+      "right": "a good reason to be worried"
+     },
+     {
+      "left": "keep an eye on",
+      "right": "watch something carefully, just in case"
+     },
+     {
+      "left": "highly contagious",
+      "right": "very easily passed from one person to another"
+     },
+     {
+      "left": "deadly",
+      "right": "able to kill"
+     }
+    ]
+   }
+  },
+  {
+   "key": "pv-guess",
+   "title": "Phrasal verbs · guess the meaning (outbreaks)",
+   "tags": {
+    "content": [
+     "Phrasal verbs",
+     "Health"
+    ],
+    "levels": [
+     "B2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "match",
+    "label": "PHRASAL VERBS · GUESS THE MEANING",
+    "html": "Read the sentences and guess what the phrasal verb means. Match 1–8 to A–H.",
+    "pairs": [
+     {
+      "left": "The disease broke out in a small village.",
+      "right": "started suddenly"
+     },
+     {
+      "left": "She came down with a high fever.",
+      "right": "started to suffer from an illness"
+     },
+     {
+      "left": "You can pass it on by sneezing.",
+      "right": "give a disease to another person"
+     },
+     {
+      "left": "Officials are looking into the accident.",
+      "right": "investigating"
+     },
+     {
+      "left": "They tracked down everyone she had met.",
+      "right": "found after a long search"
+     },
+     {
+      "left": "Russia has ruled out plague.",
+      "right": "said it is not possible"
+     },
+     {
+      "left": "The Black Death wiped out millions of people.",
+      "right": "killed or destroyed completely"
+     },
+     {
+      "left": "Doctors hoped she would pull through.",
+      "right": "survive a serious illness"
+     }
+    ]
+   }
+  },
+  {
+   "key": "pv-explain",
+   "title": "Phrasal verbs · outbreaks & illness (explicação)",
+   "tags": {
+    "content": [
+     "Phrasal verbs",
+     "Health",
+     "IELTS"
+    ],
+    "levels": [
+     "B2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "PHRASAL VERBS · OUTBREAKS & ILLNESS",
+    "html": "Phrasal verbs make you sound natural, and IELTS examiners notice them (<b>Lexical Resource</b>). Learn them as a story:<br>• A disease <b>breaks out</b>. People <b>come down with</b> it and <b>pass it on</b>.<br>• Patients try to <b>fight it off</b>. With luck, they <b>pull through</b>.<br>• Officials <b>look into</b> the case, <b>track down</b> contacts, <b>shut down</b> the lab and <b>rule out</b> some causes. Sometimes governments <b>cover things up</b>.<br>• In history, diseases have <b>wiped out</b> whole cities, and some have never completely <b>died out</b>.<br><br><b>Separable</b> (the object can go in the middle): pass <u>it</u> on, track <u>them</u> down, shut <u>it</u> down, rule <u>it</u> out, cover <u>it</u> up, fight <u>it</u> off, wipe <u>them</u> out, carry <u>it</u> out.<br>With a <b>pronoun</b>, the middle is obligatory: <i>pass it on</i> ✓ — <i>pass on it</i> ✗<br><b>Not separable:</b> look into <u>it</u>, come down with <u>it</u>. <b>No object:</b> break out, die out, pull through."
+   }
+  },
+  {
+   "key": "pv-table",
+   "title": "Phrasal verbs · outbreaks & illness (tabela)",
+   "tags": {
+    "content": [
+     "Phrasal verbs",
+     "Health",
+     "IELTS"
+    ],
+    "levels": [
+     "B2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "",
+    "header": true,
+    "rows": [
+     [
+      "PHRASAL VERB",
+      "MEANING",
+      "EXAMPLE"
+     ],
+     [
+      "<b>break out</b>",
+      "start suddenly (a disease, a war, a fire)",
+      "Plague <b>broke out</b> in Europe in 1347."
+     ],
+     [
+      "<b>come down with</b>",
+      "start to suffer from an illness",
+      "She <b>came down with</b> a fever."
+     ],
+     [
+      "<b>pass on</b>",
+      "give a disease to someone",
+      "Infected people can <b>pass it on</b> by coughing."
+     ],
+     [
+      "<b>fight off</b>",
+      "resist an illness",
+      "Her body couldn’t <b>fight off</b> the infection."
+     ],
+     [
+      "<b>pull through</b>",
+      "survive a serious illness",
+      "Doctors hoped she would <b>pull through</b>."
+     ],
+     [
+      "<b>wipe out</b>",
+      "destroy or kill completely",
+      "The Black Death <b>wiped out</b> a third of Europe."
+     ],
+     [
+      "<b>die out</b>",
+      "disappear completely",
+      "Plague has never completely <b>died out</b>."
+     ],
+     [
+      "<b>look into</b>",
+      "investigate",
+      "Officials are <b>looking into</b> the case."
+     ],
+     [
+      "<b>track down</b>",
+      "find after searching",
+      "They <b>have tracked down</b> everyone she met."
+     ],
+     [
+      "<b>shut down</b>",
+      "close completely",
+      "The lab <b>has been shut down</b>."
+     ],
+     [
+      "<b>rule out</b>",
+      "say that something is not possible",
+      "Russia <b>has ruled out</b> plague."
+     ],
+     [
+      "<b>cover up</b>",
+      "hide the truth",
+      "Was the accident <b>covered up</b>?"
+     ],
+     [
+      "<b>carry out</b>",
+      "do (research, tests, an investigation)",
+      "The lab <b>carries out</b> research on bacteria."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "pv-fill",
+   "title": "Phrasal verbs in the right tense (fill)",
+   "tags": {
+    "content": [
+     "Phrasal verbs",
+     "Present Perfect",
+     "Past Perfect"
+    ],
+    "levels": [
+     "B2"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "PRACTICE · PHRASAL VERBS IN THE RIGHT FORM",
+    "html": "Complete with the phrasal verb in brackets in the correct form. Careful with the tense!",
+    "items": [
+     {
+      "before": "So far, officials",
+      "hint": "rule out",
+      "after": "plague as the cause of death.",
+      "answers": [
+       "have ruled out"
+      ]
+     },
+     {
+      "before": "By the time she went to hospital, she",
+      "hint": "come down with",
+      "after": "a very high fever.",
+      "answers": [
+       "had come down with",
+       "'d come down with",
+       "had already come down with"
+      ]
+     },
+     {
+      "before": "Scientists are still",
+      "hint": "look into",
+      "after": "how the bacteria escaped.",
+      "answers": [
+       "looking into"
+      ]
+     },
+     {
+      "before": "In the 14th century, the Black Death",
+      "hint": "wipe out",
+      "after": "about a third of Europe's population.",
+      "answers": [
+       "wiped out"
+      ]
+     },
+     {
+      "before": "Health workers",
+      "hint": "track down",
+      "after": "everyone who had been in contact with her.",
+      "answers": [
+       "have tracked down",
+       "tracked down",
+       "have already tracked down"
+      ]
+     },
+     {
+      "before": "The laboratory has been",
+      "hint": "shut down",
+      "after": "until the investigation is over.",
+      "answers": [
+       "shut down"
+      ]
+     },
+     {
+      "before": "Infected people can",
+      "hint": "pass on",
+      "after": "the disease when they cough.",
+      "answers": [
+       "pass on"
+      ]
+     },
+     {
+      "before": "Many people think the authorities",
+      "hint": "cover up",
+      "after": "the truth about the accident.",
+      "answers": [
+       "have covered up",
+       "covered up"
+      ]
+     },
+     {
+      "before": "Doctors had hoped she would",
+      "hint": "pull through",
+      "after": ", but she died the next day.",
+      "answers": [
+       "pull through"
+      ]
+     },
+     {
+      "before": "When the medicine finally arrived, the outbreak",
+      "hint": "already / die out",
+      "after": ".",
+      "answers": [
+       "had already died out"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "pv-speak",
+   "title": "Answer with a phrasal verb",
+   "tags": {
+    "content": [
+     "Phrasal verbs",
+     "Conversation",
+     "IELTS"
+    ],
+    "levels": [
+     "B2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "SPEAKING · USE THE PHRASAL VERB",
+    "html": "Answer the question in 2–3 sentences. You <b>must</b> use the phrasal verb on the card, in any tense.",
+    "promptLabel": "USE",
+    "lines": [
+     "Tell me about the last time you were ill.",
+     "What would you do if a dangerous disease broke out in your city?",
+     "Do you think governments sometimes hide information? Give an example.",
+     "What should a laboratory do after an accident like this one?",
+     "How did your city react during the COVID-19 pandemic?",
+     "What's the best way to avoid catching a cold?",
+     "Can you think of a tradition or a company that has disappeared?",
+     "If you were a journalist, what would you investigate?"
+    ],
+    "prompts": [
+     "break out",
+     "come down with",
+     "pass on",
+     "fight off",
+     "pull through",
+     "wipe out",
+     "die out",
+     "look into",
+     "track down",
+     "shut down",
+     "rule out",
+     "cover up",
+     "carry out"
+    ]
+   }
+  },
+  {
+   "key": "gr-explain",
+   "title": "Present Perfect vs Past Perfect (explicação)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Perfect"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "GRAMMAR · PRESENT PERFECT vs PAST PERFECT",
+    "html": "<b>Present Perfect</b> (have / has + past participle) connects the past to <b>now</b>. The news loves it, because the result matters today:<br><i>The USA <b>has raised</b> concerns. Dozens of hospital workers <b>have been quarantined</b>.</i><br><br><b>Past Perfect</b> (had + past participle) is the <b>past of the past</b>: something that happened <u>before</u> another moment in the past:<br><i>When she arrived at the hospital, she <b>had</b> already <b>developed</b> severe pneumonia.</i><br><i>Officials discovered that she <b>had broken</b> a test tube.</i><br><br>Quick test: does it connect to <b>now</b> (“until now”, “so far”)? → Present Perfect. Did it happen <b>before another past moment</b> (“by then”, “before that”)? → Past Perfect. A finished time (<i>in 1347, yesterday</i>)? → Past Simple."
+   }
+  },
+  {
+   "key": "gr-table",
+   "title": "Present Perfect vs Past Perfect (tabela)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Perfect"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "",
+    "header": true,
+    "rows": [
+     [
+      "",
+      "PRESENT PERFECT",
+      "PAST PERFECT"
+     ],
+     [
+      "<b>Form</b>",
+      "have / has + past participle",
+      "had + past participle"
+     ],
+     [
+      "<b>Time</b>",
+      "past → <b>now</b>",
+      "past → <b>an earlier past</b>"
+     ],
+     [
+      "<b>Signal words</b>",
+      "ever, never, just, already, yet, so far, since, for, recently",
+      "by the time, before, after, when, already, until then"
+     ],
+     [
+      "<b>Passive</b>",
+      "Workers <b>have been</b> quarantined.",
+      "Workers <b>had been</b> quarantined."
+     ],
+     [
+      "<b>Negative</b>",
+      "Russia <b>hasn’t confirmed</b> it.",
+      "Nobody <b>had expected</b> it."
+     ],
+     [
+      "<b>Question</b>",
+      "<b>Have</b> you ever <b>been</b> in quarantine?",
+      "<b>Had</b> you ever <b>heard</b> of it before?"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "gr-speed",
+   "title": "Speed round · Present Perfect, Past Perfect or Past Simple?",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Leitura",
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "SPEED ROUND · WHICH TENSE?",
+    "html": "Be quick! Click the correct form. You’ll see right away if you got it right.",
+    "instant": true,
+    "items": [
+     {
+      "before": "Dozens of workers",
+      "options": [
+       "have been",
+       "had been"
+      ],
+      "answer": 0,
+      "after": "quarantined so far."
+     },
+     {
+      "before": "When the ambulance arrived, she",
+      "options": [
+       "has stopped",
+       "had stopped"
+      ],
+      "answer": 1,
+      "after": "breathing."
+     },
+     {
+      "before": "Plague",
+      "options": [
+       "broke out",
+       "had broken out"
+      ],
+      "answer": 0,
+      "after": "in Europe in 1347."
+     },
+     {
+      "before": "Scientists",
+      "options": [
+       "have studied",
+       "had studied"
+      ],
+      "answer": 0,
+      "after": "plague for more than a century."
+     },
+     {
+      "before": "She",
+      "options": [
+       "has worked",
+       "had worked"
+      ],
+      "answer": 1,
+      "after": "at the lab for three years before the accident."
+     },
+     {
+      "before": "",
+      "options": [
+       "Have you ever had",
+       "Had you ever had"
+      ],
+      "answer": 0,
+      "after": "a serious illness?"
+     },
+     {
+      "before": "Before 2020, most people",
+      "options": [
+       "have never heard",
+       "had never heard"
+      ],
+      "answer": 1,
+      "after": "the word “lockdown”."
+     },
+     {
+      "before": "Russia",
+      "options": [
+       "has said",
+       "had said"
+      ],
+      "answer": 0,
+      "after": "the death was not caused by plague."
+     },
+     {
+      "before": "By the time doctors realised it was serious, the bacteria",
+      "options": [
+       "have spread",
+       "had spread"
+      ],
+      "answer": 1,
+      "after": "."
+     },
+     {
+      "before": "I",
+      "options": [
+       "have read",
+       "had read"
+      ],
+      "answer": 0,
+      "after": "three articles about this story this week."
+     },
+     {
+      "before": "She",
+      "options": [
+       "has broken",
+       "had broken"
+      ],
+      "answer": 1,
+      "after": "a test tube a few days before she got sick."
+     },
+     {
+      "before": "Since the pandemic, people",
+      "options": [
+       "have become",
+       "had become"
+      ],
+      "answer": 0,
+      "after": "more careful about hygiene."
+     },
+     {
+      "before": "Officials found out that she",
+      "options": [
+       "has been",
+       "had been"
+      ],
+      "answer": 1,
+      "after": "in contact with dozens of people."
+     }
+    ]
+   }
+  },
+  {
+   "key": "gr-fill",
+   "title": "Present Perfect or Past Perfect? (fill)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Perfect"
+    ],
+    "levels": [
+     "B2"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "PRACTICE · PUT THE VERB IN THE RIGHT TENSE",
+    "html": "Use the Present Perfect or the Past Perfect. Contractions are fine (hasn’t, hadn’t).",
+    "items": [
+     {
+      "before": "The USA",
+      "hint": "raise",
+      "after": "concerns about the case.",
+      "answers": [
+       "has raised"
+      ]
+     },
+     {
+      "before": "Nobody knew that she",
+      "hint": "break",
+      "after": "a test tube.",
+      "answers": [
+       "had broken"
+      ]
+     },
+     {
+      "before": "",
+      "hint": "you / ever / be",
+      "after": "in quarantine?",
+      "answers": [
+       "have you ever been"
+      ]
+     },
+     {
+      "before": "By 2019, scientists",
+      "hint": "already / warn",
+      "after": "that a pandemic was coming.",
+      "answers": [
+       "had already warned"
+      ]
+     },
+     {
+      "before": "The hospital",
+      "hint": "not / confirm",
+      "after": "the cause of death yet.",
+      "answers": [
+       "hasn't confirmed",
+       "has not confirmed"
+      ]
+     },
+     {
+      "before": "She felt ill because she",
+      "hint": "be",
+      "after": "exposed to the bacteria.",
+      "answers": [
+       "had been"
+      ]
+     },
+     {
+      "before": "So far, no other cases",
+      "hint": "be",
+      "after": "reported.",
+      "answers": [
+       "have been"
+      ]
+     },
+     {
+      "before": "After they",
+      "hint": "test",
+      "after": "everyone, they ended the quarantine.",
+      "answers": [
+       "had tested"
+      ]
+     },
+     {
+      "before": "I",
+      "hint": "never / read",
+      "after": "a story like this before.",
+      "answers": [
+       "have never read",
+       "'ve never read"
+      ]
+     },
+     {
+      "before": "When I read the article, I realised I",
+      "hint": "never / hear",
+      "after": "of pneumonic plague.",
+      "answers": [
+       "had never heard",
+       "'d never heard"
+      ]
+     },
+     {
+      "before": "How long",
+      "hint": "you / study",
+      "after": "for the IELTS?",
+      "answers": [
+       "have you studied",
+       "have you been studying"
+      ]
+     },
+     {
+      "before": "Until last year, Victor",
+      "hint": "not / take",
+      "after": "an English exam.",
+      "answers": [
+       "hadn't taken",
+       "had not taken"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "gr-story",
+   "title": "Finish the sentence · Present & Past Perfect",
+   "tags": {
+    "content": [
+     "Past Perfect",
+     "Present Perfect",
+     "Phrasal verbs"
+    ],
+    "levels": [
+     "B2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "SPEAKING · FINISH THE SENTENCE",
+    "html": "Finish the sentence about the story (or invent!) using the word on the card. Then say a related sentence in the <b>Present Perfect</b>.",
+    "promptLabel": "USE",
+    "lines": [
+     "By the time she reached the hospital, …",
+     "Before anyone realised the danger, …",
+     "When the officials arrived at the lab, …",
+     "Nobody had expected that …",
+     "Since the news broke, …",
+     "So far, the health authorities …",
+     "Until that day, the laboratory …",
+     "The journalists discovered that …"
+    ],
+    "prompts": [
+     "already",
+     "just",
+     "never",
+     "break out",
+     "track down",
+     "rule out",
+     "come down with",
+     "shut down"
+    ]
+   }
+  },
+  {
+   "key": "experiences",
+   "title": "Have you ever…? / Before…, had you…?",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Perfect",
+     "Conversation"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "SPEAKING · YOUR EXPERIENCES",
+    "html": "Answer with full sentences, then add details in the Past Simple (when? where? what happened?).",
+    "words": [
+     "already",
+     "never",
+     "ever",
+     "since",
+     "for",
+     "by the time",
+     "before",
+     "so far"
+    ],
+    "cats": [
+     {
+      "name": "Have you ever…?",
+      "qs": [
+       "Have you ever been seriously ill? What happened?",
+       "Have you ever had to stay at home for a long time?",
+       "Have you ever read a news story that really scared you?",
+       "What's the most dangerous thing you've ever done?",
+       "How long have you been studying for the IELTS?",
+       "What have you done this year to improve your English?"
+      ]
+     },
+     {
+      "name": "Before…, had you…?",
+      "qs": [
+       "Before the pandemic, had you ever worn a mask?",
+       "Before you started studying for the IELTS, what had you heard about the exam?",
+       "Think of a time you arrived somewhere too late. What had already happened?",
+       "Before you read this text, had you ever heard of pneumonic plague?",
+       "What had you never done before you turned 18?"
+      ]
+     },
+     {
+      "name": "Then & now",
+      "qs": [
+       "What has changed in the way people travel since COVID-19?",
+       "Is there anything you had done before the pandemic that you've stopped doing?",
+       "What have scientists achieved in the last 20 years that surprises you?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "ielts-speaking",
+   "title": "IELTS Speaking · Health & science (Parts 1, 2, 3)",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Health",
+     "Conversation"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "IELTS SPEAKING · PARTS 1, 2 & 3",
+    "html": "<b>Part 1:</b> short, natural answers (2–3 sentences). <b>Part 2:</b> 1 minute to prepare, then speak for 2 minutes. <b>Part 3:</b> give opinions, reasons and examples.",
+    "words": [
+     "break out",
+     "pass on",
+     "look into",
+     "rule out",
+     "cover up",
+     "so far",
+     "by the time",
+     "have been"
+    ],
+    "cats": [
+     {
+      "name": "Part 1 · Health",
+      "qs": [
+       "How often do you get ill?",
+       "What do you do to stay healthy?",
+       "Do you trust health information you find online?",
+       "Have you ever been to hospital?",
+       "Do you prefer going to the doctor or treating yourself at home?"
+      ]
+     },
+     {
+      "name": "Part 2 · Cue cards",
+      "qs": [
+       "Describe a time when you were ill. You should say: when it happened, what illness you had, how you felt, and explain how you got better.",
+       "Describe a piece of news that surprised you. You should say: what it was, where you heard it, how people reacted, and explain why it surprised you.",
+       "Describe a scientist or doctor you admire. You should say: who this person is, what they have done, how you know about them, and explain why you admire them."
+      ]
+     },
+     {
+      "name": "Part 3 · Discussion",
+      "qs": [
+       "Should governments be allowed to put people in quarantine against their will?",
+       "Why do some governments hide information during health crises?",
+       "Is it ethical to keep dangerous bacteria in laboratories?",
+       "How has COVID-19 changed the way people think about public health?",
+       "Do the media cause unnecessary panic about health issues?",
+       "Who should pay for treatment during an epidemic: the state or individuals?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "debate",
+   "title": "Devil's advocate · health & science debate",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Conversation",
+     "Health"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "DEBATE · DEVIL'S ADVOCATE",
+    "html": "Draw a statement and a side. Defend that side for 1 minute, <b>even if you disagree</b>. Use at least one Present Perfect and one phrasal verb.",
+    "promptLabel": "YOUR SIDE",
+    "lines": [
+     "Laboratories that work with dangerous diseases should be shut down.",
+     "Governments should be able to force people into quarantine.",
+     "The media exaggerate health scares to sell news.",
+     "Vaccines should be compulsory for everyone.",
+     "Countries should share all information about outbreaks immediately.",
+     "Scientific research is worth any risk."
+    ],
+    "prompts": [
+     "Strongly agree",
+     "Strongly disagree",
+     "It depends…"
+    ]
+   }
+  },
+  {
+   "key": "writing",
+   "title": "IELTS Writing Task 2 · Dangerous research",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Writing",
+     "Phrasal verbs",
+     "Health"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "HOMEWORK · IELTS WRITING TASK 2",
+    "html": "<b>Some people think that laboratories working with dangerous diseases should be closed down because the risks are too high. Others believe this research is essential to protect humanity. Discuss both views and give your own opinion.</b><br><br>Write at least <b>250 words</b> in <b>40 minutes</b>.<br>• <b>Introduction:</b> paraphrase the question and give your position.<br>• <b>Body 1:</b> why some people want these labs <i>shut down</i> (accidents, diseases that people <i>pass on</i>, governments that <i>cover things up</i>).<br>• <b>Body 2:</b> why the research is essential (vaccines, diseases that have been <i>wiped out</i>).<br>• <b>Conclusion:</b> your opinion, clearly.<br><br>Use: 2 phrasal verbs from today · 1 Present Perfect (<i>Scientists have developed…</i>) · 1 Past Perfect (<i>Before vaccines had been invented, …</i>)."
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Plague Scare in Siberia",
+  "subtitle": "IELTS Reading & Speaking · health vocabulary · phrasal verbs · Present Perfect vs Past Perfect",
+  "level": "B2",
+  "tags": [
+   "IELTS",
+   "Reading",
+   "Speaking",
+   "Grammar"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "reading"
+   },
+   {
+    "model": "tfng"
+   },
+   {
+    "model": "vocab"
+   },
+   {
+    "model": "pv-guess"
+   },
+   {
+    "model": "pv-explain"
+   },
+   {
+    "model": "pv-table"
+   },
+   {
+    "model": "pv-fill"
+   },
+   {
+    "model": "pv-speak"
+   },
+   {
+    "model": "gr-explain"
+   },
+   {
+    "model": "gr-table"
+   },
+   {
+    "model": "gr-speed"
+   },
+   {
+    "model": "gr-fill"
+   },
+   {
+    "model": "gr-story"
+   },
+   {
+    "model": "experiences"
+   },
+   {
+    "model": "ielts-speaking"
+   },
+   {
+    "model": "debate"
+   },
+   {
+    "model": "writing"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

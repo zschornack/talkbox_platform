@@ -16,6 +16,20 @@ export function summarize(block) {
         count: `${items.length} ${items.length === 1 ? 'frase' : 'frases'}`,
       };
     }
+    case 'choice': {
+      const items = block.items || [];
+      return {
+        lines: items.slice(0, 3).map((it) => clip(`${toText(it.before)} [${it.options.join(' / ')}] ${toText(it.after)}`, 90)),
+        count: `${items.length} ${items.length === 1 ? 'questão' : 'questões'}`,
+      };
+    }
+    case 'match': {
+      const pairs = block.pairs || [];
+      return {
+        lines: pairs.slice(0, 3).map((p) => clip(`${toText(p.left)} → ${toText(p.right)}`, 80)),
+        count: `${pairs.length} pares`,
+      };
+    }
     case 'table': {
       const rows = block.rows || [];
       return {

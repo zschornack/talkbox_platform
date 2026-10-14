@@ -63,6 +63,15 @@ Para fazer backup, basta copiar essa pasta. Ela não vai para o GitHub.
 - O modelo entra na aula como **cópia**: editar o modelo depois não muda as aulas já montadas.
 - Qualquer bloco da aula pode virar modelo com **Salvar como modelo**. Se o bloco veio de um modelo, dá para atualizar esse modelo ou criar um novo.
 
+**Aulas prontas (pasta `content/`)**
+- Cada arquivo `.json` dessa pasta traz um aluno, uma aula e as atividades dela.
+- Ao iniciar, o servidor importa cada arquivo novo **uma vez**:
+  - cria o aluno, ou usa o que já existe com o mesmo nome;
+  - salva as atividades em Modelos;
+  - monta a aula a partir delas.
+- É assim que aulas preparadas fora do seu computador chegam até você: `git pull` e `npm start`.
+- Disponível agora: **Victor · Plague Scare in Siberia** (IELTS).
+
 **Migração**: aulas criadas na versão 0.1 são ligadas automaticamente a alunos cadastrados com o mesmo nome.
 
 **A aula (editor)**
@@ -74,6 +83,8 @@ Para fazer backup, basta copiar essa pasta. Ela não vai para o GitHub.
   - Explicação
   - Tabela
   - Fill in the blanks
+  - Múltipla escolha (também serve para True / False / Not Given do IELTS)
+  - Ligar colunas
   - Baralho de perguntas
   - Desafio sorteado
   - Imagem
@@ -84,6 +95,13 @@ Para fazer backup, basta copiar essa pasta. Ela não vai para o GitHub.
   - As lacunas crescem enquanto você digita, e o Tab pula para a próxima.
   - Botões Conferir, Revelar e Limpar, com placar.
   - Aceita respostas alternativas, definidas em "Editar respostas".
+- **Múltipla escolha**:
+  - Opções clicáveis, com Conferir, Revelar e Limpar.
+  - Opção de correção na hora, para "speed round".
+  - As questões são editadas em "Editar questões", uma por linha: `She [has* | had] left.` (o * marca a certa).
+- **Ligar colunas**:
+  - Clique num item e depois no par dele. A coluna da direita aparece embaralhada.
+  - Os pares são editados em "Editar pares", um por linha: `contagious = easily passed on`.
 - **Baralho de perguntas**:
   - Uma carta por vez, com Próxima, Anterior e Aleatória.
   - Temas em abas e palavra-desafio opcional.
@@ -122,8 +140,9 @@ Para fazer backup, basta copiar essa pasta. Ela não vai para o GitHub.
 
 1. **Finalizar aula (handover)**: até onde chegamos, como ficaram os conteúdos e recado para o próximo professor. Isso alimenta "Onde paramos" e o mapa de conteúdos na ficha.
 2. **Modelos de aula**: salvar uma aula inteira como modelo e começar aulas novas a partir dele.
-3. Novos formatos: múltipla escolha, ligar colunas, ordenar frases, áudio, imagens lado a lado e cards de foto para revelar.
-4. Vários professores: login, servidor compartilhado e "quem mudou" no histórico de versões.
+3. Tabela e imagem como elementos livres, que podem entrar soltos na aula ou dentro de uma explicação.
+4. Novos formatos: ordenar frases, áudio, imagens lado a lado e cards de foto para revelar.
+5. Vários professores: login, servidor compartilhado e "quem mudou" no histórico de versões.
 
 ## Para quem for programar
 
@@ -134,6 +153,8 @@ server/               servidor (Node puro + SQLite embutido)
   api.js              rotas da API: alunos, aulas, modelos, imagens
   db.js               banco de dados e migrações
   seed.js             dados de exemplo (Julia + biblioteca inicial)
+  content.js          importa as aulas prontas da pasta content/
+content/              aulas prontas (uma por arquivo .json)
 web/                  app do professor (JavaScript puro, sem build)
   js/main.js          rotas: #/  #/alunos  #/alunos/:id  #/modelos  #/modelos/:id  #/aula/:id
   js/home.js          Início

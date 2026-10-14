@@ -21,7 +21,7 @@ export function appShell(active, ...content) {
           svgIcon(ICONS[n.icon], 20), h('span', n.label)))
       )
     ),
-    h('div.side-foot', 'Versão local · 0.2')
+    h('div.side-foot', 'Versão local · 0.3')
   );
   return h('div.app', nav, h('main.app-main', { id: 'main' }, content));
 }

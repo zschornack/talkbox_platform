@@ -7,6 +7,7 @@ import { UPLOADS_DIR } from './db.js';
 import { send } from './http.js';
 import api from './api.js';
 import { seed } from './seed.js';
+import { importContentDir } from './content.js';
 
 const PORT = Number(process.env.PORT || 3000);
 const WEB_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'web');
@@ -59,6 +60,7 @@ const server = http.createServer(async (req, res) => {
 });
 
 seed();
+importContentDir();
 
 server.listen(PORT, () => {
   console.log(`\n  TalkBox pronto → abra http://localhost:${PORT}\n`);
