@@ -117,4 +117,6 @@ Na aula, o **conteúdo** (`doc`: os blocos) fica separado do que **acontece na a
 
 Para criar um tipo de bloco novo, crie um arquivo em `web/js/blocks/` com `name`, `hint`, `create()` e `render(ctx)`, e registre-o em `web/js/blocks/index.js`.
 
+Se o Node for antigo, o `npm start` avisa e explica como atualizar.
+
 O modo `npm run dev` reinicia o servidor sozinho quando um arquivo dele muda. Para ver mudanças no app, basta recarregar a página.

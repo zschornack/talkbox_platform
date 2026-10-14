@@ -12,7 +12,7 @@ const DATA = fs.mkdtempSync(path.join(os.tmpdir(), 'talkbox-test-'));
 let proc;
 
 before(async () => {
-  proc = spawn(process.execPath, ['--disable-warning=ExperimentalWarning', 'server/index.js'], {
+  proc = spawn(process.execPath, ['server/start.js'], {
     env: { ...process.env, PORT: String(PORT), TALKBOX_DATA: DATA },
     stdio: 'pipe',
   });
