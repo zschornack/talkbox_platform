@@ -1,0 +1,999 @@
+{
+ "id": "luana-aula-20-past-simple-supermarket",
+ "student": {
+  "name": "Luana",
+  "level": "A2",
+  "goal": "",
+  "notes": "Aula 19: Past Simple.\nCountable/uncountable (many, much, any) ainda não foi ensinado: por enquanto só exposição (uso passivo), sem explicar a regra."
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · your week (past simple)",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP · YOUR WEEK",
+    "html": "Answer with a complete sentence in the past.",
+    "words": [
+     "went",
+     "had",
+     "saw",
+     "didn't",
+     "bought",
+     "ate"
+    ],
+    "cats": [
+     {
+      "name": "Your week",
+      "qs": [
+       "What did you do yesterday?",
+       "What did you have for dinner last night?",
+       "Where did you go last weekend?",
+       "What time did you wake up today?",
+       "Did you watch anything good this week?",
+       "Who did you talk to today?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "ps-explain",
+   "title": "Past Simple · quick review",
+   "tags": {
+    "content": [
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "PAST SIMPLE · QUICK REVIEW",
+    "html": "<b>Past Simple</b> = actions that <b>started and finished</b> in the past.<br>We use it with: <b>yesterday</b> · <b>last</b> night / week / year · two days <b>ago</b> · <b>in</b> 2020.<br><br><b>Regular verbs: + ed</b><br>work → work<b>ed</b> · live → liv<b>ed</b> · study → stud<b>ied</b> · stop → stop<b>ped</b><br><br><b>Irregular verbs</b> have their own form: go → <b>went</b> · buy → <b>bought</b> (see the table)."
+   }
+  },
+  {
+   "key": "ps-table",
+   "title": "Past Simple · how to use (affirmative, negative, question)",
+   "tags": {
+    "content": [
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "HOW TO USE",
+    "header": true,
+    "rows": [
+     [
+      "FORM",
+      "STRUCTURE",
+      "EXAMPLE"
+     ],
+     [
+      "<b>Affirmative</b>",
+      "subject + verb in the past",
+      "I <b>worked</b> yesterday. She <b>went</b> to the beach."
+     ],
+     [
+      "<b>Negative</b>",
+      "subject + <b>didn't</b> + base verb",
+      "I <b>didn't work</b>. She <b>didn't go</b>."
+     ],
+     [
+      "<b>Question</b>",
+      "<b>Did</b> + subject + base verb?",
+      "<b>Did</b> you <b>work</b>? Where <b>did</b> she <b>go</b>?"
+     ],
+     [
+      "<b>Short answers</b>",
+      "Yes, … did. / No, … didn't.",
+      "Did you like it? Yes, I <b>did</b>. / No, I <b>didn't</b>."
+     ],
+     [
+      "<b>To be</b>",
+      "I / he / she / it <b>was</b> · you / we / they <b>were</b>",
+      "I <b>was</b> tired. They <b>weren't</b> at home."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "irregular",
+   "title": "20 common irregular verbs",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A1",
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "20 COMMON IRREGULAR VERBS",
+    "header": true,
+    "rows": [
+     [
+      "VERB",
+      "PAST",
+      "MEANING"
+     ],
+     [
+      "<b>be</b>",
+      "was / were",
+      "ser, estar"
+     ],
+     [
+      "<b>go</b>",
+      "went",
+      "ir"
+     ],
+     [
+      "<b>have</b>",
+      "had",
+      "ter"
+     ],
+     [
+      "<b>do</b>",
+      "did",
+      "fazer"
+     ],
+     [
+      "<b>make</b>",
+      "made",
+      "fazer, preparar"
+     ],
+     [
+      "<b>get</b>",
+      "got",
+      "conseguir, pegar, chegar"
+     ],
+     [
+      "<b>see</b>",
+      "saw",
+      "ver"
+     ],
+     [
+      "<b>come</b>",
+      "came",
+      "vir"
+     ],
+     [
+      "<b>take</b>",
+      "took",
+      "pegar, levar"
+     ],
+     [
+      "<b>give</b>",
+      "gave",
+      "dar"
+     ],
+     [
+      "<b>say</b>",
+      "said",
+      "dizer"
+     ],
+     [
+      "<b>tell</b>",
+      "told",
+      "contar, dizer"
+     ],
+     [
+      "<b>buy</b>",
+      "bought",
+      "comprar"
+     ],
+     [
+      "<b>pay</b>",
+      "paid",
+      "pagar"
+     ],
+     [
+      "<b>eat</b>",
+      "ate",
+      "comer"
+     ],
+     [
+      "<b>drink</b>",
+      "drank",
+      "beber"
+     ],
+     [
+      "<b>leave</b>",
+      "left",
+      "sair, deixar"
+     ],
+     [
+      "<b>meet</b>",
+      "met",
+      "encontrar, conhecer"
+     ],
+     [
+      "<b>think</b>",
+      "thought",
+      "pensar, achar"
+     ],
+     [
+      "<b>find</b>",
+      "found",
+      "encontrar, achar"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "fill-aff",
+   "title": "Past Simple · my Saturday (affirmative)",
+   "tags": {
+    "content": [
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "EXERCISE 1 · MY SATURDAY",
+    "html": "Complete with the past simple of the verb.",
+    "items": [
+     {
+      "before": "Last Saturday, I",
+      "hint": "wake",
+      "after": "up at 9 o'clock.",
+      "answers": [
+       "woke"
+      ]
+     },
+     {
+      "before": "I",
+      "hint": "have",
+      "after": "breakfast with my family.",
+      "answers": [
+       "had"
+      ]
+     },
+     {
+      "before": "Then I",
+      "hint": "go",
+      "after": "to the supermarket.",
+      "answers": [
+       "went"
+      ]
+     },
+     {
+      "before": "I",
+      "hint": "buy",
+      "after": "bread, milk and some fruit.",
+      "answers": [
+       "bought"
+      ]
+     },
+     {
+      "before": "I",
+      "hint": "pay",
+      "after": "with my card.",
+      "answers": [
+       "paid"
+      ]
+     },
+     {
+      "before": "In the afternoon, I",
+      "hint": "meet",
+      "after": "my friends at a café.",
+      "answers": [
+       "met"
+      ]
+     },
+     {
+      "before": "We",
+      "hint": "drink",
+      "after": "coffee and talked a lot.",
+      "answers": [
+       "drank"
+      ]
+     },
+     {
+      "before": "My friend",
+      "hint": "tell",
+      "after": "me a funny story.",
+      "answers": [
+       "told"
+      ]
+     },
+     {
+      "before": "At night, I",
+      "hint": "watch",
+      "after": "a movie.",
+      "answers": [
+       "watched"
+      ]
+     },
+     {
+      "before": "The movie",
+      "hint": "be",
+      "after": "very good.",
+      "answers": [
+       "was"
+      ]
+     },
+     {
+      "before": "I",
+      "hint": "study",
+      "after": "English for an hour.",
+      "answers": [
+       "studied"
+      ]
+     },
+     {
+      "before": "I",
+      "hint": "get",
+      "after": "home very late!",
+      "answers": [
+       "got"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "speed",
+   "title": "Past Simple · speed round (common mistakes)",
+   "tags": {
+    "content": [
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "SPEED ROUND · CHOOSE THE CORRECT OPTION",
+    "html": "Choose fast! The answer appears right away.",
+    "instant": true,
+    "items": [
+     {
+      "before": "Yesterday I",
+      "options": [
+       "go",
+       "went"
+      ],
+      "answer": 1,
+      "after": "to the bank."
+     },
+     {
+      "before": "Did you",
+      "options": [
+       "saw",
+       "see"
+      ],
+      "answer": 1,
+      "after": "the news?"
+     },
+     {
+      "before": "She",
+      "options": [
+       "didn't go",
+       "didn't went"
+      ],
+      "answer": 0,
+      "after": "to school."
+     },
+     {
+      "before": "We",
+      "options": [
+       "buyed",
+       "bought"
+      ],
+      "answer": 1,
+      "after": "a new car last year."
+     },
+     {
+      "before": "",
+      "options": [
+       "Did",
+       "Do"
+      ],
+      "answer": 0,
+      "after": "they come to the party last night?"
+     },
+     {
+      "before": "I",
+      "options": [
+       "was",
+       "were"
+      ],
+      "answer": 0,
+      "after": "tired yesterday."
+     },
+     {
+      "before": "They",
+      "options": [
+       "was",
+       "were"
+      ],
+      "answer": 1,
+      "after": "at home on Sunday."
+     },
+     {
+      "before": "He",
+      "options": [
+       "maked",
+       "made"
+      ],
+      "answer": 1,
+      "after": "a cake for my birthday."
+     },
+     {
+      "before": "I",
+      "options": [
+       "didn't",
+       "wasn't"
+      ],
+      "answer": 0,
+      "after": "eat meat yesterday."
+     },
+     {
+      "before": "Where",
+      "options": [
+       "did you go",
+       "you went"
+      ],
+      "answer": 0,
+      "after": "on vacation?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "fill-neg",
+   "title": "Past Simple · negatives and questions",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "EXERCISE 2 · NEGATIVES AND QUESTIONS",
+    "html": "Complete with <b>didn't</b> + verb or <b>did</b> + subject + verb.",
+    "items": [
+     {
+      "before": "I",
+      "hint": "not / go",
+      "after": "to work yesterday.",
+      "answers": [
+       "didn't go",
+       "did not go"
+      ]
+     },
+     {
+      "before": "She",
+      "hint": "not / like",
+      "after": "the movie.",
+      "answers": [
+       "didn't like",
+       "did not like"
+      ]
+     },
+     {
+      "before": "We",
+      "hint": "not / buy",
+      "after": "any meat.",
+      "answers": [
+       "didn't buy",
+       "did not buy"
+      ]
+     },
+     {
+      "before": "They",
+      "hint": "not / see",
+      "after": "the bus.",
+      "answers": [
+       "didn't see",
+       "did not see"
+      ]
+     },
+     {
+      "before": "He",
+      "hint": "not / eat",
+      "after": "breakfast today.",
+      "answers": [
+       "didn't eat",
+       "did not eat"
+      ]
+     },
+     {
+      "before": "",
+      "hint": "you / go",
+      "after": "to the beach last summer?",
+      "answers": [
+       "Did you go"
+      ]
+     },
+     {
+      "before": "What",
+      "hint": "you / have",
+      "after": "for lunch?",
+      "answers": [
+       "did you have"
+      ]
+     },
+     {
+      "before": "Where",
+      "hint": "she / meet",
+      "after": "her husband?",
+      "answers": [
+       "did she meet"
+      ]
+     },
+     {
+      "before": "",
+      "hint": "they / pay",
+      "after": "for the coffee?",
+      "answers": [
+       "Did they pay"
+      ]
+     },
+     {
+      "before": "What time",
+      "hint": "you / get",
+      "after": "home yesterday?",
+      "answers": [
+       "did you get"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "tell-me",
+   "title": "Speaking · tell me about… (past simple)",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "SPEAKING · TELL ME ABOUT…",
+    "html": "Draw a card and talk for 30 seconds. You <b>must</b> use the verb on the card.",
+    "promptLabel": "USE",
+    "lines": [
+     "Your last weekend.",
+     "Your last birthday.",
+     "The last time you went to a restaurant.",
+     "Your last vacation.",
+     "The last time you went to the supermarket.",
+     "Your first day at work or school.",
+     "A good day you had this year.",
+     "The last movie or series you watched."
+    ],
+    "prompts": [
+     "went",
+     "had",
+     "bought",
+     "ate",
+     "saw",
+     "met",
+     "didn't",
+     "paid",
+     "was / were",
+     "took"
+    ]
+   }
+  },
+  {
+   "key": "vocab-table",
+   "title": "Supermarket vocabulary · sections",
+   "tags": {
+    "content": [
+     "Shopping",
+     "Food",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A1",
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "AT THE SUPERMARKET · WHAT CAN YOU FIND?",
+    "header": true,
+    "rows": [
+     [
+      "SECTION",
+      "WORDS"
+     ],
+     [
+      "<b>Fruit & vegetables</b>",
+      "apples, bananas, oranges, tomatoes, potatoes, onions, lettuce (alface)"
+     ],
+     [
+      "<b>Dairy</b>",
+      "milk, cheese, butter, yogurt, eggs"
+     ],
+     [
+      "<b>Bakery</b>",
+      "bread, cake, cookies"
+     ],
+     [
+      "<b>Meat & fish</b>",
+      "chicken, beef (carne de vaca), fish, ham (presunto)"
+     ],
+     [
+      "<b>Drinks</b>",
+      "water, juice, soda (refrigerante), coffee, tea"
+     ],
+     [
+      "<b>Rice, pasta & more</b>",
+      "rice, pasta, beans (feijão), sugar, flour (farinha)"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "vocab-match",
+   "title": "Supermarket vocabulary · places and things",
+   "tags": {
+    "content": [
+     "Shopping",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A1",
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "match",
+    "label": "VOCABULARY · PLACES AND THINGS",
+    "html": "Match the words (1–8) to the meanings (A–H).",
+    "pairs": [
+     {
+      "left": "cart",
+      "right": "you push it and put your products in it"
+     },
+     {
+      "left": "basket",
+      "right": "small, you carry it in your hand"
+     },
+     {
+      "left": "aisle",
+      "right": "the “street” between the shelves"
+     },
+     {
+      "left": "shelf",
+      "right": "where the products are"
+     },
+     {
+      "left": "checkout",
+      "right": "the place where you pay"
+     },
+     {
+      "left": "cashier",
+      "right": "the person who takes your money"
+     },
+     {
+      "left": "receipt",
+      "right": "the paper that shows what you paid"
+     },
+     {
+      "left": "line",
+      "right": "people waiting to pay"
+     }
+    ]
+   }
+  },
+  {
+   "key": "reading",
+   "title": "Reading · Paula's Saturday at the supermarket",
+   "tags": {
+    "content": [
+     "Present Simple",
+     "Present Continuous",
+     "Countable & uncountable nouns",
+     "Shopping",
+     "Reading"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "READING · PAULA'S SATURDAY",
+    "html": "Paula lives with her husband and two children. Every Saturday morning, she goes to the supermarket near her house. She usually takes a big <b>cart</b> because she buys a lot of food for the week. She always starts in the fruit and vegetable section. Her children eat many apples and bananas, so she buys a lot of fruit. She doesn't buy much meat, because the family prefers fish and chicken. At the <b>checkout</b>, she pays with her card and puts everything in her bags.<br><br>Today is different. It's Saturday, but Paula isn't shopping with her children. They are playing football at school. Paula is walking down the <b>aisles</b> alone, and she is looking at her list. There isn't any bread on the <b>shelf</b>, so she is asking an employee for help. She is also buying some milk and a few eggs. The supermarket is very busy today: there are many people in the <b>line</b>, and Paula doesn't have much time. She needs to be home at 11 o'clock."
+   }
+  },
+  {
+   "key": "tf",
+   "title": "Reading · Paula's Saturday · true or false",
+   "tags": {
+    "content": [
+     "Present Simple",
+     "Present Continuous",
+     "Shopping",
+     "Reading"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "READING · TRUE OR FALSE",
+    "html": "Read the text again. True or false?",
+    "instant": false,
+    "items": [
+     {
+      "before": "Paula goes to the supermarket every Saturday.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "She usually takes a small basket.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "Her children eat a lot of fruit.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "Paula buys a lot of meat.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "She pays with cash.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "Today, her children are shopping with her.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "The children are playing football.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "There isn't any bread on the shelf.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "She is buying some milk.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "There aren't many people at the supermarket today.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "deck-super",
+   "title": "Conversation · you and the supermarket",
+   "tags": {
+    "content": [
+     "Present Simple",
+     "Past Simple",
+     "Shopping",
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "CONVERSATION · YOU AND THE SUPERMARKET",
+    "html": "Answer with complete sentences.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Your supermarket",
+      "qs": [
+       "How often do you go to the supermarket?",
+       "Which supermarket do you usually go to? Why?",
+       "Do you prefer a cart or a basket?",
+       "Is there a supermarket near your house?",
+       "Are there many people there on Saturdays?"
+      ]
+     },
+     {
+      "name": "What do you buy?",
+      "qs": [
+       "What do you usually buy every week?",
+       "Do you buy much fruit?",
+       "How much coffee do you drink?",
+       "Is there any food you never buy?",
+       "What is in your fridge right now?"
+      ]
+     },
+     {
+      "name": "Last time",
+      "qs": [
+       "When did you last go to the supermarket?",
+       "What did you buy?",
+       "How much did you pay?",
+       "Did you forget anything?",
+       "Did you go alone or with someone?"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Past Simple Review & At the Supermarket",
+  "subtitle": "Past simple: review and practice · supermarket vocabulary",
+  "level": "A2",
+  "number": 20,
+  "tags": [
+   "Grammar",
+   "Vocabulary",
+   "Speaking"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "ps-explain"
+   },
+   {
+    "model": "ps-table"
+   },
+   {
+    "model": "irregular"
+   },
+   {
+    "model": "fill-aff"
+   },
+   {
+    "model": "speed"
+   },
+   {
+    "model": "fill-neg"
+   },
+   {
+    "model": "tell-me"
+   },
+   {
+    "model": "vocab-table"
+   },
+   {
+    "model": "vocab-match"
+   },
+   {
+    "model": "reading"
+   },
+   {
+    "model": "tf"
+   },
+   {
+    "model": "deck-super"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}
