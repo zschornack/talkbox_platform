@@ -18,7 +18,7 @@ Os requisitos completos estão no projeto do Claude (*TalkBox · Requisitos do M
 
 Não precisa rodar `npm install`. O projeto não tem nenhuma dependência além do próprio Node, e o banco de dados (SQLite) já vem dentro do Node.
 
-Na primeira vez, o sistema cria uma aula de exemplo: **Julia · Natural Disasters**.
+Na primeira vez, o sistema cria a aluna de exemplo **Julia**, a aula **Natural Disasters** e uma biblioteca inicial com 10 modelos.
 
 Para parar o servidor, aperte `Ctrl + C` no terminal.
 
@@ -26,17 +26,44 @@ Para parar o servidor, aperte `Ctrl + C` no terminal.
 
 Tudo fica na pasta `data/`, dentro do projeto:
 
-- `data/talkbox.db`: as aulas.
+- `data/talkbox.db`: alunos, aulas e modelos.
 - `data/uploads/`: as imagens, em WebP.
 
 Para fazer backup, basta copiar essa pasta. Ela não vai para o GitHub.
 
-## O que já funciona (versão 0.1)
+## O que já funciona (versão 0.2)
 
-**Aulas**
-- Lista de aulas com busca.
-- Criar uma aula em branco.
-- Duplicar uma aula para outro aluno. A cópia vem sem as respostas.
+**Início**
+- Menu lateral com Início, Alunos e Modelos.
+- Atalhos para criar uma nova aula, um novo aluno ou um novo modelo.
+- Aulas recentes, alunos com a data da última aula e o resumo da biblioteca por formato.
+
+**Alunos**
+- Lista com busca e filtro de ativos e inativos.
+- Cadastrar e editar nome, nível e objetivo. Uma turma é cadastrada como um aluno, ex.: "Vini & Bia".
+- Inativar nunca apaga nada, e dá para reativar.
+- **Ficha do aluno**:
+  - Onde paramos, com a última aula e os conteúdos vistos.
+  - Objetivo e observações, que salvam sozinhos.
+  - Mapa de conteúdos: clique num conteúdo para mudar o status (nunca viu, praticando, já está bom).
+  - Histórico de aulas: abrir, exportar o PDF, duplicar ou excluir.
+  - Botão de nova aula.
+
+**Modelos** (a biblioteca de atividades)
+- Cada modelo é uma atividade pronta, com etiquetas de formato, conteúdo, nível e habilidade.
+- Filtros combinados: dentro de um mesmo filtro vale qualquer opção marcada; entre filtros diferentes, todos precisam bater. Também tem busca e ordenação.
+- O modelo é criado e editado no mesmo editor da aula, e dá para testar o exercício ali mesmo.
+- Mostra em quantas aulas o modelo foi usado.
+- Guarda o histórico de versões, com botão para restaurar.
+- Dá para duplicar e excluir.
+- **Na aula**:
+  - Use o **+** e escolha "Da biblioteca de modelos…", ou aperte **Ctrl + K**.
+  - Dá para marcar vários modelos e inserir todos de uma vez.
+  - Os modelos que o aluno já viu aparecem com "visto em DD/MM".
+- O modelo entra na aula como **cópia**: editar o modelo depois não muda as aulas já montadas.
+- Qualquer bloco da aula pode virar modelo com **Salvar como modelo**. Se o bloco veio de um modelo, dá para atualizar esse modelo ou criar um novo.
+
+**Migração**: aulas criadas na versão 0.1 são ligadas automaticamente a alunos cadastrados com o mesmo nome.
 
 **A aula (editor)**
 - Existe um modo só: a tela é sempre editável e sempre limpa.
@@ -84,6 +111,7 @@ Para fazer backup, basta copiar essa pasta. Ela não vai para o GitHub.
 | Atalho | O que faz |
 |---|---|
 | `Ctrl + B` / `Ctrl + U` | Negrito / sublinhado |
+| `Ctrl + K` | Inserir da biblioteca de modelos (Enter insere o primeiro) |
 | `Ctrl + P` | Exportar PDF |
 | `Ctrl + Shift + E` | Liga e desliga a caneta |
 | `Esc` | Desliga a caneta e fecha menus |
@@ -92,30 +120,39 @@ Para fazer backup, basta copiar essa pasta. Ela não vai para o GitHub.
 
 ## Próximos patches
 
-1. **Finalizar aula (handover)**: até onde chegamos, como ficaram os conteúdos e recado para o próximo professor.
-2. **Alunos e Ficha**: cadastro, ativos e inativos, "onde paramos", mapa de conteúdos e histórico.
-3. **Banco de conteúdos**: etiquetas, filtros, painel na montagem, "salvar no banco" e busca rápida com Ctrl+K.
-4. **Modelos**.
-5. Novos blocos: múltipla escolha, ligar colunas, ordenar frases, áudio, imagens lado a lado e cards de foto para revelar.
-6. Vários professores: login e servidor compartilhado.
+1. **Finalizar aula (handover)**: até onde chegamos, como ficaram os conteúdos e recado para o próximo professor. Isso alimenta "Onde paramos" e o mapa de conteúdos na ficha.
+2. **Modelos de aula**: salvar uma aula inteira como modelo e começar aulas novas a partir dele.
+3. Novos formatos: múltipla escolha, ligar colunas, ordenar frases, áudio, imagens lado a lado e cards de foto para revelar.
+4. Vários professores: login, servidor compartilhado e "quem mudou" no histórico de versões.
 
 ## Para quem for programar
 
 ```
-server/            servidor (Node puro + SQLite embutido)
-  index.js         rotas da API e arquivos do app
-  db.js            banco de dados
-  seed.js          aula de exemplo
-web/               app do professor (JavaScript puro, sem build)
-  js/editor.js     a aula: blocos, salvar automático, caneta, menus
-  js/blocks/       um arquivo por tipo de bloco (registrados em index.js)
-  css/app.css      todo o visual: paleta, tipografia e PDF (@media print)
-test/              testes (npm test)
+server/               servidor (Node puro + SQLite embutido)
+  start.js            confere a versão do Node e sobe o servidor
+  index.js            arquivos do app e imagens
+  api.js              rotas da API: alunos, aulas, modelos, imagens
+  db.js               banco de dados e migrações
+  seed.js             dados de exemplo (Julia + biblioteca inicial)
+web/                  app do professor (JavaScript puro, sem build)
+  js/main.js          rotas: #/  #/alunos  #/alunos/:id  #/modelos  #/modelos/:id  #/aula/:id
+  js/home.js          Início
+  js/students.js      lista de alunos       js/student.js       ficha
+  js/models.js        biblioteca de modelos js/model-editor.js  editar modelo
+  js/model-picker.js  painel "Inserir modelos" na aula
+  js/editor.js        a aula: salvar automático, caneta, menus
+  js/block-view.js    mostra/edita um bloco (usado na aula e nos modelos)
+  js/blocks/          um arquivo por tipo de bloco (registrados em index.js)
+  js/catalog.js       listas fixas: níveis, habilidades, mapa de conteúdos
+  css/app.css         todo o visual: paleta, tipografia e PDF (@media print)
+test/                 testes (npm test)
 ```
 
 Na aula, o **conteúdo** (`doc`: os blocos) fica separado do que **acontece na aula** (`state`: respostas das lacunas, caneta, tamanho da fonte). Isso segue o item 9.10 dos requisitos e prepara a versão 2, em que cada aluno terá as próprias respostas.
 
-Para criar um tipo de bloco novo, crie um arquivo em `web/js/blocks/` com `name`, `hint`, `create()` e `render(ctx)`, e registre-o em `web/js/blocks/index.js`.
+Um **modelo** guarda um bloco pronto. Quando entra numa aula, o bloco é copiado com ids novos e ganha `source: { modelId, title }`. É assim que o sistema conta em quantas aulas o modelo foi usado e mostra o "visto em".
+
+Para criar um tipo de bloco novo, crie um arquivo em `web/js/blocks/` com `name`, `hint`, `create()` e `render(ctx)`, registre-o em `web/js/blocks/index.js` e adicione um resumo dele em `web/js/blocks/summary.js`. Ele passa a aparecer na aula e nos Modelos automaticamente.
 
 Se o Node for antigo, o `npm start` avisa e explica como atualizar.
 

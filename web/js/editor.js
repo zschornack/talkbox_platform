@@ -1,20 +1,24 @@
 // A aula (requisitos seção 9): um modo só, sempre editável e sempre limpa.
-import { h, svgIcon, ICONS, uid, clone, formatDate } from './dom.js';
-import { api, saveOnExit } from './api.js';
+import { h, svgIcon, ICONS, uid, formatDate } from './dom.js';
+import { api, autosaver, saveOnExit } from './api.js';
 import { editable } from './editable.js';
 import { mountFormatBar } from './format-bar.js';
 import { mountPen } from './pen.js';
 import { BLOCKS, MENU } from './blocks/index.js';
 import { openExportDialog } from './export.js';
+import { mountBlock, copyBlock } from './block-view.js';
+import { openModelPicker } from './model-picker.js';
+import { saveAsModelDialog } from './models.js';
+import { toast } from './ui.js';
 
 const SIZES = [16, 18, 20, 22, 24, 28, 32];
 
-export async function renderEditor(root, id) {
+export async function renderEditor(root, id, { openExport = false } = {}) {
   let lesson;
   try {
     lesson = await api.lesson(id);
   } catch {
-    root.replaceChildren(h('div.home', h('p', 'Aula não encontrada. '), h('a', { href: '#/' }, 'Voltar para as aulas')));
+    root.replaceChildren(h('div.page', h('p', 'Aula não encontrada. '), h('a', { href: '#/' }, 'Voltar para o início')));
     return () => {};
   }
   document.title = `${lesson.doc.title} · TalkBox`;
@@ -27,62 +31,16 @@ export async function renderEditor(root, id) {
   const locals = new Map();
   const localOf = (bid) => (locals.has(bid) ? locals.get(bid) : locals.set(bid, {}).get(bid));
   const cleanups = [];
+  const backHref = lesson.studentId ? `#/alunos/${lesson.studentId}` : '#/';
 
   // ---------- salvar automaticamente ----------
-  let dirtyDoc = false;
-  let dirtyState = false;
-  let timer = null;
-  let saving = false;
   const status = h('span.save-status', { role: 'status', 'aria-live': 'polite' }, 'Salvo');
-
-  const payload = () => ({
-    ...(dirtyDoc ? { title: doc.title, doc } : {}),
-    ...(dirtyState ? { state } : {}),
-  });
-  async function flush() {
-    clearTimeout(timer);
-    if (saving || (!dirtyDoc && !dirtyState)) return;
-    const body = payload();
-    dirtyDoc = dirtyState = false;
-    saving = true;
-    status.className = 'save-status';
-    status.textContent = 'Salvando…';
-    try {
-      await api.saveLesson(lesson.id, body);
-      status.textContent = 'Salvo';
-    } catch {
-      if (body.doc) dirtyDoc = true;
-      if (body.state) dirtyState = true;
-      status.className = 'save-status error';
-      status.textContent = 'Erro ao salvar. Tentando de novo…';
-      timer = setTimeout(flush, 3000);
-    } finally {
-      saving = false;
-      if ((dirtyDoc || dirtyState) && !timer) schedule();
-    }
-  }
-  function schedule() {
-    clearTimeout(timer);
-    status.className = 'save-status';
-    status.textContent = 'Editando…';
-    timer = setTimeout(() => { timer = null; flush(); }, 700);
-  }
-  const markDoc = () => { dirtyDoc = true; schedule(); };
-  const markState = () => { dirtyState = true; schedule(); };
-  const onExit = () => { if (dirtyDoc || dirtyState) saveOnExit(lesson.id, payload()); };
+  const saver = autosaver({ save: (body) => api.saveLesson(lesson.id, body), statusEl: status });
+  const markDoc = () => saver.queue({ title: doc.title, doc });
+  const markState = () => saver.queue({ state });
+  const onExit = () => { if (saver.pending) saveOnExit(`/api/lessons/${lesson.id}`, saver.pending); };
   window.addEventListener('beforeunload', onExit);
-  cleanups.push(() => { window.removeEventListener('beforeunload', onExit); onExit(); });
-
-  // ---------- avisos rápidos ----------
-  let toastEl = null;
-  function toast(msg, action) {
-    toastEl?.remove();
-    toastEl = h('div.toast', { role: 'status' }, h('span', msg), action ? h('button', { type: 'button', onClick: () => { action.run(); toastEl?.remove(); } }, action.label) : null);
-    document.body.append(toastEl);
-    const el = toastEl;
-    setTimeout(() => el.remove(), 6000);
-  }
-  cleanups.push(() => toastEl?.remove());
+  cleanups.push(() => { window.removeEventListener('beforeunload', onExit); saver.flush(); });
 
   // ---------- a folha ----------
   const paper = h('main.paper', { style: { '--lesson-size': state.size + 'px' } });
@@ -97,7 +55,7 @@ export async function renderEditor(root, id) {
 
   const head = h(
     'header.lesson-head',
-    h('div.print-head', h('span', lesson.student ? `Aluno(a): ${lesson.student}` : ''), h('span', formatDate(new Date().toISOString()))),
+    h('div.print-head', h('span', lesson.student ? `Aluno(a): ${lesson.student}` : ''), h('span', formatDate(lesson.createdAt))),
     h(
       'div.chips',
       editable(h('span.chip.level'), {
@@ -131,63 +89,33 @@ export async function renderEditor(root, id) {
 
   // ---------- blocos ----------
   function shell(block) {
-    const def = BLOCKS[block.type];
-    const el = h('section.block', { class: block.type, dataset: { id: block.id } });
-    if (!def) {
-      el.append(h('p.muted-text', `Bloco desconhecido: ${block.type}`));
-      return el;
-    }
-    const paint = (opts = {}) => {
-      const ctx = {
-        block,
-        pop: !!opts.pop,
-        changed: markDoc,
-        state: () => (state.blocks[block.id] ||= {}),
-        stateChanged: markState,
-        local: localOf(block.id),
-        rerender: (o) => paint(o),
-        toast,
-        slashKey: (e) => {
-          if (e.key === '/' && block.type === 'text' && !e.currentTarget.textContent.trim()) {
-            e.preventDefault();
-            openMenu(e.currentTarget, doc.blocks.indexOf(block), { replace: true });
-          }
-        },
-      };
-      const out = def.render(ctx);
-      const index = () => doc.blocks.indexOf(block);
-      const tool = (icon, label, run) => h('button.tool', { type: 'button', title: label, 'aria-label': label, onClick: run }, svgIcon(ICONS[icon], 16));
-      const tools = h(
-        'div.block-tools',
-        tool('up', 'Mover para cima', () => move(index(), -1)),
-        tool('down', 'Mover para baixo', () => move(index(), 1)),
-        tool('copy', 'Duplicar', () => duplicate(index())),
-        tool('trash', 'Remover', () => remove(index()))
-      );
-      const actions = out.actions?.length
-        ? h('div.block-actions', out.actions.map((a) => h('button', { type: 'button', class: a.on ? 'on' : '', onClick: a.onClick }, a.label)))
-        : null;
-      const label =
-        def.hasLabel === false
-          ? null
-          : editable(h('div.block-label'), {
-              value: block.label || '',
-              placeholder: 'TÍTULO DO BLOCO (OPCIONAL)',
-              single: true,
-              rich: false,
-              onChange: (v) => { block.label = v; markDoc(); },
-            });
-      // Mantém o foco se o professor estava digitando dentro do bloco.
-      el.replaceChildren(tools, actions || '', h('div.block-body', label, out.body));
-    };
-    paint();
-    return el;
+    const index = () => doc.blocks.indexOf(block);
+    return mountBlock(block, {
+      changed: markDoc,
+      state: () => (state.blocks[block.id] ||= {}),
+      stateChanged: markState,
+      local: localOf(block.id),
+      slashKey: (e) => {
+        if (e.key === '/' && block.type === 'text' && !e.currentTarget.textContent.trim()) {
+          e.preventDefault();
+          openMenu(e.currentTarget, index(), { replace: true });
+        }
+      },
+      tools: [
+        { icon: 'up', label: 'Mover para cima', run: () => move(index(), -1) },
+        { icon: 'down', label: 'Mover para baixo', run: () => move(index(), 1) },
+        { icon: 'copy', label: 'Duplicar', run: () => duplicate(index()) },
+        { icon: 'trash', label: 'Remover', run: () => remove(index()) },
+      ],
+      extraActions: () =>
+        block.type === 'notes'
+          ? []
+          : [{ label: 'Salvar como modelo', onClick: () => saveAsModelDialog(block, { level: doc.level, onSaved: (m) => { block.source = { modelId: m.id, title: m.title }; markDoc(); } }) }],
+    });
   }
 
   function renderBlocks() {
-    blocksEl.replaceChildren(
-      ...doc.blocks.flatMap((b, i) => [insertLine(i), shell(b)])
-    );
+    blocksEl.replaceChildren(...doc.blocks.flatMap((b, i) => [insertLine(i), shell(b)]));
   }
   const insertLine = (i) =>
     h('div.insert-line', h('button', { type: 'button', title: 'Inserir bloco aqui', 'aria-label': 'Inserir bloco aqui', onClick: (e) => openMenu(e.currentTarget, i) }, '+'));
@@ -197,7 +125,7 @@ export async function renderEditor(root, id) {
     const el = blockEl(b);
     const target = [...(el?.querySelectorAll('[contenteditable="true"], .dropzone') || [])].find((x) => !x.classList.contains('block-label'));
     target?.focus();
-    blockEl(b)?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    el?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   };
 
   function move(i, dir) {
@@ -209,10 +137,7 @@ export async function renderEditor(root, id) {
     blockEl(doc.blocks[j])?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   }
   function duplicate(i) {
-    const copy = clone(doc.blocks[i]);
-    copy.id = uid();
-    if (copy.items) copy.items.forEach((it) => (it.id = uid('i')));
-    doc.blocks.splice(i + 1, 0, copy);
+    doc.blocks.splice(i + 1, 0, copyBlock(doc.blocks[i], uid));
     markDoc();
     renderBlocks();
   }
@@ -242,6 +167,22 @@ export async function renderEditor(root, id) {
     focusBlock(block);
     return block;
   }
+  /** Modelos entram na aula como CÓPIA (requisitos 7.4). */
+  function insertModels(models, i, replace = false) {
+    const copies = models.map((m) => {
+      const c = copyBlock(m.block, uid);
+      c.type = m.type;
+      c.source = { modelId: m.id, title: m.title };
+      return c;
+    });
+    doc.blocks.splice(i, replace ? 1 : 0, ...copies);
+    markDoc();
+    renderBlocks();
+    blockEl(copies[0])?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    toast(copies.length === 1 ? `"${models[0].title}" entrou na aula.` : `${copies.length} modelos entraram na aula.`);
+  }
+  const pickModels = (index, replace = false) =>
+    openModelPicker({ studentId: lesson.studentId, level: doc.level, onInsert: (models) => insertModels(models, index, replace) });
 
   // ---------- menu "inserir bloco" (botão + ou "/") ----------
   let menuEl = null;
@@ -252,11 +193,16 @@ export async function renderEditor(root, id) {
   function openMenu(anchor, index, { replace = false } = {}) {
     closeMenu();
     let active = 0;
-    const items = MENU.map((type, k) =>
-      h('button', { type: 'button', role: 'menuitem', onClick: () => { closeMenu(); insert(type, index, replace); } },
-        BLOCKS[type].name, h('small', BLOCKS[type].hint))
-    );
-    menuEl = h('div.menu', { role: 'menu', 'aria-label': 'Inserir bloco' }, items);
+    const fromModels = h('button.menu-models', { type: 'button', role: 'menuitem', onClick: () => { closeMenu(); pickModels(index, replace); } },
+      h('span.menu-title', svgIcon(ICONS.layers, 16), 'Da biblioteca de modelos…'), h('small', 'Atividades prontas · Ctrl+K'));
+    const items = [
+      fromModels,
+      ...MENU.map((type) =>
+        h('button', { type: 'button', role: 'menuitem', onClick: () => { closeMenu(); insert(type, index, replace); } },
+          h('span.menu-title', svgIcon(ICONS[type], 16), BLOCKS[type].name), h('small', BLOCKS[type].hint))
+      ),
+    ];
+    menuEl = h('div.menu', { role: 'menu', 'aria-label': 'Inserir bloco' }, items[0], h('div.menu-sep'), items.slice(1));
     const r = anchor.getBoundingClientRect();
     menuEl.style.left = Math.max(8, Math.min(r.left + window.scrollX, window.scrollX + document.documentElement.clientWidth - 296)) + 'px';
     menuEl.style.top = r.bottom + window.scrollY + 6 + 'px';
@@ -309,11 +255,11 @@ export async function renderEditor(root, id) {
   refreshPenButtons();
 
   // ---------- barra superior (meio apagada até passar o mouse) ----------
-  const doExport = () => openExportDialog({ lesson, doc, flush });
+  const doExport = () => openExportDialog({ lesson, doc, flush: () => saver.flush() });
   const chrome = h(
     'div.chrome',
     h('div.left',
-      h('a.btn.icon', { href: '#/', title: 'Voltar para as aulas', 'aria-label': 'Voltar para as aulas' }, svgIcon(ICONS.back)),
+      h('a.btn.icon', { href: backHref, title: lesson.student ? `Voltar para a ficha de ${lesson.student}` : 'Voltar', 'aria-label': 'Voltar' }, svgIcon(ICONS.back)),
       h('a.brand', { href: '#/' }, 'TalkBox'),
       status
     ),
@@ -326,23 +272,32 @@ export async function renderEditor(root, id) {
         h('button', { type: 'button', 'aria-label': 'Aumentar fonte', style: { fontSize: '19px' }, onClick: () => setSize(1) }, 'A+')
       ),
       h('button.btn', { type: 'button', onClick: doExport }, 'Exportar PDF'),
-      h('button.btn.primary', { type: 'button', disabled: true, title: 'Chega no próximo patch (handover)' }, 'Finalizar aula')
+      h('button.btn.primary', { type: 'button', disabled: true, title: 'Chega num próximo patch (handover)' }, 'Finalizar aula')
     )
   );
 
   // ---------- atalhos ----------
+  const cursorIndex = () => {
+    const here = document.activeElement?.closest?.('.block');
+    const cur = here && doc.blocks.find((b) => b.id === here.dataset.id);
+    return cur ? doc.blocks.indexOf(cur) + 1 : doc.blocks.length;
+  };
   const onKey = (e) => {
     const mod = e.ctrlKey || e.metaKey;
+    if (document.querySelector('.modal-bg, .drawer')) return;
     if (mod && e.key.toLowerCase() === 'p') { e.preventDefault(); doExport(); }
+    if (mod && e.key.toLowerCase() === 'k') { e.preventDefault(); closeMenu(); pickModels(cursorIndex()); }
     if (mod && e.shiftKey && e.key.toLowerCase() === 'e') { e.preventDefault(); togglePen(); }
     if (e.key === 'Escape' && pen.active) togglePen(false);
   };
   document.addEventListener('keydown', onKey);
   cleanups.push(() => document.removeEventListener('keydown', onKey));
   cleanups.push(mountFormatBar(paper, () => pen.active));
+  cleanups.push(() => document.querySelector('.drawer-bg')?.remove());
 
   renderBlocks();
   root.replaceChildren(h('div.lesson-wrap', chrome, paper));
+  if (openExport) setTimeout(doExport, 300);
 
   return () => cleanups.forEach((fn) => fn());
 }
