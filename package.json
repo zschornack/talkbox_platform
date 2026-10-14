@@ -1,0 +1,15 @@
+{
+  "name": "talkbox-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TalkBox: plataforma de aulas da escola (visão do professor).",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch-path=server server/index.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+  }
+}
