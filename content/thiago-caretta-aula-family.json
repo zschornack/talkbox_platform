@@ -1,0 +1,940 @@
+{
+ "id": "thiago-caretta-family-birthdays-records",
+ "student": {
+  "name": "Thiago Caretta",
+  "level": "B1",
+  "goal": "Conversação",
+  "notes": "Aula de conversação. Já fala inglês, mas ainda comete muitos erros: foco em construção de frases (frases completas, perguntas, conectores)."
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · your week and birthdays",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Family"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP",
+    "html": "Answer with <b>complete sentences</b> and give one extra detail.",
+    "words": [
+     "because",
+     "last week",
+     "I've never…",
+     "when I was a child"
+    ],
+    "cats": [
+     {
+      "name": "Your week",
+      "qs": [
+       "How was your week?",
+       "Did anything unusual happen to you this week?"
+      ]
+     },
+     {
+      "name": "Birthdays & family",
+      "qs": [
+       "Do you usually celebrate your birthday?",
+       "What is your favorite birthday memory?",
+       "Do you know anyone who has the same birthday as you?",
+       "Are birthdays important to you?",
+       "Do you prefer big celebrations or small celebrations?",
+       "What is the most interesting family tradition you have?",
+       "Do you think families become more interesting as they get older?",
+       "What is something unusual about your family?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "predict",
+   "title": "Before you read · guess the record",
+   "tags": {
+    "content": [
+     "Reading",
+     "Family"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Leitura",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "BEFORE YOU READ · GUESS!",
+    "html": "A family entered the Guinness World Records because of their birthdays. Guess the answers, then read and check.",
+    "instant": true,
+    "items": [
+     {
+      "before": "How many generations share the same birthday?",
+      "options": [
+       "3",
+       "4",
+       "5",
+       "6"
+      ],
+      "answer": 2,
+      "after": ""
+     },
+     {
+      "before": "Where does the family live?",
+      "options": [
+       "Brazil",
+       "the United States",
+       "the UK",
+       "Canada"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "When was the oldest person born?",
+      "options": [
+       "1907",
+       "1937",
+       "1957",
+       "1977"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "How many years of family history does the date cover?",
+      "options": [
+       "58",
+       "88",
+       "118",
+       "148"
+      ],
+      "answer": 2,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "reading",
+   "title": "Reading · Five generations share the same birthday",
+   "tags": {
+    "content": [
+     "Reading",
+     "Family",
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "READING · FIVE GENERATIONS SHARE THE SAME BIRTHDAY",
+    "html": "A family in the United States has entered the Guinness World Records after five generations were born on the same day of the year. The family members all share September 14 as their birthday. The record was officially confirmed after the birth of Arthur Bell in Omaha in 2025.<br><br>The story began in 1907, when Wilber Harlow was born. His descendant Addie Harlow was born in 1949, followed by Donald Harlow in 1972 and Emma Bell in 1997. Finally, Arthur Bell was born in 2025. This means that the same date appears across 118 years of family history.<br><br>The family’s situation is extremely unusual. The Guinness World Records had previously registered cases involving four generations sharing the same birthday, but this family became the first to have five generations in a direct line of descent born on the same date.<br><br><i>Adapted from CNN Brasil.</i>"
+   }
+  },
+  {
+   "key": "timeline",
+   "title": "Five generations · timeline",
+   "tags": {
+    "content": [
+     "Reading",
+     "Family"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "THE FAMILY TIMELINE · ALL BORN ON SEPTEMBER 14",
+    "header": true,
+    "rows": [
+     [
+      "GENERATION",
+      "NAME",
+      "BORN"
+     ],
+     [
+      "1st",
+      "<b>Wilber Harlow</b>",
+      "1907"
+     ],
+     [
+      "2nd",
+      "<b>Addie Harlow</b>",
+      "1949"
+     ],
+     [
+      "3rd",
+      "<b>Donald Harlow</b>",
+      "1972"
+     ],
+     [
+      "4th",
+      "<b>Emma Bell</b>",
+      "1997"
+     ],
+     [
+      "5th",
+      "<b>Arthur Bell</b>",
+      "2025"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "vocab",
+   "title": "Vocabulary · family and coincidences",
+   "tags": {
+    "content": [
+     "Vocabulary",
+     "Family"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "match",
+    "label": "VOCABULARY FROM THE TEXT",
+    "html": "Match the words (1–8) to the meanings (A–H). Then use three of them in a sentence about your family.",
+    "pairs": [
+     {
+      "left": "generation",
+      "right": "all the people born around the same time in a family"
+     },
+     {
+      "left": "descendant",
+      "right": "a person born later in your family: your child, grandchild…"
+     },
+     {
+      "left": "to share",
+      "right": "to have the same thing as someone else"
+     },
+     {
+      "left": "to confirm",
+      "right": "to say officially that something is true"
+     },
+     {
+      "left": "previously",
+      "right": "before, at an earlier time"
+     },
+     {
+      "left": "coincidence",
+      "right": "when two things happen together by chance"
+     },
+     {
+      "left": "in a direct line",
+      "right": "parent → child → grandchild, without cousins or uncles"
+     },
+     {
+      "left": "to run in the family",
+      "right": "when a characteristic passes from parents to children"
+     }
+    ]
+   }
+  },
+  {
+   "key": "comprehension",
+   "title": "Reading comprehension · full-sentence answers",
+   "tags": {
+    "content": [
+     "Reading",
+     "Family"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Leitura",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "READING COMPREHENSION",
+    "html": "Answer with a <b>full sentence</b>: “The family lives in the United States.”, not just “The US”.",
+    "words": [],
+    "cats": [
+     {
+      "name": "About the text",
+      "qs": [
+       "Where does the family live?",
+       "How many generations share the same birthday?",
+       "What date were they all born on?",
+       "Who was the first person mentioned in the family history?",
+       "When was Wilber Harlow born?",
+       "When was Arthur Bell born?",
+       "How many years does the coincidence cover?",
+       "What organization officially recognized the record?",
+       "How many generations had previously been recorded?",
+       "Why is this case unusual?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "questions",
+   "title": "Speed round · making questions",
+   "tags": {
+    "content": [
+     "Question formation"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "SPEED ROUND · BUILD THE QUESTION",
+    "html": "Choose the correct question. Then ask it to me!",
+    "instant": true,
+    "items": [
+     {
+      "before": "Why",
+      "options": [
+       "do you think",
+       "you think"
+      ],
+      "answer": 0,
+      "after": "this coincidence is unusual?"
+     },
+     {
+      "before": "When",
+      "options": [
+       "your birthday is",
+       "is your birthday"
+      ],
+      "answer": 1,
+      "after": "?"
+     },
+     {
+      "before": "How",
+      "options": [
+       "do you usually celebrate",
+       "you usually celebrate"
+      ],
+      "answer": 0,
+      "after": "your birthday?"
+     },
+     {
+      "before": "",
+      "options": [
+       "Have you ever meet",
+       "Have you ever met"
+      ],
+      "answer": 1,
+      "after": "someone with the same birthday as you?"
+     },
+     {
+      "before": "What",
+      "options": [
+       "you did",
+       "did you do"
+      ],
+      "answer": 1,
+      "after": "on your last birthday?"
+     },
+     {
+      "before": "Where",
+      "options": [
+       "does your family live",
+       "your family lives"
+      ],
+      "answer": 0,
+      "after": "?"
+     },
+     {
+      "before": "How old",
+      "options": [
+       "you were",
+       "were you"
+      ],
+      "answer": 1,
+      "after": "at your best birthday party?"
+     },
+     {
+      "before": "What",
+      "options": [
+       "would you ask",
+       "would you asked"
+      ],
+      "answer": 0,
+      "after": "the Harlow family?"
+     },
+     {
+      "before": "",
+      "options": [
+       "You prefer",
+       "Do you prefer"
+      ],
+      "answer": 1,
+      "after": "gifts or time with people?"
+     },
+     {
+      "before": "Who",
+      "options": [
+       "are you most similar to",
+       "you are most similar to"
+      ],
+      "answer": 0,
+      "after": "in your family?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "conversation",
+   "title": "Conversation · family, birthdays, coincidences and records",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Family"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "CONVERSATION",
+    "html": "Answer in 2–3 sentences. Try to use the word on the card.",
+    "words": [
+     "because",
+     "although",
+     "in my opinion",
+     "I've never…",
+     "if I could…",
+     "when I was a child",
+     "I would…",
+     "so"
+    ],
+    "cats": [
+     {
+      "name": "Family and birthdays",
+      "qs": [
+       "How important is your birthday to you?",
+       "What is your favorite thing about birthdays?",
+       "What is your least favorite thing about birthdays?",
+       "How do you usually celebrate your birthday?",
+       "What was your best birthday ever?",
+       "What was your worst birthday experience?",
+       "Do you prefer receiving gifts or spending time with people on your birthday?",
+       "What kind of birthday party would you organize for yourself?",
+       "Do you remember your childhood birthday parties?",
+       "What birthday tradition did your family have when you were a child?"
+      ]
+     },
+     {
+      "name": "Family relationships",
+      "qs": [
+       "How close are you to your extended family?",
+       "Who are you most similar to in your family?",
+       "Who has the most different personality from you?",
+       "What characteristics do people in your family share?",
+       "Do you think personality can run in families?",
+       "What family traditions would you like to continue in the future?",
+       "Is there a family story that everyone knows?",
+       "What is the funniest story from your family?",
+       "Do you think modern families are different from families in the past?",
+       "How important is it to know your family history?"
+      ]
+     },
+     {
+      "name": "Coincidences",
+      "qs": [
+       "Have you ever experienced a really strange coincidence?",
+       "Do you believe some coincidences are too unusual to be random?",
+       "Have you ever met someone who had the same birthday as you?",
+       "Would you find it strange if several members of your family had the same birthday?",
+       "What would you think if you discovered that five generations of your family shared the same birthday?",
+       "What is the strangest coincidence you have heard about?",
+       "Do coincidences make life more interesting?",
+       "Have you ever thought about how unlikely some everyday events are?",
+       "Would you consider a coincidence like this lucky?",
+       "If you could have one unusual coincidence happen in your life, what would it be?"
+      ]
+     },
+     {
+      "name": "World records",
+      "qs": [
+       "Do you like watching videos about unusual world records?",
+       "What kind of world record would you like to break?",
+       "Would you rather break a physical record or an intellectual record?",
+       "What makes a world record interesting?",
+       "Why do you think people want to enter the Guinness World Records?",
+       "Would you spend years training to break a world record?",
+       "Would you participate in a strange world-record attempt just for fun?",
+       "What is the most ridiculous world record you can imagine?",
+       "Do you think every world record requires talent?",
+       "What world record would be easiest for you to attempt?"
+      ]
+     },
+     {
+      "name": "Deeper discussion",
+      "qs": [
+       "Do you think genetics influence people's personalities?",
+       "How much of who we are comes from our family?",
+       "Do you think family traditions become more important as people get older?",
+       "Would you like your family to be remembered for something?",
+       "If your family could establish a world record, what would it be?",
+       "Would sharing the same birthday with your parents or grandparents make you feel more connected to them?",
+       "Do you think having something unusual in common can strengthen a family?",
+       "Would you prefer to have an ordinary life or an unusual life? Why?",
+       "What do you think makes a family memorable?",
+       "If you could ask the Bell and Harlow family one question about their experience, what would you ask?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "chances",
+   "title": "What are the chances? · likely or impossible",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Modal verbs"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "WHAT ARE THE CHANCES?",
+    "html": "Draw a situation. Is it <b>likely</b>, <b>unlikely</b>, <b>extremely unlikely</b> or <b>almost impossible</b>? Say it in a full sentence (“I think it's unlikely because…”), then answer the question on the card.",
+    "promptLabel": "THEN",
+    "lines": [
+     "Two friends have the same birthday.",
+     "Two brothers have the same birthday.",
+     "A parent and child have the same birthday.",
+     "Three generations share the same birthday.",
+     "Four generations share the same birthday.",
+     "Five generations share the same birthday.",
+     "Five generations share the same birthday and enter the Guinness World Records.",
+     "Two people meet for the first time and discover they were born in the same hospital.",
+     "Two strangers have the same birthday and the same first name.",
+     "Someone breaks a world record without intentionally trying to."
+    ],
+    "prompts": [
+     "Why do you think that?",
+     "Would you find it surprising?",
+     "Would you remember that experience?"
+    ]
+   }
+  },
+  {
+   "key": "upgrade",
+   "title": "Upgrade the sentence · connectors",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Question formation"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Fala",
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "UPGRADE THE SENTENCE",
+    "html": "Draw a short sentence and a connector. Make the sentence <b>longer and better</b> with the connector. Example: “I like birthdays.” + <b>although</b> → “I like birthdays, although I don't like big parties.”",
+    "promptLabel": "ADD",
+    "lines": [
+     "I like birthdays.",
+     "My family is big.",
+     "I don't like parties.",
+     "Coincidences are interesting.",
+     "I want to break a world record.",
+     "My grandmother tells great stories.",
+     "I celebrated my last birthday at home.",
+     "Family traditions are important."
+    ],
+    "prompts": [
+     "because",
+     "although",
+     "so",
+     "when",
+     "but",
+     "which",
+     "even though",
+     "if"
+    ]
+   }
+  },
+  {
+   "key": "partA",
+   "title": "Answer in complete sentences · with because",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Family"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Fala",
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "PART A · ANSWER IN COMPLETE SENTENCES",
+    "html": "Use at least one complete sentence. If the question asks for an explanation, give a reason with <b>because</b>.<br><i>Why are birthdays important to some people? → Birthdays are important to some people because they celebrate life and bring families together.</i>",
+    "words": [
+     "because"
+    ],
+    "cats": [
+     {
+      "name": "Questions",
+      "qs": [
+       "When is your birthday?",
+       "How do you usually celebrate your birthday?",
+       "Who do you usually celebrate your birthday with?",
+       "What was your favorite birthday when you were a child?",
+       "Why are family traditions important?",
+       "What is something unusual about your family?",
+       "Have you ever experienced a strange coincidence?",
+       "Have you ever met someone with the same birthday as you?",
+       "Why do people want to break world records?",
+       "What kind of world record would you like to break?",
+       "Would you like to have the same birthday as your parents or grandparents? Why?",
+       "Do you think coincidences happen by chance? Explain your opinion.",
+       "What can people learn from their family history?",
+       "How have birthday celebrations changed over the years?",
+       "What makes a family memorable?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "partB",
+   "title": "Correct and rewrite · common mistakes",
+   "tags": {
+    "content": [
+     "Present Simple",
+     "Past Simple",
+     "Present Perfect",
+     "Conditionals (2 & 3)",
+     "Question formation"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "PART B · CORRECT AND REWRITE",
+    "html": "Each sentence has one or more mistakes. Rewrite the <b>whole sentence</b> correctly.",
+    "items": [
+     {
+      "before": "✗ My family celebrate my birthday every years.  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "My family celebrates my birthday every year.",
+       "My family celebrates my birthday every year"
+      ]
+     },
+     {
+      "before": "✗ I am celebrate my birthday with my friends.  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "I celebrate my birthday with my friends.",
+       "I celebrate my birthday with my friends",
+       "I am celebrating my birthday with my friends.",
+       "I am celebrating my birthday with my friends",
+       "I'm celebrating my birthday with my friends.",
+       "I'm celebrating my birthday with my friends"
+      ]
+     },
+     {
+      "before": "✗ She don't like big birthday parties.  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "She doesn't like big birthday parties.",
+       "She doesn't like big birthday parties",
+       "She does not like big birthday parties.",
+       "She does not like big birthday parties"
+      ]
+     },
+     {
+      "before": "✗ My grandparents lives in a small town.  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "My grandparents live in a small town.",
+       "My grandparents live in a small town"
+      ]
+     },
+     {
+      "before": "✗ Yesterday, we celebrate my mother's birthday.  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "Yesterday, we celebrated my mother's birthday.",
+       "Yesterday we celebrated my mother's birthday.",
+       "Yesterday, we celebrated my mother's birthday",
+       "Yesterday we celebrated my mother's birthday",
+       "We celebrated my mother's birthday yesterday.",
+       "We celebrated my mother's birthday yesterday"
+      ]
+     },
+     {
+      "before": "✗ I never experienced a coincidence like this before.  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "I have never experienced a coincidence like this before.",
+       "I have never experienced a coincidence like this before",
+       "I've never experienced a coincidence like this before.",
+       "I've never experienced a coincidence like this before"
+      ]
+     },
+     {
+      "before": "✗ Why you think this coincidence is unusual?  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "Why do you think this coincidence is unusual?",
+       "Why do you think this coincidence is unusual"
+      ]
+     },
+     {
+      "before": "✗ He would likes to break a world record.  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "He would like to break a world record.",
+       "He would like to break a world record",
+       "He'd like to break a world record.",
+       "He'd like to break a world record"
+      ]
+     },
+     {
+      "before": "✗ My family is very close because we spends a lot of time together.  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "My family is very close because we spend a lot of time together.",
+       "My family is very close because we spend a lot of time together"
+      ]
+     },
+     {
+      "before": "✗ Five generations was born on the same date.  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "Five generations were born on the same date.",
+       "Five generations were born on the same date"
+      ]
+     },
+     {
+      "before": "✗ I think that family traditions is important.  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "I think that family traditions are important.",
+       "I think that family traditions are important",
+       "I think family traditions are important.",
+       "I think family traditions are important"
+      ]
+     },
+     {
+      "before": "✗ If I have the same birthday as my grandmother, I would be very surprised.  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "If I had the same birthday as my grandmother, I would be very surprised.",
+       "If I had the same birthday as my grandmother I would be very surprised.",
+       "If I had the same birthday as my grandmother, I would be very surprised",
+       "If I had the same birthday as my grandmother I would be very surprised",
+       "If I had the same birthday as my grandmother, I'd be very surprised.",
+       "If I had the same birthday as my grandmother I'd be very surprised.",
+       "If I had the same birthday as my grandmother, I'd be very surprised",
+       "If I had the same birthday as my grandmother I'd be very surprised",
+       "If I have the same birthday as my grandmother, I will be very surprised.",
+       "If I have the same birthday as my grandmother I will be very surprised.",
+       "If I have the same birthday as my grandmother, I will be very surprised",
+       "If I have the same birthday as my grandmother I will be very surprised"
+      ]
+     },
+     {
+      "before": "✗ People celebrates birthdays in different ways around the world.  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "People celebrate birthdays in different ways around the world.",
+       "People celebrate birthdays in different ways around the world"
+      ]
+     },
+     {
+      "before": "✗ My father told me an interesting story about our ancestors yesterday, and I am find it fascinating.  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "My father told me an interesting story about our ancestors yesterday, and I found it fascinating.",
+       "My father told me an interesting story about our ancestors yesterday and I found it fascinating.",
+       "My father told me an interesting story about our ancestors yesterday, and I found it fascinating",
+       "My father told me an interesting story about our ancestors yesterday and I found it fascinating",
+       "My father told me an interesting story about our ancestors yesterday, and I find it fascinating.",
+       "My father told me an interesting story about our ancestors yesterday and I find it fascinating.",
+       "My father told me an interesting story about our ancestors yesterday, and I find it fascinating",
+       "My father told me an interesting story about our ancestors yesterday and I find it fascinating"
+      ]
+     },
+     {
+      "before": "✗ Although the coincidence was unusual, but the family was very happy.  →",
+      "hint": "rewrite",
+      "after": "",
+      "answers": [
+       "Although the coincidence was unusual, the family was very happy.",
+       "Although the coincidence was unusual the family was very happy.",
+       "Although the coincidence was unusual, the family was very happy",
+       "Although the coincidence was unusual the family was very happy",
+       "The coincidence was unusual, but the family was very happy.",
+       "The coincidence was unusual but the family was very happy.",
+       "The coincidence was unusual, but the family was very happy",
+       "The coincidence was unusual but the family was very happy"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "interview",
+   "title": "Role-play · interview the family",
+   "tags": {
+    "content": [
+     "Question formation",
+     "Conversation",
+     "Family"
+    ],
+    "levels": [
+     "B1",
+     "B2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "ROLE-PLAY · INTERVIEW THE FAMILY",
+    "html": "You are a journalist. The teacher is <b>Emma Bell</b> (4th generation, born in 1997).<br>Prepare <b>five questions</b>, one with each start, and interview her:<br><b>How did…?</b> · <b>What was…?</b> · <b>Have you ever…?</b> · <b>Do you…?</b> · <b>Would you…?</b><br><br>Then change: you are Emma, and the teacher asks you."
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Family, Birthdays and Unusual World Records",
+  "subtitle": "Conversation · reading · building better sentences",
+  "level": "B1",
+  "tags": [
+   "Conversation",
+   "Reading",
+   "Speaking"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "predict"
+   },
+   {
+    "model": "reading"
+   },
+   {
+    "model": "timeline"
+   },
+   {
+    "model": "vocab"
+   },
+   {
+    "model": "comprehension"
+   },
+   {
+    "model": "questions"
+   },
+   {
+    "model": "conversation"
+   },
+   {
+    "model": "chances"
+   },
+   {
+    "model": "upgrade"
+   },
+   {
+    "model": "partA"
+   },
+   {
+    "model": "partB"
+   },
+   {
+    "model": "interview"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}
