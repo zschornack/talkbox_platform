@@ -141,7 +141,7 @@ export function toggleChips({ options, value = [], onChange, label, counts }) {
 }
 
 /** Campo de etiquetas livres: digita e Enter (ou vírgula) para adicionar. */
-export function tagInput({ value = [], suggestions = [], onChange, placeholder = 'Digite e aperte Enter', label }) {
+export function tagInput({ value = [], suggestions = [], onChange, placeholder = 'Digite e aperte Enter', label, normalize = (v) => v }) {
   const tags = [...value];
   const listId = 'dl' + Math.random().toString(36).slice(2, 8);
   const input = h('input', { type: 'text', list: listId, placeholder, 'aria-label': label, autocomplete: 'off' });
@@ -160,7 +160,8 @@ export function tagInput({ value = [], suggestions = [], onChange, placeholder =
     const v = input.value.replace(/,/g, '').trim();
     input.value = '';
     if (!v) return;
-    const match = suggestions.find((s) => s.toLowerCase() === v.toLowerCase()) || v;
+    const n = normalize(v);
+    const match = suggestions.find((s) => s.toLowerCase() === n.toLowerCase()) || n;
     if (!tags.some((t) => t.toLowerCase() === match.toLowerCase())) {
       tags.push(match);
       paint();

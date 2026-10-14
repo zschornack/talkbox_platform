@@ -15,17 +15,33 @@ export async function newLessonDialog({ studentId } = {}) {
     : h('select', { required: true }, h('option', { value: '' }, 'Escolha…'), students.map((s) => h('option', { value: s.id }, s.name)));
   const title = h('input', { type: 'text', placeholder: 'Ex.: Natural Disasters', autocomplete: 'off', maxlength: '200' });
 
+  // pendentes e recado da última aula: entram na aula nova (marcado por padrão)
+  const carry = h('input', { type: 'checkbox', checked: true });
+  const carryText = h('span');
+  const carryRow = h('label.check-row', { hidden: true }, carry, carryText);
+  const showCarry = (st) => {
+    const n = st?.stop?.pending?.length || 0;
+    const msg = !!st?.stop?.message;
+    carryRow.hidden = !n && !msg;
+    carryText.textContent = [n ? `Trazer ${n === 1 ? 'o pendente' : `os ${n} pendentes`} da última aula` : '', msg ? (n ? 'e o recado' : 'Mostrar o recado do último professor') : ''].filter(Boolean).join(' ');
+  };
+  if (fixed) showCarry(fixed);
+  select?.addEventListener('change', async () => showCarry(select.value ? await api.student(select.value) : null));
+
   modal({
     title: fixed ? `Nova aula · ${fixed.name}` : 'Nova aula',
     submitLabel: 'Criar e abrir',
     body: [
       select ? field('Aluno ou turma', select) : null,
       field('Tema da aula', title, 'Dá para mudar depois, direto na aula.'),
+      carryRow,
     ],
     onSubmit: async () => {
       const sid = fixed?.id || select.value;
       if (!sid) throw new Error('Escolha o aluno.');
-      const lesson = await api.createLessonFor(sid, { title: title.value });
+      const lesson = !carryRow.hidden && carry.checked
+        ? await api.nextLesson(sid, { title: title.value })
+        : await api.createLessonFor(sid, { title: title.value });
       location.hash = `#/aula/${lesson.id}`;
     },
   });

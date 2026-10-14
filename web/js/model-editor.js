@@ -3,7 +3,7 @@ import { h, svgIcon, ICONS, dateTime, formatDate, parseHash } from './dom.js';
 import { api, autosaver, saveOnExit } from './api.js';
 import { mountBlock } from './block-view.js';
 import { mountFormatBar } from './format-bar.js';
-import { LEVELS, SKILLS } from './catalog.js';
+import { LEVELS, SKILLS, canonicalContent } from './catalog.js';
 import { toggleChips, tagInput, confirmDialog, toast, emptyState } from './ui.js';
 import { formatBadge, contentUniverse } from './models.js';
 
@@ -41,13 +41,35 @@ export async function renderModelEditor(root, id) {
   const paper = h('div.paper.model-paper', { style: { '--lesson-size': '20px' } },
     mountBlock(block, { changed: save, local: { panel: ['fill', 'deck', 'challenge'].includes(m.type) } }));
 
+  // ---------- importado: a revisar ----------
+  const reviewCard = h('section.side-card.review-card');
+  function paintReview() {
+    if (m.status !== 'review') return reviewCard.remove();
+    const noContent = !tags.content.length;
+    reviewCard.replaceChildren(
+      h('h2', 'A revisar'),
+      h('p.small', 'Este item veio de uma importação. Confira o texto e as etiquetas e aprove para ele entrar na biblioteca.'),
+      noContent ? h('p.small.warn', 'Falta a etiqueta de conteúdo.') : null,
+      h('button.btn.primary', {
+        type: 'button',
+        onClick: async () => {
+          await saver.flush();
+          m = await api.approveModel(id);
+          paintReview();
+          toast('Aprovado: já está na biblioteca.');
+        },
+      }, svgIcon(ICONS.check), 'Aprovar'));
+  }
+
   // ---------- etiquetas ----------
   const side = h('aside.model-side',
+    reviewCard,
     h('section.side-card',
       h('h2', 'Etiquetas'),
       h('div.field', h('span.field-label', 'Formato'), formatBadge(m.type)),
       h('div.field', h('span.field-label', 'Conteúdo'),
-        tagInput({ value: tags.content, suggestions: contentUniverse(all), label: 'Conteúdo', placeholder: 'Ex.: Past Simple (Enter)', onChange: (v) => { tags.content = v; save(); } })),
+        tagInput({ value: tags.content, suggestions: contentUniverse(all), label: 'Conteúdo', placeholder: 'Ex.: Past Simple (Enter)', normalize: canonicalContent, onChange: (v) => { tags.content = v; save(); paintReview(); } }),
+        h('div.field-hint', 'Sinônimos viram o nome oficial: "simple past" entra como Past Simple.')),
       h('div.field', h('span.field-label', 'Nível'),
         toggleChips({ options: LEVELS, value: tags.levels, label: 'Nível', onChange: (v) => { tags.levels = v; save(); } })),
       h('div.field', h('span.field-label', 'Habilidade'),
@@ -93,15 +115,15 @@ export async function renderModelEditor(root, id) {
         type: 'button',
         onClick: async () => {
           const msg = m.uses
-            ? `O modelo sai da biblioteca. As ${m.uses} aulas que já usaram continuam com a cópia delas.`
-            : 'O modelo sai da biblioteca de vez.';
-          if (!(await confirmDialog(msg, { title: `Excluir "${titleInput.value || m.title}"?`, confirmLabel: 'Excluir modelo', danger: true }))) return;
+            ? `O modelo sai da biblioteca, mas continua guardado. As ${m.uses} aulas que já usaram continuam com a cópia delas.`
+            : 'O modelo sai da biblioteca, mas continua guardado no banco.';
+          if (!(await confirmDialog(msg, { title: `Arquivar "${titleInput.value || m.title}"?`, confirmLabel: 'Arquivar modelo' }))) return;
           saver.cancel();
           await api.deleteModel(id);
-          toast('Modelo excluído.');
+          toast('Modelo arquivado.');
           location.hash = '#/modelos';
         },
-      }, svgIcon(ICONS.trash), 'Excluir'))
+      }, svgIcon(ICONS.archive), 'Arquivar'))
   );
 
   root.replaceChildren(
@@ -114,6 +136,7 @@ export async function renderModelEditor(root, id) {
           h('p.muted.small.center', 'Tudo aqui funciona como na aula: dá para conferir lacunas, sortear e passar as cartas para testar.')),
         side))
   );
+  paintReview();
   if (isNew || !m.title) titleInput.focus();
 
   const unmountBar = mountFormatBar(paper, () => false);

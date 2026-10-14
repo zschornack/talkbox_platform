@@ -1,5 +1,6 @@
 // Rotas da API: alunos, aulas, modelos e imagens.
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 import path from 'node:path';
 import * as db from './db.js';
 import { HttpError, readBody, readJson, router } from './http.js';
@@ -31,7 +32,20 @@ api.add('POST', '/api/students', async (req) => {
 
 api.add('GET', '/api/students/:id', (_req, { id }) => {
   const student = db.getStudent(id) || notFound('Aluno');
-  return { ...student, lessons: db.listLessons({ studentId: id }) };
+  return { ...student, lessons: db.listLessons({ studentId: id }), stop: db.whereWeStopped(id) };
+});
+
+// evolução de um conteúdo do mapa: ?content=Past%20Simple
+api.add('GET', '/api/students/:id/history', (_req, { id }, url) => {
+  db.getStudent(id) || notFound('Aluno');
+  return db.contentHistory(id, url.searchParams.get('content') || '');
+});
+
+// "Preparar próxima aula": já vem com os pendentes e o recado do último professor
+api.add('POST', '/api/students/:id/next-lesson', async (req, { id }) => {
+  db.getStudent(id) || notFound('Aluno');
+  const b = await readJson(req);
+  return [201, db.prepareNextLesson(id, { title: str(b.title, 200) || 'Nova aula', emptyDoc })];
 });
 
 api.add('PUT', '/api/students/:id', async (req, { id }) => {
@@ -67,13 +81,29 @@ api.add('GET', '/api/lessons', (_req, _p, url) =>
 
 api.add('GET', '/api/lessons/:id', (_req, { id }) => db.getLesson(id) || notFound('Aula'));
 
+const DATE = /^\d{4}-\d{2}-\d{2}$/;
 api.add('PUT', '/api/lessons/:id', async (req, { id }) => {
-  const { title, doc, state } = await readJson(req);
-  const lesson = db.updateLesson(id, { title: str(title, 200), doc, state }) || notFound('Aula');
+  const { title, doc, state, date } = await readJson(req);
+  if (date !== undefined && !DATE.test(String(date))) throw new HttpError(400, 'Data inválida (use AAAA-MM-DD)');
+  const lesson = db.updateLesson(id, { title: str(title, 200), doc, state, date }) || notFound('Aula');
   return { id, updatedAt: lesson.updatedAt };
 });
 
-api.add('DELETE', '/api/lessons/:id', (_req, { id }) => (db.deleteLesson(id) ? { ok: true } : notFound('Aula')));
+// "Excluir" arquiva: a aula sai das listas, mas nada se perde
+api.add('DELETE', '/api/lessons/:id', (_req, { id }) => (db.archiveLesson(id) ? { ok: true } : notFound('Aula')));
+
+// Finalizar aula (handover)
+api.add('GET', '/api/lessons/:id/finish', (_req, { id }) => db.finishInfo(id) || notFound('Aula'));
+api.add('POST', '/api/lessons/:id/finish', async (req, { id }) => {
+  const b = await readJson(req);
+  const assessments = Object.fromEntries(
+    Object.entries(b.assessments || {}).filter(([k, v]) => str(k) && (v === 'good' || v === 'practicing'))
+  );
+  const out = db.finishLesson(id, { lastBlockId: b.lastBlockId || null, assessments, message: str(b.message) ?? '' });
+  return out ? { ...out, lesson: db.getLesson(id) } : notFound('Aula');
+});
+
+api.add('POST', '/api/pending/:id/discard', (_req, { id }) => (db.discardPending(id) ? { ok: true } : notFound('Pendência')));
 
 api.add('POST', '/api/lessons/:id/duplicate', async (req, { id }) => {
   const src = db.getLesson(id) || notFound('Aula');
@@ -81,11 +111,15 @@ api.add('POST', '/api/lessons/:id/duplicate', async (req, { id }) => {
   const studentId = b.studentId === undefined ? src.studentId : b.studentId;
   if (studentId && !db.getStudent(studentId)) notFound('Aluno');
   const title = str(b.title, 200) || src.title;
-  return [201, db.createLesson({ title, studentId, doc: { ...src.doc, title } })];
+  // a cópia não carrega pendências (elas pertencem à aula original)
+  const blocks = (src.doc.blocks || []).map(({ pending, ...b }) => b);
+  return [201, db.createLesson({ title, studentId, doc: { ...src.doc, title, blocks } })];
 });
 
 // ---------------- modelos ----------------
-api.add('GET', '/api/models', (_req, _p, url) => db.listModels({ studentId: url.searchParams.get('student') || undefined }));
+api.add('GET', '/api/models', (_req, _p, url) =>
+  db.listModels({ studentId: url.searchParams.get('student') || undefined, status: url.searchParams.get('status') || undefined })
+);
 
 api.add('POST', '/api/models', async (req) => {
   const b = await readJson(req);
@@ -111,13 +145,34 @@ api.add('POST', '/api/models/:id/restore', async (req, { id }) => {
   return db.restoreModelVersion(id, Number(versionId)) || notFound('Versão');
 });
 
-api.add('DELETE', '/api/models/:id', (_req, { id }) => (db.deleteModel(id) ? { ok: true } : notFound('Modelo')));
+// "Excluir" arquiva: o modelo sai da biblioteca, mas as aulas que o usaram continuam contando
+api.add('DELETE', '/api/models/:id', (_req, { id }) => (db.archiveModel(id) ? { ok: true } : notFound('Modelo')));
+
+// fila "a revisar" (itens importados)
+api.add('POST', '/api/models/:id/approve', (_req, { id }) => db.approveModel(id) || notFound('Modelo'));
+
+// ---------------- importação ----------------
+api.add('GET', '/api/imports', () => db.listImports());
+api.add('POST', '/api/imports/:id/undo', (_req, { id }) => {
+  if (!db.listImports().some((i) => i.id === id)) notFound('Lote');
+  return { archived: db.undoImport(id) };
+});
+
+// ---------------- cópia de segurança e exportação ----------------
+api.add('POST', '/api/backup', () => ({ file: path.basename(db.backupNow()) }));
+api.add('GET', '/api/export', (_req, _p, url) => {
+  const data = db.exportAll();
+  if (url.searchParams.get('download') !== '1') return data;
+  const name = `talkbox-${data.exportedAt.slice(0, 10)}.json`;
+  return [200, data, { 'Content-Disposition': `attachment; filename="${name}"` }];
+});
 
 // ---------------- resumo para a Home ----------------
 api.add('GET', '/api/overview', () => ({
   students: db.listStudents({ active: true }),
   recentLessons: db.listLessons({ limit: 6 }),
   modelCount: db.countModels(),
+  stats: db.stats(),
 }));
 
 // ---------------- imagens (o navegador já converte para WebP) ----------------
@@ -125,8 +180,10 @@ api.add('POST', '/api/uploads', async (req) => {
   if (!String(req.headers['content-type']).startsWith('image/webp')) throw new HttpError(415, 'Envie a imagem em WebP');
   const buf = await readBody(req, 8 * 1024 * 1024);
   if (!buf.length) throw new HttpError(400, 'Imagem vazia');
-  const name = `${db.newId()}.webp`;
-  fs.writeFileSync(path.join(db.UPLOADS_DIR, name), buf);
+  // nome = impressão digital do arquivo: a mesma imagem enviada duas vezes é guardada uma vez só
+  const name = `${crypto.createHash('sha256').update(buf).digest('hex').slice(0, 32)}.webp`;
+  const file = path.join(db.UPLOADS_DIR, name);
+  if (!fs.existsSync(file)) fs.writeFileSync(file, buf);
   return [201, { url: `/uploads/${name}` }];
 });
 

@@ -65,6 +65,7 @@ export function mountBlock(block, opts) {
 export function copyBlock(block, uidFn) {
   const copy = JSON.parse(JSON.stringify(block));
   copy.id = uidFn();
+  delete copy.pending; // a cópia não é a retomada da pendência
   (copy.items || []).forEach((it) => (it.id = uidFn('i')));
   return copy;
 }

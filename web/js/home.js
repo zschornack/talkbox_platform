@@ -37,7 +37,7 @@ export async function renderHome(root) {
       ? h('ul.rows',
           data.recentLessons.map((l) =>
             h('li', h('a.row-link', { href: `#/aula/${l.id}` },
-              h('span.row-main', h('strong', l.title), h('span.muted', l.student || 'Sem aluno')),
+              h('span.row-main', h('strong', l.title), h('span.muted', [l.student || 'Sem aluno', l.status === 'preparing' ? ' · em preparação' : ''].join(''))),
               h('span.row-side', relativeDate(l.updatedAt), svgIcon(ICONS.arrow, 16))))
           ))
       : h('p.muted.pad', 'Nenhuma aula ainda. Use "Nova aula" acima.')
@@ -64,7 +64,9 @@ export async function renderHome(root) {
   models.forEach((m) => (byType[m.type] = (byType[m.type] || 0) + 1));
   const modelsCard = h(
     'section.card.panel-card.models-card',
-    h('div.card-head', h('h2', 'Modelos'), h('a.link', { href: '#/modelos' }, `Abrir biblioteca (${models.length})`)),
+    h('div.card-head', h('h2', 'Modelos'),
+      data.stats?.modelsToReview ? h('a.badge.review', { href: '#/modelos?revisar=1' }, `${data.stats.modelsToReview} a revisar`) : null,
+      h('a.link', { href: '#/modelos' }, `Abrir biblioteca (${models.length})`)),
     h('div.format-grid',
       MENU.filter((t) => t !== 'notes').map((t) =>
         h('a.format-tile', { href: `#/modelos?formato=${t}` },

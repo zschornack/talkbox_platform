@@ -90,18 +90,26 @@ export function escapeHtml(s) {
   return String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 }
 
+/** "2026-10-13" é a data do dia (sem fuso); um carimbo completo é convertido para o horário local. */
+const toDate = (iso) => (/^\d{4}-\d{2}-\d{2}$/.test(iso) ? new Date(`${iso}T12:00:00`) : new Date(iso));
+
 export function formatDate(iso) {
   if (!iso) return '—';
-  return new Date(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+  return toDate(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
 }
-export const shortDate = (iso) => (iso ? new Date(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }) : '—');
+export const shortDate = (iso) => (iso ? toDate(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' }) : '—');
+/** Data de hoje no formato do banco (AAAA-MM-DD), no horário local. */
+export const todayISO = () => {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+};
 export const dateTime = (iso) =>
   new Date(iso).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
 
 /** "hoje", "ontem", "há 3 dias" ou a data. */
 export function relativeDate(iso) {
   if (!iso) return '—';
-  const d = new Date(iso);
+  const d = toDate(iso);
   const start = (x) => new Date(x.getFullYear(), x.getMonth(), x.getDate()).getTime();
   const days = Math.round((start(new Date()) - start(d)) / 86400000);
   if (days <= 0) return 'hoje';

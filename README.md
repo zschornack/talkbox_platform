@@ -26,12 +26,40 @@ Para parar o servidor, aperte `Ctrl + C` no terminal.
 
 Tudo fica na pasta `data/`, dentro do projeto:
 
-- `data/talkbox.db`: alunos, aulas e modelos.
-- `data/uploads/`: as imagens, em WebP.
+- `data/talkbox.db`: alunos, aulas, modelos, avaliações e pendências.
+- `data/uploads/`: as imagens, em WebP. A mesma imagem enviada duas vezes é guardada uma vez só.
+- `data/backups/`: **cópia de segurança automática**, uma por dia (guarda as últimas 30), com as imagens.
 
-Para fazer backup, basta copiar essa pasta. Ela não vai para o GitHub.
+No menu lateral também tem **Fazer cópia de segurança** e **Baixar todos os dados** (um arquivo só, com tudo).
+A pasta `data/` não vai para o GitHub.
 
-## O que já funciona (versão 0.2)
+**Nada é apagado.** "Excluir" uma aula ou um modelo agora **arquiva**: some das listas, mas fica guardado, e o histórico continua certo. O próprio banco recusa apagar alunos, aulas, modelos, versões e avaliações.
+
+**Atualizar da versão 0.3**: é só `git pull` e `npm start`. O banco é atualizado sozinho na primeira vez, sem perder nada (o mapa de cada aluno vira o começo do histórico de evolução).
+
+## Novidades da versão 0.4
+
+**Finalizar aula (handover)**: botão na barra de cima da aula. Uma tela só:
+1. **Até onde chegamos?** Clique no último bloco feito. O que vem depois fica **pendente** (anotações e textos vazios não contam).
+2. **Como ficaram os conteúdos?** Praticando ou Já está bom, para cada conteúdo da aula. Dá para acrescentar outro.
+3. **Recado para o próximo professor.** Vazio = está tudo certo.
+
+Depois aparece o resumo, com o botão de exportar o PDF e o link para a ficha.
+
+**Ficha do aluno**
+- **Onde paramos**: a última aula finalizada, o que foi visto, o que ficou pendente (dá para descartar uma pendência) e o recado.
+- **Preparar próxima aula**: a aula nova já vem com os pendentes, marcados como "Pendente da aula anterior", e com o recado no topo (o recado não sai no PDF).
+- **Mapa de conteúdos**: o Finalizar aula atualiza sozinho. Clicar num conteúdo continua corrigindo à mão. Passe o mouse para ver desde quando está assim, e o botão **Evolução** mostra todas as mudanças, com a data e a aula.
+- **Histórico**: data, número da aula e "em preparação" para as que ainda não foram dadas. "Conteúdo visto" mostra só o que foi feito até o corte.
+- A data da aula fica no topo da aula e pode ser mudada (para aulas preparadas antes).
+
+**Sinônimos de conteúdo**: a lista oficial de conteúdos (em `web/js/catalog.js`) guarda outros nomes para cada conteúdo. "simple past" e "passado simples" viram **Past Simple** nas etiquetas, na busca da biblioteca e no Ctrl+K. Assim o mapa nunca tem duas linhas para a mesma coisa.
+
+**"Visto em"**: numa aula finalizada, só conta o que foi feito até o último bloco. Aulas ainda não finalizadas contam por inteiro.
+
+**Fila "a revisar"** (preparando a importação do Google Drive): pacotes com `"review": true` entram como "a revisar". Na biblioteca aparece o quadro **A revisar**, com o filtro, os lotes e **Desfazer lote**. No modelo, o botão **Aprovar**. Itens sem conteúdo ganham o que for citado no título ou no texto, pelos sinônimos.
+
+## O que já funciona (versão 0.2 e 0.3)
 
 **Início**
 - Menu lateral com Início, Alunos e Modelos.
@@ -64,7 +92,7 @@ Para fazer backup, basta copiar essa pasta. Ela não vai para o GitHub.
 - Qualquer bloco da aula pode virar modelo com **Salvar como modelo**. Se o bloco veio de um modelo, dá para atualizar esse modelo ou criar um novo.
 
 **Aulas prontas (pasta `content/`)**
-- Cada arquivo `.json` dessa pasta traz um aluno, uma aula e as atividades dela.
+- Cada arquivo `.json` dessa pasta traz um aluno, uma aula e as atividades dela. Opcionais: `lesson.date`, `lesson.number`, `lesson.finished` (para registrar uma aula já dada) e `review: true` (itens entram "a revisar"). O formato completo está no começo de `server/content.js`.
 - Ao iniciar, o servidor importa cada arquivo novo **uma vez**:
   - cria o aluno, ou usa o que já existe com o mesmo nome;
   - salva as atividades em Modelos;
@@ -138,7 +166,7 @@ Para fazer backup, basta copiar essa pasta. Ela não vai para o GitHub.
 
 ## Próximos patches
 
-1. **Finalizar aula (handover)**: até onde chegamos, como ficaram os conteúdos e recado para o próximo professor. Isso alimenta "Onde paramos" e o mapa de conteúdos na ficha.
+1. **Importação do Google Drive**, em lotes, usando a fila "a revisar".
 2. **Modelos de aula**: salvar uma aula inteira como modelo e começar aulas novas a partir dele.
 3. Tabela e imagem como elementos livres, que podem entrar soltos na aula ou dentro de uma explicação.
 4. Novos formatos: ordenar frases, áudio, imagens lado a lado e cards de foto para revelar.
@@ -151,7 +179,7 @@ server/               servidor (Node puro + SQLite embutido)
   start.js            confere a versão do Node e sobe o servidor
   index.js            arquivos do app e imagens
   api.js              rotas da API: alunos, aulas, modelos, imagens
-  db.js               banco de dados e migrações
+  db.js               banco de dados, migrações e regras (handover, pendências, mapa, arquivar, cópia de segurança)
   seed.js             dados de exemplo (Julia + biblioteca inicial)
   content.js          importa as aulas prontas da pasta content/
 content/              aulas prontas (uma por arquivo .json)
@@ -162,16 +190,19 @@ web/                  app do professor (JavaScript puro, sem build)
   js/models.js        biblioteca de modelos js/model-editor.js  editar modelo
   js/model-picker.js  painel "Inserir modelos" na aula
   js/editor.js        a aula: salvar automático, caneta, menus
+  js/handover.js      Finalizar aula
   js/block-view.js    mostra/edita um bloco (usado na aula e nos modelos)
   js/blocks/          um arquivo por tipo de bloco (registrados em index.js)
-  js/catalog.js       listas fixas: níveis, habilidades, mapa de conteúdos
+  js/catalog.js       listas fixas: níveis, habilidades, conteúdos oficiais com sinônimos (usado também pelo servidor)
   css/app.css         todo o visual: paleta, tipografia e PDF (@media print)
 test/                 testes (npm test)
 ```
 
 Na aula, o **conteúdo** (`doc`: os blocos) fica separado do que **acontece na aula** (`state`: respostas das lacunas, caneta, tamanho da fonte). Isso segue o item 9.10 dos requisitos e prepara a versão 2, em que cada aluno terá as próprias respostas.
 
-Um **modelo** guarda um bloco pronto. Quando entra numa aula, o bloco é copiado com ids novos e ganha `source: { modelId, title }`. É assim que o sistema conta em quantas aulas o modelo foi usado e mostra o "visto em".
+Um **modelo** guarda um bloco pronto. Quando entra numa aula, o bloco é copiado com ids novos e ganha `source: { modelId, title }`. A cada salvamento da aula, a tabela `block_uses` registra a posição de cada bloco e de qual modelo veio: é dela que saem o "usado em", o "visto em" e os conteúdos da aula. Um bloco que é retomada de uma pendência tem `pending: <id>`.
+
+O **mapa de conteúdos** vem da tabela `assessments`: cada avaliação (do Finalizar aula ou de um clique na ficha) é uma linha, e o status atual é a mais recente. A versão do banco fica em `PRAGMA user_version`; cada migração nova sobe esse número.
 
 Para criar um tipo de bloco novo, crie um arquivo em `web/js/blocks/` com `name`, `hint`, `create()` e `render(ctx)`, registre-o em `web/js/blocks/index.js` e adicione um resumo dele em `web/js/blocks/summary.js`. Ele passa a aparecer na aula e nos Modelos automaticamente.
 

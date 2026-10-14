@@ -7,18 +7,22 @@
 //   "id": "identificador-unico",
 //   "student": { "name": "Victor", "level": "B2", "goal": "...", "notes": "..." },
 //   "models": [ { "key": "x", "title": "...", "tags": { "content": [], "levels": [], "skills": [] }, "block": { "type": "fill", ... } } ],
-//   "lesson": { "title": "...", "subtitle": "...", "level": "B2", "tags": [], "blocks": [ { "model": "x" }, { "type": "notes", ... } ] }
+//   "lesson": { "title": "...", "subtitle": "...", "level": "B2", "tags": [], "blocks": [ { "model": "x" }, { "type": "notes", ... } ],
+//               "date": "2026-10-13", "number": 23,                       (opcionais)
+//               "finished": { "last": "x" | "all" | null, "assessments": { "Past Simple": "practicing" }, "message": "" } }  (opcional)
+//   "review": true   (opcional: os modelos entram "a revisar", como na importação do Drive)
 // }
+// Modelos sem etiqueta de conteúdo recebem as que forem citadas no título ou no texto (pelos sinônimos).
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as db from './db.js';
 import { bid } from './templates.js';
+import { contentsInText } from '../web/js/catalog.js';
 
 const DEFAULT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'content');
 const CONTENT_DIR = process.env.TALKBOX_CONTENT ? path.resolve(process.env.TALKBOX_CONTENT) : DEFAULT_DIR;
 
-db.db.exec('CREATE TABLE IF NOT EXISTS imports (id TEXT PRIMARY KEY, file TEXT NOT NULL, imported_at TEXT NOT NULL)');
 
 /** Dá ids para o bloco e para os itens internos que vierem sem id. */
 function withIds(block) {
@@ -32,8 +36,9 @@ export function importPack(pack, file = '') {
   if (!pack?.id) throw new Error(`Pacote sem "id" (${file})`);
   if (db.db.prepare('SELECT 1 FROM imports WHERE id = ?').get(pack.id)) return null;
 
-  db.db.exec('BEGIN');
-  try {
+  return db.transaction(() => {
+    db.db.prepare('INSERT INTO imports (id, file, imported_at, review) VALUES (?, ?, ?, ?)').run(pack.id, file, new Date().toISOString(), pack.review ? 1 : 0);
+
     let student = null;
     if (pack.student?.name) {
       const found = db.listStudents().find((s) => s.name.toLowerCase() === pack.student.name.toLowerCase());
@@ -48,11 +53,18 @@ export function importPack(pack, file = '') {
     const models = {};
     for (const m of pack.models || []) {
       const block = withIds(m.block);
-      models[m.key] = db.createModel({ title: m.title, type: block.type, block, tags: m.tags });
+      const tags = { ...(m.tags || {}) };
+      if (!(tags.content || []).length) tags.content = contentsInText(`${m.title} ${JSON.stringify(block)}`);
+      models[m.key] = db.createModel({
+        title: m.title, type: block.type, block, tags,
+        status: pack.review ? 'review' : 'published',
+        importId: pack.id,
+      });
     }
 
     let lesson = null;
     if (pack.lesson) {
+      const keyOfBlock = [];
       const blocks = (pack.lesson.blocks || []).map((entry) => {
         if (entry.model) {
           const m = models[entry.model];
@@ -61,13 +73,17 @@ export function importPack(pack, file = '') {
           copy.id = bid();
           for (const key of ['items', 'pairs']) (copy[key] || []).forEach((it) => (it.id = bid()));
           copy.source = { modelId: m.id, title: m.title };
+          keyOfBlock.push(entry.model);
           return copy;
         }
+        keyOfBlock.push(entry.key || null);
         return withIds(entry);
       });
       lesson = db.createLesson({
         title: pack.lesson.title,
         studentId: student?.id || null,
+        date: pack.lesson.date,
+        number: pack.lesson.number,
         doc: {
           v: 1,
           title: pack.lesson.title,
@@ -77,15 +93,20 @@ export function importPack(pack, file = '') {
           blocks,
         },
       });
+      const fin = pack.lesson.finished;
+      if (fin && student) {
+        let lastBlockId = null;
+        if (fin.last === 'all') lastBlockId = blocks.at(-1)?.id || null;
+        else if (fin.last) {
+          const i = keyOfBlock.lastIndexOf(fin.last);
+          if (i < 0) throw new Error(`"finished.last" aponta para "${fin.last}", que não está na aula (${pack.id})`);
+          lastBlockId = blocks[i].id;
+        }
+        db.finishLesson(lesson.id, { lastBlockId, assessments: fin.assessments || {}, message: fin.message || '' });
+      }
     }
-
-    db.db.prepare('INSERT INTO imports (id, file, imported_at) VALUES (?, ?, ?)').run(pack.id, file, new Date().toISOString());
-    db.db.exec('COMMIT');
     return { student, models: Object.keys(models).length, lesson };
-  } catch (err) {
-    db.db.exec('ROLLBACK');
-    throw err;
-  }
+  });
 }
 
 export function importContentDir(dir = CONTENT_DIR) {

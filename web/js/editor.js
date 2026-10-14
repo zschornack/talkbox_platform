@@ -10,6 +10,7 @@ import { mountBlock, copyBlock } from './block-view.js';
 import { openModelPicker } from './model-picker.js';
 import { saveAsModelDialog } from './models.js';
 import { toast } from './ui.js';
+import { openFinishDialog } from './handover.js';
 
 const SIZES = [16, 18, 20, 22, 24, 28, 32];
 
@@ -53,9 +54,10 @@ export async function renderEditor(root, id, { openExport = false } = {}) {
     markState();
   };
 
+  const printDate = h('span', formatDate(lesson.date || lesson.createdAt));
   const head = h(
     'header.lesson-head',
-    h('div.print-head', h('span', lesson.student ? `Aluno(a): ${lesson.student}` : ''), h('span', formatDate(lesson.createdAt))),
+    h('div.print-head', h('span', lesson.student ? `Aluno(a): ${lesson.student}` : ''), printDate),
     h(
       'div.chips',
       editable(h('span.chip.level'), {
@@ -66,7 +68,19 @@ export async function renderEditor(root, id, { openExport = false } = {}) {
         onChange: (v) => { doc.level = v.toUpperCase(); markDoc(); },
       }),
       (doc.tags || []).map((t) => h('span.chip', t)),
-      lesson.student ? h('span.chip', `Aula · ${lesson.student}`) : null
+      lesson.student ? h('span.chip', `Aula${lesson.number ? ` ${lesson.number}` : ''} · ${lesson.student}`) : null,
+      h('label.date-chip', { title: 'Data da aula' },
+        h('span.sr-only', 'Data da aula'),
+        h('input', {
+          type: 'date',
+          value: lesson.date || '',
+          onChange: (e) => {
+            if (!e.target.value) return;
+            lesson.date = e.target.value;
+            printDate.textContent = formatDate(lesson.date);
+            saver.queue({ date: lesson.date });
+          },
+        }))
     ),
     editable(h('h1.lesson-title'), {
       value: doc.title,
@@ -83,14 +97,21 @@ export async function renderEditor(root, id, { openExport = false } = {}) {
     })
   );
 
+  // recado do professor anterior (aula criada pela ficha): só na tela, nunca no PDF
+  const received = lesson.status === 'preparing' && lesson.receivedMessage
+    ? h('aside.received-note', { role: 'note' },
+        h('div', h('strong', 'Recado do último professor'), h('p', lesson.receivedMessage)),
+        h('button.icon-btn', { type: 'button', 'aria-label': 'Esconder recado', onClick: (e) => e.currentTarget.parentElement.remove() }, svgIcon(ICONS.x)))
+    : null;
+
   const blocksEl = h('div.blocks');
   const addEnd = h('div.add-end', h('button.btn', { type: 'button', onClick: (e) => openMenu(e.currentTarget, doc.blocks.length) }, '+ Inserir bloco'));
-  paper.append(head, blocksEl, addEnd);
+  paper.append(...[received, head, blocksEl, addEnd].filter(Boolean));
 
   // ---------- blocos ----------
   function shell(block) {
     const index = () => doc.blocks.indexOf(block);
-    return mountBlock(block, {
+    const el = mountBlock(block, {
       changed: markDoc,
       state: () => (state.blocks[block.id] ||= {}),
       stateChanged: markState,
@@ -112,6 +133,8 @@ export async function renderEditor(root, id, { openExport = false } = {}) {
           ? []
           : [{ label: 'Salvar como modelo', onClick: () => saveAsModelDialog(block, { level: doc.level, onSaved: (m) => { block.source = { modelId: m.id, title: m.title }; markDoc(); } }) }],
     });
+    if (block.pending) el.classList.add('is-pending');
+    return el;
   }
 
   function renderBlocks() {
@@ -254,6 +277,26 @@ export async function renderEditor(root, id, { openExport = false } = {}) {
   function refreshPenButtons() { clearBtn.hidden = state.pen.length === 0; }
   refreshPenButtons();
 
+  // ---------- finalizar aula ----------
+  const finishSlot = h('span.finish-slot');
+  const paintFinish = () => {
+    if (lesson.status === 'done') {
+      const when = lesson.handover?.finishedAt;
+      finishSlot.replaceChildren(h('span.done-badge', { title: when ? `Finalizada em ${formatDate(when)}` : 'Aula finalizada' }, svgIcon(ICONS.check, 16), 'Finalizada'));
+    } else if (lesson.studentId) {
+      finishSlot.replaceChildren(h('button.btn.primary', { type: 'button', onClick: () => doFinish() }, 'Finalizar aula'));
+    } else {
+      finishSlot.replaceChildren(h('button.btn.primary', { type: 'button', disabled: true, title: 'Ligue a aula a um aluno para finalizar' }, 'Finalizar aula'));
+    }
+  };
+  const doFinish = () =>
+    openFinishDialog({
+      lesson,
+      flush: () => saver.flush(),
+      onFinished: (out) => { Object.assign(lesson, { status: 'done', handover: out.lesson?.handover }); paintFinish(); },
+      onExport: () => doExport(),
+    }).catch((err) => toast(err.message));
+
   // ---------- barra superior (meio apagada até passar o mouse) ----------
   const doExport = () => openExportDialog({ lesson, doc, flush: () => saver.flush() });
   const chrome = h(
@@ -272,7 +315,7 @@ export async function renderEditor(root, id, { openExport = false } = {}) {
         h('button', { type: 'button', 'aria-label': 'Aumentar fonte', style: { fontSize: '19px' }, onClick: () => setSize(1) }, 'A+')
       ),
       h('button.btn', { type: 'button', onClick: doExport }, 'Exportar PDF'),
-      h('button.btn.primary', { type: 'button', disabled: true, title: 'Chega num próximo patch (handover)' }, 'Finalizar aula')
+      finishSlot
     )
   );
 
@@ -296,6 +339,7 @@ export async function renderEditor(root, id, { openExport = false } = {}) {
   cleanups.push(() => document.querySelector('.drawer-bg')?.remove());
 
   renderBlocks();
+  paintFinish();
   root.replaceChildren(h('div.lesson-wrap', chrome, paper));
   if (openExport) setTimeout(doExport, 300);
 

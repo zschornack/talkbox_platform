@@ -63,8 +63,9 @@ export function router() {
       if (r.method !== req.method) continue;
       const params = Object.fromEntries(r.keys.map((k, i) => [k, decodeURIComponent(m[i + 1])]));
       const out = await r.handler(req, params, url);
-      const [status, body] = Array.isArray(out) && typeof out[0] === 'number' ? out : [200, out];
-      return send(res, status, body ?? {});
+      // [status, corpo] ou [status, corpo, cabeçalhos] (ex.: arquivo para baixar)
+      const [status, body, headers] = Array.isArray(out) && typeof out[0] === 'number' ? out : [200, out];
+      return send(res, status, body ?? {}, headers);
     }
     throw new HttpError(pathMatched ? 405 : 404, pathMatched ? 'Método não permitido' : 'Rota não encontrada');
   };

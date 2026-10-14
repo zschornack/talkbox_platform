@@ -3,7 +3,7 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { UPLOADS_DIR } from './db.js';
+import { UPLOADS_DIR, backupNow } from './db.js';
 import { send } from './http.js';
 import api from './api.js';
 import { seed } from './seed.js';
@@ -61,6 +61,13 @@ const server = http.createServer(async (req, res) => {
 
 seed();
 importContentDir();
+
+// cópia de segurança: ao abrir e depois uma vez por dia (guarda as últimas 30, em data/backups/)
+const backup = () => {
+  try { backupNow(); } catch (err) { console.error('  Não consegui fazer a cópia de segurança:', err.message); }
+};
+backup();
+setInterval(backup, 6 * 60 * 60 * 1000).unref();
 
 server.listen(PORT, () => {
   console.log(`\n  TalkBox pronto → abra http://localhost:${PORT}\n`);

@@ -4,8 +4,8 @@ import { api } from './api.js';
 import { appShell, pageHead } from './layout.js';
 import { BLOCKS, MENU } from './blocks/index.js';
 import { summarize } from './blocks/summary.js';
-import { LEVELS, SKILLS, CONTENT_SUGGESTIONS } from './catalog.js';
-import { toggleChips, tagInput, modal, field, toast, emptyState } from './ui.js';
+import { LEVELS, SKILLS, CONTENT_SUGGESTIONS, splitContentQuery, normalizeTerm, canonicalContent } from './catalog.js';
+import { toggleChips, tagInput, modal, field, toast, emptyState, confirmDialog } from './ui.js';
 import { toText } from './sanitize.js';
 import { copyBlock } from './block-view.js';
 
@@ -22,11 +22,16 @@ export const contentUniverse = (models) =>
 
 /** Filtro combinado: "ou" dentro de cada eixo, "e" entre eixos (requisitos 7.1). */
 export function matchModel(m, f) {
-  const q = (f.q || '').trim().toLowerCase();
-  if (q) {
-    const hay = [m.title, formatName(m.type), ...m.tags.content, ...m.tags.levels, ...m.tags.skills, ...summarize(m.block).lines].join(' ').toLowerCase();
-    if (!q.split(/\s+/).every((w) => hay.includes(w))) return false;
+  if ((f.q || '').trim()) {
+    const hay = normalizeTerm([m.title, formatName(m.type), ...m.tags.content, ...m.tags.levels, ...m.tags.skills, ...summarize(m.block).lines].join(' '));
+    // conteúdos citados na busca valem pelo nome oficial e por qualquer sinônimo ("simple past" acha Past Simple)
+    const { contents, rest } = splitContentQuery(f.q);
+    for (const c of contents) {
+      if (!m.tags.content.includes(c) && !hay.includes(normalizeTerm(c))) return false;
+    }
+    if (rest && !rest.split(/\s+/).every((w) => hay.includes(w))) return false;
   }
+  if (f.review && m.status !== 'review') return false;
   if (f.formats?.length && !f.formats.includes(m.type)) return false;
   if (f.levels?.length && !m.tags.levels.some((l) => f.levels.includes(l))) return false;
   if (f.skills?.length && !m.tags.skills.some((s) => f.skills.includes(s))) return false;
@@ -38,6 +43,7 @@ export function modelCard(m, { href, compact = false, selected, onToggle } = {})
   const s = summarize(m.block);
   const inner = [
     h('div.mc-top', formatBadge(m.type),
+      m.status === 'review' ? h('span.badge.review', { title: 'Importado: confira e aprove' }, 'a revisar') : null,
       m.seenAt ? h('span.seen', { title: 'Este aluno já viu este modelo' }, `visto em ${shortDate(m.seenAt)}`) : null),
     s.image ? h('img.mc-thumb', { src: s.image, alt: '', loading: 'lazy' }) : null,
     h('h3.mc-title', m.title),
@@ -116,7 +122,7 @@ export async function saveAsModelDialog(block, { level, onSaved } = {}) {
       mode,
       field('Nome do modelo', title),
       h('div.field', h('span.field-label', 'Conteúdo'),
-        tagInput({ value: tags.content, suggestions: contentUniverse(models), onChange: (v) => (tags.content = v), label: 'Conteúdo', placeholder: 'Ex.: Past Simple (Enter para adicionar)' })),
+        tagInput({ value: tags.content, suggestions: contentUniverse(models), normalize: canonicalContent, onChange: (v) => (tags.content = v), label: 'Conteúdo', placeholder: 'Ex.: Past Simple (Enter para adicionar)' })),
       h('div.field', h('span.field-label', 'Nível'), toggleChips({ options: LEVELS, value: tags.levels, onChange: (v) => (tags.levels = v), label: 'Nível' })),
       h('div.field', h('span.field-label', 'Habilidade'), toggleChips({ options: SKILLS, value: tags.skills, onChange: (v) => (tags.skills = v), label: 'Habilidade' })),
       h('p.muted.small', 'O modelo guarda o bloco como está agora. As aulas que já usam este modelo não mudam.'),
@@ -146,6 +152,7 @@ export async function renderModels(root) {
     skills: query.getAll('habilidade'),
     content: query.getAll('conteudo'),
     sort: query.get('ordem') || 'recent',
+    review: query.get('revisar') === '1',
   };
 
   const syncUrl = () => {
@@ -156,6 +163,7 @@ export async function renderModels(root) {
     f.skills.forEach((x) => p.append('habilidade', x));
     f.content.forEach((x) => p.append('conteudo', x));
     if (f.sort !== 'recent') p.set('ordem', f.sort);
+    if (f.review) p.set('revisar', '1');
     const qs = p.toString();
     history.replaceState(null, '', '#/modelos' + (qs ? '?' + qs : ''));
   };
@@ -169,7 +177,32 @@ export async function renderModels(root) {
 
   const grid = h('div.model-grid');
   const resultInfo = h('span.muted', { role: 'status' });
-  const clearBtn = h('button.link-btn', { type: 'button', onClick: () => { Object.assign(f, { q: '', formats: [], levels: [], skills: [], content: [] }); search.value = ''; chips.forEach((c) => c.setValue([])); update(); } }, 'Limpar filtros');
+  const clearBtn = h('button.link-btn', { type: 'button', onClick: () => { Object.assign(f, { q: '', formats: [], levels: [], skills: [], content: [], review: false }); search.value = ''; chips.forEach((c) => c.setValue([])); paintReview(); update(); } }, 'Limpar filtros');
+
+  // fila "a revisar": itens importados que ainda não foram conferidos
+  const toReview = models.filter((m) => m.status === 'review').length;
+  const reviewBox = h('div.review-box');
+  const paintReview = async () => {
+    if (!toReview) return reviewBox.replaceChildren();
+    const toggle = h('button.tchip', {
+      type: 'button', class: f.review ? 'on' : '', 'aria-pressed': String(f.review),
+      onClick: () => { f.review = !f.review; paintReview(); update(); },
+    }, 'Só os itens a revisar', h('span.count', String(toReview)));
+    const lots = f.review ? (await api.imports()).filter((i) => i.toReview && !i.undoneAt) : [];
+    reviewBox.replaceChildren(
+      h('h3', 'A revisar'),
+      h('p.muted.small', 'Itens importados entram aqui. Abra cada um, confira as etiquetas e aprove.'),
+      toggle,
+      lots.length ? h('ul.lots', lots.map((l) =>
+        h('li', h('span', `${l.file || l.id} · ${l.toReview} a revisar`),
+          h('button.link-btn', { type: 'button', onClick: async () => {
+            if (!(await confirmDialog(`Os ${l.toReview} itens deste lote que ainda estão "a revisar" saem da biblioteca. Os que você já aprovou ficam.`, { title: 'Desfazer lote?', confirmLabel: 'Desfazer lote' }))) return;
+            await api.undoImport(l.id);
+            toast('Lote desfeito.');
+            window.dispatchEvent(new HashChangeEvent('hashchange'));
+          } }, 'Desfazer lote')))) : null);
+  };
+  paintReview();
 
   const search = h('input.search', { type: 'search', value: f.q, placeholder: 'Buscar…', 'aria-label': 'Buscar modelos', onInput: (e) => { f.q = e.target.value; update(); } });
   const chips = [
@@ -191,7 +224,7 @@ export async function renderModels(root) {
       used: (a, b) => b.uses - a.uses || a.title.localeCompare(b.title),
     };
     const list = models.filter((m) => matchModel(m, f)).sort(sorters[f.sort]);
-    const filtering = f.q || f.formats.length || f.levels.length || f.skills.length || f.content.length;
+    const filtering = f.q || f.formats.length || f.levels.length || f.skills.length || f.content.length || f.review;
     resultInfo.textContent = filtering ? `${list.length} de ${models.length} modelos` : `${models.length} modelos`;
     clearBtn.hidden = !filtering;
     grid.replaceChildren(
@@ -216,6 +249,7 @@ export async function renderModels(root) {
         h('div.library',
           h('aside.filters', { 'aria-label': 'Filtros' },
             search,
+            reviewBox,
             filterGroup('Formato', chips[0]),
             filterGroup('Nível', chips[1]),
             filterGroup('Habilidade', chips[2]),
