@@ -11,17 +11,27 @@ export const SKILLS = ['Leitura', 'Escrita', 'Escuta', 'Fala'];
  * section: 'tense' | 'major' | 'minor' entram no mapa da ficha; 'theme' são temas de vocabulário.
  */
 export const CONTENTS = [
-  // Tempos verbais
-  { name: 'Present Simple', section: 'tense', synonyms: ['simple present', 'presente simples'] },
+  // Tempos verbais, na ordem do curso (docs/metodologia-tempos-verbais.md, "Ordem do curso")
+  { name: 'Verb to be', section: 'tense', synonyms: ['to be', 'verbo to be', 'am is are', 'be'] },
   { name: 'Present Continuous', section: 'tense', synonyms: ['present progressive', 'presente continuo'] },
+  { name: 'Present Simple', section: 'tense', synonyms: ['simple present', 'presente simples'] },
+  { name: 'Was / were', section: 'tense', synonyms: ['was were', 'past of to be', 'passado do to be', 'verb to be past'] },
   { name: 'Past Simple', section: 'tense', synonyms: ['simple past', 'passado simples'] },
   { name: 'Past Continuous', section: 'tense', synonyms: ['past progressive', 'passado continuo'] },
-  { name: 'Present Perfect', section: 'tense', synonyms: ['presente perfeito'] },
+  { name: 'Future (present continuous)', section: 'tense', synonyms: ['present continuous for future', 'future arrangements', 'arrangements'] },
+  { name: 'Future (going to)', section: 'tense', synonyms: ['going to', 'be going to', 'future going to'] },
+  { name: 'Future (will)', section: 'tense', synonyms: ['will', 'future will', 'future simple', 'futuro com will'] },
+  { name: 'Used to', section: 'tense', synonyms: ['used to for past habits'] },
+  { name: 'Present Perfect', section: 'tense', synonyms: ['presente perfeito', 'present perfect experience', 'present perfect for experience'] },
   { name: 'Present Perfect Continuous', section: 'tense', synonyms: ['present perfect progressive'] },
   { name: 'Past Perfect', section: 'tense', synonyms: ['pluperfect'] },
-  { name: 'Future (will)', section: 'tense', synonyms: ['will', 'future will', 'future simple', 'futuro com will'] },
-  { name: 'Future (going to)', section: 'tense', synonyms: ['going to', 'be going to', 'future going to'] },
-  { name: 'Future (present continuous)', section: 'tense', synonyms: ['present continuous for future', 'future arrangements', 'arrangements'] },
+  { name: 'Present Simple in time clauses', section: 'tense', synonyms: ['time clauses', 'when i arrive', 'oracoes de tempo'] },
+  { name: 'Future Continuous', section: 'tense', synonyms: ['future progressive'] },
+  { name: 'Future Perfect', section: 'tense', synonyms: [] },
+  { name: 'Past Perfect Continuous', section: 'tense', synonyms: ['past perfect progressive'] },
+  { name: 'Was going to', section: 'tense', synonyms: ['was going to', 'future in the past'] },
+  { name: 'Would for past habits', section: 'tense', synonyms: ['would for habits', 'would past habits'] },
+  { name: 'Future Perfect Continuous', section: 'tense', synonyms: ['future perfect progressive'] },
   // Major structures
   { name: 'Conditionals (0 & 1)', section: 'major', synonyms: ['zero conditional', 'first conditional', '1st conditional'] },
   { name: 'Conditionals (2 & 3)', section: 'major', synonyms: ['second conditional', 'third conditional', '2nd conditional', '3rd conditional'] },
