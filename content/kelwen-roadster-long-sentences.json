@@ -1,0 +1,1116 @@
+{
+  "id": "kelwen-roadster-long-sentences",
+  "student": {
+    "name": "Kelwen",
+    "level": "B2",
+    "goal": "Conversação",
+    "notes": "Intermediário para avançado. Dificuldade em formar frases mais longas: foco em conectores e sentence building."
+  },
+  "models": [
+    {
+      "key": "warmup",
+      "title": "Warm-up · cars, promises and the future",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Technology"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "WARM-UP",
+        "html": "Answer in <b>at least two sentences</b>. Add a reason with <i>because</i> or a contrast with <i>but</i>.",
+        "words": [
+          "because",
+          "but",
+          "although",
+          "so"
+        ],
+        "cats": [
+          {
+            "name": "This week",
+            "qs": [
+              "How was your week so far?",
+              "What did you do yesterday that you had never done before?",
+              "What is something you had planned to do this week but didn't?"
+            ]
+          },
+          {
+            "name": "Cars",
+            "qs": [
+              "What was your first car? If you don't have one, what was your family's first car?",
+              "What is your dream car? Why?",
+              "Do you prefer driving or being driven?",
+              "Electric, hybrid or gasoline: what would you buy today, and why?"
+            ]
+          },
+          {
+            "name": "The future",
+            "qs": [
+              "Which \"future\" technology did you think we would have by now?",
+              "Would you fly in a flying car? Under what conditions?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "reading",
+      "title": "Reading · Nine years later, the Roadster (finally) flies",
+      "tags": {
+        "content": [
+          "Reading",
+          "Technology",
+          "News",
+          "Past Perfect",
+          "Past Simple"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "READING · NINE YEARS LATER, THE ROADSTER (FINALLY) FLIES",
+        "html": "Yesterday, October 15, Tesla <b>unveiled</b> the new Roadster at a SpaceX test facility in Texas. Elon Musk had first shown the car in November 2017, and he had promised that production would start in 2020. Since then, the project had been <b>delayed</b> at least six times, and Tesla had changed the reveal date again and again. In fact, an event planned for October 1 had been cancelled at the last minute <b>due to</b> the weather.<br><br>The show was worth the wait, <b>though</b>. In the main <b>stunt</b>, the car drove up a ramp that curled upside down, flew off the end, <b>rolled</b> 180 degrees in the air and landed on its wheels. \"Flying cars are real,\" Musk said, <b>although</b> he also admitted that success \"is not guaranteed\". The flying version uses high-pressure air tanks, and it isn't approved for public roads.<br><br>Back in 2017, buyers had paid $50,000 (or $250,000 for the Founders Series) <b>to reserve</b> a car, and nobody has received one yet. Now, customers can pay a $5,000 <b>deposit</b> for the regular version, <b>whereas</b> the \"Rocket\" version with the full flight system is invitation only. Tesla hasn't announced a price, and production is planned for 2028. Analysts say the car won't sell in large numbers; <b>however</b>, it puts a spotlight on Tesla's engineering a few days before the company reports its results.<br><br><i>Fun fact: this isn't the first Roadster to fly. In 2018, SpaceX launched Musk's own red Roadster into space, with a dummy called Starman in the driver's seat. It is still orbiting the Sun.</i><br><br><i>Based on CBS News, Electrek and CNBC, October 2026.</i>"
+      }
+    },
+    {
+      "key": "vocab",
+      "title": "Roadster · vocabulary from the text",
+      "tags": {
+        "content": [
+          "Vocabulary",
+          "Technology",
+          "News"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "match",
+        "label": "VOCABULARY · MATCH THE WORDS",
+        "html": "Match the word from the text with its meaning. Then use <b>three</b> of them in a sentence about <b>your</b> life.",
+        "pairs": [
+          {
+            "left": "unveil",
+            "right": "show something new to the public for the first time"
+          },
+          {
+            "left": "delay",
+            "right": "make something happen later than planned"
+          },
+          {
+            "left": "stunt",
+            "right": "a dangerous action done to impress people"
+          },
+          {
+            "left": "deposit",
+            "right": "money you pay first to reserve something"
+          },
+          {
+            "left": "hype",
+            "right": "a lot of excitement, often more than something deserves"
+          },
+          {
+            "left": "worth the wait",
+            "right": "good enough to justify the time you waited"
+          },
+          {
+            "left": "deadline",
+            "right": "the last day or time to finish something"
+          },
+          {
+            "left": "spotlight",
+            "right": "public attention"
+          }
+        ]
+      }
+    },
+    {
+      "key": "comprehension",
+      "title": "Roadster · true, false or not given",
+      "tags": {
+        "content": [
+          "Reading",
+          "Past Perfect"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "COMPREHENSION · TRUE, FALSE OR NOT GIVEN?",
+        "html": "Then correct the false ones with a <b>complete sentence</b>.",
+        "instant": false,
+        "items": [
+          {
+            "before": "Musk had promised production for 2020.",
+            "options": [
+              "True",
+              "False",
+              "Not given"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "The October 1 event had been cancelled because the car wasn't ready.",
+            "options": [
+              "True",
+              "False",
+              "Not given"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "The car landed upside down.",
+            "options": [
+              "True",
+              "False",
+              "Not given"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "The flying version can be driven on public roads.",
+            "options": [
+              "True",
+              "False",
+              "Not given"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "Some 2017 buyers have already received their cars.",
+            "options": [
+              "True",
+              "False",
+              "Not given"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "The new Roadster will cost more than $250,000.",
+            "options": [
+              "True",
+              "False",
+              "Not given"
+            ],
+            "answer": 2,
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "key": "pp-timeline",
+      "title": "Past Perfect · what had happened before?",
+      "tags": {
+        "content": [
+          "Past Perfect",
+          "Past Simple"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Escrita",
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "PAST PERFECT · WHAT HAD HAPPENED BEFORE?",
+        "html": "Complete with the <b>Past Perfect</b> (had + past participle) or the <b>Past Simple</b>. Then make each sentence <b>longer</b>: add one reason or detail.",
+        "items": [
+          {
+            "before": "By the time Tesla showed the new car, buyers",
+            "hint": "wait",
+            "after": "for almost nine years.",
+            "answers": [
+              "had waited"
+            ]
+          },
+          {
+            "before": "When the car finally",
+            "hint": "appear",
+            "after": ", many customers had already lost hope.",
+            "answers": [
+              "appeared"
+            ]
+          },
+          {
+            "before": "Tesla",
+            "hint": "plan",
+            "after": "an event for October 1, but it was cancelled.",
+            "answers": [
+              "had planned"
+            ]
+          },
+          {
+            "before": "Nobody",
+            "hint": "see",
+            "after": "a car do a flip like that before.",
+            "answers": [
+              "had seen",
+              "had ever seen"
+            ]
+          },
+          {
+            "before": "Before 2018, no one",
+            "hint": "send",
+            "after": "a car into space.",
+            "answers": [
+              "had sent",
+              "had ever sent"
+            ]
+          },
+          {
+            "before": "I",
+            "hint": "never / drive",
+            "after": "an electric car until last year.",
+            "answers": [
+              "had never driven"
+            ]
+          },
+          {
+            "before": "When I got to the party, my friends",
+            "hint": "already / eat",
+            "after": "everything.",
+            "answers": [
+              "had already eaten"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "pp-talk",
+      "title": "Past Perfect · speaking: before that…",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Past Perfect"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · BEFORE THAT…",
+        "html": "Answer with the <b>Past Perfect</b> somewhere in your answer: <i>I had never…, I had already…, by the time…</i>",
+        "words": [
+          "by the time",
+          "had already",
+          "had never",
+          "before that",
+          "until then"
+        ],
+        "cats": [
+          {
+            "name": "Firsts",
+            "qs": [
+              "Think of your first job. What had you done before that?",
+              "What had you never done before you turned 18?",
+              "Tell me about a trip. What had you heard about the place before you went?"
+            ]
+          },
+          {
+            "name": "Too late!",
+            "qs": [
+              "Have you ever arrived somewhere and everything had already finished?",
+              "Tell me about a time you bought something and the price had already dropped.",
+              "Have you ever prepared for something that had been cancelled?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "tofor-explain",
+      "title": "To or for? (purpose)",
+      "tags": {
+        "content": [
+          "Prepositions",
+          "Gerunds & infinitives"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "explanation",
+        "label": "QUICK REMINDER · TO OR FOR?",
+        "html": "To say <b>why</b> (purpose):<br>• <b>to + verb</b>: <i>Buyers paid $50,000 <b>to reserve</b> a car.</i> (✗ <s>for reserve</s> · ✗ <s>for to reserve</s>)<br>• <b>for + noun</b>: <i>They went to Texas <b>for the event</b>.</i><br>• <b>for + -ing</b> = what a thing is used for: <i>These tanks are <b>for pushing</b> the car into the air.</i>"
+      }
+    },
+    {
+      "key": "tofor-choice",
+      "title": "To or for? (practice)",
+      "tags": {
+        "content": [
+          "Prepositions",
+          "Gerunds & infinitives"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "PRACTICE · TO OR FOR?",
+        "html": "Choose. Then explain <b>why</b>: is it a verb, a noun or a use?",
+        "instant": true,
+        "items": [
+          {
+            "before": "Customers paid a deposit",
+            "options": [
+              "to",
+              "for"
+            ],
+            "answer": 0,
+            "after": "reserve the car."
+          },
+          {
+            "before": "Journalists flew to Texas",
+            "options": [
+              "to",
+              "for"
+            ],
+            "answer": 1,
+            "after": "the launch."
+          },
+          {
+            "before": "I study English",
+            "options": [
+              "to",
+              "for"
+            ],
+            "answer": 0,
+            "after": "get a better job."
+          },
+          {
+            "before": "I study English",
+            "options": [
+              "to",
+              "for"
+            ],
+            "answer": 1,
+            "after": "my job."
+          },
+          {
+            "before": "This app is",
+            "options": [
+              "to",
+              "for"
+            ],
+            "answer": 1,
+            "after": "tracking your expenses."
+          },
+          {
+            "before": "I called the company",
+            "options": [
+              "to",
+              "for"
+            ],
+            "answer": 0,
+            "after": "complain about the delay."
+          },
+          {
+            "before": "We stopped at a gas station",
+            "options": [
+              "to",
+              "for"
+            ],
+            "answer": 1,
+            "after": "a coffee."
+          },
+          {
+            "before": "I'm saving money",
+            "options": [
+              "to",
+              "for"
+            ],
+            "answer": 0,
+            "after": "buy a car next year."
+          },
+          {
+            "before": "Thanks",
+            "options": [
+              "to",
+              "for"
+            ],
+            "answer": 1,
+            "after": "waiting."
+          }
+        ]
+      }
+    },
+    {
+      "key": "tofor-challenge",
+      "title": "Why? Answer with to and for",
+      "tags": {
+        "content": [
+          "Prepositions",
+          "Conversation"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SPEAKING · WHY? (TO / FOR)",
+        "html": "Draw a card and answer the question <b>twice</b>: once with <i>to + verb</i> and once with <i>for + noun</i>.",
+        "promptLabel": "ALSO ADD",
+        "lines": [
+          "Why do people buy expensive cars?",
+          "Why do you use your phone so much?",
+          "Why do companies make big launch events?",
+          "Why do people go to the gym?",
+          "Why do you want to improve your English?",
+          "Why would anyone want a flying car?",
+          "Why do people travel abroad?"
+        ],
+        "prompts": [
+          "because…",
+          "although…",
+          "however,…",
+          "that's why…",
+          "for example,…"
+        ]
+      }
+    },
+    {
+      "key": "conn-table",
+      "title": "Connectors · the full toolbox",
+      "tags": {
+        "content": [
+          "Writing",
+          "Conversation"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "table",
+        "label": "CONNECTORS · YOUR TOOLBOX FOR LONGER SENTENCES",
+        "header": true,
+        "rows": [
+          [
+            "JOB",
+            "CONNECTORS",
+            "EXAMPLE"
+          ],
+          [
+            "<b>add</b>",
+            "and · also · too · as well · besides · moreover · furthermore · in addition · not only… but also",
+            "The car is fast. <b>Moreover</b>, it can fly."
+          ],
+          [
+            "<b>contrast</b>",
+            "but · however · although · even though · though · despite · in spite of · whereas · while · on the other hand · nevertheless",
+            "<b>Despite</b> the delays, people are excited."
+          ],
+          [
+            "<b>cause</b>",
+            "because · because of · since · as · due to · thanks to",
+            "The event was cancelled <b>due to</b> the weather."
+          ],
+          [
+            "<b>result</b>",
+            "so · therefore · as a result · consequently · that's why · so… that",
+            "There were six delays. <b>As a result</b>, buyers lost hope."
+          ],
+          [
+            "<b>purpose</b>",
+            "to · in order to · so that · for",
+            "They paid <b>in order to</b> reserve a car."
+          ],
+          [
+            "<b>condition</b>",
+            "if · unless · as long as · provided that · in case",
+            "I'll buy one <b>as long as</b> it's safe."
+          ],
+          [
+            "<b>time / sequence</b>",
+            "first · then · after that · before · after · while · meanwhile · as soon as · eventually · finally",
+            "<b>Eventually</b>, the car appeared."
+          ],
+          [
+            "<b>example</b>",
+            "for example · for instance · such as · like",
+            "Some cars, <b>such as</b> the Roadster, are mostly for show."
+          ],
+          [
+            "<b>opinion / summary</b>",
+            "in my opinion · personally · actually · in fact · in other words · overall · in short",
+            "<b>In other words</b>, it's a marketing stunt."
+          ]
+        ]
+      }
+    },
+    {
+      "key": "conn-pick",
+      "title": "Connectors · choose the right one",
+      "tags": {
+        "content": [
+          "Writing"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Leitura",
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "CONNECTORS · CHOOSE THE RIGHT ONE",
+        "html": "Careful with the grammar after each connector: <i>although + sentence</i>, but <i>despite + noun / -ing</i>.",
+        "instant": false,
+        "items": [
+          {
+            "before": "",
+            "options": [
+              "Although",
+              "Despite"
+            ],
+            "answer": 0,
+            "after": "the car is amazing, I would never buy it."
+          },
+          {
+            "before": "",
+            "options": [
+              "Although",
+              "Despite"
+            ],
+            "answer": 1,
+            "after": "the delays, the fans were happy."
+          },
+          {
+            "before": "The event was cancelled",
+            "options": [
+              "because",
+              "because of"
+            ],
+            "answer": 1,
+            "after": "the weather."
+          },
+          {
+            "before": "I won't drive it",
+            "options": [
+              "if",
+              "unless"
+            ],
+            "answer": 1,
+            "after": "it's 100% safe."
+          },
+          {
+            "before": "The regular version needs a deposit,",
+            "options": [
+              "whereas",
+              "therefore"
+            ],
+            "answer": 0,
+            "after": "the Rocket version is invitation only."
+          },
+          {
+            "before": "It was raining.",
+            "options": [
+              "However,",
+              "As a result,"
+            ],
+            "answer": 1,
+            "after": "the event was postponed."
+          },
+          {
+            "before": "I left early",
+            "options": [
+              "so that",
+              "such as"
+            ],
+            "answer": 0,
+            "after": "I wouldn't miss the beginning."
+          },
+          {
+            "before": "",
+            "options": [
+              "In spite of",
+              "Even though"
+            ],
+            "answer": 1,
+            "after": "I had waited for hours, the show was worth it."
+          },
+          {
+            "before": "Tesla makes cars.",
+            "options": [
+              "Moreover,",
+              "Whereas"
+            ],
+            "answer": 0,
+            "after": "it shares engineers with SpaceX."
+          },
+          {
+            "before": "I had already gone to bed",
+            "options": [
+              "as soon as",
+              "by the time"
+            ],
+            "answer": 1,
+            "after": "the event started."
+          }
+        ]
+      }
+    },
+    {
+      "key": "conn-join",
+      "title": "Connectors · join the sentences (long sentences)",
+      "tags": {
+        "content": [
+          "Writing",
+          "Past Perfect"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "SENTENCE BUILDING · JOIN THE SENTENCES",
+        "html": "Join the sentences into <b>one</b> long sentence with the connector in brackets. Change only what is necessary.",
+        "items": [
+          {
+            "before": "The car is very fast. It is very expensive. →",
+            "hint": "not only… but also",
+            "after": "",
+            "answers": [
+              "The car is not only very fast but also very expensive.",
+              "The car is not only very fast but also very expensive",
+              "The car is not only very fast, but also very expensive.",
+              "The car is not only very fast, but also very expensive"
+            ]
+          },
+          {
+            "before": "Tesla had promised the car for 2020. It wasn't ready. →",
+            "hint": "although",
+            "after": "",
+            "answers": [
+              "Although Tesla had promised the car for 2020, it wasn't ready.",
+              "Although Tesla had promised the car for 2020, it wasn't ready",
+              "Although Tesla had promised the car for 2020 it wasn't ready.",
+              "Although Tesla had promised the car for 2020 it wasn't ready",
+              "Tesla had promised the car for 2020, although it wasn't ready.",
+              "Tesla had promised the car for 2020, although it wasn't ready",
+              "Tesla had promised the car for 2020 although it wasn't ready.",
+              "Tesla had promised the car for 2020 although it wasn't ready"
+            ]
+          },
+          {
+            "before": "There were many delays. People still paid deposits. →",
+            "hint": "despite",
+            "after": "",
+            "answers": [
+              "Despite the delays, people still paid deposits.",
+              "Despite the delays, people still paid deposits",
+              "Despite the delays people still paid deposits.",
+              "Despite the delays people still paid deposits",
+              "Despite the many delays, people still paid deposits.",
+              "Despite the many delays, people still paid deposits",
+              "Despite the many delays people still paid deposits.",
+              "Despite the many delays people still paid deposits",
+              "People still paid deposits despite the delays.",
+              "People still paid deposits despite the delays",
+              "People still paid deposits despite the many delays.",
+              "People still paid deposits despite the many delays"
+            ]
+          },
+          {
+            "before": "The weather was bad. They cancelled the event. →",
+            "hint": "due to",
+            "after": "",
+            "answers": [
+              "They cancelled the event due to the bad weather.",
+              "They cancelled the event due to the bad weather",
+              "Due to the bad weather, they cancelled the event.",
+              "Due to the bad weather, they cancelled the event",
+              "Due to the bad weather they cancelled the event.",
+              "Due to the bad weather they cancelled the event"
+            ]
+          },
+          {
+            "before": "I want to save money. I take the bus to work. →",
+            "hint": "in order to",
+            "after": "",
+            "answers": [
+              "I take the bus to work in order to save money.",
+              "I take the bus to work in order to save money",
+              "In order to save money, I take the bus to work.",
+              "In order to save money, I take the bus to work",
+              "In order to save money I take the bus to work.",
+              "In order to save money I take the bus to work"
+            ]
+          },
+          {
+            "before": "I won't get in a flying car. Someone tests it first. →",
+            "hint": "unless",
+            "after": "",
+            "answers": [
+              "I won't get in a flying car unless someone tests it first.",
+              "I won't get in a flying car unless someone tests it first",
+              "Unless someone tests it first, I won't get in a flying car.",
+              "Unless someone tests it first, I won't get in a flying car",
+              "Unless someone tests it first I won't get in a flying car.",
+              "Unless someone tests it first I won't get in a flying car"
+            ]
+          },
+          {
+            "before": "I had seen the video. I didn't believe it. →",
+            "hint": "even though",
+            "after": "",
+            "answers": [
+              "Even though I had seen the video, I didn't believe it.",
+              "Even though I had seen the video, I didn't believe it",
+              "Even though I had seen the video I didn't believe it.",
+              "Even though I had seen the video I didn't believe it",
+              "I didn't believe it even though I had seen the video.",
+              "I didn't believe it even though I had seen the video"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "stretch",
+      "title": "Sentence stretcher (connectors)",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Writing"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SPEAKING · SENTENCE STRETCHER",
+        "html": "Draw a card. Say the short sentence, then make it <b>longer</b> with the connector. Draw again and stretch the <b>same</b> sentence one more time. Goal: 30+ words in one sentence!",
+        "promptLabel": "STRETCH WITH",
+        "lines": [
+          "I want a new car.",
+          "The meeting was cancelled.",
+          "I don't trust new technology.",
+          "My city has terrible traffic.",
+          "I bought it online.",
+          "I was late for work.",
+          "Elon Musk is a genius.",
+          "I love weekends."
+        ],
+        "prompts": [
+          "although",
+          "because of",
+          "as a result",
+          "unless",
+          "whereas",
+          "in order to",
+          "despite",
+          "even though",
+          "by the time (+ past perfect)",
+          "so… that",
+          "such as",
+          "meanwhile"
+        ]
+      }
+    },
+    {
+      "key": "tangents",
+      "title": "Conversation · beyond the Roadster",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Technology",
+          "Work",
+          "Travel"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "CONVERSATION · BEYOND THE ROADSTER",
+        "html": "Pick a tab. Answer with <b>at least two connectors</b>, and use the word on the card if you can.",
+        "words": [
+          "however",
+          "whereas",
+          "as long as",
+          "despite",
+          "that's why",
+          "in my opinion",
+          "for instance"
+        ],
+        "cats": [
+          {
+            "name": "Delays & promises",
+            "qs": [
+              "Why do you think big projects are always late?",
+              "Tell me about a project at work or school that was delayed. What had gone wrong?",
+              "Are you good with deadlines, or do you leave everything for the last minute?",
+              "Would you wait nine years for something? For what?",
+              "Have you ever paid for something in advance and regretted it?"
+            ]
+          },
+          {
+            "name": "Hype & marketing",
+            "qs": [
+              "Is the Roadster a real product or a marketing stunt? Why?",
+              "What product launch impressed you the most?",
+              "Have you ever bought something because of the hype? Was it worth it?",
+              "Do influencers make you want to buy things?",
+              "Why do companies like to show products before they are ready?"
+            ]
+          },
+          {
+            "name": "Space & science",
+            "qs": [
+              "Would you go to space if the ticket were free?",
+              "Is it a good idea for rich people to spend billions on space?",
+              "There's a car orbiting the Sun. Is that cool or a waste?",
+              "Which is more important: exploring space or the oceans?"
+            ]
+          },
+          {
+            "name": "Cities & traffic",
+            "qs": [
+              "How much time do you spend in traffic per week?",
+              "Would flying cars solve traffic, or make it worse?",
+              "What would you change in your city's transportation?",
+              "Bike, car, bus, subway or app: how do you get around, and why?"
+            ]
+          },
+          {
+            "name": "Risk & safety",
+            "qs": [
+              "Would you buy a car that is \"probably going to work\"?",
+              "What is the most dangerous thing you have ever done?",
+              "Do you trust self-driving cars? Under what conditions?",
+              "Are you a risk-taker or a careful person? Give an example."
+            ]
+          },
+          {
+            "name": "Teamwork",
+            "qs": [
+              "Tesla and SpaceX worked together. What two companies would you love to see together?",
+              "Who is the best person you have ever worked with? Why?",
+              "Do you prefer working alone or in a team?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "debate",
+      "title": "Mini debate · for or against",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Writing"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "MINI DEBATE · DEFEND YOUR SIDE",
+        "html": "Draw a statement and a side. Talk for <b>1 minute</b>, using at least <b>three connectors</b> (one to add, one to contrast, one for result). Then the teacher defends the other side.",
+        "promptLabel": "YOUR SIDE",
+        "lines": [
+          "Flying cars should be legal in big cities.",
+          "Billionaires should pay for space exploration, not governments.",
+          "Companies should refund deposits after a two-year delay.",
+          "Electric cars are the only future.",
+          "Public transportation is better than having a car.",
+          "Product launches are just marketing.",
+          "Working from home is more productive than working in an office."
+        ],
+        "prompts": [
+          "FOR",
+          "AGAINST"
+        ]
+      }
+    },
+    {
+      "key": "final-story",
+      "title": "Final · tell a long story",
+      "tags": {
+        "content": [
+          "Past Perfect",
+          "Conversation"
+        ],
+        "levels": [
+          "B1",
+          "B2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "FINAL SPEAKING · ONE LONG STORY",
+        "html": "Tell a short story (true or invented) about the topic. You <b>must</b> use the Past Perfect once, <i>to</i> or <i>for</i> once, and the connector on the card.",
+        "promptLabel": "USE",
+        "lines": [
+          "Something you waited a long time for",
+          "A purchase you regretted",
+          "A plan that went wrong",
+          "The best surprise you have ever had",
+          "A time you trusted a promise",
+          "Your first time driving"
+        ],
+        "prompts": [
+          "by the time",
+          "even though",
+          "as a result",
+          "eventually",
+          "despite",
+          "in the end"
+        ]
+      }
+    }
+  ],
+  "lesson": {
+    "title": "Flying Cars, Broken Promises & Longer Sentences",
+    "subtitle": "The Tesla Roadster launch · Past Perfect · to vs for · connectors · speaking",
+    "level": "B2",
+    "tags": [
+      "Conversation",
+      "Speaking",
+      "Sentence building"
+    ],
+    "blocks": [
+      {
+        "model": "warmup"
+      },
+      {
+        "model": "reading"
+      },
+      {
+        "model": "vocab"
+      },
+      {
+        "model": "comprehension"
+      },
+      {
+        "model": "pp-timeline"
+      },
+      {
+        "model": "pp-talk"
+      },
+      {
+        "model": "tofor-explain"
+      },
+      {
+        "model": "tofor-choice"
+      },
+      {
+        "model": "tofor-challenge"
+      },
+      {
+        "model": "conn-table"
+      },
+      {
+        "model": "conn-pick"
+      },
+      {
+        "model": "conn-join"
+      },
+      {
+        "model": "stretch"
+      },
+      {
+        "model": "tangents"
+      },
+      {
+        "model": "debate"
+      },
+      {
+        "model": "final-story"
+      },
+      {
+        "type": "notes",
+        "label": "ANOTAÇÕES",
+        "html": ""
+      }
+    ]
+  }
+}
