@@ -31,7 +31,7 @@ const call = async (method, url, body) => {
 test('primeira vez: cria a Julia, a aula de exemplo e a biblioteca de modelos', async () => {
   const students = (await call('GET', '/api/students')).body;
   assert.equal(students.length, 1);
-  assert.equal(students[0].name, 'Julia');
+  assert.equal(students[0].name, 'Júlia');
   assert.equal(students[0].lessonCount, 1);
 
   const models = (await call('GET', '/api/models')).body;

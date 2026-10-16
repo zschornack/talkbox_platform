@@ -1,6 +1,6 @@
 // Dados de exemplo. Rodam só quando a parte correspondente está vazia:
 // - sem modelos → cria a biblioteca inicial de modelos;
-// - sem aulas e sem alunos → cria a aluna Julia e a aula "Natural Disasters" (montada a partir dos modelos).
+// - sem aulas e sem alunos → cria a aluna Júlia e a aula "Natural Disasters" (montada a partir dos modelos).
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -236,10 +236,10 @@ export function seed() {
 
   if (db.countLessons() === 0 && db.countStudents() === 0) {
     const julia = db.createStudent({
-      name: 'Julia',
+      name: 'Júlia',
       level: 'A2',
       goal: 'Ganhar confiança para conversar',
-      notes: 'Aluna de exemplo. Edite ou inative quando quiser.',
+      notes: '',
     });
     db.updateStudent(julia.id, { map: { 'Present Simple': 'good', 'Present Continuous': 'good', 'Past Simple': 'practicing' } });
 
@@ -276,6 +276,6 @@ export function seed() {
         blocks,
       },
     });
-    console.log('  Exemplo criado: aluna Julia e a aula Natural Disasters');
+    console.log('  Exemplo criado: aluna Júlia e a aula Natural Disasters');
   }
 }

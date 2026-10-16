@@ -216,6 +216,25 @@ if (db.prepare('PRAGMA user_version').get().user_version < 1) {
 
 db.exec('CREATE INDEX IF NOT EXISTS lessons_by_student ON lessons (student_id, lesson_date)');
 
+// ---------- a aluna de exemplo "Julia" é a Júlia de verdade (pasta JÚLIA no Drive) ----------
+// Renomeia a de exemplo para "Júlia" e tira a observação de exemplo. Se o cadastro em lote já tiver criado
+// outra "Júlia", tudo dela passa para a ficha da Julia e o cadastro repetido fica inativo (nada é apagado).
+{
+  const example = db.prepare("SELECT id FROM students WHERE name = 'Julia' AND notes LIKE 'Aluna de exemplo%'").get();
+  if (example) {
+    transaction(() => {
+      for (const dup of db.prepare("SELECT id FROM students WHERE name = 'Júlia' AND id <> ?").all(example.id)) {
+        db.prepare('UPDATE lessons SET student_id = ? WHERE student_id = ?').run(example.id, dup.id);
+        db.prepare('UPDATE assessments SET student_id = ? WHERE student_id = ?').run(example.id, dup.id);
+        db.prepare('UPDATE pending SET student_id = ? WHERE student_id = ?').run(example.id, dup.id);
+        db.prepare("UPDATE students SET name = 'Júlia (cadastro repetido)', active = 0, notes = ?, updated_at = ? WHERE id = ?")
+          .run('Juntado com a ficha da Júlia em 15/10/2026.', now(), dup.id);
+      }
+      db.prepare("UPDATE students SET name = 'Júlia', notes = '', updated_at = ? WHERE id = ?").run(now(), example.id);
+    });
+  }
+}
+
 // ============================== ALUNOS ==============================
 const latestMap = db.prepare(`
   SELECT content, status, date FROM (
