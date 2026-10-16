@@ -10,6 +10,8 @@ const PORT = 3800 + Math.floor(Math.random() * 90);
 const BASE = `http://localhost:${PORT}`;
 const DATA = fs.mkdtempSync(path.join(os.tmpdir(), 'talkbox-content-'));
 const PACKS = fs.readdirSync('content').filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join('content', f), 'utf8')));
+const ROSTER = PACKS.filter((p) => p.students).flatMap((p) => p.students);
+const LESSON_PACKS = PACKS.filter((p) => p.lesson);
 let proc;
 
 async function start() {
@@ -26,7 +28,7 @@ before(start);
 after(async () => { await stop(); fs.rmSync(DATA, { recursive: true, force: true }); });
 
 test('cada pacote vira aluno + aula + modelos, e a aula usa os modelos', async () => {
-  for (const pack of PACKS) {
+  for (const pack of LESSON_PACKS) {
     const students = await get('/api/students');
     const s = students.find((x) => x.name === pack.student.name);
     assert.ok(s, `aluno ${pack.student.name} criado`);
@@ -43,7 +45,7 @@ test('cada pacote vira aluno + aula + modelos, e a aula usa os modelos', async (
 });
 
 test('respostas dos exercícios estão coerentes', () => {
-  for (const pack of PACKS) {
+  for (const pack of LESSON_PACKS) {
     for (const m of pack.models) {
       const b = m.block;
       if (b.type === 'choice') b.items.forEach((it) => assert.ok(it.options[it.answer] !== undefined, `${m.title}: ${it.before}`));
@@ -57,7 +59,7 @@ test('respostas dos exercícios estão coerentes', () => {
 });
 
 test('imagens do pacote entram no acervo e a aula aponta para elas', async () => {
-  for (const pack of PACKS) {
+  for (const pack of LESSON_PACKS) {
     const files = pack.models.filter((m) => m.block.type === 'image' && m.block.file);
     if (!files.length) continue;
     const s = (await get('/api/students')).find((x) => x.name === pack.student.name);
@@ -80,5 +82,14 @@ test('ao reiniciar, o pacote não é importado de novo', async () => {
   await start();
   assert.equal((await get('/api/models')).length, before);
   const lessons = await get('/api/lessons');
-  for (const pack of PACKS) assert.equal(lessons.filter((l) => l.title === pack.lesson.title).length, 1);
+  for (const pack of LESSON_PACKS) assert.equal(lessons.filter((l) => l.title === pack.lesson.title).length, 1);
+  const students = await get('/api/students');
+  for (const s of ROSTER) assert.equal(students.filter((x) => x.name.toLowerCase() === s.name.toLowerCase()).length, 1, `${s.name} uma vez só`);
+});
+
+test('cadastro em lote cria todos os alunos, sem duplicar quem já veio num pacote de aula', async () => {
+  const students = await get('/api/students');
+  const names = students.map((s) => s.name.toLowerCase());
+  for (const s of ROSTER) assert.ok(names.includes(s.name.toLowerCase()), `${s.name} cadastrado`);
+  for (const pack of LESSON_PACKS) assert.equal(names.filter((n) => n === pack.student.name.toLowerCase()).length, 1);
 });

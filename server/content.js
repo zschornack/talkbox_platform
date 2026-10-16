@@ -12,6 +12,8 @@
 //               "finished": { "last": "x" | "all" | null, "assessments": { "Past Simple": "practicing" }, "message": "" } }  (opcional)
 //   "review": true   (opcional: os modelos entram "a revisar", como na importação do Drive)
 // }
+// Cadastro em lote: um pacote só com "students": [ { "name": "Ana" }, ... ] cria os alunos que ainda não existem
+// (mesmo nome, sem diferenciar maiúsculas, é reaproveitado). Pode vir junto com os campos acima.
 // Imagens: { "type": "image", "file": "images/x.webp", "caption": "...", "layout": "full" | "half" }, com o arquivo
 // em WebP dentro de content/. Na importação ele é copiado para data/uploads/ (uma vez só) e vira "src".
 // Modelos sem etiqueta de conteúdo recebem as que forem citadas no título ou no texto (pelos sinônimos).
@@ -64,16 +66,19 @@ export function importPack(pack, file = '', dir = CONTENT_DIR) {
   return db.transaction(() => {
     db.db.prepare('INSERT INTO imports (id, file, imported_at, review) VALUES (?, ?, ?, ?)').run(pack.id, file, new Date().toISOString(), pack.review ? 1 : 0);
 
-    let student = null;
-    if (pack.student?.name) {
-      const found = db.listStudents().find((s) => s.name.toLowerCase() === pack.student.name.toLowerCase());
-      student = found || db.createStudent({
-        name: pack.student.name,
-        level: pack.student.level || '',
-        goal: pack.student.goal || '',
-        notes: pack.student.notes || '',
-      });
+    const findOrCreate = (s) => {
+      const found = db.listStudents().find((x) => x.name.toLowerCase() === s.name.trim().toLowerCase());
+      if (found) return { student: found, created: false };
+      return { student: db.createStudent({ name: s.name.trim(), level: s.level || '', goal: s.goal || '', notes: s.notes || '' }), created: true };
+    };
+
+    let created = 0;
+    for (const s of pack.students || []) {
+      if (s?.name?.trim() && findOrCreate(s).created) created++;
     }
+
+    let student = null;
+    if (pack.student?.name) student = findOrCreate(pack.student).student;
 
     const models = {};
     for (const m of pack.models || []) {
@@ -130,7 +135,7 @@ export function importPack(pack, file = '', dir = CONTENT_DIR) {
         db.finishLesson(lesson.id, { lastBlockId, assessments: fin.assessments || {}, message: fin.message || '' });
       }
     }
-    return { student, models: Object.keys(models).length, lesson };
+    return { student, created, models: Object.keys(models).length, lesson };
   });
 }
 
@@ -140,7 +145,8 @@ export function importContentDir(dir = CONTENT_DIR) {
     try {
       const pack = JSON.parse(fs.readFileSync(path.join(dir, name), 'utf8'));
       const out = importPack(pack, name, dir);
-      if (out) {
+      if (out?.created) console.log(`  Alunos cadastrados: ${out.created} (${name})`);
+      if (out && (out.lesson || out.models)) {
         const who = out.student ? ` para ${out.student.name}` : '';
         console.log(`  Conteúdo novo importado${who}: ${out.lesson ? `aula "${out.lesson.title}"` : 'sem aula'} + ${out.models} modelos (${name})`);
       }

@@ -1,0 +1,31 @@
+{
+  "id": "alunos-drive-2026-10-15",
+  "about": "Cadastro inicial dos alunos e turmas, a partir das pastas de ALUNOS no Google Drive (15/10/2026). Só o nome. William e Letícia viraram a turma William & Letícia.",
+  "students": [
+    { "name": "Alana" },
+    { "name": "Alyson Rode" },
+    { "name": "Ana" },
+    { "name": "Ariane" },
+    { "name": "Arthur" },
+    { "name": "Bia & Vini" },
+    { "name": "Caio Nichetti" },
+    { "name": "Daniela Steinheuzer" },
+    { "name": "Edilaine" },
+    { "name": "Fernando" },
+    { "name": "Gabriel Biehals" },
+    { "name": "Isabel & Larissa" },
+    { "name": "Júlia" },
+    { "name": "Kelwen" },
+    { "name": "Larissa" },
+    { "name": "Luana" },
+    { "name": "Luciane" },
+    { "name": "Milene" },
+    { "name": "Thais Aguiar Dias" },
+    { "name": "Thiago Caretta" },
+    { "name": "Thiago Costa" },
+    { "name": "Thiago Santos" },
+    { "name": "Victor" },
+    { "name": "Vinícius K." },
+    { "name": "William & Letícia" }
+  ]
+}
