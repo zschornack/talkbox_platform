@@ -1,0 +1,2037 @@
+{
+  "id": "bia-vini-natural-disasters-stories",
+  "student": {
+    "name": "Bia & Vini",
+    "level": "A2",
+    "goal": "Conversação",
+    "notes": "Turma de 2 alunos. Nível estimado a partir da aula Natural Disasters da Julia (A2): confirme e ajuste na ficha."
+  },
+  "models": [
+    {
+      "key": "warmup",
+      "title": "Warm-up · weather and this week",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Conversation",
+          "Weather"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "WARM-UP",
+        "html": "Answer with <b>complete sentences</b>. Then ask your partner the same question.",
+        "words": [],
+        "cats": [
+          {
+            "name": "This week",
+            "qs": [
+              "How was your week?",
+              "What was the weather like this week?",
+              "What was the best moment of your week?"
+            ]
+          },
+          {
+            "name": "Weather",
+            "qs": [
+              "Do you prefer hot days or cold days? Why?",
+              "What do you do on rainy days?",
+              "What was the worst storm you remember?",
+              "Do you check the weather forecast every day?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "review-img",
+      "title": "Hurricane, tornado, flood · which is which?",
+      "tags": {
+        "content": [
+          "Natural disasters"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "file": "images/natural-disasters/review.webp",
+        "caption": "Quick review: which picture is a <b>hurricane</b>, a <b>tornado</b> and a <b>flood</b>? What do you remember about each one?"
+      }
+    },
+    {
+      "key": "review-quiz",
+      "title": "Quick review · hurricane, tornado or flood?",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura",
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "QUICK REVIEW · HURRICANE, TORNADO OR FLOOD?",
+        "html": "Read the fact and choose. Can you add one more detail?",
+        "instant": true,
+        "items": [
+          {
+            "before": "It's a giant storm that forms over warm ocean water. It has an <b>eye</b> in the middle.",
+            "options": [
+              "hurricane",
+              "tornado",
+              "flood"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "It's a column of air that spins very fast and touches the ground.",
+            "options": [
+              "hurricane",
+              "tornado",
+              "flood"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "Too much rain falls, and the river overflows into the streets.",
+            "options": [
+              "hurricane",
+              "tornado",
+              "flood"
+            ],
+            "answer": 2,
+            "after": ""
+          },
+          {
+            "before": "In 2004, Brazil had its first recorded one, in Santa Catarina. Its name was <b>Catarina</b>.",
+            "options": [
+              "hurricane",
+              "tornado",
+              "flood"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "In 2024, a horse called <b>Caramelo</b> was stuck on a roof for days in Rio Grande do Sul, until firefighters rescued him.",
+            "options": [
+              "hurricane",
+              "tornado",
+              "flood"
+            ],
+            "answer": 2,
+            "after": ""
+          },
+          {
+            "before": "The United States has more of them than any other country: about 1,200 a year.",
+            "options": [
+              "hurricane",
+              "tornado",
+              "flood"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "In Asia, people call it a <b>typhoon</b>.",
+            "options": [
+              "hurricane",
+              "tornado",
+              "flood"
+            ],
+            "answer": 0,
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "key": "new-defs",
+      "title": "Natural disasters · 8 new words (definitions)",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Vocabulary",
+          "Pronunciation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura",
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "table",
+        "label": "NEW · 8 NATURAL DISASTERS",
+        "header": true,
+        "rows": [
+          [
+            "DISASTER",
+            "WHAT IS IT?",
+            "SAY IT"
+          ],
+          [
+            "<b>earthquake</b>",
+            "a sudden, strong shaking of the ground",
+            "<b>EARTH</b>-quake"
+          ],
+          [
+            "<b>tsunami</b>",
+            "a series of giant waves, usually caused by an earthquake under the sea",
+            "tsu-<b>NA</b>-mi (the <i>t</i> is almost silent)"
+          ],
+          [
+            "<b>volcanic eruption</b>",
+            "when a volcano throws out lava, ash and gas",
+            "vol-<b>CA</b>-nic e-<b>RUP</b>-tion"
+          ],
+          [
+            "<b>landslide</b>",
+            "when a large amount of earth and rocks slides down a hill or a mountain",
+            "<b>LAND</b>-slide"
+          ],
+          [
+            "<b>wildfire</b>",
+            "a big fire that spreads quickly in a forest or in the countryside",
+            "<b>WILD</b>-fire"
+          ],
+          [
+            "<b>drought</b>",
+            "a long period with little or no rain",
+            "<b>DROUGHT</b> (rhymes with <i>out</i>)"
+          ],
+          [
+            "<b>heatwave</b>",
+            "a period of several days with extremely hot weather",
+            "<b>HEAT</b>-wave"
+          ],
+          [
+            "<b>blizzard</b>",
+            "a heavy snowstorm with very strong winds",
+            "<b>BLIZ</b>-zard"
+          ]
+        ]
+      }
+    },
+    {
+      "key": "new-match",
+      "title": "Which disaster? (match)",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "match",
+        "label": "QUICK CHECK · WHICH DISASTER?",
+        "html": "Match each disaster with the situation.",
+        "pairs": [
+          {
+            "left": "earthquake",
+            "right": "The ground is shaking and the windows are breaking."
+          },
+          {
+            "left": "tsunami",
+            "right": "The sea suddenly comes onto the land."
+          },
+          {
+            "left": "volcanic eruption",
+            "right": "Hot lava and ash come out of a mountain."
+          },
+          {
+            "left": "landslide",
+            "right": "After heavy rain, mud and rocks slide down a hill."
+          },
+          {
+            "left": "wildfire",
+            "right": "The forest is burning and the fire is spreading fast."
+          },
+          {
+            "left": "drought",
+            "right": "No rain for months: the rivers are dry."
+          },
+          {
+            "left": "heatwave",
+            "right": "It's 42°C for the fifth day in a row."
+          },
+          {
+            "left": "blizzard",
+            "right": "You can't see anything: snow and strong wind everywhere."
+          }
+        ]
+      }
+    },
+    {
+      "key": "eq-img",
+      "title": "Earthquake · picture",
+      "tags": {
+        "content": [
+          "Natural disasters"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "file": "images/natural-disasters/earthquake.webp",
+        "caption": "An <b>earthquake</b>. What is happening to the buildings? What are people doing right now?"
+      }
+    },
+    {
+      "key": "eq-story",
+      "title": "Story · The day Japan moved (2011 earthquake)",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Reading",
+          "Past Simple",
+          "Past Continuous",
+          "Comparatives & superlatives"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "STORY · THE DAY JAPAN MOVED",
+        "html": "On March 11, 2011, a huge <b>earthquake</b> hit the coast of Japan. It was a magnitude 9.0 earthquake, the strongest ever recorded in Japan. The ground <b>shook</b> for about six minutes. In Tokyo, tall buildings were <b>swaying</b> from side to side, but most of them didn't fall, because Japan builds them to move with the ground.<br><br>Later, scientists discovered something incredible: the earthquake moved Japan's main island about <b>2.4 meters</b> to the east. It even changed the way the Earth spins, and every day became <b>1.8 microseconds shorter</b>. You can't feel it, but your day is a tiny bit shorter because of this earthquake!<br><br>Sadly, the earthquake also caused a giant tsunami."
+      }
+    },
+    {
+      "key": "eq-talk",
+      "title": "Earthquake · speaking",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Conversation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · SHAKE IT UP",
+        "html": "Use the word on the card in your answer, if you can.",
+        "words": [
+          "shake",
+          "sway",
+          "ground",
+          "strong",
+          "survive"
+        ],
+        "cats": [
+          {
+            "name": "The story",
+            "qs": [
+              "What was the most surprising fact in the story?",
+              "Would you like to live in a country with many earthquakes? Why (not)?",
+              "Why do you think Japanese buildings are built to move?",
+              "What should you do during an earthquake?"
+            ]
+          },
+          {
+            "name": "Beyond disasters",
+            "qs": [
+              "What makes your hands shake? (an exam, a presentation, a first date…)",
+              "What news <b>shook</b> you recently?",
+              "If every day had one extra hour, what would you do with it?",
+              "Which building in your city do you love? Which one would you change?",
+              "Have you ever felt the ground move? (on a boat, at a concert, in a bus…)"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "eq-build",
+      "title": "Earthquake · put the words in order",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "SENTENCE BUILDING · PUT THE WORDS IN ORDER",
+        "html": "Write the sentence in the correct order. Then say if it is true for you, or change it to make it true.",
+        "items": [
+          {
+            "before": "",
+            "hint": "the ground / suddenly / shook",
+            "after": "",
+            "answers": [
+              "Suddenly, the ground shook.",
+              "Suddenly, the ground shook",
+              "Suddenly the ground shook.",
+              "Suddenly the ground shook",
+              "The ground suddenly shook.",
+              "The ground suddenly shook",
+              "The ground shook suddenly.",
+              "The ground shook suddenly"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "were / the buildings / swaying",
+            "after": "",
+            "answers": [
+              "The buildings were swaying.",
+              "The buildings were swaying"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "my / were / shaking / hands",
+            "after": "",
+            "answers": [
+              "My hands were shaking.",
+              "My hands were shaking"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "sleeping / I / was / when the earthquake started",
+            "after": "",
+            "answers": [
+              "I was sleeping when the earthquake started.",
+              "I was sleeping when the earthquake started"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "a bit / is / our day / shorter",
+            "after": "",
+            "answers": [
+              "Our day is a bit shorter.",
+              "Our day is a bit shorter"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "ever / have / felt / you / an earthquake ?",
+            "after": "",
+            "answers": [
+              "Have you ever felt an earthquake?",
+              "Have you ever felt an earthquake"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "ts-img",
+      "title": "Tsunami · picture",
+      "tags": {
+        "content": [
+          "Natural disasters"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "file": "images/natural-disasters/tsunami.webp",
+        "caption": "A <b>tsunami</b>. If you were on this beach, what would you do?"
+      }
+    },
+    {
+      "key": "ts-story",
+      "title": "Story · The girl who saved a beach (Tilly Smith, 2004)",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Reading",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "STORY · THE GIRL WHO SAVED A BEACH",
+        "html": "In December 2004, Tilly Smith, a 10-year-old British girl, was on holiday with her family at Mai Khao Beach, in Thailand. While she was walking on the beach with her mother, she <b>noticed</b> something strange: the sea was <b>bubbling</b>, like the foam on a glass of beer, and it didn't look normal.<br><br>Two weeks before, her geography teacher, Mr. Kearney, taught the class about tsunamis and their <b>warning signs</b>. Tilly remembered the lesson and <b>warned</b> her parents that a tsunami was coming. <b>At first</b>, they weren't sure, but Tilly <b>insisted</b>. Her father told the hotel staff, and they <b>evacuated</b> the beach.<br><br>A few minutes later, giant waves hit the beach. <b>Thanks to</b> a geography lesson, about 100 people survived."
+      }
+    },
+    {
+      "key": "ts-talk",
+      "title": "Tsunami · speaking",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Conversation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · THE LESSON THAT SAVED LIVES",
+        "html": "Use the word on the card in your answer, if you can.",
+        "words": [
+          "notice",
+          "warn",
+          "insist",
+          "at first",
+          "thanks to"
+        ],
+        "cats": [
+          {
+            "name": "The story",
+            "qs": [
+              "How did Tilly know about tsunamis?",
+              "Why do you think the adults listened to a 10-year-old girl?",
+              "Do you remember a school lesson that was useful in real life?",
+              "What other warning signs of disasters do you know?"
+            ]
+          },
+          {
+            "name": "Beyond disasters",
+            "qs": [
+              "Did a teacher ever change your life? How?",
+              "Have you ever warned someone, and they didn't listen?",
+              "What warning signs tell you that you need a holiday?",
+              "What is something useless that you learned at school?",
+              "When was the last time you insisted on something? Were you right?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "ts-build",
+      "title": "Tsunami · answer using the word",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Past Simple"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala",
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SENTENCE BUILDING · USE THE WORD",
+        "html": "Draw a card. Answer the question in <b>two sentences</b>. You <b>must</b> use the word.",
+        "promptLabel": "USE THIS WORD",
+        "lines": [
+          "Tell me about something you learned at school.",
+          "Tell me about a time you noticed something strange.",
+          "What do you do when nobody listens to you?",
+          "Who gives you the best advice?",
+          "Tell me about a time you changed your mind.",
+          "What did you do last weekend?"
+        ],
+        "prompts": [
+          "noticed",
+          "warned",
+          "insisted",
+          "at first",
+          "thanks to",
+          "a few minutes later"
+        ]
+      }
+    },
+    {
+      "key": "vo-img",
+      "title": "Volcanic eruption · picture",
+      "tags": {
+        "content": [
+          "Natural disasters"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "file": "images/natural-disasters/volcano.webp",
+        "caption": "A <b>volcanic eruption</b>. Why are the planes turning back? Look at the sign."
+      }
+    },
+    {
+      "key": "vo-story",
+      "title": "Story · The volcano nobody can pronounce (Iceland, 2010)",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Reading",
+          "Past Simple",
+          "Past Continuous",
+          "Travel"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "STORY · THE VOLCANO NOBODY CAN PRONOUNCE",
+        "html": "In April 2010, a volcano in Iceland called <b>Eyjafjallajökull</b> (say: <i>AY-ya-fyat-la-YO-kutl</i>) <b>erupted</b>. The eruption wasn't very big, but it sent a huge cloud of <b>ash</b> into the sky, and the wind carried the ash to Europe.<br><br>Ash is dangerous for airplane engines, so many countries closed their airspace. For about a week, almost no planes flew over northern Europe. More than 100,000 flights were <b>cancelled</b>, and about 10 million passengers were <b>affected</b>. Millions of travelers were <b>stranded</b> in airports around the world. Some people took trains, buses and even taxis across Europe to get home.<br><br>And on TV, news reporters were trying, and failing, to say the volcano's name!"
+      }
+    },
+    {
+      "key": "vo-talk",
+      "title": "Volcanic eruption · speaking",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Conversation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · STRANDED!",
+        "html": "Use the word on the card in your answer, if you can.",
+        "words": [
+          "erupt",
+          "ash",
+          "cancel",
+          "stranded",
+          "affect"
+        ],
+        "cats": [
+          {
+            "name": "The story",
+            "qs": [
+              "Can you say the volcano's name? Try!",
+              "What would you do if you were stranded in an airport for a week?",
+              "Would you like to visit a volcano? Which one?",
+              "Why do you think this story was famous all over the world?"
+            ]
+          },
+          {
+            "name": "Beyond disasters",
+            "qs": [
+              "What's the longest you have ever waited at an airport or bus station?",
+              "Have you ever had a trip cancelled? What happened?",
+              "Which English word is very hard for you to pronounce?",
+              "What's the most creative way you've ever got home?",
+              "Do you know someone who <b>erupts</b> when they are angry?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "vo-build",
+      "title": "Volcanic eruption · complete with words from the story",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Vocabulary",
+          "Travel"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "SENTENCE BUILDING · WORDS FROM THE STORY",
+        "html": "Complete with a word from the story. The first letter is in brackets. Then make <b>your own</b> sentence with each word.",
+        "items": [
+          {
+            "before": "The volcano",
+            "hint": "e…",
+            "after": "in April 2010.",
+            "answers": [
+              "erupted"
+            ]
+          },
+          {
+            "before": "A huge cloud of",
+            "hint": "a…",
+            "after": "went into the sky.",
+            "answers": [
+              "ash"
+            ]
+          },
+          {
+            "before": "More than 100,000 flights were",
+            "hint": "c…",
+            "after": ".",
+            "answers": [
+              "cancelled",
+              "canceled"
+            ]
+          },
+          {
+            "before": "Millions of people were",
+            "hint": "s…",
+            "after": "in airports, with no way to get home.",
+            "answers": [
+              "stranded"
+            ]
+          },
+          {
+            "before": "About 10 million passengers were",
+            "hint": "a…",
+            "after": "by the eruption.",
+            "answers": [
+              "affected"
+            ]
+          },
+          {
+            "before": "My bus was late, so I",
+            "hint": "m…",
+            "after": "my English class.",
+            "answers": [
+              "missed"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "ls-img",
+      "title": "Landslide · picture",
+      "tags": {
+        "content": [
+          "Natural disasters"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "file": "images/natural-disasters/landslide.webp",
+        "caption": "A <b>landslide</b>. What is sliding down the mountain? Where is it going?"
+      }
+    },
+    {
+      "key": "ls-story",
+      "title": "Story · The man who refused to leave (Mount St. Helens, 1980)",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Reading",
+          "Past Simple",
+          "Comparatives & superlatives"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "STORY · THE MAN WHO REFUSED TO LEAVE",
+        "html": "In March 1980, Mount St. Helens, a volcano in the United States, woke up. Scientists <b>warned</b> everybody to leave the area. But one man <b>refused</b>: Harry R. Truman, 83 years old. He lived in a lodge next to Spirit Lake with his 16 cats, and he loved the mountain. He said that the mountain would never hurt him. He became famous, and hundreds of children wrote letters to him.<br><br>On the morning of May 18, an earthquake made the north side of the mountain <b>collapse</b>. It was the biggest <b>landslide</b> in recorded history: rocks and earth slid down at about 200 km/h, faster than a car on a highway. Then the volcano erupted. The landslide <b>buried</b> Spirit Lake and Harry's lodge. Harry was never found."
+      }
+    },
+    {
+      "key": "ls-talk",
+      "title": "Landslide · speaking",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Conversation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · BRAVE OR STUBBORN?",
+        "html": "Use the word on the card in your answer, if you can.",
+        "words": [
+          "refuse",
+          "stubborn",
+          "warn",
+          "collapse",
+          "leave"
+        ],
+        "cats": [
+          {
+            "name": "The story",
+            "qs": [
+              "Why do you think Harry refused to leave?",
+              "Was Harry brave or <b>stubborn</b>? Why?",
+              "Would you leave your home if scientists told you to?",
+              "Why do you think children wrote letters to him?"
+            ]
+          },
+          {
+            "name": "Beyond disasters",
+            "qs": [
+              "You have to leave home in 10 minutes. What do you take with you?",
+              "Are you stubborn? Give an example.",
+              "Have you ever refused to do something that everybody told you to do?",
+              "In politics, a <b>landslide victory</b> means winning by a lot. Remember any landslide victory (in an election, a game, a sport)?",
+              "Which place do you love as much as Harry loved his mountain?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "ls-build",
+      "title": "Landslide · match the halves",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Past Simple"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura",
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "match",
+        "label": "SENTENCE BUILDING · MATCH THE HALVES",
+        "html": "Build the sentences from the story. Then write <b>three sentences about you</b> with <i>refuse</i>, <i>warn</i> and <i>stubborn</i>.",
+        "pairs": [
+          {
+            "left": "Scientists warned everybody",
+            "right": "to leave the area."
+          },
+          {
+            "left": "Harry refused",
+            "right": "to listen to the scientists."
+          },
+          {
+            "left": "He lived next to Spirit Lake",
+            "right": "with his 16 cats."
+          },
+          {
+            "left": "Hundreds of children",
+            "right": "wrote letters to him."
+          },
+          {
+            "left": "The rocks slid down",
+            "right": "faster than a car on a highway."
+          },
+          {
+            "left": "The landslide buried",
+            "right": "the lake and the lodge."
+          }
+        ]
+      }
+    },
+    {
+      "key": "wf-img",
+      "title": "Wildfire · picture",
+      "tags": {
+        "content": [
+          "Natural disasters"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "file": "images/natural-disasters/wildfire.webp",
+        "caption": "A <b>wildfire</b>. What can animals do when a fire is coming? And people?"
+      }
+    },
+    {
+      "key": "wf-story",
+      "title": "Story · Ousado, the jaguar (Pantanal, 2020)",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Reading",
+          "Past Simple",
+          "Comparatives & superlatives"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "STORY · OUSADO, THE JAGUAR",
+        "html": "In 2020, huge <b>wildfires spread</b> across the Pantanal, in Brazil, the largest tropical wetland in the world. It was a very dry year, and the fires <b>burned</b> about 28% of the region. Many animals couldn't <b>escape</b>.<br><br>In September, volunteer vets found a male jaguar with terrible <b>burns</b> on all four paws. They called him <b>Ousado</b> (in English, <i>daring</i>). First, they took him to a veterinary hospital in Cuiabá, and then to a wild cat clinic in Goiás, where they <b>treated</b> his paws.<br><br>Ousado <b>recovered</b> well, and on October 20 the vets <b>released</b> him in the same place where they found him. He went back home with four healthy paws."
+      }
+    },
+    {
+      "key": "wf-talk",
+      "title": "Wildfire · speaking",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Conversation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · DARING",
+        "html": "Use the word on the card in your answer, if you can.",
+        "words": [
+          "spread",
+          "rescue",
+          "recover",
+          "release",
+          "daring"
+        ],
+        "cats": [
+          {
+            "name": "The story",
+            "qs": [
+              "Why do you think the vets called him Ousado?",
+              "What can people do to prevent wildfires?",
+              "Have you ever been to the Pantanal? Would you like to go?",
+              "Do you know other stories of animals that were rescued?"
+            ]
+          },
+          {
+            "name": "Beyond disasters",
+            "qs": [
+              "What news <b>spreads</b> fast in your family or at work?",
+              "Who is the most <b>daring</b> person you know? What did they do?",
+              "Have you ever volunteered? Would you like to? Where?",
+              "What helps you <b>recover</b> after a very hard week?",
+              "What is the most daring thing you have ever done?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "wf-build",
+      "title": "Wildfire · put the words in order",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Past Simple",
+          "Question formation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "SENTENCE BUILDING · PUT THE WORDS IN ORDER",
+        "html": "Write the sentence in the correct order. The last two are about <b>you</b>: answer them!",
+        "items": [
+          {
+            "before": "",
+            "hint": "spread / the fire / quickly",
+            "after": "",
+            "answers": [
+              "The fire spread quickly.",
+              "The fire spread quickly"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "found / volunteers / a jaguar / with burned paws",
+            "after": "",
+            "answers": [
+              "Volunteers found a jaguar with burned paws.",
+              "Volunteers found a jaguar with burned paws"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "his paws / treated / they / every day",
+            "after": "",
+            "answers": [
+              "They treated his paws every day.",
+              "They treated his paws every day",
+              "Every day, they treated his paws.",
+              "Every day, they treated his paws",
+              "Every day they treated his paws.",
+              "Every day they treated his paws"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "they / in October / him / released",
+            "after": "",
+            "answers": [
+              "They released him in October.",
+              "They released him in October",
+              "In October, they released him.",
+              "In October, they released him",
+              "In October they released him.",
+              "In October they released him"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "is / the most daring person / who / you know ?",
+            "after": "",
+            "answers": [
+              "Who is the most daring person you know?",
+              "Who is the most daring person you know"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "spreads / news / fast / in my family",
+            "after": "",
+            "answers": [
+              "News spreads fast in my family.",
+              "News spreads fast in my family",
+              "In my family, news spreads fast.",
+              "In my family, news spreads fast",
+              "In my family news spreads fast.",
+              "In my family news spreads fast"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "dr-img",
+      "title": "Drought · picture",
+      "tags": {
+        "content": [
+          "Natural disasters"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "file": "images/natural-disasters/drought.webp",
+        "caption": "A <b>drought</b>. Look at the reservoir: what was the water level before? And now?"
+      }
+    },
+    {
+      "key": "dr-story",
+      "title": "Story · Day Zero (Cape Town, 2018)",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Reading",
+          "Past Simple"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "STORY · DAY ZERO",
+        "html": "In 2018, Cape Town, a big city in South Africa, had a serious problem. After three years with very little rain, the city's dams were almost empty. The government announced <b>Day Zero</b>: the day when the city would turn off the water in people's homes. People would have to <b>queue</b> for water at special collection points.<br><br>To <b>avoid</b> Day Zero, everybody had to <b>save</b> water. Each person could use only <b>50 liters a day</b>. A normal shower uses that in about 5 minutes! People took 2-minute showers, used old water to flush the toilet, and stopped watering their gardens. Nobody wanted to <b>waste</b> a single drop.<br><br>It worked: the city used about half the water it used before, the rain finally came back, and Day Zero never happened."
+      }
+    },
+    {
+      "key": "dr-talk",
+      "title": "Drought · speaking",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Conversation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · EVERY DROP COUNTS",
+        "html": "Use the word on the card in your answer, if you can.",
+        "words": [
+          "save",
+          "waste",
+          "avoid",
+          "queue",
+          "shortage"
+        ],
+        "cats": [
+          {
+            "name": "The story",
+            "qs": [
+              "Could you live with 50 liters of water a day? What would you stop doing?",
+              "What would you do if your city turned off the water?",
+              "Do you remember a water <b>shortage</b> in Brazil? What happened?",
+              "Why do you think the plan worked?"
+            ]
+          },
+          {
+            "name": "Beyond disasters",
+            "qs": [
+              "What do you <b>waste</b> too much of: time, money, food or water?",
+              "How long are your showers? Be honest!",
+              "What do you do to <b>save</b> money?",
+              "Have you ever had to <b>queue</b> for hours? For what?",
+              "What do you try to <b>avoid</b> on Mondays?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "dr-build",
+      "title": "Drought · make it true for you",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Conversation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala",
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SENTENCE BUILDING · MAKE IT TRUE FOR YOU",
+        "html": "Draw a card. Finish the sentence so it is <b>true for you</b>. Then make it longer with the word on the card.",
+        "promptLabel": "ADD",
+        "lines": [
+          "To save money, I…",
+          "I waste too much…",
+          "I would never queue for…",
+          "If my city turned off the water, I would…",
+          "I always try to avoid…",
+          "I can't live without…"
+        ],
+        "prompts": [
+          "because…",
+          "but…",
+          "so…",
+          "every day / every week…",
+          "when I was a child…"
+        ]
+      }
+    },
+    {
+      "key": "hw-img",
+      "title": "Heatwave · picture",
+      "tags": {
+        "content": [
+          "Natural disasters"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "file": "images/natural-disasters/heatwave.webp",
+        "caption": "A <b>heatwave</b>. Look at the train tracks and the thermometer. What happened?"
+      }
+    },
+    {
+      "key": "hw-story",
+      "title": "Story · The day the runway melted (UK, 2022)",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Reading",
+          "Past Simple",
+          "Comparatives & superlatives",
+          "Weather"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "STORY · THE DAY THE RUNWAY MELTED",
+        "html": "On July 19, 2022, the United Kingdom reached <b>40°C</b> for the first time in history. In Coningsby, a small town in England, the temperature was 40.3°C, a new national <b>record</b>.<br><br>The UK isn't ready for this kind of heat: most British homes don't have air conditioning. During the <b>heatwave</b>, roads <b>melted</b>, trains moved very slowly because the tracks were too hot, and a part of the runway at Luton Airport <b>lifted</b> because of the heat, so the airport stopped all flights for a few hours.<br><br>In Brazil, 40°C is a normal summer day in many cities. But for the British, it was <b>unbearable</b>."
+      }
+    },
+    {
+      "key": "hw-talk",
+      "title": "Heatwave · speaking",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Conversation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · HOT HOT HOT",
+        "html": "Use the word on the card in your answer, if you can.",
+        "words": [
+          "unbearable",
+          "melt",
+          "cool down",
+          "record",
+          "for the first time"
+        ],
+        "cats": [
+          {
+            "name": "The story",
+            "qs": [
+              "Is 40°C hot for you? What's the hottest place you have been to?",
+              "Why was the heat a big problem in the UK?",
+              "How do you survive a very hot day without air conditioning?"
+            ]
+          },
+          {
+            "name": "Beyond disasters",
+            "qs": [
+              "What is <b>unbearable</b> for you: heat, noise, traffic, or something else?",
+              "How do you <b>cool down</b> after a stressful day?",
+              "Do you prefer summer or winter? Why?",
+              "What <b>melts your heart</b>? (a puppy, a baby, a song…)",
+              "What did you do <b>for the first time</b> this year?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "hw-build",
+      "title": "Heatwave · join the sentences",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Weather"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "SENTENCE BUILDING · JOIN THE SENTENCES",
+        "html": "Join the two sentences with the word in brackets. Write the whole sentence.",
+        "items": [
+          {
+            "before": "It was very hot. The runway melted. →",
+            "hint": "so … that",
+            "after": "",
+            "answers": [
+              "It was so hot that the runway melted.",
+              "It was so hot that the runway melted"
+            ]
+          },
+          {
+            "before": "Most homes have no air conditioning. People suffered. →",
+            "hint": "so",
+            "after": "",
+            "answers": [
+              "Most homes have no air conditioning, so people suffered.",
+              "Most homes have no air conditioning, so people suffered",
+              "Most homes have no air conditioning so people suffered.",
+              "Most homes have no air conditioning so people suffered"
+            ]
+          },
+          {
+            "before": "The trains moved slowly. The tracks were too hot. →",
+            "hint": "because",
+            "after": "",
+            "answers": [
+              "The trains moved slowly because the tracks were too hot.",
+              "The trains moved slowly because the tracks were too hot"
+            ]
+          },
+          {
+            "before": "Hot days are normal in Brazil. They are rare in the UK. →",
+            "hint": "but",
+            "after": "",
+            "answers": [
+              "Hot days are normal in Brazil, but they are rare in the UK.",
+              "Hot days are normal in Brazil, but they are rare in the UK",
+              "Hot days are normal in Brazil but they are rare in the UK.",
+              "Hot days are normal in Brazil but they are rare in the UK"
+            ]
+          },
+          {
+            "before": "I was very tired. I couldn't sleep. →",
+            "hint": "so … that",
+            "after": "",
+            "answers": [
+              "I was so tired that I couldn't sleep.",
+              "I was so tired that I couldn't sleep",
+              "I was so tired that I could not sleep.",
+              "I was so tired that I could not sleep"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "bz-img",
+      "title": "Blizzard · picture",
+      "tags": {
+        "content": [
+          "Natural disasters"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "file": "images/natural-disasters/blizzard.webp",
+        "caption": "A <b>blizzard</b>. Look at the wires and the snow. How do people get to work?"
+      }
+    },
+    {
+      "key": "bz-story",
+      "title": "Story · The Great White Hurricane (New York, 1888)",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Reading",
+          "Past Simple",
+          "Was / were"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "STORY · THE GREAT WHITE HURRICANE",
+        "html": "In March 1888, a terrible <b>blizzard</b> hit the east coast of the United States. People called it <i>The Great White Hurricane</i>. In New York, almost one meter of snow fell, and the strong wind made <b>snowdrifts</b> as tall as houses.<br><br>Everything stopped: trains, horses, even the mail. Many people were <b>stuck</b> at work or on trains, and some people crossed the frozen East River on foot! The wind also <b>knocked down</b> the electric and telephone wires that were above the streets.<br><br>After the blizzard, the city decided to put the wires <b>underground</b>, and the idea of an underground train became more popular. In 1904, New York opened its first subway line. Today, millions of New Yorkers use it every day."
+      }
+    },
+    {
+      "key": "bz-talk",
+      "title": "Blizzard · speaking",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Conversation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · STUCK!",
+        "html": "Use the word on the card in your answer, if you can.",
+        "words": [
+          "stuck",
+          "snowed under",
+          "knock down",
+          "underground",
+          "frozen"
+        ],
+        "cats": [
+          {
+            "name": "The story",
+            "qs": [
+              "Have you ever seen snow? Where?",
+              "What would you do if you were stuck at work for two days?",
+              "Can you think of a good idea that came from a big problem?"
+            ]
+          },
+          {
+            "name": "Beyond disasters",
+            "qs": [
+              "In English, <b>snowed under</b> means you have too much work. Are you snowed under right now?",
+              "Have you ever been <b>stuck</b> somewhere: in an elevator, in traffic, at an airport?",
+              "Do you use public transportation? What is it like in your city?",
+              "If your city could build one thing <b>underground</b>, what should it be?",
+              "Winter holidays: snow or beach?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "bz-build",
+      "title": "Blizzard · build the questions",
+      "tags": {
+        "content": [
+          "Natural disasters",
+          "Question formation",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita",
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "SENTENCE BUILDING · BUILD THE QUESTIONS",
+        "html": "Build the questions. Then <b>ask your partner</b>!",
+        "items": [
+          {
+            "before": "",
+            "hint": "you / ever / see / snow?",
+            "after": "",
+            "answers": [
+              "Have you ever seen snow?",
+              "Have you ever seen snow"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "where / you / be / last weekend?",
+            "after": "",
+            "answers": [
+              "Where were you last weekend?",
+              "Where were you last weekend"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "how / you / usually / go / to work?",
+            "after": "",
+            "answers": [
+              "How do you usually go to work?",
+              "How do you usually go to work"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "you / get / stuck in traffic / yesterday?",
+            "after": "",
+            "answers": [
+              "Did you get stuck in traffic yesterday?",
+              "Did you get stuck in traffic yesterday"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "what / you / do / on cold days?",
+            "after": "",
+            "answers": [
+              "What do you do on cold days?",
+              "What do you do on cold days"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "what / you / do (past continuous) / when the power went out?",
+            "after": "",
+            "answers": [
+              "What were you doing when the power went out?",
+              "What were you doing when the power went out"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "gr-past",
+      "title": "Grammar from the stories · Past Simple or Past Continuous?",
+      "tags": {
+        "content": [
+          "Past Simple",
+          "Past Continuous",
+          "Natural disasters"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "GRAMMAR · PAST SIMPLE OR PAST CONTINUOUS?",
+        "html": "All these sentences come from the stories. Use the <b>Past Simple</b> (a finished action) or the <b>Past Continuous</b> (an action in progress).",
+        "items": [
+          {
+            "before": "While Tilly",
+            "hint": "walk",
+            "after": "on the beach, she noticed something strange.",
+            "answers": [
+              "was walking"
+            ]
+          },
+          {
+            "before": "While she was walking on the beach, Tilly",
+            "hint": "notice",
+            "after": "that the sea was bubbling.",
+            "answers": [
+              "noticed"
+            ]
+          },
+          {
+            "before": "In Tokyo, tall buildings",
+            "hint": "sway",
+            "after": "from side to side when the earthquake hit.",
+            "answers": [
+              "were swaying"
+            ]
+          },
+          {
+            "before": "The volcano in Iceland",
+            "hint": "erupt",
+            "after": "in April 2010.",
+            "answers": [
+              "erupted"
+            ]
+          },
+          {
+            "before": "On TV, a reporter",
+            "hint": "try",
+            "after": "to say the volcano's name when everybody started laughing.",
+            "answers": [
+              "was trying"
+            ]
+          },
+          {
+            "before": "Harry",
+            "hint": "refuse",
+            "after": "to leave his home.",
+            "answers": [
+              "refused"
+            ]
+          },
+          {
+            "before": "The vets",
+            "hint": "release",
+            "after": "Ousado on October 20.",
+            "answers": [
+              "released"
+            ]
+          },
+          {
+            "before": "I",
+            "hint": "sleep",
+            "after": "when the storm started last night.",
+            "answers": [
+              "was sleeping"
+            ]
+          },
+          {
+            "before": "What",
+            "hint": "you / do",
+            "after": "when the power went out?",
+            "answers": [
+              "were you doing"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "gr-when",
+      "title": "Grammar · when or while?",
+      "tags": {
+        "content": [
+          "Past Continuous",
+          "Past Simple"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "GRAMMAR · WHEN OR WHILE?",
+        "html": "<b>while</b> + an action in progress (<i>was/were + -ing</i>) · <b>when</b> + a short, finished action.",
+        "instant": false,
+        "items": [
+          {
+            "before": "I was watching TV",
+            "options": [
+              "when",
+              "while"
+            ],
+            "answer": 0,
+            "after": "the earthquake started."
+          },
+          {
+            "before": "",
+            "options": [
+              "When",
+              "While"
+            ],
+            "answer": 1,
+            "after": "Tilly was walking on the beach, the sea started to bubble."
+          },
+          {
+            "before": "The wind knocked down the wires",
+            "options": [
+              "when",
+              "while"
+            ],
+            "answer": 1,
+            "after": "people were sleeping."
+          },
+          {
+            "before": "We were having dinner",
+            "options": [
+              "when",
+              "while"
+            ],
+            "answer": 0,
+            "after": "the lights went out."
+          },
+          {
+            "before": "",
+            "options": [
+              "When",
+              "While"
+            ],
+            "answer": 0,
+            "after": "the rain came back, everybody in Cape Town celebrated."
+          },
+          {
+            "before": "Someone took my wallet",
+            "options": [
+              "when",
+              "while"
+            ],
+            "answer": 1,
+            "after": "I was sleeping on the bus."
+          }
+        ]
+      }
+    },
+    {
+      "key": "gr-super",
+      "title": "Grammar · superlatives from the stories",
+      "tags": {
+        "content": [
+          "Comparatives & superlatives",
+          "Natural disasters"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "GRAMMAR · THE BIGGEST, THE HOTTEST…",
+        "html": "The stories are full of records! Complete with the <b>superlative</b>.",
+        "items": [
+          {
+            "before": "It was",
+            "hint": "big",
+            "after": "landslide in recorded history.",
+            "answers": [
+              "the biggest"
+            ]
+          },
+          {
+            "before": "July 19, 2022 was",
+            "hint": "hot",
+            "after": "day in UK history.",
+            "answers": [
+              "the hottest"
+            ]
+          },
+          {
+            "before": "The Pantanal is",
+            "hint": "large",
+            "after": "tropical wetland in the world.",
+            "answers": [
+              "the largest"
+            ]
+          },
+          {
+            "before": "The 2011 earthquake was",
+            "hint": "strong",
+            "after": "ever recorded in Japan.",
+            "answers": [
+              "the strongest"
+            ]
+          },
+          {
+            "before": "Eyjafjallajökull is",
+            "hint": "difficult",
+            "after": "name in this lesson!",
+            "answers": [
+              "the most difficult"
+            ]
+          },
+          {
+            "before": "For me,",
+            "hint": "scary",
+            "after": "natural disaster is…",
+            "answers": [
+              "the scariest"
+            ]
+          },
+          {
+            "before": "What is",
+            "hint": "dangerous",
+            "after": "place you have ever visited?",
+            "answers": [
+              "the most dangerous"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "final-story",
+      "title": "Final speaking · tell a story",
+      "tags": {
+        "content": [
+          "Past Simple",
+          "Past Continuous",
+          "Conversation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "FINAL SPEAKING · TELL YOUR STORY",
+        "html": "Draw a card and tell a <b>true</b> story (or invent one!). Use the word on the card. Your partner asks two questions at the end.",
+        "promptLabel": "USE",
+        "lines": [
+          "A day when everything went wrong",
+          "The worst storm you remember",
+          "A time you got stuck somewhere",
+          "A time you had to act quickly",
+          "A trip that didn't go as planned",
+          "The strangest thing you have ever seen"
+        ],
+        "prompts": [
+          "while",
+          "suddenly",
+          "when",
+          "the worst",
+          "luckily",
+          "at first"
+        ]
+      }
+    }
+  ],
+  "lesson": {
+    "title": "Natural Disasters · Stories That Shook the World",
+    "subtitle": "Review: hurricanes, tornadoes, floods · 8 new disasters · true stories · speaking and sentence building",
+    "level": "A2",
+    "tags": [
+      "Vocabulary",
+      "Reading",
+      "Speaking"
+    ],
+    "blocks": [
+      {
+        "model": "warmup"
+      },
+      {
+        "model": "review-img"
+      },
+      {
+        "model": "review-quiz"
+      },
+      {
+        "model": "new-defs"
+      },
+      {
+        "model": "new-match"
+      },
+      {
+        "model": "eq-img"
+      },
+      {
+        "model": "eq-story"
+      },
+      {
+        "model": "eq-talk"
+      },
+      {
+        "model": "eq-build"
+      },
+      {
+        "model": "ts-img"
+      },
+      {
+        "model": "ts-story"
+      },
+      {
+        "model": "ts-talk"
+      },
+      {
+        "model": "ts-build"
+      },
+      {
+        "model": "vo-img"
+      },
+      {
+        "model": "vo-story"
+      },
+      {
+        "model": "vo-talk"
+      },
+      {
+        "model": "vo-build"
+      },
+      {
+        "model": "ls-img"
+      },
+      {
+        "model": "ls-story"
+      },
+      {
+        "model": "ls-talk"
+      },
+      {
+        "model": "ls-build"
+      },
+      {
+        "model": "wf-img"
+      },
+      {
+        "model": "wf-story"
+      },
+      {
+        "model": "wf-talk"
+      },
+      {
+        "model": "wf-build"
+      },
+      {
+        "model": "dr-img"
+      },
+      {
+        "model": "dr-story"
+      },
+      {
+        "model": "dr-talk"
+      },
+      {
+        "model": "dr-build"
+      },
+      {
+        "model": "hw-img"
+      },
+      {
+        "model": "hw-story"
+      },
+      {
+        "model": "hw-talk"
+      },
+      {
+        "model": "hw-build"
+      },
+      {
+        "model": "bz-img"
+      },
+      {
+        "model": "bz-story"
+      },
+      {
+        "model": "bz-talk"
+      },
+      {
+        "model": "bz-build"
+      },
+      {
+        "model": "gr-past"
+      },
+      {
+        "model": "gr-when"
+      },
+      {
+        "model": "gr-super"
+      },
+      {
+        "model": "final-story"
+      },
+      {
+        "type": "notes",
+        "label": "ANOTAÇÕES",
+        "html": ""
+      }
+    ]
+  }
+}

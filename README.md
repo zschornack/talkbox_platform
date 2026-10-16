@@ -98,7 +98,8 @@ Depois aparece o resumo, com o botão de exportar o PDF e o link para a ficha.
   - salva as atividades em Modelos;
   - monta a aula a partir delas.
 - É assim que aulas preparadas fora do seu computador chegam até você: `git pull` e `npm start`.
-- Disponível agora: **Victor · Plague Scare in Siberia** (IELTS).
+- **Imagens no pacote**: um bloco de imagem pode trazer `"file": "images/…/x.webp"` (WebP, dentro de `content/`). Na importação, a imagem vai para `data/uploads/` com o nome da impressão digital, como no envio pelo app, e nunca é guardada duas vezes.
+- Disponíveis agora: **Victor · Plague Scare in Siberia** (IELTS), **Luana · aula 20**, **Thiago Caretta · Family, Birthdays and Unusual World Records** e **Bia & Vini · Natural Disasters: Stories That Shook the World** (com 9 ilustrações).
 
 **Migração**: aulas criadas na versão 0.1 são ligadas automaticamente a alunos cadastrados com o mesmo nome.
 

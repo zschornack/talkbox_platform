@@ -12,7 +12,10 @@
 //               "finished": { "last": "x" | "all" | null, "assessments": { "Past Simple": "practicing" }, "message": "" } }  (opcional)
 //   "review": true   (opcional: os modelos entram "a revisar", como na importação do Drive)
 // }
+// Imagens: { "type": "image", "file": "images/x.webp", "caption": "...", "layout": "full" | "half" }, com o arquivo
+// em WebP dentro de content/. Na importação ele é copiado para data/uploads/ (uma vez só) e vira "src".
 // Modelos sem etiqueta de conteúdo recebem as que forem citadas no título ou no texto (pelos sinônimos).
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -32,7 +35,29 @@ function withIds(block) {
   return b;
 }
 
-export function importPack(pack, file = '') {
+/**
+ * Imagem do pacote: um bloco de imagem pode trazer "file" (WebP, caminho relativo à pasta content/).
+ * O arquivo vai para o acervo com o nome = impressão digital, como no envio pelo app,
+ * então a mesma imagem nunca é guardada duas vezes.
+ */
+function withMedia(block, dir) {
+  if (block.type !== 'image' || !block.file) return block;
+  const src = path.resolve(dir, block.file);
+  if (!src.startsWith(path.resolve(dir) + path.sep)) throw new Error(`Imagem fora da pasta content/: ${block.file}`);
+  if (!fs.existsSync(src)) throw new Error(`Imagem não encontrada: ${block.file}`);
+  if (path.extname(src).toLowerCase() !== '.webp') throw new Error(`A imagem precisa estar em WebP: ${block.file}`);
+  const buf = fs.readFileSync(src);
+  const name = `${crypto.createHash('sha256').update(buf).digest('hex').slice(0, 32)}.webp`;
+  const dst = path.join(db.UPLOADS_DIR, name);
+  if (!fs.existsSync(dst)) {
+    fs.mkdirSync(db.UPLOADS_DIR, { recursive: true });
+    fs.writeFileSync(dst, buf);
+  }
+  const { file, ...rest } = block;
+  return { ...rest, src: `/uploads/${name}` };
+}
+
+export function importPack(pack, file = '', dir = CONTENT_DIR) {
   if (!pack?.id) throw new Error(`Pacote sem "id" (${file})`);
   if (db.db.prepare('SELECT 1 FROM imports WHERE id = ?').get(pack.id)) return null;
 
@@ -52,7 +77,7 @@ export function importPack(pack, file = '') {
 
     const models = {};
     for (const m of pack.models || []) {
-      const block = withIds(m.block);
+      const block = withMedia(withIds(m.block), dir);
       const tags = { ...(m.tags || {}) };
       if (!(tags.content || []).length) tags.content = contentsInText(`${m.title} ${JSON.stringify(block)}`);
       models[m.key] = db.createModel({
@@ -77,7 +102,7 @@ export function importPack(pack, file = '') {
           return copy;
         }
         keyOfBlock.push(entry.key || null);
-        return withIds(entry);
+        return withMedia(withIds(entry), dir);
       });
       lesson = db.createLesson({
         title: pack.lesson.title,
@@ -114,7 +139,7 @@ export function importContentDir(dir = CONTENT_DIR) {
   for (const name of fs.readdirSync(dir).filter((f) => f.endsWith('.json')).sort()) {
     try {
       const pack = JSON.parse(fs.readFileSync(path.join(dir, name), 'utf8'));
-      const out = importPack(pack, name);
+      const out = importPack(pack, name, dir);
       if (out) {
         const who = out.student ? ` para ${out.student.name}` : '';
         console.log(`  Conteúdo novo importado${who}: ${out.lesson ? `aula "${out.lesson.title}"` : 'sem aula'} + ${out.models} modelos (${name})`);

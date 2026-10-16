@@ -51,6 +51,25 @@ test('respostas dos exercícios estão coerentes', () => {
       if (b.type === 'match') assert.ok(b.pairs.length >= 3 && b.pairs.every((p) => p.left && p.right));
       if (b.type === 'deck') assert.ok(b.cats.every((c) => c.qs.length));
       if (b.type === 'challenge') assert.ok(b.lines.length && b.prompts.length);
+      if (b.type === 'image') assert.ok(b.src || fs.existsSync(path.join('content', b.file || '')), `${m.title}: imagem ${b.file}`);
+    }
+  }
+});
+
+test('imagens do pacote entram no acervo e a aula aponta para elas', async () => {
+  for (const pack of PACKS) {
+    const files = pack.models.filter((m) => m.block.type === 'image' && m.block.file);
+    if (!files.length) continue;
+    const s = (await get('/api/students')).find((x) => x.name === pack.student.name);
+    const lesson = (await get(`/api/students/${s.id}`)).lessons.find((l) => l.title === pack.lesson.title);
+    const imgs = (await get(`/api/lessons/${lesson.id}`)).doc.blocks.filter((b) => b.type === 'image');
+    assert.equal(imgs.length, pack.lesson.blocks.filter((e) => files.some((m) => m.key === e.model)).length);
+    for (const b of imgs) {
+      assert.match(b.src, /^\/uploads\/[0-9a-f]{32}\.webp$/);
+      assert.equal(b.file, undefined, 'o caminho do pacote não fica no bloco');
+      const res = await fetch(BASE + b.src);
+      assert.equal(res.status, 200, b.src);
+      assert.ok((await res.arrayBuffer()).byteLength > 1000);
     }
   }
 });
