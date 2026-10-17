@@ -1,0 +1,1113 @@
+{
+  "id": "vinicius-k-pantanal-beyond-2026-10-17",
+  "student": {
+    "name": "Vinícius K.",
+    "level": "B1",
+    "goal": "Conversação",
+    "notes": ""
+  },
+  "models": [
+    {
+      "key": "warmup",
+      "title": "Warm-up · your week and last class",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Modal verbs",
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "WARM-UP",
+        "html": "Full sentences, and one extra detail in every answer.",
+        "words": [
+          "had to",
+          "could",
+          "should",
+          "while"
+        ],
+        "cats": [
+          {
+            "name": "Your week",
+            "qs": [
+              "How was your week?",
+              "What did you have to do this week that you didn't want to do?",
+              "What were you doing yesterday at 8 p.m.?",
+              "What are you doing this weekend?",
+              "What do you usually do on Saturday mornings?"
+            ]
+          },
+          {
+            "name": "Last class",
+            "qs": [
+              "Do you remember Lucas? Where did he work?",
+              "Which animal was the most difficult to save?",
+              "What were the rules at the rescue center?",
+              "Would you like to do what Lucas did? Why (not)?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "vocab-match",
+      "title": "Pantanal · quick vocabulary review",
+      "tags": {
+        "content": [
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "match",
+        "label": "QUICK REVIEW · MATCH THE WORDS",
+        "html": "Fast! Match each word with its meaning. Then say the words aloud.",
+        "pairs": [
+          {
+            "left": "volunteer",
+            "right": "a person who works for free to help others"
+          },
+          {
+            "left": "wildlife",
+            "right": "animals that live free in nature"
+          },
+          {
+            "left": "rescue center",
+            "right": "a place that saves and helps animals or people"
+          },
+          {
+            "left": "take care of",
+            "right": "to look after someone or something"
+          },
+          {
+            "left": "cage",
+            "right": "a box with metal bars for animals"
+          },
+          {
+            "left": "feed",
+            "right": "to give food to"
+          },
+          {
+            "left": "weak",
+            "right": "without strength, the opposite of strong"
+          },
+          {
+            "left": "survive",
+            "right": "to continue to live after something bad"
+          },
+          {
+            "left": "take turns",
+            "right": "to do something one person after the other"
+          },
+          {
+            "left": "patient",
+            "right": "calm when waiting or with problems"
+          }
+        ]
+      }
+    },
+    {
+      "key": "reread",
+      "title": "Reading again · Three Weeks in the Pantanal",
+      "tags": {
+        "content": [
+          "Reading",
+          "Modal verbs",
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura",
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "READ AGAIN · THREE WEEKS IN THE PANTANAL",
+        "html": "<i>Read the text aloud. After each paragraph, the teacher asks you to find one modal verb and say which tense the verbs are in.</i><br><br>Last summer, Lucas Moreira spent three weeks as a <b>volunteer</b> at a <b>wildlife rescue center</b> in the Pantanal, in the west of Brazil. The center <b>takes care of</b> <b>wild</b> animals that are hurt, sick or lost. When the animals are healthy again, the team sends them back to nature.<br><br>On his first day, Lucas was nervous. He couldn't remember all the rules, and he was worried that he might make a mistake. \"You must wash your hands before and after you touch an animal,\" the manager, Carla, explained <b>patiently</b>. \"And you mustn't give the animals names. They aren't pets. They have to stay wild.\"<br><br>Every morning, the volunteers had to wake up at 5:30. They cleaned the <b>cages</b> carefully, prepared the food and <b>fed</b> the animals. Lucas couldn't believe how much a young <b>tapir</b> could eat! In the afternoons, he usually helped the vet. One day, while she was checking a parrot with a broken wing, the bird bit Lucas's finger hard. \"You should hold it more gently,\" Carla said, laughing.<br><br>The most difficult moment came in the second week. A farmer arrived with a baby <b>anteater</b>. It was alone, and it was very <b>weak</b>. The team worked quickly, but nobody knew if it could <b>survive</b>. For three nights, Lucas and the vet <b>took turns</b> feeding it every two hours. On the fourth morning, the little anteater was walking slowly around its box and looking for food. Everyone was smiling.<br><br>Today, Lucas is studying biology at university, and he wants to go back to the Pantanal next year. \"You don't have to be a vet to help animals,\" he says. \"You just have to be <b>patient</b> and work hard. Anyone can do it.\""
+      }
+    },
+    {
+      "key": "retell",
+      "title": "Retell it · change the point of view",
+      "tags": {
+        "content": [
+          "Reading",
+          "Modal verbs",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SPEAKING · TELL IT AS SOMEONE ELSE",
+        "html": "Draw a card and retell one part of the story <b>as that person or animal</b>. Use <i>I</i>, and at least one modal verb.",
+        "promptLabel": "YOU ARE",
+        "lines": [
+          "The first day",
+          "The parrot",
+          "The baby anteater",
+          "Lucas today"
+        ],
+        "prompts": [
+          "Lucas",
+          "Carla, the manager",
+          "the parrot",
+          "the baby anteater",
+          "the vet",
+          "the farmer",
+          "the hungry tapir"
+        ]
+      }
+    },
+    {
+      "key": "vocab-new",
+      "title": "Pantanal vocabulary · new contexts (fill)",
+      "tags": {
+        "content": [
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "SAME WORDS, NEW PLACES",
+        "html": "The words from the text, but now at work, at home and online. Complete (the first letter is in brackets). Then say: is it true for you?",
+        "items": [
+          {
+            "before": "My Wi-Fi signal is very",
+            "hint": "w…",
+            "after": "in the bedroom. I can't watch anything.",
+            "answers": [
+              "weak"
+            ]
+          },
+          {
+            "before": "I can't",
+            "hint": "s…",
+            "after": "a Monday without coffee.",
+            "answers": [
+              "survive"
+            ]
+          },
+          {
+            "before": "My brother and I",
+            "hint": "t… t…",
+            "after": "driving on long trips.",
+            "answers": [
+              "take turns"
+            ]
+          },
+          {
+            "before": "Who",
+            "hint": "t… c… o…",
+            "after": "the bills in your house?",
+            "answers": [
+              "takes care of"
+            ]
+          },
+          {
+            "before": "I scroll my Instagram",
+            "hint": "f…",
+            "after": "every night before bed.",
+            "answers": [
+              "feed"
+            ]
+          },
+          {
+            "before": "Nobody wanted to organize the party, so I",
+            "hint": "v…",
+            "after": ".",
+            "answers": [
+              "volunteered"
+            ]
+          },
+          {
+            "before": "Working in a small office with no windows feels like being in a",
+            "hint": "c…",
+            "after": ".",
+            "answers": [
+              "cage"
+            ]
+          },
+          {
+            "before": "The fans went",
+            "hint": "w…",
+            "after": "when their team scored.",
+            "answers": [
+              "wild"
+            ]
+          },
+          {
+            "before": "You have to be very",
+            "hint": "p…",
+            "after": "with old computers.",
+            "answers": [
+              "patient"
+            ]
+          },
+          {
+            "before": "My friend",
+            "hint": "r…",
+            "after": "me when my car broke down on the highway.",
+            "answers": [
+              "rescued"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "vocab-talk",
+      "title": "Pantanal vocabulary · talk about your life",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · THE WORDS IN YOUR LIFE",
+        "html": "Each question uses a word from the text in a <b>different</b> context. Use the word in your answer!",
+        "words": [
+          "volunteer",
+          "take care of",
+          "wild",
+          "feed",
+          "weak",
+          "survive",
+          "take turns",
+          "patient"
+        ],
+        "cats": [
+          {
+            "name": "Work & study",
+            "qs": [
+              "Do you ever volunteer for extra tasks at work? Why (not)?",
+              "What is your weak point at work? And your strong point?",
+              "Who takes care of the difficult clients in your company?",
+              "How did you survive your worst week at work or at school?",
+              "Are you patient when you teach someone something new?"
+            ]
+          },
+          {
+            "name": "Home & family",
+            "qs": [
+              "Who took care of you when you were sick as a child?",
+              "Do you and your family take turns doing the housework?",
+              "How many people do you feed when you cook on Sundays?",
+              "What things can you not survive without at home?",
+              "Are you more patient with your family or with strangers?"
+            ]
+          },
+          {
+            "name": "Free time",
+            "qs": [
+              "What was the wildest party you ever went to?",
+              "What makes you go wild: football, music, a sale?",
+              "What do you see on your social media feed these days?",
+              "Would you like to see wildlife on a trip? Where?",
+              "Would you survive one week alone in nature? What would you need?"
+            ]
+          },
+          {
+            "name": "Ideas",
+            "qs": [
+              "Should zoos keep animals in cages?",
+              "Can a person feel \"in a cage\" at a job? When?",
+              "Should companies pay employees to volunteer one day a month?",
+              "Which Brazilian animal should be the mascot of your city: the tapir, the anteater, or another one?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "vocab-use",
+      "title": "Use the word · not about animals!",
+      "tags": {
+        "content": [
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala",
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SENTENCE BUILDING · USE THE WORD",
+        "html": "Draw a topic and a word. Make <b>two sentences</b> about the topic with the word. No animals allowed!",
+        "promptLabel": "USE THIS WORD",
+        "lines": [
+          "your job",
+          "your city",
+          "your childhood",
+          "technology",
+          "football",
+          "a trip",
+          "your family",
+          "money"
+        ],
+        "prompts": [
+          "volunteer",
+          "take care of",
+          "wild",
+          "feed",
+          "weak",
+          "survive",
+          "take turns",
+          "patient / patiently",
+          "rescue",
+          "cage"
+        ]
+      }
+    },
+    {
+      "key": "tenses-fill",
+      "title": "Four tenses · a day at a soup kitchen",
+      "tags": {
+        "content": [
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "FOUR TENSES · A VOLUNTEER IN THE CITY",
+        "html": "Mariana is a volunteer too, but in the city. Complete with Present Simple, Present Continuous, Past Simple or Past Continuous. Look at the time words!",
+        "items": [
+          {
+            "before": "Mariana",
+            "hint": "work",
+            "after": "in a bank from Monday to Friday.",
+            "answers": [
+              "works"
+            ]
+          },
+          {
+            "before": "Every Sunday, she",
+            "hint": "volunteer",
+            "after": "at a soup kitchen downtown.",
+            "answers": [
+              "volunteers"
+            ]
+          },
+          {
+            "before": "Last Sunday, she",
+            "hint": "arrive",
+            "after": "at 7 a.m.",
+            "answers": [
+              "arrived"
+            ]
+          },
+          {
+            "before": "When she arrived, the other volunteers",
+            "hint": "cook",
+            "after": "rice and beans.",
+            "answers": [
+              "were cooking"
+            ]
+          },
+          {
+            "before": "While she",
+            "hint": "serve",
+            "after": "the food, an old man started to cry.",
+            "answers": [
+              "was serving"
+            ]
+          },
+          {
+            "before": "He",
+            "hint": "tell",
+            "after": "her he was very weak and hungry.",
+            "answers": [
+              "told"
+            ]
+          },
+          {
+            "before": "She",
+            "hint": "take care of",
+            "after": "him and found him a place to sleep.",
+            "answers": [
+              "took care of"
+            ]
+          },
+          {
+            "before": "Right now, Mariana",
+            "hint": "organize",
+            "after": "a campaign to collect winter clothes.",
+            "answers": [
+              "is organizing",
+              "'s organizing"
+            ]
+          },
+          {
+            "before": "This month, more people",
+            "hint": "help",
+            "after": "than ever before.",
+            "answers": [
+              "are helping"
+            ]
+          },
+          {
+            "before": "She",
+            "hint": "not / think",
+            "after": "she is a hero. She just wants to help.",
+            "answers": [
+              "doesn't think",
+              "does not think"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "tense-machine",
+      "title": "Tense machine · one verb, four tenses",
+      "tags": {
+        "content": [
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SPEAKING · THE TENSE MACHINE",
+        "html": "Draw a verb and a time. Make a sentence <b>about you</b>. Then say the same verb in the other three tenses.",
+        "promptLabel": "TIME",
+        "lines": [
+          "feed",
+          "take care of",
+          "work",
+          "drive",
+          "wait",
+          "cook",
+          "help",
+          "sleep",
+          "watch",
+          "wake up"
+        ],
+        "prompts": [
+          "usually",
+          "right now",
+          "yesterday",
+          "at 9 p.m. last night",
+          "every weekend",
+          "at the moment",
+          "last year",
+          "when my phone rang",
+          "this week",
+          "never"
+        ]
+      }
+    },
+    {
+      "key": "tenses-talk",
+      "title": "Four tenses · ask and answer",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · FOUR TENSES, MANY TOPICS",
+        "html": "Answer, then ask the teacher the same question. Listen for the tense in each question!",
+        "words": [
+          "usually",
+          "right now",
+          "last",
+          "while",
+          "when"
+        ],
+        "cats": [
+          {
+            "name": "Usually",
+            "qs": [
+              "What do you usually do when you are stressed?",
+              "How often do you see your family?",
+              "What does your boss usually ask you to do?",
+              "Who usually cooks in your house?"
+            ]
+          },
+          {
+            "name": "Now",
+            "qs": [
+              "What are you reading or watching these days?",
+              "What projects are you working on at the moment?",
+              "What is your family doing right now?",
+              "Is anything changing in your life this month?"
+            ]
+          },
+          {
+            "name": "Finished past",
+            "qs": [
+              "What was the last thing you bought online?",
+              "When did you last help a stranger?",
+              "Where did you go on your last holiday?",
+              "What did you have to do yesterday?"
+            ]
+          },
+          {
+            "name": "In progress in the past",
+            "qs": [
+              "What were you doing when you heard about something big in the news?",
+              "What were you doing at midnight last New Year's Eve?",
+              "What was happening at home when you left this morning?",
+              "Were you working or studying at this time last year? What were you doing?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "modals-choose",
+      "title": "Modals · new situations",
+      "tags": {
+        "content": [
+          "Modal verbs"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "MODALS · CHOOSE THE BEST ONE",
+        "html": "New situations: work, travel and technology. Choose, then explain <b>why</b> the other one is wrong.",
+        "instant": false,
+        "items": [
+          {
+            "before": "You",
+            "options": [
+              "mustn't",
+              "don't have to"
+            ],
+            "answer": 1,
+            "after": "print the ticket. You can show it on your phone."
+          },
+          {
+            "before": "You",
+            "options": [
+              "mustn't",
+              "don't have to"
+            ],
+            "answer": 0,
+            "after": "use your phone while you are driving."
+          },
+          {
+            "before": "When I started my first job, I",
+            "options": [
+              "couldn't",
+              "mustn't"
+            ],
+            "answer": 0,
+            "after": "speak English at all."
+          },
+          {
+            "before": "I'm not sure. The meeting",
+            "options": [
+              "might",
+              "must"
+            ],
+            "answer": 0,
+            "after": "be cancelled."
+          },
+          {
+            "before": "Last year, I",
+            "options": [
+              "must",
+              "had to"
+            ],
+            "answer": 1,
+            "after": "work every Saturday."
+          },
+          {
+            "before": "",
+            "options": [
+              "Could",
+              "Should"
+            ],
+            "answer": 0,
+            "after": "you send me the report, please?"
+          },
+          {
+            "before": "Your laptop is very slow. You",
+            "options": [
+              "should",
+              "might"
+            ],
+            "answer": 0,
+            "after": "restart it."
+          },
+          {
+            "before": "In Japan, you",
+            "options": [
+              "have to",
+              "can"
+            ],
+            "answer": 0,
+            "after": "take off your shoes before you enter a house."
+          },
+          {
+            "before": "I",
+            "options": [
+              "can",
+              "could"
+            ],
+            "answer": 0,
+            "after": "drive now, but I couldn't drive when I was 17."
+          },
+          {
+            "before": "Visitors",
+            "options": [
+              "must",
+              "might"
+            ],
+            "answer": 0,
+            "after": "show an ID at the reception. It's the rule."
+          }
+        ]
+      }
+    },
+    {
+      "key": "modals-fix",
+      "title": "Modals and tenses · fix the mistakes",
+      "tags": {
+        "content": [
+          "Modal verbs",
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "FIX THE MISTAKES",
+        "html": "Each sentence has <b>one</b> mistake. Write the correct sentence.",
+        "items": [
+          {
+            "before": "He can drives a truck. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "He can drive a truck.",
+              "He can drive a truck"
+            ]
+          },
+          {
+            "before": "You should to be more patient. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "You should be more patient.",
+              "You should be more patient"
+            ]
+          },
+          {
+            "before": "I must worked late yesterday. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "I had to work late yesterday.",
+              "I had to work late yesterday"
+            ]
+          },
+          {
+            "before": "Do you can take care of my plants? →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "Can you take care of my plants?",
+              "Can you take care of my plants"
+            ]
+          },
+          {
+            "before": "She don't have to wake up early. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "She doesn't have to wake up early.",
+              "She doesn't have to wake up early",
+              "She does not have to wake up early.",
+              "She does not have to wake up early"
+            ]
+          },
+          {
+            "before": "I was cook when you called. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "I was cooking when you called.",
+              "I was cooking when you called"
+            ]
+          },
+          {
+            "before": "Look! The dog eats my shoe! →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "Look! The dog is eating my shoe!",
+              "Look! The dog is eating my shoe",
+              "Look! The dog's eating my shoe!"
+            ]
+          },
+          {
+            "before": "I usually am working from home on Fridays. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "I usually work from home on Fridays.",
+              "I usually work from home on Fridays"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "rules",
+      "title": "Rules and advice · places",
+      "tags": {
+        "content": [
+          "Modal verbs"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SPEAKING · RULES, ADVICE AND POSSIBILITIES",
+        "html": "Draw a place and a modal. Say <b>two</b> sentences about the place with that modal. Then add one with <i>might</i>.",
+        "promptLabel": "MODAL",
+        "lines": [
+          "a new job, first day",
+          "an airport",
+          "a hospital",
+          "a job interview",
+          "a football stadium",
+          "a trip to another country",
+          "a family lunch",
+          "a gym"
+        ],
+        "prompts": [
+          "have to",
+          "don't have to",
+          "must",
+          "mustn't",
+          "should",
+          "shouldn't",
+          "can",
+          "can't"
+        ]
+      }
+    },
+    {
+      "key": "modals-roleplay",
+      "title": "Modals · role-plays",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Modal verbs"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "ROLE-PLAY · NEW SITUATIONS",
+        "html": "The teacher asks, you answer quickly with a modal. Then switch roles!",
+        "words": [
+          "must",
+          "have to",
+          "should",
+          "can",
+          "might",
+          "could"
+        ],
+        "cats": [
+          {
+            "name": "New employee",
+            "qs": [
+              "You are the manager. I'm new. What time do I have to arrive?",
+              "Can I work from home?",
+              "Do I have to wear a suit?",
+              "What must I never do here?",
+              "What should I do in my first week?"
+            ]
+          },
+          {
+            "name": "Your apartment",
+            "qs": [
+              "I'm renting your apartment for a month. Can I have a dog there?",
+              "Do I have to pay for electricity?",
+              "What mustn't I do in the building?",
+              "Who should I call if something breaks?"
+            ]
+          },
+          {
+            "name": "A friend's problem",
+            "qs": [
+              "My boss is never patient with me. What should I do?",
+              "I'm feeling very weak and tired every day. What should I do?",
+              "My neighbor feeds the street cats and the building is angry. What could we do?",
+              "I want to volunteer, but I don't have much time. What could I do?"
+            ]
+          },
+          {
+            "name": "Before and now",
+            "qs": [
+              "What couldn't you do as a child that you can do now?",
+              "What did you have to do at school that you don't have to do now?",
+              "What could people do 20 years ago that they can't do now?",
+              "What might be different in your life in five years?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "final",
+      "title": "Final challenge · tell a story with everything",
+      "tags": {
+        "content": [
+          "Modal verbs",
+          "Vocabulary",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "FINAL CHALLENGE · TELL A STORY",
+        "html": "Tell a short story (true or invented). You <b>must</b> use: the word on the card, one modal verb, and the Past Continuous (<i>while / when</i>).",
+        "promptLabel": "USE",
+        "lines": [
+          "A day when you had to be very patient",
+          "A time you helped someone",
+          "A time someone rescued you",
+          "Your first day at a new job",
+          "A trip where something went wrong",
+          "A time you felt very weak or tired"
+        ],
+        "prompts": [
+          "survive",
+          "take turns",
+          "take care of",
+          "wild",
+          "volunteer",
+          "patiently",
+          "feed",
+          "weak"
+        ]
+      }
+    },
+    {
+      "key": "wrapup",
+      "title": "Wrap-up",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Modal verbs",
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "WRAP-UP",
+        "html": "Last questions!",
+        "words": [],
+        "cats": [
+          {
+            "name": "Today",
+            "qs": [
+              "Which word from the text is the most useful for your life? Why?",
+              "Which modal is the most difficult for you? Make one sentence with it.",
+              "What are you going to do after this class? What should you do?",
+              "What did you learn today?"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "lesson": {
+    "title": "Three Weeks in the Pantanal (part 2): Same Words, New Places",
+    "subtitle": "Vocabulary review · read again · vocabulary in new contexts · four tenses · modal verbs",
+    "level": "B1",
+    "date": "2026-10-17",
+    "tags": [
+      "Review",
+      "Vocabulary",
+      "Speaking"
+    ],
+    "blocks": [
+      {
+        "model": "warmup"
+      },
+      {
+        "model": "vocab-match"
+      },
+      {
+        "model": "reread"
+      },
+      {
+        "model": "retell"
+      },
+      {
+        "model": "vocab-new"
+      },
+      {
+        "model": "vocab-talk"
+      },
+      {
+        "model": "vocab-use"
+      },
+      {
+        "model": "tenses-fill"
+      },
+      {
+        "model": "tense-machine"
+      },
+      {
+        "model": "tenses-talk"
+      },
+      {
+        "model": "modals-choose"
+      },
+      {
+        "model": "modals-fix"
+      },
+      {
+        "model": "rules"
+      },
+      {
+        "model": "modals-roleplay"
+      },
+      {
+        "model": "final"
+      },
+      {
+        "model": "wrapup"
+      },
+      {
+        "type": "notes",
+        "label": "ANOTAÇÕES",
+        "html": ""
+      }
+    ]
+  }
+}
