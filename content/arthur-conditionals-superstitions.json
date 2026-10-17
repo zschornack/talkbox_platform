@@ -1,0 +1,1099 @@
+{
+  "id": "arthur-conditionals-superstitions-2026-10-17",
+  "student": {
+    "name": "Arthur",
+    "level": "A2",
+    "goal": "",
+    "notes": ""
+  },
+  "models": [
+    {
+      "key": "warmup",
+      "title": "Warm-up · luck and rules",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Present Simple",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "WARM-UP",
+        "html": "Answer with complete sentences. Add <b>one extra detail</b> every time.",
+        "words": [
+          "usually",
+          "yesterday",
+          "because",
+          "but"
+        ],
+        "cats": [
+          {
+            "name": "Your week",
+            "qs": [
+              "How was your week?",
+              "What did you do last night?",
+              "What are you doing this weekend?",
+              "What were you doing at 7 a.m. today?"
+            ]
+          },
+          {
+            "name": "Luck",
+            "qs": [
+              "Are you a lucky person? Why?",
+              "What was your luckiest day? What happened?",
+              "Do you believe in luck, or in hard work?",
+              "Do you have a lucky number or a lucky color?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "modal-review",
+      "title": "Modals · quick review",
+      "tags": {
+        "content": [
+          "Modal verbs"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "MODALS · QUICK REVIEW",
+        "html": "<b>can / can't</b> ability, permission · <b>could</b> past ability, polite request · <b>should</b> advice · <b>must / mustn't</b> strong rule · <b>have to / don't have to</b> obligation / no obligation · <b>might</b> possibility.",
+        "instant": true,
+        "items": [
+          {
+            "before": "You look tired. You",
+            "options": [
+              "should",
+              "must"
+            ],
+            "answer": 0,
+            "after": "go to bed early."
+          },
+          {
+            "before": "You",
+            "options": [
+              "mustn't",
+              "don't have to"
+            ],
+            "answer": 0,
+            "after": "smoke on a plane. It's the law."
+          },
+          {
+            "before": "It's Sunday, so I",
+            "options": [
+              "mustn't",
+              "don't have to"
+            ],
+            "answer": 1,
+            "after": "work."
+          },
+          {
+            "before": "When I was ten, I",
+            "options": [
+              "can",
+              "could"
+            ],
+            "answer": 1,
+            "after": "swim very well."
+          },
+          {
+            "before": "Take an umbrella. It",
+            "options": [
+              "might",
+              "must"
+            ],
+            "answer": 0,
+            "after": "rain later."
+          },
+          {
+            "before": "",
+            "options": [
+              "Could",
+              "Should"
+            ],
+            "answer": 0,
+            "after": "you open the window, please?"
+          },
+          {
+            "before": "Last year, I",
+            "options": [
+              "must",
+              "had to"
+            ],
+            "answer": 1,
+            "after": "wake up at 5 a.m. every day."
+          },
+          {
+            "before": "My grandma is 80, but she",
+            "options": [
+              "can",
+              "might"
+            ],
+            "answer": 0,
+            "after": "still dance all night!"
+          }
+        ]
+      }
+    },
+    {
+      "key": "modal-talk",
+      "title": "Modals · quick speaking",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Modal verbs"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · MODALS IN YOUR LIFE",
+        "html": "Answer fast! Use the modal from the question in your answer.",
+        "words": [
+          "can",
+          "could",
+          "should",
+          "must",
+          "have to",
+          "might"
+        ],
+        "cats": [
+          {
+            "name": "You",
+            "qs": [
+              "What can you do very well?",
+              "What couldn't you do as a child that you can do now?",
+              "What do you have to do every morning?",
+              "What don't you have to do on weekends?",
+              "What might you do tonight?"
+            ]
+          },
+          {
+            "name": "Rules",
+            "qs": [
+              "What must people do in a hospital?",
+              "What mustn't you do in a library?",
+              "What should people do when they feel stressed?",
+              "What can't you do at work?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "cond-explain",
+      "title": "Zero and first conditional",
+      "tags": {
+        "content": [
+          "Conditionals (0 & 1)"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "explanation",
+        "label": "ZERO AND FIRST CONDITIONAL",
+        "html": "<span style=\"background-color: #CFE9EA\"><b>ZERO CONDITIONAL</b></span> = always true: facts, habits, science.<br><b>If + present simple, present simple</b><br><i>If you <b>heat</b> ice, it <b>melts</b>. · If I <b>drink</b> coffee at night, I <b>don't sleep</b>.</i><br><br><span style=\"background-color: #FFE2B8\"><b>FIRST CONDITIONAL</b></span> = a real possibility in the future.<br><b>If + present simple, will / won't + verb</b><br><i>If it <b>rains</b> tomorrow, I <b>will stay</b> at home. · If you <b>don't study</b>, you <b>won't pass</b>.</i><br><br>⚠️ Never <b>will</b> after <i>if</i>: ✗ <i>If it will rain…</i> ✓ <i>If it rains…</i><br>💡 You can also use a <b>modal</b> in the result: <i>If you feel sick, you <b>should</b> stay home. · If it rains, we <b>might</b> cancel the trip.</i>"
+      }
+    },
+    {
+      "key": "reading",
+      "title": "Reading · Friday the 13th",
+      "tags": {
+        "content": [
+          "Reading",
+          "Conditionals (0 & 1)",
+          "Modal verbs",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "READING · FRIDAY THE 13TH",
+        "html": "Many people around the world <b>believe in</b> superstitions. In Brazil, people say that if you walk under a <b>ladder</b>, you get bad luck. In many countries, if a black cat crosses your path, it's a bad <b>sign</b>. And if you break a mirror, you have seven years of bad luck! But there is good luck too: if you find a four-leaf <b>clover</b>, you are a lucky person.<br><br>Marcos doesn't believe in any of this. Or he didn't, until last Friday. It was Friday the 13th. He was walking to work when a black cat crossed the street in front of him. \"That's just a cat,\" he thought. Five minutes later, while he was waiting for the bus, it started to rain. He didn't have an umbrella. At the office, he was carrying a cup of coffee when he <b>tripped</b> and spilled it on his boss's shirt. In the afternoon, his computer stopped working, and he couldn't send an important report.<br><br>That night, Marcos called his grandmother. \"Grandma, today everything went wrong!\" She laughed. \"You should be careful on Fridays the 13th, my dear. If you see a black cat, you must go back home.\" \"Grandma, I can't go back home every time I see a cat!\" said Marcos.<br><br>Now Marcos is <b>planning</b> next Friday the 13th. \"If I stay at home, nothing bad will happen,\" he says. \"And if a black cat comes to my door, I won't open it!\""
+      }
+    },
+    {
+      "key": "reading-check",
+      "title": "Friday the 13th · true or false?",
+      "tags": {
+        "content": [
+          "Reading",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "COMPREHENSION · TRUE OR FALSE?",
+        "html": "Then correct the false sentences with a complete sentence.",
+        "instant": false,
+        "items": [
+          {
+            "before": "Marcos always believed in superstitions.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "A black cat crossed the street while Marcos was walking to work.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "Marcos had an umbrella at the bus stop.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "He spilled coffee on his own shirt.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "His grandmother gave him advice.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "Marcos is planning to stay at home next Friday the 13th.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "key": "match-halves",
+      "title": "Superstitions · match the halves (zero conditional)",
+      "tags": {
+        "content": [
+          "Conditionals (0 & 1)",
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "match",
+        "label": "SUPERSTITIONS · MATCH THE HALVES",
+        "html": "Match the superstitions. Are they from Brazil? Do you know others?",
+        "pairs": [
+          {
+            "left": "If you walk under a ladder,",
+            "right": "you get bad luck."
+          },
+          {
+            "left": "If you break a mirror,",
+            "right": "you have seven years of bad luck."
+          },
+          {
+            "left": "If you find a four-leaf clover,",
+            "right": "you are a lucky person."
+          },
+          {
+            "left": "If your right hand itches,",
+            "right": "you receive money."
+          },
+          {
+            "left": "If you open an umbrella inside the house,",
+            "right": "something bad happens."
+          },
+          {
+            "left": "If you leave your purse on the floor,",
+            "right": "you lose money."
+          }
+        ]
+      }
+    },
+    {
+      "key": "cond-which",
+      "title": "Zero or first conditional? (choose)",
+      "tags": {
+        "content": [
+          "Conditionals (0 & 1)"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "ZERO OR FIRST? CHOOSE THE CORRECT FORM",
+        "html": "Always true → present + present. A real possibility in the future → present + <b>will</b>.",
+        "instant": false,
+        "items": [
+          {
+            "before": "If you heat water to 100°C, it",
+            "options": [
+              "boils",
+              "will boil"
+            ],
+            "answer": 0,
+            "after": "."
+          },
+          {
+            "before": "If it",
+            "options": [
+              "rains",
+              "will rain"
+            ],
+            "answer": 0,
+            "after": "tomorrow, I'll take the car."
+          },
+          {
+            "before": "If I drink coffee at night, I",
+            "options": [
+              "don't sleep",
+              "won't sleep"
+            ],
+            "answer": 0,
+            "after": "well. It happens every time."
+          },
+          {
+            "before": "If you call me later, I",
+            "options": [
+              "tell",
+              "will tell"
+            ],
+            "answer": 1,
+            "after": "you everything."
+          },
+          {
+            "before": "If people don't eat, they",
+            "options": [
+              "get",
+              "will get"
+            ],
+            "answer": 0,
+            "after": "weak."
+          },
+          {
+            "before": "If Marcos stays at home on Friday, nothing bad",
+            "options": [
+              "happens",
+              "will happen"
+            ],
+            "answer": 1,
+            "after": "."
+          },
+          {
+            "before": "If we",
+            "options": [
+              "leave",
+              "will leave"
+            ],
+            "answer": 0,
+            "after": "now, we'll catch the train."
+          },
+          {
+            "before": "If my dog sees a cat, he always",
+            "options": [
+              "barks",
+              "will bark"
+            ],
+            "answer": 0,
+            "after": "."
+          }
+        ]
+      }
+    },
+    {
+      "key": "cond-fill",
+      "title": "Conditionals · complete the sentences",
+      "tags": {
+        "content": [
+          "Conditionals (0 & 1)",
+          "Modal verbs"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "PRACTICE · COMPLETE THE SENTENCES",
+        "html": "Use the verb in brackets. Zero conditional, first conditional or a modal. Then say: is it true for you?",
+        "items": [
+          {
+            "before": "If I",
+            "hint": "be",
+            "after": "hungry at night, I eat a sandwich.",
+            "answers": [
+              "am"
+            ]
+          },
+          {
+            "before": "If you mix red and yellow, you",
+            "hint": "get",
+            "after": "orange.",
+            "answers": [
+              "get"
+            ]
+          },
+          {
+            "before": "If it is sunny on Saturday, we",
+            "hint": "go",
+            "after": "to the beach.",
+            "answers": [
+              "will go",
+              "'ll go"
+            ]
+          },
+          {
+            "before": "If you",
+            "hint": "not / hurry",
+            "after": ", you will miss the bus.",
+            "answers": [
+              "don't hurry",
+              "do not hurry"
+            ]
+          },
+          {
+            "before": "If you have a headache, you",
+            "hint": "should / drink",
+            "after": "more water.",
+            "answers": [
+              "should drink"
+            ]
+          },
+          {
+            "before": "If my boss",
+            "hint": "call",
+            "after": "me tonight, I won't answer!",
+            "answers": [
+              "calls"
+            ]
+          },
+          {
+            "before": "If you go to Japan, you",
+            "hint": "have to / take off",
+            "after": "your shoes inside people's houses.",
+            "answers": [
+              "have to take off"
+            ]
+          },
+          {
+            "before": "If it snows in São Paulo, people",
+            "hint": "might / not / believe",
+            "after": "it!",
+            "answers": [
+              "might not believe"
+            ]
+          },
+          {
+            "before": "If I finish work early today, I",
+            "hint": "call",
+            "after": "you.",
+            "answers": [
+              "will call",
+              "'ll call"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "fix",
+      "title": "Conditionals and modals · fix the mistakes",
+      "tags": {
+        "content": [
+          "Conditionals (0 & 1)",
+          "Modal verbs"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "FIX THE MISTAKES",
+        "html": "Each sentence has one mistake. Write the correct sentence.",
+        "items": [
+          {
+            "before": "If it will rain, I will stay home. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "If it rains, I will stay home.",
+              "If it rains, I will stay home",
+              "If it rains, I'll stay home.",
+              "If it rains, I'll stay home"
+            ]
+          },
+          {
+            "before": "If you heat ice, it will melting. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "If you heat ice, it melts.",
+              "If you heat ice, it melts",
+              "If you heat ice, it will melt.",
+              "If you heat ice, it will melt"
+            ]
+          },
+          {
+            "before": "You should to call your mother. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "You should call your mother.",
+              "You should call your mother"
+            ]
+          },
+          {
+            "before": "If I see him, I tell him tomorrow. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "If I see him, I will tell him tomorrow.",
+              "If I see him, I will tell him tomorrow",
+              "If I see him, I'll tell him tomorrow.",
+              "If I see him, I'll tell him tomorrow"
+            ]
+          },
+          {
+            "before": "She cans speak three languages. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "She can speak three languages.",
+              "She can speak three languages"
+            ]
+          },
+          {
+            "before": "If you don't sleep, you are feeling tired. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "If you don't sleep, you feel tired.",
+              "If you don't sleep, you feel tired"
+            ]
+          },
+          {
+            "before": "I must went to the bank yesterday. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "I had to go to the bank yesterday.",
+              "I had to go to the bank yesterday"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "cond-talk",
+      "title": "Conditionals · speaking: what happens if…?",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Conditionals (0 & 1)"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · WHAT HAPPENS IF…?",
+        "html": "Answer with a full <b>if</b> sentence. Then ask the teacher!",
+        "words": [
+          "if",
+          "when",
+          "will",
+          "won't",
+          "should",
+          "might"
+        ],
+        "cats": [
+          {
+            "name": "Always (zero)",
+            "qs": [
+              "What happens if you don't drink coffee in the morning?",
+              "What do you do if you can't sleep?",
+              "What happens if you leave milk out of the fridge?",
+              "How do you feel if you don't exercise for a week?",
+              "What do you do if you are stuck in traffic?"
+            ]
+          },
+          {
+            "name": "Future (first)",
+            "qs": [
+              "If it rains this weekend, what will you do?",
+              "If you have a free day next week, where will you go?",
+              "If you get a bonus at work, what will you buy?",
+              "If your phone dies today, what will you do?",
+              "If you see a black cat tomorrow, will you be worried?"
+            ]
+          },
+          {
+            "name": "Superstitions",
+            "qs": [
+              "Do you believe in any superstitions?",
+              "What superstitions did your grandparents believe in?",
+              "What do people do in Brazil on New Year's Eve for good luck?",
+              "Do you knock on wood? When?",
+              "Do football players have superstitions? Do you know any?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "if-chain",
+      "title": "If chain",
+      "tags": {
+        "content": [
+          "Conditionals (0 & 1)",
+          "Modal verbs"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SPEAKING · THE IF CHAIN",
+        "html": "Start with the card. The end of your sentence is the <b>start of the next</b>: <i>If I win the lottery, I'll buy a house. If I buy a house, I'll…</i> Take turns with the teacher!",
+        "promptLabel": "ADD A",
+        "lines": [
+          "If I wake up late tomorrow,…",
+          "If I win the lottery,…",
+          "If it rains on Saturday,…",
+          "If I see a black cat,…",
+          "If my boss gives me a day off,…",
+          "If I go to the beach,…"
+        ],
+        "prompts": [
+          "modal: should",
+          "modal: might",
+          "modal: have to",
+          "modal: can",
+          "\"but\"",
+          "\"because\""
+        ]
+      }
+    },
+    {
+      "key": "advice",
+      "title": "Problems and advice · if + modal",
+      "tags": {
+        "content": [
+          "Conditionals (0 & 1)",
+          "Modal verbs"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SPEAKING · THE ADVICE MACHINE",
+        "html": "Draw a problem and a modal. Give advice with an <b>if</b> sentence and the modal. Then give a second idea!",
+        "promptLabel": "USE",
+        "lines": [
+          "My neighbor plays loud music every night.",
+          "I always feel tired at work.",
+          "My friend wants to learn to cook.",
+          "I lost my wallet.",
+          "I want to travel, but I don't have much money.",
+          "My cat was sick yesterday.",
+          "I was driving and my car stopped working."
+        ],
+        "prompts": [
+          "should",
+          "shouldn't",
+          "could",
+          "might",
+          "have to",
+          "must",
+          "can"
+        ]
+      }
+    },
+    {
+      "key": "build",
+      "title": "Sentence building · put the words in order",
+      "tags": {
+        "content": [
+          "Conditionals (0 & 1)",
+          "Modal verbs"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "SENTENCE BUILDING · PUT THE WORDS IN ORDER",
+        "html": "Write the sentence in the correct order. Then make a sentence like it <b>about you</b>.",
+        "items": [
+          {
+            "before": "",
+            "hint": "if / rains / it / I / take / will / the bus",
+            "after": "",
+            "answers": [
+              "If it rains, I will take the bus.",
+              "If it rains I will take the bus",
+              "If it rains, I will take the bus",
+              "I will take the bus if it rains.",
+              "I will take the bus if it rains"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "you / should / see / a doctor / if / feel / you / sick",
+            "after": "",
+            "answers": [
+              "If you feel sick, you should see a doctor.",
+              "If you feel sick you should see a doctor",
+              "You should see a doctor if you feel sick.",
+              "You should see a doctor if you feel sick",
+              "If you feel sick, you should see a doctor"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "if / I / drink / coffee / at night / I / sleep / don't",
+            "after": "",
+            "answers": [
+              "If I drink coffee at night, I don't sleep.",
+              "If I drink coffee at night I don't sleep",
+              "I don't sleep if I drink coffee at night.",
+              "I don't sleep if I drink coffee at night",
+              "If I drink coffee at night, I don't sleep"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "we / might / late / be / if / leave / we / now / don't",
+            "after": "",
+            "answers": [
+              "If we don't leave now, we might be late.",
+              "If we don't leave now we might be late",
+              "We might be late if we don't leave now.",
+              "We might be late if we don't leave now",
+              "If we don't leave now, we might be late"
+            ]
+          },
+          {
+            "before": "",
+            "hint": "what / you / do / will / if / your phone / dies / ?",
+            "after": "",
+            "answers": [
+              "What will you do if your phone dies?",
+              "What will you do if your phone dies"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "roleplay",
+      "title": "Role-plays · rules and possibilities",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Conditionals (0 & 1)",
+          "Modal verbs"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "ROLE-PLAY · RULES AND POSSIBILITIES",
+        "html": "Answer the teacher's questions using <b>if</b> and a <b>modal</b>. Then switch roles!",
+        "words": [
+          "if",
+          "must",
+          "have to",
+          "should",
+          "can",
+          "might"
+        ],
+        "cats": [
+          {
+            "name": "Travel agent",
+            "qs": [
+              "I'm going to London in January. What should I take?",
+              "If it rains every day, what can I do?",
+              "Do I have to have a visa?",
+              "If I lose my passport, what must I do?",
+              "If I have a free day, where should I go?"
+            ]
+          },
+          {
+            "name": "New roommate",
+            "qs": [
+              "Can I have friends at the apartment?",
+              "If I come home late, do I have to be quiet?",
+              "What mustn't I do in the kitchen?",
+              "If I break something, what will happen?",
+              "Who has to clean the bathroom?"
+            ]
+          },
+          {
+            "name": "At the doctor",
+            "qs": [
+              "I can't sleep at night. What should I do?",
+              "If I drink coffee in the afternoon, will it be a problem?",
+              "Can I exercise if I feel tired?",
+              "If the pain continues, what will you do?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "final",
+      "title": "Final challenge · your Friday the 13th",
+      "tags": {
+        "content": [
+          "Conditionals (0 & 1)",
+          "Modal verbs",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "FINAL CHALLENGE · YOUR UNLUCKY DAY",
+        "html": "Tell a story (true or invented) like Marcos's. You <b>must</b> use: the Past Continuous (<i>I was … when …</i>), one modal, and one <b>if</b> sentence at the end.",
+        "promptLabel": "USE",
+        "lines": [
+          "A day when everything went wrong",
+          "A very lucky day",
+          "A day you were late for something important",
+          "A trip with many problems",
+          "A day you lost something important"
+        ],
+        "prompts": [
+          "suddenly",
+          "while",
+          "should",
+          "might",
+          "had to",
+          "couldn't"
+        ]
+      }
+    },
+    {
+      "key": "wrapup",
+      "title": "Wrap-up",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Conditionals (0 & 1)",
+          "Modal verbs"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "WRAP-UP",
+        "html": "Last questions!",
+        "words": [],
+        "cats": [
+          {
+            "name": "Today",
+            "qs": [
+              "Make one zero conditional sentence about your routine.",
+              "Make one first conditional sentence about this weekend.",
+              "What should you do to practise English this week?",
+              "Which superstition from today is the strangest?"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "lesson": {
+    "title": "If You See a Black Cat…: Zero & First Conditional",
+    "subtitle": "Zero & first conditional · modal verbs review · Present and Past (simple and continuous)",
+    "level": "A2",
+    "date": "2026-10-17",
+    "tags": [
+      "Grammar",
+      "Speaking",
+      "Review"
+    ],
+    "blocks": [
+      {
+        "model": "warmup"
+      },
+      {
+        "model": "modal-review"
+      },
+      {
+        "model": "modal-talk"
+      },
+      {
+        "model": "cond-explain"
+      },
+      {
+        "model": "reading"
+      },
+      {
+        "model": "reading-check"
+      },
+      {
+        "model": "match-halves"
+      },
+      {
+        "model": "cond-which"
+      },
+      {
+        "model": "cond-fill"
+      },
+      {
+        "model": "fix"
+      },
+      {
+        "model": "cond-talk"
+      },
+      {
+        "model": "if-chain"
+      },
+      {
+        "model": "advice"
+      },
+      {
+        "model": "build"
+      },
+      {
+        "model": "roleplay"
+      },
+      {
+        "model": "final"
+      },
+      {
+        "model": "wrapup"
+      },
+      {
+        "type": "notes",
+        "label": "ANOTAÇÕES",
+        "html": ""
+      }
+    ]
+  }
+}
