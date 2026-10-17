@@ -1,0 +1,1450 @@
+{
+  "id": "thiago-santos-farm-detective-2026-10-16",
+  "student": {
+    "name": "Thiago Santos",
+    "level": "A2",
+    "goal": "Conversação",
+    "notes": "Dificuldade grande para falar e montar frases longas. Foco em speaking."
+  },
+  "models": [
+    {
+      "key": "warmup",
+      "title": "Warm-up · last class and this week",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "WARM-UP",
+        "html": "Answer with <b>complete sentences</b>. Try to say <b>two</b> sentences for each question.",
+        "words": [
+          "yesterday",
+          "right now",
+          "usually",
+          "while"
+        ],
+        "cats": [
+          {
+            "name": "Last class",
+            "qs": [
+              "Do you remember the story from last class? What was it about?",
+              "Who was the chicken thief?",
+              "Who is Lucas? Where does he spend his holidays?",
+              "What new words do you remember?"
+            ]
+          },
+          {
+            "name": "Your week",
+            "qs": [
+              "How was your week?",
+              "What did you do yesterday?",
+              "What are you doing right now, besides this class?",
+              "What do you usually do on Friday nights?",
+              "What were you doing at this time yesterday?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "pron-words",
+      "title": "Chicken Thief · pronunciation warm-up",
+      "tags": {
+        "content": [
+          "Pronunciation",
+          "Reading"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "table",
+        "label": "PRONUNCIATION · SAY THESE WORDS FIRST",
+        "header": true,
+        "rows": [
+          [
+            "WORD",
+            "SAY IT",
+            "TIP"
+          ],
+          [
+            "<b>thief</b>",
+            "THEEF",
+            "<i>th</i>: tongue between the teeth"
+          ],
+          [
+            "<b>feathers</b>",
+            "FE-thers",
+            "<i>th</i> again, soft"
+          ],
+          [
+            "<b>henhouse</b>",
+            "HEN-house",
+            "the <i>h</i> sounds like <i>r</i> in \"rato\" (two times!)"
+          ],
+          [
+            "<b>chickens</b>",
+            "CHI-kens",
+            "<i>ch</i> like \"tchau\""
+          ],
+          [
+            "<b>footprints</b>",
+            "FOOT-prints",
+            "short <i>oo</i>, like \"good\""
+          ],
+          [
+            "<b>woods</b>",
+            "WUDZ",
+            "rhymes with \"goods\", not \"foods\""
+          ],
+          [
+            "<b>claws</b>",
+            "CLOZ",
+            "one syllable"
+          ],
+          [
+            "<b>couldn't</b>",
+            "KUD-nt",
+            "the <i>l</i> is silent"
+          ],
+          [
+            "<b>midnight</b>",
+            "MID-nait",
+            "the <i>gh</i> is silent"
+          ],
+          [
+            "<b>bushy</b>",
+            "BU-shi",
+            "<i>u</i> like in \"push\""
+          ]
+        ]
+      }
+    },
+    {
+      "key": "pron-ed",
+      "title": "Chicken Thief · -ed endings",
+      "tags": {
+        "content": [
+          "Pronunciation",
+          "Past Simple"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "PRONUNCIATION · HOW DO YOU SAY -ED?",
+        "html": "Three sounds: <b>/t/</b> (worked), <b>/d/</b> (played) and <b>/ɪd/</b> (want<b>ed</b>, only after <i>t</i> or <i>d</i>). Say the verb, then choose.",
+        "instant": true,
+        "items": [
+          {
+            "before": "happened",
+            "options": [
+              "/t/",
+              "/d/",
+              "/ɪd/"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "noticed",
+            "options": [
+              "/t/",
+              "/d/",
+              "/ɪd/"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "decided",
+            "options": [
+              "/t/",
+              "/d/",
+              "/ɪd/"
+            ],
+            "answer": 2,
+            "after": ""
+          },
+          {
+            "before": "escaped",
+            "options": [
+              "/t/",
+              "/d/",
+              "/ɪd/"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "explained",
+            "options": [
+              "/t/",
+              "/d/",
+              "/ɪd/"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "repaired",
+            "options": [
+              "/t/",
+              "/d/",
+              "/ɪd/"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "collected",
+            "options": [
+              "/t/",
+              "/d/",
+              "/ɪd/"
+            ],
+            "answer": 2,
+            "after": ""
+          },
+          {
+            "before": "looked",
+            "options": [
+              "/t/",
+              "/d/",
+              "/ɪd/"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "disappeared",
+            "options": [
+              "/t/",
+              "/d/",
+              "/ɪd/"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "worried",
+            "options": [
+              "/t/",
+              "/d/",
+              "/ɪd/"
+            ],
+            "answer": 1,
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "key": "reread",
+      "title": "Reading aloud · The Chicken Thief",
+      "tags": {
+        "content": [
+          "Reading",
+          "Pronunciation",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura",
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "READ ALOUD · THE CHICKEN THIEF",
+        "html": "<i>Read the story aloud. Slowly first, then a second time a little faster. The teacher marks the words to practise.</i><br><br>Lucas is twelve years old and he lives in the city. Every July, he spends his holidays at his grandma Rosa's farm. Grandma has two cows, a horse and twelve chickens. Every morning, Lucas feeds the chickens and collects the eggs from the henhouse.<br><br>Last July, something strange happened. On Monday morning, while Lucas was collecting the eggs, he noticed that one chicken was missing. There were white feathers on the ground near the fence.<br><br>\"Maybe she escaped,\" said Grandma.<br><br>But on Wednesday, another chicken disappeared. Grandma was worried. \"If this continues, we won't have any eggs!\" she said.<br><br>Lucas decided to investigate. Near the fence, he found some small footprints in the mud. They had four toes and long claws.<br><br>\"These aren't dog footprints,\" Grandma said. \"Our dog has bigger paws.\"<br><br>That night, Lucas couldn't sleep. At midnight, he was looking out of his bedroom window when he saw something near the henhouse. It had orange fur, pointed ears and a long, bushy tail. It was a fox! The fox was digging a hole under the fence.<br><br>Lucas ran to Grandma's room. While they were running outside, the fox escaped into the woods.<br><br>The next day, they repaired the fence and bought a new lock for the henhouse.<br><br>\"If foxes are hungry, they look for easy food,\" Grandma explained. \"So we must lock the henhouse every night. If we do that, the fox won't come back.\"<br><br>Now it's July again. Lucas is staying at the farm, and the chickens are safe. Every evening, he checks the lock. Right now, he is sitting on the porch with his notebook. He is writing a new story called \"Lucas, the Farm Detective.\""
+      }
+    },
+    {
+      "key": "read-like",
+      "title": "Read it like this! (lines from the story)",
+      "tags": {
+        "content": [
+          "Pronunciation",
+          "Reading"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SPEAKING · READ IT LIKE THIS!",
+        "html": "Draw a card and read the line from the story <b>in that way</b>. Good for pronunciation and confidence!",
+        "promptLabel": "READ IT",
+        "lines": [
+          "Last July, something strange happened.",
+          "If this continues, we won't have any eggs!",
+          "These aren't dog footprints. Our dog has bigger paws.",
+          "It had orange fur, pointed ears and a long, bushy tail. It was a fox!",
+          "So we must lock the henhouse every night.",
+          "Right now, he is sitting on the porch with his notebook."
+        ],
+        "prompts": [
+          "like a news reporter",
+          "whispering",
+          "scared",
+          "very excited",
+          "like a grandma",
+          "very slowly",
+          "like a detective"
+        ]
+      }
+    },
+    {
+      "key": "tense-sort",
+      "title": "Four tenses · which tense is it? (from the story)",
+      "tags": {
+        "content": [
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "FOUR TENSES · WHICH ONE IS IT?",
+        "html": "All sentences are from the story. Which tense is it? Then say <b>why</b> (habit? now? finished? in progress?).",
+        "instant": true,
+        "items": [
+          {
+            "before": "Every morning, Lucas <b>feeds</b> the chickens.",
+            "options": [
+              "Present Simple",
+              "Present Continuous",
+              "Past Simple",
+              "Past Continuous"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "He <b>is sitting</b> on the porch.",
+            "options": [
+              "Present Simple",
+              "Present Continuous",
+              "Past Simple",
+              "Past Continuous"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "Lucas <b>decided</b> to investigate.",
+            "options": [
+              "Present Simple",
+              "Present Continuous",
+              "Past Simple",
+              "Past Continuous"
+            ],
+            "answer": 2,
+            "after": ""
+          },
+          {
+            "before": "The fox <b>was digging</b> a hole.",
+            "options": [
+              "Present Simple",
+              "Present Continuous",
+              "Past Simple",
+              "Past Continuous"
+            ],
+            "answer": 3,
+            "after": ""
+          },
+          {
+            "before": "Grandma <b>has</b> two cows.",
+            "options": [
+              "Present Simple",
+              "Present Continuous",
+              "Past Simple",
+              "Past Continuous"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "They <b>repaired</b> the fence.",
+            "options": [
+              "Present Simple",
+              "Present Continuous",
+              "Past Simple",
+              "Past Continuous"
+            ],
+            "answer": 2,
+            "after": ""
+          },
+          {
+            "before": "Lucas <b>is staying</b> at the farm.",
+            "options": [
+              "Present Simple",
+              "Present Continuous",
+              "Past Simple",
+              "Past Continuous"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "While they <b>were running</b> outside, the fox escaped.",
+            "options": [
+              "Present Simple",
+              "Present Continuous",
+              "Past Simple",
+              "Past Continuous"
+            ],
+            "answer": 3,
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "key": "tense-machine",
+      "title": "Tense machine · one verb, four tenses",
+      "tags": {
+        "content": [
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SPEAKING · THE TENSE MACHINE",
+        "html": "Draw a card. Make a sentence <b>about you</b> with the verb and the time expression. Then say the same verb in the other three tenses!",
+        "promptLabel": "TIME",
+        "lines": [
+          "eat",
+          "work",
+          "watch TV",
+          "drive",
+          "sleep",
+          "cook",
+          "play",
+          "talk to my family",
+          "study",
+          "walk"
+        ],
+        "prompts": [
+          "every day",
+          "right now",
+          "yesterday",
+          "at 10 pm last night",
+          "usually",
+          "at the moment",
+          "last weekend",
+          "when the phone rang",
+          "never",
+          "this week"
+        ]
+      }
+    },
+    {
+      "key": "tense-fill",
+      "title": "Four tenses · Lucas in the city",
+      "tags": {
+        "content": [
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "FOUR TENSES · LUCAS IN THE CITY",
+        "html": "A new part of the story! Complete with the correct tense. Look at the time words. Then <b>read the whole text aloud</b>.",
+        "items": [
+          {
+            "before": "In the city, Lucas usually",
+            "hint": "go",
+            "after": "to school by bus.",
+            "answers": [
+              "goes"
+            ]
+          },
+          {
+            "before": "He",
+            "hint": "live",
+            "after": "in a small apartment with his parents.",
+            "answers": [
+              "lives"
+            ]
+          },
+          {
+            "before": "Last Saturday, he",
+            "hint": "visit",
+            "after": "the zoo with his friends.",
+            "answers": [
+              "visited"
+            ]
+          },
+          {
+            "before": "While they",
+            "hint": "walk",
+            "after": "near the lions, it started to rain.",
+            "answers": [
+              "were walking"
+            ]
+          },
+          {
+            "before": "They",
+            "hint": "run",
+            "after": "to the café and had hot chocolate.",
+            "answers": [
+              "ran"
+            ]
+          },
+          {
+            "before": "At 5 pm, Lucas",
+            "hint": "take",
+            "after": "photos of the monkeys when his phone died.",
+            "answers": [
+              "was taking"
+            ]
+          },
+          {
+            "before": "Right now, it's Monday and Lucas",
+            "hint": "sit",
+            "after": "in his classroom.",
+            "answers": [
+              "is sitting",
+              "'s sitting"
+            ]
+          },
+          {
+            "before": "Look! He",
+            "hint": "draw",
+            "after": "a fox in his notebook.",
+            "answers": [
+              "is drawing",
+              "'s drawing"
+            ]
+          },
+          {
+            "before": "He",
+            "hint": "not / like",
+            "after": "math, but he loves stories.",
+            "answers": [
+              "doesn't like",
+              "does not like"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "tense-talk",
+      "title": "Four tenses · talk about your life",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · YOUR LIFE IN FOUR TENSES",
+        "html": "One tab = one tense. Answer, and then ask the teacher the same question!",
+        "words": [
+          "every day",
+          "right now",
+          "yesterday",
+          "while",
+          "when"
+        ],
+        "cats": [
+          {
+            "name": "Usually (Present Simple)",
+            "qs": [
+              "What time do you usually wake up?",
+              "What do you do after work?",
+              "How often do you cook?",
+              "What does your best friend do?",
+              "What do you never do on weekends?"
+            ]
+          },
+          {
+            "name": "Now (Present Continuous)",
+            "qs": [
+              "What are you wearing today?",
+              "What are you watching on TV these days?",
+              "What is your family doing right now?",
+              "Look around you: what is happening outside?",
+              "What are you learning at the moment?"
+            ]
+          },
+          {
+            "name": "Finished (Past Simple)",
+            "qs": [
+              "What did you have for lunch today?",
+              "Where did you go last weekend?",
+              "When did you last see your grandparents?",
+              "What did you buy last week?",
+              "Where did you spend your holidays as a child?"
+            ]
+          },
+          {
+            "name": "In progress (Past Continuous)",
+            "qs": [
+              "What were you doing at 8 am today?",
+              "What were you doing when I called you for class?",
+              "Were you sleeping at midnight last night?",
+              "What was happening in your street when you left home?",
+              "What were you doing when you heard some big news?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "interview",
+      "title": "Role-play · the police interview",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Past Simple",
+          "Past Continuous",
+          "Question formation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "ROLE-PLAY · THE POLICE INTERVIEW",
+        "html": "Something <b>disappeared</b> from the office last night! The teacher is the detective. Answer the questions and invent your <b>alibi</b> (a story to show you are innocent). Then switch: you are the detective.",
+        "words": [
+          "while",
+          "when",
+          "at that moment",
+          "then"
+        ],
+        "cats": [
+          {
+            "name": "The detective asks",
+            "qs": [
+              "Where were you last night at 9 pm?",
+              "What were you doing at that moment?",
+              "Who were you with?",
+              "What did you do after that?",
+              "Did you see anything strange?",
+              "What was the weather like?",
+              "What time did you go to bed?",
+              "Why should I believe you?"
+            ]
+          },
+          {
+            "name": "Now you ask",
+            "qs": [
+              "Ask: where / be / at midnight?",
+              "Ask: what / do / at 10 pm?",
+              "Ask: you / see / anyone?",
+              "Ask: why / your shoes / be / dirty?",
+              "Ask: what / you / usually / do / on Thursday nights?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "comp-table",
+      "title": "Comparatives & superlatives · how to form them",
+      "tags": {
+        "content": [
+          "Comparatives & superlatives"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "table",
+        "label": "COMPARATIVES & SUPERLATIVES",
+        "header": true,
+        "rows": [
+          [
+            "ADJECTIVE",
+            "COMPARATIVE (2 things)",
+            "SUPERLATIVE (1 of many)"
+          ],
+          [
+            "short: <b>big</b>",
+            "bigg<b>er than</b>",
+            "<b>the</b> bigg<b>est</b>"
+          ],
+          [
+            "ends in -y: <b>easy</b>",
+            "eas<b>ier than</b>",
+            "<b>the</b> eas<b>iest</b>"
+          ],
+          [
+            "long: <b>dangerous</b>",
+            "<b>more</b> dangerous <b>than</b>",
+            "<b>the most</b> dangerous"
+          ],
+          [
+            "irregular: <b>good</b>",
+            "<b>better than</b>",
+            "<b>the best</b>"
+          ],
+          [
+            "irregular: <b>bad</b>",
+            "<b>worse than</b>",
+            "<b>the worst</b>"
+          ]
+        ]
+      }
+    },
+    {
+      "key": "comp-story",
+      "title": "Comparatives · the farm and the city",
+      "tags": {
+        "content": [
+          "Comparatives & superlatives"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "PRACTICE · THE FARM AND THE CITY",
+        "html": "Complete with the comparative or the superlative. Then say: <b>do you agree?</b>",
+        "items": [
+          {
+            "before": "Our dog has",
+            "hint": "big",
+            "after": "paws than the fox.",
+            "answers": [
+              "bigger"
+            ]
+          },
+          {
+            "before": "A horse is",
+            "hint": "fast",
+            "after": "than a cow.",
+            "answers": [
+              "faster"
+            ]
+          },
+          {
+            "before": "The fox was",
+            "hint": "clever",
+            "after": "animal on the farm.",
+            "answers": [
+              "the cleverest",
+              "the most clever"
+            ]
+          },
+          {
+            "before": "Life on a farm is",
+            "hint": "quiet",
+            "after": "than life in the city.",
+            "answers": [
+              "quieter"
+            ]
+          },
+          {
+            "before": "The city is",
+            "hint": "noisy",
+            "after": "than the farm.",
+            "answers": [
+              "noisier"
+            ]
+          },
+          {
+            "before": "For Lucas, July is",
+            "hint": "good",
+            "after": "month of the year.",
+            "answers": [
+              "the best"
+            ]
+          },
+          {
+            "before": "A fox is",
+            "hint": "dangerous",
+            "after": "than a chicken.",
+            "answers": [
+              "more dangerous"
+            ]
+          },
+          {
+            "before": "Losing the chickens was",
+            "hint": "bad",
+            "after": "thing that happened that holiday.",
+            "answers": [
+              "the worst"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "compare-it",
+      "title": "Compare it! (speaking)",
+      "tags": {
+        "content": [
+          "Comparatives & superlatives"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SPEAKING · COMPARE IT!",
+        "html": "Draw a card. Compare the two things with the adjective. Then give your <b>opinion</b>: which one do you prefer, and why?",
+        "promptLabel": "ADJECTIVE",
+        "lines": [
+          "the city × the countryside",
+          "dogs × cats",
+          "summer × winter",
+          "a car × a bike",
+          "coffee × tea",
+          "São Paulo × Rio",
+          "your first job × your job now",
+          "books × films"
+        ],
+        "prompts": [
+          "cheap",
+          "expensive",
+          "good",
+          "bad",
+          "relaxing",
+          "dangerous",
+          "healthy",
+          "interesting",
+          "noisy",
+          "easy"
+        ]
+      }
+    },
+    {
+      "key": "superlatives-talk",
+      "title": "Superlatives · the best, the worst, the most…",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Comparatives & superlatives"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · THE BEST AND THE WORST",
+        "html": "Answer with a <b>superlative</b> and tell a little story: <i>The best trip I ever had was… because…</i>",
+        "words": [
+          "the best",
+          "the worst",
+          "the most",
+          "the biggest",
+          "the strangest"
+        ],
+        "cats": [
+          {
+            "name": "Your life",
+            "qs": [
+              "What is the best food in your city?",
+              "What was the worst day of your week?",
+              "Who is the funniest person in your family?",
+              "What is the most expensive thing you have?",
+              "What was the best holiday of your life?"
+            ]
+          },
+          {
+            "name": "Animals & places",
+            "qs": [
+              "What is the most dangerous animal in Brazil?",
+              "What is the most beautiful place you know?",
+              "What is the strangest animal you have ever seen?",
+              "What is the biggest city you have been to?",
+              "Which animal is the most intelligent, in your opinion?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "cond-choose",
+      "title": "Zero or first conditional?",
+      "tags": {
+        "content": [
+          "Conditionals (0 & 1)"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "CONDITIONALS · ALWAYS TRUE OR POSSIBLE FUTURE?",
+        "html": "<b>Zero</b>: <i>If + present, present</i> (always true). <b>First</b>: <i>If + present, will</i> (a possible future). Choose the best option.",
+        "instant": false,
+        "items": [
+          {
+            "before": "If foxes are hungry, they",
+            "options": [
+              "look",
+              "will look"
+            ],
+            "answer": 0,
+            "after": "for easy food."
+          },
+          {
+            "before": "If we lock the henhouse, the fox",
+            "options": [
+              "doesn't come",
+              "won't come"
+            ],
+            "answer": 1,
+            "after": "back."
+          },
+          {
+            "before": "If you heat water to 100°C, it",
+            "options": [
+              "boils",
+              "will boil"
+            ],
+            "answer": 0,
+            "after": "."
+          },
+          {
+            "before": "If it",
+            "options": [
+              "rains",
+              "will rain"
+            ],
+            "answer": 0,
+            "after": "tomorrow, I'll stay at home."
+          },
+          {
+            "before": "If I",
+            "options": [
+              "finish",
+              "will finish"
+            ],
+            "answer": 0,
+            "after": "work early today, I'll go to the gym."
+          },
+          {
+            "before": "If you don't sleep, you",
+            "options": [
+              "feel",
+              "will feel"
+            ],
+            "answer": 0,
+            "after": "tired. (always true)"
+          },
+          {
+            "before": "If you leave the gate open, the dog",
+            "options": [
+              "runs",
+              "will run"
+            ],
+            "answer": 1,
+            "after": "away tonight."
+          },
+          {
+            "before": "If my phone",
+            "options": [
+              "dies",
+              "will die"
+            ],
+            "answer": 0,
+            "after": ", I can't work."
+          }
+        ]
+      }
+    },
+    {
+      "key": "if-chain",
+      "title": "If chain (first conditional story)",
+      "tags": {
+        "content": [
+          "Conditionals (0 & 1)",
+          "Comparatives & superlatives"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SPEAKING · THE IF CHAIN",
+        "html": "Start with the card. The end of your sentence is the <b>start of the next one</b>: <i>If it rains, I'll stay home. If I stay home, I'll watch a film. If I watch a film…</i> Take turns with the teacher. How long can you go?",
+        "promptLabel": "NOW ADD",
+        "lines": [
+          "If I win the lottery,…",
+          "If it rains this weekend,…",
+          "If I see a fox in my garden,…",
+          "If I wake up late tomorrow,…",
+          "If I go to the farm,…",
+          "If my boss gives me a day off,…"
+        ],
+        "prompts": [
+          "…and a comparative (better, cheaper…)",
+          "…and a superlative (the best…)",
+          "…and \"because\"",
+          "…and \"but\"",
+          "…and \"so\""
+        ]
+      }
+    },
+    {
+      "key": "cond-talk",
+      "title": "Conditionals · what do you do? what will you do?",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Conditionals (0 & 1)"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · WHAT IF…?",
+        "html": "Zero conditional = what you <b>always</b> do. First conditional = what you <b>will</b> do (a real possibility).",
+        "words": [
+          "if",
+          "when",
+          "unless",
+          "will",
+          "won't"
+        ],
+        "cats": [
+          {
+            "name": "Always (zero)",
+            "qs": [
+              "What do you do if you can't sleep?",
+              "What happens if you don't drink coffee in the morning?",
+              "What do you eat if you are very hungry?",
+              "What do you do if you are stressed?",
+              "What happens if you leave food out of the fridge?"
+            ]
+          },
+          {
+            "name": "Future (first)",
+            "qs": [
+              "If it rains tomorrow, what will you do?",
+              "If you have free time this weekend, where will you go?",
+              "If your friend calls you tonight, what will you talk about?",
+              "If you see a fox, what will you do?",
+              "If you go on holiday next year, where will you go?"
+            ]
+          },
+          {
+            "name": "Advice",
+            "qs": [
+              "Your neighbour's dog is barking all night. What will you do if it continues?",
+              "Your bike disappeared. If you call the police, what will they say?",
+              "Your friend wants to live on a farm. What will happen if he does it?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "build-long",
+      "title": "Sentence building · make it longer",
+      "tags": {
+        "content": [
+          "Past Simple",
+          "Past Continuous",
+          "Conversation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita",
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "SENTENCE BUILDING · JOIN THE SENTENCES",
+        "html": "Join the two sentences with the word in brackets. Write <b>one</b> sentence, then say it aloud without looking!",
+        "items": [
+          {
+            "before": "Lucas was collecting the eggs. He noticed a chicken was missing. →",
+            "hint": "while",
+            "after": "",
+            "answers": [
+              "While Lucas was collecting the eggs, he noticed a chicken was missing.",
+              "While Lucas was collecting the eggs he noticed a chicken was missing",
+              "While Lucas was collecting the eggs, he noticed a chicken was missing",
+              "While Lucas was collecting the eggs he noticed a chicken was missing."
+            ]
+          },
+          {
+            "before": "He was looking out of the window. He saw a fox. →",
+            "hint": "when",
+            "after": "",
+            "answers": [
+              "He was looking out of the window when he saw a fox.",
+              "He was looking out of the window when he saw a fox"
+            ]
+          },
+          {
+            "before": "The fox escaped. The fence had a hole. →",
+            "hint": "because",
+            "after": "",
+            "answers": [
+              "The fox escaped because the fence had a hole.",
+              "The fox escaped because the fence had a hole"
+            ]
+          },
+          {
+            "before": "Grandma was worried. She had no eggs. →",
+            "hint": "because",
+            "after": "",
+            "answers": [
+              "Grandma was worried because she had no eggs.",
+              "Grandma was worried because she had no eggs"
+            ]
+          },
+          {
+            "before": "They bought a new lock. The chickens are safe now. →",
+            "hint": "so",
+            "after": "",
+            "answers": [
+              "They bought a new lock, so the chickens are safe now.",
+              "They bought a new lock so the chickens are safe now",
+              "They bought a new lock, so the chickens are safe now",
+              "They bought a new lock so the chickens are safe now."
+            ]
+          },
+          {
+            "before": "Lucas lives in the city. He loves the farm. →",
+            "hint": "but",
+            "after": "",
+            "answers": [
+              "Lucas lives in the city, but he loves the farm.",
+              "Lucas lives in the city but he loves the farm",
+              "Lucas lives in the city, but he loves the farm",
+              "Lucas lives in the city but he loves the farm."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "stretch",
+      "title": "Sentence stretcher (A2)",
+      "tags": {
+        "content": [
+          "Past Simple",
+          "Past Continuous",
+          "Present Simple",
+          "Present Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SPEAKING · STRETCH THE SENTENCE",
+        "html": "Say the short sentence. Then make it longer with the word on the card. Draw again and make it <b>even longer</b>! Goal: 15 words or more.",
+        "promptLabel": "ADD",
+        "lines": [
+          "I went to the supermarket.",
+          "My dog is sleeping.",
+          "I was driving to work.",
+          "I usually wake up early.",
+          "The weather is nice today.",
+          "I saw an animal.",
+          "My phone disappeared.",
+          "I am tired."
+        ],
+        "prompts": [
+          "because",
+          "but",
+          "so",
+          "when",
+          "while",
+          "and then",
+          "if",
+          "with my…",
+          "yesterday / last week",
+          "than"
+        ]
+      }
+    },
+    {
+      "key": "mystery",
+      "title": "Tell a new mystery",
+      "tags": {
+        "content": [
+          "Past Simple",
+          "Past Continuous",
+          "Conversation"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "SPEAKING · YOUR OWN MYSTERY",
+        "html": "Now you are the detective! Draw a mystery and tell the story like \"The Chicken Thief\": <b>what usually happens</b> → <b>what happened</b> → <b>what you were doing</b> → <b>who the thief was</b> → <b>what is happening now</b>.",
+        "promptLabel": "USE",
+        "lines": [
+          "The cookies disappeared from the kitchen.",
+          "Someone ate my lunch at work.",
+          "My socks disappear every week.",
+          "There are footprints in the living room.",
+          "Someone is stealing tomatoes from the garden.",
+          "The TV remote disappeared."
+        ],
+        "prompts": [
+          "while",
+          "when",
+          "suddenly",
+          "if… will…",
+          "bigger / smaller than",
+          "the strangest"
+        ]
+      }
+    },
+    {
+      "key": "wrapup",
+      "title": "Wrap-up · everything together",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous",
+          "Conditionals (0 & 1)",
+          "Comparatives & superlatives"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "WRAP-UP · EVERYTHING TOGETHER",
+        "html": "Last questions! Use as many tenses as you can in each answer.",
+        "words": [],
+        "cats": [
+          {
+            "name": "Mix",
+            "qs": [
+              "Do you prefer the city or the countryside? Why? Is life cheaper there?",
+              "What were you doing when this class started? What will you do after it?",
+              "What is the best thing you did this week?",
+              "If you have a free day tomorrow, what will you do?",
+              "Which word from today is the hardest to pronounce for you?",
+              "What did you learn today?"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "lesson": {
+    "title": "The Chicken Thief (part 2): Read, Speak and Build Sentences",
+    "subtitle": "Read aloud · Present Simple, Present Continuous, Past Simple, Past Continuous · 0 & 1st conditional · comparatives & superlatives",
+    "level": "A2",
+    "date": "2026-10-16",
+    "tags": [
+      "Speaking",
+      "Pronunciation",
+      "Review"
+    ],
+    "blocks": [
+      {
+        "model": "warmup"
+      },
+      {
+        "model": "pron-words"
+      },
+      {
+        "model": "pron-ed"
+      },
+      {
+        "model": "reread"
+      },
+      {
+        "model": "read-like"
+      },
+      {
+        "model": "tense-sort"
+      },
+      {
+        "model": "tense-machine"
+      },
+      {
+        "model": "tense-fill"
+      },
+      {
+        "model": "tense-talk"
+      },
+      {
+        "model": "interview"
+      },
+      {
+        "model": "comp-table"
+      },
+      {
+        "model": "comp-story"
+      },
+      {
+        "model": "compare-it"
+      },
+      {
+        "model": "superlatives-talk"
+      },
+      {
+        "model": "cond-choose"
+      },
+      {
+        "model": "if-chain"
+      },
+      {
+        "model": "cond-talk"
+      },
+      {
+        "model": "build-long"
+      },
+      {
+        "model": "stretch"
+      },
+      {
+        "model": "mystery"
+      },
+      {
+        "model": "wrapup"
+      },
+      {
+        "type": "notes",
+        "label": "ANOTAÇÕES",
+        "html": ""
+      }
+    ]
+  }
+}
