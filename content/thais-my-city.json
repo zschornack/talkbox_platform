@@ -1,0 +1,1286 @@
+{
+  "id": "thais-my-city-2026-10-19",
+  "student": {
+    "name": "Thais Aguiar Dias",
+    "level": "A2",
+    "goal": "",
+    "notes": ""
+  },
+  "models": [
+    {
+      "key": "warmup",
+      "title": "Warm-up · your week and your city (with sentence starters)",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Present Simple",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "WARM-UP",
+        "html": "Use the <b>sentence starters</b> to help you:<br><i>This week, I… · Yesterday, I was… when… · I live in…, a city which… · My favorite place is… because…</i>",
+        "words": [
+          "This week, I…",
+          "Yesterday, I…",
+          "I live in…",
+          "My favorite place is…"
+        ],
+        "cats": [
+          {
+            "name": "Your week",
+            "qs": [
+              "How was your week?",
+              "What did you do yesterday?",
+              "What were you doing at 8 p.m. last night?",
+              "What are you doing this weekend?"
+            ]
+          },
+          {
+            "name": "Your city",
+            "qs": [
+              "Where do you live?",
+              "Do you like your city? Why (not)?",
+              "What is your favorite place in your city?",
+              "Did you always live there? Where did you live before?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "voc-adj",
+      "title": "Describing a city · adjectives",
+      "tags": {
+        "content": [
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura",
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "table",
+        "label": "VOCABULARY · HOW TO DESCRIBE A CITY",
+        "header": true,
+        "rows": [
+          [
+            "WORD",
+            "MEANING",
+            "EXAMPLE"
+          ],
+          [
+            "<b>crowded</b>",
+            "lotado, cheio de gente",
+            "The subway is very crowded in the morning."
+          ],
+          [
+            "<b>lively</b>",
+            "animado, cheio de vida",
+            "Rua Augusta is lively at night."
+          ],
+          [
+            "<b>peaceful</b> / <b>quiet</b>",
+            "tranquilo / silencioso",
+            "My street is quiet and peaceful."
+          ],
+          [
+            "<b>noisy</b>",
+            "barulhento",
+            "The city center is noisy."
+          ],
+          [
+            "<b>polluted</b>",
+            "poluído",
+            "Some rivers in big cities are polluted."
+          ],
+          [
+            "<b>safe</b> / <b>dangerous</b>",
+            "seguro / perigoso",
+            "Is it safe to walk at night?"
+          ],
+          [
+            "<b>historic</b>",
+            "histórico",
+            "Ouro Preto is a historic city."
+          ],
+          [
+            "<b>modern</b>",
+            "moderno",
+            "Brasília has a lot of modern buildings."
+          ],
+          [
+            "<b>expensive</b> / <b>affordable</b>",
+            "caro / com preço acessível",
+            "Rent is expensive in big cities."
+          ],
+          [
+            "<b>walkable</b>",
+            "bom para andar a pé",
+            "My neighborhood is very walkable."
+          ]
+        ]
+      }
+    },
+    {
+      "key": "voc-places",
+      "title": "Places in a city · vocabulary",
+      "tags": {
+        "content": [
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura",
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "table",
+        "label": "VOCABULARY · PLACES IN A CITY",
+        "header": true,
+        "rows": [
+          [
+            "WORD",
+            "MEANING",
+            "EXAMPLE"
+          ],
+          [
+            "<b>downtown</b> / <b>city center</b>",
+            "centro da cidade",
+            "I work downtown."
+          ],
+          [
+            "<b>neighborhood</b>",
+            "bairro",
+            "I live in a quiet neighborhood."
+          ],
+          [
+            "<b>suburbs</b>",
+            "bairros afastados do centro",
+            "Many families live in the suburbs."
+          ],
+          [
+            "<b>square</b>",
+            "praça",
+            "There is a market in the square on Sundays."
+          ],
+          [
+            "<b>sidewalk</b>",
+            "calçada",
+            "People are walking on the sidewalk."
+          ],
+          [
+            "<b>crosswalk</b>",
+            "faixa de pedestres",
+            "Always cross at the crosswalk."
+          ],
+          [
+            "<b>traffic lights</b>",
+            "semáforo",
+            "Turn left at the traffic lights."
+          ],
+          [
+            "<b>skyscraper</b>",
+            "arranha-céu",
+            "São Paulo has a lot of skyscrapers."
+          ],
+          [
+            "<b>landmark</b>",
+            "ponto famoso da cidade",
+            "Christ the Redeemer is a famous landmark."
+          ],
+          [
+            "<b>waterfront</b>",
+            "orla",
+            "We walked along the waterfront."
+          ]
+        ]
+      }
+    },
+    {
+      "key": "voc-match",
+      "title": "City vocabulary · opposites",
+      "tags": {
+        "content": [
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "match",
+        "label": "VOCABULARY · FIND THE OPPOSITE",
+        "html": "Match the opposites. Then say: which words describe <b>your</b> city?",
+        "pairs": [
+          {
+            "left": "crowded",
+            "right": "empty"
+          },
+          {
+            "left": "noisy",
+            "right": "quiet"
+          },
+          {
+            "left": "safe",
+            "right": "dangerous"
+          },
+          {
+            "left": "modern",
+            "right": "historic"
+          },
+          {
+            "left": "polluted",
+            "right": "clean"
+          },
+          {
+            "left": "expensive",
+            "right": "affordable"
+          },
+          {
+            "left": "lively",
+            "right": "boring"
+          }
+        ]
+      }
+    },
+    {
+      "key": "voc-fill",
+      "title": "City vocabulary · complete",
+      "tags": {
+        "content": [
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "VOCABULARY · COMPLETE THE SENTENCES",
+        "html": "Use: <b>crowded · landmark · sidewalk · walkable · neighborhood · traffic lights · lively · affordable</b>",
+        "items": [
+          {
+            "before": "At 6 p.m., the buses are always",
+            "hint": "?",
+            "after": ". There is no space!",
+            "answers": [
+              "crowded"
+            ]
+          },
+          {
+            "before": "The Eiffel Tower is the most famous",
+            "hint": "?",
+            "after": "in Paris.",
+            "answers": [
+              "landmark"
+            ]
+          },
+          {
+            "before": "Don't ride your bike on the",
+            "hint": "?",
+            "after": ". It's for people!",
+            "answers": [
+              "sidewalk"
+            ]
+          },
+          {
+            "before": "My",
+            "hint": "?",
+            "after": "has a bakery, a pharmacy and a small park.",
+            "answers": [
+              "neighborhood"
+            ]
+          },
+          {
+            "before": "Stop! The",
+            "hint": "?",
+            "after": "are red.",
+            "answers": [
+              "traffic lights"
+            ]
+          },
+          {
+            "before": "This city is very",
+            "hint": "?",
+            "after": ": you can go everywhere on foot.",
+            "answers": [
+              "walkable"
+            ]
+          },
+          {
+            "before": "The restaurants here are",
+            "hint": "?",
+            "after": ". You don't spend a lot.",
+            "answers": [
+              "affordable"
+            ]
+          },
+          {
+            "before": "The bars are full and there is music everywhere. It's very",
+            "hint": "?",
+            "after": "!",
+            "answers": [
+              "lively"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "reading",
+      "title": "Reading · My city, then and now",
+      "tags": {
+        "content": [
+          "Reading",
+          "Vocabulary",
+          "Relative clauses",
+          "Prepositions",
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "READING · MY CITY, THEN AND NOW",
+        "html": "My name is Juliana, and I live in Florianópolis, a city <b>which</b> is on an island in the south of Brazil. I moved here ten years ago. Before that, I lived in São Paulo, a huge city <b>where</b> everything is fast, crowded and noisy.<br><br>I remember my last day in São Paulo very well. It was raining, and I was standing at a bus stop on Avenida Paulista <b>when</b> I suddenly thought: \"I need the sea.\" Two months later, I was living by the beach.<br><br>Today, I live in a quiet neighborhood <b>that</b> is near Lagoa da Conceição. My apartment is <b>between</b> a small bakery and a surf shop, and <b>opposite</b> my building there is a square <b>where</b> people play music on Saturdays. The people <b>who</b> live here are friendly and relaxed. Florianópolis is not as cheap as it was, and the traffic is terrible in the summer, but it is safe, green and very beautiful.<br><br>Right now, I am sitting on my balcony and I am writing this text. A man <b>who</b> sells coconuts is walking down my street, and some children are playing on the sidewalk. I usually work from home, so I go to the beach almost every day after lunch. I miss some things about São Paulo, like the museums and the food, but I don't miss the traffic!"
+      }
+    },
+    {
+      "key": "reading-check",
+      "title": "My city · comprehension",
+      "tags": {
+        "content": [
+          "Reading"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "COMPREHENSION · TRUE OR FALSE?",
+        "html": "Correct the false sentences. Answer with a <b>complete sentence</b>.",
+        "instant": false,
+        "items": [
+          {
+            "before": "Juliana lived in São Paulo before Florianópolis.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "She was walking on the beach when she decided to move.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "Her apartment is between a bakery and a surf shop.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "There is a school opposite her building.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "She works in an office downtown.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "She misses the traffic in São Paulo.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "key": "reading-talk",
+      "title": "My city · talk about the text",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Past Simple",
+          "Past Continuous",
+          "Present Simple",
+          "Present Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · ABOUT THE TEXT",
+        "html": "Use the text to help you. You can read a sentence from the text and then <b>change it</b> to talk about you.",
+        "words": [
+          "I think…",
+          "In my opinion…",
+          "Like Juliana, I…",
+          "Unlike Juliana, I…"
+        ],
+        "cats": [
+          {
+            "name": "The text",
+            "qs": [
+              "Why did Juliana move to Florianópolis?",
+              "What was she doing when she decided to move?",
+              "What is good and bad about Florianópolis, for her?",
+              "What is she doing right now?"
+            ]
+          },
+          {
+            "name": "You",
+            "qs": [
+              "Do you want to live on an island? Why (not)?",
+              "Do you prefer big cities or small cities?",
+              "Did you ever move to another city? How was it?",
+              "What do you love about your city?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "rel-explain",
+      "title": "Relative clauses · who, which, that, where",
+      "tags": {
+        "content": [
+          "Relative clauses"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "explanation",
+        "label": "RELATIVE CLAUSES · WHO, WHICH, THAT, WHERE",
+        "html": "We use relative clauses to give <b>more information</b> and to make <b>longer sentences</b>.<br><br><span style=\"background-color: #CFE9EA\"><b>who</b></span> → people: <i>The people <b>who</b> live here are friendly.</i><br><span style=\"background-color: #FFE2B8\"><b>which</b></span> → things and animals: <i>It's a city <b>which</b> is on an island.</i><br><span style=\"background-color: #E8E0F5\"><b>that</b></span> → people or things (informal): <i>a neighborhood <b>that</b> is near the lake</i><br><span style=\"background-color: #DFF0D8\"><b>where</b></span> → places: <i>a square <b>where</b> people play music</i><br><br>💡 Two sentences → one: <i>I have a friend. <u>She</u> lives in Rio.</i> → <i>I have a friend <b>who</b> lives in Rio.</i> (don't repeat <i>she</i>!)"
+      }
+    },
+    {
+      "key": "rel-choose",
+      "title": "Relative clauses · choose who, which or where",
+      "tags": {
+        "content": [
+          "Relative clauses"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "PRACTICE · WHO, WHICH OR WHERE?",
+        "html": "Person → <b>who</b> · thing → <b>which</b> · place → <b>where</b>",
+        "instant": true,
+        "items": [
+          {
+            "before": "A baker is a person",
+            "options": [
+              "who",
+              "which",
+              "where"
+            ],
+            "answer": 0,
+            "after": "makes bread."
+          },
+          {
+            "before": "A museum is a place",
+            "options": [
+              "who",
+              "which",
+              "where"
+            ],
+            "answer": 2,
+            "after": "you can see art."
+          },
+          {
+            "before": "A skyscraper is a building",
+            "options": [
+              "who",
+              "which",
+              "where"
+            ],
+            "answer": 1,
+            "after": "is very, very tall."
+          },
+          {
+            "before": "This is the café",
+            "options": [
+              "who",
+              "which",
+              "where"
+            ],
+            "answer": 2,
+            "after": "I usually have breakfast."
+          },
+          {
+            "before": "The man",
+            "options": [
+              "who",
+              "which",
+              "where"
+            ],
+            "answer": 0,
+            "after": "sells coconuts walks down my street every day."
+          },
+          {
+            "before": "I live in a city",
+            "options": [
+              "who",
+              "which",
+              "where"
+            ],
+            "answer": 1,
+            "after": "has a lot of parks."
+          },
+          {
+            "before": "That's the street",
+            "options": [
+              "who",
+              "which",
+              "where"
+            ],
+            "answer": 2,
+            "after": "I was living when I was a child."
+          },
+          {
+            "before": "The tourists",
+            "options": [
+              "who",
+              "which",
+              "where"
+            ],
+            "answer": 0,
+            "after": "were taking photos were from Argentina."
+          }
+        ]
+      }
+    },
+    {
+      "key": "rel-join",
+      "title": "Relative clauses · join the sentences",
+      "tags": {
+        "content": [
+          "Relative clauses"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "SENTENCE BUILDING · ONE LONGER SENTENCE",
+        "html": "Join the sentences with the word in brackets. Don't repeat <i>he / she / it / there</i>!",
+        "items": [
+          {
+            "before": "I have a friend. She lives in Curitiba. →",
+            "hint": "who",
+            "after": "",
+            "answers": [
+              "I have a friend who lives in Curitiba.",
+              "I have a friend who lives in Curitiba"
+            ]
+          },
+          {
+            "before": "This is the square. People play music there. →",
+            "hint": "where",
+            "after": "",
+            "answers": [
+              "This is the square where people play music.",
+              "This is the square where people play music"
+            ]
+          },
+          {
+            "before": "Rio has a mountain. It is called Sugarloaf. →",
+            "hint": "which",
+            "after": "",
+            "answers": [
+              "Rio has a mountain which is called Sugarloaf.",
+              "Rio has a mountain which is called Sugarloaf",
+              "Rio has a mountain that is called Sugarloaf.",
+              "Rio has a mountain that is called Sugarloaf"
+            ]
+          },
+          {
+            "before": "That's the restaurant. We had dinner there last week. →",
+            "hint": "where",
+            "after": "",
+            "answers": [
+              "That's the restaurant where we had dinner last week.",
+              "That's the restaurant where we had dinner last week"
+            ]
+          },
+          {
+            "before": "The woman was very kind. She helped me. →",
+            "hint": "who",
+            "after": "",
+            "answers": [
+              "The woman who helped me was very kind.",
+              "The woman who helped me was very kind"
+            ]
+          },
+          {
+            "before": "I live in a neighborhood. It is very quiet. →",
+            "hint": "that",
+            "after": "",
+            "answers": [
+              "I live in a neighborhood that is very quiet.",
+              "I live in a neighborhood that is very quiet"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "rel-game",
+      "title": "Definition game · it's a place where…",
+      "tags": {
+        "content": [
+          "Relative clauses",
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "GAME · GUESS THE WORD",
+        "html": "Draw a word but <b>don't say it</b>! Explain it with a relative clause: <i>It's a place where… · It's a person who… · It's a thing which…</i> The teacher guesses. Then switch!",
+        "promptLabel": "START WITH",
+        "lines": [
+          "bakery",
+          "tour guide",
+          "skyscraper",
+          "square",
+          "bus driver",
+          "crosswalk",
+          "museum",
+          "traffic lights",
+          "beach",
+          "neighbor",
+          "subway",
+          "landmark"
+        ],
+        "prompts": [
+          "It's a place where…",
+          "It's a person who…",
+          "It's a thing which…",
+          "You go there when…"
+        ]
+      }
+    },
+    {
+      "key": "img-shops",
+      "title": "Photo · Rua Augusta shops (with a model)",
+      "tags": {
+        "content": [
+          "Prepositions",
+          "Relative clauses",
+          "Present Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Rua_Augusta%2C_Sao_Paulo_city.jpg/1280px-Rua_Augusta%2C_Sao_Paulo_city.jpg",
+        "caption": "<b>Model:</b> <i>This is Rua Augusta, a street <u>which</u> is very lively. There are a lot of shops <u>next to</u> each other. A bike is parked <u>in front of</u> a shop, and some people <u>are walking</u> on the sidewalk.</i><br><b>Your turn:</b> describe it with your own words. Add one more detail!<br><i>Photo: Wilfredor, CC0, Wikimedia Commons.</i>"
+      }
+    },
+    {
+      "key": "img-corner",
+      "title": "Photo · a street corner on Rua Augusta",
+      "tags": {
+        "content": [
+          "Prepositions",
+          "Relative clauses",
+          "Present Continuous",
+          "Past Simple"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Rua_Augusta_esq_Luis_Coelho.jpg/1280px-Rua_Augusta_esq_Luis_Coelho.jpg",
+        "caption": "<b>Help:</b> <i>On the corner, there is… · The bus is… · The people who… are… · The traffic lights are…</i><br>What do you think happened here this morning? Was it crowded? Use the past!<br><i>Photo: FrancisW, CC BY-SA 3.0, Wikimedia Commons.</i>"
+      }
+    },
+    {
+      "key": "img-park",
+      "title": "Photo · Parque Ibirapuera",
+      "tags": {
+        "content": [
+          "Prepositions",
+          "Relative clauses",
+          "Present Continuous",
+          "Past Simple"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/People_relaxing_at_Parque_Ibirapuera%2C_S%C3%A3o_Paulo.jpg/1280px-People_relaxing_at_Parque_Ibirapuera%2C_S%C3%A3o_Paulo.jpg",
+        "caption": "<b>Help:</b> <i>This is a park where… · Some people are… · The lake is… · I think it's a…</i><br>Is there a park like this in your city? What did you do there the last time?<br><i>Photo: Slyronit, CC BY-SA 4.0, Wikimedia Commons.</i>"
+      }
+    },
+    {
+      "key": "img-beach",
+      "title": "Photo · Copacabana",
+      "tags": {
+        "content": [
+          "Prepositions",
+          "Relative clauses",
+          "Present Continuous",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Orla_de_Copacabana_a_partir_do_Posto_5.jpg/1280px-Orla_de_Copacabana_a_partir_do_Posto_5.jpg",
+        "caption": "<b>Help:</b> <i>Copacabana is a beach which… · Behind the beach, there are… · It looks… (crowded? peaceful?)</i><br>Were you ever there? What were you doing?<br><i>Photo: Tet, CC BY 4.0, Wikimedia Commons.</i>"
+      }
+    },
+    {
+      "key": "prep-review",
+      "title": "Prepositions of place · quick review",
+      "tags": {
+        "content": [
+          "Prepositions"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "PREPOSITIONS · QUICK REVIEW",
+        "html": "in · on · next to · between · opposite · behind · in front of · near · on the corner of",
+        "instant": true,
+        "items": [
+          {
+            "before": "The bakery is",
+            "options": [
+              "between",
+              "opposite"
+            ],
+            "answer": 0,
+            "after": "the bank and the pharmacy."
+          },
+          {
+            "before": "My building is",
+            "options": [
+              "on the corner of",
+              "in the corner of"
+            ],
+            "answer": 0,
+            "after": "two streets."
+          },
+          {
+            "before": "I live",
+            "options": [
+              "in",
+              "on"
+            ],
+            "answer": 0,
+            "after": "a small apartment."
+          },
+          {
+            "before": "The bus stop is",
+            "options": [
+              "in front of",
+              "between of"
+            ],
+            "answer": 0,
+            "after": "the supermarket."
+          },
+          {
+            "before": "The school is",
+            "options": [
+              "opposite",
+              "opposite of"
+            ],
+            "answer": 0,
+            "after": "the park."
+          },
+          {
+            "before": "There is a garden",
+            "options": [
+              "behind",
+              "behind of"
+            ],
+            "answer": 0,
+            "after": "the house."
+          },
+          {
+            "before": "My office is",
+            "options": [
+              "near",
+              "near of"
+            ],
+            "answer": 0,
+            "after": "the subway station."
+          }
+        ]
+      }
+    },
+    {
+      "key": "tenses-fill",
+      "title": "Four tenses · my city, then and now",
+      "tags": {
+        "content": [
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "FOUR TENSES · THEN AND NOW",
+        "html": "Complete with the Present Simple, Present Continuous, Past Simple or Past Continuous. Then <b>read it aloud</b>.",
+        "items": [
+          {
+            "before": "When I was a child, my city",
+            "hint": "be",
+            "after": "smaller and quieter.",
+            "answers": [
+              "was"
+            ]
+          },
+          {
+            "before": "Every Sunday, my family",
+            "hint": "go",
+            "after": "to the square to eat ice cream.",
+            "answers": [
+              "went"
+            ]
+          },
+          {
+            "before": "One day, while we",
+            "hint": "walk",
+            "after": "in the square, it started to rain.",
+            "answers": [
+              "were walking"
+            ]
+          },
+          {
+            "before": "We",
+            "hint": "run",
+            "after": "to a café and waited there.",
+            "answers": [
+              "ran"
+            ]
+          },
+          {
+            "before": "Today, the city",
+            "hint": "have",
+            "after": "a lot of new buildings.",
+            "answers": [
+              "has"
+            ]
+          },
+          {
+            "before": "These days, the government",
+            "hint": "build",
+            "after": "a new subway line.",
+            "answers": [
+              "is building",
+              "'s building"
+            ]
+          },
+          {
+            "before": "I usually",
+            "hint": "walk",
+            "after": "to work, because my neighborhood is walkable.",
+            "answers": [
+              "walk"
+            ]
+          },
+          {
+            "before": "Right now, it",
+            "hint": "rain",
+            "after": "again, just like that day!",
+            "answers": [
+              "is raining",
+              "'s raining"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "then-now",
+      "title": "Then and now · your city (with sentence starters)",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Present Simple",
+          "Present Continuous",
+          "Past Simple",
+          "Past Continuous",
+          "Relative clauses"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · YOUR CITY, THEN AND NOW",
+        "html": "<b>Help:</b> <i>When I was a child, my city was… · We usually went to a place where… · Today, it is… · These days, they are building…</i>",
+        "words": [
+          "When I was a child…",
+          "Today…",
+          "These days…",
+          "a place where…",
+          "people who…"
+        ],
+        "cats": [
+          {
+            "name": "Then",
+            "qs": [
+              "What was your city like when you were a child?",
+              "Where did you play when you were a child?",
+              "What was a place where your family usually went?",
+              "What were you doing the first time you saw the sea?"
+            ]
+          },
+          {
+            "name": "Now",
+            "qs": [
+              "What is your city like today?",
+              "What is changing in your city these days?",
+              "Is your city safe? Is it affordable?",
+              "What is the most crowded place in your city?"
+            ]
+          },
+          {
+            "name": "Opinion",
+            "qs": [
+              "What is the best thing about your city?",
+              "What is one thing that your city needs?",
+              "Do you want to live in another city? Which one?",
+              "What is a landmark which every tourist should see in your city?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "frame",
+      "title": "Speaking frame · describe your city",
+      "tags": {
+        "content": [
+          "Relative clauses",
+          "Prepositions",
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "SPEAKING FRAME · YOUR CITY IN 8 SENTENCES",
+        "html": "Complete the sentences <b>in your head</b> first, then say them all together. Don't worry about mistakes!<br><br>1. I live in ____, a city which is ____ (adjective).<br>2. My neighborhood is ____ (quiet / lively / crowded…) and it's near ____.<br>3. Next to my home, there is ____. Opposite my home, there is ____.<br>4. The people who live in my city are ____.<br>5. My favorite place is ____, a place where I ____.<br>6. When I was a child, I ____ (past simple) there every ____.<br>7. One day, while I was ____ (past continuous), ____ (past simple).<br>8. Right now, people in my city are probably ____ (present continuous)."
+      }
+    },
+    {
+      "key": "tour-guide",
+      "title": "Final · tour guide",
+      "tags": {
+        "content": [
+          "Relative clauses",
+          "Prepositions",
+          "Vocabulary",
+          "Present Simple",
+          "Past Simple"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "FINAL CHALLENGE · TOUR GUIDE",
+        "html": "You are a tour guide in <b>your</b> city! Draw a place and present it to a tourist (the teacher). Use the words on the card. The tourist asks 2 questions.",
+        "promptLabel": "USE",
+        "lines": [
+          "the best restaurant",
+          "a landmark",
+          "a park or a square",
+          "a place for the nightlife",
+          "a place for families",
+          "a historic place",
+          "the best view of the city"
+        ],
+        "prompts": [
+          "a place where…",
+          "people who…",
+          "next to / opposite",
+          "When I was a child…",
+          "crowded / peaceful / lively",
+          "Right now…"
+        ]
+      }
+    },
+    {
+      "key": "wrapup",
+      "title": "Wrap-up",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Relative clauses",
+          "Vocabulary"
+        ],
+        "levels": [
+          "A2",
+          "B1"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "WRAP-UP",
+        "html": "Last questions!",
+        "words": [],
+        "cats": [
+          {
+            "name": "Today",
+            "qs": [
+              "Which new words do you remember from today?",
+              "Make a sentence with <b>where</b> about your city.",
+              "Make a sentence with <b>who</b> about a person you know.",
+              "What are you doing after this class?"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "lesson": {
+    "title": "My City, Then and Now",
+    "subtitle": "Describing your city · vocabulary · relative clauses · prepositions of place · present and past (simple and continuous)",
+    "level": "B1",
+    "date": "2026-10-19",
+    "tags": [
+      "Vocabulary",
+      "Speaking",
+      "Grammar"
+    ],
+    "blocks": [
+      {
+        "model": "warmup"
+      },
+      {
+        "model": "voc-adj"
+      },
+      {
+        "model": "voc-places"
+      },
+      {
+        "model": "voc-match"
+      },
+      {
+        "model": "voc-fill"
+      },
+      {
+        "model": "reading"
+      },
+      {
+        "model": "reading-check"
+      },
+      {
+        "model": "reading-talk"
+      },
+      {
+        "model": "rel-explain"
+      },
+      {
+        "model": "rel-choose"
+      },
+      {
+        "model": "rel-join"
+      },
+      {
+        "model": "rel-game"
+      },
+      {
+        "model": "img-shops"
+      },
+      {
+        "model": "img-corner"
+      },
+      {
+        "model": "img-park"
+      },
+      {
+        "model": "img-beach"
+      },
+      {
+        "model": "prep-review"
+      },
+      {
+        "model": "tenses-fill"
+      },
+      {
+        "model": "then-now"
+      },
+      {
+        "model": "frame"
+      },
+      {
+        "model": "tour-guide"
+      },
+      {
+        "model": "wrapup"
+      },
+      {
+        "type": "notes",
+        "label": "ANOTAÇÕES",
+        "html": ""
+      }
+    ]
+  }
+}
