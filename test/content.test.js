@@ -10,7 +10,10 @@ const PORT = 3800 + Math.floor(Math.random() * 90);
 const BASE = `http://localhost:${PORT}`;
 const DATA = fs.mkdtempSync(path.join(os.tmpdir(), 'talkbox-content-'));
 const PACKS = fs.readdirSync('content').filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join('content', f), 'utf8')));
-const ROSTER = PACKS.filter((p) => p.students).flatMap((p) => p.students);
+// nomes renomeados por algum pacote ("rename") contam pelo nome novo
+const RENAMED = new Map(PACKS.flatMap((p) => p.rename || []).map((r) => [r.from.toLowerCase(), r.to]));
+const ROSTER = PACKS.filter((p) => p.students).flatMap((p) => p.students)
+  .map((s) => ({ ...s, name: RENAMED.get(s.name.toLowerCase()) || s.name }));
 const LESSON_PACKS = PACKS.filter((p) => p.lesson);
 let proc;
 
@@ -91,5 +94,6 @@ test('cadastro em lote cria todos os alunos, sem duplicar quem já veio num paco
   const students = await get('/api/students');
   const names = students.map((s) => s.name.toLowerCase());
   for (const s of ROSTER) assert.ok(names.includes(s.name.toLowerCase()), `${s.name} cadastrado`);
+  for (const from of RENAMED.keys()) assert.ok(!names.includes(from), `${from} foi renomeado`);
   for (const pack of LESSON_PACKS) assert.equal(names.filter((n) => n === pack.student.name.toLowerCase()).length, 1);
 });

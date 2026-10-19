@@ -14,6 +14,10 @@
 // }
 // Cadastro em lote: um pacote só com "students": [ { "name": "Ana" }, ... ] cria os alunos que ainda não existem
 // (mesmo nome, sem diferenciar maiúsculas, é reaproveitado). Pode vir junto com os campos acima.
+// Renomear: "rename": [ { "from": "William & Letícia", "to": "William" } ] muda o nome e mantém aulas, mapa e histórico.
+// Roda antes do cadastro. Se "from" não existe ou "to" já existe, não faz nada.
+// Copiar de outro aluno: { "name": "Letícia", "copyFrom": "William" } cria o aluno com o nível, o objetivo e o mapa
+// de conteúdos do outro (as aulas continuam só no original).
 // Imagens: { "type": "image", "file": "images/x.webp", "caption": "...", "layout": "full" | "half" }, com o arquivo
 // em WebP dentro de content/. Na importação ele é copiado para data/uploads/ (uma vez só) e vira "src".
 // Modelos sem etiqueta de conteúdo recebem as que forem citadas no título ou no texto (pelos sinônimos).
@@ -72,9 +76,22 @@ export function importPack(pack, file = '', dir = CONTENT_DIR) {
       return { student: db.createStudent({ name: s.name.trim(), level: s.level || '', goal: s.goal || '', notes: s.notes || '' }), created: true };
     };
 
+    const byName = (name) => db.listStudents().find((x) => x.name.toLowerCase() === String(name || '').trim().toLowerCase());
+    for (const r of pack.rename || []) {
+      const from = byName(r.from);
+      if (from && r.to?.trim() && !byName(r.to)) db.updateStudent(from.id, { name: r.to.trim() });
+    }
+
     let created = 0;
     for (const s of pack.students || []) {
-      if (s?.name?.trim() && findOrCreate(s).created) created++;
+      if (!s?.name?.trim()) continue;
+      const src = s.copyFrom ? byName(s.copyFrom) : null;
+      const base = src ? { level: src.level, goal: src.goal, ...s } : s;
+      const out = findOrCreate(base);
+      if (out.created) {
+        created++;
+        if (src) db.copyMap(src.id, out.student.id);
+      }
     }
 
     let student = null;

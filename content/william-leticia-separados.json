@@ -1,0 +1,8 @@
+{
+  "id": "separar-william-leticia-2026-10-19",
+  "about": "William e Letícia passam a fazer aula separados (19/10/2026). A turma vira o William, com todas as aulas e o mapa. A Letícia ganha um cadastro novo com o mesmo nível, objetivo e mapa.",
+  "rename": [{ "from": "William & Letícia", "to": "William" }],
+  "students": [
+    { "name": "Letícia", "copyFrom": "William", "notes": "Fazia aula junto com o William (turma William & Letícia) até 19/10/2026." }
+  ]
+}

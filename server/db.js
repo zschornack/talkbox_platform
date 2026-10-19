@@ -325,6 +325,16 @@ export function updateStudent(id, patch) {
   });
 }
 
+/** Copia o mapa atual de um aluno para outro (ex.: turma que se separa). Vira avaliações manuais com a data de hoje. */
+export function copyMap(fromId, toId) {
+  const from = getStudent(fromId);
+  if (!from || !getStudent(toId)) return 0;
+  return transaction(() => {
+    for (const [content, status] of Object.entries(from.map)) assess(toId, content, status);
+    return Object.keys(from.map).length;
+  });
+}
+
 /** Evolução do mapa na ficha: avaliações de um conteúdo (ou de todos), da mais antiga para a mais nova. */
 export function contentHistory(studentId, content = '') {
   const one = !!String(content).trim();
