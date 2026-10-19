@@ -1,0 +1,1511 @@
+{
+  "id": "leticia-places-present-2026-10-19",
+  "student": {
+    "name": "Letícia",
+    "level": "A2",
+    "goal": "",
+    "notes": ""
+  },
+  "models": [
+    {
+      "key": "warmup",
+      "title": "Warm-up · nice to meet you!",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Present Simple",
+          "Present Continuous"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "WARM-UP · NICE TO MEET YOU!",
+        "html": "Our first class! Answer with <b>complete sentences</b>.",
+        "words": [
+          "usually",
+          "every day",
+          "right now",
+          "at the moment"
+        ],
+        "cats": [
+          {
+            "name": "You",
+            "qs": [
+              "Where do you live?",
+              "What do you do?",
+              "What do you usually do on weekends?",
+              "What are you doing these days, besides work?"
+            ]
+          },
+          {
+            "name": "Your home",
+            "qs": [
+              "Do you live in a house or an apartment?",
+              "Who do you live with?",
+              "What is your favorite room in your home? Why?",
+              "Where are you right now? What can you see?"
+            ]
+          },
+          {
+            "name": "Your city",
+            "qs": [
+              "What is your city like?",
+              "What is near your home?",
+              "Where do you usually go shopping?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "ps-pc-explain",
+      "title": "Present Simple or Present Continuous? (reminder)",
+      "tags": {
+        "content": [
+          "Present Simple",
+          "Present Continuous"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "explanation",
+        "label": "REMINDER · PRESENT SIMPLE OR PRESENT CONTINUOUS?",
+        "html": "<span style=\"background-color: #CFE9EA\"><b>PRESENT SIMPLE</b></span> = habits, routine, facts. <i>every day, usually, always, never, on Mondays</i><br><i>I <b>work</b> from home on Fridays. · She <b>works</b> in a bank.</i><br>⚠️ he / she / it → verb + <b>s</b> · negative: <b>don't / doesn't</b> + verb<br><br><span style=\"background-color: #FFE2B8\"><b>PRESENT CONTINUOUS</b></span> = happening now, or around now. <i>now, right now, at the moment, today, these days, Look!</i><br><i>I <b>am working</b> now. · She <b>is working</b> at the moment.</i><br>⚠️ always <b>am / is / are</b> + verb-<b>ing</b>: ✗ <i>I working</i> ✗ <i>I am work</i>"
+      }
+    },
+    {
+      "key": "ps-pc-choose",
+      "title": "Present Simple or Present Continuous? (choose)",
+      "tags": {
+        "content": [
+          "Present Simple",
+          "Present Continuous"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "PRACTICE · CHOOSE THE CORRECT FORM",
+        "html": "Look at the time words! Then say <b>why</b>.",
+        "instant": true,
+        "items": [
+          {
+            "before": "I usually",
+            "options": [
+              "take",
+              "am taking"
+            ],
+            "answer": 0,
+            "after": "the bus to work."
+          },
+          {
+            "before": "Look! The bus",
+            "options": [
+              "comes",
+              "is coming"
+            ],
+            "answer": 1,
+            "after": "."
+          },
+          {
+            "before": "My sister",
+            "options": [
+              "live",
+              "lives"
+            ],
+            "answer": 1,
+            "after": "near the beach."
+          },
+          {
+            "before": "Shh! The baby",
+            "options": [
+              "sleeps",
+              "is sleeping"
+            ],
+            "answer": 1,
+            "after": "."
+          },
+          {
+            "before": "We",
+            "options": [
+              "don't eat",
+              "aren't eating"
+            ],
+            "answer": 0,
+            "after": "meat on Fridays."
+          },
+          {
+            "before": "Right now, I",
+            "options": [
+              "sit",
+              "am sitting"
+            ],
+            "answer": 1,
+            "after": "on my sofa."
+          },
+          {
+            "before": "She",
+            "options": [
+              "don't work",
+              "doesn't work"
+            ],
+            "answer": 1,
+            "after": "on Sundays."
+          },
+          {
+            "before": "These days, my brother",
+            "options": [
+              "studies",
+              "is studying"
+            ],
+            "answer": 1,
+            "after": "for an exam."
+          },
+          {
+            "before": "The shops",
+            "options": [
+              "open",
+              "are opening"
+            ],
+            "answer": 0,
+            "after": "at 9 a.m. every day."
+          },
+          {
+            "before": "What",
+            "options": [
+              "do you do",
+              "are you doing"
+            ],
+            "answer": 1,
+            "after": "now? Can you talk?"
+          }
+        ]
+      }
+    },
+    {
+      "key": "ps-pc-fill",
+      "title": "Present Simple or Present Continuous? (complete)",
+      "tags": {
+        "content": [
+          "Present Simple",
+          "Present Continuous"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "PRACTICE · A NORMAL DAY AND TODAY",
+        "html": "Complete with the Present Simple or the Present Continuous.",
+        "items": [
+          {
+            "before": "Carla",
+            "hint": "work",
+            "after": "in an office downtown.",
+            "answers": [
+              "works"
+            ]
+          },
+          {
+            "before": "She usually",
+            "hint": "drive",
+            "after": "to work.",
+            "answers": [
+              "drives"
+            ]
+          },
+          {
+            "before": "But today her car is broken, so she",
+            "hint": "take",
+            "after": "the subway.",
+            "answers": [
+              "is taking",
+              "'s taking"
+            ]
+          },
+          {
+            "before": "At the moment, she",
+            "hint": "stand",
+            "after": "next to the door of the train.",
+            "answers": [
+              "is standing",
+              "'s standing"
+            ]
+          },
+          {
+            "before": "She",
+            "hint": "not / like",
+            "after": "the subway because it is always full.",
+            "answers": [
+              "doesn't like",
+              "does not like"
+            ]
+          },
+          {
+            "before": "Right now, a man",
+            "hint": "play",
+            "after": "the guitar in the train.",
+            "answers": [
+              "is playing",
+              "'s playing"
+            ]
+          },
+          {
+            "before": "Carla",
+            "hint": "love",
+            "after": "music, so she is happy.",
+            "answers": [
+              "loves"
+            ]
+          },
+          {
+            "before": "Her friends",
+            "hint": "wait",
+            "after": "for her at the café right now.",
+            "answers": [
+              "are waiting",
+              "'re waiting"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "fix",
+      "title": "Fix the mistakes (Present Simple and Continuous)",
+      "tags": {
+        "content": [
+          "Present Simple",
+          "Present Continuous"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "FIX THE MISTAKES",
+        "html": "Each sentence has <b>one</b> mistake. Write the correct sentence.",
+        "items": [
+          {
+            "before": "I am work now. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "I am working now.",
+              "I am working now",
+              "I'm working now.",
+              "I'm working now"
+            ]
+          },
+          {
+            "before": "She work in a hospital. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "She works in a hospital.",
+              "She works in a hospital"
+            ]
+          },
+          {
+            "before": "He don't like coffee. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "He doesn't like coffee.",
+              "He doesn't like coffee",
+              "He does not like coffee.",
+              "He does not like coffee"
+            ]
+          },
+          {
+            "before": "They watching TV right now. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "They are watching TV right now.",
+              "They are watching TV right now",
+              "They're watching TV right now.",
+              "They're watching TV right now"
+            ]
+          },
+          {
+            "before": "I am going to the gym every Monday. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "I go to the gym every Monday.",
+              "I go to the gym every Monday"
+            ]
+          },
+          {
+            "before": "Look! It rains. →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "Look! It is raining.",
+              "Look! It is raining",
+              "Look! It's raining.",
+              "Look! It's raining"
+            ]
+          },
+          {
+            "before": "Does she lives near you? →",
+            "hint": "fix it",
+            "after": "",
+            "answers": [
+              "Does she live near you?",
+              "Does she live near you"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "img-busstop",
+      "title": "Photo · a bus stop in Rio de Janeiro",
+      "tags": {
+        "content": [
+          "Present Continuous",
+          "Present Simple"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Vendors_and_passengers_at_a_bus_stop_in_Rio_de_Janeiro%2C_Brazil.jpg/1280px-Vendors_and_passengers_at_a_bus_stop_in_Rio_de_Janeiro%2C_Brazil.jpg",
+        "caption": "A bus stop in Rio de Janeiro. <b>What are the people doing?</b> What are they selling? What do people usually do at a bus stop?<br><i>Photo: Wilfredor, CC0, Wikimedia Commons.</i>"
+      }
+    },
+    {
+      "key": "img-park",
+      "title": "Photo · Parque Ibirapuera, São Paulo",
+      "tags": {
+        "content": [
+          "Present Continuous",
+          "Present Simple",
+          "Prepositions"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/People_relaxing_at_Parque_Ibirapuera%2C_S%C3%A3o_Paulo.jpg/1280px-People_relaxing_at_Parque_Ibirapuera%2C_S%C3%A3o_Paulo.jpg",
+        "caption": "Parque Ibirapuera, São Paulo. <b>What are the people doing right now?</b> What do people usually do in parks on Sundays?<br><i>Photo: Slyronit, CC BY-SA 4.0, Wikimedia Commons.</i>"
+      }
+    },
+    {
+      "key": "img-beach",
+      "title": "Photo · Copacabana beach, Rio de Janeiro",
+      "tags": {
+        "content": [
+          "Present Continuous",
+          "Prepositions"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Orla_de_Copacabana_a_partir_do_Posto_5.jpg/1280px-Orla_de_Copacabana_a_partir_do_Posto_5.jpg",
+        "caption": "Copacabana, Rio de Janeiro. <b>What is happening?</b> Where are the buildings? What is behind them?<br><i>Photo: Tet, CC BY 4.0, Wikimedia Commons.</i>"
+      }
+    },
+    {
+      "key": "img-market",
+      "title": "Photo · a street market (feira) in Bahia",
+      "tags": {
+        "content": [
+          "Prepositions",
+          "Present Simple",
+          "Food"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Barraca_de_Frutas_e_Legumes_na_Feira_Livre_de_Jacobina.jpg/1280px-Barraca_de_Frutas_e_Legumes_na_Feira_Livre_de_Jacobina.jpg",
+        "caption": "A <i>feira</i> in Jacobina, Bahia. <b>What fruit can you see? Where is it?</b> (above, next to, in front of…) What do you usually buy at a feira?<br><i>Photo: Rayelle da Silva Freitas, CC BY-SA 4.0, Wikimedia Commons.</i>"
+      }
+    },
+    {
+      "key": "photo-talk",
+      "title": "Photos · now and usually",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Present Continuous",
+          "Present Simple"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · NOW AND USUALLY",
+        "html": "Choose a photo. Say <b>3 things that are happening now</b> and <b>2 things that people usually do</b> there.",
+        "words": [
+          "right now",
+          "at the moment",
+          "usually",
+          "every day",
+          "next to",
+          "behind"
+        ],
+        "cats": [
+          {
+            "name": "About the photos",
+            "qs": [
+              "Bus stop: what is the woman on the left doing?",
+              "Bus stop: are the people waiting or walking?",
+              "Park: where are the people sitting?",
+              "Park: what is the weather like today?",
+              "Beach: what are the people doing on the sand?",
+              "Market: what is the seller selling?"
+            ]
+          },
+          {
+            "name": "About you",
+            "qs": [
+              "How do you usually go to work?",
+              "Do you go to the beach or to the park more often?",
+              "Do you usually go to a feira? What do you buy?",
+              "What are people doing outside your window right now?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "prep-table",
+      "title": "Prepositions of place",
+      "tags": {
+        "content": [
+          "Prepositions"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "table",
+        "label": "PREPOSITIONS OF PLACE",
+        "header": true,
+        "rows": [
+          [
+            "PREPOSITION",
+            "MEANING",
+            "EXAMPLE"
+          ],
+          [
+            "<b>in</b>",
+            "dentro de",
+            "The keys are <b>in</b> my bag."
+          ],
+          [
+            "<b>on</b>",
+            "em cima de (tocando)",
+            "The laptop is <b>on</b> the table."
+          ],
+          [
+            "<b>under</b>",
+            "embaixo de",
+            "The cat is <b>under</b> the bed."
+          ],
+          [
+            "<b>above</b>",
+            "acima de (sem tocar)",
+            "The lamp is <b>above</b> the table."
+          ],
+          [
+            "<b>next to</b>",
+            "ao lado de",
+            "The bank is <b>next to</b> the pharmacy."
+          ],
+          [
+            "<b>between</b>",
+            "entre (dois)",
+            "The café is <b>between</b> the bank and the bakery."
+          ],
+          [
+            "<b>in front of</b>",
+            "na frente de",
+            "The car is <b>in front of</b> the house."
+          ],
+          [
+            "<b>behind</b>",
+            "atrás de",
+            "The garden is <b>behind</b> the house."
+          ],
+          [
+            "<b>opposite</b>",
+            "em frente a (do outro lado)",
+            "The school is <b>opposite</b> the park."
+          ],
+          [
+            "<b>near</b>",
+            "perto de",
+            "I live <b>near</b> the beach."
+          ],
+          [
+            "<b>on the corner of</b>",
+            "na esquina de",
+            "The bakery is <b>on the corner of</b> my street."
+          ],
+          [
+            "<b>on the left / right</b>",
+            "à esquerda / direita",
+            "The sofa is <b>on the left</b>."
+          ]
+        ]
+      }
+    },
+    {
+      "key": "img-cabin",
+      "title": "Photo · living room in a cabin",
+      "tags": {
+        "content": [
+          "Prepositions"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Cabin_14_living_room_sofa_fireplace_microwave_Douthat_State_Park_Virginia_%2827698134543%29.jpg/1280px-Cabin_14_living_room_sofa_fireplace_microwave_Douthat_State_Park_Virginia_%2827698134543%29.jpg",
+        "caption": "A living room in a cabin. <b>Where is everything?</b><br><i>Photo: Virginia State Parks staff, CC BY 2.0, Wikimedia Commons.</i>"
+      }
+    },
+    {
+      "key": "cabin-choose",
+      "title": "Living room in a cabin · prepositions",
+      "tags": {
+        "content": [
+          "Prepositions"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "LOOK AT THE CABIN · CHOOSE",
+        "html": "Look at the photo and choose the correct preposition.",
+        "instant": true,
+        "items": [
+          {
+            "before": "The green sofa is",
+            "options": [
+              "on the left",
+              "on the right"
+            ],
+            "answer": 0,
+            "after": "."
+          },
+          {
+            "before": "The fireplace is",
+            "options": [
+              "on the left",
+              "on the right"
+            ],
+            "answer": 1,
+            "after": "."
+          },
+          {
+            "before": "The two armchairs are",
+            "options": [
+              "next to",
+              "under"
+            ],
+            "answer": 0,
+            "after": "each other."
+          },
+          {
+            "before": "The pictures are on the wall,",
+            "options": [
+              "above",
+              "under"
+            ],
+            "answer": 0,
+            "after": "the armchairs."
+          },
+          {
+            "before": "The rug is",
+            "options": [
+              "on",
+              "above"
+            ],
+            "answer": 0,
+            "after": "the floor."
+          },
+          {
+            "before": "The microwave is",
+            "options": [
+              "on",
+              "in"
+            ],
+            "answer": 0,
+            "after": "a small wooden cabinet."
+          },
+          {
+            "before": "The cabinet is",
+            "options": [
+              "next to",
+              "behind"
+            ],
+            "answer": 0,
+            "after": "the fireplace."
+          },
+          {
+            "before": "The big table is",
+            "options": [
+              "in front of",
+              "behind"
+            ],
+            "answer": 0,
+            "after": "the sofa, near the camera."
+          }
+        ]
+      }
+    },
+    {
+      "key": "img-living",
+      "title": "Photo · living room with 1960s objects",
+      "tags": {
+        "content": [
+          "Prepositions"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Living_room_with_1960s_objects.jpg/1280px-Living_room_with_1960s_objects.jpg",
+        "caption": "A living room with 1960s objects. <b>Describe it!</b> Use 5 prepositions.<br><i>Photo: Kotivalo, CC BY-SA 4.0, Wikimedia Commons.</i>"
+      }
+    },
+    {
+      "key": "living-fill",
+      "title": "Living room 1960s · complete with prepositions",
+      "tags": {
+        "content": [
+          "Prepositions"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "LOOK AT THE LIVING ROOM · COMPLETE",
+        "html": "Complete with a preposition. Some have more than one answer!",
+        "items": [
+          {
+            "before": "There is a coffee table",
+            "hint": "between",
+            "after": "the two brown sofas.",
+            "answers": [
+              "between"
+            ]
+          },
+          {
+            "before": "The laptop is",
+            "hint": "on",
+            "after": "the coffee table.",
+            "answers": [
+              "on"
+            ]
+          },
+          {
+            "before": "The TV is",
+            "hint": "on the left / on the right",
+            "after": ".",
+            "answers": [
+              "on the left"
+            ]
+          },
+          {
+            "before": "The windows are",
+            "hint": "behind / in front of",
+            "after": "the brown sofa at the back.",
+            "answers": [
+              "behind"
+            ]
+          },
+          {
+            "before": "There is a rug",
+            "hint": "under / above",
+            "after": "the coffee table.",
+            "answers": [
+              "under"
+            ]
+          },
+          {
+            "before": "The lights are",
+            "hint": "on / under",
+            "after": "the ceiling.",
+            "answers": [
+              "on"
+            ]
+          },
+          {
+            "before": "There is a lamp",
+            "hint": "next to / under",
+            "after": "the black armchair.",
+            "answers": [
+              "next to",
+              "near"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "img-kitchen",
+      "title": "Photo · a 1940s kitchen (Nordiska museet)",
+      "tags": {
+        "content": [
+          "Prepositions"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Kitchen_of_1940s_apartment_at_Nordiska_museet.jpg/1280px-Kitchen_of_1940s_apartment_at_Nordiska_museet.jpg",
+        "caption": "A kitchen from the 1940s, in a museum in Sweden. Is it similar to your kitchen?<br><i>Photo: JIP, CC BY-SA 4.0, Wikimedia Commons.</i>"
+      }
+    },
+    {
+      "key": "kitchen-tf",
+      "title": "Kitchen · true or false?",
+      "tags": {
+        "content": [
+          "Prepositions"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "LOOK AT THE KITCHEN · TRUE OR FALSE?",
+        "html": "Correct the false sentences with the right preposition.",
+        "instant": false,
+        "items": [
+          {
+            "before": "The lamp is above the table.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "The table is behind the window.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "There are flowers next to the window, on the windowsill.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "The sink is on the right.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "There is a red bottle on the top shelf.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "The chairs are under the shelves.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "after": ""
+          },
+          {
+            "before": "There are two plates on the wall, next to the window.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "key": "img-desk",
+      "title": "Photo · a messy desk",
+      "tags": {
+        "content": [
+          "Prepositions"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Gfp-office-desk-area.jpg/1280px-Gfp-office-desk-area.jpg",
+        "caption": "A very messy desk! <b>Where is…?</b> the printer · the water bottles · the books · the mouse · the window<br><i>Photo: Yinan Chen, public domain, Wikimedia Commons.</i>"
+      }
+    },
+    {
+      "key": "desk-fill",
+      "title": "Messy desk · where is it?",
+      "tags": {
+        "content": [
+          "Prepositions"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Escrita"
+        ]
+      },
+      "block": {
+        "type": "fill",
+        "label": "THE MESSY DESK · WHERE IS IT?",
+        "html": "Complete the answers. Then describe <b>your</b> desk or table.",
+        "items": [
+          {
+            "before": "Where is the printer? It's",
+            "hint": "o…",
+            "after": "the desk.",
+            "answers": [
+              "on"
+            ]
+          },
+          {
+            "before": "Where are the papers? They're",
+            "hint": "o…",
+            "after": "the printer.",
+            "answers": [
+              "on"
+            ]
+          },
+          {
+            "before": "Where are the water bottles? They're",
+            "hint": "i… f… o…",
+            "after": "the printer.",
+            "answers": [
+              "in front of"
+            ]
+          },
+          {
+            "before": "Where are the books? They're",
+            "hint": "n… t…",
+            "after": "the printer, on the right.",
+            "answers": [
+              "next to"
+            ]
+          },
+          {
+            "before": "Where is the window? It's",
+            "hint": "b…",
+            "after": "the desk.",
+            "answers": [
+              "behind"
+            ]
+          },
+          {
+            "before": "Where is the air conditioner? It's",
+            "hint": "u…",
+            "after": "the window.",
+            "answers": [
+              "under"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "img-shops",
+      "title": "Photo · shops on Rua Augusta, São Paulo",
+      "tags": {
+        "content": [
+          "Prepositions",
+          "Present Continuous"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Rua_Augusta%2C_Sao_Paulo_city.jpg/1280px-Rua_Augusta%2C_Sao_Paulo_city.jpg",
+        "caption": "Shops on Rua Augusta, São Paulo. <b>Describe the street:</b> Which shop is between the other two? Where is the bike? What are the people doing?<br><i>Photo: Wilfredor, CC0, Wikimedia Commons.</i>"
+      }
+    },
+    {
+      "key": "img-corner",
+      "title": "Photo · a street corner on Rua Augusta",
+      "tags": {
+        "content": [
+          "Prepositions",
+          "Present Continuous",
+          "Present Simple"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "layout": "full",
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Rua_Augusta_esq_Luis_Coelho.jpg/1280px-Rua_Augusta_esq_Luis_Coelho.jpg",
+        "caption": "A corner on Rua Augusta. <b>Where is the bus? Where are the traffic lights?</b> What are the people doing? What happens here every morning?<br><i>Photo: FrancisW, CC BY-SA 3.0, Wikimedia Commons.</i>"
+      }
+    },
+    {
+      "key": "reading",
+      "title": "Reading · My neighborhood",
+      "tags": {
+        "content": [
+          "Reading",
+          "Prepositions",
+          "Present Simple",
+          "Present Continuous"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "READING · MY NEIGHBORHOOD",
+        "html": "My name is Paula, and I live in a small apartment in Pinheiros, in São Paulo. My building is <b>on the corner of</b> a quiet street, <b>opposite</b> a small park. <b>Next to</b> my building there is a bakery, and I buy bread there every morning. <b>Between</b> the bakery and the pharmacy, there is a little café with tables <b>on</b> the sidewalk.<br><br>I work <b>in</b> an office <b>near</b> Avenida Paulista, so I usually take the subway. The subway station is only five minutes from my home, <b>behind</b> the supermarket.<br><br>But today is Saturday, and I am not working. Right now, I am sitting at a table <b>in front of</b> the café. I am drinking a coffee and I am reading a book. In the park, some children are playing football and an old man is walking his dog. It's sunny, and my neighborhood looks beautiful today."
+      }
+    },
+    {
+      "key": "reading-check",
+      "title": "My neighborhood · comprehension",
+      "tags": {
+        "content": [
+          "Reading",
+          "Prepositions",
+          "Present Simple",
+          "Present Continuous"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Leitura"
+        ]
+      },
+      "block": {
+        "type": "choice",
+        "label": "COMPREHENSION · CHOOSE THE CORRECT ANSWER",
+        "html": "Then answer with a <b>complete sentence</b>.",
+        "instant": false,
+        "items": [
+          {
+            "before": "Paula's building is opposite…",
+            "options": [
+              "a park",
+              "a bakery",
+              "a supermarket"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "The bakery is…",
+            "options": [
+              "next to her building",
+              "behind the station",
+              "in the park"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "The café is between…",
+            "options": [
+              "the bakery and the pharmacy",
+              "the park and the station",
+              "her building and the park"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "The subway station is behind…",
+            "options": [
+              "the supermarket",
+              "the café",
+              "the bakery"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "On weekdays, Paula usually…",
+            "options": [
+              "takes the subway",
+              "drives",
+              "walks to work"
+            ],
+            "answer": 0,
+            "after": ""
+          },
+          {
+            "before": "Right now, Paula is…",
+            "options": [
+              "drinking a coffee",
+              "working",
+              "playing football"
+            ],
+            "answer": 0,
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "key": "map-live",
+      "title": "Live map · your neighborhood",
+      "tags": {
+        "content": [
+          "Prepositions",
+          "Present Simple",
+          "Travel"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "text",
+        "label": "LIVE MAP · YOUR NEIGHBORHOOD",
+        "html": "<b>Teacher:</b> open <b>Google Maps</b> or <b>OpenStreetMap</b> on the shared screen and find Letícia's neighborhood. Use Street View if possible.<br><br>1. Find her street. <b>What is next to her home? What is opposite?</b><br>2. Find 3 places she goes to every week (bakery, gym, supermarket…). <b>Where are they?</b> <i>The gym is near the bank, on the corner of…</i><br>3. <b>Directions:</b> from her home to the nearest bakery. <i>Go straight, turn left, it's on the right, opposite the…</i><br>4. Now the teacher's turn: the teacher describes a place on the map, and Letícia finds it."
+      }
+    },
+    {
+      "key": "city-talk",
+      "title": "Your city · where is it?",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Prepositions",
+          "Present Simple",
+          "Present Continuous"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "SPEAKING · YOUR HOME AND YOUR CITY",
+        "html": "Answer with a preposition of place and one more detail.",
+        "words": [
+          "next to",
+          "between",
+          "opposite",
+          "behind",
+          "near",
+          "on the corner of"
+        ],
+        "cats": [
+          {
+            "name": "Your home",
+            "qs": [
+              "Where is your bed?",
+              "What is on your kitchen table right now?",
+              "What is on the wall of your living room?",
+              "Where do you keep your keys?",
+              "What is under your bed?"
+            ]
+          },
+          {
+            "name": "Your street",
+            "qs": [
+              "What is next to your home?",
+              "Is there a bakery near your home? Where is it?",
+              "What is opposite your building or house?",
+              "Where is the nearest supermarket?"
+            ]
+          },
+          {
+            "name": "Your city",
+            "qs": [
+              "What is the most famous place in your city? Where is it?",
+              "Where do people usually go on weekends?",
+              "What are people doing in the city center right now, do you think?",
+              "Where is the best place to eat in your city?"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "guess",
+      "title": "Guess the object (prepositions game)",
+      "tags": {
+        "content": [
+          "Prepositions"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "GAME · WHAT IS IT?",
+        "html": "Think of an object in your room. Describe <b>where</b> it is, using the preposition on the card. The teacher guesses! Then switch.",
+        "promptLabel": "USE",
+        "lines": [
+          "in your bedroom",
+          "in your kitchen",
+          "in your living room",
+          "on your desk",
+          "in your bag"
+        ],
+        "prompts": [
+          "next to",
+          "between",
+          "on",
+          "under",
+          "behind",
+          "in front of",
+          "above",
+          "near"
+        ]
+      }
+    },
+    {
+      "key": "final",
+      "title": "Final · describe a place",
+      "tags": {
+        "content": [
+          "Prepositions",
+          "Present Simple",
+          "Present Continuous"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "challenge",
+        "label": "FINAL CHALLENGE · DESCRIBE A PLACE",
+        "html": "Draw a place and describe it in <b>5 sentences</b>: 2 with prepositions, 2 with the Present Continuous (what is happening now) and 1 with the Present Simple (what usually happens).",
+        "promptLabel": "START WITH",
+        "lines": [
+          "your favorite café",
+          "your street on a Saturday",
+          "a beach you like",
+          "your office or school",
+          "a park in your city",
+          "your grandma's house"
+        ],
+        "prompts": [
+          "Right now…",
+          "Every day…",
+          "Next to…",
+          "Behind…",
+          "Usually…",
+          "At the moment…"
+        ]
+      }
+    },
+    {
+      "key": "wrapup",
+      "title": "Wrap-up",
+      "tags": {
+        "content": [
+          "Conversation",
+          "Prepositions",
+          "Present Simple",
+          "Present Continuous"
+        ],
+        "levels": [
+          "A1",
+          "A2"
+        ],
+        "skills": [
+          "Fala"
+        ]
+      },
+      "block": {
+        "type": "deck",
+        "label": "WRAP-UP",
+        "html": "Last questions!",
+        "words": [],
+        "cats": [
+          {
+            "name": "Today",
+            "qs": [
+              "What are you doing after this class?",
+              "What do you usually do on Monday nights?",
+              "Where is your phone right now?",
+              "Which preposition is the most difficult for you?"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "lesson": {
+    "title": "Where Is It? Places, Homes and Cities",
+    "subtitle": "Present Simple × Present Continuous · prepositions of place · real photos and a live map",
+    "level": "A2",
+    "date": "2026-10-19",
+    "number": 1,
+    "tags": [
+      "Grammar",
+      "Speaking",
+      "Photos"
+    ],
+    "blocks": [
+      {
+        "model": "warmup"
+      },
+      {
+        "model": "ps-pc-explain"
+      },
+      {
+        "model": "ps-pc-choose"
+      },
+      {
+        "model": "ps-pc-fill"
+      },
+      {
+        "model": "fix"
+      },
+      {
+        "model": "img-busstop"
+      },
+      {
+        "model": "img-park"
+      },
+      {
+        "model": "img-beach"
+      },
+      {
+        "model": "img-market"
+      },
+      {
+        "model": "photo-talk"
+      },
+      {
+        "model": "prep-table"
+      },
+      {
+        "model": "img-cabin"
+      },
+      {
+        "model": "cabin-choose"
+      },
+      {
+        "model": "img-living"
+      },
+      {
+        "model": "living-fill"
+      },
+      {
+        "model": "img-kitchen"
+      },
+      {
+        "model": "kitchen-tf"
+      },
+      {
+        "model": "img-desk"
+      },
+      {
+        "model": "desk-fill"
+      },
+      {
+        "model": "img-shops"
+      },
+      {
+        "model": "img-corner"
+      },
+      {
+        "model": "reading"
+      },
+      {
+        "model": "reading-check"
+      },
+      {
+        "model": "map-live"
+      },
+      {
+        "model": "city-talk"
+      },
+      {
+        "model": "guess"
+      },
+      {
+        "model": "final"
+      },
+      {
+        "model": "wrapup"
+      },
+      {
+        "type": "notes",
+        "label": "ANOTAÇÕES",
+        "html": ""
+      }
+    ]
+  }
+}
