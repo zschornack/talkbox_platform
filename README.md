@@ -2,8 +2,6 @@
 
 Plataforma de aulas da escola, na visão do professor. A aula aparece para o aluno pela tela compartilhada (Meet, Zoom), e ele recebe o PDF da aula depois.
 
-Os requisitos completos estão no projeto do Claude (*TalkBox · Requisitos do MVP*).
-
 ## Como rodar no seu computador
 
 1. Instale o **Node.js 22 ou mais novo** em <https://nodejs.org> (versão LTS).
