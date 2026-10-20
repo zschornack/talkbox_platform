@@ -1,0 +1,1300 @@
+{
+ "id": "edilaine-aula-21-futures-relative-2026-10-20",
+ "student": {
+  "name": "Edilaine"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · your plans and your week",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Future (present continuous)",
+     "Future (going to)",
+     "Future (will)"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP",
+    "html": "Answer with complete sentences. Talk about the <b>future</b> as much as you can!",
+    "words": [
+     "tonight",
+     "tomorrow",
+     "next week",
+     "this weekend"
+    ],
+    "cats": [
+     {
+      "name": "Plans",
+      "qs": [
+       "What are you doing tonight?",
+       "What are you going to do this weekend?",
+       "Are you meeting anyone this week? Who?",
+       "What are you going to cook this week?",
+       "Where are you going on your next vacation?",
+       "What time are you going to bed tonight?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "fut-reminder",
+   "title": "Future · which one? (reminder: present continuous, going to, will)",
+   "tags": {
+    "content": [
+     "Future (present continuous)",
+     "Future (going to)",
+     "Future (will)"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "REMINDER · THREE FUTURES, WHICH ONE?",
+    "html": "<span style=\"background-color: #CBE4D8\"><b>PRESENT CONTINUOUS</b></span> = an <b>arrangement</b>: it's in the calendar, with a day and time, and someone else knows.<br><i>I <span style=\"background-color: #CBE4D8\"><b>am meeting</b></span> Ana at 6. · She <span style=\"background-color: #CBE4D8\"><b>is flying</b></span> to Recife on Friday.</i><br><br><span style=\"background-color: #FFDB8F\"><b>GOING TO</b></span> = a <b>plan</b> I made before, or a <b>prediction with evidence</b> (I can see it).<br><i>I <span style=\"background-color: #FFDB8F\"><b>am going to</b></span> start a course next year. · Look at those clouds! It <span style=\"background-color: #FFDB8F\"><b>is going to</b></span> rain.</i><br><br><span style=\"background-color: #FFC9A3\"><b>WILL</b></span> = I <b>decide now</b>, I <b>promise</b>, I <b>offer</b>, or I <b>think / believe</b>.<br><i>The phone is ringing. I <span style=\"background-color: #FFC9A3\"><b>will</b></span> get it! · I <span style=\"background-color: #FFC9A3\"><b>will</b></span> call you tomorrow, I promise. · I think it <span style=\"background-color: #FFC9A3\"><b>will</b></span> be a great year.</i><br><br>💡 Quick test: <b>Is it in my calendar?</b> → present continuous. <b>Did I decide before?</b> → going to. <b>Did I decide right now?</b> → will."
+   }
+  },
+  {
+   "key": "fut-choose",
+   "title": "Future · choose the best form (situations)",
+   "tags": {
+    "content": [
+     "Future (present continuous)",
+     "Future (going to)",
+     "Future (will)"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "PRACTICE · WHICH FUTURE?",
+    "html": "<span style=\"background-color: #CBE4D8\"><b>arrangement</b></span> · <span style=\"background-color: #FFDB8F\"><b>plan / evidence</b></span> · <span style=\"background-color: #FFC9A3\"><b>decide now / promise / opinion</b></span>",
+    "instant": false,
+    "items": [
+     {
+      "before": "\"Do you want to come to the party?\" \"Sorry, I",
+      "options": [
+       "am having",
+       "will have"
+      ],
+      "answer": 0,
+      "after": "dinner with my parents tonight. We booked a table.\""
+     },
+     {
+      "before": "\"I'm so thirsty!\" \"Wait, I",
+      "options": [
+       "am going to get",
+       "will get"
+      ],
+      "answer": 1,
+      "after": "you a glass of water.\""
+     },
+     {
+      "before": "Look at that car! It",
+      "options": [
+       "is going to crash",
+       "will crash"
+      ],
+      "answer": 0,
+      "after": "into the wall!"
+     },
+     {
+      "before": "I have decided: I",
+      "options": [
+       "am going to learn",
+       "will learn"
+      ],
+      "answer": 0,
+      "after": "to swim this year."
+     },
+     {
+      "before": "I think Brazil",
+      "options": [
+       "is winning",
+       "will win"
+      ],
+      "answer": 1,
+      "after": "the next World Cup."
+     },
+     {
+      "before": "My dentist appointment? I",
+      "options": [
+       "am seeing",
+       "will see"
+      ],
+      "answer": 0,
+      "after": "the dentist on Monday at 10."
+     },
+     {
+      "before": "Don't worry, I",
+      "options": [
+       "am not telling",
+       "won't tell"
+      ],
+      "answer": 1,
+      "after": "anyone. I promise!"
+     },
+     {
+      "before": "She's saving money because she",
+      "options": [
+       "is going to buy",
+       "will buy"
+      ],
+      "answer": 0,
+      "after": "a car."
+     },
+     {
+      "before": "\"The door is very heavy.\" \"I",
+      "options": [
+       "will help",
+       "am helping"
+      ],
+      "answer": 0,
+      "after": "you.\""
+     },
+     {
+      "before": "In 2050, people",
+      "options": [
+       "will live",
+       "are living"
+      ],
+      "answer": 0,
+      "after": "longer, I believe."
+     }
+    ]
+   }
+  },
+  {
+   "key": "fut-fill",
+   "title": "Future · a weekend in Paraty (complete)",
+   "tags": {
+    "content": [
+     "Future (present continuous)",
+     "Future (going to)",
+     "Future (will)"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "PRACTICE · A WEEKEND IN PARATY",
+    "html": "Edilaine and her friend Carla are talking about the weekend. Complete with the best future form.",
+    "items": [
+     {
+      "before": "Carla: What are your plans? Edilaine: I",
+      "hint": "travel",
+      "after": "to Paraty on Friday. I already have the bus ticket!",
+      "answers": [
+       "am traveling",
+       "'m traveling",
+       "am travelling",
+       "'m travelling"
+      ]
+     },
+     {
+      "before": "And I",
+      "hint": "meet",
+      "after": "my cousin there on Saturday at noon. We booked a table.",
+      "answers": [
+       "am meeting",
+       "'m meeting"
+      ]
+     },
+     {
+      "before": "I",
+      "hint": "visit",
+      "after": "the old town and take a boat trip. That's my plan.",
+      "answers": [
+       "am going to visit",
+       "'m going to visit"
+      ]
+     },
+     {
+      "before": "Carla: Oh, the forecast says sun! It",
+      "hint": "be",
+      "after": "a beautiful weekend, I'm sure.",
+      "answers": [
+       "will be",
+       "'ll be",
+       "is going to be",
+       "'s going to be"
+      ]
+     },
+     {
+      "before": "Edilaine: Do you want to come? Carla: Hmm… OK, I",
+      "hint": "come",
+      "after": "with you!",
+      "answers": [
+       "will come",
+       "'ll come"
+      ]
+     },
+     {
+      "before": "Edilaine: Great! I",
+      "hint": "buy",
+      "after": "you a ticket right now.",
+      "answers": [
+       "will buy",
+       "'ll buy"
+      ]
+     },
+     {
+      "before": "Carla: Look at the sky now… It",
+      "hint": "rain",
+      "after": "!",
+      "answers": [
+       "is going to rain",
+       "'s going to rain"
+      ]
+     },
+     {
+      "before": "Edilaine: Don't worry, I",
+      "hint": "bring",
+      "after": "my umbrella. I promise!",
+      "answers": [
+       "will bring",
+       "'ll bring"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "fut-react",
+   "title": "Future · react to the situation (speaking)",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Future (present continuous)",
+     "Future (going to)",
+     "Future (will)"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "SPEAKING · WHAT DO YOU SAY?",
+    "html": "React with <b>one sentence</b> using the best future. Then explain why you chose it.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Situations",
+      "qs": [
+       "Your friend says: \"I forgot my wallet!\" You say…",
+       "The sky is black and there is thunder. You say…",
+       "A colleague asks: \"Are you free on Thursday at 3?\" (You have a doctor's appointment.)",
+       "Your mother asks about your plans for December. You say…",
+       "Someone is carrying a lot of heavy bags. You say…",
+       "Your friend asks: \"Do you think it will be expensive to travel next year?\"",
+       "You decided last week to change your hair. You tell a friend…",
+       "The waiter asks: \"What would you like?\" You say…",
+       "Someone asks you to keep a secret. You say…",
+       "Make a prediction about your city in 10 years."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "rc-intro",
+   "title": "Relative clauses · what are they? (two sentences become one)",
+   "tags": {
+    "content": [
+     "Relative clauses"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "NEW · RELATIVE CLAUSES",
+    "html": "A relative clause <b>gives information about a noun</b>. It turns two sentences into one.<br><br><i>I have a friend. <b>She</b> lives in Lisbon.</i><br>→ <i>I have a friend <b>who</b> lives in Lisbon.</i><br><br><i>This is the phone. I bought <b>it</b> yesterday.</i><br>→ <i>This is the phone <b>that</b> I bought yesterday.</i><br><br><i>That's the restaurant. We had dinner <b>there</b>.</i><br>→ <i>That's the restaurant <b>where</b> we had dinner.</i><br><br>💡 In Portuguese we use <b>que</b> for almost everything. In English, you choose the word by <b>what</b> you are talking about: a person, a thing, a place…"
+   }
+  },
+  {
+   "key": "rc-table",
+   "title": "Relative pronouns · who, which, that, where, whose, when",
+   "tags": {
+    "content": [
+     "Relative clauses"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "THE RELATIVE PRONOUNS",
+    "header": true,
+    "rows": [
+     [
+      "PRONOUN",
+      "FOR",
+      "EXAMPLE",
+      "PORTUGUÊS"
+     ],
+     [
+      "<b>who</b>",
+      "people",
+      "The woman <b>who</b> called you is my boss.",
+      "que, quem"
+     ],
+     [
+      "<b>which</b>",
+      "things, animals",
+      "The car <b>which</b> I bought is red.",
+      "que, o qual"
+     ],
+     [
+      "<b>that</b>",
+      "people <b>or</b> things (very common when speaking)",
+      "The car <b>that</b> I bought is red.",
+      "que"
+     ],
+     [
+      "<b>where</b>",
+      "places",
+      "This is the city <b>where</b> I was born.",
+      "onde"
+     ],
+     [
+      "<b>whose</b>",
+      "possession (of someone)",
+      "I have a friend <b>whose</b> father is a pilot.",
+      "cujo, cuja"
+     ],
+     [
+      "<b>when</b>",
+      "time",
+      "I remember the day <b>when</b> we met.",
+      "em que, quando"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "rc-omit",
+   "title": "Relative clauses · when can we omit the pronoun?",
+   "tags": {
+    "content": [
+     "Relative clauses"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "WHEN CAN WE OMIT IT?",
+    "html": "Look at the word <b>right after</b> who / which / that.<br><br><span style=\"background-color: #FFC9A3\"><b>A VERB</b></span> comes next → the pronoun is the <b>subject</b> → <b>you can't omit it</b>.<br><i>The woman <b>who</b> <span style=\"background-color: #FFC9A3\"><b>lives</b></span> next door is a doctor.</i><br><i>I have a dog <b>that</b> <span style=\"background-color: #FFC9A3\"><b>loves</b></span> the beach.</i><br>✗ <i>The woman lives next door is a doctor.</i><br><br><span style=\"background-color: #CBE4D8\"><b>A PERSON</b></span> (I, you, she, my mom…) comes next → the pronoun is the <b>object</b> → <b>you can omit it</b>.<br><i>The book (that) <span style=\"background-color: #CBE4D8\"><b>I</b></span> read was great.</i><br><i>The man (who) <span style=\"background-color: #CBE4D8\"><b>you</b></span> met is my uncle.</i><br><br>⚠️ <b>whose</b> is never omitted. <b>where</b> is not omitted either.<br><br>⚠️ Don't repeat the object (it happens in Portuguese: <i>\"o livro que eu li ele\"</i>):<br>✗ <i>The book that I read <b>it</b> was great.</i> ✓ <i>The book that I read was great.</i><br><br>⚠️ <b>where</b> needs a full sentence after it: ✗ <i>the city where I visited</i> ✓ <i>the city (that) I visited</i> ✓ <i>the city where I lived</i>"
+   }
+  },
+  {
+   "key": "rc-choose",
+   "title": "Relative pronouns · who, which, where or whose?",
+   "tags": {
+    "content": [
+     "Relative clauses"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "PRACTICE · WHO, WHICH, WHERE OR WHOSE?",
+    "html": "Choose the correct pronoun. (Remember: <b>that</b> also works for people and things.)",
+    "instant": true,
+    "items": [
+     {
+      "before": "A dentist is a person",
+      "options": [
+       "who",
+       "which"
+      ],
+      "answer": 0,
+      "after": "takes care of your teeth."
+     },
+     {
+      "before": "A fridge is a machine",
+      "options": [
+       "who",
+       "which"
+      ],
+      "answer": 1,
+      "after": "keeps food cold."
+     },
+     {
+      "before": "A library is a place",
+      "options": [
+       "where",
+       "which"
+      ],
+      "answer": 0,
+      "after": "you can borrow books."
+     },
+     {
+      "before": "I have a neighbor",
+      "options": [
+       "who",
+       "whose"
+      ],
+      "answer": 1,
+      "after": "dog barks all night."
+     },
+     {
+      "before": "This is the hotel",
+      "options": [
+       "where",
+       "who"
+      ],
+      "answer": 0,
+      "after": "we stayed last year."
+     },
+     {
+      "before": "The movie",
+      "options": [
+       "who",
+       "which"
+      ],
+      "answer": 1,
+      "after": "we watched was boring."
+     },
+     {
+      "before": "She is the teacher",
+      "options": [
+       "which",
+       "who"
+      ],
+      "answer": 1,
+      "after": "helped me with my English."
+     },
+     {
+      "before": "That's the woman",
+      "options": [
+       "whose",
+       "who"
+      ],
+      "answer": 0,
+      "after": "son plays for Flamengo."
+     },
+     {
+      "before": "Do you remember the day",
+      "options": [
+       "when",
+       "where"
+      ],
+      "answer": 0,
+      "after": "we met?"
+     },
+     {
+      "before": "The cake",
+      "options": [
+       "which",
+       "where"
+      ],
+      "answer": 0,
+      "after": "my mom makes is amazing."
+     }
+    ]
+   }
+  },
+  {
+   "key": "rc-omit-practice",
+   "title": "Relative clauses · can you omit the pronoun?",
+   "tags": {
+    "content": [
+     "Relative clauses"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "PRACTICE · CAN YOU OMIT IT?",
+    "html": "Look at the word after the pronoun. <b>A verb?</b> No. <b>A person (I, you, she…)?</b> Yes.",
+    "instant": false,
+    "items": [
+     {
+      "before": "The book <b>that</b> I read was great.",
+      "options": [
+       "Yes",
+       "No"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "The woman <b>who</b> lives next door is a doctor.",
+      "options": [
+       "Yes",
+       "No"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "The man <b>who</b> you met is my uncle.",
+      "options": [
+       "Yes",
+       "No"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "I have a dog <b>that</b> loves the beach.",
+      "options": [
+       "Yes",
+       "No"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "The pizza <b>which</b> we ordered was cold.",
+      "options": [
+       "Yes",
+       "No"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "That's the girl <b>whose</b> mother is a pilot.",
+      "options": [
+       "Yes",
+       "No"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "The bus <b>that</b> goes to the center is late.",
+      "options": [
+       "Yes",
+       "No"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "The city <b>where</b> I was born is small.",
+      "options": [
+       "Yes",
+       "No"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "The people <b>who</b> I work with are very nice.",
+      "options": [
+       "Yes",
+       "No"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "The song <b>that</b> they played was beautiful.",
+      "options": [
+       "Yes",
+       "No"
+      ],
+      "answer": 0,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "rc-fill",
+   "title": "Relative clauses · complete with who, which, where, whose or – (nothing)",
+   "tags": {
+    "content": [
+     "Relative clauses"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "PRACTICE · COMPLETE THE SENTENCES",
+    "html": "Write <b>who, which, where, whose</b> or <b>that</b>. If you can omit the pronoun, write <b>–</b> (or the pronoun, both are correct).",
+    "items": [
+     {
+      "before": "My sister is the person",
+      "hint": "?",
+      "after": "calls me every day.",
+      "answers": [
+       "who",
+       "that"
+      ]
+     },
+     {
+      "before": "This is the café",
+      "hint": "?",
+      "after": "I usually work on Fridays.",
+      "answers": [
+       "where"
+      ]
+     },
+     {
+      "before": "The shoes",
+      "hint": "?",
+      "after": "I bought were too small.",
+      "answers": [
+       "–",
+       "-",
+       "that",
+       "which"
+      ]
+     },
+     {
+      "before": "I met a man",
+      "hint": "?",
+      "after": "wife is from Japan.",
+      "answers": [
+       "whose"
+      ]
+     },
+     {
+      "before": "The bus",
+      "hint": "?",
+      "after": "goes to the airport is number 15.",
+      "answers": [
+       "that",
+       "which"
+      ]
+     },
+     {
+      "before": "The colleague",
+      "hint": "?",
+      "after": "I sit next to is very funny.",
+      "answers": [
+       "–",
+       "-",
+       "who",
+       "that"
+      ]
+     },
+     {
+      "before": "Salvador is the city",
+      "hint": "?",
+      "after": "my parents met.",
+      "answers": [
+       "where"
+      ]
+     },
+     {
+      "before": "Do you know anyone",
+      "hint": "?",
+      "after": "speaks Spanish?",
+      "answers": [
+       "who",
+       "that"
+      ]
+     },
+     {
+      "before": "The series",
+      "hint": "?",
+      "after": "we watched last night was scary.",
+      "answers": [
+       "–",
+       "-",
+       "that",
+       "which"
+      ]
+     },
+     {
+      "before": "She's the singer",
+      "hint": "?",
+      "after": "songs are on every radio.",
+      "answers": [
+       "whose"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "rc-join",
+   "title": "Relative clauses · join the sentences",
+   "tags": {
+    "content": [
+     "Relative clauses"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "PRACTICE · JOIN THE SENTENCES",
+    "html": "Make <b>one</b> sentence with who, which, that, where or whose. Then say it aloud.",
+    "items": [
+     {
+      "before": "I have a cousin. She lives in Canada. →",
+      "hint": "who",
+      "after": "",
+      "answers": [
+       "I have a cousin who lives in Canada.",
+       "I have a cousin who lives in Canada",
+       "I have a cousin that lives in Canada.",
+       "I have a cousin that lives in Canada"
+      ]
+     },
+     {
+      "before": "This is the restaurant. We had our first date there. →",
+      "hint": "where",
+      "after": "",
+      "answers": [
+       "This is the restaurant where we had our first date.",
+       "This is the restaurant where we had our first date"
+      ]
+     },
+     {
+      "before": "The phone is broken. I bought it last month. →",
+      "hint": "that",
+      "after": "",
+      "answers": [
+       "The phone that I bought last month is broken.",
+       "The phone that I bought last month is broken",
+       "The phone which I bought last month is broken.",
+       "The phone which I bought last month is broken",
+       "The phone I bought last month is broken.",
+       "The phone I bought last month is broken"
+      ]
+     },
+     {
+      "before": "I know a woman. Her son is a famous chef. →",
+      "hint": "whose",
+      "after": "",
+      "answers": [
+       "I know a woman whose son is a famous chef.",
+       "I know a woman whose son is a famous chef"
+      ]
+     },
+     {
+      "before": "The man is my boss. He is talking to Ana. →",
+      "hint": "who",
+      "after": "",
+      "answers": [
+       "The man who is talking to Ana is my boss.",
+       "The man who is talking to Ana is my boss",
+       "The man that is talking to Ana is my boss.",
+       "The man that is talking to Ana is my boss"
+      ]
+     },
+     {
+      "before": "We stayed in a hotel. It had a beautiful pool. →",
+      "hint": "which",
+      "after": "",
+      "answers": [
+       "We stayed in a hotel which had a beautiful pool.",
+       "We stayed in a hotel which had a beautiful pool",
+       "We stayed in a hotel that had a beautiful pool.",
+       "We stayed in a hotel that had a beautiful pool"
+      ]
+     },
+     {
+      "before": "The movie was great. You recommended it. →",
+      "hint": "– (omit)",
+      "after": "",
+      "answers": [
+       "The movie you recommended was great.",
+       "The movie you recommended was great",
+       "The movie that you recommended was great.",
+       "The movie that you recommended was great",
+       "The movie which you recommended was great.",
+       "The movie which you recommended was great"
+      ]
+     },
+     {
+      "before": "That's the beach. I learned to surf there. →",
+      "hint": "where",
+      "after": "",
+      "answers": [
+       "That's the beach where I learned to surf.",
+       "That's the beach where I learned to surf",
+       "That is the beach where I learned to surf.",
+       "That is the beach where I learned to surf"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "rc-match",
+   "title": "Relative clauses · match the halves",
+   "tags": {
+    "content": [
+     "Relative clauses"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "match",
+    "label": "PRACTICE · MATCH THE HALVES",
+    "html": "Match the halves. Then read each sentence aloud.",
+    "pairs": [
+     {
+      "left": "A pilot is a person",
+      "right": "who flies planes."
+     },
+     {
+      "left": "A passport is a document",
+      "right": "which you need to travel abroad."
+     },
+     {
+      "left": "A bakery is a place",
+      "right": "where you can buy bread."
+     },
+     {
+      "left": "An orphan is a child",
+      "right": "whose parents have died."
+     },
+     {
+      "left": "Christmas is a time",
+      "right": "when families get together."
+     },
+     {
+      "left": "A vegetarian is someone",
+      "right": "who doesn't eat meat."
+     },
+     {
+      "left": "An umbrella is something",
+      "right": "that protects you from the rain."
+     },
+     {
+      "left": "A gym is a place",
+      "right": "where people exercise."
+     }
+    ]
+   }
+  },
+  {
+   "key": "rc-fix",
+   "title": "Relative clauses · fix the mistakes",
+   "tags": {
+    "content": [
+     "Relative clauses"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "FIX THE MISTAKES",
+    "html": "Each sentence has <b>one</b> mistake. Write the correct sentence.",
+    "items": [
+     {
+      "before": "The man which lives next door is French. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "The man who lives next door is French.",
+       "The man who lives next door is French",
+       "The man that lives next door is French.",
+       "The man that lives next door is French"
+      ]
+     },
+     {
+      "before": "The book that I read it was great. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "The book that I read was great.",
+       "The book that I read was great",
+       "The book I read was great.",
+       "The book I read was great",
+       "The book which I read was great.",
+       "The book which I read was great"
+      ]
+     },
+     {
+      "before": "This is the city where I visited last year. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "This is the city that I visited last year.",
+       "This is the city that I visited last year",
+       "This is the city which I visited last year.",
+       "This is the city which I visited last year",
+       "This is the city I visited last year.",
+       "This is the city I visited last year"
+      ]
+     },
+     {
+      "before": "The woman lives upstairs is a nurse. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "The woman who lives upstairs is a nurse.",
+       "The woman who lives upstairs is a nurse",
+       "The woman that lives upstairs is a nurse.",
+       "The woman that lives upstairs is a nurse"
+      ]
+     },
+     {
+      "before": "I have a friend who his brother is a singer. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "I have a friend whose brother is a singer.",
+       "I have a friend whose brother is a singer"
+      ]
+     },
+     {
+      "before": "That's the restaurant which we had dinner. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "That's the restaurant where we had dinner.",
+       "That's the restaurant where we had dinner",
+       "That is the restaurant where we had dinner.",
+       "That is the restaurant where we had dinner"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "rc-define",
+   "title": "Definitions game (relative clauses)",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Relative clauses"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · WHAT IS IT?",
+    "html": "Draw a word. <b>Don't say it!</b> Explain it with the pronoun on the card, and the teacher guesses. Then swap!<br><i>It's a place where you go when you are sick. → a hospital</i>",
+    "promptLabel": "USE",
+    "lines": [
+     "a dentist",
+     "a fridge",
+     "a library",
+     "a passport",
+     "a farmer",
+     "an airport",
+     "a key",
+     "a teacher",
+     "a beach",
+     "an umbrella",
+     "a hairdresser",
+     "a supermarket",
+     "a suitcase",
+     "a bakery",
+     "a firefighter",
+     "a remote control"
+    ],
+    "prompts": [
+     "who",
+     "which",
+     "that",
+     "where",
+     "whose"
+    ]
+   }
+  },
+  {
+   "key": "rc-talk",
+   "title": "Relative clauses · speaking about your life",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Relative clauses"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "SPEAKING · PEOPLE, PLACES AND THINGS IN YOUR LIFE",
+    "html": "Answer with a relative clause, then add one more detail.",
+    "words": [
+     "who",
+     "which",
+     "that",
+     "where",
+     "whose"
+    ],
+    "cats": [
+     {
+      "name": "People",
+      "qs": [
+       "Describe a person who changed your life.",
+       "Do you have a friend who lives in another country?",
+       "Who is the person that you call most often?",
+       "Do you know someone whose job is very interesting?",
+       "Describe a teacher who you remember well."
+      ]
+     },
+     {
+      "name": "Places",
+      "qs": [
+       "Describe the place where you grew up.",
+       "Is there a restaurant where you always order the same thing?",
+       "What is a place where you feel relaxed?",
+       "Describe a city that you want to visit.",
+       "Tell me about the place where you work."
+      ]
+     },
+     {
+      "name": "Things",
+      "qs": [
+       "What is something that you can't live without?",
+       "Describe a gift that you loved.",
+       "What is a movie that made you cry?",
+       "Tell me about a food that you hated as a child.",
+       "What is an app or object that makes your life easier?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "mix-talk",
+   "title": "Futures + relative clauses · everything together",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Future (present continuous)",
+     "Future (going to)",
+     "Future (will)",
+     "Relative clauses"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "EVERYTHING TOGETHER · FUTURE + RELATIVE CLAUSES",
+    "html": "Use a <b>future</b> form and a <b>relative clause</b> in each answer.<br><i>I'm going to visit a city where my grandparents lived.</i>",
+    "words": [],
+    "cats": [
+     {
+      "name": "Mix",
+      "qs": [
+       "Tell me about a trip that you are going to take.",
+       "Who is a person that you're meeting this week?",
+       "Describe a place where you will be in 5 years, you think.",
+       "What is something that you're going to buy soon?",
+       "Tell me about a friend who is going to have a big change this year.",
+       "Describe a restaurant where you're having dinner soon.",
+       "What is a skill that you will learn one day, you think?",
+       "Make a promise with will to a person who is important to you."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "wrapup",
+   "title": "Wrap-up · futures and relative clauses",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Future (present continuous)",
+     "Future (going to)",
+     "Future (will)",
+     "Relative clauses"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "Last questions!",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "Which future do we use for an arrangement in the calendar?",
+       "Say a sentence with \"I'll…\" (decide now).",
+       "When can we omit who / which / that?",
+       "Explain a word with \"It's a person who…\" and I'll guess.",
+       "What are you doing after this class?",
+       "What was the easiest part of today? And the most difficult?"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Futures in Practice + Relative Clauses (who, which, that, where, whose)",
+  "number": 21,
+  "subtitle": "Present continuous, going to and will (practice) · relative pronouns · when we can omit them · lots of practice",
+  "level": "B1",
+  "tags": [
+   "Grammar",
+   "Speaking"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "fut-reminder"
+   },
+   {
+    "model": "fut-choose"
+   },
+   {
+    "model": "fut-fill"
+   },
+   {
+    "model": "fut-react"
+   },
+   {
+    "model": "rc-intro"
+   },
+   {
+    "model": "rc-table"
+   },
+   {
+    "model": "rc-omit"
+   },
+   {
+    "model": "rc-choose"
+   },
+   {
+    "model": "rc-omit-practice"
+   },
+   {
+    "model": "rc-fill"
+   },
+   {
+    "model": "rc-join"
+   },
+   {
+    "model": "rc-match"
+   },
+   {
+    "model": "rc-fix"
+   },
+   {
+    "model": "rc-define"
+   },
+   {
+    "model": "rc-talk"
+   },
+   {
+    "model": "mix-talk"
+   },
+   {
+    "model": "wrapup"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

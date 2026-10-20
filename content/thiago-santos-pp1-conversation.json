@@ -1,0 +1,139 @@
+{
+ "id": "thiago-santos-pp1-conversation-2026-10-19",
+ "models": [
+  {
+   "key": "conversation",
+   "title": "Simple conversation · about you, food, travel, family (A2)",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Present Simple",
+     "Past Simple",
+     "Present Perfect"
+    ],
+    "levels": [
+     "A1",
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "SPEAKING · SIMPLE CONVERSATION",
+    "html": "Answer with <b>complete sentences</b>. Then add <b>one more detail</b>: <i>because…, and…, but…</i>",
+    "words": [
+     "because",
+     "and",
+     "but",
+     "so",
+     "usually",
+     "many times"
+    ],
+    "cats": [
+     {
+      "name": "About you",
+      "qs": [
+       "Where do you live? Do you like it there?",
+       "What do you do? Do you like your job?",
+       "What do you usually do on Saturdays?",
+       "What time do you usually wake up?",
+       "What is your favorite day of the week? Why?",
+       "What makes you happy?",
+       "What is your favorite season? Why?",
+       "Describe your best friend."
+      ]
+     },
+     {
+      "name": "Your week",
+      "qs": [
+       "How was your week?",
+       "What did you do last weekend?",
+       "What did you eat yesterday?",
+       "Who did you talk to today?",
+       "What was the best part of your day?",
+       "What are you going to do tonight?",
+       "Did you watch anything good this week?",
+       "What do you need to do tomorrow?"
+      ]
+     },
+     {
+      "name": "Food",
+      "qs": [
+       "What is your favorite food?",
+       "What did you have for breakfast today?",
+       "Do you like to cook? What can you cook?",
+       "What is a typical food from your city?",
+       "Do you prefer sweet or salty food?",
+       "What food do you hate?",
+       "What is the best restaurant you know?",
+       "What do you usually drink with lunch?"
+      ]
+     },
+     {
+      "name": "Places & travel",
+      "qs": [
+       "What is the most beautiful place in your city?",
+       "Where did you go on your last trip?",
+       "Do you prefer the beach or the mountains? Why?",
+       "Which city do you want to visit? Why?",
+       "How do you go to work: by car, by bus, on foot?",
+       "What is the best place you have visited?",
+       "Do you like to travel alone or with friends?",
+       "What do you always take on a trip?"
+      ]
+     },
+     {
+      "name": "Experiences (I have…)",
+      "qs": [
+       "Say a city you have visited many times.",
+       "Say a food you have eaten and loved.",
+       "Say an animal you have seen on a farm.",
+       "Say a famous person you have seen on TV many times.",
+       "Say something you have lost.",
+       "Say a sport you have played.",
+       "Say a movie you have watched twice.",
+       "Say something you have made with your hands."
+      ]
+     },
+     {
+      "name": "Family & home",
+      "qs": [
+       "How many people are there in your family?",
+       "Who do you live with?",
+       "Describe your house or apartment.",
+       "What is your favorite room at home? Why?",
+       "Do you have pets? Tell me about them.",
+       "Who is the funniest person in your family?",
+       "What do you usually do with your family on Sundays?",
+       "What did you do on your last birthday?"
+      ]
+     },
+     {
+      "name": "Free time",
+      "qs": [
+       "What do you do to relax?",
+       "Do you like music? What kind?",
+       "Do you play any sports?",
+       "What is your favorite movie or series?",
+       "Do you prefer staying at home or going out?",
+       "What did you do when you were a child for fun?",
+       "What new hobby do you want to try?",
+       "What is something you can do very well?"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "append": {
+  "student": "Thiago Santos",
+  "lesson": "Present Perfect (part 1)",
+  "blocks": [
+   {
+    "model": "conversation"
+   }
+  ]
+ }
+}

@@ -31,6 +31,7 @@ export const api = {
   duplicateLesson: (id, data) => call('POST', `/api/lessons/${id}/duplicate`, data || {}),
   finishInfo: (id) => call('GET', `/api/lessons/${id}/finish`),
   finishLesson: (id, data) => call('POST', `/api/lessons/${id}/finish`, data),
+  reopenLesson: (id) => call('POST', `/api/lessons/${id}/reopen`),
 
   models: (studentId) => call('GET', '/api/models' + (studentId ? `?student=${studentId}` : '')),
   approveModel: (id) => call('POST', `/api/models/${id}/approve`),

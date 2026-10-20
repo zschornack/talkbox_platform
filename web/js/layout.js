@@ -1,5 +1,5 @@
 // Estrutura das telas de gestão: menu lateral + conteúdo (requisitos, seção 4).
-import { h, svgIcon, ICONS } from './dom.js';
+import { h, svgIcon, ICONS, brandMark } from './dom.js';
 import { api } from './api.js';
 import { toast } from './ui.js';
 
@@ -13,10 +13,7 @@ export function appShell(active, ...content) {
   const nav = h(
     'nav.sidebar',
     { 'aria-label': 'Menu principal' },
-    h('a.side-brand', { href: '#/' },
-      h('span', 'TalkBox'),
-      h('span.stripe', { 'aria-hidden': 'true' }, h('span'), h('span'), h('span'))
-    ),
+    h('div.side-brand', brandMark({ size: 'lg' })),
     h('ul.side-nav',
       NAV.map((n) =>
         h('li', h('a', { href: n.href, class: n.key === active ? 'active' : '', 'aria-current': n.key === active ? 'page' : null },
@@ -33,7 +30,7 @@ export function appShell(active, ...content) {
           },
         }, 'Fazer cópia de segurança'),
         h('a.link-btn', { href: '/api/export?download=1', title: 'Todos os dados num arquivo só (as imagens ficam em data/uploads)' }, 'Baixar todos os dados')),
-      h('span', 'Versão local · 0.4'))
+      h('span', 'Versão local · 0.6'))
   );
   return h('div.app', nav, h('main.app-main', { id: 'main' }, content));
 }

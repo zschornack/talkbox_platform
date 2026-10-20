@@ -1,0 +1,548 @@
+{
+ "id": "alyson-rode-mummified-dog-2026-10-19",
+ "student": {
+  "name": "Alyson Rode",
+  "level": "C1",
+  "goal": "Conversação",
+  "notes": "Fluente (C1/C2). Programador: evitar tecnologia nas conversas."
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · animals in your life",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "C1",
+     "C2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP",
+    "html": "Quick answers, then one follow-up question each. Just warming up!",
+    "words": [],
+    "cats": [
+     {
+      "name": "You",
+      "qs": [
+       "How was your week, honestly? One high, one low.",
+       "Did you have pets growing up? Tell me about the most memorable one.",
+       "Dog person, cat person, or neither? Defend your answer.",
+       "What is the strangest pet you have ever heard of someone having?",
+       "If an animal could represent your personality, which one would it be?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "article",
+   "title": "In the news · the 1,200-year-old mummified dog (Peru)",
+   "tags": {
+    "content": [
+     "Reading",
+     "Conversation"
+    ],
+    "levels": [
+     "C1",
+     "C2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "IN THE NEWS · A 1,200-YEAR-OLD MUMMIFIED DOG",
+    "html": "On Peru's northern desert coast, about 300 km north of Lima, lies <b>Castillo de Huarmey</b>, a burial ground of the <b>Wari</b>, a civilization that <b>flourished</b> centuries before the Incas (around 600–1050 CE). The <b>bone-dry</b> desert has preserved what usually rots away: skin, hair, textiles.<br><br>Among the finds, archaeologists have identified the remains of at least <b>19 dogs</b>, and three of them appear to be <b>Peruvian hairless dogs</b>, a breed that still exists today. One skull was naturally mummified, with patches of bare skin, its ears still attached, and traces of red <b>cinnabar</b>, a pigment used in funeral rituals.<br><br>At first, the team suspected the bones belonged to modern dogs, <b>dumped</b> there by 20th-century <b>looters</b>. The <b>giveaway</b> was in the teeth: some of them never formed, a <b>quirk</b> of the same gene that makes the breed hairless.<br><br>Chemical analysis suggests the hairless puppies were fed like human children, on a maize-rich diet, which <b>hints</b> that people cared for them closely and may have controlled their breeding. One puppy was buried beside an elite craftsman nicknamed the <i>Master Basketmaker</i>. Hairless dogs also appear in Wari art more than any other domestic animal.<br><br>Not every dog was so lucky, though. Others ended up in rubbish heaps, <b>on the fringes of</b> daily life. Today, the breed, <i>perro sin pelo del Perú</i>, is officially part of Peru's national heritage.<br><br><b>Teacher:</b> search images for <i>perro sin pelo del Perú</i> and show one on the shared screen before reading."
+   }
+  },
+  {
+   "key": "article-react",
+   "title": "Mummified dog · first reactions",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Reading"
+    ],
+    "levels": [
+     "C1",
+     "C2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "FIRST REACTIONS",
+    "html": "React to the story. No right answers: go deep, disagree, tell stories.",
+    "words": [
+     "I reckon",
+     "it strikes me that",
+     "to be fair",
+     "on the flip side"
+    ],
+    "cats": [
+     {
+      "name": "The story",
+      "qs": [
+       "What was your first reaction to the photo? Cute, ugly, or fascinating?",
+       "Why do you think elite people were buried with dogs? What does that say about them?",
+       "The puppies ate like human children. Were the Wari the first \"pet parents\"?",
+       "The scientists first thought it was a modern dog dumped by looters. What does that tell you about how science works?",
+       "Peru made a dog breed part of its national heritage. What would Brazil choose as a \"living national treasure\"?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "vocab",
+   "title": "Vocabulary from the article (C1)",
+   "tags": {
+    "content": [
+     "Vocabulary",
+     "Reading"
+    ],
+    "levels": [
+     "C1",
+     "C2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "VOCABULARY FROM THE ARTICLE",
+    "header": true,
+    "rows": [
+     [
+      "EXPRESSION",
+      "MEANING",
+      "USE IT"
+     ],
+     [
+      "<b>to flourish</b>",
+      "to grow and be successful",
+      "Which period of your life was the most flourishing?"
+     ],
+     [
+      "<b>bone-dry</b>",
+      "completely dry",
+      "Name a place in Brazil that is bone-dry."
+     ],
+     [
+      "<b>a looter</b> / <b>to loot</b>",
+      "someone who steals during chaos",
+      "Why do people loot during riots?"
+     ],
+     [
+      "<b>the giveaway</b>",
+      "the detail that reveals the truth",
+      "What's the giveaway that someone is lying?"
+     ],
+     [
+      "<b>a quirk</b>",
+      "a strange little characteristic",
+      "What is one of your quirks?"
+     ],
+     [
+      "<b>to hint</b>",
+      "to suggest without saying directly",
+      "How do you hint that you want to leave a party?"
+     ],
+     [
+      "<b>on the fringes of</b>",
+      "at the edge, not part of the main group",
+      "Who lives on the fringes of society in your city?"
+     ],
+     [
+      "<b>to dump</b>",
+      "to throw away carelessly (also: end a relationship!)",
+      "Have you ever been dumped? Or dumped someone?"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "discuss",
+   "title": "Discussion · from the dog to everything else",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "C1",
+     "C2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "DISCUSSION · FROM ONE DOG TO EVERYTHING",
+    "html": "Pick the tab that sounds most interesting. It's fine to jump between topics: the dog is just the door.",
+    "words": [
+     "flourish",
+     "quirk",
+     "giveaway",
+     "hint",
+     "on the fringes of"
+    ],
+    "cats": [
+     {
+      "name": "Pets as family",
+      "qs": [
+       "Some couples now call their dogs \"kids\". Is that sweet, sad, or just honest?",
+       "IBGE once found more dogs than children in Brazilian homes. Why do you think that is?",
+       "Pet funerals, pet insurance, pet strollers: where is the line between love and excess?",
+       "Courts in Brazil have given divorced couples visiting rights to their dog. Fair, or ridiculous?",
+       "Would you leave money in your will to a pet? Who should take care of it?"
+      ]
+     },
+     {
+      "name": "Death & legacy",
+      "qs": [
+       "The Wari were buried with what mattered to them. What would you want to be buried with?",
+       "Burial, cremation, or something else? Have you ever thought about it?",
+       "In 1,200 years, archaeologists dig up your neighborhood. What will they get completely wrong about us?",
+       "What do you want to be remembered for? Not your job: something else.",
+       "Do you keep objects from people who have died? Which one means the most to you?"
+      ]
+     },
+     {
+      "name": "History & the past",
+      "qs": [
+       "Most Brazilians know very little about the peoples who lived here before 1500. Why?",
+       "Which ancient civilization fascinates you the most, and why?",
+       "Should museums return objects to the countries they were taken from?",
+       "Brazil lost most of the Museu Nacional collection in the 2018 fire. Whose fault is that kind of loss?",
+       "If you could spend one day in any period of history, where and when would you go?"
+      ]
+     },
+     {
+      "name": "Ethics",
+      "qs": [
+       "Breeding dogs for a 'look' (flat faces, no hair) can cause health problems. Should it be banned?",
+       "Adopt or buy? Is it wrong to buy a pedigree dog when shelters are full?",
+       "We love dogs and eat pigs, which are just as intelligent. Is that hypocritical?",
+       "Is digging up an ancient grave science, or a kind of grave robbing?",
+       "Should animals have legal rights? Which ones?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "speculate-explain",
+   "title": "Speculating about the past · must / might / can't have",
+   "tags": {
+    "content": [
+     "Modal verbs"
+    ],
+    "levels": [
+     "C1",
+     "C2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "LANGUAGE · SPECULATING ABOUT THE PAST",
+    "html": "Archaeologists never know for sure. They <b>speculate</b>. So do we:<br><br><span style=\"background-color: #CBE4D8\"><b>must have</b></span> + form 3 → I'm almost <b>sure</b> it's true.<br><i>This dog <span style=\"background-color: #CBE4D8\"><b>must have been</b></span> very important to its owner.</i><br><br><span style=\"background-color: #FFDB8F\"><b>might / may / could have</b></span> + form 3 → <b>maybe</b>.<br><i>It <span style=\"background-color: #FFDB8F\"><b>might have been</b></span> a gift to the dead.</i><br><br><span style=\"background-color: #FFC9A3\"><b>can't / couldn't have</b></span> + form 3 → I'm almost sure it's <b>not</b> true.<br><i>It <span style=\"background-color: #FFC9A3\"><b>can't have been</b></span> a modern dog: look at its teeth.</i><br><br>⚠️ Brazilian trap: <i>deve ter sido</i> = <b>must have been</b>, not <i>had to be</i>.<br>✗ <i>He had to be rich to have a dog like that.</i> (= he was obliged to be rich)<br>✓ <i>He must have been rich to have a dog like that.</i><br><br>🗣️ In fast speech: <b>must've</b>, <b>might've</b>, <b>could've</b> /ˈmʌstəv/ · and never ✗ <i>must of</i>."
+   }
+  },
+  {
+   "key": "speculate-game",
+   "title": "Future archaeologists · speculate about our objects",
+   "tags": {
+    "content": [
+     "Modal verbs",
+     "Conversation"
+    ],
+    "levels": [
+     "C1",
+     "C2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · ARCHAEOLOGISTS IN THE YEAR 3226",
+    "html": "It's the year 3226. You are an archaeologist, and you have just dug up an object from the 21st century, with no context. Draw a card and <b>speculate</b> about what it was for, using the structure on the card. The sillier and more convincing, the better!<br><i>A flip-flop? People must have worn it in religious ceremonies. It can't have been for walking: it has no back!</i>",
+    "promptLabel": "USE",
+    "lines": [
+     "a pair of Havaianas",
+     "a wedding ring",
+     "a pet stroller",
+     "a lottery ticket",
+     "a football team scarf",
+     "a gym membership card",
+     "a garden gnome",
+     "a tattoo on a skeleton",
+     "a vuvuzela",
+     "a coffee capsule",
+     "a fake plant",
+     "a dog sweater"
+    ],
+    "prompts": [
+     "must have…",
+     "might have…",
+     "can't have…",
+     "could have…",
+     "must have + one more guess with might have"
+    ]
+   }
+  },
+  {
+   "key": "devil",
+   "title": "Devil's advocate · argue the side you don't believe",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "C1",
+     "C2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "DEVIL'S ADVOCATE",
+    "html": "Draw a statement and a side. Argue it for one minute, even if you disagree. Then say what you <b>really</b> think.<br>Useful: <i>Let me play devil's advocate here… · The way I see it… · I take your point, but… · That's a slippery slope.</i>",
+    "promptLabel": "ARGUE",
+    "lines": [
+     "Pets should be allowed in restaurants, offices and planes.",
+     "Spending R$10,000 on a pet's surgery is perfectly reasonable.",
+     "Museums should return every object taken from another country.",
+     "Breeding animals for their looks should be illegal.",
+     "It's hypocritical to love dogs and eat pigs.",
+     "Digging up ancient graves is just grave robbing with a diploma.",
+     "Calling your dog your \"son\" is perfectly normal.",
+     "People who can afford a pedigree dog should adopt one instead."
+    ],
+    "prompts": [
+     "FOR",
+     "AGAINST",
+     "find the middle ground",
+     "argue it like a lawyer",
+     "argue it like a grandmother"
+    ]
+   }
+  },
+  {
+   "key": "idioms",
+   "title": "Dog idioms · match",
+   "tags": {
+    "content": [
+     "Vocabulary"
+    ],
+    "levels": [
+     "C1",
+     "C2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "match",
+    "label": "DOG IDIOMS · MATCH",
+    "html": "English loves dogs too. Match each idiom with its meaning. Which ones exist in Portuguese?",
+    "pairs": [
+     {
+      "left": "to be in the doghouse",
+      "right": "someone is annoyed with you"
+     },
+     {
+      "left": "to let sleeping dogs lie",
+      "right": "to avoid bringing back an old problem"
+     },
+     {
+      "left": "it's a dog-eat-dog world",
+      "right": "everyone competes ruthlessly"
+     },
+     {
+      "left": "every dog has its day",
+      "right": "everyone gets their moment of success"
+     },
+     {
+      "left": "to bark up the wrong tree",
+      "right": "to blame or ask the wrong person"
+     },
+     {
+      "left": "the tail wagging the dog",
+      "right": "a small thing controlling a big thing"
+     },
+     {
+      "left": "to work like a dog",
+      "right": "to work extremely hard"
+     },
+     {
+      "left": "to go to the dogs",
+      "right": "to get much worse"
+     }
+    ]
+   }
+  },
+  {
+   "key": "idioms-talk",
+   "title": "Dog idioms · tell me about…",
+   "tags": {
+    "content": [
+     "Vocabulary",
+     "Conversation"
+    ],
+    "levels": [
+     "C1",
+     "C2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "DOG IDIOMS · TELL ME ABOUT…",
+    "html": "Answer with a real story, and use the idiom in your answer.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Idioms",
+      "qs": [
+       "Tell me about a time you were in the doghouse. What did you do to get out?",
+       "Is there a topic in your family where it is better to let sleeping dogs lie?",
+       "Is your industry a dog-eat-dog world? Which industry is the worst?",
+       "Tell me about a time you were barking up the wrong tree.",
+       "What do you think has gone to the dogs in the last 10 years? What has got better?",
+       "When was the last time you worked like a dog? Was it worth it?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "roleplay",
+   "title": "Role-play · who keeps the dog? (divorce mediation)",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "C1",
+     "C2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "ROLE-PLAY · WHO KEEPS THE DOG?",
+    "html": "<b>The situation:</b> Paula and Rafael are getting divorced. They agree on everything except <b>Mel</b>, their 6-year-old dog. Both want her.<br><br><b>Alyson</b> is Rafael: he found Mel on the street and paid for her surgery, but he travels for work two weeks a month.<br><b>The teacher</b> is Paula: she walks Mel every day and works from home, but she is moving to a small apartment without a yard.<br><br>Round 1: argue your case to the mediator (3 minutes).<br>Round 2: switch roles!<br>Round 3: you are the <b>judge</b>. Decide, and justify your decision. Shared custody? Visits? Who pays the vet?<br><br>Useful: <i>With all due respect… · Let's be realistic here… · I'm willing to compromise on… · That's a deal-breaker for me.</i>"
+   }
+  },
+  {
+   "key": "wrapup",
+   "title": "Wrap-up · mummified dog class",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "C1",
+     "C2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "Last round. Short and honest.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "Which topic from today could you talk about for another hour?",
+       "Did you change your mind about anything today?",
+       "Speculate: what must the Master Basketmaker's life have been like?",
+       "Which new word or idiom will you actually use this week? Use it now.",
+       "What news story should we use next class?"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "The 1,200-Year-Old Mummified Dog: Pets, Legacy and the Past",
+  "subtitle": "News conversation · pets as family · death and legacy · history and ethics · speculating about the past (must / might / can't have) · dog idioms",
+  "level": "C1",
+  "tags": [
+   "Conversation",
+   "News"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "article"
+   },
+   {
+    "model": "article-react"
+   },
+   {
+    "model": "vocab"
+   },
+   {
+    "model": "discuss"
+   },
+   {
+    "model": "speculate-explain"
+   },
+   {
+    "model": "speculate-game"
+   },
+   {
+    "model": "devil"
+   },
+   {
+    "model": "idioms"
+   },
+   {
+    "model": "idioms-talk"
+   },
+   {
+    "model": "roleplay"
+   },
+   {
+    "model": "wrapup"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

@@ -1,5 +1,5 @@
 // Editar um modelo: o mesmo editor da aula, com as etiquetas ao lado (requisitos 7.3).
-import { h, svgIcon, ICONS, dateTime, formatDate, parseHash } from './dom.js';
+import { h, svgIcon, ICONS, dateTime, formatDate, parseHash, brandMark } from './dom.js';
 import { api, autosaver, saveOnExit } from './api.js';
 import { mountBlock } from './block-view.js';
 import { mountFormatBar } from './format-bar.js';
@@ -103,7 +103,7 @@ export async function renderModelEditor(root, id) {
   const top = h('div.editor-top',
     h('div.left',
       h('a.btn.icon', { href: '#/modelos', title: 'Voltar para Modelos', 'aria-label': 'Voltar para Modelos' }, svgIcon(ICONS.back)),
-      h('a.brand', { href: '#/' }, 'TalkBox'),
+      brandMark(),
       h('span.crumb', 'Modelos'),
       status),
     h('div.right',

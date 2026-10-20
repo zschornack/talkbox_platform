@@ -97,10 +97,10 @@ export async function renderStudent(root, id) {
             h('strong.where-title', stop.lesson.title),
             stop.lesson.contents.length ? h('div.tag-row', stop.lesson.contents.map((c) => h('span.chip', c))) : null,
             pendingBox,
-            h('div.where-message', h('h3', 'Recado'), h('p', stop.message || 'Sem recado: está tudo certo.'))),
+            h('div.where-message', h('h3', 'Anotação'), h('p', stop.message || 'Sem anotação: está tudo certo.'))),
           h('div.where-actions',
             h('a.btn', { href: `#/aula/${stop.lesson.id}` }, 'Abrir última aula'),
-            s.active ? h('button.btn.primary', { type: 'button', onClick: prepareNext, title: 'Cria a aula já com os pendentes e o recado' }, 'Preparar próxima aula') : null,
+            s.active ? h('button.btn.primary', { type: 'button', onClick: prepareNext, title: 'Cria a aula já com os pendentes e a anotação' }, 'Preparar próxima aula') : null,
             preparing.map((l) => h('a.btn.small', { href: `#/aula/${l.id}` }, `Em preparação: ${l.title}`))))
       : h('div.where-body',
           h('p.muted', s.lessons.length

@@ -1,0 +1,1041 @@
+{
+ "id": "gabriel-biehals-bee-sting-2026-10-20",
+ "student": {
+  "name": "Gabriel Biehals"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · last class, this week and nature",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP",
+    "html": "Long answers! Give <b>at least three sentences</b> for each question.",
+    "words": [
+     "actually",
+     "to be honest",
+     "by the way"
+    ],
+    "cats": [
+     {
+      "name": "Last class",
+      "qs": [
+       "Do you remember the story about the people born on the same day? What was the most surprising part?",
+       "Have you ever met someone with the same birthday as you? How did you find out?",
+       "Do you believe in coincidences, or is everything just statistics?"
+      ]
+     },
+     {
+      "name": "This week",
+      "qs": [
+       "How was your week? Tell me one good thing and one annoying thing.",
+       "What is something new you learned this week?",
+       "Did anything make you laugh this week?"
+      ]
+     },
+     {
+      "name": "Nature",
+      "qs": [
+       "Are you a nature person or a city person?",
+       "What is the last time you were really close to nature?",
+       "Which animal or insect are you most afraid of? Why?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "reading",
+   "title": "Reading · why a bee sting keeps hurting",
+   "tags": {
+    "content": [
+     "Reading",
+     "Science",
+     "Health",
+     "Vocabulary"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "READING · THE TINY PUMP IN A BEE STING",
+    "html": "Scientists from Macquarie University in Australia have made an exciting discovery about honey bees. They found out why a bee's <b>stinger</b> keeps putting <b>venom</b> into a person's skin even after it has left the bee's body. Honey bees usually die after stinging a person, because their stinger gets <b>stuck</b> in the skin and tears away from their body. But the stinger doesn't stop working.<br><br>The scientists used <b>high-speed cameras</b> to film the tiny stinger, which is only two millimetres long. The video showed that the stinger works like a <b>pump</b>. It has two small parts that move <b>backwards and forwards</b>. These parts push the stinger <b>deeper</b> into the skin and help keep the venom flowing. The lead researcher said the design of the pump was \"<b>unique</b>\". She hopes her discovery will <b>inspire</b> companies to make tiny pumps that could give medicine to people.<br><br>A bee sting can be very painful. Most people have pain, <b>redness</b> and <b>swelling</b> after a sting. However, a sting can be dangerous for people who have <b>allergies</b>. Some people have a serious reaction and go into <b>anaphylactic shock</b>. Their face or throat may <b>swell up</b>, or they may have <b>trouble breathing</b>.<br><br>If someone <b>is stung</b>, they should <b>remove</b> the stinger as quickly as possible. This will help to stop more venom from entering their body. The person should also wash the area with soap and water. In addition, it is a good idea to put an <b>ice pack</b> over the sting to help <b>reduce</b> pain and swelling. If the person feels unwell, someone should call <b>emergency services</b> immediately."
+   }
+  },
+  {
+   "key": "check",
+   "title": "Bee sting · true or false? (correct the false ones)",
+   "tags": {
+    "content": [
+     "Reading",
+     "Science"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "COMPREHENSION · TRUE OR FALSE?",
+    "html": "Then <b>correct</b> the false sentences out loud, with a complete sentence.",
+    "instant": false,
+    "items": [
+     {
+      "id": "g1",
+      "before": "The stinger stops putting venom into the skin when it leaves the bee.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "g2",
+      "before": "The scientists filmed the stinger with high-speed cameras.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "g3",
+      "before": "The stinger is about two centimetres long.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "g4",
+      "before": "Two small parts move the stinger deeper into the skin.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "g5",
+      "before": "The discovery could help companies make tiny pumps for medicine.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "g6",
+      "before": "You should leave the stinger in the skin for a few minutes.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "g7",
+      "before": "An ice pack can help reduce pain and swelling.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "explain",
+   "title": "Bee sting · explain it in your own words (say it, then reveal)",
+   "tags": {
+    "content": [
+     "Reading",
+     "Conversation"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "EXPLAIN IT IN YOUR OWN WORDS",
+    "html": "Answer with <b>two or three full sentences</b>. Then reveal a model answer and compare.",
+    "items": [
+     {
+      "id": "g8",
+      "q": "Why does a bee sting keep hurting after the bee flies away?",
+      "a": "Because the stinger stays in the skin and works like a pump. Two small parts move backwards and forwards, so it keeps pushing venom deeper into the skin."
+     },
+     {
+      "id": "g9",
+      "q": "How did the scientists find this out?",
+      "a": "They filmed the stinger with high-speed cameras. The stinger is so small and so fast that you can only see how it works in slow motion."
+     },
+     {
+      "id": "g10",
+      "q": "Why could this discovery be useful?",
+      "a": "Companies could copy the design to make tiny pumps that give medicine to people, maybe without pain."
+     },
+     {
+      "id": "g11",
+      "q": "What are the normal reactions to a sting? And the dangerous ones?",
+      "a": "Normally, people have pain, redness and swelling. People with allergies can go into anaphylactic shock: their face or throat swells up and they have trouble breathing."
+     },
+     {
+      "id": "g12",
+      "q": "What should you do if someone is stung?",
+      "a": "First, remove the stinger as quickly as possible. Then wash the area with soap and water and put an ice pack on it. If the person feels unwell, call emergency services immediately."
+     }
+    ]
+   }
+  },
+  {
+   "key": "vocab",
+   "title": "Bee sting vocabulary (table)",
+   "tags": {
+    "content": [
+     "Vocabulary",
+     "Health",
+     "Science"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "VOCABULARY FROM THE TEXT",
+    "header": true,
+    "rows": [
+     [
+      "WORD",
+      "MEANING",
+      "ANOTHER CONTEXT"
+     ],
+     [
+      "<b>to sting</b> (stung, stung)",
+      "to hurt with a sharp point (bees, wasps, jellyfish)",
+      "My eyes <b>stung</b> from the smoke. · The criticism really <b>stung</b>."
+     ],
+     [
+      "<b>venom</b>",
+      "poison from an animal (bees, snakes, spiders)",
+      "She spoke with <b>venom</b> in her voice. (= hate)"
+     ],
+     [
+      "<b>to get stuck</b>",
+      "to be unable to move or come out",
+      "I <b>got stuck</b> in traffic for two hours."
+     ],
+     [
+      "<b>to pump</b> / <b>a pump</b>",
+      "to push liquid or air in or out",
+      "The heart <b>pumps</b> blood. · I need to <b>pump</b> up my bike tyres."
+     ],
+     [
+      "<b>backwards and forwards</b>",
+      "one way and then the other, again and again",
+      "He was walking <b>backwards and forwards</b>, nervous."
+     ],
+     [
+      "<b>unique</b>",
+      "the only one of its kind",
+      "Every fingerprint is <b>unique</b>."
+     ],
+     [
+      "<b>to inspire</b>",
+      "to give someone an idea or the wish to do something",
+      "Nature <b>inspires</b> a lot of engineers."
+     ],
+     [
+      "<b>to swell up</b> / <b>swelling</b>",
+      "to become bigger (body parts)",
+      "My ankle <b>swelled up</b> after the football match."
+     ],
+     [
+      "<b>to have trouble + -ing</b>",
+      "to find something difficult",
+      "I <b>have trouble</b> sleeping when it is hot."
+     ],
+     [
+      "<b>to remove</b>",
+      "to take something away or out",
+      "Please <b>remove</b> your shoes before entering."
+     ],
+     [
+      "<b>to reduce</b>",
+      "to make smaller or less",
+      "I want to <b>reduce</b> the time I spend on my phone."
+     ],
+     [
+      "<b>emergency services</b>",
+      "ambulance, police, fire brigade (in Brazil: 192, 190, 193)",
+      "Have you ever had to call <b>emergency services</b>?"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "vocab-context",
+   "title": "Bee sting vocabulary · new contexts (complete)",
+   "tags": {
+    "content": [
+     "Vocabulary"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "THE SAME WORDS, NEW CONTEXTS",
+    "html": "These sentences are <b>not</b> about bees. Complete them with a word from the vocabulary table, in the correct form.",
+    "items": [
+     {
+      "id": "g13",
+      "before": "I was so nervous before the interview that I kept walking",
+      "hint": "b… and f…",
+      "after": "in the waiting room.",
+      "answers": [
+       "backwards and forwards",
+       "back and forth"
+      ]
+     },
+     {
+      "id": "g14",
+      "before": "We",
+      "hint": "get stuck",
+      "after": "in the elevator for 40 minutes last year. It was a nightmare!",
+      "answers": [
+       "got stuck"
+      ]
+     },
+     {
+      "id": "g15",
+      "before": "After the long flight, my feet",
+      "hint": "swell up",
+      "after": "and I couldn't put my shoes back on.",
+      "answers": [
+       "swelled up",
+       "swelled",
+       "swollen up",
+       "had swollen up",
+       "had swelled up"
+      ]
+     },
+     {
+      "id": "g16",
+      "before": "The government wants to",
+      "hint": "reduce",
+      "after": "the number of cars in the city centre.",
+      "answers": [
+       "reduce"
+      ]
+     },
+     {
+      "id": "g17",
+      "before": "My grandfather has",
+      "hint": "t…",
+      "after": "hearing, so you have to speak loudly.",
+      "answers": [
+       "trouble"
+      ]
+     },
+     {
+      "id": "g18",
+      "before": "That comment really",
+      "hint": "sting",
+      "after": ". I didn't expect it from a friend.",
+      "answers": [
+       "stung"
+      ]
+     },
+     {
+      "id": "g19",
+      "before": "Her style is",
+      "hint": "u…",
+      "after": ": nobody else dresses like her.",
+      "answers": [
+       "unique"
+      ]
+     },
+     {
+      "id": "g20",
+      "before": "The new café",
+      "hint": "inspire",
+      "after": "me to start drinking less sugar.",
+      "answers": [
+       "inspired",
+       "has inspired"
+      ]
+     },
+     {
+      "id": "g21",
+      "before": "The doctor",
+      "hint": "remove",
+      "after": "the stitches a week after the surgery.",
+      "answers": [
+       "removed",
+       "has removed"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "sort",
+   "title": "Bee sting vocabulary · sort into groups",
+   "tags": {
+    "content": [
+     "Vocabulary",
+     "Health"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "sort",
+    "label": "SORT THE WORDS",
+    "html": "Click a word or expression, then the group where it goes. Then explain why.",
+    "groups": [
+     "What happens to your body",
+     "What you should do",
+     "Science words"
+    ],
+    "items": [
+     {
+      "id": "g22",
+      "text": "redness",
+      "group": 0
+     },
+     {
+      "id": "g23",
+      "text": "swelling",
+      "group": 0
+     },
+     {
+      "id": "g24",
+      "text": "trouble breathing",
+      "group": 0
+     },
+     {
+      "id": "g25",
+      "text": "anaphylactic shock",
+      "group": 0
+     },
+     {
+      "id": "g26",
+      "text": "remove the stinger",
+      "group": 1
+     },
+     {
+      "id": "g27",
+      "text": "wash with soap and water",
+      "group": 1
+     },
+     {
+      "id": "g28",
+      "text": "put an ice pack on it",
+      "group": 1
+     },
+     {
+      "id": "g29",
+      "text": "call emergency services",
+      "group": 1
+     },
+     {
+      "id": "g30",
+      "text": "high-speed camera",
+      "group": 2
+     },
+     {
+      "id": "g31",
+      "text": "pump",
+      "group": 2
+     },
+     {
+      "id": "g32",
+      "text": "lead researcher",
+      "group": 2
+     },
+     {
+      "id": "g33",
+      "text": "discovery",
+      "group": 2
+     }
+    ]
+   }
+  },
+  {
+   "key": "spot",
+   "title": "Bee sting · spot the mistake",
+   "tags": {
+    "content": [
+     "Vocabulary"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "spot",
+    "label": "SPOT THE MISTAKE",
+    "html": "Each sentence has one mistake. Click the wrong word, then say the whole sentence correctly.",
+    "items": [
+     {
+      "id": "g34",
+      "words": [
+       "I",
+       "was",
+       "stinged",
+       "by",
+       "a",
+       "bee",
+       "last",
+       "summer."
+      ],
+      "wrong": 2,
+      "fix": "stung"
+     },
+     {
+      "id": "g35",
+      "words": [
+       "Her",
+       "face",
+       "swelled",
+       "down",
+       "after",
+       "the",
+       "sting."
+      ],
+      "wrong": 3,
+      "fix": "up"
+     },
+     {
+      "id": "g36",
+      "words": [
+       "He",
+       "has",
+       "trouble",
+       "to",
+       "breathe",
+       "at",
+       "night."
+      ],
+      "wrong": 3,
+      "fix": "breathing (has trouble breathing)"
+     },
+     {
+      "id": "g37",
+      "words": [
+       "You",
+       "should",
+       "remove",
+       "the",
+       "stinger",
+       "as",
+       "quick",
+       "as",
+       "possible."
+      ],
+      "wrong": 6,
+      "fix": "quickly"
+     },
+     {
+      "id": "g38",
+      "words": [
+       "The",
+       "scientists",
+       "filmed",
+       "the",
+       "stinger",
+       "with",
+       "a",
+       "high-speed",
+       "camera",
+       "for",
+       "see",
+       "how",
+       "it",
+       "works."
+      ],
+      "wrong": 9,
+      "fix": "to"
+     },
+     {
+      "id": "g39",
+      "words": [
+       "The",
+       "discovery",
+       "could",
+       "help",
+       "to",
+       "companies",
+       "make",
+       "tiny",
+       "pumps."
+      ],
+      "wrong": 4,
+      "fix": "(no \"to\": help companies make)"
+     }
+    ]
+   }
+  },
+  {
+   "key": "order",
+   "title": "Long sentences · put the words in order",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Relative clauses"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "order",
+    "label": "BUILD LONG SENTENCES",
+    "html": "Put the chunks in order. Then say the sentence <b>without looking</b>.",
+    "items": [
+     {
+      "id": "g40",
+      "answer": "The stinger / keeps pumping venom / into the skin / even after / the bee / has flown away."
+     },
+     {
+      "id": "g41",
+      "answer": "If you are stung, / you should / remove the stinger / as quickly as possible / to stop more venom / from entering your body."
+     },
+     {
+      "id": "g42",
+      "answer": "The scientists / who made the discovery / used high-speed cameras / because the stinger / is too small and too fast / to see."
+     },
+     {
+      "id": "g43",
+      "answer": "Although most stings / are just painful, / they can be dangerous / for people / who have allergies."
+     },
+     {
+      "id": "g44",
+      "answer": "I have never been stung / by a bee, / but I was bitten / by a dog / when I was a child."
+     }
+    ]
+   }
+  },
+  {
+   "key": "stretch",
+   "title": "Sentence building · join and stretch",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "transform",
+    "label": "JOIN THE IDEAS · MAKE ONE LONG SENTENCE",
+    "html": "Join the short sentences into <b>one</b> sentence using the word in orange. Then say it aloud.",
+    "items": [
+     {
+      "id": "g45",
+      "sentence": "The stinger is tiny. It is very powerful.",
+      "instruction": "although",
+      "answers": [
+       "Although the stinger is tiny, it is very powerful.",
+       "Although the stinger is tiny, it is very powerful",
+       "The stinger is very powerful although it is tiny.",
+       "The stinger is very powerful although it is tiny",
+       "Although it is tiny, the stinger is very powerful.",
+       "Although it is tiny, the stinger is very powerful"
+      ]
+     },
+     {
+      "id": "g46",
+      "sentence": "The scientists used special cameras. They wanted to see the stinger in slow motion.",
+      "instruction": "because",
+      "answers": [
+       "The scientists used special cameras because they wanted to see the stinger in slow motion.",
+       "The scientists used special cameras because they wanted to see the stinger in slow motion"
+      ]
+     },
+     {
+      "id": "g47",
+      "sentence": "You should put ice on the sting. The swelling will go down.",
+      "instruction": "so that",
+      "answers": [
+       "You should put ice on the sting so that the swelling goes down.",
+       "You should put ice on the sting so that the swelling goes down",
+       "You should put ice on the sting so that the swelling will go down.",
+       "You should put ice on the sting so that the swelling will go down"
+      ]
+     },
+     {
+      "id": "g48",
+      "sentence": "Some people are allergic. They can go into anaphylactic shock.",
+      "instruction": "who",
+      "answers": [
+       "Some people who are allergic can go into anaphylactic shock.",
+       "Some people who are allergic can go into anaphylactic shock",
+       "People who are allergic can go into anaphylactic shock.",
+       "People who are allergic can go into anaphylactic shock"
+      ]
+     },
+     {
+      "id": "g49",
+      "sentence": "Remove the stinger quickly. More venom will enter the body.",
+      "instruction": "otherwise",
+      "answers": [
+       "Remove the stinger quickly, otherwise more venom will enter the body.",
+       "Remove the stinger quickly, otherwise more venom will enter the body",
+       "Remove the stinger quickly; otherwise, more venom will enter the body.",
+       "Remove the stinger quickly; otherwise, more venom will enter the body",
+       "Remove the stinger quickly, otherwise more venom will enter your body.",
+       "Remove the stinger quickly, otherwise more venom will enter your body"
+      ]
+     },
+     {
+      "id": "g50",
+      "sentence": "The design is unique. Companies want to copy it.",
+      "instruction": "so … that",
+      "answers": [
+       "The design is so unique that companies want to copy it.",
+       "The design is so unique that companies want to copy it"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "talk",
+   "title": "Discussion · from bees to everything else",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Science",
+     "Health"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "DISCUSSION · FROM ONE TINY STINGER TO EVERYTHING",
+    "html": "Pick a tab. Answer with <b>at least three sentences</b> and give an example from your life.",
+    "words": [
+     "swell up",
+     "unique",
+     "inspire",
+     "have trouble -ing",
+     "get stuck",
+     "reduce"
+    ],
+    "cats": [
+     {
+      "name": "Stings & pain",
+      "qs": [
+       "Have you ever been stung by a bee, a wasp or a jellyfish? What happened?",
+       "What is the most painful thing that has ever happened to you?",
+       "Are you good with pain, or are you a bit dramatic? Give an example.",
+       "Which is worse: physical pain or emotional pain?"
+      ]
+     },
+     {
+      "name": "Health & emergencies",
+      "qs": [
+       "Do you have any allergies? How do they affect your life?",
+       "Have you ever had to call emergency services or go to the hospital in a hurry?",
+       "Do you know first aid? Should everybody learn it at school?",
+       "What would you do if someone near you suddenly had trouble breathing?"
+      ]
+     },
+     {
+      "name": "Nature as inventor",
+      "qs": [
+       "Scientists copy nature all the time: velcro, airplane wings, bullet trains. Which other animal would you copy, and for what?",
+       "What is the most impressive animal or insect you know? Why?",
+       "Do you think nature has already \"invented\" better solutions than humans?",
+       "If you were a scientist, what would you love to discover?"
+      ]
+     },
+     {
+      "name": "Bees & our world",
+      "qs": [
+       "Bees are disappearing in many countries. Why should we care?",
+       "Do you like honey? What do you eat it with?",
+       "Would you eat insects if they were cheap, healthy and tasty?",
+       "Is it OK to kill a wasp or a cockroach in your house? Where is the line?"
+      ]
+     },
+     {
+      "name": "Fears",
+      "qs": [
+       "What are you afraid of that other people think is silly?",
+       "Have you ever done something to face a fear?",
+       "Do you think fears are learned or are we born with them?",
+       "What scared you as a child that doesn't scare you now?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "scale",
+   "title": "Opinion scale · bees, science and health",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "scale",
+    "label": "WHAT DO YOU THINK?",
+    "html": "Choose a number from 1 to 5. Then defend your opinion with <b>two reasons and an example</b>.",
+    "left": "Totally disagree",
+    "right": "Totally agree",
+    "statements": [
+     "Every school should teach first aid.",
+     "In 20 years, eating insects will be completely normal.",
+     "It is OK to use animals in scientific research.",
+     "Nature has already solved most of our engineering problems.",
+     "People exaggerate when they talk about pain.",
+     "Science is more exciting than any movie."
+    ]
+   }
+  },
+  {
+   "key": "roleplay",
+   "title": "Role-play · emergency call (allergic reaction)",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Health"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "roleplay",
+    "label": "ROLE-PLAY · THE EMERGENCY CALL",
+    "html": "Your friend has just been stung by a bee at a barbecue and is not feeling well. You call emergency services.",
+    "roles": [
+     {
+      "name": "Caller (Gabriel)",
+      "card": "Your friend Marcos, 34, was stung on the neck 5 minutes ago. His lips are starting to swell up and he says his throat feels strange. You are at a house party, Rua das Flores 120. You don't know if he has allergies. Stay calm and explain everything clearly."
+     },
+     {
+      "name": "Operator (teacher)",
+      "card": "Ask: the address, what happened, when, where on the body, if he is breathing well, if he has allergies or medicine (an EpiPen). Tell the caller: remove the stinger, keep him sitting up, don't give him food or drink, an ambulance is coming in 10 minutes. Ask him to describe any change."
+     }
+    ]
+   }
+  },
+  {
+   "key": "timer",
+   "title": "One-minute talks · bees, pain and nature",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "ONE MINUTE · DON'T STOP TALKING",
+    "html": "Talk for one minute without stopping. If you stop, start again with \"And another thing is…\"",
+    "seconds": 60,
+    "topics": [
+     "Explain how a bee stinger works, as if I were a 10-year-old.",
+     "The most painful experience of your life.",
+     "An invention that changed your life.",
+     "What you would do in an emergency at a party.",
+     "Your biggest fear and where it comes from.",
+     "Why bees are important for the planet.",
+     "A time you got stuck somewhere.",
+     "Something unique about your city."
+    ]
+   }
+  },
+  {
+   "key": "wrapup",
+   "title": "Wrap-up · bee sting class",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "Last round. Full sentences!",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "Explain today's discovery in two sentences.",
+       "Which three words from today will you really use? Use them in one sentence.",
+       "What is the first thing you should do if someone is stung?",
+       "Which topic from today could you talk about for another hour?",
+       "What was the hardest sentence to build today?"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "The Tiny Pump in a Bee Sting: Science, Pain and Emergencies",
+  "subtitle": "News conversation · vocabulary in new contexts · building long sentences · first aid · nature and inventions",
+  "level": "C1",
+  "tags": [
+   "Conversation",
+   "Reading",
+   "Vocabulary"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "reading"
+   },
+   {
+    "model": "check"
+   },
+   {
+    "model": "explain"
+   },
+   {
+    "model": "vocab"
+   },
+   {
+    "model": "vocab-context"
+   },
+   {
+    "model": "sort"
+   },
+   {
+    "model": "spot"
+   },
+   {
+    "model": "order"
+   },
+   {
+    "model": "stretch"
+   },
+   {
+    "model": "talk"
+   },
+   {
+    "model": "scale"
+   },
+   {
+    "model": "roleplay"
+   },
+   {
+    "model": "timer"
+   },
+   {
+    "model": "wrapup"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

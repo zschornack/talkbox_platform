@@ -118,7 +118,7 @@ export function transaction(fn) {
 }
 
 // ---------- migração 1 (v0.4): banco "pra valer" ----------
-const SCHEMA_VERSION = 1;
+const SCHEMA_VERSION = 2;
 if (db.prepare('PRAGMA user_version').get().user_version < 1) {
   transaction(() => {
     // aulas: data, número, situação e arquivamento. Aulas que já existiam contam como dadas.
@@ -210,7 +210,35 @@ if (db.prepare('PRAGMA user_version').get().user_version < 1) {
     for (const m of db.prepare('SELECT id, tags FROM models').all()) upTags.run(JSON.stringify(cleanTags(json(m.tags, {}))), m.id);
 
     for (const l of db.prepare('SELECT id, doc FROM lessons').all()) syncUses(l.id, json(l.doc, {}));
-    db.exec(`PRAGMA user_version = ${SCHEMA_VERSION}`);
+    db.exec("PRAGMA user_version = 1");
+  });
+}
+
+// ---------- migração 2 (v0.5): "Reabrir aula" ----------
+// Uma aula finalizada pode ser reaberta. Nada é apagado: o handover desfeito fica marcado (undone_at)
+// e as avaliações dele ficam anuladas (voided_at), fora do mapa.
+if (db.prepare('PRAGMA user_version').get().user_version < 2) {
+  transaction(() => {
+    db.exec(`
+      ALTER TABLE assessments ADD COLUMN voided_at TEXT;
+
+      CREATE TABLE handovers_v2 (
+        id            TEXT PRIMARY KEY,
+        lesson_id     TEXT NOT NULL,
+        last_block_id TEXT,
+        message       TEXT NOT NULL DEFAULT '',
+        finished_at   TEXT NOT NULL,
+        undone_at     TEXT            -- preenchido = aula reaberta (este handover não vale mais)
+      );
+      INSERT INTO handovers_v2 (id, lesson_id, last_block_id, message, finished_at)
+        SELECT lesson_id, lesson_id, last_block_id, message, finished_at FROM handovers;
+      DROP TRIGGER keep_handovers;
+      DROP TABLE handovers;
+      ALTER TABLE handovers_v2 RENAME TO handovers;
+      CREATE UNIQUE INDEX handovers_active ON handovers (lesson_id) WHERE undone_at IS NULL;
+      CREATE TRIGGER keep_handovers BEFORE DELETE ON handovers BEGIN SELECT RAISE(ABORT, 'Handovers não são apagados.'); END;
+    `);
+    db.exec('PRAGMA user_version = 2');
   });
 }
 
@@ -240,7 +268,7 @@ const latestMap = db.prepare(`
   SELECT content, status, date FROM (
     SELECT content, status, date,
            ROW_NUMBER() OVER (PARTITION BY content ORDER BY date DESC, created_at DESC) AS rn
-    FROM assessments WHERE student_id = ?
+    FROM assessments WHERE student_id = ? AND voided_at IS NULL
   ) WHERE rn = 1 AND status <> 'none'`);
 
 function studentMap(id) {
@@ -341,7 +369,7 @@ export function contentHistory(studentId, content = '') {
   return db
     .prepare(`SELECT a.content, a.status, a.date, a.lesson_id, l.title AS lesson_title FROM assessments a
               LEFT JOIN lessons l ON l.id = a.lesson_id
-              WHERE a.student_id = ? ${one ? 'AND a.content = ?' : ''} ORDER BY a.date, a.created_at`)
+              WHERE a.student_id = ? AND a.voided_at IS NULL ${one ? 'AND a.content = ?' : ''} ORDER BY a.date, a.created_at`)
     .all(...(one ? [studentId, canonicalContent(content)] : [studentId]))
     .map((r) => ({ content: r.content, status: r.status, date: r.date, lessonId: r.lesson_id, lessonTitle: r.lesson_title, manual: !r.lesson_id }));
 }
@@ -368,7 +396,7 @@ const lessonOut = (row) =>
     receivedMessage: row.received_message,
     doc: json(row.doc, { blocks: [] }),
     state: json(row.state, {}),
-    handover: handoverOut(db.prepare('SELECT * FROM handovers WHERE lesson_id = ?').get(row.id)),
+    handover: handoverOut(db.prepare('SELECT * FROM handovers WHERE lesson_id = ? AND undone_at IS NULL').get(row.id)),
     createdAt: row.created_at,
     updatedAt: row.updated_at,
   };
@@ -380,7 +408,7 @@ const handoverOut = (h) => h && { lastBlockId: h.last_block_id, message: h.messa
 const lessonContents = db.prepare(`
   SELECT DISTINCT m.tags FROM block_uses u
   JOIN models m ON m.id = u.model_id
-  LEFT JOIN handovers h ON h.lesson_id = u.lesson_id
+  LEFT JOIN handovers h ON h.lesson_id = u.lesson_id AND h.undone_at IS NULL
   LEFT JOIN block_uses cut ON cut.lesson_id = u.lesson_id AND cut.block_id = h.last_block_id
   WHERE u.lesson_id = ? AND (? = 0 OR h.lesson_id IS NULL OR u.position <= COALESCE(cut.position, 0))`);
 function contentsOf(lessonId, { doneOnly = true } = {}) {
@@ -507,7 +535,7 @@ export function finishLesson(lessonId, { lastBlockId = null, assessments = {}, m
   const summary = { done: cut, newPending: 0, resolvedPending: 0, stillPending: 0 };
   return transaction(() => {
     const t = now();
-    db.prepare('INSERT INTO handovers (lesson_id, last_block_id, message, finished_at) VALUES (?, ?, ?, ?)').run(lessonId, lastBlockId, message.trim(), t);
+    db.prepare('INSERT INTO handovers (id, lesson_id, last_block_id, message, finished_at) VALUES (?, ?, ?, ?, ?)').run(newId(), lessonId, lastBlockId, message.trim(), t);
     blocks.forEach((b, i) => {
       const done = i < cut;
       if (b.pending) {
@@ -529,10 +557,30 @@ export function finishLesson(lessonId, { lastBlockId = null, assessments = {}, m
   });
 }
 
+/**
+ * Reabre uma aula finalizada (ex.: finalizou por engano). Desfaz o que o "Finalizar aula" fez,
+ * sem apagar nada: o handover fica marcado como desfeito, as avaliações dele saem do mapa,
+ * os pendentes que ela criou são descartados e os que ela resolveu voltam a ficar pendentes.
+ */
+export function reopenLesson(lessonId) {
+  const l = getLesson(lessonId);
+  if (!l) return null;
+  if (l.status !== 'done') throw new RuleError('Esta aula ainda não foi finalizada.');
+  return transaction(() => {
+    const t = now();
+    db.prepare('UPDATE handovers SET undone_at = ? WHERE lesson_id = ? AND undone_at IS NULL').run(t, lessonId);
+    db.prepare('UPDATE assessments SET voided_at = ? WHERE lesson_id = ? AND voided_at IS NULL').run(t, lessonId);
+    const discarded = db.prepare("UPDATE pending SET status = 'discarded', closed_at = ? WHERE lesson_id = ? AND status = 'open'").run(t, lessonId).changes;
+    const reopened = db.prepare("UPDATE pending SET status = 'open', resolved_lesson_id = NULL, closed_at = NULL WHERE resolved_lesson_id = ? AND status = 'resolved'").run(lessonId).changes;
+    db.prepare("UPDATE lessons SET status = 'preparing', updated_at = ? WHERE id = ?").run(t, lessonId);
+    return { discarded, reopened };
+  });
+}
+
 /** "Onde paramos" na ficha. */
 export function whereWeStopped(studentId) {
   const last = db
-    .prepare(`SELECT l.id, l.title, l.number, l.lesson_date, h.message FROM lessons l JOIN handovers h ON h.lesson_id = l.id
+    .prepare(`SELECT l.id, l.title, l.number, l.lesson_date, h.message FROM lessons l JOIN handovers h ON h.lesson_id = l.id AND h.undone_at IS NULL
               WHERE l.student_id = ? AND l.archived_at IS NULL ORDER BY l.lesson_date DESC, h.finished_at DESC LIMIT 1`)
     .get(studentId);
   const pending = db
@@ -589,7 +637,7 @@ const seenOf = db.prepare(`
   SELECT u.model_id, MAX(l.lesson_date) AS at
   FROM block_uses u
   JOIN lessons l ON l.id = u.lesson_id AND l.archived_at IS NULL
-  LEFT JOIN handovers h ON h.lesson_id = l.id
+  LEFT JOIN handovers h ON h.lesson_id = l.id AND h.undone_at IS NULL
   LEFT JOIN block_uses cut ON cut.lesson_id = l.id AND cut.block_id = h.last_block_id
   WHERE l.student_id = ? AND u.model_id IS NOT NULL
     AND (h.lesson_id IS NULL OR u.position <= COALESCE(cut.position, 0))

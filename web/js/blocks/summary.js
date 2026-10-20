@@ -53,6 +53,34 @@ export function summarize(block) {
         ],
         count: `${(block.lines || []).length} frases × ${(block.prompts || []).length} instruções`,
       };
+    case 'reveal':
+    case 'order':
+    case 'transform':
+    case 'spot': {
+      const items = block.items || [];
+      const line = {
+        reveal: (it) => `${toText(it.q)} → ${toText(it.a)}`,
+        order: (it) => String(it.answer || '').replace(/\s*\/\s*/g, ' '),
+        transform: (it) => `${toText(it.sentence)} (${it.instruction})`,
+        spot: (it) => (it.words || []).join(' '),
+      }[block.type];
+      return { lines: items.slice(0, 3).map((it) => clip(line(it), 90)), count: `${items.length} ${items.length === 1 ? 'frase' : 'frases'}` };
+    }
+    case 'sort':
+      return {
+        lines: (block.groups || []).map((g, gi) => clip(`${g}: ${(block.items || []).filter((it) => it.group === gi).map((it) => it.text).join(', ')}`, 80)),
+        count: `${(block.items || []).length} itens · ${(block.groups || []).length} grupos`,
+      };
+    case 'scale':
+      return { lines: (block.statements || []).slice(0, 3).map((x) => clip(toText(x), 90)), count: `${(block.statements || []).length} afirmações` };
+    case 'timer':
+      return { lines: (block.topics || []).slice(0, 3).map((x) => clip(toText(x), 90)), count: `${(block.topics || []).length} temas · ${block.seconds || 60} s` };
+    case 'roleplay':
+      return { lines: [clip(toText(block.html), 100), ...(block.roles || []).map((r) => clip(`${r.name}: ${toText(r.card)}`, 80))].filter(Boolean), count: `${(block.roles || []).length} papéis` };
+    case 'tense':
+      return { lines: [`${block.tense || ''} · ${block.verb || ''}`.replace(/-/g, ' ')], count: '5 pessoas' };
+    case 'timeline':
+      return { lines: [clip(toText(block.html), 100), (block.marks || []).map((m) => m.text).join(' · ')].filter(Boolean) };
     case 'image':
       return { lines: block.caption ? [clip(toText(block.caption), 100)] : [], image: block.src };
     default:

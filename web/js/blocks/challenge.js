@@ -1,7 +1,7 @@
 // Desafio sorteado (requisitos 9.12): frase + instrução (jeito de falar ou palavra obrigatória).
 import { h, escapeHtml } from '../dom.js';
 import { editable } from '../editable.js';
-import { toText } from '../sanitize.js';
+import { toText, sanitize } from '../sanitize.js';
 
 const lines = (s) => s.split('\n').map((x) => x.trim()).filter(Boolean);
 
@@ -70,7 +70,7 @@ export const challenge = {
       )
     );
 
-    const listOf = (arr) => h('ol.print-list', arr.filter((x) => toText(x).trim()).map((x) => { const li = h('li'); li.innerHTML = x; return li; }));
+    const listOf = (arr) => h('ol.print-list', arr.filter((x) => toText(x).trim()).map((x) => { const li = h('li'); li.innerHTML = sanitize(x); return li; }));
     const print = h(
       'div.print-only',
       h('div.print-cols',

@@ -23,7 +23,7 @@ export async function newLessonDialog({ studentId } = {}) {
     const n = st?.stop?.pending?.length || 0;
     const msg = !!st?.stop?.message;
     carryRow.hidden = !n && !msg;
-    carryText.textContent = [n ? `Trazer ${n === 1 ? 'o pendente' : `os ${n} pendentes`} da última aula` : '', msg ? (n ? 'e o recado' : 'Mostrar o recado do último professor') : ''].filter(Boolean).join(' ');
+    carryText.textContent = [n ? `Trazer ${n === 1 ? 'o pendente' : `os ${n} pendentes`} da última aula` : '', msg ? (n ? 'e a anotação' : 'Mostrar a anotação da aula anterior') : ''].filter(Boolean).join(' ');
   };
   if (fixed) showCarry(fixed);
   select?.addEventListener('change', async () => showCarry(select.value ? await api.student(select.value) : null));

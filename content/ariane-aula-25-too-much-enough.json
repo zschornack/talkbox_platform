@@ -1,0 +1,1244 @@
+{
+ "id": "ariane-aula-25-too-much-enough-2026-10-20",
+ "student": {
+  "name": "Ariane"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · food, shopping and last class",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Food",
+     "Shopping"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP · TALK TO ME!",
+    "html": "Answer with <b>complete sentences</b>. Use <b>a lot of, a few, a little, much, many</b>.",
+    "words": [
+     "a lot of",
+     "a few",
+     "a little",
+     "not … any"
+    ],
+    "cats": [
+     {
+      "name": "Last class",
+      "qs": [
+       "What did we study last class? Explain it to me in English.",
+       "What is in your fridge today?",
+       "Did you go to the supermarket this week? What did you buy?"
+      ]
+     },
+     {
+      "name": "Your week",
+      "qs": [
+       "How was your week?",
+       "Did you cook this week? What did you make?",
+       "How many cups of coffee do you drink a day?"
+      ]
+     },
+     {
+      "name": "Food",
+      "qs": [
+       "What did you have for breakfast today?",
+       "Do you eat a lot of sugar?",
+       "What food do you never have at home?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "review",
+   "title": "Quantifiers · quick review",
+   "tags": {
+    "content": [
+     "Quantifiers",
+     "Countable & uncountable nouns"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "QUICK REVIEW · LAST CLASS",
+    "header": true,
+    "rows": [
+     [
+      "",
+      "COUNTABLE (eggs, apples)",
+      "UNCOUNTABLE (milk, rice)"
+     ],
+     [
+      "Questions and negatives",
+      "<span style=\"background-color: #CBE4D8\"><b>many</b></span>: I don't have many eggs.",
+      "<span style=\"background-color: #FFC9A3\"><b>much</b></span>: There isn't much milk."
+     ],
+     [
+      "Affirmative",
+      "<span style=\"background-color: #FFDB8F\"><b>a lot of</b></span>: I buy a lot of apples.",
+      "<span style=\"background-color: #FFDB8F\"><b>a lot of</b></span>: I drink a lot of water."
+     ],
+     [
+      "A small amount",
+      "<span style=\"background-color: #CBE4D8\"><b>a few</b></span>: I need a few onions.",
+      "<span style=\"background-color: #FFC9A3\"><b>a little</b></span>: I want a little sugar."
+     ],
+     [
+      "Asking the quantity",
+      "<span style=\"background-color: #CBE4D8\"><b>How many</b></span> eggs?",
+      "<span style=\"background-color: #FFC9A3\"><b>How much</b></span> rice?"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "too-enough",
+   "title": "Too much / too many / (not) enough",
+   "tags": {
+    "content": [
+     "Quantifiers",
+     "Countable & uncountable nouns"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "NEW · TOO MUCH, TOO MANY, ENOUGH",
+    "html": "<b>Too much / too many</b> = more than you want or need. It is a problem!<br><br>Countable: There are <span style=\"background-color: #CBE4D8\"><b>too many</b></span> people in the bus.<br>Uncountable: I put <span style=\"background-color: #FFC9A3\"><b>too much</b></span> salt in the soup. It is terrible!<br><br><b>Enough</b> = the quantity you need. It is OK! It works with countable and uncountable nouns, and it comes <b>before</b> the noun.<br><br>We have <span style=\"background-color: #FFDB8F\"><b>enough</b></span> chairs for everybody.<br>I don't have <span style=\"background-color: #FFDB8F\"><b>enough</b></span> money for a new phone.<br>Do we have <span style=\"background-color: #FFDB8F\"><b>enough</b></span> eggs for the cake?"
+   }
+  },
+  {
+   "key": "too-enough-table",
+   "title": "Too much / too many / enough (table)",
+   "tags": {
+    "content": [
+     "Quantifiers",
+     "Countable & uncountable nouns"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "TABLE · TOO MUCH, TOO MANY, ENOUGH",
+    "header": true,
+    "rows": [
+     [
+      "",
+      "COUNTABLE",
+      "UNCOUNTABLE"
+     ],
+     [
+      "More than you need ☹",
+      "<span style=\"background-color: #CBE4D8\"><b>too many</b></span> cars",
+      "<span style=\"background-color: #FFC9A3\"><b>too much</b></span> sugar"
+     ],
+     [
+      "The right quantity ☺",
+      "<span style=\"background-color: #FFDB8F\"><b>enough</b></span> chairs",
+      "<span style=\"background-color: #FFDB8F\"><b>enough</b></span> time"
+     ],
+     [
+      "Less than you need ☹",
+      "<span style=\"background-color: #FFDB8F\"><b>not enough</b></span> eggs",
+      "<span style=\"background-color: #FFDB8F\"><b>not enough</b></span> money"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "basics",
+   "title": "Too much / too many / enough · say it, then reveal",
+   "tags": {
+    "content": [
+     "Quantifiers",
+     "Countable & uncountable nouns"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "5 BASIC SENTENCES · SAY IT, THEN REVEAL",
+    "html": "Make a sentence with the words. Say it first, then click to check.",
+    "items": [
+     {
+      "id": "a1",
+      "q": "There are / people / in the bus (☹ more than OK)",
+      "a": "There are too many people in the bus."
+     },
+     {
+      "id": "a2",
+      "q": "I put / salt / in the soup (☹ more than OK)",
+      "a": "I put too much salt in the soup."
+     },
+     {
+      "id": "a3",
+      "q": "We have / chairs / for everybody (☺ OK)",
+      "a": "We have enough chairs for everybody."
+     },
+     {
+      "id": "a4",
+      "q": "I / not have / money / for a new car (☹ less than OK)",
+      "a": "I don't have enough money for a new car."
+     },
+     {
+      "id": "a5",
+      "q": "Do we have / eggs / for the cake?",
+      "a": "Do we have enough eggs for the cake?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "vocab",
+   "title": "Containers and food · new vocabulary",
+   "tags": {
+    "content": [
+     "Containers (a bottle of…)",
+     "Food",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "NEW VOCABULARY · MORE CONTAINERS",
+    "header": true,
+    "rows": [
+     [
+      "CONTAINER / UNIT",
+      "EXAMPLES"
+     ],
+     [
+      "<b>a jar of</b>",
+      "a jar of honey, a jar of jam, a jar of peanut butter"
+     ],
+     [
+      "<b>a can of</b>",
+      "a can of tuna, a can of soda, a can of beans"
+     ],
+     [
+      "<b>a packet of</b>",
+      "a packet of biscuits, a packet of pasta"
+     ],
+     [
+      "<b>a bag of</b>",
+      "a bag of potatoes, a bag of rice"
+     ],
+     [
+      "<b>a box of</b>",
+      "a box of cereal, a box of chocolates"
+     ],
+     [
+      "<b>a bar of</b>",
+      "a bar of chocolate, a bar of soap"
+     ],
+     [
+      "<b>a bunch of</b>",
+      "a bunch of bananas, a bunch of grapes, a bunch of flowers"
+     ],
+     [
+      "<b>a dozen</b>",
+      "a dozen eggs (= 12 eggs), half a dozen eggs (= 6)"
+     ],
+     [
+      "<b>a tube of</b>",
+      "a tube of toothpaste"
+     ],
+     [
+      "<b>a spoonful of</b>",
+      "a spoonful of sugar, a spoonful of olive oil"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "match",
+   "title": "Containers · match",
+   "tags": {
+    "content": [
+     "Containers (a bottle of…)",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "match",
+    "label": "MATCH · WHICH CONTAINER?",
+    "html": "Match the container to the food. Then say: \"I have a ___ of ___ at home.\"",
+    "pairs": [
+     {
+      "id": "a6",
+      "left": "a jar of",
+      "right": "honey"
+     },
+     {
+      "id": "a7",
+      "left": "a can of",
+      "right": "tuna"
+     },
+     {
+      "id": "a8",
+      "left": "a bunch of",
+      "right": "bananas"
+     },
+     {
+      "id": "a9",
+      "left": "a bar of",
+      "right": "chocolate"
+     },
+     {
+      "id": "a10",
+      "left": "a tube of",
+      "right": "toothpaste"
+     },
+     {
+      "id": "a11",
+      "left": "a box of",
+      "right": "cereal"
+     },
+     {
+      "id": "a12",
+      "left": "a bag of",
+      "right": "potatoes"
+     },
+     {
+      "id": "a13",
+      "left": "a dozen",
+      "right": "eggs"
+     }
+    ]
+   }
+  },
+  {
+   "key": "sort",
+   "title": "Countable or uncountable · tricky words",
+   "tags": {
+    "content": [
+     "Countable & uncountable nouns",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "sort",
+    "label": "COUNTABLE OR UNCOUNTABLE? (TRICKY WORDS!)",
+    "html": "Some of these words are uncountable in English but countable in Portuguese! Click a word, then the group.",
+    "groups": [
+     "Countable",
+     "Uncountable"
+    ],
+    "items": [
+     {
+      "id": "a14",
+      "text": "money",
+      "group": 1
+     },
+     {
+      "id": "a15",
+      "text": "coin",
+      "group": 0
+     },
+     {
+      "id": "a16",
+      "text": "bread",
+      "group": 1
+     },
+     {
+      "id": "a17",
+      "text": "sandwich",
+      "group": 0
+     },
+     {
+      "id": "a18",
+      "text": "information",
+      "group": 1
+     },
+     {
+      "id": "a19",
+      "text": "advice",
+      "group": 1
+     },
+     {
+      "id": "a20",
+      "text": "news",
+      "group": 1
+     },
+     {
+      "id": "a21",
+      "text": "furniture",
+      "group": 1
+     },
+     {
+      "id": "a22",
+      "text": "chair",
+      "group": 0
+     },
+     {
+      "id": "a23",
+      "text": "homework",
+      "group": 1
+     },
+     {
+      "id": "a24",
+      "text": "vegetable",
+      "group": 0
+     },
+     {
+      "id": "a25",
+      "text": "fruit",
+      "group": 1
+     },
+     {
+      "id": "a26",
+      "text": "luggage",
+      "group": 1
+     },
+     {
+      "id": "a27",
+      "text": "suitcase",
+      "group": 0
+     }
+    ]
+   }
+  },
+  {
+   "key": "tricky",
+   "title": "Tricky uncountable words",
+   "tags": {
+    "content": [
+     "Countable & uncountable nouns"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "ATTENTION · NOT LIKE PORTUGUESE",
+    "html": "These words are <span style=\"background-color: #FFC9A3\"><b>uncountable</b></span> in English. No <b>s</b>, no <b>a / an</b>, and the verb is singular.<br><br>✗ I need an advice. → ✓ I need <span style=\"background-color: #FFC9A3\"><b>some advice</b></span>. / I need <span style=\"background-color: #FFC9A3\"><b>a piece of advice</b></span>.<br>✗ The news are good. → ✓ The news <span style=\"background-color: #FFC9A3\"><b>is</b></span> good.<br>✗ I have many homeworks. → ✓ I have <span style=\"background-color: #FFC9A3\"><b>a lot of homework</b></span>.<br>✗ We bought new furnitures. → ✓ We bought new <span style=\"background-color: #FFC9A3\"><b>furniture</b></span>.<br><br>Fruit: usually uncountable (I eat a lot of <span style=\"background-color: #FFC9A3\"><b>fruit</b></span>), but you can count types: apples and bananas are <span style=\"background-color: #CBE4D8\"><b>fruits</b></span> that I love."
+   }
+  },
+  {
+   "key": "reading",
+   "title": "Reading · the zero-waste shop",
+   "tags": {
+    "content": [
+     "Reading",
+     "Food",
+     "Shopping"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "READING · NO PLASTIC, PLEASE!",
+    "html": "Marta lives in Porto Alegre and she has a small shop called <b>Bem Pesado</b>. It is a zero-waste shop: there aren't any plastic bags, and there isn't any packaging. Customers bring their own <b>jars</b>, <b>bags</b> and <b>bottles</b> from home, and they buy exactly the quantity they need.<br><br>\"In a normal supermarket, you buy a big <b>bag of rice</b> or a <b>packet of pasta</b>, and you often buy <b>too much</b>,\" Marta says. \"Here, you can buy only a little: 200 grams of rice, a few spoonfuls of coffee, or <b>half a dozen</b> eggs.\"<br><br>The shop sells a lot of things: rice, beans, nuts, olive oil, honey, soap and even toothpaste. There aren't many products, but they are all local. \"People think it is expensive,\" she says, \"but when you buy only what you need, you don't throw away much food, so you save money.\"<br><br>Not everything is easy. \"Some customers forget their jars,\" Marta laughs. \"And on Saturdays there are <b>too many</b> people and there isn't <b>enough</b> space. But I am very happy. Every month, there are more customers and less plastic.\""
+   }
+  },
+  {
+   "key": "reading-check",
+   "title": "Reading · true or false?",
+   "tags": {
+    "content": [
+     "Reading"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "COMPREHENSION · TRUE OR FALSE?",
+    "html": "Then correct the false sentences <b>out loud</b>.",
+    "instant": false,
+    "items": [
+     {
+      "id": "a28",
+      "before": "The shop gives plastic bags to the customers.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "a29",
+      "before": "Customers bring jars and bottles from home.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "a30",
+      "before": "You can buy half a dozen eggs at the shop.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "a31",
+      "before": "The shop sells a lot of imported products.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "a32",
+      "before": "Marta says people waste less food when they buy only what they need.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "a33",
+      "before": "On Saturdays, the shop has a lot of space.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "reading-talk",
+   "title": "Reading · questions to answer out loud",
+   "tags": {
+    "content": [
+     "Reading",
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "ANSWER WITH A COMPLETE SENTENCE",
+    "html": "Answer out loud first. Then reveal and compare.",
+    "items": [
+     {
+      "id": "a34",
+      "q": "What do customers bring to the shop?",
+      "a": "They bring their own jars, bags and bottles from home."
+     },
+     {
+      "id": "a35",
+      "q": "Why do people buy too much in a normal supermarket?",
+      "a": "Because the products come in big bags and packets, so you can't buy only a little."
+     },
+     {
+      "id": "a36",
+      "q": "What products does the shop sell?",
+      "a": "It sells rice, beans, nuts, olive oil, honey, soap and toothpaste."
+     },
+     {
+      "id": "a37",
+      "q": "How do customers save money?",
+      "a": "They buy only what they need, so they don't throw away much food."
+     },
+     {
+      "id": "a38",
+      "q": "What is the problem on Saturdays?",
+      "a": "There are too many people and there isn't enough space."
+     }
+    ]
+   }
+  },
+  {
+   "key": "fill",
+   "title": "Too much / too many / enough · complete",
+   "tags": {
+    "content": [
+     "Quantifiers",
+     "Countable & uncountable nouns"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "PRACTICE · TOO MUCH, TOO MANY OR ENOUGH?",
+    "html": "Complete with <b>too much</b>, <b>too many</b> or <b>enough</b>.",
+    "items": [
+     {
+      "id": "a39",
+      "before": "I can't sleep. I drank",
+      "hint": "",
+      "after": "coffee today.",
+      "answers": [
+       "too much"
+      ]
+     },
+     {
+      "id": "a40",
+      "before": "There are",
+      "hint": "",
+      "after": "cars in the city centre. The traffic is terrible!",
+      "answers": [
+       "too many"
+      ]
+     },
+     {
+      "id": "a41",
+      "before": "We don't have",
+      "hint": "",
+      "after": "eggs for the cake. We need three more.",
+      "answers": [
+       "enough"
+      ]
+     },
+     {
+      "id": "a42",
+      "before": "You eat",
+      "hint": "",
+      "after": "sweets! Your teeth will hurt.",
+      "answers": [
+       "too many"
+      ]
+     },
+     {
+      "id": "a43",
+      "before": "Is there",
+      "hint": "",
+      "after": "milk for breakfast tomorrow?",
+      "answers": [
+       "enough"
+      ]
+     },
+     {
+      "id": "a44",
+      "before": "This soup is horrible. There is",
+      "hint": "",
+      "after": "salt in it.",
+      "answers": [
+       "too much"
+      ]
+     },
+     {
+      "id": "a45",
+      "before": "I have",
+      "hint": "",
+      "after": "homework this week. I can't go out.",
+      "answers": [
+       "too much"
+      ]
+     },
+     {
+      "id": "a46",
+      "before": "There aren't",
+      "hint": "",
+      "after": "chairs for everybody. Some people are standing.",
+      "answers": [
+       "enough"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "spot",
+   "title": "Quantities · spot the mistake",
+   "tags": {
+    "content": [
+     "Quantifiers",
+     "Countable & uncountable nouns"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "spot",
+    "label": "SPOT THE MISTAKE",
+    "html": "Click the wrong word. Then say the whole sentence correctly.",
+    "items": [
+     {
+      "id": "a47",
+      "words": [
+       "I",
+       "need",
+       "an",
+       "advice",
+       "about",
+       "my",
+       "diet."
+      ],
+      "wrong": 2,
+      "fix": "some (some advice)"
+     },
+     {
+      "id": "a48",
+      "words": [
+       "The",
+       "news",
+       "are",
+       "very",
+       "good",
+       "today."
+      ],
+      "wrong": 2,
+      "fix": "is"
+     },
+     {
+      "id": "a49",
+      "words": [
+       "How",
+       "many",
+       "money",
+       "do",
+       "you",
+       "have?"
+      ],
+      "wrong": 1,
+      "fix": "much"
+     },
+     {
+      "id": "a50",
+      "words": [
+       "There",
+       "are",
+       "too",
+       "much",
+       "people",
+       "here."
+      ],
+      "wrong": 3,
+      "fix": "many"
+     },
+     {
+      "id": "a51",
+      "words": [
+       "We",
+       "have",
+       "chairs",
+       "enough",
+       "for",
+       "everybody."
+      ],
+      "wrong": 3,
+      "fix": "(enough chairs)"
+     },
+     {
+      "id": "a52",
+      "words": [
+       "I",
+       "bought",
+       "a",
+       "bunch",
+       "of",
+       "milk."
+      ],
+      "wrong": 3,
+      "fix": "carton"
+     },
+     {
+      "id": "a53",
+      "words": [
+       "She",
+       "has",
+       "many",
+       "homeworks",
+       "this",
+       "week."
+      ],
+      "wrong": 3,
+      "fix": "homework (a lot of homework)"
+     }
+    ]
+   }
+  },
+  {
+   "key": "order",
+   "title": "Quantities · build the sentence",
+   "tags": {
+    "content": [
+     "Quantifiers",
+     "Countable & uncountable nouns"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "order",
+    "label": "BUILD THE SENTENCE",
+    "html": "Put the words in order. Then read the sentence out loud.",
+    "items": [
+     {
+      "id": "a54",
+      "answer": "I don't have / enough money / for a new phone."
+     },
+     {
+      "id": "a55",
+      "answer": "There are / too many people / at the supermarket / on Saturdays."
+     },
+     {
+      "id": "a56",
+      "answer": "Can you buy / a bunch of bananas / and a jar of honey?"
+     },
+     {
+      "id": "a57",
+      "answer": "How much / sugar / do you put / in your coffee?"
+     },
+     {
+      "id": "a58",
+      "answer": "We need / half a dozen eggs / and a little butter / for the cake."
+     }
+    ]
+   }
+  },
+  {
+   "key": "transform",
+   "title": "Quantities · say it another way",
+   "tags": {
+    "content": [
+     "Quantifiers",
+     "Countable & uncountable nouns"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "transform",
+    "label": "SAY IT ANOTHER WAY",
+    "html": "Rewrite the sentence using the expression in orange. Then say it.",
+    "items": [
+     {
+      "id": "a59",
+      "sentence": "I have two eggs. I need six.",
+      "instruction": "not enough",
+      "answers": [
+       "I don't have enough eggs.",
+       "I don't have enough eggs",
+       "I haven't got enough eggs.",
+       "I haven't got enough eggs"
+      ]
+     },
+     {
+      "id": "a60",
+      "sentence": "There are 50 people in the small room. It is a problem.",
+      "instruction": "too many",
+      "answers": [
+       "There are too many people in the room.",
+       "There are too many people in the room",
+       "There are too many people in the small room.",
+       "There are too many people in the small room"
+      ]
+     },
+     {
+      "id": "a61",
+      "sentence": "I drank six cups of coffee today. It is a problem.",
+      "instruction": "too much",
+      "answers": [
+       "I drank too much coffee today.",
+       "I drank too much coffee today",
+       "I drank too much coffee.",
+       "I drank too much coffee"
+      ]
+     },
+     {
+      "id": "a62",
+      "sentence": "We have ten chairs and ten guests.",
+      "instruction": "enough",
+      "answers": [
+       "We have enough chairs.",
+       "We have enough chairs",
+       "We have enough chairs for everybody.",
+       "We have enough chairs for everybody",
+       "We have enough chairs for the guests.",
+       "We have enough chairs for the guests"
+      ]
+     },
+     {
+      "id": "a63",
+      "sentence": "I need 12 eggs.",
+      "instruction": "a dozen",
+      "answers": [
+       "I need a dozen eggs.",
+       "I need a dozen eggs"
+      ]
+     },
+     {
+      "id": "a64",
+      "sentence": "Do you have bread? I want to know the quantity.",
+      "instruction": "How much",
+      "answers": [
+       "How much bread do you have?",
+       "How much bread do you have"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "scale",
+   "title": "Food and shopping · what do you think?",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Food",
+     "Shopping"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "scale",
+    "label": "WHAT DO YOU THINK?",
+    "html": "Choose a number. Then explain: \"I agree because…\" / \"I don't agree because…\"",
+    "left": "I disagree",
+    "right": "I agree",
+    "statements": [
+     "Supermarkets use too much plastic.",
+     "People in Brazil eat too much sugar.",
+     "I would like to shop in a zero-waste shop.",
+     "Cooking at home is cheaper than eating out.",
+     "There are too many cars in my city.",
+     "I don't have enough free time."
+    ]
+   }
+  },
+  {
+   "key": "roleplay",
+   "title": "Role-play · planning a party",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Food",
+     "Shopping"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "roleplay",
+    "label": "ROLE-PLAY · THE BIRTHDAY PARTY",
+    "html": "You and a friend are planning a birthday party for 15 people on Saturday. Look at what you have and decide what you need to buy. Use <b>too much, too many, enough, a few, a little</b> and the containers.",
+    "roles": [
+     {
+      "name": "Ariane",
+      "card": "At your house, there are: 10 cans of soda, 3 bags of chips, a box of chocolates and 8 chairs. You think there is too much soda. You want a chocolate cake. You have R$ 200 for the party."
+     },
+     {
+      "name": "Teacher",
+      "card": "At your house, there are: 2 bottles of juice, half a dozen eggs, a little flour, a bunch of bananas and 6 plates. You think there aren't enough chairs. Ask: How many people? How much money do we have? Who is making the cake?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "talk",
+   "title": "Conversation · food, money and habits",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Food",
+     "Shopping"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "CONVERSATION CARDS",
+    "html": "Answer with <b>two or three sentences</b>. Try to use the word on the card.",
+    "words": [
+     "too much",
+     "too many",
+     "enough",
+     "a jar of",
+     "a bunch of",
+     "a little"
+    ],
+    "cats": [
+     {
+      "name": "At home",
+      "qs": [
+       "What is always in your kitchen?",
+       "What do you have too much of at home? Clothes? Shoes? Cups?",
+       "Do you have enough space in your house?",
+       "Who does the shopping in your house?"
+      ]
+     },
+     {
+      "name": "Shopping",
+      "qs": [
+       "Do you prefer a big supermarket or a small shop? Why?",
+       "Do you make a shopping list?",
+       "What do you always buy too much of?",
+       "Do you take your own bags to the supermarket?"
+      ]
+     },
+     {
+      "name": "Food & health",
+      "qs": [
+       "Do you drink enough water every day?",
+       "What food do you eat too much of?",
+       "How many meals do you have a day?",
+       "Do you eat enough fruit and vegetables?"
+      ]
+     },
+     {
+      "name": "Life",
+      "qs": [
+       "Do you have enough free time? What do you do with it?",
+       "What is there too much of in your city?",
+       "What is there not enough of in your city?",
+       "What do you never have enough of?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "timer",
+   "title": "One minute · talk without stopping",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "ONE MINUTE · DON'T STOP!",
+    "html": "Talk for one minute. Use at least three quantity words.",
+    "seconds": 60,
+    "topics": [
+     "Your perfect breakfast.",
+     "A party you went to.",
+     "What you buy every week.",
+     "Your favourite recipe and its ingredients.",
+     "Things you have too much of.",
+     "Your city: what there is too much of and not enough of."
+    ]
+   }
+  },
+  {
+   "key": "wrapup",
+   "title": "Wrap-up · quantities",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "Last questions. Complete sentences!",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "When do we say \"too many\" and when do we say \"too much\"?",
+       "Make a sentence with \"enough\".",
+       "Tell me three containers from today and one food for each.",
+       "Is \"advice\" countable or uncountable? Make a sentence.",
+       "What did you like in the reading?"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Too Much, Too Many, Enough",
+  "subtitle": "Review of quantities · too much / too many / enough · more containers · tricky uncountable words · reading: the zero-waste shop",
+  "level": "A2",
+  "number": 25,
+  "tags": [
+   "Quantifiers",
+   "Countable & uncountable nouns",
+   "Containers (a bottle of…)",
+   "Food",
+   "Shopping",
+   "Reading",
+   "Conversation"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "review"
+   },
+   {
+    "model": "too-enough"
+   },
+   {
+    "model": "too-enough-table"
+   },
+   {
+    "model": "basics"
+   },
+   {
+    "model": "vocab"
+   },
+   {
+    "model": "match"
+   },
+   {
+    "model": "sort"
+   },
+   {
+    "model": "tricky"
+   },
+   {
+    "model": "reading"
+   },
+   {
+    "model": "reading-check"
+   },
+   {
+    "model": "reading-talk"
+   },
+   {
+    "model": "fill"
+   },
+   {
+    "model": "spot"
+   },
+   {
+    "model": "order"
+   },
+   {
+    "model": "transform"
+   },
+   {
+    "model": "scale"
+   },
+   {
+    "model": "roleplay"
+   },
+   {
+    "model": "talk"
+   },
+   {
+    "model": "timer"
+   },
+   {
+    "model": "wrapup"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

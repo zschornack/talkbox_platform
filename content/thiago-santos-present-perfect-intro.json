@@ -1,0 +1,1329 @@
+{
+ "id": "thiago-santos-present-perfect-intro-2026-10-19",
+ "student": {
+  "name": "Thiago Santos",
+  "level": "A2",
+  "goal": "Conversação",
+  "notes": "Dificuldade grande para falar e montar frases longas. Foco em speaking."
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · your week and your trips (Past Simple)",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Past Simple",
+     "Travel"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP",
+    "html": "Answer with complete sentences in the <b>Past Simple</b>. Say <b>when</b>: yesterday, last week, in 2019…",
+    "words": [
+     "yesterday",
+     "last weekend",
+     "in 2019",
+     "when I was a child",
+     "ago"
+    ],
+    "cats": [
+     {
+      "name": "Your week",
+      "qs": [
+       "What did you do last weekend?",
+       "What did you eat yesterday?",
+       "What did you watch last night?",
+       "Who did you visit this week?"
+      ]
+     },
+     {
+      "name": "Trips",
+      "qs": [
+       "Where did you go on your last vacation?",
+       "When did you go there?",
+       "What did you eat there?",
+       "Did you like it? Why?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "pp-what",
+   "title": "Past participle · what is it? (form 3)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "NEW · THE PAST PARTICIPLE (FORM 3)",
+    "html": "Every verb has <b>3 forms</b>:<br><b>1 · Base</b> (the dictionary): <i>visit</i><br><b>2 · Past Simple</b> (you know it!): <i>visited</i><br><b>3 · Past participle</b> (new!): <span style=\"background-color: #FFDB8F\"><b>visited</b></span><br><br>Today we learn <span style=\"background-color: #FFDB8F\"><b>FORM 3</b></span>. In Portuguese, it is like <i>visitado, comido, visto</i>.<br>💡 Step by step: first the <b>regular</b> verbs, then the <b>irregular</b> verbs."
+   }
+  },
+  {
+   "key": "pp-regular",
+   "title": "Past participle · regular verbs (form 3 = form 2)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "STEP 1 · REGULAR VERBS: FORM 3 = FORM 2 (-ED)",
+    "header": true,
+    "rows": [
+     [
+      "1 · BASE",
+      "2 · PAST SIMPLE",
+      "3 · PAST PARTICIPLE"
+     ],
+     [
+      "visit",
+      "visited",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>"
+     ],
+     [
+      "work",
+      "worked",
+      "<span style=\"background-color: #FFDB8F\"><b>worked</b></span>"
+     ],
+     [
+      "play",
+      "played",
+      "<span style=\"background-color: #FFDB8F\"><b>played</b></span>"
+     ],
+     [
+      "watch",
+      "watched",
+      "<span style=\"background-color: #FFDB8F\"><b>watched</b></span>"
+     ],
+     [
+      "cook",
+      "cooked",
+      "<span style=\"background-color: #FFDB8F\"><b>cooked</b></span>"
+     ],
+     [
+      "live",
+      "lived",
+      "<span style=\"background-color: #FFDB8F\"><b>lived</b></span>"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "pp-regular-practice",
+   "title": "Past participle · regular verbs (write form 3)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "PRACTICE · WRITE FORM 3 (REGULAR)",
+    "html": "Easy! Regular verbs: form 3 = form 2 (<b>-ed</b>).",
+    "items": [
+     {
+      "before": "clean →",
+      "hint": "form 3",
+      "after": "",
+      "answers": [
+       "cleaned"
+      ]
+     },
+     {
+      "before": "walk →",
+      "hint": "form 3",
+      "after": "",
+      "answers": [
+       "walked"
+      ]
+     },
+     {
+      "before": "like →",
+      "hint": "form 3",
+      "after": "",
+      "answers": [
+       "liked"
+      ]
+     },
+     {
+      "before": "travel →",
+      "hint": "form 3",
+      "after": "",
+      "answers": [
+       "traveled",
+       "travelled"
+      ]
+     },
+     {
+      "before": "help →",
+      "hint": "form 3",
+      "after": "",
+      "answers": [
+       "helped"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "pp-irr-same",
+   "title": "Past participle · irregular verbs, group 1 (form 3 = form 2)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "STEP 2 · IRREGULAR VERBS, GROUP 1: FORM 3 = FORM 2",
+    "header": true,
+    "rows": [
+     [
+      "1 · BASE",
+      "2 · PAST SIMPLE",
+      "3 · PAST PARTICIPLE"
+     ],
+     [
+      "buy",
+      "bought",
+      "<span style=\"background-color: #FFDB8F\"><b>bought</b></span>"
+     ],
+     [
+      "have",
+      "had",
+      "<span style=\"background-color: #FFDB8F\"><b>had</b></span>"
+     ],
+     [
+      "meet",
+      "met",
+      "<span style=\"background-color: #FFDB8F\"><b>met</b></span>"
+     ],
+     [
+      "make",
+      "made",
+      "<span style=\"background-color: #FFDB8F\"><b>made</b></span>"
+     ],
+     [
+      "lose",
+      "lost",
+      "<span style=\"background-color: #FFDB8F\"><b>lost</b></span>"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "pp-irr-new",
+   "title": "Past participle · irregular verbs, group 2 (form 3 is new)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "STEP 3 · IRREGULAR VERBS, GROUP 2: FORM 3 IS NEW",
+    "header": true,
+    "rows": [
+     [
+      "1 · BASE",
+      "2 · PAST SIMPLE",
+      "3 · PAST PARTICIPLE"
+     ],
+     [
+      "see",
+      "saw",
+      "<span style=\"background-color: #FFDB8F\"><b>seen</b></span>"
+     ],
+     [
+      "eat",
+      "ate",
+      "<span style=\"background-color: #FFDB8F\"><b>eaten</b></span>"
+     ],
+     [
+      "drink",
+      "drank",
+      "<span style=\"background-color: #FFDB8F\"><b>drunk</b></span>"
+     ],
+     [
+      "ride",
+      "rode",
+      "<span style=\"background-color: #FFDB8F\"><b>ridden</b></span>"
+     ],
+     [
+      "fly",
+      "flew",
+      "<span style=\"background-color: #FFDB8F\"><b>flown</b></span>"
+     ],
+     [
+      "be",
+      "was / were",
+      "<span style=\"background-color: #FFDB8F\"><b>been</b></span>"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "pp-match",
+   "title": "Past participle · match base and form 3",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "match",
+    "label": "PRACTICE · MATCH THE BASE AND FORM 3",
+    "html": "Say both forms aloud: <i>see… seen!</i>",
+    "pairs": [
+     {
+      "left": "see",
+      "right": "seen"
+     },
+     {
+      "left": "eat",
+      "right": "eaten"
+     },
+     {
+      "left": "drink",
+      "right": "drunk"
+     },
+     {
+      "left": "ride",
+      "right": "ridden"
+     },
+     {
+      "left": "fly",
+      "right": "flown"
+     },
+     {
+      "left": "be",
+      "right": "been"
+     },
+     {
+      "left": "buy",
+      "right": "bought"
+     },
+     {
+      "left": "meet",
+      "right": "met"
+     }
+    ]
+   }
+  },
+  {
+   "key": "pp-choose",
+   "title": "Past participle · form 2 or form 3?",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "PRACTICE · WHICH ONE IS FORM 3?",
+    "html": "Click the <b>past participle</b> (form 3).",
+    "instant": true,
+    "items": [
+     {
+      "before": "eat →",
+      "options": [
+       "ate",
+       "eaten"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "see →",
+      "options": [
+       "seen",
+       "saw"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "visit →",
+      "options": [
+       "visit",
+       "visited"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "buy →",
+      "options": [
+       "bought",
+       "buyed"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "before": "drink →",
+      "options": [
+       "drank",
+       "drunk"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "before": "be →",
+      "options": [
+       "was",
+       "been"
+      ],
+      "answer": 1,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "pp-context",
+   "title": "Present Perfect · from the Past Simple (context)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "NEW TENSE · THE PRESENT PERFECT",
+    "html": "You know the <b>Past Simple</b>:<br><i>I <b>visited</b> Rio last year. · She <b>visited</b> Rio in 2020.</i><br><br>Now the <b>Present Perfect</b>, with the same verb:<br><i>I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio. · She <span style=\"background-color: #FFC9A3\"><b>has</b></span> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio.</i><br><br>💡 Look: no <i>last year</i>, no <i>in 2020</i>. We will see why in a minute!"
+   }
+  },
+  {
+   "key": "pp-formula",
+   "title": "Present Perfect · the formula (have / has + form 3)",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "THE FORMULA",
+    "html": "<b>person</b> + <span style=\"background-color: #CBE4D8\"><b>HAVE</b></span> / <span style=\"background-color: #FFC9A3\"><b>HAS</b></span> + <span style=\"background-color: #FFDB8F\"><b>FORM 3</b></span><br><br>Colors: <span style=\"background-color: #CBE4D8\"><b>HAVE</b></span> = I, you, we, they · <span style=\"background-color: #FFC9A3\"><b>HAS</b></span> = he, she, it · <span style=\"background-color: #FFDB8F\"><b>FORM 3</b></span> = past participle<br><br>⚠️ he / she / it → <span style=\"background-color: #FFC9A3\"><b>has</b></span>, like <i>he work<b>s</b></i>, <i>she ha<b>s</b></i>.<br>⚠️ Always <span style=\"background-color: #FFDB8F\"><b>form 3</b></span>: ✗ <i>I have visit</i> ✗ <i>I have ate</i> ✓ <i>I have eaten</i>"
+   }
+  },
+  {
+   "key": "pp-table-visit",
+   "title": "Present Perfect · affirmative table (visit)",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "PRESENT PERFECT · AFFIRMATIVE (VISIT)",
+    "header": true,
+    "rows": [
+     [
+      "PERSON",
+      "HAVE / HAS",
+      "FORM 3",
+      ""
+     ],
+     [
+      "I",
+      "<span style=\"background-color: #CBE4D8\"><b>have</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio."
+     ],
+     [
+      "You",
+      "<span style=\"background-color: #CBE4D8\"><b>have</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio."
+     ],
+     [
+      "He / She / It",
+      "<span style=\"background-color: #FFC9A3\"><b>has</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio."
+     ],
+     [
+      "We",
+      "<span style=\"background-color: #CBE4D8\"><b>have</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio."
+     ],
+     [
+      "They",
+      "<span style=\"background-color: #CBE4D8\"><b>have</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "pp-table-eat",
+   "title": "Present Perfect · affirmative table (eat)",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "THE SAME WITH AN IRREGULAR VERB (EAT)",
+    "header": true,
+    "rows": [
+     [
+      "PERSON",
+      "HAVE / HAS",
+      "FORM 3",
+      ""
+     ],
+     [
+      "I",
+      "<span style=\"background-color: #CBE4D8\"><b>have</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>eaten</b></span>",
+      "sushi."
+     ],
+     [
+      "You",
+      "<span style=\"background-color: #CBE4D8\"><b>have</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>eaten</b></span>",
+      "sushi."
+     ],
+     [
+      "He / She / It",
+      "<span style=\"background-color: #FFC9A3\"><b>has</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>eaten</b></span>",
+      "sushi."
+     ],
+     [
+      "We",
+      "<span style=\"background-color: #CBE4D8\"><b>have</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>eaten</b></span>",
+      "sushi."
+     ],
+     [
+      "They",
+      "<span style=\"background-color: #CBE4D8\"><b>have</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>eaten</b></span>",
+      "sushi."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "pp-when",
+   "title": "Present Perfect · when do we use it? (life experiences)",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "WHEN DO WE USE IT? · LIFE EXPERIENCES",
+    "html": "Something happened <b>in your life</b>, at some time <b>until now</b>.<br><b>When?</b> It is not important, so we <b>don't say</b> it.<br><br><i>I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio.</i><br><i>She <span style=\"background-color: #FFC9A3\"><b>has</b></span> <span style=\"background-color: #FFDB8F\"><b>eaten</b></span> sushi.</i><br><i>I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>seen</b></span> a whale.</i><br><i>He <span style=\"background-color: #FFC9A3\"><b>has</b></span> <span style=\"background-color: #FFDB8F\"><b>ridden</b></span> a horse.</i><br><i>We <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>met</b></span> a famous person.</i><br><br>💡 <b>been to</b> = visited: <i>I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>been</b></span> to Bahia.</i> (= I have visited Bahia)<br>💡 How many times? <b>once</b> (1×) · <b>twice</b> (2×) · <b>three times</b> · <b>many times</b><br><i>I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio <b>twice</b>. · She <span style=\"background-color: #FFC9A3\"><b>has</b></span> <span style=\"background-color: #FFDB8F\"><b>flown</b></span> in a plane <b>many times</b>.</i>"
+   }
+  },
+  {
+   "key": "tl-ps",
+   "title": "Timeline · Past Simple: one moment, we say WHEN.",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "image",
+    "file": "images/present-perfect/timeline-past-simple.webp",
+    "caption": "Timeline · Past Simple: one moment, we say WHEN.",
+    "layout": "full"
+   }
+  },
+  {
+   "key": "tl-pp",
+   "title": "Timeline · Present Perfect: an experience in my life, WHEN is not important.",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "image",
+    "file": "images/present-perfect/timeline-present-perfect.webp",
+    "caption": "Timeline · Present Perfect: an experience in my life, WHEN is not important.",
+    "layout": "full"
+   }
+  },
+  {
+   "key": "pp-vs-ps",
+   "title": "Present Perfect × Past Simple · when or no when?",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "PAST SIMPLE OR PRESENT PERFECT?",
+    "html": "Did you say <b>WHEN</b>? → <b>Past Simple</b><br><i>I <b>visited</b> Rio <b>in 2019</b>. · She <b>visited</b> Rio <b>last year</b>.</i><br>WHEN words: <i>yesterday, last week, last year, in 2019, 3 years ago, when I was a child</i><br><br>No WHEN, only the <b>experience</b>? → <b>Present Perfect</b><br><i>I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio. · She <span style=\"background-color: #FFC9A3\"><b>has</b></span> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio.</i><br><br>⚠️ ✗ <i>I have visited Rio in 2019.</i> → ✓ <i>I visited Rio in 2019.</i>"
+   }
+  },
+  {
+   "key": "pp-reveal",
+   "title": "Present Perfect · 5 basic sentences (say it, then reveal)",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala",
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "PRACTICE · 5 BASIC SENTENCES",
+    "html": "<b>Say</b> the sentence first. Then click <b>Revelar</b>. Remember: <span style=\"background-color: #CBE4D8\"><b>have</b></span> / <span style=\"background-color: #FFC9A3\"><b>has</b></span> + <span style=\"background-color: #FFDB8F\"><b>form 3</b></span>.",
+    "items": [
+     {
+      "before": "I",
+      "hint": "visit",
+      "after": "São Paulo.",
+      "answers": [
+       "have visited",
+       "'ve visited"
+      ]
+     },
+     {
+      "before": "She",
+      "hint": "eat",
+      "after": "Japanese food.",
+      "answers": [
+       "has eaten",
+       "'s eaten"
+      ]
+     },
+     {
+      "before": "We",
+      "hint": "see",
+      "after": "the ocean.",
+      "answers": [
+       "have seen",
+       "'ve seen"
+      ]
+     },
+     {
+      "before": "He",
+      "hint": "ride",
+      "after": "a horse.",
+      "answers": [
+       "has ridden",
+       "'s ridden"
+      ]
+     },
+     {
+      "before": "They",
+      "hint": "meet",
+      "after": "a famous person.",
+      "answers": [
+       "have met",
+       "'ve met"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "ex-have-has",
+   "title": "Present Perfect · have or has?",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "PRACTICE · HAVE OR HAS?",
+    "html": "<span style=\"background-color: #CBE4D8\"><b>HAVE</b></span> = I, you, we, they · <span style=\"background-color: #FFC9A3\"><b>HAS</b></span> = he, she, it",
+    "instant": true,
+    "items": [
+     {
+      "before": "I",
+      "options": [
+       "have",
+       "has"
+      ],
+      "answer": 0,
+      "after": "seen a snake."
+     },
+     {
+      "before": "My brother",
+      "options": [
+       "have",
+       "has"
+      ],
+      "answer": 1,
+      "after": "visited Argentina."
+     },
+     {
+      "before": "We",
+      "options": [
+       "have",
+       "has"
+      ],
+      "answer": 0,
+      "after": "eaten pizza with pineapple!"
+     },
+     {
+      "before": "The dog",
+      "options": [
+       "have",
+       "has"
+      ],
+      "answer": 1,
+      "after": "drunk all the water."
+     },
+     {
+      "before": "You",
+      "options": [
+       "have",
+       "has"
+      ],
+      "answer": 0,
+      "after": "met my family."
+     },
+     {
+      "before": "My parents",
+      "options": [
+       "have",
+       "has"
+      ],
+      "answer": 0,
+      "after": "flown to Europe twice."
+     }
+    ]
+   }
+  },
+  {
+   "key": "ex-grandma",
+   "title": "Present Perfect · Grandma has had an interesting life",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Reading"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "PRACTICE · GRANDMA ROSA, 82, ON THE FARM",
+    "html": "Remember Grandma Rosa and the chicken thief? She has had an interesting life! Complete with <b>has + form 3</b>.",
+    "items": [
+     {
+      "before": "Grandma Rosa",
+      "hint": "ride",
+      "after": "a horse many times.",
+      "answers": [
+       "has ridden",
+       "'s ridden"
+      ]
+     },
+     {
+      "before": "She",
+      "hint": "see",
+      "after": "a fox on the farm.",
+      "answers": [
+       "has seen",
+       "'s seen"
+      ]
+     },
+     {
+      "before": "She",
+      "hint": "lose",
+      "after": "three chickens!",
+      "answers": [
+       "has lost",
+       "'s lost"
+      ]
+     },
+     {
+      "before": "She",
+      "hint": "make",
+      "after": "cheese at home.",
+      "answers": [
+       "has made",
+       "'s made"
+      ]
+     },
+     {
+      "before": "She",
+      "hint": "fly",
+      "after": "in a plane once.",
+      "answers": [
+       "has flown",
+       "'s flown"
+      ]
+     },
+     {
+      "before": "She",
+      "hint": "visit",
+      "after": "São Paulo twice.",
+      "answers": [
+       "has visited",
+       "'s visited"
+      ]
+     },
+     {
+      "before": "Her grandchildren",
+      "hint": "eat",
+      "after": "her famous cake many times.",
+      "answers": [
+       "have eaten",
+       "'ve eaten"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "ex-ps-or-pp",
+   "title": "Past Simple or Present Perfect? (when or experience)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "PRACTICE · PAST SIMPLE OR PRESENT PERFECT?",
+    "html": "Is there a <b>WHEN</b>? → Past Simple. Only the experience? → Present Perfect.",
+    "instant": false,
+    "items": [
+     {
+      "before": "I",
+      "options": [
+       "visited",
+       "have visited"
+      ],
+      "answer": 0,
+      "after": "Rio in 2019."
+     },
+     {
+      "before": "I",
+      "options": [
+       "visited",
+       "have visited"
+      ],
+      "answer": 1,
+      "after": "Rio. It's a beautiful city!"
+     },
+     {
+      "before": "She",
+      "options": [
+       "ate",
+       "has eaten"
+      ],
+      "answer": 0,
+      "after": "sushi yesterday."
+     },
+     {
+      "before": "She",
+      "options": [
+       "ate",
+       "has eaten"
+      ],
+      "answer": 1,
+      "after": "sushi many times."
+     },
+     {
+      "before": "We",
+      "options": [
+       "saw",
+       "have seen"
+      ],
+      "answer": 1,
+      "after": "whales twice in our lives."
+     },
+     {
+      "before": "He",
+      "options": [
+       "rode",
+       "has ridden"
+      ],
+      "answer": 0,
+      "after": "a horse when he was a child."
+     }
+    ]
+   }
+  },
+  {
+   "key": "ex-fix",
+   "title": "Present Perfect · fix the mistakes",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "FIX THE MISTAKES",
+    "html": "Each sentence has <b>one</b> mistake. Write the correct sentence.",
+    "items": [
+     {
+      "before": "She have seen a fox. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "She has seen a fox.",
+       "She has seen a fox",
+       "She's seen a fox.",
+       "She's seen a fox"
+      ]
+     },
+     {
+      "before": "I have eat sushi. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "I have eaten sushi.",
+       "I have eaten sushi",
+       "I've eaten sushi.",
+       "I've eaten sushi"
+      ]
+     },
+     {
+      "before": "He has visit Paris. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "He has visited Paris.",
+       "He has visited Paris",
+       "He's visited Paris.",
+       "He's visited Paris"
+      ]
+     },
+     {
+      "before": "We has played this game. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "We have played this game.",
+       "We have played this game",
+       "We've played this game.",
+       "We've played this game"
+      ]
+     },
+     {
+      "before": "I have saw a whale. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "I have seen a whale.",
+       "I have seen a whale",
+       "I've seen a whale.",
+       "I've seen a whale"
+      ]
+     },
+     {
+      "before": "I have visited Rio last year. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "I visited Rio last year.",
+       "I visited Rio last year"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "talk-experiences",
+   "title": "Present Perfect · talk about your experiences",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "SPEAKING · YOUR EXPERIENCES",
+    "html": "Answer with <b>I</b> <span style=\"background-color: #CBE4D8\"><b>have</b></span> + <span style=\"background-color: #FFDB8F\"><b>form 3</b></span>. Add how many times: <i>once, twice, many times</i>.",
+    "words": [
+     "once",
+     "twice",
+     "three times",
+     "many times"
+    ],
+    "cats": [
+     {
+      "name": "Places",
+      "qs": [
+       "Say 3 cities you have visited.",
+       "Say a beach you have been to.",
+       "Say a place you have visited many times.",
+       "Say a country your family has visited."
+      ]
+     },
+     {
+      "name": "Food & drink",
+      "qs": [
+       "Say a strange food you have eaten.",
+       "Say a drink you have drunk many times.",
+       "Say something you have cooked.",
+       "Say a restaurant you have been to twice."
+      ]
+     },
+     {
+      "name": "Life",
+      "qs": [
+       "Say an animal you have seen in real life.",
+       "Say something you have bought online.",
+       "Say a famous person you have seen (on the street or at a show).",
+       "Say something you have lost."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "two-truths",
+   "title": "Two truths and a lie (Present Perfect)",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "GAME · TWO TRUTHS AND A LIE",
+    "html": "Say <b>3 sentences</b> about your life with <span style=\"background-color: #CBE4D8\"><b>have</b></span> + <span style=\"background-color: #FFDB8F\"><b>form 3</b></span>. <b>Two are true, one is a lie.</b> The teacher guesses the lie!<br><br><i>I have ridden a horse. · I have eaten snake. · I have seen snow.</i><br><br>Then the teacher plays, and you guess. Use the verbs from today: <i>visit, eat, see, drink, ride, fly, meet, buy, lose, be</i>."
+   }
+  },
+  {
+   "key": "stretch",
+   "title": "Stretch the sentence (Present Perfect)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "SPEAKING · STRETCH THE SENTENCE",
+    "html": "Say the short sentence. Then make it longer with the word on the card. Draw again and make it <b>even longer</b>!<br><i>I have visited Rio. → I have visited Rio twice, and I have eaten feijoada there.</i>",
+    "promptLabel": "ADD",
+    "lines": [
+     "I have visited Rio.",
+     "I have eaten sushi.",
+     "I have seen a snake.",
+     "I have ridden a horse.",
+     "I have met a famous person.",
+     "I have bought a car.",
+     "I have flown in a plane.",
+     "I have lost my phone."
+    ],
+    "prompts": [
+     "once / twice / many times",
+     "and",
+     "but",
+     "because",
+     "with my…",
+     "my family has…",
+     "it was…"
+    ]
+   }
+  },
+  {
+   "key": "wrapup",
+   "title": "Wrap-up · Present Perfect (first class)",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "Last questions. Complete sentences!",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "What is form 3 of eat? see? be? buy?",
+       "Have or has? He… · I… · My parents…",
+       "Say 3 things you have done in your life.",
+       "Say 1 thing your mother or father has done in their life.",
+       "Which form 3 is the most difficult for you?",
+       "Past Simple or Present Perfect: \"I ___ (visit) Rio in 2019\"?"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Present Perfect (part 1): Form 3 and Life Experiences",
+  "subtitle": "The past participle (form 3) · have / has + form 3 · life experiences · Past Simple × Present Perfect · affirmative only",
+  "level": "A2",
+  "tags": [
+   "Grammar",
+   "Speaking"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "pp-what"
+   },
+   {
+    "model": "pp-regular"
+   },
+   {
+    "model": "pp-regular-practice"
+   },
+   {
+    "model": "pp-irr-same"
+   },
+   {
+    "model": "pp-irr-new"
+   },
+   {
+    "model": "pp-match"
+   },
+   {
+    "model": "pp-choose"
+   },
+   {
+    "model": "pp-context"
+   },
+   {
+    "model": "pp-formula"
+   },
+   {
+    "model": "pp-table-visit"
+   },
+   {
+    "model": "pp-table-eat"
+   },
+   {
+    "model": "pp-when"
+   },
+   {
+    "model": "tl-ps"
+   },
+   {
+    "model": "tl-pp"
+   },
+   {
+    "model": "pp-vs-ps"
+   },
+   {
+    "model": "pp-reveal"
+   },
+   {
+    "model": "ex-have-has"
+   },
+   {
+    "model": "ex-grandma"
+   },
+   {
+    "model": "ex-ps-or-pp"
+   },
+   {
+    "model": "ex-fix"
+   },
+   {
+    "model": "talk-experiences"
+   },
+   {
+    "model": "two-truths"
+   },
+   {
+    "model": "stretch"
+   },
+   {
+    "model": "wrapup"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

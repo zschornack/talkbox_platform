@@ -14,6 +14,7 @@
 // }
 // Cadastro em lote: um pacote só com "students": [ { "name": "Ana" }, ... ] cria os alunos que ainda não existem
 // (mesmo nome, sem diferenciar maiúsculas, é reaproveitado). Pode vir junto com os campos acima.
+// Acrescentar a uma aula existente: "append": { "student", "lesson" (título ou começo dele), "blocks": [ { "model": "x" } ] }.
 // Renomear: "rename": [ { "from": "William & Letícia", "to": "William" } ] muda o nome e mantém aulas, mapa e histórico.
 // Roda antes do cadastro. Se "from" não existe ou "to" já existe, não faz nada.
 // Copiar de outro aluno: { "name": "Letícia", "copyFrom": "William" } cria o aluno com o nível, o objetivo e o mapa
@@ -152,20 +153,53 @@ export function importPack(pack, file = '', dir = CONTENT_DIR) {
         db.finishLesson(lesson.id, { lastBlockId, assessments: fin.assessments || {}, message: fin.message || '' });
       }
     }
+    // Acrescentar a uma aula que já existe: "append": { "student": "Thiago Santos", "lesson": "Present Perfect (part 1)…", "blocks": [ { "model": "x" } ] }
+    // Os blocos entram antes do bloco de anotações (ou no fim). Procura a aula pelo título (ou pelo começo dele), a mais recente.
+    if (pack.append) {
+      const who = byName(pack.append.student);
+      if (!who) throw new Error(`"append": aluno "${pack.append.student}" não encontrado (${pack.id})`);
+      const want = String(pack.append.lesson || '').trim().toLowerCase();
+      const target = db.listLessons({ studentId: who.id }).find((l) => l.title.toLowerCase() === want || (want && l.title.toLowerCase().startsWith(want)));
+      if (!target) throw new Error(`"append": aula "${pack.append.lesson}" de ${who.name} não encontrada (${pack.id})`);
+      const full = db.getLesson(target.id);
+      const add = (pack.append.blocks || []).map((entry) => {
+        const m = models[entry.model];
+        if (!m) throw new Error(`Modelo "${entry.model}" não existe no pacote ${pack.id}`);
+        const copy = JSON.parse(JSON.stringify(m.block));
+        copy.id = bid();
+        for (const key of ['items', 'pairs']) (copy[key] || []).forEach((it) => (it.id = bid()));
+        copy.source = { modelId: m.id, title: m.title };
+        return copy;
+      });
+      const blocks = [...full.doc.blocks];
+      const notesAt = blocks.findIndex((b) => b.type === 'notes');
+      blocks.splice(notesAt < 0 ? blocks.length : notesAt, 0, ...add);
+      lesson = db.updateLesson(full.id, { doc: { ...full.doc, blocks } });
+      student = who;
+    }
     return { student, created, models: Object.keys(models).length, lesson };
   });
 }
 
 export function importContentDir(dir = CONTENT_DIR) {
   if (!fs.existsSync(dir)) return;
+  // pacotes que acrescentam a uma aula ("append") vêm por último: a aula já precisa existir
+  const packs = [];
   for (const name of fs.readdirSync(dir).filter((f) => f.endsWith('.json')).sort()) {
     try {
-      const pack = JSON.parse(fs.readFileSync(path.join(dir, name), 'utf8'));
+      packs.push({ name, pack: JSON.parse(fs.readFileSync(path.join(dir, name), 'utf8')) });
+    } catch (err) {
+      console.error(`  Não consegui ler ${name}: ${err.message}`);
+    }
+  }
+  packs.sort((a, b) => (a.pack.append ? 1 : 0) - (b.pack.append ? 1 : 0));
+  for (const { name, pack } of packs) {
+    try {
       const out = importPack(pack, name, dir);
       if (out?.created) console.log(`  Alunos cadastrados: ${out.created} (${name})`);
       if (out && (out.lesson || out.models)) {
         const who = out.student ? ` para ${out.student.name}` : '';
-        console.log(`  Conteúdo novo importado${who}: ${out.lesson ? `aula "${out.lesson.title}"` : 'sem aula'} + ${out.models} modelos (${name})`);
+        console.log(`  Conteúdo novo importado${who}: ${out.lesson ? `${pack.append ? 'blocos novos na aula' : 'aula'} "${out.lesson.title}"` : 'sem aula'} + ${out.models} modelos (${name})`);
       }
     } catch (err) {
       console.error(`  Não consegui importar ${name}: ${err.message}`);

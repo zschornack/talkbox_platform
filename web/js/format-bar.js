@@ -3,7 +3,7 @@ import { h, svgIcon, ICONS } from './dom.js';
 
 const HL = [
   ['#FFDB8F', 'Destacar em amarelo'],
-  ['#B4E2E3', 'Destacar em verde-água'],
+  ['#CBE4D8', 'Destacar em verde'],
   ['#FFC9A3', 'Destacar em laranja'],
 ];
 

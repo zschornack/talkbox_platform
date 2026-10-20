@@ -31,18 +31,55 @@ Tudo fica na pasta `data/`, dentro do projeto:
 - `data/backups/`: **cópia de segurança automática**, uma por dia (guarda as últimas 30), com as imagens.
 
 No menu lateral também tem **Fazer cópia de segurança** e **Baixar todos os dados** (um arquivo só, com tudo).
-A pasta `data/` não vai para o GitHub.
+A pasta `data/` fica só no seu computador.
 
 **Nada é apagado.** "Excluir" uma aula ou um modelo agora **arquiva**: some das listas, mas fica guardado, e o histórico continua certo. O próprio banco recusa apagar alunos, aulas, modelos, versões e avaliações.
 
-**Atualizar da versão 0.3**: é só `git pull` e `npm start`. O banco é atualizado sozinho na primeira vez, sem perder nada (o mapa de cada aluno vira o começo do histórico de evolução).
+**Atualizar de uma versão anterior**: é só `npm start`. O banco é atualizado sozinho na primeira vez, sem perder nada.
+
+## Modo atual: só local
+
+Por enquanto o TalkBox roda **só neste computador**, com um professor só. Nada vai para o GitHub.
+Tudo o que você faz no app grava na hora no banco `data/talkbox.db`: editar a aula, finalizar, reabrir, preparar a próxima, o mapa, as notas da ficha e os modelos.
+
+## Novidades da versão 0.6
+
+**10 tipos novos de bloco** (lista oficial nos requisitos, seção 7.1.1). Todos aparecem no **+ Inserir bloco** e nos Modelos:
+
+- **Tabela de tempo verbal**: escolha o tempo e o verbo e a tabela se monta sozinha, com todas as pessoas e as cores da metodologia.
+- **Linha do tempo**: passado → NOW, com pontos ("35 | 2019") e intervalos ("10-90 | MY LIFE").
+- **Lista com revelar**: cada linha revela só a própria resposta.
+- **Ordenar frases**: fichas embaralhadas; " / " mantém palavras juntas numa ficha.
+- **Transformar frases**: frase + instrução, resposta digitada com alternativas.
+- **Encontrar o erro**: clique na palavra errada (no painel: `She [have=has] seen a fox.`).
+- **Separar em grupos**: de 2 a 4 colunas.
+- **Escala de opinião**: de 1 a 5, uma afirmação por vez.
+- **Cartões de role-play**: cada cartão começa escondido.
+- **Cronômetro de fala**: contagem regressiva com tema sorteado.
+
+As respostas e marcas do aluno ficam no estado da aula, como nos outros exercícios. Flashcards, imagem com tarefa, áudio e vídeo ficam para depois.
+
+**Pacotes podem acrescentar a uma aula que já existe** (`"append"`), entrando antes do bloco de anotações.
+
+## Novidades da versão 0.5
+
+**Visual igual ao site da escola**: verde e laranja da logo, Nunito Sans nos títulos e na interface, Atkinson Hyperlegible no texto corrido, botões em pílula. A marca (logo + "TalkBox") aparece sempre do mesmo jeito: no menu, na barra da aula, no editor de modelos, no cabeçalho do PDF e no ícone da aba.
+
+**Reabrir aula**: numa aula finalizada, o botão **Reabrir** fica ao lado de "Finalizada". Ele desfaz o Finalizar aula:
+- o mapa volta a ficar como estava antes desta aula;
+- os pendentes que ela criou saem da lista, e os que ela resolveu voltam a ficar pendentes;
+- "Onde paramos" volta para a aula anterior.
+
+Depois é só finalizar de novo. Nada é apagado: a finalização desfeita fica registrada no banco.
+
+**Anotação para a próxima aula**: o antigo "recado para o próximo professor" agora é a sua anotação. Ela aparece em "Onde paramos" e no topo da aula seguinte (nunca no PDF).
 
 ## Novidades da versão 0.4
 
 **Finalizar aula (handover)**: botão na barra de cima da aula. Uma tela só:
 1. **Até onde chegamos?** Clique no último bloco feito. O que vem depois fica **pendente** (anotações e textos vazios não contam).
 2. **Como ficaram os conteúdos?** Praticando ou Já está bom, para cada conteúdo da aula. Dá para acrescentar outro.
-3. **Recado para o próximo professor.** Vazio = está tudo certo.
+3. **Anotação para a próxima aula.** Vazio = está tudo certo.
 
 Depois aparece o resumo, com o botão de exportar o PDF e o link para a ficha.
 
@@ -97,7 +134,7 @@ Depois aparece o resumo, com o botão de exportar o PDF e o link para a ficha.
   - cria o aluno, ou usa o que já existe com o mesmo nome;
   - salva as atividades em Modelos;
   - monta a aula a partir delas.
-- É assim que aulas preparadas fora do seu computador chegam até você: `git pull` e `npm start`.
+- Para importar um pacote novo, coloque o `.json` na pasta `content/` e rode `npm start` de novo.
 - **Turma que se separa**: um pacote com `"rename": [{ "from": "Ana & Bia", "to": "Ana" }]` muda o nome e mantém aulas, mapa e histórico. Um aluno com `"copyFrom": "Ana"` em `"students"` nasce com o nível, o objetivo e o mapa do outro.
 - **Imagens no pacote**: um bloco de imagem pode trazer `"file": "images/…/x.webp"` (WebP, dentro de `content/`). Na importação, a imagem vai para `data/uploads/` com o nome da impressão digital, como no envio pelo app, e nunca é guardada duas vezes.
 - Disponíveis agora: **Victor · Plague Scare in Siberia** (IELTS), **Luana · aula 20**, **Thiago Caretta · Family, Birthdays and Unusual World Records** e **Bia & Vini · Natural Disasters: Stories That Shook the World** (com 9 ilustrações).

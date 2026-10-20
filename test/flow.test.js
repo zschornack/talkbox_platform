@@ -164,6 +164,49 @@ test('descartar pendência', async () => {
   assert.equal(next.doc.blocks.filter((b) => b.pending).length, 0);
 });
 
+test('reabrir aula: desfaz o finalizar sem apagar nada e deixa finalizar de novo', async () => {
+  const s = await ok('POST', '/api/students', { name: 'Reabre' });
+  const mA = await modelOf('Reabrir A', ['Articles']);
+  const mB = await modelOf('Reabrir B', ['Quantifiers']);
+  // aula 1 deixa B pendente
+  const l1 = await ok('POST', `/api/students/${s.id}/lessons`, { title: 'Aula 1' });
+  l1.doc.blocks = [asBlock(mA, 'r1'), asBlock(mB, 'r2')];
+  await ok('PUT', `/api/lessons/${l1.id}`, { doc: l1.doc, date: '2026-10-01' });
+  await ok('POST', `/api/lessons/${l1.id}/finish`, { lastBlockId: 'r1', assessments: { Articles: 'practicing' } });
+  // aula 2 resolve B e avalia Articles como bom
+  const l2 = await ok('POST', `/api/students/${s.id}/next-lesson`, { title: 'Aula 2' });
+  const pb = l2.doc.blocks.find((b) => b.pending);
+  l2.doc.blocks = [pb, asBlock(mA, 'r3')];
+  await ok('PUT', `/api/lessons/${l2.id}`, { doc: l2.doc, date: '2026-10-08' });
+  await ok('POST', `/api/lessons/${l2.id}/finish`, { lastBlockId: pb.id, assessments: { Articles: 'good' }, message: 'errado' });
+  let ficha = await ok('GET', `/api/students/${s.id}`);
+  assert.equal(ficha.map.Articles, 'good');
+  assert.equal(ficha.stop.lesson.id, l2.id);
+  assert.deepEqual(ficha.stop.pending.map((p) => p.title), ['Reabrir A']);
+
+  // reabrir a aula 2: volta ao estado de antes dela
+  const out = await ok('POST', `/api/lessons/${l2.id}/reopen`);
+  assert.equal(out.lesson.status, 'preparing');
+  assert.ok(!out.lesson.handover);
+  assert.equal((await call('POST', `/api/lessons/${l2.id}/reopen`)).status, 400, 'não reabre o que não está finalizado');
+  ficha = await ok('GET', `/api/students/${s.id}`);
+  assert.equal(ficha.map.Articles, 'practicing', 'a avaliação da aula reaberta sai do mapa');
+  assert.equal(ficha.stop.lesson.id, l1.id, 'onde paramos volta para a aula 1');
+  assert.deepEqual(ficha.stop.pending.map((p) => p.title), ['Reabrir B'], 'o pendente resolvido volta a ficar aberto');
+
+  // finalizar de novo funciona
+  const fin = await ok('POST', `/api/lessons/${l2.id}/finish`, { lastBlockId: 'r3', assessments: { Articles: 'good' }, message: 'certo' });
+  assert.equal(fin.resolvedPending, 1);
+  ficha = await ok('GET', `/api/students/${s.id}`);
+  assert.equal(ficha.map.Articles, 'good');
+  assert.equal(ficha.stop.message, 'certo');
+  assert.equal(ficha.stop.pending.length, 0);
+  // nada foi apagado: os dois handovers da aula 2 continuam no banco
+  const dump = await ok('GET', '/api/export');
+  assert.equal(dump.tables.handovers.filter((x) => x.lesson_id === l2.id).length, 2);
+  assert.ok(dump.tables.assessments.some((x) => x.lesson_id === l2.id && x.voided_at));
+});
+
 test('nada é apagado: aulas e modelos são arquivados', async () => {
   const s = await ok('POST', '/api/students', { name: 'Arquivo' });
   const m = await modelOf('Arquivar', ['Articles']);

@@ -69,6 +69,9 @@ const backup = () => {
 backup();
 setInterval(backup, 6 * 60 * 60 * 1000).unref();
 
-server.listen(PORT, () => {
+// Só este computador acessa (127.0.0.1). Os dados dos alunos não ficam abertos para a rede Wi-Fi.
+// Para abrir em outro aparelho da mesma rede, de propósito: HOST=0.0.0.0 npm start
+const HOST = process.env.HOST || '127.0.0.1';
+server.listen(PORT, HOST, () => {
   console.log(`\n  TalkBox pronto → abra http://localhost:${PORT}\n`);
 });

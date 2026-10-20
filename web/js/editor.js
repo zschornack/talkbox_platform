@@ -1,5 +1,5 @@
 // A aula (requisitos seção 9): um modo só, sempre editável e sempre limpa.
-import { h, svgIcon, ICONS, uid, formatDate } from './dom.js';
+import { h, svgIcon, ICONS, uid, formatDate, brandMark } from './dom.js';
 import { api, autosaver, saveOnExit } from './api.js';
 import { editable } from './editable.js';
 import { mountFormatBar } from './format-bar.js';
@@ -9,7 +9,7 @@ import { openExportDialog } from './export.js';
 import { mountBlock, copyBlock } from './block-view.js';
 import { openModelPicker } from './model-picker.js';
 import { saveAsModelDialog } from './models.js';
-import { toast } from './ui.js';
+import { toast, confirmDialog } from './ui.js';
 import { openFinishDialog } from './handover.js';
 
 const SIZES = [16, 18, 20, 22, 24, 28, 32];
@@ -57,7 +57,7 @@ export async function renderEditor(root, id, { openExport = false } = {}) {
   const printDate = h('span', formatDate(lesson.date || lesson.createdAt));
   const head = h(
     'header.lesson-head',
-    h('div.print-head', h('span', lesson.student ? `Aluno(a): ${lesson.student}` : ''), printDate),
+    h('div.print-head', brandMark({ href: null, size: 'sm' }), h('span.print-meta', h('span', lesson.student ? `Aluno(a): ${lesson.student}` : ''), printDate)),
     h(
       'div.chips',
       editable(h('span.chip.level'), {
@@ -100,8 +100,8 @@ export async function renderEditor(root, id, { openExport = false } = {}) {
   // recado do professor anterior (aula criada pela ficha): só na tela, nunca no PDF
   const received = lesson.status === 'preparing' && lesson.receivedMessage
     ? h('aside.received-note', { role: 'note' },
-        h('div', h('strong', 'Recado do último professor'), h('p', lesson.receivedMessage)),
-        h('button.icon-btn', { type: 'button', 'aria-label': 'Esconder recado', onClick: (e) => e.currentTarget.parentElement.remove() }, svgIcon(ICONS.x)))
+        h('div', h('strong', 'Sua anotação da aula anterior'), h('p', lesson.receivedMessage)),
+        h('button.icon-btn', { type: 'button', 'aria-label': 'Esconder anotação', onClick: (e) => e.currentTarget.parentElement.remove() }, svgIcon(ICONS.x)))
     : null;
 
   const blocksEl = h('div.blocks');
@@ -282,9 +282,11 @@ export async function renderEditor(root, id, { openExport = false } = {}) {
   const paintFinish = () => {
     if (lesson.status === 'done') {
       const when = lesson.handover?.finishedAt;
-      finishSlot.replaceChildren(h('span.done-badge', { title: when ? `Finalizada em ${formatDate(when)}` : 'Aula finalizada' }, svgIcon(ICONS.check, 16), 'Finalizada'));
+      finishSlot.replaceChildren(
+        h('span.done-badge', { title: when ? `Finalizada em ${formatDate(when)}` : 'Aula finalizada' }, svgIcon(ICONS.check, 16), 'Finalizada'),
+        h('button.btn', { type: 'button', title: 'Desfaz o "Finalizar aula" para corrigir e finalizar de novo', onClick: () => doReopen() }, 'Reabrir'));
     } else if (lesson.studentId) {
-      finishSlot.replaceChildren(h('button.btn.primary', { type: 'button', onClick: () => doFinish() }, 'Finalizar aula'));
+      finishSlot.replaceChildren(h('button.btn.cta', { type: 'button', onClick: () => doFinish() }, 'Finalizar aula'));
     } else {
       finishSlot.replaceChildren(h('button.btn.primary', { type: 'button', disabled: true, title: 'Ligue a aula a um aluno para finalizar' }, 'Finalizar aula'));
     }
@@ -297,13 +299,26 @@ export async function renderEditor(root, id, { openExport = false } = {}) {
       onExport: () => doExport(),
     }).catch((err) => toast(err.message));
 
+  const doReopen = async () => {
+    const ok = await confirmDialog(
+      'O mapa volta a ficar como estava antes desta aula, os pendentes que ela criou saem da lista e os que ela resolveu voltam a ficar pendentes. Depois é só finalizar de novo. Se você já preparou a aula seguinte, ela não muda.',
+      { title: 'Reabrir esta aula?', confirmLabel: 'Reabrir aula' });
+    if (!ok) return;
+    try {
+      const out = await api.reopenLesson(lesson.id);
+      Object.assign(lesson, { status: 'preparing', handover: null });
+      paintFinish();
+      toast(out.discarded || out.reopened ? 'Aula reaberta. Mapa e pendências voltaram ao que eram.' : 'Aula reaberta.');
+    } catch (err) { toast(err.message); }
+  };
+
   // ---------- barra superior (meio apagada até passar o mouse) ----------
   const doExport = () => openExportDialog({ lesson, doc, flush: () => saver.flush() });
   const chrome = h(
     'div.chrome',
     h('div.left',
       h('a.btn.icon', { href: backHref, title: lesson.student ? `Voltar para a ficha de ${lesson.student}` : 'Voltar', 'aria-label': 'Voltar' }, svgIcon(ICONS.back)),
-      h('a.brand', { href: '#/' }, 'TalkBox'),
+      brandMark(),
       status
     ),
     h('div.right',

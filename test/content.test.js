@@ -39,9 +39,13 @@ test('cada pacote vira aluno + aula + modelos, e a aula usa os modelos', async (
     const lesson = ficha.lessons.find((l) => l.title === pack.lesson.title);
     assert.ok(lesson, 'aula criada');
     const full = await get(`/api/lessons/${lesson.id}`);
-    assert.equal(full.doc.blocks.length, pack.lesson.blocks.length);
+    // pacotes "append" acrescentam blocos a esta aula
+    const appended = PACKS.filter((p) => p.append && p.append.student === pack.student.name && pack.lesson.title.toLowerCase().startsWith(p.append.lesson.toLowerCase()))
+      .reduce((n, p) => n + p.append.blocks.length, 0);
+    assert.equal(full.doc.blocks.length, pack.lesson.blocks.length + appended);
     const fromModels = full.doc.blocks.filter((b) => b.source?.modelId);
-    assert.equal(fromModels.length, pack.lesson.blocks.filter((b) => b.model).length);
+    assert.equal(fromModels.length, pack.lesson.blocks.filter((b) => b.model).length + appended);
+    if (appended) assert.equal(full.doc.blocks.at(-1).type, 'notes', 'o que foi acrescentado entra antes das anotações');
     const ids = new Set(full.doc.blocks.map((b) => b.id));
     assert.equal(ids.size, full.doc.blocks.length, 'ids únicos');
   }

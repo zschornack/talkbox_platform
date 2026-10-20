@@ -1,7 +1,7 @@
 // Baralho de perguntas (requisitos 9.11): uma carta por vez, temas em abas, palavra-desafio opcional.
 import { h, escapeHtml } from '../dom.js';
 import { editable } from '../editable.js';
-import { toText } from '../sanitize.js';
+import { toText, sanitize } from '../sanitize.js';
 
 const lines = (s) => s.split('\n').map((x) => x.trim()).filter(Boolean);
 
@@ -76,7 +76,7 @@ export const deck = {
       'div.print-only',
       b.cats.map((c) => [
         b.cats.length > 1 ? h('div.print-group', c.name) : null,
-        h('ol.print-list', c.qs.filter((q) => toText(q).trim()).map((q) => { const li = h('li'); li.innerHTML = q; return li; })),
+        h('ol.print-list', c.qs.filter((q) => toText(q).trim()).map((q) => { const li = h('li'); li.innerHTML = sanitize(q); return li; })),
       ])
     );
 

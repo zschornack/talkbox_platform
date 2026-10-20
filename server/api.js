@@ -103,6 +103,12 @@ api.add('POST', '/api/lessons/:id/finish', async (req, { id }) => {
   return out ? { ...out, lesson: db.getLesson(id) } : notFound('Aula');
 });
 
+// Reabrir aula finalizada (desfaz o handover; nada é apagado)
+api.add('POST', '/api/lessons/:id/reopen', (_req, { id }) => {
+  const out = db.reopenLesson(id) || notFound('Aula');
+  return { ...out, lesson: db.getLesson(id) };
+});
+
 api.add('POST', '/api/pending/:id/discard', (_req, { id }) => (db.discardPending(id) ? { ok: true } : notFound('Pendência')));
 
 api.add('POST', '/api/lessons/:id/duplicate', async (req, { id }) => {

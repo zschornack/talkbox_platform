@@ -1,5 +1,5 @@
 // Finalizar aula (requisitos, seção 10): uma tela só, pensada para 2 ou 3 cliques.
-//   1. Até onde chegamos?  2. Como ficaram os conteúdos?  3. Recado para o próximo professor.
+//   1. Até onde chegamos?  2. Como ficaram os conteúdos?  3. Anotação para a próxima aula.
 import { h, svgIcon, ICONS, formatDate } from './dom.js';
 import { api } from './api.js';
 import { modal } from './ui.js';
@@ -86,8 +86,8 @@ export async function openFinishDialog({ lesson, flush, onFinished, onExport }) 
   // ---------- 3. recado ----------
   const message = h('textarea.fin-message', {
     rows: 3,
-    'aria-label': 'Recado para o próximo professor',
-    placeholder: 'Vazio = está tudo certo.',
+    'aria-label': 'Anotação para a próxima aula',
+    placeholder: 'O que lembrar na próxima aula. Vazio = está tudo certo.',
   });
 
   const step = (n, title, ...body) => h('section.fin-step', h('h3', h('span.fin-stepnum', String(n)), title), ...body);
@@ -101,7 +101,7 @@ export async function openFinishDialog({ lesson, flush, onFinished, onExport }) 
       step(1, 'Até onde chegamos?', h('p.muted.small', 'Clique no último bloco feito.'), list, h('div.fin-row', pendingNote, noneBtn)),
       step(2, 'Como ficaram os conteúdos?', contentList,
         h('div.fin-add', addInput, h('datalist', { id: listId }, CONTENT_SUGGESTIONS.map((c) => h('option', { value: c }))))),
-      step(3, 'Recado para o próximo professor', message),
+      step(3, 'Anotação para a próxima aula', message),
     ],
     onSubmit: async () => {
       const assessments = Object.fromEntries(Object.entries(marks).filter(([, v]) => v));
@@ -130,7 +130,7 @@ function showSummary(out, { lesson, onExport, rated, message }) {
       : null,
     out.resolvedPending ? line('check', `${out.resolvedPending} ${out.resolvedPending === 1 ? 'pendente resolvido' : 'pendentes resolvidos'}`) : null,
     line('layers', rated ? `${rated} ${rated === 1 ? 'conteúdo atualizado' : 'conteúdos atualizados'} no mapa` : 'Mapa sem mudanças'),
-    line('notes', message ? 'Recado registrado para o próximo professor' : 'Sem recado: está tudo certo'),
+    line('notes', message ? 'Anotação guardada para a próxima aula' : 'Sem anotação: está tudo certo'),
   ];
   const m = modal({
     title: 'Aula concluída',
