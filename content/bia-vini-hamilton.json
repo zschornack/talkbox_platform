@@ -1,0 +1,1143 @@
+{
+ "id": "bia-vini-hamilton-2026-10-20",
+ "student": {
+  "name": "Bia & Vini"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · music, shows and last class",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP",
+    "html": "Ask your partner! Answer with <b>at least two sentences</b>.",
+    "words": [
+     "because",
+     "also",
+     "actually"
+    ],
+    "cats": [
+     {
+      "name": "Music & shows",
+      "qs": [
+       "What kind of music do you like?",
+       "Do you like musicals? Do you know any?",
+       "What was the last concert or show you went to?",
+       "Do you sing in the shower? What do you sing?",
+       "Who is your favorite Brazilian singer?"
+      ]
+     },
+     {
+      "name": "Last class",
+      "qs": [
+       "Which natural disaster story from last class do you remember?",
+       "What was the scariest story?",
+       "What were you doing the last time there was a big storm?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "reading",
+   "title": "Reading · Hamilton, from a hurricane to Broadway",
+   "tags": {
+    "content": [
+     "Reading",
+     "Past Simple",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "READING · FROM A HURRICANE TO BROADWAY",
+    "html": "<b>Alexander Hamilton</b> was born on Nevis, a small island in the Caribbean, in the 1750s. His family was very poor. His father left, and his mother died when he was a child. Alexander was an <b>orphan</b>, but he was very smart and he loved to write.<br><br>When he was a teenager, he was living on the island of St. Croix. In 1772, a terrible <b>hurricane</b> hit the island. Alexander wrote a long letter about the storm, and a newspaper <b>published</b> it. People were so <b>impressed</b> that they collected money and sent him to study in New York.<br><br>In America, Hamilton was very <b>ambitious</b>. He fought in the war against the British, he worked for George Washington, and later he became the first Secretary of the Treasury: he created the country's financial system. Today his face is on the ten-dollar bill. But he also had <b>enemies</b>. In 1804, his <b>rival</b> Aaron Burr <b>challenged</b> him to a duel, and Hamilton died the next day.<br><br>More than two hundred years later, a young writer, <b>Lin-Manuel Miranda</b>, was on vacation when he started reading a <b>biography</b> of Hamilton. He thought it was the perfect story for a hip-hop musical, and he spent several years writing it. <i>Hamilton</i> opened on Broadway in 2015. The tickets <b>sold out</b> for months, and the show won 11 Tony Awards. <b>On stage</b>, actors from many different <b>backgrounds</b> play the founding fathers of the United States, and they rap, sing and battle like in a hip-hop show."
+   }
+  },
+  {
+   "key": "check",
+   "title": "Hamilton · true or false?",
+   "tags": {
+    "content": [
+     "Reading",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "TRUE OR FALSE?",
+    "html": "Then <b>correct</b> the false sentences out loud.",
+    "instant": false,
+    "items": [
+     {
+      "id": "h1",
+      "before": "Hamilton was born in New York.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "h2",
+      "before": "A hurricane changed his life.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "h3",
+      "before": "He worked for George Washington.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "h4",
+      "before": "Hamilton won the duel against Aaron Burr.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "h5",
+      "before": "Lin-Manuel Miranda had the idea for the musical at work.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "h6",
+      "before": "The tickets for the musical were hard to buy.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "vocab",
+   "title": "Hamilton · vocabulary in other contexts",
+   "tags": {
+    "content": [
+     "Vocabulary"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "COOL WORDS FROM THE TEXT",
+    "header": true,
+    "rows": [
+     [
+      "WORD",
+      "MEANING",
+      "IN ANOTHER CONTEXT"
+     ],
+     [
+      "<b>an orphan</b>",
+      "a child whose parents are dead",
+      "Harry Potter is an orphan."
+     ],
+     [
+      "<b>ambitious</b>",
+      "someone who wants to be very successful",
+      "My cousin is very ambitious: she wants to be a CEO at 30."
+     ],
+     [
+      "<b>a rival</b>",
+      "a person or team you compete against",
+      "Grêmio and Inter are big rivals."
+     ],
+     [
+      "<b>an enemy</b>",
+      "a person who is against you",
+      "In the movie, the hero and his enemy become friends."
+     ],
+     [
+      "<b>to challenge</b>",
+      "to invite someone to fight or compete",
+      "My brother challenged me to a game of FIFA."
+     ],
+     [
+      "<b>to impress</b>",
+      "to make people admire you",
+      "She impressed everybody with her presentation."
+     ],
+     [
+      "<b>to sell out</b>",
+      "to sell all the tickets or products",
+      "The concert sold out in ten minutes."
+     ],
+     [
+      "<b>to publish</b>",
+      "to print a text for the public",
+      "The newspaper published my photo."
+     ],
+     [
+      "<b>a biography</b>",
+      "a book about a real person's life",
+      "I read a biography of Ayrton Senna."
+     ],
+     [
+      "<b>on stage</b>",
+      "in front of an audience, in a theater or a show",
+      "I get very nervous on stage."
+     ],
+     [
+      "<b>a background</b>",
+      "where you come from: your family and culture",
+      "In my office, people come from different backgrounds."
+     ],
+     [
+      "<b>a shot</b> (informal)",
+      "a chance, an opportunity",
+      "Give me a shot! I can do this job."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "match",
+   "title": "Hamilton · cool expressions (match)",
+   "tags": {
+    "content": [
+     "Vocabulary"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "match",
+    "label": "MATCH · COOL EXPRESSIONS",
+    "html": "Match the expressions to their meanings. Then use two of them to talk about a person you admire.",
+    "pairs": [
+     {
+      "id": "h7",
+      "left": "to make history",
+      "right": "to do something so important that people remember it"
+     },
+     {
+      "id": "h8",
+      "left": "to rise from nothing",
+      "right": "to start very poor and become successful"
+     },
+     {
+      "id": "h9",
+      "left": "against all odds",
+      "right": "when nobody thinks it is possible"
+     },
+     {
+      "id": "h10",
+      "left": "a standing ovation",
+      "right": "when the audience stands up and claps"
+     },
+     {
+      "id": "h11",
+      "left": "the underdog",
+      "right": "the person or team that people think will lose"
+     },
+     {
+      "id": "h12",
+      "left": "to steal the show",
+      "right": "to be the best and most noticed person in a show"
+     },
+     {
+      "id": "h13",
+      "left": "a rap battle",
+      "right": "a competition where two people rap against each other"
+     },
+     {
+      "id": "h14",
+      "left": "to take your shot",
+      "right": "to use your chance"
+     }
+    ]
+   }
+  },
+  {
+   "key": "order",
+   "title": "Hamilton · build the sentences",
+   "tags": {
+    "content": [
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "order",
+    "label": "BUILD THE SENTENCES",
+    "html": "Put the chunks in order. Then say the sentence to your partner <b>without looking</b>.",
+    "items": [
+     {
+      "id": "h15",
+      "answer": "A terrible hurricane / hit the island / in 1772."
+     },
+     {
+      "id": "h16",
+      "answer": "People were so impressed / that they sent him / to study in New York."
+     },
+     {
+      "id": "h17",
+      "answer": "Miranda was on vacation / when he started reading / a biography of Hamilton."
+     },
+     {
+      "id": "h18",
+      "answer": "The tickets sold out / because everybody / wanted to see the show."
+     },
+     {
+      "id": "h19",
+      "answer": "The underdog won / against all odds / and made history."
+     }
+    ]
+   }
+  },
+  {
+   "key": "sort",
+   "title": "Hamilton or Miranda?",
+   "tags": {
+    "content": [
+     "Reading",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "sort",
+    "label": "WHO DID IT?",
+    "html": "Hamilton (1700s) or Miranda (2000s)? Click a sentence, then the right person. Then say the full sentence: \"Hamilton was born…\"",
+    "groups": [
+     "Alexander Hamilton",
+     "Lin-Manuel Miranda"
+    ],
+    "items": [
+     {
+      "id": "h20",
+      "text": "was born on a Caribbean island",
+      "group": 0
+     },
+     {
+      "id": "h21",
+      "text": "wrote a letter about a hurricane",
+      "group": 0
+     },
+     {
+      "id": "h22",
+      "text": "worked for George Washington",
+      "group": 0
+     },
+     {
+      "id": "h23",
+      "text": "died after a duel",
+      "group": 0
+     },
+     {
+      "id": "h24",
+      "text": "is on the ten-dollar bill",
+      "group": 0
+     },
+     {
+      "id": "h25",
+      "text": "read a biography on vacation",
+      "group": 1
+     },
+     {
+      "id": "h26",
+      "text": "wrote a hip-hop musical",
+      "group": 1
+     },
+     {
+      "id": "h27",
+      "text": "played Hamilton on stage",
+      "group": 1
+     },
+     {
+      "id": "h28",
+      "text": "won Tony Awards for his show",
+      "group": 1
+     }
+    ]
+   }
+  },
+  {
+   "key": "talk",
+   "title": "Discussion · musicals, history, rivals and money",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "LET'S TALK",
+    "html": "Pick a tab and ask your partner. Try to use the word on the card!",
+    "words": [
+     "ambitious",
+     "rival",
+     "impress",
+     "sold out",
+     "on stage",
+     "a shot"
+    ],
+    "cats": [
+     {
+      "name": "Music & musicals",
+      "qs": [
+       "Would you watch a musical in a theater? Which one?",
+       "Can you rap? Do you like rap music?",
+       "What song do you know all the words to?",
+       "Is it a good idea to learn history with music? Why?"
+      ]
+     },
+     {
+      "name": "History",
+      "qs": [
+       "What historical person would you like to meet? Why?",
+       "Would you like to live in the 1700s? Why or why not?",
+       "Was history your favorite subject at school?",
+       "What famous Brazilian story would make a good musical?"
+      ]
+     },
+     {
+      "name": "Chances & ambition",
+      "qs": [
+       "Are you an ambitious person? Give an example.",
+       "Did someone give you a shot at work or at school once? Tell the story.",
+       "What would you do if you got a big chance tomorrow?",
+       "Who is a person who rose from nothing?"
+      ]
+     },
+     {
+      "name": "Rivals",
+      "qs": [
+       "Do you have a rival (at work, in sports, in your family)?",
+       "What is the biggest rivalry in Brazilian football?",
+       "Is competition good or bad for people?",
+       "Did you ever challenge someone to something? What happened?"
+      ]
+     },
+     {
+      "name": "Money",
+      "qs": [
+       "Hamilton is on the ten-dollar bill. Brazilian notes have animals: which animal is on the R$20 note?",
+       "If you could put a person on a Brazilian note, who would it be?",
+       "Do you still use cash? When?",
+       "What is the most expensive ticket you ever bought?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "battle",
+   "title": "Cabinet battle · defend your side",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · THE BATTLE",
+    "html": "In <i>Hamilton</i>, politicians have \"cabinet battles\": they fight with words! Draw a topic and a side. One person speaks for one minute, then the partner answers for the other side. The teacher decides the winner!<br>Useful: <i>In my opinion… · First of all… · And another thing is… · That's not true, because…</i>",
+    "promptLabel": "YOUR SIDE",
+    "lines": [
+     "Summer is better than winter.",
+     "Living in a big city is better than living in a small town.",
+     "Cinema is better than Netflix.",
+     "Dogs are better than cats.",
+     "Working from home is better than working at the office.",
+     "Brazilian food is the best in the world.",
+     "Teenagers should not have phones.",
+     "Money is more important than free time."
+    ],
+    "prompts": [
+     "FOR",
+     "AGAINST"
+    ]
+   }
+  },
+  {
+   "key": "roleplay",
+   "title": "Role-play · interview with Hamilton (time travel)",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "roleplay",
+    "label": "ROLE-PLAY · HAMILTON IS HERE!",
+    "html": "Alexander Hamilton traveled in time to 2026! One of you is a TV reporter, the other is Hamilton. Then change roles.",
+    "roles": [
+     {
+      "name": "TV reporter",
+      "card": "Ask about his life in the past: Where were you born? What happened in 1772? What did you do in New York? Who was your enemy? Then ask about today: What do you think of 2026? Did you see the musical about you? What surprised you the most?"
+     },
+     {
+      "name": "Alexander Hamilton",
+      "card": "Answer with details, in the past simple. You are proud and a little dramatic! Today, everything surprises you: phones, airplanes, your face on the money, rap music. Ask the reporter one question about 2026, too."
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Hamilton: From a Hurricane to Broadway",
+  "subtitle": "Reading and conversation · cool vocabulary · past simple · battles and role-play · exercises from last class",
+  "level": "A2",
+  "tags": [
+   "Conversation",
+   "Reading",
+   "Vocabulary",
+   "Past Simple"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "reading"
+   },
+   {
+    "model": "check"
+   },
+   {
+    "model": "vocab"
+   },
+   {
+    "model": "match"
+   },
+   {
+    "model": "order"
+   },
+   {
+    "model": "sort"
+   },
+   {
+    "model": "talk"
+   },
+   {
+    "model": "battle"
+   },
+   {
+    "model": "roleplay"
+   },
+   {
+    "type": "text",
+    "label": "FROM LAST CLASS",
+    "html": "Exercises we didn't do last class (<b>Natural Disasters</b>)."
+   },
+   {
+    "type": "fill",
+    "label": "SENTENCE BUILDING · PUT THE WORDS IN ORDER",
+    "html": "Write the sentence in the correct order. The last two are about <b>you</b>: answer them!",
+    "items": [
+     {
+      "before": "",
+      "hint": "spread / the fire / quickly",
+      "after": "",
+      "answers": [
+       "The fire spread quickly.",
+       "The fire spread quickly"
+      ],
+      "id": "b6a083bd122"
+     },
+     {
+      "before": "",
+      "hint": "found / volunteers / a jaguar / with burned paws",
+      "after": "",
+      "answers": [
+       "Volunteers found a jaguar with burned paws.",
+       "Volunteers found a jaguar with burned paws"
+      ],
+      "id": "baa491b3683"
+     },
+     {
+      "before": "",
+      "hint": "his paws / treated / they / every day",
+      "after": "",
+      "answers": [
+       "They treated his paws every day.",
+       "They treated his paws every day",
+       "Every day, they treated his paws.",
+       "Every day, they treated his paws",
+       "Every day they treated his paws.",
+       "Every day they treated his paws"
+      ],
+      "id": "bc295120c3f"
+     },
+     {
+      "before": "",
+      "hint": "they / in October / him / released",
+      "after": "",
+      "answers": [
+       "They released him in October.",
+       "They released him in October",
+       "In October, they released him.",
+       "In October, they released him",
+       "In October they released him.",
+       "In October they released him"
+      ],
+      "id": "b3f269be99e"
+     },
+     {
+      "before": "",
+      "hint": "is / the most daring person / who / you know ?",
+      "after": "",
+      "answers": [
+       "Who is the most daring person you know?",
+       "Who is the most daring person you know"
+      ],
+      "id": "beaea5968bf"
+     },
+     {
+      "before": "",
+      "hint": "spreads / news / fast / in my family",
+      "after": "",
+      "answers": [
+       "News spreads fast in my family.",
+       "News spreads fast in my family",
+       "In my family, news spreads fast.",
+       "In my family, news spreads fast",
+       "In my family news spreads fast.",
+       "In my family news spreads fast"
+      ],
+      "id": "be477080b9b"
+     }
+    ],
+    "id": "bd3d0033c29",
+    "source": {
+     "modelId": "o_YTFVJp",
+     "title": "Wildfire · put the words in order"
+    },
+    "pending": "Bi1b5QZC"
+   },
+   {
+    "type": "challenge",
+    "label": "SENTENCE BUILDING · MAKE IT TRUE FOR YOU",
+    "html": "Draw a card. Finish the sentence so it is <b>true for you</b>. Then make it longer with the word on the card.",
+    "promptLabel": "ADD",
+    "lines": [
+     "To save money, I…",
+     "I waste too much…",
+     "I would never queue for…",
+     "If my city turned off the water, I would…",
+     "I always try to avoid…",
+     "I can't live without…"
+    ],
+    "prompts": [
+     "because…",
+     "but…",
+     "so…",
+     "every day / every week…",
+     "when I was a child…"
+    ],
+    "id": "b92bc1fd55b",
+    "source": {
+     "modelId": "7GBvTTHX",
+     "title": "Drought · make it true for you"
+    },
+    "pending": "dUmBwNNQ"
+   },
+   {
+    "type": "fill",
+    "label": "SENTENCE BUILDING · JOIN THE SENTENCES",
+    "html": "Join the two sentences with the word in brackets. Write the whole sentence.",
+    "items": [
+     {
+      "before": "It was very hot. The runway melted. →",
+      "hint": "so … that",
+      "after": "",
+      "answers": [
+       "It was so hot that the runway melted.",
+       "It was so hot that the runway melted"
+      ],
+      "id": "b9c784fc03e"
+     },
+     {
+      "before": "Most homes have no air conditioning. People suffered. →",
+      "hint": "so",
+      "after": "",
+      "answers": [
+       "Most homes have no air conditioning, so people suffered.",
+       "Most homes have no air conditioning, so people suffered",
+       "Most homes have no air conditioning so people suffered.",
+       "Most homes have no air conditioning so people suffered"
+      ],
+      "id": "b8124e83b73"
+     },
+     {
+      "before": "The trains moved slowly. The tracks were too hot. →",
+      "hint": "because",
+      "after": "",
+      "answers": [
+       "The trains moved slowly because the tracks were too hot.",
+       "The trains moved slowly because the tracks were too hot"
+      ],
+      "id": "ba8bd2a3f3b"
+     },
+     {
+      "before": "Hot days are normal in Brazil. They are rare in the UK. →",
+      "hint": "but",
+      "after": "",
+      "answers": [
+       "Hot days are normal in Brazil, but they are rare in the UK.",
+       "Hot days are normal in Brazil, but they are rare in the UK",
+       "Hot days are normal in Brazil but they are rare in the UK.",
+       "Hot days are normal in Brazil but they are rare in the UK"
+      ],
+      "id": "bbbc2816444"
+     },
+     {
+      "before": "I was very tired. I couldn't sleep. →",
+      "hint": "so … that",
+      "after": "",
+      "answers": [
+       "I was so tired that I couldn't sleep.",
+       "I was so tired that I couldn't sleep",
+       "I was so tired that I could not sleep.",
+       "I was so tired that I could not sleep"
+      ],
+      "id": "b7f6902bcb2"
+     }
+    ],
+    "id": "beddd9d8147",
+    "source": {
+     "modelId": "EicnOwvt",
+     "title": "Heatwave · join the sentences"
+    },
+    "pending": "e3ETgpCl"
+   },
+   {
+    "type": "fill",
+    "label": "SENTENCE BUILDING · BUILD THE QUESTIONS",
+    "html": "Build the questions. Then <b>ask your partner</b>!",
+    "items": [
+     {
+      "before": "",
+      "hint": "you / ever / see / snow?",
+      "after": "",
+      "answers": [
+       "Have you ever seen snow?",
+       "Have you ever seen snow"
+      ],
+      "id": "b0e33ff0815"
+     },
+     {
+      "before": "",
+      "hint": "where / you / be / last weekend?",
+      "after": "",
+      "answers": [
+       "Where were you last weekend?",
+       "Where were you last weekend"
+      ],
+      "id": "be32c92ba8b"
+     },
+     {
+      "before": "",
+      "hint": "how / you / usually / go / to work?",
+      "after": "",
+      "answers": [
+       "How do you usually go to work?",
+       "How do you usually go to work"
+      ],
+      "id": "bc06e7a7f64"
+     },
+     {
+      "before": "",
+      "hint": "you / get / stuck in traffic / yesterday?",
+      "after": "",
+      "answers": [
+       "Did you get stuck in traffic yesterday?",
+       "Did you get stuck in traffic yesterday"
+      ],
+      "id": "b63a866c74b"
+     },
+     {
+      "before": "",
+      "hint": "what / you / do / on cold days?",
+      "after": "",
+      "answers": [
+       "What do you do on cold days?",
+       "What do you do on cold days"
+      ],
+      "id": "b4f2990fc3c"
+     },
+     {
+      "before": "",
+      "hint": "what / you / do (past continuous) / when the power went out?",
+      "after": "",
+      "answers": [
+       "What were you doing when the power went out?",
+       "What were you doing when the power went out"
+      ],
+      "id": "bd8467aa272"
+     }
+    ],
+    "id": "b22961d3d7d",
+    "source": {
+     "modelId": "fZSoBngb",
+     "title": "Blizzard · build the questions"
+    },
+    "pending": "Qb-GwRlf"
+   },
+   {
+    "type": "fill",
+    "label": "GRAMMAR · PAST SIMPLE OR PAST CONTINUOUS?",
+    "html": "All these sentences come from the stories. Use the <b>Past Simple</b> (a finished action) or the <b>Past Continuous</b> (an action in progress).",
+    "items": [
+     {
+      "before": "While Tilly",
+      "hint": "walk",
+      "after": "on the beach, she noticed something strange.",
+      "answers": [
+       "was walking"
+      ],
+      "id": "b69dc19c5a0"
+     },
+     {
+      "before": "While she was walking on the beach, Tilly",
+      "hint": "notice",
+      "after": "that the sea was bubbling.",
+      "answers": [
+       "noticed"
+      ],
+      "id": "b02c87aa7d4"
+     },
+     {
+      "before": "In Tokyo, tall buildings",
+      "hint": "sway",
+      "after": "from side to side when the earthquake hit.",
+      "answers": [
+       "were swaying"
+      ],
+      "id": "bf87dd409b6"
+     },
+     {
+      "before": "The volcano in Iceland",
+      "hint": "erupt",
+      "after": "in April 2010.",
+      "answers": [
+       "erupted"
+      ],
+      "id": "bb3d427243c"
+     },
+     {
+      "before": "On TV, a reporter",
+      "hint": "try",
+      "after": "to say the volcano's name when everybody started laughing.",
+      "answers": [
+       "was trying"
+      ],
+      "id": "b260262af9d"
+     },
+     {
+      "before": "Harry",
+      "hint": "refuse",
+      "after": "to leave his home.",
+      "answers": [
+       "refused"
+      ],
+      "id": "bbf38e45c42"
+     },
+     {
+      "before": "The vets",
+      "hint": "release",
+      "after": "Ousado on October 20.",
+      "answers": [
+       "released"
+      ],
+      "id": "b8aa0897194"
+     },
+     {
+      "before": "I",
+      "hint": "sleep",
+      "after": "when the storm started last night.",
+      "answers": [
+       "was sleeping"
+      ],
+      "id": "bb8d7632da0"
+     },
+     {
+      "before": "What",
+      "hint": "you / do",
+      "after": "when the power went out?",
+      "answers": [
+       "were you doing"
+      ],
+      "id": "bdc6817927f"
+     }
+    ],
+    "id": "b96aabe62ee",
+    "source": {
+     "modelId": "x-tdaZ0o",
+     "title": "Grammar from the stories · Past Simple or Past Continuous?"
+    },
+    "pending": "-voehQW4"
+   },
+   {
+    "type": "choice",
+    "label": "GRAMMAR · WHEN OR WHILE?",
+    "html": "<b>while</b> + an action in progress (<i>was/were + -ing</i>) · <b>when</b> + a short, finished action.",
+    "instant": false,
+    "items": [
+     {
+      "before": "I was watching TV",
+      "options": [
+       "when",
+       "while"
+      ],
+      "answer": 0,
+      "after": "the earthquake started.",
+      "id": "b68de5588b2"
+     },
+     {
+      "before": "",
+      "options": [
+       "When",
+       "While"
+      ],
+      "answer": 1,
+      "after": "Tilly was walking on the beach, the sea started to bubble.",
+      "id": "b1f7516fc4d"
+     },
+     {
+      "before": "The wind knocked down the wires",
+      "options": [
+       "when",
+       "while"
+      ],
+      "answer": 1,
+      "after": "people were sleeping.",
+      "id": "b10caea3d61"
+     },
+     {
+      "before": "We were having dinner",
+      "options": [
+       "when",
+       "while"
+      ],
+      "answer": 0,
+      "after": "the lights went out.",
+      "id": "ba497ad9305"
+     },
+     {
+      "before": "",
+      "options": [
+       "When",
+       "While"
+      ],
+      "answer": 0,
+      "after": "the rain came back, everybody in Cape Town celebrated.",
+      "id": "b31e2baadde"
+     },
+     {
+      "before": "Someone took my wallet",
+      "options": [
+       "when",
+       "while"
+      ],
+      "answer": 1,
+      "after": "I was sleeping on the bus.",
+      "id": "b75424046bb"
+     }
+    ],
+    "id": "b6737bdcf3d",
+    "source": {
+     "modelId": "_WumVeYd",
+     "title": "Grammar · when or while?"
+    },
+    "pending": "KHVoodYH"
+   },
+   {
+    "type": "fill",
+    "label": "GRAMMAR · THE BIGGEST, THE HOTTEST…",
+    "html": "The stories are full of records! Complete with the <b>superlative</b>.",
+    "items": [
+     {
+      "before": "It was",
+      "hint": "big",
+      "after": "landslide in recorded history.",
+      "answers": [
+       "the biggest"
+      ],
+      "id": "bb274de9bcb"
+     },
+     {
+      "before": "July 19, 2022 was",
+      "hint": "hot",
+      "after": "day in UK history.",
+      "answers": [
+       "the hottest"
+      ],
+      "id": "b22fd70215b"
+     },
+     {
+      "before": "The Pantanal is",
+      "hint": "large",
+      "after": "tropical wetland in the world.",
+      "answers": [
+       "the largest"
+      ],
+      "id": "bb7f1284f8d"
+     },
+     {
+      "before": "The 2011 earthquake was",
+      "hint": "strong",
+      "after": "ever recorded in Japan.",
+      "answers": [
+       "the strongest"
+      ],
+      "id": "bef0c92af45"
+     },
+     {
+      "before": "Eyjafjallajökull is",
+      "hint": "difficult",
+      "after": "name in this lesson!",
+      "answers": [
+       "the most difficult"
+      ],
+      "id": "b1da9abb3b8"
+     },
+     {
+      "before": "For me,",
+      "hint": "scary",
+      "after": "natural disaster is…",
+      "answers": [
+       "the scariest"
+      ],
+      "id": "bc6efeb272e"
+     },
+     {
+      "before": "What is",
+      "hint": "dangerous",
+      "after": "place you have ever visited?",
+      "answers": [
+       "the most dangerous"
+      ],
+      "id": "b8baa1b03bb"
+     }
+    ],
+    "id": "b08e9ca603e",
+    "source": {
+     "modelId": "Su6tjd7C",
+     "title": "Grammar · superlatives from the stories"
+    },
+    "pending": "YgkU4MMZ"
+   },
+   {
+    "type": "challenge",
+    "label": "FINAL SPEAKING · TELL YOUR STORY",
+    "html": "Draw a card and tell a <b>true</b> story (or invent one!). Use the word on the card. Your partner asks two questions at the end.",
+    "promptLabel": "USE",
+    "lines": [
+     "A day when everything went wrong",
+     "The worst storm you remember",
+     "A time you got stuck somewhere",
+     "A time you had to act quickly",
+     "A trip that didn't go as planned",
+     "The strangest thing you have ever seen"
+    ],
+    "prompts": [
+     "while",
+     "suddenly",
+     "when",
+     "the worst",
+     "luckily",
+     "at first"
+    ],
+    "id": "b0f1416a36d",
+    "source": {
+     "modelId": "aS86gXmB",
+     "title": "Final speaking · tell a story"
+    },
+    "pending": "2O11Znok"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

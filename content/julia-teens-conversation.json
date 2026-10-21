@@ -1,0 +1,561 @@
+{
+ "id": "julia-teens-conversation-2026-10-20",
+ "student": {
+  "name": "Júlia"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · this or that? (teens)",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP · QUICK-FIRE",
+    "html": "Answer fast, but never with one word: say your choice + <b>because</b> + one more detail.",
+    "words": [
+     "because",
+     "actually",
+     "to be honest"
+    ],
+    "cats": [
+     {
+      "name": "This or that?",
+      "qs": [
+       "TikTok or YouTube?",
+       "Cats or dogs?",
+       "Series or movies?",
+       "Early bird or night owl?",
+       "Beach or snow?",
+       "Sweet or salty?",
+       "Texting or calling?",
+       "Concert or festival?"
+      ]
+     },
+     {
+      "name": "Right now",
+      "qs": [
+       "What song is stuck in your head right now?",
+       "What are you wearing right now? Describe it.",
+       "What is your phone doing right now? Is it charging, buzzing, sleeping?",
+       "What are your friends probably doing right now?"
+      ]
+     },
+     {
+      "name": "Last week",
+      "qs": [
+       "What was the best moment of your week?",
+       "What was the funniest thing you saw online last week?",
+       "Did anything embarrassing happen to you?",
+       "What were you doing last Saturday at 9 p.m.?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "talk-more",
+   "title": "Speaking tools · how to keep talking",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "TOOLS · HOW TO SAY MORE",
+    "header": true,
+    "rows": [
+     [
+      "TO START",
+      "TO ADD MORE",
+      "TO GIVE AN EXAMPLE",
+      "TO GAIN TIME"
+     ],
+     [
+      "Well…",
+      "Also…",
+      "For example…",
+      "Hmm, let me think…"
+     ],
+     [
+      "Actually…",
+      "And another thing is…",
+      "Like when…",
+      "That's a good question."
+     ],
+     [
+      "To be honest…",
+      "Plus…",
+      "For instance, last week…",
+      "How can I say it…?"
+     ],
+     [
+      "The thing is…",
+      "On top of that…",
+      "I remember one time…",
+      "What's the word…?"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "truths",
+   "title": "Two truths and a lie · weird facts",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala",
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "TWO TRUTHS AND A LIE",
+    "html": "Read the three facts. Which one is the lie? <b>Explain why</b> before you reveal. Then make your own two truths and a lie about <b>your life</b>, and I ask you questions to find the lie.",
+    "items": [
+     {
+      "id": "j1",
+      "q": "1. Octopuses have three hearts. · 2. Honey can stay good for thousands of years. · 3. Goldfish only remember things for 3 seconds.",
+      "a": "The lie is 3. Goldfish can remember things for months!"
+     },
+     {
+      "id": "j2",
+      "q": "1. Bananas are berries, but strawberries aren't. · 2. Lightning never strikes the same place twice. · 3. Scotland's national animal is the unicorn.",
+      "a": "The lie is 2. Lightning often strikes the same place: tall buildings get hit many times a year."
+     },
+     {
+      "id": "j3",
+      "q": "1. A day on Venus is longer than its year. · 2. You can see the Great Wall of China from space with your eyes. · 3. There are more trees on Earth than stars in our galaxy.",
+      "a": "The lie is 2. The Great Wall is very long, but it's too thin to see from space with your eyes."
+     },
+     {
+      "id": "j4",
+      "q": "1. Sharks existed before trees. · 2. We only use 10% of our brain. · 3. Wombats make cube-shaped poop.",
+      "a": "The lie is 2. We use all of our brain, just not all parts at the same time."
+     },
+     {
+      "id": "j5",
+      "q": "1. Cleopatra lived closer in time to the Moon landing than to the building of the Great Pyramid. · 2. Napoleon was extremely short. · 3. Oxford University is older than the Aztec Empire.",
+      "a": "The lie is 2. Napoleon was about 1.69 m, a normal height for his time."
+     },
+     {
+      "id": "j6",
+      "q": "1. A group of flamingos is called a \"flamboyance\". · 2. Bulls get angry when they see the color red. · 3. Some turtles can breathe through their butts.",
+      "a": "The lie is 2. Bulls can't really see red: they react to the movement of the cape."
+     }
+    ]
+   }
+  },
+  {
+   "key": "story",
+   "title": "Story starters · past simple and continuous",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Past Continuous",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · FINISH THE STORY",
+    "html": "Draw a story starter and a surprise. Tell the story for at least one minute. The surprise <b>must</b> be in your story!<br><i>We were filming a TikTok in the park when a famous singer walked past us…</i>",
+    "promptLabel": "SURPRISE",
+    "lines": [
+     "We were filming a TikTok in the park when…",
+     "I was walking home at midnight when…",
+     "Everybody was sleeping when suddenly the lights…",
+     "I was taking a selfie at the beach when…",
+     "We were waiting for the school bus when…",
+     "I was playing video games online when a stranger…",
+     "My best friend and I were shopping at the mall when…",
+     "I was sitting on a plane when the person next to me…"
+    ],
+    "prompts": [
+     "a famous singer",
+     "a dog with a strange message",
+     "a phone call from an unknown number",
+     "a giant spider",
+     "a mysterious box",
+     "a police officer",
+     "a crazy storm",
+     "your teacher in a costume"
+    ]
+   }
+  },
+  {
+   "key": "detective",
+   "title": "Role-play · detective interrogation",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Past Continuous",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "roleplay",
+    "label": "ROLE-PLAY · WHO STOLE THE TROPHY?",
+    "html": "Last Friday, between 7 and 9 p.m., someone stole the school's volleyball trophy. There are two suspects. The detective asks a lot of questions. The suspect must keep the story the same! Then change roles.",
+    "roles": [
+     {
+      "name": "Suspect (Julia)",
+      "card": "You are innocent... or are you? Invent your alibi: Where were you at 7, 8 and 9 p.m.? What were you doing? Who were you with? What were you wearing? What did you eat? Answer every question with details. If the detective finds a contradiction, you lose!"
+     },
+     {
+      "name": "Detective (teacher)",
+      "card": "Ask: Where were you at 7? What were you doing? Who was with you? What was the weather like? What were you wearing? What did you eat? How did you get home? Then ask the same things again in a different order and look for contradictions. Finally, decide: guilty or innocent?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "rather",
+   "title": "Would you rather · teens",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WOULD YOU RATHER…?",
+    "html": "Choose one and give <b>three reasons</b>. Use \"I would…\" / \"I'd…\". Then ask me the same question!",
+    "words": [
+     "also",
+     "and another thing is",
+     "for example"
+    ],
+    "cats": [
+     {
+      "name": "Superpowers",
+      "qs": [
+       "Would you rather fly or be invisible?",
+       "Would you rather read minds or see the future?",
+       "Would you rather talk to animals or speak every language?",
+       "Would you rather teleport or never need to sleep?"
+      ]
+     },
+     {
+      "name": "Life",
+      "qs": [
+       "Would you rather be famous or rich?",
+       "Would you rather live in the past or in the future?",
+       "Would you rather live in a big city or on a quiet island?",
+       "Would you rather have a dragon or a robot as a pet?"
+      ]
+     },
+     {
+      "name": "No way!",
+      "qs": [
+       "Would you rather lose your phone for a month or lose your music for a year?",
+       "Would you rather eat a spider or sing in front of the whole school?",
+       "Would you rather always be 10 minutes late or always be 2 hours early?",
+       "Would you rather have no internet or no air conditioning in summer?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "hot-takes",
+   "title": "Hot takes · opinion scale (teens)",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "scale",
+    "label": "HOT TAKES",
+    "html": "How much do you agree? Choose a number, then defend your opinion like a lawyer: two reasons and an example.",
+    "left": "No way!",
+    "right": "100% yes",
+    "statements": [
+     "Pineapple on pizza is delicious.",
+     "Homework should be illegal.",
+     "Cats are better than dogs.",
+     "School should start at 10 a.m.",
+     "Social media makes people less happy.",
+     "Old songs are better than new songs.",
+     "Reading a book is more fun than watching the movie.",
+     "Teenagers should decide their own bedtime."
+    ]
+   }
+  },
+  {
+   "key": "describe",
+   "title": "Describe it, I guess it",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · DESCRIBE IT, I GUESS IT",
+    "html": "Draw a card and think of one thing. Describe it <b>without saying its name</b>. I try to guess. The card tells you how to describe it.",
+    "promptLabel": "HOW",
+    "lines": [
+     "a movie you love",
+     "a series everybody is watching",
+     "a singer or a band",
+     "a video game",
+     "an app on your phone",
+     "a famous person",
+     "a cartoon from your childhood",
+     "a place in your city"
+    ],
+    "prompts": [
+     "3 sentences in the present simple",
+     "what happens in it (past simple)",
+     "a scene: what are the people doing?",
+     "why people love it or hate it",
+     "who it is for and why"
+    ]
+   }
+  },
+  {
+   "key": "mysteries",
+   "title": "Conversation · mysteries, internet and the future",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "LET'S TALK",
+    "html": "Pick a tab. Talk for as long as you can, and use the tools from the table!",
+    "words": [
+     "actually",
+     "the thing is",
+     "like when",
+     "to be honest"
+    ],
+    "cats": [
+     {
+      "name": "Mysteries",
+      "qs": [
+       "Do you believe in aliens? Why or why not?",
+       "Do you believe in ghosts? Do you know a scary story?",
+       "What mystery would you like to solve?",
+       "Why do you think people love true crime series?"
+      ]
+     },
+     {
+      "name": "The internet",
+      "qs": [
+       "Which trend do you not understand at all?",
+       "Who is an influencer you like, and why?",
+       "What was the last video that made you cry laughing?",
+       "Is it a good idea to share your life online?"
+      ]
+     },
+     {
+      "name": "Music & series",
+      "qs": [
+       "What song describes your life right now?",
+       "Which series character are you most similar to?",
+       "What concert would you love to go to?",
+       "What song do you skip every time?"
+      ]
+     },
+     {
+      "name": "Imagine",
+      "qs": [
+       "You can have dinner with any famous person. Who? What do you ask?",
+       "You can live one day as an animal. Which one? What do you do?",
+       "You can invent a new school subject. What is it?",
+       "You are the president for one day. What are your first three laws?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "minute",
+   "title": "One minute · don't stop!",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "ONE MINUTE · DON'T STOP!",
+    "html": "Talk for one minute without stopping. If you stop, say \"And another thing is…\" and keep going!",
+    "seconds": 60,
+    "topics": [
+     "Convince me to watch your favorite series.",
+     "Describe your dream bedroom.",
+     "A strange dream you had.",
+     "What were you doing at this time yesterday? Tell me everything.",
+     "Sell me an object that is near you right now.",
+     "The best day of your life (so far).",
+     "Your perfect weekend with no rules.",
+     "A talent you have that nobody knows about."
+    ]
+   }
+  },
+  {
+   "key": "wrapup",
+   "title": "Wrap-up · teens conversation",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "Last round!",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "What was the craziest story you told today?",
+       "Which hot take was the hardest to defend?",
+       "Which \"Would you rather\" answer surprised you?",
+       "Which tool from the table did you use the most?",
+       "What do you want to talk about next class?"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Mysteries, Superpowers and Hot Takes",
+  "subtitle": "Conversation · present and past (simple and continuous) · games, stories and opinions",
+  "level": "A2",
+  "tags": [
+   "Conversation",
+   "Past Simple",
+   "Past Continuous",
+   "Present Simple",
+   "Present Continuous"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "talk-more"
+   },
+   {
+    "model": "truths"
+   },
+   {
+    "model": "story"
+   },
+   {
+    "model": "detective"
+   },
+   {
+    "model": "rather"
+   },
+   {
+    "model": "hot-takes"
+   },
+   {
+    "model": "describe"
+   },
+   {
+    "model": "mysteries"
+   },
+   {
+    "model": "minute"
+   },
+   {
+    "model": "wrapup"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

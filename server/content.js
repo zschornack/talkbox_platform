@@ -17,6 +17,9 @@
 // Acrescentar a uma aula existente: "append": { "student", "lesson" (título ou começo dele), "blocks": [ { "model": "x" } ] }.
 // Renomear: "rename": [ { "from": "William & Letícia", "to": "William" } ] muda o nome e mantém aulas, mapa e histórico.
 // Roda antes do cadastro. Se "from" não existe ou "to" já existe, não faz nada.
+// Juntar cadastros repetidos: "merge": [ { "from": "Júlia", "into": "Julia", "name": "Júlia" } ] passa aulas, mapa e
+// pendências do "from" para o "into" (que fica com o nome "name", se vier). O "from" fica inativo como
+// "<nome> (cadastro repetido)". Roda antes do "rename". Se um dos dois não existe, não faz nada.
 // Copiar de outro aluno: { "name": "Letícia", "copyFrom": "William" } cria o aluno com o nível, o objetivo e o mapa
 // de conteúdos do outro (as aulas continuam só no original).
 // Imagens: { "type": "image", "file": "images/x.webp", "caption": "...", "layout": "full" | "half" }, com o arquivo
@@ -78,6 +81,11 @@ export function importPack(pack, file = '', dir = CONTENT_DIR) {
     };
 
     const byName = (name) => db.listStudents().find((x) => x.name.toLowerCase() === String(name || '').trim().toLowerCase());
+    for (const m of pack.merge || []) {
+      const from = byName(m.from);
+      const into = byName(m.into);
+      if (from && into && from.id !== into.id) db.mergeStudents(from.id, into.id, m.name);
+    }
     for (const r of pack.rename || []) {
       const from = byName(r.from);
       if (from && r.to?.trim() && !byName(r.to)) db.updateStudent(from.id, { name: r.to.trim() });

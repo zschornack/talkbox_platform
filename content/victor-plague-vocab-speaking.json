@@ -1,0 +1,829 @@
+{
+ "id": "victor-plague-vocab-speaking-2026-10-21",
+ "student": {
+  "name": "Victor"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · catch up and recall (plague lesson)",
+   "tags": {
+    "content": [
+     "Conversation",
+     "IELTS",
+     "Vocabulary"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP · CATCH UP",
+    "html": "Long answers. Every answer must have <b>one word from last class</b>.",
+    "words": [
+     "so far",
+     "keep an eye on",
+     "rule out",
+     "raise concerns"
+    ],
+    "cats": [
+     {
+      "name": "Since last class",
+      "qs": [
+       "What has happened in your life since our last class?",
+       "What have you done for your IELTS this week?",
+       "Have you come across any interesting news lately?"
+      ]
+     },
+     {
+      "name": "Recall",
+      "qs": [
+       "Retell the Siberia story in 45 seconds, using five words from last class.",
+       "Which phrasal verbs from last class do you remember? Use three in one sentence.",
+       "What is the difference between \"deadly\" and \"severe\"? Give an example of each."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "newworld",
+   "title": "Plague vocabulary · same word, new world",
+   "tags": {
+    "content": [
+     "Phrasal verbs",
+     "Vocabulary"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "SAME WORD, NEW WORLD",
+    "html": "Last class, these words were about a disease. Now make a sentence about the <b>new context</b>, in any tense. Say it first, then reveal a model. Can you make yours more complex?",
+    "items": [
+     {
+      "id": "v1",
+      "q": "break out · a prison",
+      "a": "Three inmates broke out of a maximum-security prison last night, and the police still haven't tracked them down."
+     },
+     {
+      "id": "v2",
+      "q": "break out · your skin / a sweat",
+      "a": "Every time I have to speak in public, I break out in a cold sweat."
+     },
+     {
+      "id": "v3",
+      "q": "pass on · an invitation",
+      "a": "I'm afraid I'll have to pass on dinner tonight: I've been working since 7 a.m."
+     },
+     {
+      "id": "v4",
+      "q": "rule out · a football player",
+      "a": "The coach hasn't ruled out a comeback for the injured striker before the final."
+     },
+     {
+      "id": "v5",
+      "q": "track down · an old friend",
+      "a": "It took me months, but I finally tracked down my best friend from primary school on LinkedIn."
+     },
+     {
+      "id": "v6",
+      "q": "cover up · a tattoo / a scandal",
+      "a": "He had the tattoo covered up before the wedding. · The company tried to cover up the scandal, but a journalist leaked the emails."
+     },
+     {
+      "id": "v7",
+      "q": "wipe out · money",
+      "a": "The 2008 crisis wiped out my parents' savings in a few weeks."
+     },
+     {
+      "id": "v8",
+      "q": "die out · a trend",
+      "a": "Fidget spinners died out almost as fast as they had appeared."
+     },
+     {
+      "id": "v9",
+      "q": "pull through · a company",
+      "a": "Nobody thought the airline would pull through the pandemic, but it did."
+     },
+     {
+      "id": "v10",
+      "q": "fight off · sleep / competitors",
+      "a": "I was fighting off sleep during the whole meeting. · The startup fought off bigger competitors with lower prices."
+     },
+     {
+      "id": "v11",
+      "q": "shut down · a person (emotions)",
+      "a": "When people criticise him, he just shuts down and stops talking."
+     },
+     {
+      "id": "v12",
+      "q": "carry out · a promise / a threat",
+      "a": "The union carried out its threat and went on strike on Monday."
+     },
+     {
+      "id": "v13",
+      "q": "keep an eye on · money / the kids",
+      "a": "Could you keep an eye on my bag while I get a coffee? · Investors are keeping an eye on interest rates."
+     },
+     {
+      "id": "v14",
+      "q": "highly contagious · laughter / enthusiasm",
+      "a": "Her enthusiasm is highly contagious: after five minutes, the whole team wanted to join the project."
+     },
+     {
+      "id": "v15",
+      "q": "deadly · boring / serious",
+      "a": "The lecture was deadly boring. · I'm deadly serious: if you're late again, you're fired."
+     },
+     {
+      "id": "v16",
+      "q": "monitor · your phone / your health",
+      "a": "My watch monitors my sleep, and apparently I haven't slept well for weeks."
+     },
+     {
+      "id": "v17",
+      "q": "raise concerns · AI / a new law",
+      "a": "The use of AI in schools has raised concerns among teachers and parents."
+     },
+     {
+      "id": "v18",
+      "q": "of unknown origin · a package / a rumour",
+      "a": "A package of unknown origin was left at the reception, so the building was evacuated."
+     }
+    ]
+   }
+  },
+  {
+   "key": "transform",
+   "title": "Plague vocabulary · key word transformation",
+   "tags": {
+    "content": [
+     "Phrasal verbs",
+     "Vocabulary",
+     "IELTS"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "transform",
+    "label": "SENTENCE BUILDING · SAY IT WITH THE KEY WORD",
+    "html": "Rewrite the sentence with the expression in orange. The meaning must stay <b>exactly</b> the same. Then say it aloud, faster.",
+    "items": [
+     {
+      "id": "v19",
+      "sentence": "The police are investigating the robbery.",
+      "instruction": "look into",
+      "answers": [
+       "The police are looking into the robbery.",
+       "The police are looking into the robbery"
+      ]
+     },
+     {
+      "id": "v20",
+      "sentence": "The company closed all its stores in 2019.",
+      "instruction": "shut down",
+      "answers": [
+       "The company shut down all its stores in 2019.",
+       "The company shut down all its stores in 2019",
+       "The company shut all its stores down in 2019.",
+       "The company shut all its stores down in 2019"
+      ]
+     },
+     {
+      "id": "v21",
+      "sentence": "Nobody knows where the money came from.",
+      "instruction": "of unknown origin",
+      "answers": [
+       "The money is of unknown origin.",
+       "The money is of unknown origin",
+       "The money was of unknown origin.",
+       "The money was of unknown origin"
+      ]
+     },
+     {
+      "id": "v22",
+      "sentence": "There is no reason to panic about the drop in sales.",
+      "instruction": "cause for alarm",
+      "answers": [
+       "The drop in sales is no cause for alarm.",
+       "The drop in sales is no cause for alarm",
+       "There is no cause for alarm about the drop in sales.",
+       "There is no cause for alarm about the drop in sales",
+       "The drop in sales is not a cause for alarm.",
+       "The drop in sales is not a cause for alarm"
+      ]
+     },
+     {
+      "id": "v23",
+      "sentence": "The new tax has worried many small business owners.",
+      "instruction": "raise concerns",
+      "answers": [
+       "The new tax has raised concerns among many small business owners.",
+       "The new tax has raised concerns among many small business owners",
+       "The new tax has raised concerns for many small business owners.",
+       "The new tax has raised concerns for many small business owners"
+      ]
+     },
+     {
+      "id": "v24",
+      "sentence": "The manager said that it was impossible that the CEO would resign.",
+      "instruction": "rule out",
+      "answers": [
+       "The manager ruled out the possibility that the CEO would resign.",
+       "The manager ruled out the possibility that the CEO would resign",
+       "The manager ruled out the CEO's resignation.",
+       "The manager ruled out the CEO's resignation",
+       "The manager ruled out the possibility of the CEO resigning.",
+       "The manager ruled out the possibility of the CEO resigning"
+      ]
+     },
+     {
+      "id": "v25",
+      "sentence": "The storm destroyed the whole village.",
+      "instruction": "wipe out",
+      "answers": [
+       "The storm wiped out the whole village.",
+       "The storm wiped out the whole village",
+       "The whole village was wiped out by the storm.",
+       "The whole village was wiped out by the storm"
+      ]
+     },
+     {
+      "id": "v26",
+      "sentence": "If the government hadn't hidden the truth, people wouldn't be so angry now.",
+      "instruction": "cover up",
+      "answers": [
+       "If the government hadn't covered up the truth, people wouldn't be so angry now.",
+       "If the government hadn't covered up the truth, people wouldn't be so angry now",
+       "If the government hadn't covered the truth up, people wouldn't be so angry now.",
+       "If the government hadn't covered the truth up, people wouldn't be so angry now"
+      ]
+     },
+     {
+      "id": "v27",
+      "sentence": "The doctors weren't sure that he would survive, but he did.",
+      "instruction": "pull through",
+      "answers": [
+       "The doctors weren't sure that he would pull through, but he did.",
+       "The doctors weren't sure that he would pull through, but he did",
+       "The doctors weren't sure he would pull through, but he did.",
+       "The doctors weren't sure he would pull through, but he did"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "spot",
+   "title": "Plague vocabulary · spot the mistake (B2)",
+   "tags": {
+    "content": [
+     "Phrasal verbs",
+     "Vocabulary"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "spot",
+    "label": "SPOT THE MISTAKE",
+    "html": "One mistake per sentence: phrasal verbs, collocations or tenses. Click it, then say the correct sentence.",
+    "items": [
+     {
+      "id": "v28",
+      "words": [
+       "A",
+       "fire",
+       "broke",
+       "up",
+       "in",
+       "the",
+       "kitchen",
+       "at",
+       "3",
+       "a.m."
+      ],
+      "wrong": 3,
+      "fix": "out"
+     },
+     {
+      "id": "v29",
+      "words": [
+       "She",
+       "came",
+       "down",
+       "for",
+       "the",
+       "flu",
+       "the",
+       "day",
+       "before",
+       "her",
+       "wedding."
+      ],
+      "wrong": 3,
+      "fix": "with"
+     },
+     {
+      "id": "v30",
+      "words": [
+       "The",
+       "police",
+       "have",
+       "ruled",
+       "off",
+       "the",
+       "possibility",
+       "of",
+       "murder."
+      ],
+      "wrong": 4,
+      "fix": "out"
+     },
+     {
+      "id": "v31",
+      "words": [
+       "He",
+       "has",
+       "been",
+       "keeping",
+       "an",
+       "eye",
+       "at",
+       "the",
+       "stock",
+       "market",
+       "all",
+       "morning."
+      ],
+      "wrong": 6,
+      "fix": "on"
+     },
+     {
+      "id": "v32",
+      "words": [
+       "By",
+       "the",
+       "time",
+       "the",
+       "ambulance",
+       "arrived,",
+       "the",
+       "patient",
+       "has",
+       "already",
+       "stopped",
+       "breathing."
+      ],
+      "wrong": 8,
+      "fix": "had"
+     },
+     {
+      "id": "v33",
+      "words": [
+       "If",
+       "they",
+       "had",
+       "shut",
+       "down",
+       "the",
+       "factory,",
+       "nobody",
+       "would",
+       "have",
+       "came",
+       "into",
+       "contact",
+       "with",
+       "the",
+       "gas."
+      ],
+      "wrong": 10,
+      "fix": "come"
+     },
+     {
+      "id": "v34",
+      "words": [
+       "Scientists",
+       "are",
+       "still",
+       "looking",
+       "on",
+       "the",
+       "causes",
+       "of",
+       "the",
+       "outbreak."
+      ],
+      "wrong": 4,
+      "fix": "into"
+     },
+     {
+      "id": "v35",
+      "words": [
+       "Laughter",
+       "is",
+       "high",
+       "contagious."
+      ],
+      "wrong": 2,
+      "fix": "highly"
+     }
+    ]
+   }
+  },
+  {
+   "key": "order",
+   "title": "Long sentences · mixed tenses",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Perfect",
+     "Conditionals (2 & 3)",
+     "Passive voice"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "order",
+    "label": "BUILD THE LONG SENTENCE",
+    "html": "Put the chunks in order. Then say the sentence <b>without looking</b>, and change one part to make it about your life.",
+    "items": [
+     {
+      "id": "v36",
+      "answer": "By the time the authorities / had ruled out / a cover-up, / the story / had already gone viral."
+     },
+     {
+      "id": "v37",
+      "answer": "If the company / had kept an eye on / its suppliers, / the scandal / would never have broken out."
+     },
+     {
+      "id": "v38",
+      "answer": "The rumour, / which was of unknown origin, / spread so fast / that nobody / could track down / who had started it."
+     },
+     {
+      "id": "v39",
+      "answer": "Not only has the crisis / wiped out / thousands of jobs, / but it has also raised concerns / about the future of the industry."
+     },
+     {
+      "id": "v40",
+      "answer": "Had the investors / looked into / the numbers earlier, / they would have pulled out / before the company collapsed."
+     }
+    ]
+   }
+  },
+  {
+   "key": "ladder",
+   "title": "Tense ladder · one idea, every tense",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Perfect",
+     "Future Perfect",
+     "Conditionals (2 & 3)",
+     "Passive voice"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · THE TENSE LADDER",
+    "html": "Draw an idea and a structure. Make a sentence with that structure and a time expression, then add a second sentence to explain the situation. No hesitation!<br><i>the lab / shut down + Future Perfect → By the end of the year, the lab will have shut down. The investors have already pulled out.</i>",
+    "promptLabel": "STRUCTURE",
+    "lines": [
+     "the company / shut down its factory",
+     "scientists / track down the source",
+     "she / come down with the flu",
+     "the police / look into the case",
+     "the trend / die out",
+     "the team / pull through",
+     "the government / cover up the problem",
+     "the storm / wipe out the crops"
+    ],
+    "prompts": [
+     "Present Perfect Continuous",
+     "Past Perfect",
+     "Past Perfect Continuous",
+     "Future Perfect",
+     "Future Continuous",
+     "Third conditional",
+     "Mixed conditional",
+     "Passive (present perfect)",
+     "Was going to",
+     "I wish + past perfect",
+     "Would for past habits",
+     "Inversion: Never / Rarely…"
+    ]
+   }
+  },
+  {
+   "key": "story",
+   "title": "Story chain · scandals and comebacks",
+   "tags": {
+    "content": [
+     "Conversation",
+     "IELTS",
+     "Phrasal verbs",
+     "Vocabulary"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · THE TWIST",
+    "html": "Draw a story and a twist. Tell the story for <b>two minutes</b>, using at least four expressions from last class. The twist must happen in the middle!",
+    "promptLabel": "TWIST",
+    "lines": [
+     "A famous football club is about to go bankrupt.",
+     "A tech startup has just launched an app that everyone loves.",
+     "A pop star disappears the day before a world tour.",
+     "A small town finds out that its water is contaminated.",
+     "A politician is caught lying in a live interview.",
+     "A family discovers a secret in their grandmother's diary."
+    ],
+    "prompts": [
+     "someone covers it up",
+     "a journalist tracks someone down",
+     "everything is wiped out",
+     "someone pulls through against all odds",
+     "the truth breaks out on social media",
+     "a highly contagious rumour spreads",
+     "the police rule out the obvious suspect"
+    ]
+   }
+  },
+  {
+   "key": "press",
+   "title": "Role-play · crisis press conference",
+   "tags": {
+    "content": [
+     "Conversation",
+     "IELTS",
+     "Phrasal verbs",
+     "Vocabulary"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "roleplay",
+    "label": "ROLE-PLAY · THE PRESS CONFERENCE",
+    "html": "A popular energy drink has made 200 people ill in three cities. The company calls a press conference. Then change roles: Victor becomes the journalist.",
+    "roles": [
+     {
+      "name": "CEO (Victor)",
+      "card": "Stay calm and sound professional. Say what the company has done so far, what it is doing now and what it will have done by next week. Use: look into, rule out, carry out tests, shut down the factory, keep an eye on, there is no cause for alarm, come into contact with. Do NOT admit that the company knew about the problem two weeks ago."
+     },
+     {
+      "name": "Journalist (teacher)",
+      "card": "Be aggressive. Ask: When did you find out? Had you received complaints before? Are you covering something up? Why haven't you shut down all the factories? Would people still be healthy if you had acted earlier? Interrupt, ask for numbers and repeat questions he avoids."
+     }
+    ]
+   }
+  },
+  {
+   "key": "part2",
+   "title": "IELTS speaking · Part 2 with last class vocabulary",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Conversation"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "IELTS PART 2 · CUE CARDS (NEW CONTEXTS)",
+    "html": "1 minute to prepare, then 2 minutes non-stop. Use at least <b>three</b> expressions from last class and <b>three</b> different tenses.",
+    "words": [
+     "break out",
+     "track down",
+     "die out",
+     "pull through",
+     "keep an eye on",
+     "rule out",
+     "cover up",
+     "raise concerns"
+    ],
+    "cats": [
+     {
+      "name": "Cue cards",
+      "qs": [
+       "Describe a trend that died out. You should say: what it was, when it was popular, who followed it, and explain why it disappeared.",
+       "Describe a time you had to keep an eye on someone or something. You should say: what or who it was, why you had to do it, how long it lasted, and explain how you felt.",
+       "Describe a person or a company that pulled through a very difficult time. You should say: who or what it was, what the problem was, what they did, and explain what you learned from it.",
+       "Describe a time you came down with something at the worst possible moment. You should say: when it was, what you had planned, what you did, and explain how it changed your plans.",
+       "Describe a piece of information you had to track down. You should say: what it was, why you needed it, how you found it, and explain how you felt when you found it."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "scale",
+   "title": "IELTS Part 3 · hot opinions (new contexts)",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Conversation"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "scale",
+    "label": "IELTS PART 3 · HOW MUCH DO YOU AGREE?",
+    "html": "Choose a number, then defend it like in Part 3: opinion, reason, example, and a concession (\"Admittedly…, but…\").",
+    "left": "Strongly disagree",
+    "right": "Strongly agree",
+    "statements": [
+     "AI will wipe out more jobs than it creates.",
+     "Big tech companies cover up their mistakes all the time.",
+     "Governments should monitor what citizens do online to prevent crime.",
+     "Some traditions deserve to die out.",
+     "Fear is more contagious than facts.",
+     "A company that lies to its customers should be shut down."
+    ]
+   }
+  },
+  {
+   "key": "minute",
+   "title": "One minute · no hesitation (vocabulary)",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Conversation"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "ONE MINUTE · NO HESITATION",
+    "html": "One minute, no \"uhm\", no repeating words. Use as many expressions from last class as you can. I count them!",
+    "seconds": 60,
+    "topics": [
+     "Explain how gossip spreads in an office as if it were a disease.",
+     "Convince me that a trend you hate will die out soon.",
+     "What would you do if your savings were wiped out tomorrow?",
+     "Tell me about a comeback you admire: a team or a person who pulled through.",
+     "Describe the perfect cover-up (in a movie or in real life).",
+     "Explain why some fake news is highly contagious."
+    ]
+   }
+  },
+  {
+   "key": "wrapup",
+   "title": "Wrap-up · vocabulary in new contexts",
+   "tags": {
+    "content": [
+     "Conversation",
+     "IELTS"
+    ],
+    "levels": [
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "Last round.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "Which expression from last class can you now use in three different contexts? Show me.",
+       "Which tense was the hardest to use naturally today?",
+       "Make one sentence with an inversion and a phrasal verb.",
+       "What will you have done for your IELTS by our next class?",
+       "Which mistake from today do you want me to keep an eye on?"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Same Words, New Worlds: Speaking Challenge",
+  "subtitle": "Review of the plague lesson vocabulary in new contexts · sentence building · all tenses · IELTS speaking",
+  "level": "B2",
+  "tags": [
+   "Conversation",
+   "IELTS",
+   "Vocabulary",
+   "Phrasal verbs"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "newworld"
+   },
+   {
+    "model": "transform"
+   },
+   {
+    "model": "spot"
+   },
+   {
+    "model": "order"
+   },
+   {
+    "model": "ladder"
+   },
+   {
+    "model": "story"
+   },
+   {
+    "model": "press"
+   },
+   {
+    "model": "part2"
+   },
+   {
+    "model": "scale"
+   },
+   {
+    "model": "minute"
+   },
+   {
+    "model": "wrapup"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

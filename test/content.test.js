@@ -44,7 +44,8 @@ test('cada pacote vira aluno + aula + modelos, e a aula usa os modelos', async (
       .reduce((n, p) => n + p.append.blocks.length, 0);
     assert.equal(full.doc.blocks.length, pack.lesson.blocks.length + appended);
     const fromModels = full.doc.blocks.filter((b) => b.source?.modelId);
-    assert.equal(fromModels.length, pack.lesson.blocks.filter((b) => b.model).length + appended);
+    // blocos retomados de pendências ("pending") já trazem o modelo de origem
+    assert.equal(fromModels.length, pack.lesson.blocks.filter((b) => b.model || b.source?.modelId).length + appended);
     if (appended) assert.equal(full.doc.blocks.at(-1).type, 'notes', 'o que foi acrescentado entra antes das anotações');
     const ids = new Set(full.doc.blocks.map((b) => b.id));
     assert.equal(ids.size, full.doc.blocks.length, 'ids únicos');
@@ -53,7 +54,7 @@ test('cada pacote vira aluno + aula + modelos, e a aula usa os modelos', async (
 
 test('respostas dos exercícios estão coerentes', () => {
   for (const pack of LESSON_PACKS) {
-    for (const m of pack.models) {
+    for (const m of pack.models || []) {
       const b = m.block;
       if (b.type === 'choice') b.items.forEach((it) => assert.ok(it.options[it.answer] !== undefined, `${m.title}: ${it.before}`));
       if (b.type === 'fill') b.items.forEach((it) => assert.ok(it.answers.length > 0 && it.hint, `${m.title}: ${it.before}`));
@@ -67,7 +68,7 @@ test('respostas dos exercícios estão coerentes', () => {
 
 test('imagens do pacote entram no acervo e a aula aponta para elas', async () => {
   for (const pack of LESSON_PACKS) {
-    const files = pack.models.filter((m) => m.block.type === 'image' && m.block.file);
+    const files = (pack.models || []).filter((m) => m.block.type === 'image' && m.block.file);
     if (!files.length) continue;
     const s = (await get('/api/students')).find((x) => x.name === pack.student.name);
     const lesson = (await get(`/api/students/${s.id}`)).lessons.find((l) => l.title === pack.lesson.title);
@@ -89,7 +90,8 @@ test('ao reiniciar, o pacote não é importado de novo', async () => {
   await start();
   assert.equal((await get('/api/models')).length, before);
   const lessons = await get('/api/lessons');
-  for (const pack of LESSON_PACKS) assert.equal(lessons.filter((l) => l.title === pack.lesson.title).length, 1);
+  // a mesma aula pode ter sido copiada para outro aluno: conta quantos pacotes trazem aquele título
+  for (const pack of LESSON_PACKS) assert.equal(lessons.filter((l) => l.title === pack.lesson.title).length, LESSON_PACKS.filter((p) => p.lesson.title === pack.lesson.title).length);
   const students = await get('/api/students');
   for (const s of ROSTER) assert.equal(students.filter((x) => x.name.toLowerCase() === s.name.toLowerCase()).length, 1, `${s.name} uma vez só`);
 });

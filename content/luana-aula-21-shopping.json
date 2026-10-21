@@ -1,0 +1,1011 @@
+{
+ "id": "luana-aula-21-shopping-practice-2026-10-21",
+ "student": {
+  "name": "Luana"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · your week and the supermarket",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Past Simple",
+     "Present Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP",
+    "html": "Answer with a <b>complete sentence</b>. Then ask me the same question!",
+    "words": [
+     "went",
+     "bought",
+     "usually",
+     "right now"
+    ],
+    "cats": [
+     {
+      "name": "Your week",
+      "qs": [
+       "What did you do last weekend?",
+       "What did you eat yesterday?",
+       "What are you doing this week that is different?",
+       "What do you usually do on Saturday mornings?"
+      ]
+     },
+     {
+      "name": "Shopping",
+      "qs": [
+       "When did you last go shopping? What did you buy?",
+       "Where do you usually buy food?",
+       "Do you like shopping? Why or why not?",
+       "What do you need to buy this week?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "vocab-use",
+   "title": "Supermarket vocabulary · complete the sentences",
+   "tags": {
+    "content": [
+     "Shopping",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "SUPERMARKET WORDS · COMPLETE",
+    "html": "Complete with a word from the supermarket. The first letter helps you. Then read the sentence out loud.",
+    "items": [
+     {
+      "id": "l1",
+      "before": "I only need three things, so I am taking a",
+      "hint": "b…",
+      "after": ", not a cart.",
+      "answers": [
+       "basket"
+      ]
+     },
+     {
+      "id": "l2",
+      "before": "The rice is in",
+      "hint": "a…",
+      "after": "5, next to the pasta.",
+      "answers": [
+       "aisle"
+      ]
+     },
+     {
+      "id": "l3",
+      "before": "There isn't any milk on the",
+      "hint": "s…",
+      "after": ". Can you ask an employee?",
+      "answers": [
+       "shelf"
+      ]
+     },
+     {
+      "id": "l4",
+      "before": "There are many people in the",
+      "hint": "l…",
+      "after": ". We need to wait!",
+      "answers": [
+       "line"
+      ]
+     },
+     {
+      "id": "l5",
+      "before": "The",
+      "hint": "c…",
+      "after": "is very friendly. She always says good morning.",
+      "answers": [
+       "cashier"
+      ]
+     },
+     {
+      "id": "l6",
+      "before": "We pay at the",
+      "hint": "c…",
+      "after": ".",
+      "answers": [
+       "checkout"
+      ]
+     },
+     {
+      "id": "l7",
+      "before": "Can I have the",
+      "hint": "r…",
+      "after": ", please? I want to see the prices.",
+      "answers": [
+       "receipt"
+      ]
+     },
+     {
+      "id": "l8",
+      "before": "Coffee is",
+      "hint": "o… s…",
+      "after": "today: it's 30% cheaper!",
+      "answers": [
+       "on sale"
+      ]
+     },
+     {
+      "id": "l9",
+      "before": "Do you want to pay in cash or by",
+      "hint": "c…",
+      "after": "?",
+      "answers": [
+       "card"
+      ]
+     },
+     {
+      "id": "l10",
+      "before": "I paid with R$50, and the cashier gave me R$8 in",
+      "hint": "c…",
+      "after": ".",
+      "answers": [
+       "change"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "sort",
+   "title": "Countable or uncountable · supermarket",
+   "tags": {
+    "content": [
+     "Countable & uncountable nouns",
+     "Shopping",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "sort",
+    "label": "COUNTABLE OR UNCOUNTABLE?",
+    "html": "Can you count it (one apple, two apples)? Click a word, then the group. Then make a sentence: \"I bought some…\" / \"I bought two…\"",
+    "groups": [
+     "Countable (1, 2, 3…)",
+     "Uncountable (no numbers)"
+    ],
+    "items": [
+     {
+      "id": "l11",
+      "text": "apple",
+      "group": 0
+     },
+     {
+      "id": "l12",
+      "text": "egg",
+      "group": 0
+     },
+     {
+      "id": "l13",
+      "text": "banana",
+      "group": 0
+     },
+     {
+      "id": "l14",
+      "text": "tomato",
+      "group": 0
+     },
+     {
+      "id": "l15",
+      "text": "cookie",
+      "group": 0
+     },
+     {
+      "id": "l16",
+      "text": "onion",
+      "group": 0
+     },
+     {
+      "id": "l17",
+      "text": "milk",
+      "group": 1
+     },
+     {
+      "id": "l18",
+      "text": "rice",
+      "group": 1
+     },
+     {
+      "id": "l19",
+      "text": "bread",
+      "group": 1
+     },
+     {
+      "id": "l20",
+      "text": "cheese",
+      "group": 1
+     },
+     {
+      "id": "l21",
+      "text": "coffee",
+      "group": 1
+     },
+     {
+      "id": "l22",
+      "text": "sugar",
+      "group": 1
+     },
+     {
+      "id": "l23",
+      "text": "water",
+      "group": 1
+     },
+     {
+      "id": "l24",
+      "text": "meat",
+      "group": 1
+     }
+    ]
+   }
+  },
+  {
+   "key": "reminder",
+   "title": "Quantities · quick reminder (no new rule)",
+   "tags": {
+    "content": [
+     "Countable & uncountable nouns"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "QUICK REMINDER",
+    "header": true,
+    "rows": [
+     [
+      "",
+      "COUNTABLE (apples)",
+      "UNCOUNTABLE (milk)"
+     ],
+     [
+      "?",
+      "How <span style=\"background-color: #CBE4D8\"><b>many</b></span> apples?",
+      "How <span style=\"background-color: #FFC9A3\"><b>much</b></span> milk?"
+     ],
+     [
+      "−",
+      "I don't have <span style=\"background-color: #CBE4D8\"><b>many</b></span> apples.",
+      "There isn't <span style=\"background-color: #FFC9A3\"><b>much</b></span> milk."
+     ],
+     [
+      "+",
+      "I have <span style=\"background-color: #FFDB8F\"><b>a lot of</b></span> apples.",
+      "I drink <span style=\"background-color: #FFDB8F\"><b>a lot of</b></span> milk."
+     ],
+     [
+      "Both",
+      "some (+) · any (− and ?)",
+      "some (+) · any (− and ?)"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "choice",
+   "title": "Much, many, some, any · choose",
+   "tags": {
+    "content": [
+     "Countable & uncountable nouns"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "PRACTICE · CHOOSE",
+    "html": "Choose the correct word. Say the full sentence out loud.",
+    "instant": false,
+    "items": [
+     {
+      "id": "l25",
+      "before": "How",
+      "options": [
+       "much",
+       "many"
+      ],
+      "answer": 1,
+      "after": "eggs do we need?"
+     },
+     {
+      "id": "l26",
+      "before": "How",
+      "options": [
+       "much",
+       "many"
+      ],
+      "answer": 0,
+      "after": "coffee do you drink every day?"
+     },
+     {
+      "id": "l27",
+      "before": "There isn't",
+      "options": [
+       "many",
+       "much"
+      ],
+      "answer": 1,
+      "after": "bread on the shelf."
+     },
+     {
+      "id": "l28",
+      "before": "I bought",
+      "options": [
+       "some",
+       "any"
+      ],
+      "answer": 0,
+      "after": "bananas yesterday."
+     },
+     {
+      "id": "l29",
+      "before": "Is there",
+      "options": [
+       "some",
+       "any"
+      ],
+      "answer": 1,
+      "after": "milk in the fridge?"
+     },
+     {
+      "id": "l30",
+      "before": "She doesn't eat",
+      "options": [
+       "much",
+       "many"
+      ],
+      "answer": 0,
+      "after": "meat."
+     },
+     {
+      "id": "l31",
+      "before": "There are",
+      "options": [
+       "a lot of",
+       "much"
+      ],
+      "answer": 0,
+      "after": "people in the line."
+     },
+     {
+      "id": "l32",
+      "before": "We didn't buy",
+      "options": [
+       "some",
+       "any"
+      ],
+      "answer": 1,
+      "after": "cheese last week."
+     }
+    ]
+   }
+  },
+  {
+   "key": "questions",
+   "title": "Paula · make the questions (all tenses)",
+   "tags": {
+    "content": [
+     "Question formation",
+     "Present Simple",
+     "Present Continuous",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "ASK ABOUT PAULA",
+    "html": "Make the question with the words. Careful with the tense! Say it, then reveal. Then answer it with information from the text.",
+    "items": [
+     {
+      "id": "l33",
+      "q": "where / Paula / go / every Saturday?",
+      "a": "Where does Paula go every Saturday?"
+     },
+     {
+      "id": "l34",
+      "q": "why / she / take / a big cart?",
+      "a": "Why does she take a big cart?"
+     },
+     {
+      "id": "l35",
+      "q": "what / her children / do / today?",
+      "a": "What are her children doing today?"
+     },
+     {
+      "id": "l36",
+      "q": "what / Paula / look at / now?",
+      "a": "What is Paula looking at now?"
+     },
+     {
+      "id": "l37",
+      "q": "there / any bread / on the shelf?",
+      "a": "Is there any bread on the shelf?"
+     },
+     {
+      "id": "l38",
+      "q": "how many people / there / in the line?",
+      "a": "How many people are there in the line?"
+     },
+     {
+      "id": "l39",
+      "q": "what / she / buy / last Saturday? (invent!)",
+      "a": "What did she buy last Saturday?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "transform",
+   "title": "Paula · change the time",
+   "tags": {
+    "content": [
+     "Present Simple",
+     "Present Continuous",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "transform",
+    "label": "CHANGE THE TIME",
+    "html": "Rewrite the sentence with the time in orange. Change the verb! Then say it.",
+    "items": [
+     {
+      "id": "l40",
+      "sentence": "Paula goes to the supermarket.",
+      "instruction": "last Saturday",
+      "answers": [
+       "Paula went to the supermarket last Saturday.",
+       "Paula went to the supermarket last Saturday",
+       "Last Saturday, Paula went to the supermarket.",
+       "Last Saturday, Paula went to the supermarket",
+       "Last Saturday Paula went to the supermarket.",
+       "Last Saturday Paula went to the supermarket"
+      ]
+     },
+     {
+      "id": "l41",
+      "sentence": "Paula goes to the supermarket.",
+      "instruction": "right now",
+      "answers": [
+       "Paula is going to the supermarket right now.",
+       "Paula is going to the supermarket right now",
+       "Right now, Paula is going to the supermarket.",
+       "Right now, Paula is going to the supermarket",
+       "Right now Paula is going to the supermarket.",
+       "Right now Paula is going to the supermarket"
+      ]
+     },
+     {
+      "id": "l42",
+      "sentence": "She buys a lot of fruit.",
+      "instruction": "yesterday",
+      "answers": [
+       "She bought a lot of fruit yesterday.",
+       "She bought a lot of fruit yesterday",
+       "Yesterday, she bought a lot of fruit.",
+       "Yesterday, she bought a lot of fruit",
+       "Yesterday she bought a lot of fruit.",
+       "Yesterday she bought a lot of fruit"
+      ]
+     },
+     {
+      "id": "l43",
+      "sentence": "She pays with her card.",
+      "instruction": "negative",
+      "answers": [
+       "She doesn't pay with her card.",
+       "She doesn't pay with her card",
+       "She does not pay with her card.",
+       "She does not pay with her card"
+      ]
+     },
+     {
+      "id": "l44",
+      "sentence": "The children are playing football.",
+      "instruction": "every Sunday",
+      "answers": [
+       "The children play football every Sunday.",
+       "The children play football every Sunday",
+       "Every Sunday, the children play football.",
+       "Every Sunday, the children play football",
+       "Every Sunday the children play football.",
+       "Every Sunday the children play football"
+      ]
+     },
+     {
+      "id": "l45",
+      "sentence": "She bought some milk.",
+      "instruction": "question",
+      "answers": [
+       "Did she buy any milk?",
+       "Did she buy any milk",
+       "Did she buy some milk?",
+       "Did she buy some milk"
+      ]
+     },
+     {
+      "id": "l46",
+      "sentence": "There are many people in the line.",
+      "instruction": "yesterday",
+      "answers": [
+       "There were many people in the line yesterday.",
+       "There were many people in the line yesterday",
+       "Yesterday, there were many people in the line.",
+       "Yesterday, there were many people in the line",
+       "Yesterday there were many people in the line.",
+       "Yesterday there were many people in the line"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "order",
+   "title": "Shopping sentences · put in order",
+   "tags": {
+    "content": [
+     "Shopping",
+     "Vocabulary",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "order",
+    "label": "BUILD THE SENTENCE",
+    "html": "Put the words in order. Then read the sentence out loud.",
+    "items": [
+     {
+      "id": "l47",
+      "answer": "I usually / take a basket / because / I don't buy / many things."
+     },
+     {
+      "id": "l48",
+      "answer": "Yesterday / I paid / with my card / at the checkout."
+     },
+     {
+      "id": "l49",
+      "answer": "Excuse me, / where can I find / the rice?"
+     },
+     {
+      "id": "l50",
+      "answer": "There isn't / any coffee / on the shelf / today."
+     },
+     {
+      "id": "l51",
+      "answer": "My husband / is waiting / in the line / right now."
+     }
+    ]
+   }
+  },
+  {
+   "key": "roleplay",
+   "title": "Role-play · at the supermarket (customer and employee)",
+   "tags": {
+    "content": [
+     "Shopping",
+     "Vocabulary",
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "roleplay",
+    "label": "ROLE-PLAY · CAN YOU HELP ME?",
+    "html": "Luana is at the supermarket with a shopping list. She needs help. Then change roles!<br>Useful: <i>Excuse me, where can I find…? · Is there any…? · How much is…? · How much are…? · Can I pay by card?</i>",
+    "roles": [
+     {
+      "name": "Customer (Luana)",
+      "card": "Your list: bread, milk, a few eggs, some apples, coffee, rice. Ask where the products are and how much they cost. One product is missing: ask for something else. At the checkout, pay and ask for the receipt."
+     },
+     {
+      "name": "Employee and cashier (teacher)",
+      "card": "Help the customer: the rice is in aisle 3, the milk is next to the cheese. There isn't any bread today: offer cookies or cake. Coffee is on sale. At the checkout, ask: Cash or card? Do you need a bag? Give the change and the receipt."
+     }
+    ]
+   }
+  },
+  {
+   "key": "minute",
+   "title": "One minute · shopping and routine",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "ONE MINUTE · TALK!",
+    "html": "Talk for one minute. Use the present and the past!",
+    "seconds": 60,
+    "topics": [
+     "The last time you went to the supermarket.",
+     "What is in your fridge right now?",
+     "Your typical Saturday.",
+     "What your family is doing right now.",
+     "Your favorite food and where you buy it.",
+     "A shopping day that went wrong."
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Shopping Day: Practice Everything",
+  "subtitle": "Supermarket vocabulary · countable and uncountable · present simple, present continuous and past simple · questions",
+  "level": "A2",
+  "number": 21,
+  "tags": [
+   "Shopping",
+   "Vocabulary",
+   "Countable & uncountable nouns",
+   "Present Simple",
+   "Present Continuous",
+   "Past Simple",
+   "Question formation"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "type": "table",
+    "label": "AT THE SUPERMARKET · WHAT CAN YOU FIND?",
+    "header": true,
+    "rows": [
+     [
+      "SECTION",
+      "WORDS"
+     ],
+     [
+      "<b>Fruit & vegetables</b>",
+      "apples, bananas, oranges, tomatoes, potatoes, onions, lettuce (alface)"
+     ],
+     [
+      "<b>Dairy</b>",
+      "milk, cheese, butter, yogurt, eggs"
+     ],
+     [
+      "<b>Bakery</b>",
+      "bread, cake, cookies"
+     ],
+     [
+      "<b>Meat & fish</b>",
+      "chicken, beef (carne de vaca), fish, ham (presunto)"
+     ],
+     [
+      "<b>Drinks</b>",
+      "water, juice, soda (refrigerante), coffee, tea"
+     ],
+     [
+      "<b>Rice, pasta & more</b>",
+      "rice, pasta, beans (feijão), sugar, flour (farinha)"
+     ]
+    ],
+    "id": "b547c84cf88",
+    "source": {
+     "modelId": "Mr2YSBa2",
+     "title": "Supermarket vocabulary · sections"
+    },
+    "pending": "g5m1nyxm"
+   },
+   {
+    "type": "match",
+    "label": "VOCABULARY · PLACES AND THINGS",
+    "html": "Match the words (1–8) to the meanings (A–H).",
+    "pairs": [
+     {
+      "left": "cart",
+      "right": "you push it and put your products in it",
+      "id": "b860aefd4c3"
+     },
+     {
+      "left": "basket",
+      "right": "small, you carry it in your hand",
+      "id": "bd0a3530aa2"
+     },
+     {
+      "left": "aisle",
+      "right": "the “street” between the shelves",
+      "id": "b856d9490e6"
+     },
+     {
+      "left": "shelf",
+      "right": "where the products are",
+      "id": "bffe425b8df"
+     },
+     {
+      "left": "checkout",
+      "right": "the place where you pay",
+      "id": "bca22ca4823"
+     },
+     {
+      "left": "cashier",
+      "right": "the person who takes your money",
+      "id": "b8971f090e2"
+     },
+     {
+      "left": "receipt",
+      "right": "the paper that shows what you paid",
+      "id": "b9f8bdfb07d"
+     },
+     {
+      "left": "line",
+      "right": "people waiting to pay",
+      "id": "b8c7ef5a14a"
+     }
+    ],
+    "id": "b86eef0ff98",
+    "source": {
+     "modelId": "hAw0I1n-",
+     "title": "Supermarket vocabulary · places and things"
+    },
+    "pending": "0Vgdify6"
+   },
+   {
+    "model": "vocab-use"
+   },
+   {
+    "model": "sort"
+   },
+   {
+    "model": "reminder"
+   },
+   {
+    "model": "choice"
+   },
+   {
+    "type": "text",
+    "label": "READING · PAULA'S SATURDAY",
+    "html": "Paula lives with her husband and two children. Every Saturday morning, she goes to the supermarket near her house. She usually takes a big <b>cart</b> because she buys a lot of food for the week. She always starts in the fruit and vegetable section. Her children eat many apples and bananas, so she buys a lot of fruit. She doesn't buy much meat, because the family prefers fish and chicken. At the <b>checkout</b>, she pays with her card and puts everything in her bags.<br><br>Today is different. It's Saturday, but Paula isn't shopping with her children. They are playing football at school. Paula is walking down the <b>aisles</b> alone, and she is looking at her list. There isn't any bread on the <b>shelf</b>, so she is asking an employee for help. She is also buying some milk and a few eggs. The supermarket is very busy today: there are many people in the <b>line</b>, and Paula doesn't have much time. She needs to be home at 11 o'clock.",
+    "id": "ba33f26745b",
+    "source": {
+     "modelId": "hIt0-ic7",
+     "title": "Reading · Paula's Saturday at the supermarket"
+    },
+    "pending": "ZrdHEOVd"
+   },
+   {
+    "type": "choice",
+    "label": "READING · TRUE OR FALSE",
+    "html": "Read the text again. True or false?",
+    "instant": false,
+    "items": [
+     {
+      "before": "Paula goes to the supermarket every Saturday.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": "",
+      "id": "b7d1fdfb8df"
+     },
+     {
+      "before": "She usually takes a small basket.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": "",
+      "id": "ba84f926f43"
+     },
+     {
+      "before": "Her children eat a lot of fruit.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": "",
+      "id": "b5aafd6c9cf"
+     },
+     {
+      "before": "Paula buys a lot of meat.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": "",
+      "id": "b4b0f99a9de"
+     },
+     {
+      "before": "She pays with cash.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": "",
+      "id": "bcc392eac41"
+     },
+     {
+      "before": "Today, her children are shopping with her.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": "",
+      "id": "b396abfc416"
+     },
+     {
+      "before": "The children are playing football.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": "",
+      "id": "b3abef40457"
+     },
+     {
+      "before": "There isn't any bread on the shelf.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": "",
+      "id": "bf06d93799e"
+     },
+     {
+      "before": "She is buying some milk.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": "",
+      "id": "bd1d9fd2c2a"
+     },
+     {
+      "before": "There aren't many people at the supermarket today.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": "",
+      "id": "b0ec54fe945"
+     }
+    ],
+    "id": "b42438d08d3",
+    "source": {
+     "modelId": "GosIaTfg",
+     "title": "Reading · Paula's Saturday · true or false"
+    },
+    "pending": "5gV2UZnZ"
+   },
+   {
+    "model": "questions"
+   },
+   {
+    "model": "transform"
+   },
+   {
+    "model": "order"
+   },
+   {
+    "model": "roleplay"
+   },
+   {
+    "type": "deck",
+    "label": "CONVERSATION · YOU AND THE SUPERMARKET",
+    "html": "Answer with complete sentences.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Your supermarket",
+      "qs": [
+       "How often do you go to the supermarket?",
+       "Which supermarket do you usually go to? Why?",
+       "Do you prefer a cart or a basket?",
+       "Is there a supermarket near your house?",
+       "Are there many people there on Saturdays?"
+      ]
+     },
+     {
+      "name": "What do you buy?",
+      "qs": [
+       "What do you usually buy every week?",
+       "Do you buy much fruit?",
+       "How much coffee do you drink?",
+       "Is there any food you never buy?",
+       "What is in your fridge right now?"
+      ]
+     },
+     {
+      "name": "Last time",
+      "qs": [
+       "When did you last go to the supermarket?",
+       "What did you buy?",
+       "How much did you pay?",
+       "Did you forget anything?",
+       "Did you go alone or with someone?"
+      ]
+     }
+    ],
+    "id": "bc184682683",
+    "source": {
+     "modelId": "-BS1ijCt",
+     "title": "Conversation · you and the supermarket"
+    },
+    "pending": "Y3Ean4Lq"
+   },
+   {
+    "model": "minute"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

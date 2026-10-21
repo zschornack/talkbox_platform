@@ -642,7 +642,7 @@
      {
       "id": "a39",
       "before": "I can't sleep. I drank",
-      "hint": "",
+      "hint": "too much / too many / enough",
       "after": "coffee today.",
       "answers": [
        "too much"
@@ -651,7 +651,7 @@
      {
       "id": "a40",
       "before": "There are",
-      "hint": "",
+      "hint": "too much / too many / enough",
       "after": "cars in the city centre. The traffic is terrible!",
       "answers": [
        "too many"
@@ -660,7 +660,7 @@
      {
       "id": "a41",
       "before": "We don't have",
-      "hint": "",
+      "hint": "too much / too many / enough",
       "after": "eggs for the cake. We need three more.",
       "answers": [
        "enough"
@@ -669,7 +669,7 @@
      {
       "id": "a42",
       "before": "You eat",
-      "hint": "",
+      "hint": "too much / too many / enough",
       "after": "sweets! Your teeth will hurt.",
       "answers": [
        "too many"
@@ -678,7 +678,7 @@
      {
       "id": "a43",
       "before": "Is there",
-      "hint": "",
+      "hint": "too much / too many / enough",
       "after": "milk for breakfast tomorrow?",
       "answers": [
        "enough"
@@ -687,7 +687,7 @@
      {
       "id": "a44",
       "before": "This soup is horrible. There is",
-      "hint": "",
+      "hint": "too much / too many / enough",
       "after": "salt in it.",
       "answers": [
        "too much"
@@ -696,7 +696,7 @@
      {
       "id": "a45",
       "before": "I have",
-      "hint": "",
+      "hint": "too much / too many / enough",
       "after": "homework this week. I can't go out.",
       "answers": [
        "too much"
@@ -705,7 +705,7 @@
      {
       "id": "a46",
       "before": "There aren't",
-      "hint": "",
+      "hint": "too much / too many / enough",
       "after": "chairs for everybody. Some people are standing.",
       "answers": [
        "enough"

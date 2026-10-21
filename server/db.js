@@ -353,6 +353,38 @@ export function updateStudent(id, patch) {
   });
 }
 
+/**
+ * Junta dois cadastros do mesmo aluno: aulas, mapa (avaliações) e pendências do "from" passam para o "into".
+ * Nível, objetivo e observações em branco no "into" são completados com os do "from". O "from" fica inativo,
+ * com o nome "<nome> (cadastro repetido)" (nada é apagado). Com "name", o "into" passa a ter esse nome.
+ */
+export function mergeStudents(fromId, intoId, name) {
+  const from = getStudent(fromId);
+  const into = getStudent(intoId);
+  if (!from || !into || fromId === intoId) return null;
+  return transaction(() => {
+    const moved = db.prepare('UPDATE lessons SET student_id = ? WHERE student_id = ?').run(intoId, fromId).changes;
+    db.prepare('UPDATE assessments SET student_id = ? WHERE student_id = ?').run(intoId, fromId);
+    db.prepare('UPDATE pending SET student_id = ? WHERE student_id = ?').run(intoId, fromId);
+    // aulas que vieram do outro cadastro: renumera tudo pela ordem das datas
+    if (moved) {
+      const rows = db.prepare('SELECT id FROM lessons WHERE student_id = ? ORDER BY lesson_date, created_at').all(intoId);
+      const setNum = db.prepare('UPDATE lessons SET number = ? WHERE id = ?');
+      rows.forEach((r, i) => setNum.run(i + 1, r.id));
+    }
+    const fill = (a, b) => (String(a || '').trim() ? a : b || '');
+    db.prepare("UPDATE students SET name = ?, active = 0, notes = ?, updated_at = ? WHERE id = ?")
+      .run(`${from.name} (cadastro repetido)`, `Juntado com a ficha de ${name || into.name} em ${now().slice(0, 10).split('-').reverse().join('/')}.`, now(), fromId);
+    updateStudent(intoId, {
+      name: name?.trim() || into.name,
+      level: fill(into.level, from.level),
+      goal: fill(into.goal, from.goal),
+      notes: fill(into.notes, from.notes),
+    });
+    return getStudent(intoId);
+  });
+}
+
 /** Copia o mapa atual de um aluno para outro (ex.: turma que se separa). Vira avaliações manuais com a data de hoje. */
 export function copyMap(fromId, toId) {
   const from = getStudent(fromId);
