@@ -83,7 +83,7 @@ test('modelos: etiquetas oficiais, versões, uso e "visto em"', async () => {
 
 test('a migração roda uma vez só e o banco recusa apagar', async () => {
   const db = new DatabaseSync(path.join(DATA, 'talkbox.db'));
-  assert.equal(db.prepare('PRAGMA user_version').get().user_version, 2);
+  assert.equal(db.prepare('PRAGMA user_version').get().user_version, 3);
   assert.throws(() => db.exec("DELETE FROM lessons WHERE id = 'l1'"), /não são apagadas/);
   assert.throws(() => db.exec('DELETE FROM models'), /não são apagados/);
   db.close();

@@ -20,6 +20,9 @@
 // Juntar cadastros repetidos: "merge": [ { "from": "Júlia", "into": "Julia", "name": "Júlia" } ] passa aulas, mapa e
 // pendências do "from" para o "into" (que fica com o nome "name", se vier). O "from" fica inativo como
 // "<nome> (cadastro repetido)". Roda antes do "rename". Se um dos dois não existe, não faz nada.
+// Histórico de antes da plataforma: "profiles": [ { "name": "Ana", "level": "A1", "map": { "Present Simple": "good" },
+// "priorLessons": 5 } ] atualiza a ficha (nível; mapa só sobe, nunca desce) e renumera as aulas da plataforma a partir
+// de priorLessons + 1. Alunos inativos ou que não existem são pulados.
 // Copiar de outro aluno: { "name": "Letícia", "copyFrom": "William" } cria o aluno com o nível, o objetivo e o mapa
 // de conteúdos do outro (as aulas continuam só no original).
 // Imagens: { "type": "image", "file": "images/x.webp", "caption": "...", "layout": "full" | "half" }, com o arquivo
@@ -101,6 +104,11 @@ export function importPack(pack, file = '', dir = CONTENT_DIR) {
         created++;
         if (src) db.copyMap(src.id, out.student.id);
       }
+    }
+
+    for (const p of pack.profiles || []) {
+      const s = byName(p.name);
+      if (s?.active) db.applyProfile(s.id, { level: p.level, map: p.map, priorLessons: p.priorLessons });
     }
 
     let student = null;

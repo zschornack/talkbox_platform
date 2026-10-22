@@ -1,0 +1,659 @@
+{
+ "id": "isabel-larissa-fun-countdown-2026-10-21",
+ "student": {
+  "name": "Isabel & Larissa"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · sister vs sister",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Present Simple",
+     "Present Continuous",
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP · SISTER VS SISTER",
+    "html": "Ask your sister! Answer with a <b>complete sentence</b>, then add one more detail.",
+    "words": [
+     "because",
+     "also",
+     "yesterday",
+     "right now"
+    ],
+    "cats": [
+     {
+      "name": "Right now",
+      "qs": [
+       "What are you wearing right now?",
+       "What is your mom or dad probably doing right now?",
+       "What song is in your head right now?",
+       "What is your pet (or your favorite animal) doing right now? Imagine!"
+      ]
+     },
+     {
+      "name": "Yesterday",
+      "qs": [
+       "What did you eat yesterday?",
+       "What were you doing at 8 p.m. yesterday?",
+       "Did you fight with your sister yesterday? Why?",
+       "What was the best part of your day yesterday?"
+      ]
+     },
+     {
+      "name": "Always",
+      "qs": [
+       "What do you always do before school?",
+       "What does your sister do that annoys you?",
+       "Where do you usually study?",
+       "What do you never do on weekends?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "race",
+   "title": "Countdown race · 30 seconds (room, brands, animals)",
+   "tags": {
+    "content": [
+     "Vocabulary"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "COUNTDOWN RACE · 30 SECONDS!",
+    "html": "One sister at a time. Say as many words as you can before the time is up! I count. The other sister can't repeat any word. The winner gets a point!",
+    "seconds": 30,
+    "topics": [
+     "Things in your bedroom",
+     "Clothing brands",
+     "Animals that live in the ocean",
+     "Things that are pink or purple",
+     "Animals that can fly",
+     "Brands of food or drinks",
+     "Things you can find in a backpack",
+     "Animals that live in Brazil",
+     "Things you do every morning",
+     "Things you did last weekend"
+    ]
+   }
+  },
+  {
+   "key": "better",
+   "title": "Who knows her sister better?",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Present Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "GAME · WHO KNOWS HER SISTER BETTER?",
+    "html": "Answer the question <b>about your sister</b>: \"Her favorite… is…\". Then your sister says if it's true. One point for each correct answer!",
+    "words": [
+     "her",
+     "she likes",
+     "she doesn't",
+     "she always"
+    ],
+    "cats": [
+     {
+      "name": "Favorites",
+      "qs": [
+       "What is her favorite animal?",
+       "What is her favorite brand?",
+       "What is her favorite food?",
+       "What is her favorite color?",
+       "What is her favorite series or movie?"
+      ]
+     },
+     {
+      "name": "Habits",
+      "qs": [
+       "What time does she usually wake up?",
+       "What does she always have in her bag?",
+       "What does she do when she is bored?",
+       "Where does she keep her secrets?"
+      ]
+     },
+     {
+      "name": "The past",
+      "qs": [
+       "What did she do last weekend?",
+       "What was she doing when you arrived home yesterday?",
+       "What was her first pet (or toy)?",
+       "When did she last cry laughing?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "riddles",
+   "title": "Animal riddles · what am I?",
+   "tags": {
+    "content": [
+     "Vocabulary",
+     "Present Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala",
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "WHAT AM I?",
+    "html": "Read the riddle and guess the animal. Then each sister invents a riddle for the other!",
+    "items": [
+     {
+      "id": "i1",
+      "q": "I am black and white. I live in China. I eat bamboo all day.",
+      "a": "A panda!"
+     },
+     {
+      "id": "i2",
+      "q": "I have a very long neck. I eat leaves from tall trees.",
+      "a": "A giraffe!"
+     },
+     {
+      "id": "i3",
+      "q": "I sleep in the day and fly at night. I sleep upside down.",
+      "a": "A bat!"
+     },
+     {
+      "id": "i4",
+      "q": "I am very slow. I live in a tree in the Amazon and I sleep a lot.",
+      "a": "A sloth (bicho-preguiça)!"
+     },
+     {
+      "id": "i5",
+      "q": "I live in the ocean. I have eight arms and I can change color.",
+      "a": "An octopus!"
+     },
+     {
+      "id": "i6",
+      "q": "I am orange and black. I am a big cat and I live in the jungle.",
+      "a": "A tiger!"
+     },
+     {
+      "id": "i7",
+      "q": "I am pink, I stand on one leg and I live near water.",
+      "a": "A flamingo!"
+     }
+    ]
+   }
+  },
+  {
+   "key": "change",
+   "title": "Change the time · pets and rooms",
+   "tags": {
+    "content": [
+     "Present Simple",
+     "Present Continuous",
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "transform",
+    "label": "CHANGE THE TIME",
+    "html": "Rewrite the sentence with the time in orange. Change the verb! Then say it.",
+    "items": [
+     {
+      "id": "i8",
+      "sentence": "The cat sleeps on my bed.",
+      "instruction": "right now",
+      "answers": [
+       "The cat is sleeping on my bed right now.",
+       "The cat is sleeping on my bed right now",
+       "Right now, the cat is sleeping on my bed.",
+       "Right now, the cat is sleeping on my bed",
+       "Right now the cat is sleeping on my bed.",
+       "Right now the cat is sleeping on my bed"
+      ]
+     },
+     {
+      "id": "i9",
+      "sentence": "The cat sleeps on my bed.",
+      "instruction": "last night",
+      "answers": [
+       "The cat slept on my bed last night.",
+       "The cat slept on my bed last night",
+       "Last night, the cat slept on my bed.",
+       "Last night, the cat slept on my bed",
+       "Last night the cat slept on my bed.",
+       "Last night the cat slept on my bed"
+      ]
+     },
+     {
+      "id": "i10",
+      "sentence": "The cat sleeps on my bed.",
+      "instruction": "at 10 p.m. yesterday",
+      "answers": [
+       "The cat was sleeping on my bed at 10 p.m. yesterday.",
+       "The cat was sleeping on my bed at 10 p.m. yesterday",
+       "At 10 p.m. yesterday, the cat was sleeping on my bed.",
+       "At 10 p.m. yesterday, the cat was sleeping on my bed",
+       "At 10 p.m. yesterday the cat was sleeping on my bed.",
+       "At 10 p.m. yesterday the cat was sleeping on my bed"
+      ]
+     },
+     {
+      "id": "i11",
+      "sentence": "We are cleaning our room.",
+      "instruction": "every Saturday",
+      "answers": [
+       "We clean our room every Saturday.",
+       "We clean our room every Saturday",
+       "Every Saturday, we clean our room.",
+       "Every Saturday, we clean our room",
+       "Every Saturday we clean our room.",
+       "Every Saturday we clean our room"
+      ]
+     },
+     {
+      "id": "i12",
+      "sentence": "She buys clothes from that brand.",
+      "instruction": "last month",
+      "answers": [
+       "She bought clothes from that brand last month.",
+       "She bought clothes from that brand last month",
+       "Last month, she bought clothes from that brand.",
+       "Last month, she bought clothes from that brand",
+       "Last month she bought clothes from that brand.",
+       "Last month she bought clothes from that brand"
+      ]
+     },
+     {
+      "id": "i13",
+      "sentence": "The dog ate my homework.",
+      "instruction": "question",
+      "answers": [
+       "Did the dog eat my homework?",
+       "Did the dog eat my homework",
+       "Did the dog eat your homework?",
+       "Did the dog eat your homework"
+      ]
+     },
+     {
+      "id": "i14",
+      "sentence": "I was watching TV.",
+      "instruction": "negative",
+      "answers": [
+       "I wasn't watching TV.",
+       "I wasn't watching TV",
+       "I was not watching TV.",
+       "I was not watching TV"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "spot",
+   "title": "Spot the mistake · animals and brands",
+   "tags": {
+    "content": [
+     "Present Simple",
+     "Present Continuous",
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "spot",
+    "label": "SPOT THE MISTAKE",
+    "html": "One mistake in each sentence. Click it, then say the sentence correctly. The fastest sister wins!",
+    "items": [
+     {
+      "id": "i15",
+      "words": [
+       "My",
+       "dog",
+       "sleep",
+       "on",
+       "the",
+       "sofa",
+       "every",
+       "day."
+      ],
+      "wrong": 2,
+      "fix": "sleeps"
+     },
+     {
+      "id": "i16",
+      "words": [
+       "Yesterday",
+       "I",
+       "buyed",
+       "new",
+       "sneakers."
+      ],
+      "wrong": 2,
+      "fix": "bought"
+     },
+     {
+      "id": "i17",
+      "words": [
+       "Look!",
+       "The",
+       "cat",
+       "is",
+       "eat",
+       "my",
+       "breakfast!"
+      ],
+      "wrong": 4,
+      "fix": "eating"
+     },
+     {
+      "id": "i18",
+      "words": [
+       "We",
+       "was",
+       "playing",
+       "in",
+       "our",
+       "room",
+       "when",
+       "Mom",
+       "called",
+       "us."
+      ],
+      "wrong": 1,
+      "fix": "were"
+     },
+     {
+      "id": "i19",
+      "words": [
+       "Did",
+       "you",
+       "saw",
+       "the",
+       "new",
+       "Nike",
+       "ad?"
+      ],
+      "wrong": 2,
+      "fix": "see"
+     },
+     {
+      "id": "i20",
+      "words": [
+       "My",
+       "sister",
+       "don't",
+       "like",
+       "spiders."
+      ],
+      "wrong": 2,
+      "fix": "doesn't"
+     }
+    ]
+   }
+  },
+  {
+   "key": "mystery",
+   "title": "Role-play · the chocolate mystery",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Past Continuous",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "roleplay",
+    "label": "ROLE-PLAY · WHO ATE THE CHOCOLATE?",
+    "html": "Last night, somebody ate the big chocolate bar that was in the kitchen. The teacher is the detective. Each sister tells her story. Is there a contradiction? Who is guilty?",
+    "roles": [
+     {
+      "name": "Isabel",
+      "card": "Invent your alibi: Where were you at 9 p.m.? What were you doing? Who was with you? What was the cat (or dog) doing? Answer every question with details, and don't change your story!"
+     },
+     {
+      "name": "Larissa",
+      "card": "Invent your alibi too: Where were you at 9 p.m.? What were you doing? What did you hear? What was your sister doing? You can try to blame your sister... but be careful!"
+     },
+     {
+      "name": "Detective (teacher)",
+      "card": "Ask each sister separately: Where were you at 9? What were you doing? What was your sister doing? What did you see or hear? Did you go to the kitchen? Look for contradictions and decide who is guilty."
+     }
+    ]
+   }
+  },
+  {
+   "key": "brand",
+   "title": "Invent a brand · pitch",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Present Simple",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · INVENT A BRAND",
+    "html": "Draw a product and a challenge. Invent a brand: its name, its logo and its colors. Then present it to the teacher like on TV! Your sister asks two questions.",
+    "promptLabel": "YOUR PITCH MUST SAY",
+    "lines": [
+     "sneakers for dogs",
+     "a backpack that cleans your room",
+     "pajamas that change color",
+     "a pet hotel",
+     "an app for sisters",
+     "ice cream for cats",
+     "a bed that makes itself",
+     "perfume that smells like pizza"
+    ],
+    "prompts": [
+     "who buys it and why",
+     "how you invented it (in the past)",
+     "what the product is doing right now in a store",
+     "why it is better than other brands",
+     "how much it costs"
+    ]
+   }
+  },
+  {
+   "key": "opinions",
+   "title": "Hot takes · animals, brands and rooms",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "scale",
+    "label": "HOT TAKES!",
+    "html": "Choose a number. Do you and your sister agree? Explain your choice!",
+    "left": "No way!",
+    "right": "Totally!",
+    "statements": [
+     "Cats are better than dogs.",
+     "Pets can sleep in your bed.",
+     "Expensive brands are always better.",
+     "Your room needs to be tidy every day.",
+     "Spiders are cute.",
+     "Sisters should share a room."
+    ]
+   }
+  },
+  {
+   "key": "minute",
+   "title": "One minute · don't stop!",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "ONE MINUTE · DON'T STOP!",
+    "html": "Talk for one minute without stopping! If you stop, your sister gets a point.",
+    "seconds": 60,
+    "topics": [
+     "Describe your room as if you were selling it.",
+     "Your favorite animal and why you love it.",
+     "What were you doing at this time yesterday? Tell me everything!",
+     "A brand you love and a brand you hate.",
+     "Describe your sister's room (be nice!).",
+     "The funniest thing an animal did in front of you."
+    ]
+   }
+  },
+  {
+   "key": "wrapup",
+   "title": "Wrap-up · sisters",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "Last questions!",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "Who won more points today?",
+       "Which riddle was the hardest?",
+       "What brand did your sister invent? Do you want to buy it?",
+       "Who ate the chocolate?!",
+       "What do you want to do next class?"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Countdown! Animals, Brands and Mysteries",
+  "subtitle": "Games and conversation · present simple, present continuous, past simple and past continuous · rooms, brands and animals",
+  "level": "A2",
+  "tags": [
+   "Conversation",
+   "Vocabulary",
+   "Present Simple",
+   "Present Continuous",
+   "Past Simple",
+   "Past Continuous"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "race"
+   },
+   {
+    "model": "better"
+   },
+   {
+    "model": "riddles"
+   },
+   {
+    "model": "change"
+   },
+   {
+    "model": "spot"
+   },
+   {
+    "model": "mystery"
+   },
+   {
+    "model": "brand"
+   },
+   {
+    "model": "opinions"
+   },
+   {
+    "model": "minute"
+   },
+   {
+    "model": "wrapup"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

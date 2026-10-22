@@ -8,7 +8,7 @@ import { DatabaseSync } from 'node:sqlite';
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { canonicalContent } from '../web/js/catalog.js';
+import { canonicalContent, MAP_SECTIONS } from '../web/js/catalog.js';
 
 export const DATA_DIR = path.resolve(process.env.TALKBOX_DATA || 'data');
 export const UPLOADS_DIR = path.join(DATA_DIR, 'uploads');
@@ -118,7 +118,7 @@ export function transaction(fn) {
 }
 
 // ---------- migração 1 (v0.4): banco "pra valer" ----------
-const SCHEMA_VERSION = 2;
+const SCHEMA_VERSION = 3;
 if (db.prepare('PRAGMA user_version').get().user_version < 1) {
   transaction(() => {
     // aulas: data, número, situação e arquivamento. Aulas que já existiam contam como dadas.
@@ -242,6 +242,15 @@ if (db.prepare('PRAGMA user_version').get().user_version < 2) {
   });
 }
 
+// ---------- migração 3 (v0.7): aulas dadas antes da plataforma ----------
+// prior_lessons = quantas aulas o aluno teve antes (no Drive). A primeira aula na plataforma é prior_lessons + 1.
+if (db.prepare('PRAGMA user_version').get().user_version < 3) {
+  transaction(() => {
+    db.exec('ALTER TABLE students ADD COLUMN prior_lessons INTEGER NOT NULL DEFAULT 0');
+    db.exec('PRAGMA user_version = 3');
+  });
+}
+
 db.exec('CREATE INDEX IF NOT EXISTS lessons_by_student ON lessons (student_id, lesson_date)');
 
 // ---------- a aluna de exemplo "Julia" é a Júlia de verdade (pasta JÚLIA no Drive) ----------
@@ -297,6 +306,7 @@ const studentOut = (r) => {
     updatedAt: r.updated_at,
     lastLessonAt: r.last_lesson_at ?? null,
     lessonCount: r.lesson_count ?? 0,
+    priorLessons: r.prior_lessons ?? 0,
   };
 };
 
@@ -382,6 +392,43 @@ export function mergeStudents(fromId, intoId, name) {
       notes: fill(into.notes, from.notes),
     });
     return getStudent(intoId);
+  });
+}
+
+const MAP_ITEMS = new Set(MAP_SECTIONS.flatMap((sec) => sec.items));
+const RANK = { none: 0, practicing: 1, good: 2 };
+
+/**
+ * Atualiza a ficha com o histórico de antes da plataforma (as aulas do Drive).
+ * - level: o nível, se vier.
+ * - map: { conteúdo: 'practicing' | 'good' }. Só sobe: um conteúdo nunca volta de "Já está bom" para "Praticando",
+ *   e o que não estiver na lista fica como está. Cada mudança vira uma avaliação manual (aparece na evolução).
+ * - priorLessons: quantas aulas o aluno teve antes. As aulas da plataforma (não arquivadas) são renumeradas
+ *   pela ordem das datas a partir de priorLessons + 1, e as próximas continuam dali.
+ */
+export function applyProfile(studentId, { level, map = {}, priorLessons } = {}) {
+  const cur = getStudent(studentId);
+  if (!cur) return null;
+  return transaction(() => {
+    const changed = [];
+    if (String(level || '').trim() && level.trim() !== cur.level) {
+      db.prepare('UPDATE students SET level = ?, updated_at = ? WHERE id = ?').run(level.trim(), now(), studentId);
+    }
+    for (const [term, status] of Object.entries(map)) {
+      const content = canonicalContent(term);
+      if (!MAP_ITEMS.has(content) || !(status in RANK)) throw new Error(`Conteúdo ou situação inválida no perfil de ${cur.name}: ${term} = ${status}`);
+      if (RANK[status] > RANK[cur.map[content] || 'none']) {
+        assess(studentId, content, status);
+        changed.push(content);
+      }
+    }
+    if (Number.isInteger(priorLessons) && priorLessons >= 0) {
+      db.prepare('UPDATE students SET prior_lessons = ?, updated_at = ? WHERE id = ?').run(priorLessons, now(), studentId);
+      const rows = db.prepare('SELECT id FROM lessons WHERE student_id = ? AND archived_at IS NULL ORDER BY lesson_date, created_at').all(studentId);
+      const setNum = db.prepare('UPDATE lessons SET number = ? WHERE id = ?');
+      rows.forEach((r, i) => setNum.run(priorLessons + i + 1, r.id));
+    }
+    return { student: getStudent(studentId), changed };
   });
 }
 
@@ -484,7 +531,9 @@ export function getLesson(id) {
 export function createLesson({ id = newId(), title, studentId = null, doc, state = {}, date, number, status = 'preparing', receivedMessage = '' }) {
   const name = studentId ? db.prepare('SELECT name FROM students WHERE id = ?').get(studentId)?.name || '' : '';
   if (number === undefined && studentId) {
-    number = (db.prepare('SELECT MAX(number) AS n FROM lessons WHERE student_id = ?').get(studentId).n || 0) + 1;
+    const max = db.prepare('SELECT MAX(number) AS n FROM lessons WHERE student_id = ?').get(studentId).n || 0;
+    const prior = db.prepare('SELECT prior_lessons AS p FROM students WHERE id = ?').get(studentId)?.p || 0;
+    number = Math.max(max, prior) + 1;
   }
   return transaction(() => {
     db.prepare(

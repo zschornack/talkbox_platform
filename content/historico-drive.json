@@ -1,0 +1,308 @@
+{
+ "id": "historico-drive-2026-10-21",
+ "about": "Histórico de antes da plataforma, a partir das aulas no Google Drive (21/10/2026): nível, mapa de conteúdos (só sobe) e quantas aulas cada aluno já teve. Thiago Caretta e Victor: a última aula do Drive é a mesma que já está na plataforma, por isso contam uma a menos.",
+ "profiles": [
+  {
+   "name": "Alana",
+   "level": "A2",
+   "priorLessons": 4,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "practicing",
+    "Future (will)": "practicing",
+    "Future (going to)": "practicing"
+   }
+  },
+  {
+   "name": "Ana",
+   "level": "A1",
+   "priorLessons": 5,
+   "map": {
+    "Verb to be": "good",
+    "Present Simple": "practicing",
+    "Present Continuous": "practicing",
+    "Question words": "practicing",
+    "Possessives": "practicing",
+    "Gerunds & infinitives": "practicing"
+   }
+  },
+  {
+   "name": "Ariane",
+   "level": "A2",
+   "priorLessons": 24,
+   "map": {
+    "Present Simple": "practicing",
+    "Past Simple": "practicing",
+    "Future (will)": "practicing",
+    "Future (going to)": "practicing",
+    "Question formation": "practicing"
+   }
+  },
+  {
+   "name": "Arthur",
+   "level": "A2",
+   "priorLessons": 39,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "practicing",
+    "Past Continuous": "practicing",
+    "Future (present continuous)": "practicing",
+    "Future (going to)": "practicing",
+    "Future (will)": "practicing",
+    "Modal verbs": "practicing",
+    "Prepositions": "practicing"
+   }
+  },
+  {
+   "name": "Bia & Vini",
+   "level": "B1",
+   "priorLessons": 34,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "good",
+    "Past Continuous": "good",
+    "Present Perfect": "practicing",
+    "Passive voice": "practicing",
+    "Modal verbs": "practicing"
+   }
+  },
+  {
+   "name": "Caio Nichetti",
+   "level": "B1",
+   "priorLessons": 27,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "good",
+    "Past Continuous": "good",
+    "Present Perfect": "practicing",
+    "Articles": "practicing",
+    "Prepositions": "practicing",
+    "Gerunds & infinitives": "practicing"
+   }
+  },
+  {
+   "name": "Daniela Steinheuzer",
+   "level": "A2",
+   "priorLessons": 13,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "practicing",
+    "Past Continuous": "practicing"
+   }
+  },
+  {
+   "name": "Edilaine",
+   "level": "A2",
+   "priorLessons": 20,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "practicing",
+    "Comparatives & superlatives": "practicing",
+    "Question words": "practicing",
+    "Prepositions": "practicing",
+    "Future (will)": "practicing",
+    "Future (going to)": "practicing"
+   }
+  },
+  {
+   "name": "Fernando",
+   "level": "B1",
+   "priorLessons": 4,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "good",
+    "Past Continuous": "good"
+   }
+  },
+  {
+   "name": "Gabriel Biehals",
+   "level": "C1",
+   "priorLessons": 30,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "good",
+    "Past Continuous": "good",
+    "Present Perfect": "good",
+    "Modal verbs": "practicing"
+   }
+  },
+  {
+   "name": "Isabel & Larissa",
+   "level": "B1",
+   "priorLessons": 18,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "good",
+    "Past Continuous": "good",
+    "Relative clauses": "practicing",
+    "Prepositions": "practicing"
+   }
+  },
+  {
+   "name": "Júlia",
+   "level": "A2",
+   "priorLessons": 37,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "good",
+    "Past Continuous": "practicing",
+    "Adverbs of manner": "practicing",
+    "Modal verbs": "practicing",
+    "Future (present continuous)": "practicing",
+    "Future (going to)": "practicing",
+    "Future (will)": "practicing"
+   }
+  },
+  {
+   "name": "Kelwen",
+   "level": "A2",
+   "priorLessons": 23,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "practicing",
+    "Question formation": "practicing",
+    "Question words": "practicing",
+    "Prepositions": "practicing",
+    "Articles": "practicing"
+   }
+  },
+  {
+   "name": "Letícia",
+   "level": "A1",
+   "priorLessons": 7,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "practicing",
+    "Prepositions": "practicing"
+   }
+  },
+  {
+   "name": "Luana",
+   "level": "A2",
+   "priorLessons": 19,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "practicing",
+    "Past Continuous": "practicing",
+    "Countable & uncountable nouns": "practicing"
+   }
+  },
+  {
+   "name": "Luciane",
+   "level": "A2",
+   "priorLessons": 16,
+   "map": {
+    "Verb to be": "good",
+    "Present Simple": "good",
+    "Present Continuous": "practicing",
+    "Modal verbs": "practicing"
+   }
+  },
+  {
+   "name": "Milene",
+   "level": "A1",
+   "priorLessons": 1,
+   "map": {
+    "Verb to be": "practicing",
+    "Present Simple": "practicing"
+   }
+  },
+  {
+   "name": "Thais Aguiar Dias",
+   "level": "A2",
+   "priorLessons": 38,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "good",
+    "Past Continuous": "practicing",
+    "Prepositions": "practicing",
+    "Relative clauses": "practicing"
+   }
+  },
+  {
+   "name": "Thiago Caretta",
+   "level": "B1",
+   "priorLessons": 30,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "good",
+    "Past Continuous": "good",
+    "Question formation": "practicing"
+   }
+  },
+  {
+   "name": "Thiago Costa",
+   "level": "A1",
+   "priorLessons": 15,
+   "map": {
+    "Present Simple": "practicing",
+    "Present Continuous": "practicing",
+    "Question words": "practicing"
+   }
+  },
+  {
+   "name": "Thiago Santos",
+   "level": "A2",
+   "priorLessons": 41,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "good",
+    "Past Continuous": "practicing",
+    "Modal verbs": "practicing",
+    "Conditionals (0 & 1)": "practicing"
+   }
+  },
+  {
+   "name": "Victor",
+   "level": "B2",
+   "priorLessons": 20,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "good",
+    "Past Continuous": "good",
+    "Present Perfect": "practicing",
+    "Past Perfect": "practicing"
+   }
+  },
+  {
+   "name": "Vinícius K.",
+   "level": "A2",
+   "priorLessons": 31,
+   "map": {
+    "Present Simple": "good",
+    "Present Continuous": "good",
+    "Past Simple": "good",
+    "Past Continuous": "practicing",
+    "Modal verbs": "practicing",
+    "Adverbs of manner": "practicing"
+   }
+  },
+  {
+   "name": "William",
+   "level": "A1",
+   "priorLessons": 3,
+   "map": {
+    "Present Simple": "practicing",
+    "Present Continuous": "practicing",
+    "Question words": "practicing",
+    "Prepositions": "practicing"
+   }
+  }
+ ]
+}

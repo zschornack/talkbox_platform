@@ -1,0 +1,782 @@
+{
+ "id": "ana-aula-006-routine-now-2026-10-21",
+ "student": {
+  "name": "Ana"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · usually × right now",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Present Simple",
+     "Present Continuous"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP",
+    "html": "Answer with a <b>complete sentence</b>.",
+    "words": [
+     "usually",
+     "right now",
+     "today",
+     "every day"
+    ],
+    "cats": [
+     {
+      "name": "Usually",
+      "qs": [
+       "What time do you usually wake up?",
+       "What do you usually do after work?",
+       "How often do you study English?",
+       "What do you usually eat for breakfast?"
+      ]
+     },
+     {
+      "name": "Right now",
+      "qs": [
+       "What are you doing right now?",
+       "What are you wearing today?",
+       "Is anyone in your house working right now?",
+       "What is the weather like today? Is it raining?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "table",
+   "title": "Present Continuous · quick review (study)",
+   "tags": {
+    "content": [
+     "Present Continuous"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "tense",
+    "label": "QUICK REVIEW · PRESENT CONTINUOUS",
+    "verb": "study",
+    "tense": "present-continuous",
+    "complement": "English now."
+   }
+  },
+  {
+   "key": "basics",
+   "title": "Present Continuous · 5 basic sentences",
+   "tags": {
+    "content": [
+     "Present Continuous"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "SAY IT, THEN REVEAL",
+    "html": "Change the sentence to <b>right now</b>. Say it first, then click to check.",
+    "items": [
+     {
+      "id": "a1",
+      "q": "I work every day. → right now",
+      "a": "I am working right now."
+     },
+     {
+      "id": "a2",
+      "q": "She drinks coffee every morning. → right now",
+      "a": "She is drinking coffee right now."
+     },
+     {
+      "id": "a3",
+      "q": "They watch TV at night. → right now",
+      "a": "They are watching TV right now."
+     },
+     {
+      "id": "a4",
+      "q": "He doesn't cook. → right now",
+      "a": "He isn't cooking right now."
+     },
+     {
+      "id": "a5",
+      "q": "Do you study English every day? → right now",
+      "a": "Are you studying English right now?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "fill",
+   "title": "Present Simple or Present Continuous?",
+   "tags": {
+    "content": [
+     "Present Simple",
+     "Present Continuous"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "PRESENT SIMPLE OR PRESENT CONTINUOUS?",
+    "html": "Look at the words in bold: <b>every day, usually</b> = routine. <b>now, today, at the moment</b> = right now.",
+    "items": [
+     {
+      "id": "a6",
+      "before": "I usually",
+      "hint": "go",
+      "after": "to work by car, but today I am going by bus.",
+      "answers": [
+       "go"
+      ]
+     },
+     {
+      "id": "a7",
+      "before": "My sister",
+      "hint": "work",
+      "after": "in an office every day.",
+      "answers": [
+       "works"
+      ]
+     },
+     {
+      "id": "a8",
+      "before": "Look! The children",
+      "hint": "play",
+      "after": "in the garden now.",
+      "answers": [
+       "are playing"
+      ]
+     },
+     {
+      "id": "a9",
+      "before": "We",
+      "hint": "not / watch",
+      "after": "TV right now. We are reading.",
+      "answers": [
+       "aren't watching",
+       "are not watching"
+      ]
+     },
+     {
+      "id": "a10",
+      "before": "He",
+      "hint": "not / eat",
+      "after": "meat. He is vegetarian.",
+      "answers": [
+       "doesn't eat",
+       "does not eat"
+      ]
+     },
+     {
+      "id": "a11",
+      "before": "",
+      "hint": "you / work",
+      "after": "today?",
+      "answers": [
+       "Are you working"
+      ]
+     },
+     {
+      "id": "a12",
+      "before": "How often",
+      "hint": "you / exercise",
+      "after": "?",
+      "answers": [
+       "do you exercise"
+      ]
+     },
+     {
+      "id": "a13",
+      "before": "My mother",
+      "hint": "cook",
+      "after": "dinner at the moment.",
+      "answers": [
+       "is cooking"
+      ]
+     },
+     {
+      "id": "a14",
+      "before": "I",
+      "hint": "have",
+      "after": "lunch at noon every day.",
+      "answers": [
+       "have"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "state",
+   "title": "State verbs · no -ing",
+   "tags": {
+    "content": [
+     "Present Continuous",
+     "Present Simple"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "ATTENTION · VERBS WITHOUT -ING",
+    "html": "Some verbs talk about <b>feelings, opinions and what you have</b>. We usually <b>don't</b> use them with -ing, even when it is right now:<br><br><span style=\"background-color: #CBE4D8\"><b>like</b></span> · <span style=\"background-color: #CBE4D8\"><b>love</b></span> · <span style=\"background-color: #CBE4D8\"><b>hate</b></span> · <span style=\"background-color: #FFC9A3\"><b>want</b></span> · <span style=\"background-color: #FFC9A3\"><b>need</b></span> · <span style=\"background-color: #FFDB8F\"><b>know</b></span> · <span style=\"background-color: #FFDB8F\"><b>understand</b></span> · <span style=\"background-color: #FFDB8F\"><b>have</b></span> (= ter)<br><br>✗ I am liking this class. → ✓ I <span style=\"background-color: #CBE4D8\"><b>like</b></span> this class.<br>✗ She is wanting a coffee. → ✓ She <span style=\"background-color: #FFC9A3\"><b>wants</b></span> a coffee.<br>✗ I am understanding. → ✓ I <span style=\"background-color: #FFDB8F\"><b>understand</b></span>.<br><br>But: I <span style=\"background-color: #FFDB8F\"><b>have</b></span> a car (= ter) × I am <span style=\"background-color: #CBE4D8\"><b>having</b></span> lunch (= comer). With food and drinks, have + -ing is OK!"
+   }
+  },
+  {
+   "key": "statecheck",
+   "title": "State verbs · choose",
+   "tags": {
+    "content": [
+     "Present Continuous",
+     "Present Simple"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "PRACTICE · CHOOSE",
+    "html": "Choose the correct option and read the sentence out loud.",
+    "instant": true,
+    "items": [
+     {
+      "id": "a15",
+      "before": "I",
+      "options": [
+       "like",
+       "am liking"
+      ],
+      "answer": 0,
+      "after": "this song."
+     },
+     {
+      "id": "a16",
+      "before": "She",
+      "options": [
+       "is having",
+       "has"
+      ],
+      "answer": 1,
+      "after": "two brothers."
+     },
+     {
+      "id": "a17",
+      "before": "We",
+      "options": [
+       "are having",
+       "have"
+      ],
+      "answer": 0,
+      "after": "dinner right now."
+     },
+     {
+      "id": "a18",
+      "before": "I",
+      "options": [
+       "need",
+       "am needing"
+      ],
+      "answer": 0,
+      "after": "a new phone."
+     },
+     {
+      "id": "a19",
+      "before": "He",
+      "options": [
+       "knows",
+       "is knowing"
+      ],
+      "answer": 0,
+      "after": "the answer."
+     },
+     {
+      "id": "a20",
+      "before": "They",
+      "options": [
+       "are wanting",
+       "want"
+      ],
+      "answer": 1,
+      "after": "to travel to Europe."
+     }
+    ]
+   }
+  },
+  {
+   "key": "vocab",
+   "title": "Clothes and colors",
+   "tags": {
+    "content": [
+     "Vocabulary"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "NEW WORDS · CLOTHES AND COLORS",
+    "header": true,
+    "rows": [
+     [
+      "CLOTHES",
+      "COLORS",
+      "TO DESCRIBE"
+     ],
+     [
+      "shirt, T-shirt, sweater",
+      "red, blue, green",
+      "light blue, dark blue"
+     ],
+     [
+      "pants, jeans, shorts",
+      "black, white, gray",
+      "new, old"
+     ],
+     [
+      "dress, skirt",
+      "yellow, orange, pink",
+      "big, small"
+     ],
+     [
+      "jacket, coat",
+      "purple, brown, beige",
+      "long, short"
+     ],
+     [
+      "shoes, sneakers, boots, socks",
+      "gold, silver",
+      "comfortable, beautiful"
+     ],
+     [
+      "cap, hat, glasses, watch",
+      "striped (listrado)",
+      "casual, elegant"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "wearing",
+   "title": "What is he wearing? · describe",
+   "tags": {
+    "content": [
+     "Present Continuous",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "SPEAKING · WHAT ARE THEY WEARING?",
+    "html": "Draw a person and describe what they are wearing and doing right now. Remember: the color comes <b>before</b> the clothes: a <b>blue</b> shirt (not a shirt blue).",
+    "promptLabel": "ALSO SAY",
+    "lines": [
+     "you, right now",
+     "your teacher",
+     "someone in your house",
+     "a colleague at work",
+     "a famous person on TV today",
+     "a person in a photo on your phone"
+    ],
+    "prompts": [
+     "where the person is",
+     "what the person is doing",
+     "what the person usually wears",
+     "two colors",
+     "if the clothes are new or old"
+    ]
+   }
+  },
+  {
+   "key": "reading",
+   "title": "Reading · Emily's different Saturday",
+   "tags": {
+    "content": [
+     "Reading",
+     "Present Simple",
+     "Present Continuous"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "READING · A DIFFERENT SATURDAY",
+    "html": "Emily is from Canada. She lives in Toronto with her parents and her brother, Daniel. On Saturdays, Emily usually wakes up at nine. She has breakfast with her family, and then she goes to the gym. In the afternoon, she usually meets her friends at a café. She always wears jeans and sneakers on the weekend.<br><br>But today is a different Saturday. It's 10 a.m., and Emily isn't at the gym. She is at the airport! She is wearing a black dress and a long coat, and she is waiting for her flight to Brazil. Her brother is sitting next to her. He is playing games on his phone. Emily is very happy because she is visiting her best friend in Florianópolis."
+   }
+  },
+  {
+   "key": "readcheck",
+   "title": "Emily · true or false",
+   "tags": {
+    "content": [
+     "Reading"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "TRUE OR FALSE?",
+    "html": "Then correct the false sentences out loud.",
+    "instant": false,
+    "items": [
+     {
+      "id": "a21",
+      "before": "Emily usually goes to the gym on Saturdays.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "a22",
+      "before": "Today, Emily is at the gym.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "a23",
+      "before": "She usually wears a dress on the weekend.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "a24",
+      "before": "Daniel is playing games right now.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "a25",
+      "before": "Emily is traveling to Brazil.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "questions",
+   "title": "Emily · make questions",
+   "tags": {
+    "content": [
+     "Question formation",
+     "Present Simple",
+     "Present Continuous"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "MAKE THE QUESTION",
+    "html": "Make the question about Emily. Is it a routine or right now? Say it, then reveal. Then answer it!",
+    "items": [
+     {
+      "id": "a26",
+      "q": "what time / Emily / usually / wake up?",
+      "a": "What time does Emily usually wake up?"
+     },
+     {
+      "id": "a27",
+      "q": "where / she / go / after breakfast?",
+      "a": "Where does she go after breakfast?"
+     },
+     {
+      "id": "a28",
+      "q": "where / Emily / be / now?",
+      "a": "Where is Emily now?"
+     },
+     {
+      "id": "a29",
+      "q": "what / she / wear / today?",
+      "a": "What is she wearing today?"
+     },
+     {
+      "id": "a30",
+      "q": "what / Daniel / do / right now?",
+      "a": "What is Daniel doing right now?"
+     },
+     {
+      "id": "a31",
+      "q": "why / Emily / be / happy?",
+      "a": "Why is Emily happy?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "order",
+   "title": "Build the sentence · routine and now",
+   "tags": {
+    "content": [
+     "Present Simple",
+     "Present Continuous"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "order",
+    "label": "BUILD THE SENTENCE",
+    "html": "Put the words in order. Then say the sentence out loud.",
+    "items": [
+     {
+      "id": "a32",
+      "answer": "I usually / wear jeans, / but today / I am wearing / a dress."
+     },
+     {
+      "id": "a33",
+      "answer": "My brother / is talking / on the phone / right now."
+     },
+     {
+      "id": "a34",
+      "answer": "What / are you / doing / at the moment?"
+     },
+     {
+      "id": "a35",
+      "answer": "She doesn't / work / on Saturdays."
+     },
+     {
+      "id": "a36",
+      "answer": "We are having / lunch / at a restaurant / today."
+     }
+    ]
+   }
+  },
+  {
+   "key": "call",
+   "title": "Role-play · the phone call",
+   "tags": {
+    "content": [
+     "Present Continuous",
+     "Conversation"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "roleplay",
+    "label": "ROLE-PLAY · WHERE ARE YOU?",
+    "html": "Ana calls a friend. The friend is somewhere strange! Ask questions to find out where she is and what is happening. Then change roles.<br>Useful: <i>Hi! Where are you? · What are you doing? · Who are you with? · What are you wearing? · Are you having fun?</i>",
+    "roles": [
+     {
+      "name": "Ana",
+      "card": "Call your friend. Ask: where she is, what she is doing, who she is with, what she is wearing and what the other people are doing. Then invite her to do something this weekend."
+     },
+     {
+      "name": "Friend (teacher)",
+      "card": "You are at a wedding (or a concert, or a supermarket: choose!). Don't say where you are! Give clues: \"People are dancing… I am wearing a long dress… A woman is crying…\". Ana has to guess."
+     }
+    ]
+   }
+  },
+  {
+   "key": "minute",
+   "title": "One minute · usually × right now",
+   "tags": {
+    "content": [
+     "Present Simple",
+     "Present Continuous",
+     "Conversation"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "ONE MINUTE · TALK!",
+    "html": "Talk for one minute. Use the present simple (routine) <b>and</b> the present continuous (now).",
+    "seconds": 60,
+    "topics": [
+     "Your house right now: what is everybody doing?",
+     "Your normal Saturday × this Saturday.",
+     "What you usually wear to work × what you are wearing today.",
+     "Your work: what you usually do × what you are doing this week.",
+     "Describe a photo on your phone: who is in it and what are they doing?"
+    ]
+   }
+  },
+  {
+   "key": "wrapup",
+   "title": "Wrap-up · present simple and continuous",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "Last questions!",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "When do we use \"I work\" and when do we use \"I am working\"?",
+       "Which verbs don't like -ing? Give two examples.",
+       "What are you wearing? Describe it with colors.",
+       "What is your family probably doing right now?",
+       "What do you usually do after class?"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Usually × Right Now",
+  "subtitle": "Practice: present simple and present continuous · verbs without -ing · clothes and colors · reading",
+  "level": "A1",
+  "number": 6,
+  "tags": [
+   "Present Continuous",
+   "Present Simple",
+   "Vocabulary",
+   "Reading",
+   "Conversation"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "table"
+   },
+   {
+    "model": "basics"
+   },
+   {
+    "model": "fill"
+   },
+   {
+    "model": "state"
+   },
+   {
+    "model": "statecheck"
+   },
+   {
+    "model": "vocab"
+   },
+   {
+    "model": "wearing"
+   },
+   {
+    "model": "reading"
+   },
+   {
+    "model": "readcheck"
+   },
+   {
+    "model": "questions"
+   },
+   {
+    "model": "order"
+   },
+   {
+    "model": "call"
+   },
+   {
+    "model": "minute"
+   },
+   {
+    "model": "wrapup"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}
