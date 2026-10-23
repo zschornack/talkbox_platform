@@ -1,0 +1,1451 @@
+{
+ "id": "ariane-aula-26-all-practice-2026-10-22",
+ "student": {
+  "name": "Ariane"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · past, present and future",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Past Simple",
+     "Future (going to)",
+     "Future (present continuous)",
+     "Future (will)"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP · TALK TO ME!",
+    "html": "Answer with a <b>complete sentence</b> and add one more detail. Then ask me the same question!",
+    "words": [
+     "went",
+     "didn't",
+     "I'm going to",
+     "I'm meeting",
+     "I'll"
+    ],
+    "cats": [
+     {
+      "name": "Yesterday",
+      "qs": [
+       "How did you get home yesterday?",
+       "What did you have for dinner last night?",
+       "What didn't you do yesterday that you wanted to do?"
+      ]
+     },
+     {
+      "name": "This week",
+      "qs": [
+       "What are you doing after this class?",
+       "Who are you meeting this weekend?",
+       "What are you going to buy at the supermarket this week?"
+      ]
+     },
+     {
+      "name": "Predictions",
+      "qs": [
+       "Do you think it will rain tomorrow?",
+       "Will you take the bus or drive this week?",
+       "What will you probably eat tonight?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "text-qs",
+   "title": "The zero-waste shop · questions with today's words",
+   "tags": {
+    "content": [
+     "Quantifiers",
+     "Countable & uncountable nouns",
+     "Reading",
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "THE ZERO-WASTE SHOP · YOUR TURN!",
+    "html": "Answer about the text <b>and</b> about you. Use <b>too much, too many, enough, a few, a little</b> in every answer.",
+    "words": [
+     "too much",
+     "too many",
+     "(not) enough",
+     "a few",
+     "a little"
+    ],
+    "cats": [
+     {
+      "name": "About the text",
+      "qs": [
+       "Why do people buy too much in a normal supermarket?",
+       "Is there enough space in Marta's shop on Saturdays?",
+       "Does Marta's shop sell a lot of products or only a few?",
+       "Why do customers throw away less food?"
+      ]
+     },
+     {
+      "name": "About you",
+      "qs": [
+       "Do you buy too much food? What do you throw away?",
+       "Is there too much plastic in your kitchen? Where?",
+       "Do you have enough jars at home to shop at Bem Pesado?",
+       "Would you buy only a few grams of coffee? Why?"
+      ]
+     },
+     {
+      "name": "Your opinion",
+      "qs": [
+       "Are there enough zero-waste shops in your city?",
+       "Do supermarkets sell too many things?",
+       "What is there too much of in a normal supermarket?",
+       "Is it a good idea to ban plastic bags? Why?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "tr-match",
+   "title": "Public transport · match the word",
+   "tags": {
+    "content": [
+     "Travel",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "match",
+    "label": "PUBLIC TRANSPORT · MATCH",
+    "html": "Match the word and the meaning. Then use three of them in a sentence about <b>your</b> city.",
+    "pairs": [
+     {
+      "id": "r1",
+      "left": "rush hour",
+      "right": "the time when everybody goes to or comes back from work"
+     },
+     {
+      "id": "r2",
+      "left": "fare",
+      "right": "the money you pay for a trip"
+     },
+     {
+      "id": "r3",
+      "left": "platform",
+      "right": "where you wait for the train"
+     },
+     {
+      "id": "r4",
+      "left": "crowded",
+      "right": "with too many people"
+     },
+     {
+      "id": "r5",
+      "left": "delay",
+      "right": "when the bus or train is late"
+     },
+     {
+      "id": "r6",
+      "left": "commute",
+      "right": "your trip from home to work every day"
+     },
+     {
+      "id": "r7",
+      "left": "timetable",
+      "right": "a list of times when buses or trains leave"
+     },
+     {
+      "id": "r8",
+      "left": "to transfer",
+      "right": "to change from one line or bus to another"
+     }
+    ]
+   }
+  },
+  {
+   "key": "tr-fill",
+   "title": "Public transport · complete the commute",
+   "tags": {
+    "content": [
+     "Travel",
+     "Vocabulary",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "A BAD MORNING · COMPLETE",
+    "html": "Complete with a transport word. The first letter helps you. Then tell the story with your own words.",
+    "items": [
+     {
+      "id": "r9",
+      "before": "Yesterday I left home at 7:30, right in the middle of",
+      "hint": "r…",
+      "after": ".",
+      "answers": [
+       "rush hour"
+      ]
+     },
+     {
+      "id": "r10",
+      "before": "The bus was so",
+      "hint": "c…",
+      "after": "that I couldn't sit down.",
+      "answers": [
+       "crowded"
+      ]
+     },
+     {
+      "id": "r11",
+      "before": "At the station, I waited on the",
+      "hint": "p…",
+      "after": "for twenty minutes.",
+      "answers": [
+       "platform"
+      ]
+     },
+     {
+      "id": "r12",
+      "before": "There was a",
+      "hint": "d…",
+      "after": "because of a problem on the line.",
+      "answers": [
+       "delay"
+      ]
+     },
+     {
+      "id": "r13",
+      "before": "I",
+      "hint": "m…",
+      "after": "my connection and arrived late to work.",
+      "answers": [
+       "missed"
+      ]
+     },
+     {
+      "id": "r14",
+      "before": "And the",
+      "hint": "f…",
+      "after": "went up last month! It's now R$ 5.50.",
+      "answers": [
+       "fare"
+      ]
+     },
+     {
+      "id": "r15",
+      "before": "My",
+      "hint": "c…",
+      "after": "usually takes 40 minutes, but yesterday it took almost two hours!",
+      "answers": [
+       "commute"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "train-text",
+   "title": "Reading · the train that left 20 seconds early",
+   "tags": {
+    "content": [
+     "Reading",
+     "Travel",
+     "Vocabulary",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "READING · SORRY, WE WERE EARLY!",
+    "html": "In Brazil, people often complain because the bus is late. In Japan, people sometimes get an apology because the train is <b>early</b>!<br><br>In November 2017, a Tsukuba Express train near Tokyo <b>left</b> Minami-Nagareyama station at 9:44:20. The timetable said 9:44:40. So the train <b>didn't wait</b> the last 20 seconds. The staff <b>didn't check</b> the time carefully, and the doors <b>closed</b> too early. Nobody <b>complained</b>, but the company <b>wrote</b> an official apology on its website: \"We deeply apologize for the severe inconvenience.\"<br><br>Six months later, in May 2018, it <b>happened</b> again. A train <b>left</b> Notogawa station, in Shiga, at 7:11:35, 25 seconds before 7:12. The conductor <b>thought</b> the time was 7:11, so he <b>closed</b> the doors. A few commuters <b>missed</b> the train, and the company <b>said</b> the mistake was \"truly inexcusable\".<br><br>People around the world <b>read</b> the news and <b>laughed</b>. In many cities, a delay of 20 <i>minutes</i> is normal. But in Japan, 20 <i>seconds</i> <b>became</b> international news."
+   }
+  },
+  {
+   "key": "train-negative",
+   "title": "The train story · correct the news",
+   "tags": {
+    "content": [
+     "Reading",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala",
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "transform",
+    "label": "FAKE NEWS! CORRECT IT",
+    "html": "This information is wrong. Say it in the <b>negative</b>, then say the correct information.<br><i>The train left 20 minutes early. → No! It didn't leave 20 minutes early. It left 20 seconds early.</i>",
+    "items": [
+     {
+      "id": "r16",
+      "sentence": "The train left Minami-Nagareyama station at 9:44:40.",
+      "instruction": "didn't",
+      "answers": [
+       "It didn't leave at 9:44:40. It left at 9:44:20.",
+       "It didn't leave at 9:44:40. It left at 9:44:20",
+       "The train didn't leave at 9:44:40. It left at 9:44:20.",
+       "The train didn't leave at 9:44:40. It left at 9:44:20"
+      ]
+     },
+     {
+      "id": "r17",
+      "sentence": "A lot of passengers complained about the train.",
+      "instruction": "didn't",
+      "answers": [
+       "They didn't complain. Nobody complained.",
+       "They didn't complain. Nobody complained",
+       "Passengers didn't complain. Nobody complained.",
+       "Passengers didn't complain. Nobody complained",
+       "Nobody complained.",
+       "Nobody complained"
+      ]
+     },
+     {
+      "id": "r18",
+      "sentence": "The company didn't say sorry.",
+      "instruction": "did",
+      "answers": [
+       "The company said sorry. It wrote an official apology.",
+       "The company said sorry. It wrote an official apology",
+       "It wrote an official apology.",
+       "It wrote an official apology",
+       "The company apologized.",
+       "The company apologized"
+      ]
+     },
+     {
+      "id": "r19",
+      "sentence": "In 2018, the conductor knew the right time.",
+      "instruction": "didn't",
+      "answers": [
+       "He didn't know the right time. He thought it was 7:11.",
+       "He didn't know the right time. He thought it was 7:11",
+       "The conductor didn't know the right time. He thought the time was 7:11.",
+       "The conductor didn't know the right time. He thought the time was 7:11"
+      ]
+     },
+     {
+      "id": "r20",
+      "sentence": "In 2018, all the passengers caught the train.",
+      "instruction": "didn't",
+      "answers": [
+       "They didn't all catch the train. A few commuters missed it.",
+       "They didn't all catch the train. A few commuters missed it",
+       "Not all the passengers caught the train. A few commuters missed it.",
+       "Not all the passengers caught the train. A few commuters missed it",
+       "A few commuters missed the train.",
+       "A few commuters missed the train"
+      ]
+     },
+     {
+      "id": "r21",
+      "sentence": "Nobody outside Japan heard about the story.",
+      "instruction": "did",
+      "answers": [
+       "People around the world read the news and laughed.",
+       "People around the world read the news and laughed",
+       "People around the world heard about it.",
+       "People around the world heard about it",
+       "It became international news.",
+       "It became international news"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "train-talk",
+   "title": "The train story · what about you?",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Travel",
+     "Vocabulary",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "TALK ABOUT IT",
+    "html": "Answer in the past when you can. Two or three sentences!",
+    "words": [
+     "missed",
+     "was late",
+     "waited",
+     "took",
+     "didn't"
+    ],
+    "cats": [
+     {
+      "name": "Your experience",
+      "qs": [
+       "When was the last time you missed a bus, a train or a flight? What happened?",
+       "What was the longest delay you had? Where were you going?",
+       "Did you ever take the wrong bus or metro line?",
+       "Did you ever travel in a really crowded bus or train? How did you feel?"
+      ]
+     },
+     {
+      "name": "Your opinion",
+      "qs": [
+       "Is public transport in your city on time? Give an example.",
+       "Should a company apologize for 20 seconds? Why or why not?",
+       "Would you like to commute in Tokyo? Why?",
+       "Is the fare in your city too expensive?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "ps-story",
+   "title": "Past simple · my cousin's terrible trip",
+   "tags": {
+    "content": [
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "MY COUSIN'S TERRIBLE TRIP · PAST SIMPLE",
+    "html": "Complete with the verb in the <b>past simple</b> (affirmative or negative). Careful with the irregular verbs! Then tell the story with your own words.",
+    "items": [
+     {
+      "id": "r22",
+      "before": "Last Friday, my cousin",
+      "hint": "decide",
+      "after": "to visit me in Porto Alegre by bus.",
+      "answers": [
+       "decided"
+      ]
+     },
+     {
+      "id": "r23",
+      "before": "He",
+      "hint": "buy",
+      "after": "the ticket online two weeks before.",
+      "answers": [
+       "bought"
+      ]
+     },
+     {
+      "id": "r24",
+      "before": "But he",
+      "hint": "not / check",
+      "after": "the date. The ticket was for Saturday!",
+      "answers": [
+       "didn't check",
+       "did not check"
+      ]
+     },
+     {
+      "id": "r25",
+      "before": "He",
+      "hint": "go",
+      "after": "to the bus station anyway and spoke to the man at the counter.",
+      "answers": [
+       "went"
+      ]
+     },
+     {
+      "id": "r26",
+      "before": "\"Sorry, there",
+      "hint": "not / be",
+      "after": "any seats for today,\" the man said.",
+      "answers": [
+       "weren't",
+       "were not"
+      ]
+     },
+     {
+      "id": "r27",
+      "before": "So my cousin",
+      "hint": "wait",
+      "after": "for six hours at the station.",
+      "answers": [
+       "waited"
+      ]
+     },
+     {
+      "id": "r28",
+      "before": "He",
+      "hint": "have",
+      "after": "three coffees and a sandwich while he waited.",
+      "answers": [
+       "had"
+      ]
+     },
+     {
+      "id": "r29",
+      "before": "Finally, he",
+      "hint": "get",
+      "after": "a seat on the night bus.",
+      "answers": [
+       "got"
+      ]
+     },
+     {
+      "id": "r30",
+      "before": "He",
+      "hint": "not / sleep",
+      "after": "at all, because the man next to him snored all night!",
+      "answers": [
+       "didn't sleep",
+       "did not sleep"
+      ]
+     },
+     {
+      "id": "r31",
+      "before": "He",
+      "hint": "arrive",
+      "after": "at 6 a.m., tired and hungry.",
+      "answers": [
+       "arrived"
+      ]
+     },
+     {
+      "id": "r32",
+      "before": "He",
+      "hint": "not / want",
+      "after": "breakfast. He went straight to bed!",
+      "answers": [
+       "didn't want",
+       "did not want"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "ps-chain",
+   "title": "Past simple · story chain",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · STORY CHAIN",
+    "html": "Draw a situation and tell the story in the past. Every sentence must use one of the verbs on the card. The teacher continues with the next sentence, then it's your turn again! Use <b>one negative</b> sentence too.",
+    "promptLabel": "USE THESE VERBS",
+    "lines": [
+     "A trip by metro that went very wrong.",
+     "The day you took the wrong bus.",
+     "A taxi driver who didn't speak Portuguese.",
+     "You forgot your wallet in an Uber.",
+     "A flight that was cancelled.",
+     "The first time you drove in a big city.",
+     "A bike ride in the rain.",
+     "You fell asleep on the bus and missed your stop."
+    ],
+    "prompts": [
+     "left · arrived",
+     "took · got off",
+     "lost · found",
+     "paid · didn't have",
+     "thought · knew",
+     "ran · missed",
+     "met · told",
+     "came · couldn't"
+    ]
+   }
+  },
+  {
+   "key": "sm-sort",
+   "title": "Supermarket · countable or uncountable (new words)",
+   "tags": {
+    "content": [
+     "Countable & uncountable nouns",
+     "Food",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "sort",
+    "label": "SUPERMARKET · COUNTABLE OR UNCOUNTABLE?",
+    "html": "New supermarket words! Click a word, then the group. Then make a sentence with <b>a few</b> or <b>a little</b>: <i>I need a few mushrooms and a little garlic.</i>",
+    "groups": [
+     "Countable",
+     "Uncountable"
+    ],
+    "items": [
+     {
+      "id": "r33",
+      "text": "garlic",
+      "group": 1
+     },
+     {
+      "id": "r34",
+      "text": "mushroom",
+      "group": 0
+     },
+     {
+      "id": "r35",
+      "text": "spinach",
+      "group": 1
+     },
+     {
+      "id": "r36",
+      "text": "cucumber",
+      "group": 0
+     },
+     {
+      "id": "r37",
+      "text": "flour",
+      "group": 1
+     },
+     {
+      "id": "r38",
+      "text": "oats",
+      "group": 1
+     },
+     {
+      "id": "r39",
+      "text": "pineapple",
+      "group": 0
+     },
+     {
+      "id": "r40",
+      "text": "seafood",
+      "group": 1
+     },
+     {
+      "id": "r41",
+      "text": "peanut",
+      "group": 0
+     },
+     {
+      "id": "r42",
+      "text": "honey",
+      "group": 1
+     },
+     {
+      "id": "r43",
+      "text": "cabbage",
+      "group": 0
+     },
+     {
+      "id": "r44",
+      "text": "olive oil",
+      "group": 1
+     },
+     {
+      "id": "r45",
+      "text": "bean",
+      "group": 0
+     },
+     {
+      "id": "r46",
+      "text": "parsley",
+      "group": 1
+     }
+    ]
+   }
+  },
+  {
+   "key": "sm-detective",
+   "title": "Shopping list detective",
+   "tags": {
+    "content": [
+     "Quantifiers",
+     "Countable & uncountable nouns",
+     "Food",
+     "Shopping",
+     "Past Simple",
+     "Future (going to)",
+     "Future (present continuous)",
+     "Future (will)"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · SHOPPING LIST DETECTIVE",
+    "html": "You found a shopping list on the floor of the supermarket! Draw a list and be a detective. Who is this person? What did they do yesterday? What are they going to do this weekend? Use <b>a lot of, a few, a little, too much, too many, enough</b>.",
+    "promptLabel": "ALSO SAY",
+    "lines": [
+     "30 cans of beer · 5 bags of ice · 4 kilos of meat · 1 bag of charcoal · no vegetables",
+     "a lot of spinach · 2 bags of oats · 12 bananas · a little honey · 3 litres of almond milk",
+     "1 box of birthday candles · 3 kilos of flour · 2 dozen eggs · a lot of chocolate · 100 balloons",
+     "20 packets of instant noodles · 10 cans of energy drink · 2 bags of coffee · no fruit",
+     "1 bottle of wine · a few candles · a little cheese · 2 steaks · a bunch of roses",
+     "baby food · 5 packets of diapers · a lot of coffee · a few apples · no beer",
+     "15 cans of tuna · 10 bottles of water · 5 packets of crackers · a flashlight · batteries",
+     "garlic, a lot of garlic, more garlic · a cross · a lot of water"
+    ],
+    "prompts": [
+     "who the person is",
+     "what they did yesterday",
+     "what they are going to do",
+     "something they bought too much of",
+     "something they don't have enough of"
+    ]
+   }
+  },
+  {
+   "key": "fut-choice",
+   "title": "Future forms · going to, present continuous or will?",
+   "tags": {
+    "content": [
+     "Future (going to)",
+     "Future (present continuous)",
+     "Future (will)"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "WHICH FUTURE?",
+    "html": "Choose the best option. Then explain <b>why</b>: plan, arrangement, prediction or decision now?",
+    "instant": false,
+    "items": [
+     {
+      "id": "r47",
+      "before": "Look at those black clouds! It",
+      "options": [
+       "is going to rain",
+       "is raining tomorrow",
+       "rains"
+      ],
+      "answer": 0,
+      "after": "."
+     },
+     {
+      "id": "r48",
+      "before": "I can't meet you on Friday. I",
+      "options": [
+       "am having",
+       "will have",
+       "have"
+      ],
+      "answer": 0,
+      "after": "dinner with my boss. We booked the table last week."
+     },
+     {
+      "id": "r49",
+      "before": "— The metro is closed today! — Oh no! I",
+      "options": [
+       "am going to take",
+       "'ll take",
+       "am taking"
+      ],
+      "answer": 1,
+      "after": "an Uber, then."
+     },
+     {
+      "id": "r50",
+      "before": "My sister bought a new bike. She",
+      "options": [
+       "will cycle",
+       "is going to cycle",
+       "cycles"
+      ],
+      "answer": 1,
+      "after": "to work from next month."
+     },
+     {
+      "id": "r51",
+      "before": "I think people",
+      "options": [
+       "are using",
+       "will use",
+       "use"
+      ],
+      "answer": 1,
+      "after": "flying taxis in 2050."
+     },
+     {
+      "id": "r52",
+      "before": "— This bag is very heavy. — Wait, I",
+      "options": [
+       "'ll help",
+       "am helping",
+       "am going to help"
+      ],
+      "answer": 0,
+      "after": "you!"
+     },
+     {
+      "id": "r53",
+      "before": "Our flight",
+      "options": [
+       "is leaving",
+       "will leave",
+       "leave"
+      ],
+      "answer": 0,
+      "after": "at 6 a.m. tomorrow, so we're going to sleep at the airport."
+     },
+     {
+      "id": "r54",
+      "before": "— What are your plans for the holidays? — We",
+      "options": [
+       "will visit",
+       "are going to visit",
+       "visit"
+      ],
+      "answer": 1,
+      "after": "my grandparents in Gramado."
+     }
+    ]
+   }
+  },
+  {
+   "key": "fut-problems",
+   "title": "Travel problems · decide now!",
+   "tags": {
+    "content": [
+     "Future (will)",
+     "Travel",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "PROBLEM! WHAT WILL YOU DO?",
+    "html": "Something goes wrong. Decide <b>now</b> with <b>I'll…</b> and give a reason. Then reveal one possible answer.",
+    "items": [
+     {
+      "id": "r55",
+      "q": "Your bus is cancelled and you have a job interview in 40 minutes.",
+      "a": "I'll call an Uber, and I'll message the company to say I'm on my way."
+     },
+     {
+      "id": "r56",
+      "q": "The metro is too crowded. You can't get on.",
+      "a": "I'll wait for the next train. / I'll walk to the next station."
+     },
+     {
+      "id": "r57",
+      "q": "You are at the supermarket and you don't have enough money for everything.",
+      "a": "I'll leave the chocolate and the soda. I'll buy them next week."
+     },
+     {
+      "id": "r58",
+      "q": "You got on the wrong bus and you are going to the other side of the city.",
+      "a": "I'll get off at the next stop and I'll take a bus back."
+     },
+     {
+      "id": "r59",
+      "q": "Your friend is waiting for you, but there is a big delay on your line.",
+      "a": "I'll text her and tell her I'm going to be 20 minutes late."
+     },
+     {
+      "id": "r60",
+      "q": "You arrive at the airport and your flight leaves in 15 minutes.",
+      "a": "I'll run to the gate! / I'll ask someone to help me."
+     }
+    ]
+   }
+  },
+  {
+   "key": "fut-week",
+   "title": "My next week · plans, arrangements and predictions",
+   "tags": {
+    "content": [
+     "Future (going to)",
+     "Future (present continuous)",
+     "Future (will)"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · YOUR NEXT WEEK",
+    "html": "Draw a day. Tell me about it:<br>• <b>arrangements</b> (with a time or a person): <i>I'm meeting my sister at 7.</i><br>• <b>plans</b>: <i>I'm going to clean the house.</i><br>• <b>predictions</b>: <i>I think I'll be very tired.</i>",
+    "promptLabel": "ALSO SAY",
+    "lines": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday",
+     "Next month"
+    ],
+    "prompts": [
+     "how you are going to get there (bus, metro, car, bike?)",
+     "one arrangement with a time",
+     "one plan",
+     "one prediction with \"I think … will\"",
+     "something you are going to buy"
+    ]
+   }
+  },
+  {
+   "key": "fut-2050",
+   "title": "Transport in 2050 · what do you think?",
+   "tags": {
+    "content": [
+     "Future (will)",
+     "Conversation",
+     "Travel",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "scale",
+    "label": "TRANSPORT IN 2050",
+    "html": "Choose a number. Then explain with <b>will / won't</b>: <i>I don't think people will…, because…</i>",
+    "left": "No way!",
+    "right": "Definitely",
+    "statements": [
+     "In 2050, buses in Brazil will be free.",
+     "People won't need a driving licence, because cars will drive alone.",
+     "There will be flying taxis in São Paulo.",
+     "Rush hour will disappear, because people will work from home.",
+     "Supermarkets will deliver everything with drones.",
+     "Nobody will have a car in big cities."
+    ]
+   }
+  },
+  {
+   "key": "roleplay",
+   "title": "Role-play · the bus station",
+   "tags": {
+    "content": [
+     "Travel",
+     "Vocabulary",
+     "Future (going to)",
+     "Future (present continuous)",
+     "Future (will)",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "roleplay",
+    "label": "ROLE-PLAY · AT THE BUS STATION",
+    "html": "Talk for 3 or 4 minutes. Use the <b>past</b> (what happened), the <b>future</b> (what you are going to do / what you will do now) and <b>quantities</b>.",
+    "roles": [
+     {
+      "name": "Ariane",
+      "card": "You are travelling to Florianópolis for a wedding. You are meeting your friends there tomorrow at 10. Your bus left 5 minutes early and you missed it! You don't have much money, and you have too much luggage: two big suitcases. Explain what happened and find a solution."
+     },
+     {
+      "name": "Teacher",
+      "card": "You work at the bus company counter. The next bus is full. There is a bus at 11 p.m., but the fare is more expensive. You can also offer a bus tomorrow at 6 a.m. Ask questions: What time did you arrive? Did you check the timetable? How many bags do you have?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "timer",
+   "title": "One minute · talk without stopping",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "ONE MINUTE · DON'T STOP!",
+    "html": "Talk for one minute. Use a past verb, a future form and a quantity word.",
+    "seconds": 60,
+    "topics": [
+     "Your daily commute: yesterday, today and tomorrow.",
+     "The best trip you took and your next trip.",
+     "Your last visit to the supermarket and the next one.",
+     "Public transport in your city: problems and solutions.",
+     "Something you are going to change in your routine.",
+     "A day when everything went wrong."
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "On the Move: Trains, Lists and Plans",
+  "subtitle": "Full practice · public transport · past simple · countable and uncountable · supermarket · going to, present continuous and will",
+  "level": "A2",
+  "tags": [
+   "Travel",
+   "Vocabulary",
+   "Past Simple",
+   "Countable & uncountable nouns",
+   "Quantifiers",
+   "Food",
+   "Shopping",
+   "Future (going to)",
+   "Future (present continuous)",
+   "Future (will)",
+   "Reading",
+   "Conversation"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "type": "text",
+    "label": "READING · NO PLASTIC, PLEASE!",
+    "html": "Marta lives in Porto Alegre and she has a small shop called <b>Bem Pesado</b>. It is a zero-waste shop: there aren't any plastic bags, and there isn't any packaging. Customers bring their own <b>jars</b>, <b>bags</b> and <b>bottles</b> from home, and they buy exactly (ecz-ec-tli) the quantity they need.<br><br>\"In a normal supermarket, you buy a big <b>bag of rice</b> or a <b>packet of pasta</b>, and you often buy <b>too much</b>,\" Marta says. \"Here, you can buy only a little: 200 (two hundred) grams of rice, a few spoonfuls of coffee, or <b>half a dozen</b> eggs.\"<br><br>The shop sells a lot of things: rice, beans, nuts, olive oil, honey, soap and even toothpaste. There aren't many products, but they are all local. \"People think it is expensive,\" she says, \"but when you buy only what you need, you don't throw away much food, so you save money.\"<br><br>Not everything is easy. \"Some customers forget their jars,\" Marta laughs. \"And on Saturdays there are <b>too many</b> people and there isn't <b>enough</b> space. But I am very happy. Every month, there are more customers and less plastic.\"",
+    "id": "bbcab3ba1ee",
+    "source": {
+     "modelId": "XImG5KIj",
+     "title": "Reading · the zero-waste shop"
+    },
+    "pending": "tXTl8PZI"
+   },
+   {
+    "type": "choice",
+    "label": "COMPREHENSION · TRUE OR FALSE?",
+    "html": "Then correct the false sentences <b>out loud</b>.",
+    "instant": false,
+    "items": [
+     {
+      "id": "bd2aa324077",
+      "before": "The shop gives plastic bags to the customers.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "bc4282946c3",
+      "before": "Customers bring jars and bottles from home.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "b6c32d43cf7",
+      "before": "You can buy half a dozen eggs at the shop.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "b6590d01f4b",
+      "before": "The shop sells a lot of imported products.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "bd3982db0bd",
+      "before": "Marta says people waste less food when they buy only what they need.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "b881dfadd05",
+      "before": "On Saturdays, the shop has a lot of space.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     }
+    ],
+    "id": "b06b6a02780",
+    "source": {
+     "modelId": "otntjO0i",
+     "title": "Reading · true or false?"
+    },
+    "pending": "1Y30vHhq"
+   },
+   {
+    "type": "reveal",
+    "label": "ANSWER WITH A COMPLETE SENTENCE",
+    "html": "Answer out loud first. Then reveal and compare.",
+    "items": [
+     {
+      "id": "b8849c34c27",
+      "q": "What do customers bring to the shop?",
+      "a": "They bring their own jars, bags and bottles from home."
+     },
+     {
+      "id": "ba131ae592f",
+      "q": "Why do people buy too much in a normal supermarket?",
+      "a": "Because the products come in big bags and packets, so you can't buy only a little."
+     },
+     {
+      "id": "bfbfb968fc6",
+      "q": "What products does the shop sell?",
+      "a": "It sells rice, beans, nuts, olive oil, honey, soap and toothpaste."
+     },
+     {
+      "id": "b30a8b1962a",
+      "q": "How do customers save money?",
+      "a": "They buy only what they need, so they don't throw away much food."
+     },
+     {
+      "id": "b123860d680",
+      "q": "What is the problem on Saturdays?",
+      "a": "There are too many people and there isn't enough space."
+     }
+    ],
+    "id": "b5bb46fbcc8",
+    "source": {
+     "modelId": "YhkU_wX9",
+     "title": "Reading · questions to answer out loud"
+    },
+    "pending": "3xvYAh9Y"
+   },
+   {
+    "model": "text-qs"
+   },
+   {
+    "type": "fill",
+    "label": "PRACTICE · TOO MUCH, TOO MANY OR ENOUGH?",
+    "html": "Complete with <b>too much</b>, <b>too many</b> or <b>enough</b>.",
+    "items": [
+     {
+      "id": "b7c46558b1e",
+      "before": "I can't sleep. I drank",
+      "hint": "too much / too many / enough",
+      "after": "coffee today.",
+      "answers": [
+       "too much"
+      ]
+     },
+     {
+      "id": "b51b7248ad4",
+      "before": "There are",
+      "hint": "too much / too many / enough",
+      "after": "cars in the city centre. The traffic is terrible!",
+      "answers": [
+       "too many"
+      ]
+     },
+     {
+      "id": "bf061bab52b",
+      "before": "We don't have",
+      "hint": "too much / too many / enough",
+      "after": "eggs for the cake. We need three more.",
+      "answers": [
+       "enough"
+      ]
+     },
+     {
+      "id": "bffd1efc806",
+      "before": "You eat",
+      "hint": "too much / too many / enough",
+      "after": "sweets! Your teeth will hurt.",
+      "answers": [
+       "too many"
+      ]
+     },
+     {
+      "id": "b0faa7a410f",
+      "before": "Is there",
+      "hint": "too much / too many / enough",
+      "after": "milk for breakfast tomorrow?",
+      "answers": [
+       "enough"
+      ]
+     },
+     {
+      "id": "be604cd4394",
+      "before": "This soup is horrible. There is",
+      "hint": "too much / too many / enough",
+      "after": "salt in it.",
+      "answers": [
+       "too much"
+      ]
+     },
+     {
+      "id": "b0d64f9076e",
+      "before": "I have",
+      "hint": "too much / too many / enough",
+      "after": "homework this week. I can't go out.",
+      "answers": [
+       "too much"
+      ]
+     },
+     {
+      "id": "b4e2526b6a7",
+      "before": "There aren't",
+      "hint": "too much / too many / enough",
+      "after": "chairs for everybody. Some people are standing.",
+      "answers": [
+       "enough"
+      ]
+     }
+    ],
+    "id": "bd805a13b3f",
+    "source": {
+     "modelId": "5kHBEMki",
+     "title": "Too much / too many / enough · complete"
+    },
+    "pending": "8BLX1GJs"
+   },
+   {
+    "type": "spot",
+    "label": "SPOT THE MISTAKE",
+    "html": "Click the wrong word. Then say the whole sentence correctly.",
+    "items": [
+     {
+      "id": "b38d2c95ed2",
+      "words": [
+       "I",
+       "need",
+       "an",
+       "advice",
+       "about",
+       "my",
+       "diet."
+      ],
+      "wrong": 2,
+      "fix": "some (some advice)"
+     },
+     {
+      "id": "b315e7a66ab",
+      "words": [
+       "The",
+       "news",
+       "are",
+       "very",
+       "good",
+       "today."
+      ],
+      "wrong": 2,
+      "fix": "is"
+     },
+     {
+      "id": "b0b8cf80e0c",
+      "words": [
+       "How",
+       "many",
+       "money",
+       "do",
+       "you",
+       "have?"
+      ],
+      "wrong": 1,
+      "fix": "much"
+     },
+     {
+      "id": "bb7e7cbf846",
+      "words": [
+       "There",
+       "are",
+       "too",
+       "much",
+       "people",
+       "here."
+      ],
+      "wrong": 3,
+      "fix": "many"
+     },
+     {
+      "id": "b628b69fb0a",
+      "words": [
+       "We",
+       "have",
+       "chairs",
+       "enough",
+       "for",
+       "everybody."
+      ],
+      "wrong": 3,
+      "fix": "(enough chairs)"
+     },
+     {
+      "id": "b60ce29a4e6",
+      "words": [
+       "I",
+       "bought",
+       "a",
+       "bunch",
+       "of",
+       "milk."
+      ],
+      "wrong": 3,
+      "fix": "carton"
+     },
+     {
+      "id": "b1e5eeb0755",
+      "words": [
+       "She",
+       "has",
+       "many",
+       "homeworks",
+       "this",
+       "week."
+      ],
+      "wrong": 3,
+      "fix": "homework (a lot of homework)"
+     }
+    ],
+    "id": "b1abe8c928a",
+    "source": {
+     "modelId": "QMa9Ce5T",
+     "title": "Quantities · spot the mistake"
+    },
+    "pending": "Q2xn98KD"
+   },
+   {
+    "model": "tr-match"
+   },
+   {
+    "model": "tr-fill"
+   },
+   {
+    "model": "train-text"
+   },
+   {
+    "model": "train-negative"
+   },
+   {
+    "model": "train-talk"
+   },
+   {
+    "model": "ps-story"
+   },
+   {
+    "model": "ps-chain"
+   },
+   {
+    "model": "sm-sort"
+   },
+   {
+    "model": "sm-detective"
+   },
+   {
+    "model": "fut-choice"
+   },
+   {
+    "model": "fut-problems"
+   },
+   {
+    "model": "fut-week"
+   },
+   {
+    "model": "fut-2050"
+   },
+   {
+    "model": "roleplay"
+   },
+   {
+    "model": "timer"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

@@ -1,0 +1,1646 @@
+{
+ "id": "thiago-santos-aula-44-pp-negative-question-2026-10-22",
+ "student": {
+  "name": "Thiago Santos"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · last class and your week",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Past Simple",
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP",
+    "html": "Answer with a <b>complete sentence</b>. Then ask me the same question!",
+    "words": [
+     "yesterday",
+     "last week",
+     "have visited",
+     "has eaten"
+    ],
+    "cats": [
+     {
+      "name": "Your week",
+      "qs": [
+       "What did you do yesterday after work?",
+       "What did you eat for lunch today?",
+       "Did you go anywhere special this week?"
+      ]
+     },
+     {
+      "name": "Last class",
+      "qs": [
+       "What is \"form 3\"? Give me three examples.",
+       "Tell me one place you have visited in your life.",
+       "Tell me one food you have eaten that is strange."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "f3-speed",
+   "title": "Form 3 · speed round",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "SPEED ROUND · FORM 3",
+    "html": "Say the <b>form 3</b> as fast as you can. Then reveal.",
+    "items": [
+     {
+      "id": "t1",
+      "q": "see",
+      "a": "seen"
+     },
+     {
+      "id": "t2",
+      "q": "eat",
+      "a": "eaten"
+     },
+     {
+      "id": "t3",
+      "q": "go",
+      "a": "gone / been"
+     },
+     {
+      "id": "t4",
+      "q": "ride",
+      "a": "ridden"
+     },
+     {
+      "id": "t5",
+      "q": "drink",
+      "a": "drunk"
+     },
+     {
+      "id": "t6",
+      "q": "buy",
+      "a": "bought"
+     },
+     {
+      "id": "t7",
+      "q": "lose",
+      "a": "lost"
+     },
+     {
+      "id": "t8",
+      "q": "fly",
+      "a": "flown"
+     },
+     {
+      "id": "t9",
+      "q": "write",
+      "a": "written"
+     },
+     {
+      "id": "t10",
+      "q": "swim",
+      "a": "swum"
+     },
+     {
+      "id": "t11",
+      "q": "break",
+      "a": "broken"
+     },
+     {
+      "id": "t12",
+      "q": "meet",
+      "a": "met"
+     }
+    ]
+   }
+  },
+  {
+   "key": "neg-context",
+   "title": "Present Perfect · negative · start from the affirmative",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "NEW · THE NEGATIVE",
+    "html": "You know the affirmative:<br>I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio.<br>She <span style=\"background-color: #FFC9A3\"><b>has</b></span> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio.<br><br>For the negative, add <b>not</b>: <span style=\"background-color: #CBE4D8\"><b>haven't</b></span> = have not · <span style=\"background-color: #FFC9A3\"><b>hasn't</b></span> = has not. Form 3 doesn't change.<br><br>Colors: <span style=\"background-color: #CBE4D8\"><b>haven't</b></span> = I, you, we, they · <span style=\"background-color: #FFC9A3\"><b>hasn't</b></span> = he, she, it · <span style=\"background-color: #FFDB8F\"><b>visited</b></span> = form 3"
+   }
+  },
+  {
+   "key": "neg-table",
+   "title": "Present Perfect · negative table (visit)",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "PRESENT PERFECT · NEGATIVE (VISIT)",
+    "header": true,
+    "rows": [
+     [
+      "PERSON",
+      "HAVEN'T / HASN'T",
+      "FORM 3",
+      ""
+     ],
+     [
+      "I",
+      "<span style=\"background-color: #CBE4D8\"><b>haven't</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio."
+     ],
+     [
+      "You",
+      "<span style=\"background-color: #CBE4D8\"><b>haven't</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio."
+     ],
+     [
+      "He / She / It",
+      "<span style=\"background-color: #FFC9A3\"><b>hasn't</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio."
+     ],
+     [
+      "We",
+      "<span style=\"background-color: #CBE4D8\"><b>haven't</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio."
+     ],
+     [
+      "They",
+      "<span style=\"background-color: #CBE4D8\"><b>haven't</b></span>",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "neg-contrast",
+   "title": "Present Perfect · affirmative × negative, person by person (see)",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "WHAT CHANGES? · AFFIRMATIVE × NEGATIVE (SEE)",
+    "header": true,
+    "rows": [
+     [
+      "AFFIRMATIVE",
+      "NEGATIVE"
+     ],
+     [
+      "I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>seen</b></span> a snake.",
+      "I <span style=\"background-color: #CBE4D8\"><b>haven't</b></span> <span style=\"background-color: #FFDB8F\"><b>seen</b></span> a snake."
+     ],
+     [
+      "You <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>seen</b></span> the ocean.",
+      "You <span style=\"background-color: #CBE4D8\"><b>haven't</b></span> <span style=\"background-color: #FFDB8F\"><b>seen</b></span> the ocean."
+     ],
+     [
+      "He <span style=\"background-color: #FFC9A3\"><b>has</b></span> <span style=\"background-color: #FFDB8F\"><b>seen</b></span> a jaguar.",
+      "He <span style=\"background-color: #FFC9A3\"><b>hasn't</b></span> <span style=\"background-color: #FFDB8F\"><b>seen</b></span> a jaguar."
+     ],
+     [
+      "We <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>seen</b></span> a famous person.",
+      "We <span style=\"background-color: #CBE4D8\"><b>haven't</b></span> <span style=\"background-color: #FFDB8F\"><b>seen</b></span> a famous person."
+     ],
+     [
+      "They <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>seen</b></span> snow.",
+      "They <span style=\"background-color: #CBE4D8\"><b>haven't</b></span> <span style=\"background-color: #FFDB8F\"><b>seen</b></span> snow."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "never",
+   "title": "Present Perfect · never",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "NEVER · NOT IN MY WHOLE LIFE",
+    "html": "To talk about your <b>whole life</b>, we usually say <b>never</b>. It goes between <span style=\"background-color: #CBE4D8\"><b>have</b></span> / <span style=\"background-color: #FFC9A3\"><b>has</b></span> and form 3.<br><br>I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <b>never</b> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio. = in my whole life, zero times.<br>She <span style=\"background-color: #FFC9A3\"><b>has</b></span> <b>never</b> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio.<br><br>⚠️ <b>never</b> is already negative: ✗ <i>I haven't never visited</i> → ✓ <i>I have never visited</i> or ✓ <i>I haven't visited</i>."
+   }
+  },
+  {
+   "key": "neg-basics",
+   "title": "Present Perfect · negative · 5 basic sentences",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "5 BASIC SENTENCES · MAKE IT NEGATIVE",
+    "html": "Make the sentence <b>negative</b>. Say it first, then reveal.",
+    "items": [
+     {
+      "id": "t13",
+      "q": "I have visited Bahia.",
+      "a": "I haven't visited Bahia. / I have never visited Bahia."
+     },
+     {
+      "id": "t14",
+      "q": "She has eaten Japanese food.",
+      "a": "She hasn't eaten Japanese food. / She has never eaten Japanese food."
+     },
+     {
+      "id": "t15",
+      "q": "We have seen a whale.",
+      "a": "We haven't seen a whale. / We have never seen a whale."
+     },
+     {
+      "id": "t16",
+      "q": "He has ridden a horse.",
+      "a": "He hasn't ridden a horse. / He has never ridden a horse."
+     },
+     {
+      "id": "t17",
+      "q": "They have played golf.",
+      "a": "They haven't played golf. / They have never played golf."
+     }
+    ]
+   }
+  },
+  {
+   "key": "q-context",
+   "title": "Present Perfect · question · start from the affirmative",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "NEW · THE QUESTION",
+    "html": "You know the affirmative:<br>You <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio.<br>She <span style=\"background-color: #FFC9A3\"><b>has</b></span> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio.<br><br>For the question, <span style=\"background-color: #CBE4D8\"><b>Have</b></span> / <span style=\"background-color: #FFC9A3\"><b>Has</b></span> go to the <b>beginning</b>, before the person:<br><span style=\"background-color: #CBE4D8\"><b>Have</b></span> you <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio?<br><span style=\"background-color: #FFC9A3\"><b>Has</b></span> she <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio?<br><br>Colors: <span style=\"background-color: #CBE4D8\"><b>Have</b></span> = I, you, we, they · <span style=\"background-color: #FFC9A3\"><b>Has</b></span> = he, she, it · <span style=\"background-color: #FFDB8F\"><b>visited</b></span> = form 3"
+   }
+  },
+  {
+   "key": "q-table",
+   "title": "Present Perfect · question table (visit)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "PRESENT PERFECT · QUESTION (VISIT)",
+    "header": true,
+    "rows": [
+     [
+      "HAVE / HAS",
+      "PERSON",
+      "FORM 3",
+      ""
+     ],
+     [
+      "<span style=\"background-color: #CBE4D8\"><b>Have</b></span>",
+      "I",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio?"
+     ],
+     [
+      "<span style=\"background-color: #CBE4D8\"><b>Have</b></span>",
+      "you",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio?"
+     ],
+     [
+      "<span style=\"background-color: #FFC9A3\"><b>Has</b></span>",
+      "he / she / it",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio?"
+     ],
+     [
+      "<span style=\"background-color: #CBE4D8\"><b>Have</b></span>",
+      "we",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio?"
+     ],
+     [
+      "<span style=\"background-color: #CBE4D8\"><b>Have</b></span>",
+      "they",
+      "<span style=\"background-color: #FFDB8F\"><b>visited</b></span>",
+      "Rio?"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "q-contrast",
+   "title": "Present Perfect · affirmative × question, person by person (eat)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "WHAT CHANGES? · AFFIRMATIVE × QUESTION (EAT)",
+    "header": true,
+    "rows": [
+     [
+      "AFFIRMATIVE",
+      "QUESTION"
+     ],
+     [
+      "I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>eaten</b></span> sushi.",
+      "<span style=\"background-color: #CBE4D8\"><b>Have</b></span> I <span style=\"background-color: #FFDB8F\"><b>eaten</b></span> sushi?"
+     ],
+     [
+      "You <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>eaten</b></span> frog meat.",
+      "<span style=\"background-color: #CBE4D8\"><b>Have</b></span> you <span style=\"background-color: #FFDB8F\"><b>eaten</b></span> frog meat?"
+     ],
+     [
+      "He <span style=\"background-color: #FFC9A3\"><b>has</b></span> <span style=\"background-color: #FFDB8F\"><b>eaten</b></span> a raw egg.",
+      "<span style=\"background-color: #FFC9A3\"><b>Has</b></span> he <span style=\"background-color: #FFDB8F\"><b>eaten</b></span> a raw egg?"
+     ],
+     [
+      "We <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>eaten</b></span> a whole pizza.",
+      "<span style=\"background-color: #CBE4D8\"><b>Have</b></span> we <span style=\"background-color: #FFDB8F\"><b>eaten</b></span> a whole pizza?"
+     ],
+     [
+      "They <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>eaten</b></span> açaí with fish.",
+      "<span style=\"background-color: #CBE4D8\"><b>Have</b></span> they <span style=\"background-color: #FFDB8F\"><b>eaten</b></span> açaí with fish?"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "ever",
+   "title": "Present Perfect · ever and short answers",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "EVER · AT ANY TIME IN YOUR LIFE?",
+    "html": "For experiences, we usually ask with <b>ever</b> (= alguma vez na vida). It goes before form 3.<br><br><span style=\"background-color: #CBE4D8\"><b>Have</b></span> you <b>ever</b> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio?<br><span style=\"background-color: #FFC9A3\"><b>Has</b></span> she <b>ever</b> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio?<br><br><b>Short answers</b> (no form 3!):<br>Yes, I <span style=\"background-color: #CBE4D8\"><b>have</b></span>. · No, I <span style=\"background-color: #CBE4D8\"><b>haven't</b></span>.<br>Yes, she <span style=\"background-color: #FFC9A3\"><b>has</b></span>. · No, she <span style=\"background-color: #FFC9A3\"><b>hasn't</b></span>.<br><br>⚠️ ✗ <i>Yes, I have visited.</i> ✗ <i>Yes, I did.</i> → ✓ <i>Yes, I have.</i>"
+   }
+  },
+  {
+   "key": "q-basics",
+   "title": "Present Perfect · question · 5 basic sentences",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "5 BASIC SENTENCES · MAKE A QUESTION",
+    "html": "Make a <b>question with ever</b>. Say it first, then reveal.",
+    "items": [
+     {
+      "id": "t18",
+      "q": "You have visited Argentina.",
+      "a": "Have you ever visited Argentina?"
+     },
+     {
+      "id": "t19",
+      "q": "She has eaten sushi.",
+      "a": "Has she ever eaten sushi?"
+     },
+     {
+      "id": "t20",
+      "q": "They have seen a jaguar.",
+      "a": "Have they ever seen a jaguar?"
+     },
+     {
+      "id": "t21",
+      "q": "He has milked a cow.",
+      "a": "Has he ever milked a cow?"
+     },
+     {
+      "id": "t22",
+      "q": "You have lost your phone.",
+      "a": "Have you ever lost your phone?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "choice",
+   "title": "Ever, never, have, has · choose",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "PRACTICE · CHOOSE",
+    "html": "Choose the right option. Then read the sentence out loud.",
+    "instant": false,
+    "items": [
+     {
+      "id": "t23",
+      "before": "Have you",
+      "options": [
+       "ever",
+       "never"
+      ],
+      "answer": 0,
+      "after": "eaten frog meat?"
+     },
+     {
+      "id": "t24",
+      "before": "No, I",
+      "options": [
+       "haven't",
+       "didn't"
+      ],
+      "answer": 0,
+      "after": ". And I don't want to!"
+     },
+     {
+      "id": "t25",
+      "before": "My father has",
+      "options": [
+       "ever",
+       "never"
+      ],
+      "answer": 1,
+      "after": "flown in a plane. He is afraid!"
+     },
+     {
+      "id": "t26",
+      "before": "",
+      "options": [
+       "Have",
+       "Has"
+      ],
+      "answer": 1,
+      "after": "your sister ever ridden a horse?"
+     },
+     {
+      "id": "t27",
+      "before": "— Have you ever seen a snake on the farm? — Yes, I",
+      "options": [
+       "have",
+       "have seen"
+      ],
+      "answer": 0,
+      "after": "."
+     },
+     {
+      "id": "t28",
+      "before": "We",
+      "options": [
+       "haven't",
+       "hasn't"
+      ],
+      "answer": 0,
+      "after": "visited the Pantanal. Maybe next year!"
+     },
+     {
+      "id": "t29",
+      "before": "He",
+      "options": [
+       "hasn't",
+       "haven't"
+      ],
+      "answer": 0,
+      "after": "met my parents."
+     },
+     {
+      "id": "t30",
+      "before": "I have never",
+      "options": [
+       "drunk",
+       "drank"
+      ],
+      "answer": 0,
+      "after": "coconut water from a real coconut."
+     }
+    ]
+   }
+  },
+  {
+   "key": "fill",
+   "title": "Negative and questions · complete",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "PRACTICE · COMPLETE",
+    "html": "Complete with the <b>present perfect</b>: negative, question or short answer.",
+    "items": [
+     {
+      "id": "t31",
+      "before": "",
+      "hint": "you / ever / see",
+      "after": "a snake on a farm?",
+      "answers": [
+       "Have you ever seen"
+      ]
+     },
+     {
+      "id": "t32",
+      "before": "No, I",
+      "hint": "short answer",
+      "after": ".",
+      "answers": [
+       "haven't",
+       "have not"
+      ]
+     },
+     {
+      "id": "t33",
+      "before": "My brother",
+      "hint": "never / ride",
+      "after": "a horse. He is from the city!",
+      "answers": [
+       "has never ridden"
+      ]
+     },
+     {
+      "id": "t34",
+      "before": "",
+      "hint": "she / ever / make",
+      "after": "cheese at home?",
+      "answers": [
+       "Has she ever made"
+      ]
+     },
+     {
+      "id": "t35",
+      "before": "Yes, she",
+      "hint": "short answer",
+      "after": ". Her cheese is delicious!",
+      "answers": [
+       "has"
+      ]
+     },
+     {
+      "id": "t36",
+      "before": "We",
+      "hint": "not / visit",
+      "after": "the farm in winter.",
+      "answers": [
+       "haven't visited",
+       "have not visited"
+      ]
+     },
+     {
+      "id": "t37",
+      "before": "",
+      "hint": "they / ever / lose",
+      "after": "a chicken?",
+      "answers": [
+       "Have they ever lost"
+      ]
+     },
+     {
+      "id": "t38",
+      "before": "I",
+      "hint": "never / drink",
+      "after": "milk straight from the cow.",
+      "answers": [
+       "have never drunk"
+      ]
+     },
+     {
+      "id": "t39",
+      "before": "He",
+      "hint": "not / try",
+      "after": "feijoada. Can you believe it?",
+      "answers": [
+       "hasn't tried",
+       "has not tried"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "fix",
+   "title": "Fix the mistakes · negative and questions",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "spot",
+    "label": "SPOT THE MISTAKE",
+    "html": "Click the wrong word. Then say the whole sentence correctly.",
+    "items": [
+     {
+      "id": "t40",
+      "words": [
+       "Have",
+       "she",
+       "ever",
+       "seen",
+       "a",
+       "fox?"
+      ],
+      "wrong": 0,
+      "fix": "Has"
+     },
+     {
+      "id": "t41",
+      "words": [
+       "I",
+       "haven't",
+       "never",
+       "visited",
+       "Bahia."
+      ],
+      "wrong": 1,
+      "fix": "have (I have never visited)"
+     },
+     {
+      "id": "t42",
+      "words": [
+       "Have",
+       "you",
+       "ever",
+       "ate",
+       "sushi?"
+      ],
+      "wrong": 3,
+      "fix": "eaten"
+     },
+     {
+      "id": "t43",
+      "words": [
+       "Yes,",
+       "I",
+       "did."
+      ],
+      "wrong": 2,
+      "fix": "have (Yes, I have.)"
+     },
+     {
+      "id": "t44",
+      "words": [
+       "He",
+       "hasn't",
+       "ride",
+       "a",
+       "horse."
+      ],
+      "wrong": 2,
+      "fix": "ridden"
+     },
+     {
+      "id": "t45",
+      "words": [
+       "Do",
+       "you",
+       "ever",
+       "been",
+       "to",
+       "Rio?"
+      ],
+      "wrong": 0,
+      "fix": "Have"
+     }
+    ]
+   }
+  },
+  {
+   "key": "follow-up",
+   "title": "Have you ever…? Then the past simple!",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · HAVE YOU EVER…? + WHEN?",
+    "html": "Ask the question in the <b>present perfect</b> (the experience). If the answer is yes, ask <b>two more questions</b> in the <b>past simple</b> (the details: when, where, who, how).<br><i>— <span style=\"background-color: #CBE4D8\"><b>Have</b></span> you ever <span style=\"background-color: #FFDB8F\"><b>ridden</b></span> a horse? — Yes, I <span style=\"background-color: #CBE4D8\"><b>have</b></span>. — When <b>did</b> you <b>ride</b> it? Where <b>was</b> it?</i>",
+    "promptLabel": "ALSO ASK",
+    "lines": [
+     "ride a horse",
+     "see a snake",
+     "milk a cow",
+     "lose your wallet",
+     "fly in a plane",
+     "eat something very strange",
+     "swim in a river",
+     "break a bone",
+     "meet a famous person",
+     "sleep in a tent",
+     "drive a tractor",
+     "win a prize"
+    ],
+    "prompts": [
+     "When…?",
+     "Where…?",
+     "Who were you with?",
+     "How did you feel?",
+     "What happened next?"
+    ]
+   }
+  },
+  {
+   "key": "farm-city",
+   "title": "Farm or city? · interview",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Conversation",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "INTERVIEW · FARM OR CITY PERSON?",
+    "html": "Answer the questions. If the answer is yes, add one detail in the past simple. At the end, the teacher decides: are you a farm person or a city person?",
+    "words": [
+     "ever",
+     "never",
+     "Yes, I have.",
+     "No, I haven't."
+    ],
+    "cats": [
+     {
+      "name": "The farm",
+      "qs": [
+       "Have you ever milked a cow?",
+       "Have you ever caught a chicken?",
+       "Have you ever eaten an egg straight from the chicken?",
+       "Have you ever slept on a farm?",
+       "Have you ever seen a calf being born?"
+      ]
+     },
+     {
+      "name": "The city",
+      "qs": [
+       "Have you ever taken the metro in São Paulo?",
+       "Have you ever been stuck in traffic for more than two hours?",
+       "Have you ever eaten in a very expensive restaurant?",
+       "Have you ever been to a big concert?",
+       "Have you ever lived in an apartment?"
+      ]
+     },
+     {
+      "name": "Your family",
+      "qs": [
+       "Has your father ever worked on a farm?",
+       "Has your mother ever lived in another city?",
+       "Have your grandparents ever travelled abroad?",
+       "Has anyone in your family ever won a prize?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "never-ever",
+   "title": "I have never… · tell the truth",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "ONE MINUTE · THINGS I HAVE NEVER DONE",
+    "html": "Talk for one minute. Say things you <b>have never done</b> and explain why. Then say one thing you <b>would like</b> to do one day.",
+    "seconds": 60,
+    "topics": [
+     "Places I have never visited.",
+     "Food I have never eaten.",
+     "Animals I have never seen.",
+     "Sports I have never played.",
+     "Things I have never bought.",
+     "Jobs I have never had."
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Present Perfect (part 2): Have You Ever…?",
+  "subtitle": "Past simple or present perfect · negative (haven't, never) · questions (ever) and short answers · lots of speaking",
+  "level": "A2",
+  "tags": [
+   "Present Perfect",
+   "Past Simple",
+   "Question formation",
+   "Conversation"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "f3-speed"
+   },
+   {
+    "type": "explanation",
+    "label": "PAST SIMPLE OR PRESENT PERFECT?",
+    "html": "Did you say <b>WHEN</b>? → <b>Past Simple</b><br><i>I <b>visited</b> Rio <b>in 2019</b>. · She <b>visited</b> Rio <b>last year</b>.</i><br>WHEN words: <i>yesterday, last week, last year, in 2019, 3 years ago, when I was a child</i><br><br>No WHEN, only the <b>experience</b>? → <b>Present Perfect</b><br><i>I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio. · She <span style=\"background-color: #FFC9A3\"><b>has</b></span> <span style=\"background-color: #FFDB8F\"><b>visited</b></span> Rio.</i><br><br>⚠️ ✗ <i>I have visited Rio in 2019.</i> → ✓ <i>I visited Rio in 2019.</i>",
+    "id": "ba4ef33ab13",
+    "source": {
+     "modelId": "mDWquoj6",
+     "title": "Present Perfect × Past Simple · when or no when?"
+    },
+    "pending": "E6eBhfL-"
+   },
+   {
+    "type": "fill",
+    "label": "PRACTICE · 5 BASIC SENTENCES",
+    "html": "<b>Say</b> the sentence first. Then click <b>Revelar</b>. Remember: <span style=\"background-color: #CBE4D8\"><b>have</b></span> / <span style=\"background-color: #FFC9A3\"><b>has</b></span> + <span style=\"background-color: #FFDB8F\"><b>form 3</b></span>.",
+    "items": [
+     {
+      "before": "I",
+      "hint": "visit",
+      "after": "São Paulo.",
+      "answers": [
+       "have visited",
+       "'ve visited"
+      ],
+      "id": "b167c8086a9"
+     },
+     {
+      "before": "She",
+      "hint": "eat",
+      "after": "Japanese food.",
+      "answers": [
+       "has eaten",
+       "'s eaten"
+      ],
+      "id": "b3c4c8093e5"
+     },
+     {
+      "before": "We",
+      "hint": "see",
+      "after": "the ocean.",
+      "answers": [
+       "have seen",
+       "'ve seen"
+      ],
+      "id": "b5a0e8079f1"
+     },
+     {
+      "before": "He",
+      "hint": "ride",
+      "after": "a horse.",
+      "answers": [
+       "has ridden",
+       "'s ridden"
+      ],
+      "id": "bdcac56776a"
+     },
+     {
+      "before": "They",
+      "hint": "meet",
+      "after": "a famous person.",
+      "answers": [
+       "have met",
+       "'ve met"
+      ],
+      "id": "b4aeffc2a45"
+     }
+    ],
+    "id": "b206ca368ce",
+    "source": {
+     "modelId": "vuhpUMq9",
+     "title": "Present Perfect · 5 basic sentences (say it, then reveal)"
+    },
+    "pending": "BA0tmQjK"
+   },
+   {
+    "type": "choice",
+    "label": "PRACTICE · HAVE OR HAS?",
+    "html": "<span style=\"background-color: #CBE4D8\"><b>HAVE</b></span> = I, you, we, they · <span style=\"background-color: #FFC9A3\"><b>HAS</b></span> = he, she, it",
+    "instant": true,
+    "items": [
+     {
+      "before": "I",
+      "options": [
+       "have",
+       "has"
+      ],
+      "answer": 0,
+      "after": "seen a snake.",
+      "id": "b576d229658"
+     },
+     {
+      "before": "My brother",
+      "options": [
+       "have",
+       "has"
+      ],
+      "answer": 1,
+      "after": "visited Argentina.",
+      "id": "b40e6ba0014"
+     },
+     {
+      "before": "We",
+      "options": [
+       "have",
+       "has"
+      ],
+      "answer": 0,
+      "after": "eaten pizza with pineapple!",
+      "id": "b7f88fe8d65"
+     },
+     {
+      "before": "The dog",
+      "options": [
+       "have",
+       "has"
+      ],
+      "answer": 1,
+      "after": "drunk all the water.",
+      "id": "b6fe5bffc57"
+     },
+     {
+      "before": "You",
+      "options": [
+       "have",
+       "has"
+      ],
+      "answer": 0,
+      "after": "met my family.",
+      "id": "baafe4cdf2b"
+     },
+     {
+      "before": "My parents",
+      "options": [
+       "have",
+       "has"
+      ],
+      "answer": 0,
+      "after": "flown to Europe twice.",
+      "id": "bf307817169"
+     }
+    ],
+    "id": "b24f39d667d",
+    "source": {
+     "modelId": "FsSuC5mM",
+     "title": "Present Perfect · have or has?"
+    },
+    "pending": "39z3Ddbe"
+   },
+   {
+    "type": "fill",
+    "label": "PRACTICE · GRANDMA ROSA, 82, ON THE FARM",
+    "html": "Remember Grandma Rosa and the chicken thief? She has had an interesting life! Complete with <b>has + form 3</b>.",
+    "items": [
+     {
+      "before": "Grandma Rosa",
+      "hint": "ride",
+      "after": "a horse many times.",
+      "answers": [
+       "has ridden",
+       "'s ridden"
+      ],
+      "id": "bb1ce2a7f5c"
+     },
+     {
+      "before": "She",
+      "hint": "see",
+      "after": "a fox on the farm.",
+      "answers": [
+       "has seen",
+       "'s seen"
+      ],
+      "id": "b220cb0409b"
+     },
+     {
+      "before": "She",
+      "hint": "lose",
+      "after": "three chickens!",
+      "answers": [
+       "has lost",
+       "'s lost"
+      ],
+      "id": "b9e0dba6e0e"
+     },
+     {
+      "before": "She",
+      "hint": "make",
+      "after": "cheese at home.",
+      "answers": [
+       "has made",
+       "'s made"
+      ],
+      "id": "be9d94e0966"
+     },
+     {
+      "before": "She",
+      "hint": "fly",
+      "after": "in a plane once.",
+      "answers": [
+       "has flown",
+       "'s flown"
+      ],
+      "id": "b1ba611c8d3"
+     },
+     {
+      "before": "She",
+      "hint": "visit",
+      "after": "São Paulo twice.",
+      "answers": [
+       "has visited",
+       "'s visited"
+      ],
+      "id": "bdbfb5e9ce6"
+     },
+     {
+      "before": "Her grandchildren",
+      "hint": "eat",
+      "after": "her famous cake many times.",
+      "answers": [
+       "have eaten",
+       "'ve eaten"
+      ],
+      "id": "bfa9d0af478"
+     }
+    ],
+    "id": "b8edd656329",
+    "source": {
+     "modelId": "akILuBXH",
+     "title": "Present Perfect · Grandma has had an interesting life"
+    },
+    "pending": "00OsQaDf"
+   },
+   {
+    "type": "choice",
+    "label": "PRACTICE · PAST SIMPLE OR PRESENT PERFECT?",
+    "html": "Is there a <b>WHEN</b>? → Past Simple. Only the experience? → Present Perfect.",
+    "instant": false,
+    "items": [
+     {
+      "before": "I",
+      "options": [
+       "visited",
+       "have visited"
+      ],
+      "answer": 0,
+      "after": "Rio in 2019.",
+      "id": "bb14320af12"
+     },
+     {
+      "before": "I",
+      "options": [
+       "visited",
+       "have visited"
+      ],
+      "answer": 1,
+      "after": "Rio. It's a beautiful city!",
+      "id": "b3ef7ad5072"
+     },
+     {
+      "before": "She",
+      "options": [
+       "ate",
+       "has eaten"
+      ],
+      "answer": 0,
+      "after": "sushi yesterday.",
+      "id": "bf0a37d675a"
+     },
+     {
+      "before": "She",
+      "options": [
+       "ate",
+       "has eaten"
+      ],
+      "answer": 1,
+      "after": "sushi many times.",
+      "id": "ba8741be0bf"
+     },
+     {
+      "before": "We",
+      "options": [
+       "saw",
+       "have seen"
+      ],
+      "answer": 1,
+      "after": "whales twice in our lives.",
+      "id": "b96136ab152"
+     },
+     {
+      "before": "He",
+      "options": [
+       "rode",
+       "has ridden"
+      ],
+      "answer": 0,
+      "after": "a horse when he was a child.",
+      "id": "bf9e52d3849"
+     }
+    ],
+    "id": "b53f31aaca1",
+    "source": {
+     "modelId": "WjJikgo2",
+     "title": "Past Simple or Present Perfect? (when or experience)"
+    },
+    "pending": "nB4KyUaP"
+   },
+   {
+    "type": "fill",
+    "label": "FIX THE MISTAKES",
+    "html": "Each sentence has <b>one</b> mistake. Write the correct sentence.",
+    "items": [
+     {
+      "before": "She have seen a fox. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "She has seen a fox.",
+       "She has seen a fox",
+       "She's seen a fox.",
+       "She's seen a fox"
+      ],
+      "id": "b7bc2550c73"
+     },
+     {
+      "before": "I have eat sushi. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "I have eaten sushi.",
+       "I have eaten sushi",
+       "I've eaten sushi.",
+       "I've eaten sushi"
+      ],
+      "id": "be5798d9c8b"
+     },
+     {
+      "before": "He has visit Paris. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "He has visited Paris.",
+       "He has visited Paris",
+       "He's visited Paris.",
+       "He's visited Paris"
+      ],
+      "id": "b231ed05348"
+     },
+     {
+      "before": "We has played this game. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "We have played this game.",
+       "We have played this game",
+       "We've played this game.",
+       "We've played this game"
+      ],
+      "id": "b4ab1dafdc2"
+     },
+     {
+      "before": "I have saw a whale. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "I have seen a whale.",
+       "I have seen a whale",
+       "I've seen a whale.",
+       "I've seen a whale"
+      ],
+      "id": "bff3e489bc6"
+     },
+     {
+      "before": "I have visited Rio last year. →",
+      "hint": "fix it",
+      "after": "",
+      "answers": [
+       "I visited Rio last year.",
+       "I visited Rio last year"
+      ],
+      "id": "b41971d5b05"
+     }
+    ],
+    "id": "bd5ad79633c",
+    "source": {
+     "modelId": "RUeZWHMG",
+     "title": "Present Perfect · fix the mistakes"
+    },
+    "pending": "YQ4daarz"
+   },
+   {
+    "type": "deck",
+    "label": "SPEAKING · YOUR EXPERIENCES",
+    "html": "Answer with <b>I</b> <span style=\"background-color: #CBE4D8\"><b>have</b></span> + <span style=\"background-color: #FFDB8F\"><b>form 3</b></span>. Add how many times: <i>once, twice, many times</i>.",
+    "words": [
+     "once",
+     "twice",
+     "three times",
+     "many times"
+    ],
+    "cats": [
+     {
+      "name": "Places",
+      "qs": [
+       "Say 3 cities you have visited.",
+       "Say a beach you have been to.",
+       "Say a place you have visited many times.",
+       "Say a country your family has visited."
+      ]
+     },
+     {
+      "name": "Food & drink",
+      "qs": [
+       "Say a strange food you have eaten.",
+       "Say a drink you have drunk many times.",
+       "Say something you have cooked.",
+       "Say a restaurant you have been to twice."
+      ]
+     },
+     {
+      "name": "Life",
+      "qs": [
+       "Say an animal you have seen in real life.",
+       "Say something you have bought online.",
+       "Say a famous person you have seen (on the street or at a show).",
+       "Say something you have lost."
+      ]
+     }
+    ],
+    "id": "b3515b6e478",
+    "source": {
+     "modelId": "AkO_5VFe",
+     "title": "Present Perfect · talk about your experiences"
+    },
+    "pending": "wRo6L_5p"
+   },
+   {
+    "model": "neg-context"
+   },
+   {
+    "model": "neg-table"
+   },
+   {
+    "model": "neg-contrast"
+   },
+   {
+    "model": "never"
+   },
+   {
+    "model": "neg-basics"
+   },
+   {
+    "model": "q-context"
+   },
+   {
+    "model": "q-table"
+   },
+   {
+    "model": "q-contrast"
+   },
+   {
+    "model": "ever"
+   },
+   {
+    "model": "q-basics"
+   },
+   {
+    "model": "choice"
+   },
+   {
+    "model": "fill"
+   },
+   {
+    "model": "fix"
+   },
+   {
+    "model": "follow-up"
+   },
+   {
+    "model": "farm-city"
+   },
+   {
+    "type": "text",
+    "label": "GAME · TWO TRUTHS AND A LIE",
+    "html": "Say <b>3 sentences</b> about your life with <span style=\"background-color: #CBE4D8\"><b>have</b></span> + <span style=\"background-color: #FFDB8F\"><b>form 3</b></span>. <b>Two are true, one is a lie.</b> The teacher guesses the lie!<br><br><i>I have ridden a horse. · I have eaten snake. · I have seen snow.</i><br><br>Then the teacher plays, and you guess. Use the verbs from today: <i>visit, eat, see, drink, ride, fly, meet, buy, lose, be</i>.",
+    "id": "bbc6f844f24",
+    "source": {
+     "modelId": "WwJ7nnbH",
+     "title": "Two truths and a lie (Present Perfect)"
+    },
+    "pending": "q2tj7ge2"
+   },
+   {
+    "type": "challenge",
+    "label": "SPEAKING · STRETCH THE SENTENCE",
+    "html": "Say the short sentence. Then make it longer with the word on the card. Draw again and make it <b>even longer</b>!<br><i>I have visited Rio. → I have visited Rio twice, and I have eaten feijoada there.</i>",
+    "promptLabel": "ADD",
+    "lines": [
+     "I have visited Rio.",
+     "I have eaten sushi.",
+     "I have seen a snake.",
+     "I have ridden a horse.",
+     "I have met a famous person.",
+     "I have bought a car.",
+     "I have flown in a plane.",
+     "I have lost my phone."
+    ],
+    "prompts": [
+     "once / twice / many times",
+     "and",
+     "but",
+     "because",
+     "with my…",
+     "my family has…",
+     "it was…"
+    ],
+    "id": "be5a784b8e7",
+    "source": {
+     "modelId": "0ZThjVis",
+     "title": "Stretch the sentence (Present Perfect)"
+    },
+    "pending": "ln95TlMJ"
+   },
+   {
+    "model": "never-ever"
+   },
+   {
+    "type": "deck",
+    "label": "SPEAKING · SIMPLE CONVERSATION",
+    "html": "Answer with <b>complete sentences</b>. Then add <b>one more detail</b>: <i>because…, and…, but…</i>",
+    "words": [
+     "because",
+     "and",
+     "but",
+     "so",
+     "usually",
+     "many times"
+    ],
+    "cats": [
+     {
+      "name": "About you",
+      "qs": [
+       "Where do you live? Do you like it there?",
+       "What do you do? Do you like your job?",
+       "What do you usually do on Saturdays?",
+       "What time do you usually wake up?",
+       "What is your favorite day of the week? Why?",
+       "What makes you happy?",
+       "What is your favorite season? Why?",
+       "Describe your best friend."
+      ]
+     },
+     {
+      "name": "Your week",
+      "qs": [
+       "How was your week?",
+       "What did you do last weekend?",
+       "What did you eat yesterday?",
+       "Who did you talk to today?",
+       "What was the best part of your day?",
+       "What are you going to do tonight?",
+       "Did you watch anything good this week?",
+       "What do you need to do tomorrow?"
+      ]
+     },
+     {
+      "name": "Food",
+      "qs": [
+       "What is your favorite food?",
+       "What did you have for breakfast today?",
+       "Do you like to cook? What can you cook?",
+       "What is a typical food from your city?",
+       "Do you prefer sweet or salty food?",
+       "What food do you hate?",
+       "What is the best restaurant you know?",
+       "What do you usually drink with lunch?"
+      ]
+     },
+     {
+      "name": "Places & travel",
+      "qs": [
+       "What is the most beautiful place in your city?",
+       "Where did you go on your last trip?",
+       "Do you prefer the beach or the mountains? Why?",
+       "Which city do you want to visit? Why?",
+       "How do you go to work: by car, by bus, on foot?",
+       "What is the best place you have visited?",
+       "Do you like to travel alone or with friends?",
+       "What do you always take on a trip?"
+      ]
+     },
+     {
+      "name": "Experiences (I have…)",
+      "qs": [
+       "Say a city you have visited many times.",
+       "Say a food you have eaten and loved.",
+       "Say an animal you have seen on a farm.",
+       "Say a famous person you have seen on TV many times.",
+       "Say something you have lost.",
+       "Say a sport you have played.",
+       "Say a movie you have watched twice.",
+       "Say something you have made with your hands."
+      ]
+     },
+     {
+      "name": "Family & home",
+      "qs": [
+       "How many people are there in your family?",
+       "Who do you live with?",
+       "Describe your house or apartment.",
+       "What is your favorite room at home? Why?",
+       "Do you have pets? Tell me about them.",
+       "Who is the funniest person in your family?",
+       "What do you usually do with your family on Sundays?",
+       "What did you do on your last birthday?"
+      ]
+     },
+     {
+      "name": "Free time",
+      "qs": [
+       "What do you do to relax?",
+       "Do you like music? What kind?",
+       "Do you play any sports?",
+       "What is your favorite movie or series?",
+       "Do you prefer staying at home or going out?",
+       "What did you do when you were a child for fun?",
+       "What new hobby do you want to try?",
+       "What is something you can do very well?"
+      ]
+     }
+    ],
+    "id": "b51bc2feaca",
+    "source": {
+     "modelId": "Pm9ABojr",
+     "title": "Simple conversation · about you, food, travel, family (A2)"
+    },
+    "pending": "cheuXzRJ"
+   },
+   {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "Last questions. Complete sentences!",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "What is form 3 of eat? see? be? buy?",
+       "Have or has? He… · I… · My parents…",
+       "Say 3 things you have done in your life.",
+       "Say 1 thing your mother or father has done in their life.",
+       "Which form 3 is the most difficult for you?",
+       "Past Simple or Present Perfect: \"I ___ (visit) Rio in 2019\"?"
+      ]
+     }
+    ],
+    "id": "b369f07c96a",
+    "source": {
+     "modelId": "WBflH36B",
+     "title": "Wrap-up · Present Perfect (first class)"
+    },
+    "pending": "3xmGR7GT"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

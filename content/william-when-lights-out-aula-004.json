@@ -1,0 +1,1277 @@
+{
+ "id": "william-aula-004-past-simple-continuous-2026-10-22",
+ "student": {
+  "name": "William"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · yesterday and last night",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP · TALK TO ME!",
+    "html": "Answer with a <b>complete sentence</b> and one more detail. Then ask me the same question!",
+    "words": [
+     "went",
+     "had",
+     "was",
+     "were",
+     "was …ing"
+    ],
+    "cats": [
+     {
+      "name": "Yesterday",
+      "qs": [
+       "What did you do yesterday after work?",
+       "What did you have for dinner?",
+       "What time did you go to bed?",
+       "Did you watch anything on TV?"
+      ]
+     },
+     {
+      "name": "Last weekend",
+      "qs": [
+       "Where did you go last weekend?",
+       "Who did you see?",
+       "Did you cook or eat out?",
+       "What was the best part of your weekend?"
+      ]
+     },
+     {
+      "name": "At that moment",
+      "qs": [
+       "What were you doing at 8 o'clock this morning?",
+       "What were you doing yesterday at 10 p.m.?",
+       "What was your family doing when you left home today?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "ps-aff",
+   "title": "Past Simple · affirmative (watch)",
+   "tags": {
+    "content": [
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "tense",
+    "label": "QUICK REVIEW · PAST SIMPLE · AFFIRMATIVE",
+    "verb": "watch",
+    "tense": "past-simple",
+    "complement": "a movie last night."
+   }
+  },
+  {
+   "key": "ps-neg",
+   "title": "Past Simple · negative (watch)",
+   "tags": {
+    "content": [
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "PAST SIMPLE · NEGATIVE",
+    "header": true,
+    "rows": [
+     [
+      "PERSON",
+      "AUXILIARY",
+      "VERB",
+      ""
+     ],
+     [
+      "I",
+      "<span style=\"background-color: #FFC9A3\"><b>didn't</b></span>",
+      "<b>watch</b>",
+      "a movie last night."
+     ],
+     [
+      "You",
+      "<span style=\"background-color: #FFC9A3\"><b>didn't</b></span>",
+      "<b>watch</b>",
+      "a movie last night."
+     ],
+     [
+      "He / She / It",
+      "<span style=\"background-color: #FFC9A3\"><b>didn't</b></span>",
+      "<b>watch</b>",
+      "a movie last night."
+     ],
+     [
+      "We",
+      "<span style=\"background-color: #FFC9A3\"><b>didn't</b></span>",
+      "<b>watch</b>",
+      "a movie last night."
+     ],
+     [
+      "They",
+      "<span style=\"background-color: #FFC9A3\"><b>didn't</b></span>",
+      "<b>watch</b>",
+      "a movie last night."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "ps-q",
+   "title": "Past Simple · question (watch)",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "PAST SIMPLE · QUESTION",
+    "header": true,
+    "rows": [
+     [
+      "AUXILIARY",
+      "PERSON",
+      "VERB",
+      ""
+     ],
+     [
+      "<span style=\"background-color: #FFC9A3\"><b>Did</b></span>",
+      "I",
+      "<b>watch</b>",
+      "a movie last night?"
+     ],
+     [
+      "<span style=\"background-color: #FFC9A3\"><b>Did</b></span>",
+      "you",
+      "<b>watch</b>",
+      "a movie last night?"
+     ],
+     [
+      "<span style=\"background-color: #FFC9A3\"><b>Did</b></span>",
+      "he / she / it",
+      "<b>watch</b>",
+      "a movie last night?"
+     ],
+     [
+      "<span style=\"background-color: #FFC9A3\"><b>Did</b></span>",
+      "we",
+      "<b>watch</b>",
+      "a movie last night?"
+     ],
+     [
+      "<span style=\"background-color: #FFC9A3\"><b>Did</b></span>",
+      "they",
+      "<b>watch</b>",
+      "a movie last night?"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "ps-note",
+   "title": "Past Simple · remember",
+   "tags": {
+    "content": [
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "REMEMBER · ONE PAST FORM ONLY",
+    "html": "Legend: <span style=\"background-color: #FFDB8F\"><b>watched</b></span> = the past form (the same for everyone) · <span style=\"background-color: #FFC9A3\"><b>didn't / Did</b></span> = the auxiliary for negatives and questions.<br><br>With <span style=\"background-color: #FFC9A3\"><b>didn't</b></span> and <span style=\"background-color: #FFC9A3\"><b>Did</b></span>, the verb goes back to the <b>base form</b>:<br>I <span style=\"background-color: #FFDB8F\"><b>watched</b></span> a movie. → I <span style=\"background-color: #FFC9A3\"><b>didn't</b></span> <b>watch</b> a movie. → <span style=\"background-color: #FFC9A3\"><b>Did</b></span> you <b>watch</b> a movie?<br>She <span style=\"background-color: #FFDB8F\"><b>went</b></span> to work. → She <span style=\"background-color: #FFC9A3\"><b>didn't</b></span> <b>go</b> to work. → <span style=\"background-color: #FFC9A3\"><b>Did</b></span> she <b>go</b> to work?<br><br>✗ I didn't went. ✗ Did you watched? → ✓ I didn't <b>go</b>. ✓ Did you <b>watch</b>?"
+   }
+  },
+  {
+   "key": "pc-aff",
+   "title": "Past Continuous · affirmative (watch)",
+   "tags": {
+    "content": [
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "tense",
+    "label": "QUICK REVIEW · PAST CONTINUOUS · AFFIRMATIVE",
+    "verb": "watch",
+    "tense": "past-continuous",
+    "complement": "TV at 9 p.m."
+   }
+  },
+  {
+   "key": "pc-neg",
+   "title": "Past Continuous · negative (watch)",
+   "tags": {
+    "content": [
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "PAST CONTINUOUS · NEGATIVE",
+    "header": true,
+    "rows": [
+     [
+      "PERSON",
+      "AUXILIARY",
+      "VERB",
+      ""
+     ],
+     [
+      "I",
+      "<span style=\"background-color: #CBE4D8\"><b>wasn't</b></span>",
+      "<b>watching</b>",
+      "TV at 9 p.m."
+     ],
+     [
+      "You",
+      "<span style=\"background-color: #FFC9A3\"><b>weren't</b></span>",
+      "<b>watching</b>",
+      "TV at 9 p.m."
+     ],
+     [
+      "He / She / It",
+      "<span style=\"background-color: #CBE4D8\"><b>wasn't</b></span>",
+      "<b>watching</b>",
+      "TV at 9 p.m."
+     ],
+     [
+      "We",
+      "<span style=\"background-color: #FFC9A3\"><b>weren't</b></span>",
+      "<b>watching</b>",
+      "TV at 9 p.m."
+     ],
+     [
+      "They",
+      "<span style=\"background-color: #FFC9A3\"><b>weren't</b></span>",
+      "<b>watching</b>",
+      "TV at 9 p.m."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "pc-q",
+   "title": "Past Continuous · question (watch)",
+   "tags": {
+    "content": [
+     "Past Continuous",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "PAST CONTINUOUS · QUESTION",
+    "header": true,
+    "rows": [
+     [
+      "AUXILIARY",
+      "PERSON",
+      "VERB",
+      ""
+     ],
+     [
+      "<span style=\"background-color: #CBE4D8\"><b>Was</b></span>",
+      "I",
+      "<b>watching</b>",
+      "TV at 9 p.m.?"
+     ],
+     [
+      "<span style=\"background-color: #FFC9A3\"><b>Were</b></span>",
+      "you",
+      "<b>watching</b>",
+      "TV at 9 p.m.?"
+     ],
+     [
+      "<span style=\"background-color: #CBE4D8\"><b>Was</b></span>",
+      "he / she / it",
+      "<b>watching</b>",
+      "TV at 9 p.m.?"
+     ],
+     [
+      "<span style=\"background-color: #FFC9A3\"><b>Were</b></span>",
+      "we",
+      "<b>watching</b>",
+      "TV at 9 p.m.?"
+     ],
+     [
+      "<span style=\"background-color: #FFC9A3\"><b>Were</b></span>",
+      "they",
+      "<b>watching</b>",
+      "TV at 9 p.m.?"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "ww",
+   "title": "Past Simple × Past Continuous · when and while",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "QUICK REVIEW · WHEN × WHILE",
+    "html": "<span style=\"background-color: #CBE4D8\"><b>Past Continuous</b></span> = the <b>long</b> action, in progress (the background).<br><span style=\"background-color: #FFDB8F\"><b>Past Simple</b></span> = the <b>short</b> action, complete (it interrupts).<br><br>I <span style=\"background-color: #CBE4D8\"><b>was watching</b></span> TV <b>when</b> the phone <span style=\"background-color: #FFDB8F\"><b>rang</b></span>.<br>She <span style=\"background-color: #CBE4D8\"><b>was watching</b></span> TV <b>when</b> the lights <span style=\"background-color: #FFDB8F\"><b>went</b></span> out.<br><br><b>While</b> + long action: <b>While</b> I <span style=\"background-color: #CBE4D8\"><b>was watching</b></span> TV, the phone <span style=\"background-color: #FFDB8F\"><b>rang</b></span>.<br><b>When</b> + short action: I <span style=\"background-color: #CBE4D8\"><b>was watching</b></span> TV <b>when</b> the phone <span style=\"background-color: #FFDB8F\"><b>rang</b></span>.<br><br>Two long actions at the same time → while + while:<br><b>While</b> I <span style=\"background-color: #CBE4D8\"><b>was watching</b></span> TV, my brother <span style=\"background-color: #CBE4D8\"><b>was cooking</b></span>.<br><br>One action after the other → only Past Simple:<br><b>When</b> I <span style=\"background-color: #FFDB8F\"><b>arrived</b></span>, I <span style=\"background-color: #FFDB8F\"><b>watched</b></span> TV. (first I arrived, then I watched)"
+   }
+  },
+  {
+   "key": "basics",
+   "title": "Past Simple × Past Continuous · 5 basic sentences",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "5 BASIC SENTENCES · SAY IT, THEN REVEAL",
+    "html": "Make one sentence with <b>when</b> or <b>while</b>. Say it first, then click to check.",
+    "items": [
+     {
+      "id": "w1",
+      "q": "I / sleep (long) · the alarm / ring (short)",
+      "a": "I was sleeping when the alarm rang."
+     },
+     {
+      "id": "w2",
+      "q": "She / cook (long) · she / cut her finger (short)",
+      "a": "She was cooking when she cut her finger. / While she was cooking, she cut her finger."
+     },
+     {
+      "id": "w3",
+      "q": "We / walk home (long) · it / start to rain (short)",
+      "a": "We were walking home when it started to rain."
+     },
+     {
+      "id": "w4",
+      "q": "He / drive (long) · his phone / ring (short)",
+      "a": "He was driving when his phone rang."
+     },
+     {
+      "id": "w5",
+      "q": "I / study (long) · my sister / play video games (long)",
+      "a": "While I was studying, my sister was playing video games."
+     }
+    ]
+   }
+  },
+  {
+   "key": "choice",
+   "title": "Past Simple or Past Continuous? · choose",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "PRACTICE · CHOOSE THE RIGHT FORM",
+    "html": "Choose the right form. Then say <b>why</b>: long action or short action?",
+    "instant": false,
+    "items": [
+     {
+      "id": "w6",
+      "before": "I",
+      "options": [
+       "was taking",
+       "took"
+      ],
+      "answer": 0,
+      "after": "a shower when somebody knocked on the door."
+     },
+     {
+      "id": "w7",
+      "before": "When I arrived at the party, everybody",
+      "options": [
+       "was dancing",
+       "danced"
+      ],
+      "answer": 0,
+      "after": "."
+     },
+     {
+      "id": "w8",
+      "before": "While we were having dinner, the cat",
+      "options": [
+       "was jumping",
+       "jumped"
+      ],
+      "answer": 1,
+      "after": "on the table!"
+     },
+     {
+      "id": "w9",
+      "before": "My phone",
+      "options": [
+       "was ringing",
+       "rang"
+      ],
+      "answer": 1,
+      "after": "while I was talking to my boss."
+     },
+     {
+      "id": "w10",
+      "before": "What",
+      "options": [
+       "were you doing",
+       "did you do"
+      ],
+      "answer": 0,
+      "after": "at 11 p.m. last night?"
+     },
+     {
+      "id": "w11",
+      "before": "He",
+      "options": [
+       "wasn't listening",
+       "didn't listen"
+      ],
+      "answer": 0,
+      "after": "when the teacher explained the homework."
+     },
+     {
+      "id": "w12",
+      "before": "Yesterday I",
+      "options": [
+       "was waking up",
+       "woke up"
+      ],
+      "answer": 1,
+      "after": "at 6, had breakfast and went to work."
+     },
+     {
+      "id": "w13",
+      "before": "The children were playing outside",
+      "options": [
+       "when",
+       "while"
+      ],
+      "answer": 0,
+      "after": "it started to rain."
+     },
+     {
+      "id": "w14",
+      "before": "",
+      "options": [
+       "When",
+       "While"
+      ],
+      "answer": 1,
+      "after": "I was waiting for the bus, I saw an old friend."
+     },
+     {
+      "id": "w15",
+      "before": "I",
+      "options": [
+       "was reading",
+       "read"
+      ],
+      "answer": 0,
+      "after": "a book while my wife was watching TV."
+     }
+    ]
+   }
+  },
+  {
+   "key": "fill",
+   "title": "Past Simple × Past Continuous · complete",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "PRACTICE · COMPLETE",
+    "html": "Complete with the <b>past simple</b> or the <b>past continuous</b>.",
+    "items": [
+     {
+      "id": "w16",
+      "before": "I",
+      "hint": "walk",
+      "after": "to the bakery when I saw my neighbor.",
+      "answers": [
+       "was walking"
+      ]
+     },
+     {
+      "id": "w17",
+      "before": "While she was driving to work, she",
+      "hint": "have",
+      "after": "a flat tire.",
+      "answers": [
+       "had"
+      ]
+     },
+     {
+      "id": "w18",
+      "before": "They",
+      "hint": "not / sleep",
+      "after": "when I called. They were watching a movie.",
+      "answers": [
+       "weren't sleeping",
+       "were not sleeping"
+      ]
+     },
+     {
+      "id": "w19",
+      "before": "When the boss came in, we",
+      "hint": "talk",
+      "after": "about football.",
+      "answers": [
+       "were talking"
+      ]
+     },
+     {
+      "id": "w20",
+      "before": "",
+      "hint": "you / see",
+      "after": "the accident yesterday?",
+      "answers": [
+       "Did you see"
+      ]
+     },
+     {
+      "id": "w21",
+      "before": "What",
+      "hint": "you / do",
+      "after": "when the lights went out?",
+      "answers": [
+       "were you doing"
+      ]
+     },
+     {
+      "id": "w22",
+      "before": "I",
+      "hint": "not / hear",
+      "after": "the doorbell because I was listening to music.",
+      "answers": [
+       "didn't hear",
+       "did not hear"
+      ]
+     },
+     {
+      "id": "w23",
+      "before": "While I was cooking, my son",
+      "hint": "do",
+      "after": "his homework.",
+      "answers": [
+       "was doing"
+      ]
+     },
+     {
+      "id": "w24",
+      "before": "He",
+      "hint": "fall",
+      "after": "while he was running in the park.",
+      "answers": [
+       "fell"
+      ]
+     },
+     {
+      "id": "w25",
+      "before": "",
+      "hint": "she / work",
+      "after": "at 8 p.m. yesterday? Her light was on.",
+      "answers": [
+       "Was she working"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "join",
+   "title": "Join the sentences · when or while",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "transform",
+    "label": "JOIN THE SENTENCES",
+    "html": "Make <b>one</b> sentence with the word in orange. Then say it out loud.",
+    "items": [
+     {
+      "id": "w26",
+      "sentence": "I was sleeping. The baby started to cry.",
+      "instruction": "when",
+      "answers": [
+       "I was sleeping when the baby started to cry.",
+       "I was sleeping when the baby started to cry"
+      ]
+     },
+     {
+      "id": "w27",
+      "sentence": "I was sleeping. The baby started to cry.",
+      "instruction": "while",
+      "answers": [
+       "While I was sleeping, the baby started to cry.",
+       "While I was sleeping, the baby started to cry",
+       "The baby started to cry while I was sleeping.",
+       "The baby started to cry while I was sleeping"
+      ]
+     },
+     {
+      "id": "w28",
+      "sentence": "We were having lunch. The power went out.",
+      "instruction": "when",
+      "answers": [
+       "We were having lunch when the power went out.",
+       "We were having lunch when the power went out"
+      ]
+     },
+     {
+      "id": "w29",
+      "sentence": "My wife was working. I was cleaning the house.",
+      "instruction": "while",
+      "answers": [
+       "While my wife was working, I was cleaning the house.",
+       "While my wife was working, I was cleaning the house",
+       "My wife was working while I was cleaning the house.",
+       "My wife was working while I was cleaning the house",
+       "I was cleaning the house while my wife was working.",
+       "I was cleaning the house while my wife was working"
+      ]
+     },
+     {
+      "id": "w30",
+      "sentence": "He was crossing the street. A car stopped in front of him.",
+      "instruction": "when",
+      "answers": [
+       "He was crossing the street when a car stopped in front of him.",
+       "He was crossing the street when a car stopped in front of him"
+      ]
+     },
+     {
+      "id": "w31",
+      "sentence": "I was looking for my keys. I found 50 reais in my old jacket.",
+      "instruction": "while",
+      "answers": [
+       "While I was looking for my keys, I found 50 reais in my old jacket.",
+       "While I was looking for my keys, I found 50 reais in my old jacket",
+       "I found 50 reais in my old jacket while I was looking for my keys.",
+       "I found 50 reais in my old jacket while I was looking for my keys"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "spot",
+   "title": "Spot the mistake",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "spot",
+    "label": "SPOT THE MISTAKE",
+    "html": "Click the wrong word. Then say the whole sentence correctly.",
+    "items": [
+     {
+      "id": "w32",
+      "words": [
+       "I",
+       "was",
+       "watch",
+       "TV",
+       "when",
+       "you",
+       "called."
+      ],
+      "wrong": 2,
+      "fix": "watching"
+     },
+     {
+      "id": "w33",
+      "words": [
+       "They",
+       "was",
+       "playing",
+       "football",
+       "when",
+       "it",
+       "started",
+       "to",
+       "rain."
+      ],
+      "wrong": 1,
+      "fix": "were"
+     },
+     {
+      "id": "w34",
+      "words": [
+       "I",
+       "didn't",
+       "went",
+       "to",
+       "work",
+       "yesterday."
+      ],
+      "wrong": 2,
+      "fix": "go"
+     },
+     {
+      "id": "w35",
+      "words": [
+       "Did",
+       "you",
+       "saw",
+       "the",
+       "game",
+       "last",
+       "night?"
+      ],
+      "wrong": 2,
+      "fix": "see"
+     },
+     {
+      "id": "w36",
+      "words": [
+       "While",
+       "I",
+       "cooked,",
+       "my",
+       "son",
+       "was",
+       "sleeping."
+      ],
+      "wrong": 2,
+      "fix": "was cooking"
+     },
+     {
+      "id": "w37",
+      "words": [
+       "She",
+       "was",
+       "falling",
+       "when",
+       "she",
+       "was",
+       "running."
+      ],
+      "wrong": 2,
+      "fix": "fell"
+     },
+     {
+      "id": "w38",
+      "words": [
+       "What",
+       "did",
+       "you",
+       "doing",
+       "at",
+       "9",
+       "p.m.?"
+      ],
+      "wrong": 1,
+      "fix": "were"
+     }
+    ]
+   }
+  },
+  {
+   "key": "order",
+   "title": "Build the sentence",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "order",
+    "label": "BUILD THE SENTENCE",
+    "html": "Put the words in order. Then read the sentence out loud.",
+    "items": [
+     {
+      "id": "w39",
+      "answer": "I was driving / to work / when / I saw / the accident."
+     },
+     {
+      "id": "w40",
+      "answer": "While / we were waiting / for the bus, / it started / to rain."
+     },
+     {
+      "id": "w41",
+      "answer": "What were you doing / when / your boss / called you?"
+     },
+     {
+      "id": "w42",
+      "answer": "She wasn't listening / when / the teacher / said the answer."
+     },
+     {
+      "id": "w43",
+      "answer": "Did you hear / the noise / while / you were sleeping?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "story",
+   "title": "Reading · the night of the power cut",
+   "tags": {
+    "content": [
+     "Reading",
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "READING · THE NIGHT OF THE POWER CUT",
+    "html": "Last Tuesday, at 8:15 p.m., all the lights in our building went out.<br><br>At that moment, everybody <b>was doing</b> something different. I <b>was taking</b> a shower, and the water <b>was</b> still hot, so I <b>didn't stop</b>. My wife <b>was cooking</b> pasta. She <b>couldn't see</b> anything, so she <b>turned off</b> the stove and <b>looked for</b> a candle.<br><br>In the apartment next door, Mr. Souza <b>was watching</b> a football game. He <b>was</b> so angry! He <b>ran</b> to the window and <b>shouted</b>: \"Not now! There are five minutes left!\" Upstairs, two teenagers <b>were playing</b> video games. When the screen <b>went</b> black, they <b>didn't know</b> what to do, so they <b>went</b> to the balcony and <b>started</b> talking to the neighbors.<br><br>While everybody <b>was complaining</b>, Dona Lúcia, the old lady on the first floor, <b>was sitting</b> on her sofa, calm and happy. Why? She <b>was listening</b> to the game on her old radio, with batteries! When the lights <b>came</b> back at 9:00, half the building <b>was</b> in her living room, and Brazil <b>was winning</b> 2 to 1."
+   }
+  },
+  {
+   "key": "story-q",
+   "title": "The power cut · answer the questions",
+   "tags": {
+    "content": [
+     "Reading",
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "ANSWER WITH A COMPLETE SENTENCE",
+    "html": "Answer out loud first. Then reveal and compare.",
+    "items": [
+     {
+      "id": "w44",
+      "q": "What was the narrator doing when the lights went out?",
+      "a": "He was taking a shower."
+     },
+     {
+      "id": "w45",
+      "q": "What did his wife do when she couldn't see anything?",
+      "a": "She turned off the stove and looked for a candle."
+     },
+     {
+      "id": "w46",
+      "q": "What was Mr. Souza doing? What did he do?",
+      "a": "He was watching a football game. He ran to the window and shouted."
+     },
+     {
+      "id": "w47",
+      "q": "What were the teenagers doing when the screen went black?",
+      "a": "They were playing video games."
+     },
+     {
+      "id": "w48",
+      "q": "Why was Dona Lúcia calm?",
+      "a": "Because she was listening to the game on her old radio, with batteries."
+     },
+     {
+      "id": "w49",
+      "q": "What was happening in the game when the lights came back?",
+      "a": "Brazil was winning 2 to 1."
+     }
+    ]
+   }
+  },
+  {
+   "key": "alibi",
+   "title": "Game · the alibi",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Past Continuous",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "roleplay",
+    "label": "GAME · THE ALIBI",
+    "html": "Somebody stole the cake from the office fridge yesterday between 2 and 4 p.m.! The teacher is the detective. Answer every question in the past. Be careful: your story must make sense! Then change roles.",
+    "roles": [
+     {
+      "name": "William",
+      "card": "You are a suspect. Invent your afternoon: where you were, what you were doing at 2, at 3 and at 4, who you were with, and what you saw. Use: I was …ing when… / While I was …ing, …"
+     },
+     {
+      "name": "Teacher",
+      "card": "You are the detective. Ask: What were you doing at 2 o'clock? Who were you with? What did you have for lunch? Did you go to the kitchen? What were your colleagues doing? Did you see anything strange? Try to find a mistake in the story!"
+     }
+    ]
+   }
+  },
+  {
+   "key": "interrupted",
+   "title": "Game · interrupted!",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · INTERRUPTED!",
+    "html": "Draw a long action and a surprise. Make a sentence with <b>when</b> and another with <b>while</b>. Then continue the story: what did you do next?<br><i>I was sleeping on the sofa when my dog jumped on me. While I was sleeping, my dog jumped on me. So I woke up and…</i>",
+    "promptLabel": "SURPRISE",
+    "lines": [
+     "I was sleeping on the sofa",
+     "We were having a barbecue",
+     "I was driving on the highway",
+     "My boss was talking in a meeting",
+     "I was cooking for ten people",
+     "We were watching a horror movie",
+     "I was walking on the beach",
+     "I was paying at the supermarket"
+    ],
+    "prompts": [
+     "the phone rang",
+     "it started to rain",
+     "a dog appeared",
+     "the lights went out",
+     "I saw a famous person",
+     "somebody screamed",
+     "I found some money",
+     "my card didn't work"
+    ]
+   }
+  },
+  {
+   "key": "talk",
+   "title": "Conversation · your stories",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Past Simple",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "CONVERSATION CARDS",
+    "html": "Answer with <b>two or three sentences</b>. Use the past continuous for the background and the past simple for what happened.",
+    "words": [
+     "when",
+     "while",
+     "was …ing",
+     "didn't"
+    ],
+    "cats": [
+     {
+      "name": "Surprises",
+      "qs": [
+       "Tell me about a time you saw an accident. What were you doing?",
+       "What were you doing when you heard some very good news?",
+       "Did you ever meet someone famous? What were they doing?",
+       "When did you last get a big surprise?"
+      ]
+     },
+     {
+      "name": "Problems",
+      "qs": [
+       "Did you ever lose something important? What were you doing when you lost it?",
+       "Did you ever have a problem with your car? Where were you going?",
+       "What happened the last time the internet stopped at your house?",
+       "Did you ever fall? What were you doing?"
+      ]
+     },
+     {
+      "name": "Memories",
+      "qs": [
+       "What were you doing when you were 18? Where were you living?",
+       "What were you doing on New Year's Eve at midnight?",
+       "Where were you working five years ago?",
+       "What was happening in your life when you started English classes?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "timer",
+   "title": "One minute · tell the story",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "ONE MINUTE · DON'T STOP!",
+    "html": "Talk for one minute. Use <b>when</b> and <b>while</b> at least once.",
+    "seconds": 60,
+    "topics": [
+     "A day when everything went wrong.",
+     "The best day of your last vacation.",
+     "A strange thing you saw on the street.",
+     "Your first day at work.",
+     "A time you were very scared.",
+     "A funny moment with your family."
+    ]
+   }
+  },
+  {
+   "key": "wrapup",
+   "title": "Wrap-up",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "Last questions. Complete sentences!",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "When do we use the past continuous? Give me an example.",
+       "When do we use \"while\"? And \"when\"?",
+       "Make a question with \"Were you…?\"",
+       "Make a negative sentence with \"didn't\".",
+       "What were you doing at this time yesterday?"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "When the Lights Went Out",
+  "subtitle": "Quick review: past simple and past continuous (affirmative, negative, question) · when and while · lots of practice",
+  "level": "A2",
+  "tags": [
+   "Past Simple",
+   "Past Continuous",
+   "Question formation",
+   "Reading",
+   "Conversation"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "ps-aff"
+   },
+   {
+    "model": "ps-neg"
+   },
+   {
+    "model": "ps-q"
+   },
+   {
+    "model": "ps-note"
+   },
+   {
+    "model": "pc-aff"
+   },
+   {
+    "model": "pc-neg"
+   },
+   {
+    "model": "pc-q"
+   },
+   {
+    "model": "ww"
+   },
+   {
+    "model": "basics"
+   },
+   {
+    "model": "choice"
+   },
+   {
+    "model": "fill"
+   },
+   {
+    "model": "join"
+   },
+   {
+    "model": "spot"
+   },
+   {
+    "model": "order"
+   },
+   {
+    "model": "story"
+   },
+   {
+    "model": "story-q"
+   },
+   {
+    "model": "interrupted"
+   },
+   {
+    "model": "alibi"
+   },
+   {
+    "model": "talk"
+   },
+   {
+    "model": "timer"
+   },
+   {
+    "model": "wrapup"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}
