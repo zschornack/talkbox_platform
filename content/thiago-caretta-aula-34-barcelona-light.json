@@ -1,0 +1,679 @@
+{
+ "id": "thiago-caretta-aula-34-barcelona-light-2026-11-06",
+ "student": {
+  "name": "Thiago Caretta"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · travel, yes or no",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP · YES OR NO?",
+    "html": "Answer yes or no. Then add one sentence.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Travel",
+      "qs": [
+       "Have you ever been to Spain?",
+       "Do you prefer the beach or the mountains?",
+       "Do you like visiting museums on a trip?",
+       "Would you go on a trip alone?",
+       "Do you usually plan every day of a trip?",
+       "Is it better to travel in summer or in winter?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "photos",
+   "title": "Before you read · two Gaudí places (photos)",
+   "tags": {
+    "content": [
+     "Reading",
+     "Travel",
+     "Conversation"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "gallery",
+    "label": "BEFORE YOU READ",
+    "html": "Do you remember these places from the last class?",
+    "columns": 2,
+    "hidden": true,
+    "images": [
+     {
+      "id": "p1",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Park_G%C3%BCell_-_main_steps_and_Drac_01.jpg/1280px-Park_G%C3%BCell_-_main_steps_and_Drac_01.jpg",
+      "caption": "Park Güell · Photo: Joe Mabel, CC BY-SA 4.0 (Wikimedia Commons)"
+     },
+     {
+      "id": "p2",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Casa_Batll%C3%B3_en_Barcelona.jpg/1280px-Casa_Batll%C3%B3_en_Barcelona.jpg",
+      "caption": "Casa Batlló · Photo: Blablabalooo, CC BY-SA 4.0 (Wikimedia Commons)"
+     }
+    ]
+   }
+  },
+  {
+   "key": "reading",
+   "title": "Reading · 48 hours in Barcelona (travel diary)",
+   "tags": {
+    "content": [
+     "Reading",
+     "Travel"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "READING · 48 HOURS IN BARCELONA",
+    "html": "<b>Day 1.</b> We arrived in Barcelona on a Friday morning and left our bags at the hotel. First, we walked down La Rambla, the most famous street in the city. It was crowded, but it was fun. Halfway down the street, we stopped at La Boqueria, a huge food market, and had fresh fruit juice for breakfast. In the afternoon, we visited Casa Batlló. People call it the \"house of bones\" because its balconies look like bones, and its roof looks like the back of a dragon. We booked our tickets online, so we didn't have to wait in the queue.<br><br><b>Day 2.</b> On Saturday, we took the metro to Park Güell. Gaudí designed it as a place for rich families to live, but only two houses were sold, so the city opened it as a public park in 1926. The view of the city from the top is amazing. In the evening, we went to the beach. Before the 1992 Olympic Games, the city cleaned and rebuilt its beaches, and today they are full of people until late. We had dinner at ten o'clock, which is normal in Spain, and we watched the sunset first. It was the best day of the trip.<br><br><i>A made-up travel diary. The facts about the city are real.</i>"
+   }
+  },
+  {
+   "key": "tf",
+   "title": "Reading · Barcelona · true or false",
+   "tags": {
+    "content": [
+     "Reading",
+     "Travel"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "TRUE OR FALSE?",
+    "html": "Choose. Then correct the false ones.",
+    "instant": true,
+    "items": [
+     {
+      "id": "tc34_1",
+      "before": "They arrived in Barcelona on a Saturday.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "tc34_2",
+      "before": "La Rambla was crowded.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "tc34_3",
+      "before": "They had breakfast at La Boqueria.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "tc34_4",
+      "before": "Casa Batlló is called the \"house of bones\".",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "tc34_5",
+      "before": "They waited a long time in the queue at Casa Batlló.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "tc34_6",
+      "before": "Many rich families went to live in Park Güell.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "tc34_7",
+      "before": "Park Güell opened as a public park in 1926.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "tc34_8",
+      "before": "They had dinner before the sunset.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "mc",
+   "title": "Reading · Barcelona · multiple choice",
+   "tags": {
+    "content": [
+     "Reading",
+     "Travel"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "CHOOSE THE ANSWER",
+    "html": "Choose.",
+    "instant": true,
+    "items": [
+     {
+      "id": "tc34_9",
+      "before": "La Boqueria is",
+      "options": [
+       "a church.",
+       "a food market.",
+       "a beach."
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "tc34_10",
+      "before": "The roof of Casa Batlló looks like",
+      "options": [
+       "a dragon.",
+       "a ship.",
+       "a tree."
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "tc34_11",
+      "before": "They went to Park Güell by",
+      "options": [
+       "bus.",
+       "taxi.",
+       "metro."
+      ],
+      "answer": 2,
+      "after": ""
+     },
+     {
+      "id": "tc34_12",
+      "before": "The city rebuilt the beaches before",
+      "options": [
+       "the 1992 Olympic Games.",
+       "the 2014 World Cup.",
+       "1926."
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "tc34_13",
+      "before": "Their favorite day was",
+      "options": [
+       "Friday.",
+       "Saturday.",
+       "Sunday."
+      ],
+      "answer": 1,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "short",
+   "title": "Reading · Barcelona · short answers",
+   "tags": {
+    "content": [
+     "Reading",
+     "Travel",
+     "Question formation"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "SHORT ANSWERS",
+    "html": "Answer with a short answer. Then reveal.",
+    "items": [
+     {
+      "id": "tc34_14",
+      "q": "Did they leave their bags at the hotel?",
+      "a": "Yes, they did."
+     },
+     {
+      "id": "tc34_15",
+      "q": "Was La Rambla quiet?",
+      "a": "No, it wasn't. It was crowded."
+     },
+     {
+      "id": "tc34_16",
+      "q": "Did they book the Casa Batlló tickets online?",
+      "a": "Yes, they did."
+     },
+     {
+      "id": "tc34_17",
+      "q": "Were many houses sold in Park Güell?",
+      "a": "No, they weren't. Only two."
+     },
+     {
+      "id": "tc34_18",
+      "q": "Is it normal to have dinner at ten in Spain?",
+      "a": "Yes, it is."
+     },
+     {
+      "id": "tc34_19",
+      "q": "Did they watch the sunset?",
+      "a": "Yes, they did."
+     }
+    ]
+   }
+  },
+  {
+   "key": "vocab",
+   "title": "Reading · Barcelona · words from the text",
+   "tags": {
+    "content": [
+     "Vocabulary",
+     "Travel"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "match",
+    "label": "WORDS FROM THE TEXT",
+    "html": "Match.",
+    "pairs": [
+     {
+      "id": "tc34_20",
+      "left": "crowded",
+      "right": "full of people"
+     },
+     {
+      "id": "tc34_21",
+      "left": "halfway",
+      "right": "in the middle of the way"
+     },
+     {
+      "id": "tc34_22",
+      "left": "a queue",
+      "right": "a line of people waiting"
+     },
+     {
+      "id": "tc34_23",
+      "left": "to book",
+      "right": "to reserve"
+     },
+     {
+      "id": "tc34_24",
+      "left": "the sunset",
+      "right": "when the sun goes down"
+     },
+     {
+      "id": "tc34_25",
+      "left": "amazing",
+      "right": "very, very good"
+     }
+    ]
+   }
+  },
+  {
+   "key": "vocab-q",
+   "title": "Vocabulary · closed questions with the new words",
+   "tags": {
+    "content": [
+     "Vocabulary",
+     "Conversation"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "USE THE NEW WORDS",
+    "html": "Answer yes or no. Then one sentence with the word.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Words",
+      "qs": [
+       "Is your city crowded on weekends? [try: crowded]",
+       "Do you hate waiting in a queue? [try: queue]",
+       "Do you book restaurants before you go? [try: book]",
+       "Have you ever watched a sunset on the beach? [try: sunset]",
+       "Was your last trip amazing? [try: amazing]"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "tapas",
+   "title": "Reading 2 · tapas and late dinners",
+   "tags": {
+    "content": [
+     "Reading",
+     "Travel",
+     "Food"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "READING 2 · SMALL PLATES, LATE DINNERS",
+    "html": "In Spain, people often eat <b>tapas</b>: small plates of food that you share with friends. A typical night out is a \"tapeo\": you go from one bar to another and have one or two tapas in each place. Popular tapas include patatas bravas (fried potatoes with a spicy sauce), tortilla (a thick potato omelette) and croquetas. Meal times are late: lunch is usually around two or three o'clock, and dinner at nine or ten."
+   }
+  },
+  {
+   "key": "tapas-tf",
+   "title": "Reading 2 · tapas · true or false",
+   "tags": {
+    "content": [
+     "Reading",
+     "Travel",
+     "Food"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "READING 2 · TRUE OR FALSE?",
+    "html": "Choose.",
+    "instant": true,
+    "items": [
+     {
+      "id": "tc34_26",
+      "before": "Tapas are big plates for one person.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "tc34_27",
+      "before": "In a \"tapeo\", you stay in the same bar all night.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "tc34_28",
+      "before": "Tortilla is made with potatoes.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "tc34_29",
+      "before": "Lunch in Spain is usually at noon.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "compare",
+   "title": "Brazil × Spain · closed questions",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Comparatives & superlatives"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "BRAZIL × SPAIN",
+    "html": "Choose one. Then say why.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Choose",
+      "qs": [
+       "Dinner at seven or at ten?",
+       "Tapas or a big plate of food?",
+       "A city trip or a beach trip?",
+       "Park Güell or the Sagrada Família?",
+       "Travel by metro or by car?",
+       "Book everything or improvise?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "questions",
+   "title": "Make the question · past simple",
+   "tags": {
+    "content": [
+     "Question formation",
+     "Past Simple"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala",
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "MAKE THE QUESTION",
+    "html": "Here is the answer. Make the question. Then reveal.",
+    "items": [
+     {
+      "id": "tc34_30",
+      "q": "They arrived on a Friday.",
+      "a": "When did they arrive?"
+     },
+     {
+      "id": "tc34_31",
+      "q": "They had fruit juice.",
+      "a": "What did they have for breakfast?"
+     },
+     {
+      "id": "tc34_32",
+      "q": "They went to Park Güell by metro.",
+      "a": "How did they go to Park Güell?"
+     },
+     {
+      "id": "tc34_33",
+      "q": "They had dinner at ten.",
+      "a": "What time did they have dinner?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "wrapup",
+   "title": "Wrap-up · Barcelona light class",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "Would you like to visit Barcelona? Why?",
+       "Which place from the text is the most interesting for you?",
+       "Say three new words from today."
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "48 Hours in Barcelona",
+  "subtitle": "A travel diary · tapas · true or false · short answers",
+  "plan": "Aula leve, continuação de Barcelona (aula 33). Perguntas mais fechadas. Warm-up sim ou não, fotos da última aula, leitura principal (diário de viagem inventado, fatos reais), verdadeiro ou falso, múltipla escolha, respostas curtas, palavras do texto, leitura curta sobre tapas e horários, Brasil × Espanha, montar perguntas e wrap-up.",
+  "level": "B1",
+  "number": 34,
+  "tags": [
+   "Reading",
+   "Travel",
+   "Food",
+   "Conversation"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "photos"
+   },
+   {
+    "model": "reading"
+   },
+   {
+    "model": "tf"
+   },
+   {
+    "model": "mc"
+   },
+   {
+    "model": "short"
+   },
+   {
+    "model": "vocab"
+   },
+   {
+    "model": "vocab-q"
+   },
+   {
+    "model": "tapas"
+   },
+   {
+    "model": "tapas-tf"
+   },
+   {
+    "model": "compare"
+   },
+   {
+    "model": "questions"
+   },
+   {
+    "model": "wrapup"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

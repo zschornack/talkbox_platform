@@ -10,9 +10,10 @@
 - **Etiquetas livres** (`tags.keywords`, imagens e modelos): em inglês, minúsculas, do geral para o específico, uma ideia por etiqueta (`means of transport, car, beetle, blue, street`). O tema maior vira pacote de imagens (`"imagePacks"` num pacote de conteúdo).
 - **Formato de bloco novo** precisa do guia e de dois exemplos em `web/js/blocks/examples.js` (o teste confere).
 
-## Modo atual: só local (desde 19/10/2026)
+## Modo atual: local + GitHub para outro professor (desde 06/11/2026)
 
-- **Não faça commit nem push no GitHub.** Por enquanto tudo é testado e alterado só nesta pasta, no computador do Miguel.
+- O Miguel pode pedir aulas remotamente: aí o pacote é testado, commitado e enviado (push) para o GitHub, e o outro professor faz `git pull` e reinicia o app. **Só faça push quando o Miguel pedir.**
+- O banco (`data/talkbox.db`) **nunca** vai para o GitHub: o repositório é público e o banco tem dados dos alunos. O professor recebe o banco direto do Miguel.
 - Um professor só (o Miguel). Login, servidor on-line e vários professores ficam para depois.
 - Tudo o que acontece no app (editar aula, finalizar, reabrir, planejar a próxima, mapa, modelos) grava direto no banco local `data/talkbox.db`.
 
