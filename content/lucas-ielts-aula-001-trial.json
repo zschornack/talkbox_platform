@@ -1,0 +1,1492 @@
+{
+ "id": "lucas-ielts-aula-001-trial-2026-11-05",
+ "student": {
+  "name": "Lucas IELTS",
+  "level": "B2",
+  "goal": "IELTS",
+  "notes": "Aula experimental em 05/11/2026. Nível B2 só como ponto de partida: ajustar depois do diagnóstico."
+ },
+ "models": [
+  {
+   "key": "goal",
+   "title": "IELTS · first class: your goal",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Conversation"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "BEFORE WE START · YOUR IELTS",
+    "html": "Answer in full sentences. This is speaking practice, too.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Your test",
+      "qs": [
+       "When is your test? Have you booked it yet?",
+       "Academic or General Training? Why?",
+       "What band do you need? For what?",
+       "Have you ever taken the IELTS before? How was it?"
+      ]
+     },
+     {
+      "name": "Your English",
+      "qs": [
+       "Which part worries you the most: listening, reading, writing or speaking? Why?",
+       "How do you use English in your life now?",
+       "How much time can you study each week?",
+       "What do you want from these classes?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "format",
+   "title": "IELTS · the test in one table",
+   "tags": {
+    "content": [
+     "IELTS"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Leitura"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "THE IELTS TEST",
+    "header": true,
+    "rows": [
+     [
+      "PART",
+      "TIME",
+      "WHAT YOU DO"
+     ],
+     [
+      "Listening",
+      "30 min",
+      "4 recordings, 40 questions. You hear each recording once."
+     ],
+     [
+      "Reading",
+      "60 min",
+      "3 texts, 40 questions. No extra time to transfer answers."
+     ],
+     [
+      "Writing",
+      "60 min",
+      "Task 1: 150+ words (about 20 min). Task 2: an essay, 250+ words (about 40 min). Task 2 is worth double."
+     ],
+     [
+      "Speaking",
+      "11–14 min",
+      "An interview with an examiner: Part 1 questions, Part 2 a 2-minute talk, Part 3 a discussion."
+     ],
+     [
+      "Score",
+      "0–9",
+      "One band for each part. The overall band is the average."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "sp1",
+   "title": "IELTS Speaking Part 1 · home, work or study, free time",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Conversation"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "SPEAKING PART 1 · INTERVIEW",
+    "html": "The teacher is the examiner. Answer in 2–3 sentences.",
+    "words": [],
+    "cats": [
+     {
+      "name": "You",
+      "qs": [
+       "Do you work or are you a student?",
+       "What do you like most about your job or your studies?",
+       "Do you live in a house or an apartment?",
+       "What would you change about your home?"
+      ]
+     },
+     {
+      "name": "Free time",
+      "qs": [
+       "What do you usually do at the weekend?",
+       "Do you prefer to spend time indoors or outdoors? Why?",
+       "How often do you use your phone to read?",
+       "Is there a hobby you would like to start in the future?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "extend",
+   "title": "IELTS Speaking · extend every answer (formula)",
+   "tags": {
+    "content": [
+     "IELTS"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "SPEAKING · EXTEND EVERY ANSWER",
+    "header": true,
+    "rows": [
+     [
+      "PART",
+      "HOW LONG",
+      "THE FORMULA"
+     ],
+     [
+      "Part 1",
+      "2–3 sentences",
+      "answer → reason → example"
+     ],
+     [
+      "Part 2",
+      "2 minutes",
+      "follow the 4 points on the card → add a story → finish with a feeling"
+     ],
+     [
+      "Part 3",
+      "4–6 sentences",
+      "opinion → reason → example → the other side → conclusion"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "l1-script",
+   "title": "TEACHER ONLY · IELTS listening Part 1 script (gym membership)",
+   "tags": {
+    "content": [
+     "IELTS"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Escuta"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "TEACHER ONLY · LISTENING PART 1 SCRIPT",
+    "html": "Do not share the screen. Read once, at normal speed.",
+    "items": [
+     {
+      "id": "lu1_1",
+      "q": "Script (read it once)",
+      "a": "<b>Receptionist:</b> Good morning, Riverside Sports Centre. How can I help you?<br><b>Caller:</b> Hi. I'd like to join the gym, please.<br><b>Receptionist:</b> Of course. Can I have your full name?<br><b>Caller:</b> It's Daniel Whitmore.<br><b>Receptionist:</b> Could you spell your surname?<br><b>Caller:</b> W-H-I-T-M-O-R-E.<br><b>Receptionist:</b> Thank you. And your date of birth?<br><b>Caller:</b> The fourteenth of March, nineteen ninety-six.<br><b>Receptionist:</b> And a contact number?<br><b>Caller:</b> Yes, it's oh-seven-nine, double four, three-one-two, eight-six-five.<br><b>Receptionist:</b> Which membership would you like? Basic is twenty-five pounds a month, and Premium is thirty-nine.<br><b>Caller:</b> What's the difference?<br><b>Receptionist:</b> Premium includes the swimming pool and all the classes.<br><b>Caller:</b> I really want to swim, so... Premium, please.<br><b>Receptionist:</b> Great. When would you like to start? Next week?<br><b>Caller:</b> Next week... oh no, sorry, I'm away then. The week after, on the twenty-first.<br><b>Receptionist:</b> Perfect, the twenty-first. And how did you hear about us? Online?<br><b>Caller:</b> No, a colleague recommended you.<br><b>Receptionist:</b> Lovely. On your first visit, please bring a photo ID, like your passport, and a towel.<br><b>Caller:</b> Great, thanks. See you on the twenty-first!"
+     }
+    ]
+   }
+  },
+  {
+   "key": "l1",
+   "title": "IELTS listening Part 1 · gym membership form",
+   "tags": {
+    "content": [
+     "IELTS"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Escuta",
+     "Escrita"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "LISTENING PART 1 · QUESTIONS 1–8",
+    "html": "Complete the form. Write <b>ONE WORD AND/OR A NUMBER</b> for each answer.",
+    "items": [
+     {
+      "id": "lu1_2",
+      "before": "Surname:",
+      "hint": "",
+      "after": "",
+      "answers": [
+       "Whitmore",
+       "WHITMORE"
+      ]
+     },
+     {
+      "id": "lu1_3",
+      "before": "Date of birth:",
+      "hint": "",
+      "after": "March 1996",
+      "answers": [
+       "14th",
+       "14",
+       "fourteenth"
+      ]
+     },
+     {
+      "id": "lu1_4",
+      "before": "Phone number:",
+      "hint": "",
+      "after": "",
+      "answers": [
+       "07944312865",
+       "07944 312865",
+       "079 44 312 865",
+       "079 44 312865"
+      ]
+     },
+     {
+      "id": "lu1_5",
+      "before": "Membership type:",
+      "hint": "",
+      "after": "",
+      "answers": [
+       "Premium"
+      ]
+     },
+     {
+      "id": "lu1_6",
+      "before": "Price per month: £",
+      "hint": "",
+      "after": "",
+      "answers": [
+       "39"
+      ]
+     },
+     {
+      "id": "lu1_7",
+      "before": "Start date: the",
+      "hint": "",
+      "after": "",
+      "answers": [
+       "21st",
+       "21",
+       "twenty-first"
+      ]
+     },
+     {
+      "id": "lu1_8",
+      "before": "Heard about the centre from a",
+      "hint": "",
+      "after": "",
+      "answers": [
+       "colleague"
+      ]
+     },
+     {
+      "id": "lu1_9",
+      "before": "First visit: bring a photo ID and a",
+      "hint": "",
+      "after": "",
+      "answers": [
+       "towel"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "l2-script",
+   "title": "TEACHER ONLY · IELTS listening Part 2 script (museum)",
+   "tags": {
+    "content": [
+     "IELTS"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Escuta"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "TEACHER ONLY · LISTENING PART 2 SCRIPT",
+    "html": "Do not share the screen. Read once.",
+    "items": [
+     {
+      "id": "lu1_10",
+      "q": "Script (read it once)",
+      "a": "Good morning, everyone, and welcome to the Harbour Museum. Before you start, a few words about the building and the visit. Many people think this building was a shipyard, because of the old boats outside, but in fact it was the city's fish market until the museum opened here in 1987.<br><br>Most visitors start on the ground floor, but I'd suggest going straight up to the top floor first. The views are nice, but that's not the reason: the ships gallery up there gets very crowded after eleven o'clock, when the school groups arrive.<br><br>The café is next to the gift shop on the ground floor. Please note that it closes at half past four, half an hour before the museum itself closes.<br><br>Finally, you can take photos anywhere you like, even in the ships gallery, except in the map room. The old maps are very sensitive to light, so no photos there, please. Enjoy your visit!"
+     }
+    ]
+   }
+  },
+  {
+   "key": "l2",
+   "title": "IELTS listening Part 2 · the Harbour Museum (multiple choice)",
+   "tags": {
+    "content": [
+     "IELTS"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Escuta"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "LISTENING PART 2 · QUESTIONS 9–12",
+    "html": "Choose the correct answer.",
+    "instant": false,
+    "items": [
+     {
+      "id": "lu1_11",
+      "before": "The building was originally a",
+      "options": [
+       "shipyard.",
+       "fish market.",
+       "train station."
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "lu1_12",
+      "before": "The guide recommends the top floor first because",
+      "options": [
+       "the views are the best.",
+       "the ships gallery gets crowded later.",
+       "it closes early."
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "lu1_13",
+      "before": "The café closes at",
+      "options": [
+       "4:00.",
+       "4:30.",
+       "5:00."
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "lu1_14",
+      "before": "Visitors cannot take photos in",
+      "options": [
+       "the ships gallery.",
+       "the café.",
+       "the map room."
+      ],
+      "answer": 2,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "l-traps",
+   "title": "IELTS listening · the traps",
+   "tags": {
+    "content": [
+     "IELTS"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Escuta"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "LISTENING · THE TRAPS",
+    "header": true,
+    "rows": [
+     [
+      "TRAP",
+      "EXAMPLE FROM TODAY"
+     ],
+     [
+      "The first answer changes",
+      "Next week... oh no, I'm away. The week after, on the twenty-first."
+     ],
+     [
+      "Words you hear but that are not the answer",
+      "Many people think it was a shipyard... but in fact it was a fish market."
+     ],
+     [
+      "Numbers and spelling",
+      "double four · W-H-I-T-M-O-R-E · a wrong letter = a wrong answer"
+     ],
+     [
+      "The word limit",
+      "ONE WORD AND/OR A NUMBER: \"a colleague\" → write only colleague"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "reading",
+   "title": "IELTS reading · why cities are planting trees (passage)",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Reading"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Leitura"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "READING · ABOUT 15 MINUTES",
+    "html": "<b>Why cities are planting trees</b><br><br><b>A</b> On a summer afternoon, the centre of a large city is often several degrees warmer than the countryside around it, and the difference is usually even greater at night. This effect, known as the urban heat island, happens because concrete, brick and asphalt absorb heat from the sun during the day and release it slowly after dark.<br><br><b>B</b> Trees reduce this heat in two ways. First, their shade stops sunlight before it reaches roads and walls, so these surfaces stay much cooler than surfaces in direct sun. Second, trees release water through their leaves, and as this water evaporates, it cools the air around them.<br><br><b>C</b> The benefits are not only about temperature. Tree roots and soil absorb rainwater, which lowers the risk of flooding after heavy storms, and leaves can trap some of the dust in polluted air. Researchers have also linked green streets with lower stress levels and with more people choosing to walk.<br><br><b>D</b> However, planting trees in a city is not simple. Roots need space underground, where they compete with pipes and cables. Young trees need regular watering for their first few years, and many die when this care stops. Choosing the wrong species can also create problems, such as roots that break pavements or trees that need too much water in a dry climate.<br><br><b>E</b> For this reason, many planners now argue that planting is only the first step. In their view, what matters most is choosing the right tree for the right place, and then looking after it until it can survive on its own."
+   }
+  },
+  {
+   "key": "tfng",
+   "title": "IELTS reading · trees · true / false / not given",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Reading"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Leitura"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "QUESTIONS 1–6 · TRUE, FALSE OR NOT GIVEN?",
+    "html": "Does the statement agree with the passage?",
+    "instant": false,
+    "items": [
+     {
+      "id": "lu1_15",
+      "before": "Cities are usually warmer than the countryside around them, especially at night.",
+      "options": [
+       "TRUE",
+       "FALSE",
+       "NOT GIVEN"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "lu1_16",
+      "before": "Asphalt releases the heat it absorbs very quickly.",
+      "options": [
+       "TRUE",
+       "FALSE",
+       "NOT GIVEN"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "lu1_17",
+      "before": "Trees cool the air only by giving shade.",
+      "options": [
+       "TRUE",
+       "FALSE",
+       "NOT GIVEN"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "lu1_18",
+      "before": "Most cities now have a law that requires trees in new streets.",
+      "options": [
+       "TRUE",
+       "FALSE",
+       "NOT GIVEN"
+      ],
+      "answer": 2,
+      "after": ""
+     },
+     {
+      "id": "lu1_19",
+      "before": "Green streets have been connected with lower stress levels.",
+      "options": [
+       "TRUE",
+       "FALSE",
+       "NOT GIVEN"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "lu1_20",
+      "before": "Young trees need water regularly during their first years.",
+      "options": [
+       "TRUE",
+       "FALSE",
+       "NOT GIVEN"
+      ],
+      "answer": 0,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "complete",
+   "title": "IELTS reading · trees · sentence completion",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Reading"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Leitura"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "QUESTIONS 7–9 · COMPLETE THE SENTENCES",
+    "html": "Write <b>NO MORE THAN TWO WORDS</b> from the passage.",
+    "items": [
+     {
+      "id": "lu1_21",
+      "before": "Water that evaporates from leaves",
+      "hint": "",
+      "after": "the air.",
+      "answers": [
+       "cools"
+      ]
+     },
+     {
+      "id": "lu1_22",
+      "before": "By absorbing rainwater, trees lower the risk of",
+      "hint": "",
+      "after": ".",
+      "answers": [
+       "flooding"
+      ]
+     },
+     {
+      "id": "lu1_23",
+      "before": "Underground, roots compete with pipes and",
+      "hint": "",
+      "after": ".",
+      "answers": [
+       "cables"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "headings",
+   "title": "IELTS reading · trees · matching headings",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Reading"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Leitura"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "QUESTIONS 10–12 · CHOOSE THE HEADING",
+    "html": "Choose the best heading for each paragraph.",
+    "instant": false,
+    "items": [
+     {
+      "id": "lu1_24",
+      "before": "Paragraph A:",
+      "options": [
+       "i. Why cities get hot",
+       "ii. How trees cool a street",
+       "iii. More than a cooler street",
+       "iv. The difficulties",
+       "v. The right tree in the right place"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "lu1_25",
+      "before": "Paragraph C:",
+      "options": [
+       "i. Why cities get hot",
+       "ii. How trees cool a street",
+       "iii. More than a cooler street",
+       "iv. The difficulties",
+       "v. The right tree in the right place"
+      ],
+      "answer": 2,
+      "after": ""
+     },
+     {
+      "id": "lu1_26",
+      "before": "Paragraph D:",
+      "options": [
+       "i. Why cities get hot",
+       "ii. How trees cool a street",
+       "iii. More than a cooler street",
+       "iv. The difficulties",
+       "v. The right tree in the right place"
+      ],
+      "answer": 3,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "evidence",
+   "title": "IELTS reading · trees · find the proof",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Reading"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Leitura",
+     "Fala"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "READING · WHERE IS THE PROOF?",
+    "html": "Show the words in the text. Then reveal.",
+    "items": [
+     {
+      "id": "lu1_27",
+      "q": "Statement 2 · FALSE",
+      "a": "\"...release it slowly after dark.\""
+     },
+     {
+      "id": "lu1_28",
+      "q": "Statement 3 · FALSE",
+      "a": "\"Trees reduce this heat in two ways.\" (shade + water from the leaves)"
+     },
+     {
+      "id": "lu1_29",
+      "q": "Statement 4 · NOT GIVEN",
+      "a": "The text talks about planners, but never about a law."
+     },
+     {
+      "id": "lu1_30",
+      "q": "Sentence 1 · cools",
+      "a": "\"as this water evaporates, it cools the air\""
+     },
+     {
+      "id": "lu1_31",
+      "q": "NOT GIVEN or FALSE?",
+      "a": "FALSE: the text says the opposite. NOT GIVEN: the text says nothing about it."
+     }
+    ]
+   }
+  },
+  {
+   "key": "w1",
+   "title": "IELTS writing Task 1 (Academic) · temperatures table",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Writing"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Escrita"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "WRITING TASK 1 · ABOUT 20 MINUTES · 150+ WORDS",
+    "header": true,
+    "rows": [
+     [
+      "AVERAGE SUMMER TEMPERATURE IN ONE CITY (°C)",
+      "3 P.M.",
+      "11 P.M."
+     ],
+     [
+      "City centre (almost no trees)",
+      "36",
+      "29"
+     ],
+     [
+      "Residential area (some trees)",
+      "33",
+      "25"
+     ],
+     [
+      "Park",
+      "30",
+      "22"
+     ],
+     [
+      "The table shows the average summer temperature in three areas of a city, at two times of day. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. (invented data)",
+      "",
+      ""
+     ]
+    ]
+   }
+  },
+  {
+   "key": "w1-model",
+   "title": "IELTS writing Task 1 · say it before you write it",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Writing"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala",
+     "Escrita"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "TASK 1 · SAY IT FIRST",
+    "html": "Say each part. Then reveal a model.",
+    "items": [
+     {
+      "id": "lu1_32",
+      "q": "Introduction (paraphrase the question)",
+      "a": "The table compares the average summer temperatures in three parts of a city in the afternoon and late at night."
+     },
+     {
+      "id": "lu1_33",
+      "q": "Overview (the 2 main features, no numbers)",
+      "a": "Overall, the city centre was the hottest area at both times, while the park was the coolest, and all three areas were considerably cooler at night."
+     },
+     {
+      "id": "lu1_34",
+      "q": "Detail 1 (3 p.m.)",
+      "a": "At 3 p.m., the city centre reached 36°C, three degrees more than the residential area and six degrees more than the park."
+     },
+     {
+      "id": "lu1_35",
+      "q": "Detail 2 (11 p.m.)",
+      "a": "At night, the temperature fell in all three areas, but the drop was smallest in the city centre (7 degrees), where it remained at 29°C."
+     }
+    ]
+   }
+  },
+  {
+   "key": "w2",
+   "title": "IELTS writing Task 2 · trees or public transport (discuss both views)",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Writing"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Escrita"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "WRITING TASK 2 · ABOUT 40 MINUTES · 250+ WORDS",
+    "html": "<i>Some people think that city governments should spend money on planting trees, while others believe this money should be spent on public transport.</i><br><br><b>Discuss both views and give your own opinion.</b>"
+   }
+  },
+  {
+   "key": "w2-plan",
+   "title": "IELTS writing Task 2 · a clear structure",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Writing"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala",
+     "Escrita"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "TASK 2 · FOUR PARAGRAPHS",
+    "html": "Plan it aloud. Then reveal a model sentence.",
+    "items": [
+     {
+      "id": "lu1_36",
+      "q": "1. Introduction: the topic + your opinion",
+      "a": "Cities have limited budgets, and there is some debate about whether trees or public transport should come first. In my view, both matter, but transport should be the priority."
+     },
+     {
+      "id": "lu1_37",
+      "q": "2. View 1 + reason + example",
+      "a": "On the one hand, trees make streets cooler and more pleasant, which encourages people to walk instead of driving."
+     },
+     {
+      "id": "lu1_38",
+      "q": "3. View 2 + reason + example",
+      "a": "On the other hand, good buses and trains reduce traffic and pollution for millions of people every day."
+     },
+     {
+      "id": "lu1_39",
+      "q": "4. Conclusion: repeat your opinion",
+      "a": "In conclusion, although trees bring real benefits, I believe public transport should receive the larger share of the money."
+     }
+    ]
+   }
+  },
+  {
+   "key": "w-answer",
+   "title": "IELTS writing · student answer space",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Writing"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Escrita"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "notes",
+    "label": "YOUR ANSWER · WRITE THE INTRODUCTION AND THE OVERVIEW",
+    "html": ""
+   }
+  },
+  {
+   "key": "sp2",
+   "title": "IELTS Speaking Part 2 · a place in your city (cue card)",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Conversation"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "SPEAKING PART 2 · CUE CARD",
+    "html": "<b>Describe a place in your city where you like to spend time.</b><br><br>You should say:<br>where it is<br>how often you go there<br>what you do there<br>and explain why you like this place."
+   }
+  },
+  {
+   "key": "sp2-timer",
+   "title": "IELTS Speaking Part 2 · 1 minute to prepare",
+   "tags": {
+    "content": [
+     "IELTS"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "PART 2 · 1 MINUTE TO PREPARE",
+    "html": "Make notes: key words only.",
+    "seconds": 60,
+    "topics": [
+     "A place in your city"
+    ]
+   }
+  },
+  {
+   "key": "sp2-talk",
+   "title": "IELTS Speaking Part 2 · talk for 2 minutes",
+   "tags": {
+    "content": [
+     "IELTS"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "PART 2 · TALK FOR 2 MINUTES",
+    "html": "Talk until the teacher stops you.",
+    "seconds": 120,
+    "topics": [
+     "A place in your city"
+    ]
+   }
+  },
+  {
+   "key": "sp3",
+   "title": "IELTS Speaking Part 3 · cities and public spaces",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Conversation"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "SPEAKING PART 3 · DISCUSSION",
+    "html": "Long answers: opinion, reason, example, the other side.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Cities",
+      "qs": [
+       "Why do some people prefer to live in big cities?",
+       "Should cities have more parks, even if it means fewer car parks?",
+       "Who should pay for public spaces: the government or private companies?",
+       "How will cities change in the next 30 years?"
+      ]
+     },
+     {
+      "name": "Environment",
+      "qs": [
+       "Is it the job of individuals or governments to protect the environment?",
+       "Why do some people find it hard to change their habits?",
+       "Do you think hot summers will change the way people live in Brazil?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "criteria",
+   "title": "IELTS speaking · the four criteria (band 6 vs band 7)",
+   "tags": {
+    "content": [
+     "IELTS"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Leitura"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "HOW SPEAKING IS MARKED",
+    "header": true,
+    "rows": [
+     [
+      "CRITERION (25% EACH)",
+      "BAND 6",
+      "BAND 7"
+     ],
+     [
+      "Fluency and coherence",
+      "Talks at length, but loses the thread or repeats",
+      "Talks at length without effort; connects ideas naturally"
+     ],
+     [
+      "Lexical resource",
+      "Enough words to discuss topics",
+      "Flexible words, some less common, some collocations"
+     ],
+     [
+      "Grammatical range and accuracy",
+      "Simple and complex sentences, with errors",
+      "A range of complex sentences, many with no errors"
+     ],
+     [
+      "Pronunciation",
+      "Generally understood, some mispronunciation",
+      "Easy to understand all the time; good stress and intonation"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "scores",
+   "title": "TEACHER ONLY · IELTS raw score to band (approximate)",
+   "tags": {
+    "content": [
+     "IELTS"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Leitura"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "TEACHER ONLY · FROM CORRECT ANSWERS TO BAND (APPROXIMATE)",
+    "header": true,
+    "rows": [
+     [
+      "BAND",
+      "LISTENING (OF 40)",
+      "ACADEMIC READING (OF 40)"
+     ],
+     [
+      "9",
+      "39–40",
+      "39–40"
+     ],
+     [
+      "8.5",
+      "37–38",
+      "37–38"
+     ],
+     [
+      "8",
+      "35–36",
+      "35–36"
+     ],
+     [
+      "7.5",
+      "32–34",
+      "33–34"
+     ],
+     [
+      "7",
+      "30–31",
+      "30–32"
+     ],
+     [
+      "6.5",
+      "26–29",
+      "27–29"
+     ],
+     [
+      "6",
+      "23–25",
+      "23–26"
+     ],
+     [
+      "5.5",
+      "18–22",
+      "19–22"
+     ],
+     [
+      "5",
+      "16–17",
+      "15–18"
+     ],
+     [
+      "Overall",
+      "average of the 4 bands",
+      ".25 rounds up to .5 · .75 rounds up to the next band"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "observe",
+   "title": "TEACHER ONLY · IELTS trial class: what to observe",
+   "tags": {
+    "content": [
+     "IELTS"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "TEACHER ONLY · WHAT TO OBSERVE TODAY",
+    "html": "Notes for the diagnosis.",
+    "items": [
+     {
+      "id": "lu1_40",
+      "q": "Speaking",
+      "a": "Answers too short? Long pauses? Repeats the same words? Grammar errors in simple structures (3rd person, past)?"
+     },
+     {
+      "id": "lu1_41",
+      "q": "Listening",
+      "a": "Spelling and numbers right? Fell for the distractors (week / shipyard / 5:00)?"
+     },
+     {
+      "id": "lu1_42",
+      "q": "Reading",
+      "a": "Understands NOT GIVEN? Reads everything or scans for key words? Time?"
+     },
+     {
+      "id": "lu1_43",
+      "q": "Writing",
+      "a": "Can paraphrase the question? Writes an overview without numbers? Paragraphs?"
+     },
+     {
+      "id": "lu1_44",
+      "q": "Today's scores",
+      "a": "Listening 12 questions and reading 12 questions: only a rough idea, not a band. Use them to decide where to start."
+     }
+    ]
+   }
+  },
+  {
+   "key": "self",
+   "title": "IELTS · self-assessment after the trial class",
+   "tags": {
+    "content": [
+     "IELTS"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "scale",
+    "label": "HOW DO YOU FEEL?",
+    "html": "Choose a number. Then explain.",
+    "left": "Not ready",
+    "right": "Very ready",
+    "statements": [
+     "Listening",
+     "Reading",
+     "Writing",
+     "Speaking"
+    ]
+   }
+  },
+  {
+   "key": "wrapup",
+   "title": "IELTS trial class · wrap-up and next steps",
+   "tags": {
+    "content": [
+     "IELTS",
+     "Conversation"
+    ],
+    "levels": [
+     "B1",
+     "B2",
+     "C1"
+    ],
+    "skills": [
+     "Fala"
+    ],
+    "keywords": [
+     "ielts"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "Which part was the easiest? And the hardest?",
+       "What surprised you about the test?",
+       "One thing you will do differently in Listening?",
+       "How many weeks do you have until the test?"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "IELTS Trial Class: All Four Skills",
+  "subtitle": "Speaking · listening · reading · writing · how it is marked",
+  "plan": "Aula experimental de diagnóstico, uma amostra curta de cada parte (uns 60 min). NÃO compartilhe a tela nos blocos TEACHER ONLY: os 2 roteiros da escuta (leia cada um uma vez, em ritmo normal), a tabela de conversão de nota e o que observar. Ordem: objetivo do aluno → formato da prova → Speaking 1 → Listening (12 questões) → Reading (12 questões, 15 min) → Writing (Task 1 em voz alta, Task 2 planejada, ele escreve introdução e overview) → Speaking 2 e 3 → critérios e devolutiva.",
+  "level": "B2",
+  "number": 1,
+  "tags": [
+   "IELTS",
+   "Reading",
+   "Writing",
+   "Conversation"
+  ],
+  "blocks": [
+   {
+    "model": "goal"
+   },
+   {
+    "model": "format"
+   },
+   {
+    "model": "sp1"
+   },
+   {
+    "model": "extend"
+   },
+   {
+    "model": "l1-script"
+   },
+   {
+    "model": "l1"
+   },
+   {
+    "model": "l2-script"
+   },
+   {
+    "model": "l2"
+   },
+   {
+    "model": "l-traps"
+   },
+   {
+    "model": "reading"
+   },
+   {
+    "model": "tfng"
+   },
+   {
+    "model": "complete"
+   },
+   {
+    "model": "headings"
+   },
+   {
+    "model": "evidence"
+   },
+   {
+    "model": "w1"
+   },
+   {
+    "model": "w1-model"
+   },
+   {
+    "model": "w2"
+   },
+   {
+    "model": "w2-plan"
+   },
+   {
+    "model": "w-answer"
+   },
+   {
+    "model": "sp2"
+   },
+   {
+    "model": "sp2-timer"
+   },
+   {
+    "model": "sp2-talk"
+   },
+   {
+    "model": "sp3"
+   },
+   {
+    "model": "criteria"
+   },
+   {
+    "model": "self"
+   },
+   {
+    "model": "scores"
+   },
+   {
+    "model": "observe"
+   },
+   {
+    "model": "wrapup"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

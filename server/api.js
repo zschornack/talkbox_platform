@@ -23,10 +23,17 @@ api.add('GET', '/api/students', (_req, _p, url) => {
   return db.listStudents(status === 'active' ? { active: true } : status === 'inactive' ? { active: false } : {});
 });
 
+// o mesmo nome (sem diferenciar acentos e maiúsculas) não pode ser cadastrado duas vezes
+const sameName = (name, exceptId) => {
+  const dup = db.findStudentByName(name, exceptId);
+  if (dup) throw new HttpError(400, `Já existe ${dup.active ? 'um aluno' : 'um aluno inativo'} com esse nome: ${dup.name}.${dup.active ? '' : ' Reative em vez de cadastrar de novo.'}`);
+};
+
 api.add('POST', '/api/students', async (req) => {
   const b = await readJson(req);
   const name = str(b.name, 120);
   if (!name) throw new HttpError(400, 'Informe o nome do aluno ou turma');
+  sameName(name);
   return [201, db.createStudent({ name, level: level(b.level) ?? '', goal: str(b.goal, 300) ?? '', notes: str(b.notes) ?? '' })];
 });
 
@@ -51,6 +58,7 @@ api.add('POST', '/api/students/:id/next-lesson', async (req, { id }) => {
 api.add('PUT', '/api/students/:id', async (req, { id }) => {
   const b = await readJson(req);
   if (b.name !== undefined && !str(b.name)) throw new HttpError(400, 'O nome não pode ficar vazio');
+  if (b.name !== undefined) sameName(str(b.name, 120), id);
   const map = b.map === undefined ? undefined : Object.fromEntries(
     Object.entries(b.map || {}).filter(([, v]) => v === 'good' || v === 'practicing')
   );
@@ -79,6 +87,8 @@ api.add('GET', '/api/lessons', (_req, _p, url) =>
   db.listLessons({ limit: url.searchParams.get('limit') || undefined, studentId: url.searchParams.get('student') || undefined })
 );
 
+// Curso: as aulas padrão (uma por número do currículo)
+api.add('GET', '/api/course', () => db.listCourse());
 api.add('GET', '/api/lessons/:id', (_req, { id }) => db.getLesson(id) || notFound('Aula'));
 
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
@@ -109,17 +119,30 @@ api.add('POST', '/api/lessons/:id/reopen', (_req, { id }) => {
   return { ...out, lesson: db.getLesson(id) };
 });
 
+// Voltar ao original: o que foi escrito e destacado nos blocos da biblioteca nesta aula é descartado (o modelo nunca mudou)
+api.add('POST', '/api/lessons/:id/reset', async (req, { id }) => {
+  const b = await readJson(req).catch(() => ({}));
+  const ids = Array.isArray(b?.blockIds) ? b.blockIds.map(String) : null;
+  return db.resetLesson(id, { blockIds: ids }) || notFound('Aula');
+});
+
 api.add('POST', '/api/pending/:id/discard', (_req, { id }) => (db.discardPending(id) ? { ok: true } : notFound('Pendência')));
 
+// Copiar aula: o que a cópia vai mudar (para mostrar antes) e a cópia em si.
+// A cópia leva só o material: sem respostas, caneta, anotações, pendências e marca-texto da aula.
+api.add('GET', '/api/lessons/:id/copy', (_req, { id }) => db.copyInfo(id) || notFound('Aula'));
 api.add('POST', '/api/lessons/:id/duplicate', async (req, { id }) => {
   const src = db.getLesson(id) || notFound('Aula');
   const b = await readJson(req);
-  const studentId = b.studentId === undefined ? src.studentId : b.studentId;
+  const studentId = b.studentId === undefined ? src.studentId : b.studentId || null;
   if (studentId && !db.getStudent(studentId)) notFound('Aluno');
-  const title = str(b.title, 200) || src.title;
-  // a cópia não carrega pendências (elas pertencem à aula original)
-  const blocks = (src.doc.blocks || []).map(({ pending, ...b }) => b);
-  return [201, db.createLesson({ title, studentId, doc: { ...src.doc, title, blocks } })];
+  const out = db.copyLesson(id, {
+    studentId,
+    title: str(b.title, 200) || src.title,
+    original: b.original !== false,
+    keepMarks: b.keepMarks === true,
+  });
+  return [201, { ...out.lesson, report: out.report }];
 });
 
 // ---------------- modelos ----------------
@@ -131,7 +154,10 @@ api.add('POST', '/api/models', async (req) => {
   const b = await readJson(req);
   const type = str(b.type, 40);
   if (!type || !b.block || typeof b.block !== 'object') throw new HttpError(400, 'Modelo sem formato ou conteúdo');
-  return [201, db.createModel({ title: str(b.title, 200) || 'Sem título', type, block: b.block, tags: b.tags })];
+  if (type === 'image' && !str(b.block.src)) throw new HttpError(400, 'Escolha a imagem antes de salvar.');
+  const packIds = Array.isArray(b.packIds) ? b.packIds.map(String) : [];
+  for (const p of packIds) if (!db.getPack(p)) notFound('Pacote');
+  return [201, db.createModel({ title: str(b.title, 200) || 'Sem título', type, block: b.block, tags: b.tags, packIds })];
 });
 
 api.add('GET', '/api/models/:id', (_req, { id }) => db.getModel(id) || notFound('Modelo'));
@@ -156,6 +182,30 @@ api.add('DELETE', '/api/models/:id', (_req, { id }) => (db.archiveModel(id) ? { 
 
 // fila "a revisar" (itens importados)
 api.add('POST', '/api/models/:id/approve', (_req, { id }) => db.approveModel(id) || notFound('Modelo'));
+
+// ---------------- pacotes de imagens ----------------
+api.add('GET', '/api/packs', () => db.listPacks());
+api.add('POST', '/api/packs', async (req) => {
+  const b = await readJson(req);
+  return [201, db.createPack({ name: str(b.name, 80), description: str(b.description, 500) ?? '', keywords: b.keywords })];
+});
+api.add('GET', '/api/packs/:id', (_req, { id }) => db.getPack(id) || notFound('Pacote'));
+api.add('PUT', '/api/packs/:id', async (req, { id }) => {
+  const b = await readJson(req);
+  return db.updatePack(id, { name: str(b.name, 80), description: str(b.description, 500), keywords: b.keywords }) || notFound('Pacote');
+});
+api.add('DELETE', '/api/packs/:id', (_req, { id }) => (db.archivePack(id) ? { ok: true } : notFound('Pacote')));
+const idList = (v) => (Array.isArray(v) ? v.map(String).slice(0, 500) : []);
+api.add('POST', '/api/packs/:id/items', async (req, { id }) => {
+  db.getPack(id) || notFound('Pacote');
+  const b = await readJson(req);
+  return { added: db.addToPack(id, idList(b.modelIds)), pack: db.getPack(id) };
+});
+api.add('POST', '/api/packs/:id/remove', async (req, { id }) => {
+  db.getPack(id) || notFound('Pacote');
+  const b = await readJson(req);
+  return { removed: db.removeFromPack(id, idList(b.modelIds)), pack: db.getPack(id) };
+});
 
 // ---------------- importação ----------------
 api.add('GET', '/api/imports', () => db.listImports());
@@ -186,11 +236,41 @@ api.add('POST', '/api/uploads', async (req) => {
   if (!String(req.headers['content-type']).startsWith('image/webp')) throw new HttpError(415, 'Envie a imagem em WebP');
   const buf = await readBody(req, 8 * 1024 * 1024);
   if (!buf.length) throw new HttpError(400, 'Imagem vazia');
+  // WebP de verdade: começa com RIFF....WEBP
+  if (buf.length < 12 || buf.toString('latin1', 0, 4) !== 'RIFF' || buf.toString('latin1', 8, 12) !== 'WEBP') throw new HttpError(415, 'O arquivo não é uma imagem WebP');
   // nome = impressão digital do arquivo: a mesma imagem enviada duas vezes é guardada uma vez só
   const name = `${crypto.createHash('sha256').update(buf).digest('hex').slice(0, 32)}.webp`;
   const file = path.join(db.UPLOADS_DIR, name);
   if (!fs.existsSync(file)) fs.writeFileSync(file, buf);
   return [201, { url: `/uploads/${name}` }];
+});
+
+// Imagem que está na internet: o servidor busca para o navegador converter em WebP e guardar no acervo.
+// Assim a aula funciona sem internet. Só endereços http(s) e só imagens.
+api.add('GET', '/api/images/fetch', async (_req, _p, url) => {
+  let target;
+  try { target = new URL(url.searchParams.get('url') || ''); } catch { throw new HttpError(400, 'Endereço inválido'); }
+  if (!['http:', 'https:'].includes(target.protocol)) throw new HttpError(400, 'Endereço inválido');
+  let res;
+  try {
+    res = await fetch(target, { redirect: 'follow', signal: AbortSignal.timeout(20000), headers: { 'User-Agent': 'TalkBox/0.7 (aulas da escola)' } });
+  } catch {
+    throw new HttpError(502, 'Não consegui baixar a imagem (sem internet?)');
+  }
+  const type = String(res.headers.get('content-type') || '');
+  if (!res.ok || !type.startsWith('image/')) throw new HttpError(502, 'Esse endereço não devolveu uma imagem');
+  const buf = Buffer.from(await res.arrayBuffer());
+  if (buf.length > 15 * 1024 * 1024) throw new HttpError(413, 'Imagem grande demais');
+  return [200, buf, { 'Content-Type': type, 'Cache-Control': 'no-store' }];
+});
+
+// Troca o endereço de uma imagem em todo lugar (acervo, aulas, pendências)
+api.add('POST', '/api/images/replace', async (req) => {
+  const b = await readJson(req);
+  const from = str(b.from, 2000);
+  const to = str(b.to, 2000);
+  if (!from || !/^\/uploads\/[0-9a-f]{32}\.webp$/.test(to || '')) throw new HttpError(400, 'Troca de imagem inválida');
+  return db.replaceImageSrc(from, to);
 });
 
 export default api;

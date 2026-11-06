@@ -1,0 +1,192 @@
+{
+ "id": "kelwen-aula-28-words-21-40-2026-11-06",
+ "student": {
+  "name": "Kelwen"
+ },
+ "models": [
+  {
+   "key": "review",
+   "title": "Review · words 1–20 · one easy question each",
+   "tags": {
+    "content": [
+     "Vocabulary",
+     "Conversation"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "REVIEW · WORDS 1–20 · ONE QUESTION EACH",
+    "html": "Answer with the word on the card.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Words 1–10",
+      "qs": [
+       "What new product did a company unveil this year? [try: unveiled]",
+       "Was your last flight or bus delayed? What happened? [try: was delayed]",
+       "Did you ever pay a deposit for something? What was it? [try: a deposit]",
+       "Do you have a deadline this week? For what? [try: deadline]",
+       "Which movie or series had a lot of hype, but wasn't good? [try: hype]",
+       "Do you like being in the spotlight? Why or why not? [try: the spotlight]",
+       "What was the last thing you bought that was worth it? [try: worth it]",
+       "Did anyone ever break into your car or your house? [try: broke into]",
+       "What is priceless to you? [try: priceless]",
+       "What melts very fast in the summer? [try: melts]"
+      ]
+     },
+     {
+      "name": "Words 11–20",
+      "qs": [
+       "Who do you suspect eats the chocolate in your house? [try: I suspect]",
+       "Did you ever make a deal with a friend or your boss? [try: a deal]",
+       "Is your car dented anywhere? How did it happen? [try: dented]",
+       "What is always missing in your house? [try: missing]",
+       "In your favorite crime movie or series, who ends up behind bars? [try: behind bars]",
+       "What do you give your friends in exchange for a favor? [try: in exchange for]",
+       "What can't you afford right now? [try: can't afford]",
+       "What did you run out of at home this week? [try: ran out of]",
+       "What do you want to get rid of in your house? [try: get rid of]",
+       "What are you looking forward to this month? [try: looking forward to]"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "40 Words, Part 2",
+  "subtitle": "Review of words 1–20 · new words 21–40",
+  "plan": "Feedback da aula 27: \"vimos até a palavra 20, continuar as próximas\". 1) Revisão: uma pergunta fácil para cada palavra de 1 a 20 (a palavra está no cartão). 2) A caixa de ferramentas (conectores e who / which / where). 3) As palavras 21 a 40, com os mixers e os jogos finais, que ficaram pendentes na aula 27. As pendências da aula 26 continuam na ficha.",
+  "level": "A2",
+  "number": 28,
+  "tags": [
+   "Vocabulary",
+   "Conversation",
+   "Relative clauses"
+  ],
+  "blocks": [
+   {
+    "model": "review"
+   },
+   {
+    "ref": "0eoLG8HM"
+   },
+   {
+    "ref": "nDmK9iwv",
+    "pending": "Al_8kgRc"
+   },
+   {
+    "ref": "dXCM-Y_M",
+    "pending": "LEokMRLM"
+   },
+   {
+    "ref": "NCAaEhji",
+    "pending": "OATkp3Zf"
+   },
+   {
+    "ref": "cAKq55si",
+    "pending": "qOWjaLx1"
+   },
+   {
+    "ref": "YmunbncZ",
+    "pending": "5qxPFlm-"
+   },
+   {
+    "ref": "-164ulpZ",
+    "pending": "cNvBaCS2"
+   },
+   {
+    "ref": "A5SCWNXm",
+    "pending": "PMK68gJN"
+   },
+   {
+    "ref": "rrBw1Vpv",
+    "pending": "nDTSGViQ"
+   },
+   {
+    "ref": "XgXpvRbG",
+    "pending": "r9nHtzvE"
+   },
+   {
+    "ref": "cwwfKxat",
+    "pending": "16sXhQzt"
+   },
+   {
+    "ref": "MQ-nAG4c",
+    "pending": "WmE0QBiU"
+   },
+   {
+    "ref": "IrzgnzDx",
+    "pending": "66dvO30a"
+   },
+   {
+    "ref": "03kxINFG",
+    "pending": "gMLtJVyP"
+   },
+   {
+    "ref": "r5Cw1X7n",
+    "pending": "EE825PCn"
+   },
+   {
+    "ref": "cgN07Wqf",
+    "pending": "E28NDevu"
+   },
+   {
+    "ref": "O1fRfgbf",
+    "pending": "98zDfYPi"
+   },
+   {
+    "ref": "8dAiZ1SJ",
+    "pending": "iXfaRdUS"
+   },
+   {
+    "ref": "tU0Ynpjk",
+    "pending": "YjhLIohA"
+   },
+   {
+    "ref": "WQoV8UvG",
+    "pending": "T2TEDGWX"
+   },
+   {
+    "ref": "zQeSPYRp",
+    "pending": "IcC6LyDB"
+   },
+   {
+    "ref": "3HzHH-1y",
+    "pending": "urkfaLtA"
+   },
+   {
+    "ref": "QNuaUlGH",
+    "pending": "_ezjTrln"
+   },
+   {
+    "ref": "q3A7DpOH",
+    "pending": "D3riEEYC"
+   },
+   {
+    "ref": "CyRjAfqf",
+    "pending": "5zRyfO5f"
+   },
+   {
+    "ref": "tfIPI-SO",
+    "pending": "jEJj5u1F"
+   },
+   {
+    "ref": "GOKgqikn",
+    "pending": "MYmhO_vp"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

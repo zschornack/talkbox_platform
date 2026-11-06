@@ -47,7 +47,7 @@ export const scale = {
     const print = h('div.print-only',
       h('ol.print-list', b.statements.map((s, k) => {
         const li = h('li');
-        li.innerHTML = sanitize(s) + (st.marks[k] !== undefined ? ` <b>(${st.marks[k] + 1}/${POINTS})</b>` : '');
+        li.innerHTML = sanitize(s) + (st.marks[k] !== undefined ? ` <b class="scale-mark">(${st.marks[k] + 1}/${POINTS})</b>` : '');
         return li;
       })));
     const intro = editable(h('div.muted-text.opt'), { value: b.html, placeholder: 'Instrução (opcional)', onChange: (v) => { b.html = v; ctx.changed(); } });

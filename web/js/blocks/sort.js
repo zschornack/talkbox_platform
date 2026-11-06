@@ -48,7 +48,11 @@ export const sort = {
       pool.length
         ? pool.map((it) => h('button.chip-word', { type: 'button', class: local.sel === it.id ? 'sel' : '', onClick: () => { local.sel = local.sel === it.id ? null : it.id; ctx.rerender(); } }, it.text))
         : h('span.muted', 'Todos os itens estão nos grupos.'));
-    const printPool = h('div.print-only.order-print', seededShuffle(b.items, b.id).map((it) => it.text).join('  ·  '));
+    // PDF: em branco, todos os itens e os grupos vazios; preenchido, só o que ficou de fora dos grupos
+    const left = seededShuffle(b.items, b.id).filter((it) => st.placed[it.id] === undefined);
+    const printPool = h('div.print-only',
+      h('div.order-print.blank-only', seededShuffle(b.items, b.id).map((it) => it.text).join('  ·  ')),
+      left.length ? h('div.order-print.filled-only', left.map((it) => it.text).join('  ·  ')) : null);
     const score = h('div.score', { role: 'status', hidden: !local.checked }, `Acertou ${right} de ${b.items.length}.`);
     const buttons = h('div.btns.screen-only',
       h('button.btn.primary', { type: 'button', onClick: () => { local.checked = true; ctx.rerender(); } }, 'Conferir'),

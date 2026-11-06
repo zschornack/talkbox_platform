@@ -1,5 +1,6 @@
 // Prévia em texto de um bloco (cartões da biblioteca de modelos).
 import { toText } from '../sanitize.js';
+import { splitTry } from './deck.js';
 
 const clip = (s, n = 120) => {
   s = String(s || '').replace(/\s+/g, ' ').trim();
@@ -41,7 +42,7 @@ export function summarize(block) {
       const cats = block.cats || [];
       const total = cats.reduce((n, c) => n + c.qs.length, 0);
       return {
-        lines: cats.slice(0, 3).map((c) => clip(`${c.name}: ${toText(c.qs[0] || '')}`, 80)),
+        lines: cats.slice(0, 3).map((c) => clip(`${c.name}: ${toText(splitTry(c.qs[0] || '').q)}`, 80)),
         count: `${total} perguntas${cats.length > 1 ? ` · ${cats.length} temas` : ''}`,
       };
     }
@@ -83,6 +84,14 @@ export function summarize(block) {
       return { lines: [clip(toText(block.html), 100), (block.marks || []).map((m) => m.text).join(' · ')].filter(Boolean) };
     case 'image':
       return { lines: block.caption ? [clip(toText(block.caption), 100)] : [], image: block.src };
+    case 'gallery': {
+      const imgs = block.images || [];
+      return {
+        lines: [clip(imgs.map((x) => toText(x.caption)).filter(Boolean).join(' · '), 100)].filter(Boolean),
+        count: `${imgs.length} ${imgs.length === 1 ? 'imagem' : 'imagens'}${block.hidden ? ' · nomes escondidos' : ''}`,
+        image: imgs[0]?.src,
+      };
+    }
     default:
       return { lines: [clip(toText(block.html), 160)].filter(Boolean) };
   }

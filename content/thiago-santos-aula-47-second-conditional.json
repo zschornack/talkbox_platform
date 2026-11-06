@@ -1,0 +1,323 @@
+{
+ "id": "thiago-santos-aula-47-second-conditional-2026-11-05",
+ "student": {
+  "name": "Thiago Santos"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · this week, your life, if…",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Conditionals (0 & 1)",
+     "Conversation"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP",
+    "html": "Answer with a full sentence.",
+    "words": [],
+    "cats": [
+     {
+      "name": "This week",
+      "qs": [
+       "What have you done this week that you're proud of? [try: I've]",
+       "Have you finished all your work this week yet? [try: yet]",
+       "What has just happened in the news? [try: has just]",
+       "Has anything funny happened at work recently?"
+      ]
+     },
+     {
+      "name": "Your life",
+      "qs": [
+       "What is the most beautiful place you've ever seen? [try: I've ever seen]",
+       "Have you ever had a pet? What was its name?",
+       "What have you never done, but want to do?",
+       "How many cities have you lived in?"
+      ]
+     },
+     {
+      "name": "If…",
+      "qs": [
+       "What do you do if you can't sleep? [try: If I can't sleep, I]",
+       "What will you do if it's sunny this weekend? [try: If it's sunny, I'll]",
+       "What happens if you eat too much at lunch? [try: If I eat too much, I]",
+       "What will you do if you get home early today?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "ppmix",
+   "title": "Present perfect or past simple? · three uses (mix)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Leitura",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "PRESENT PERFECT OR PAST SIMPLE?",
+    "html": "Choose. Then say why.",
+    "instant": true,
+    "items": [
+     {
+      "id": "ts47_1",
+      "before": "She",
+      "options": [
+       "has gone",
+       "went"
+      ],
+      "answer": 1,
+      "after": "to Lisbon in 2019."
+     },
+     {
+      "id": "ts47_2",
+      "before": "My brother",
+      "options": [
+       "has never eaten",
+       "never ate"
+      ],
+      "answer": 0,
+      "after": "sushi in his life."
+     },
+     {
+      "id": "ts47_3",
+      "before": "",
+      "options": [
+       "Have you finished",
+       "Did you finish"
+      ],
+      "answer": 0,
+      "after": "the report yet?"
+     },
+     {
+      "id": "ts47_4",
+      "before": "We",
+      "options": [
+       "have bought",
+       "bought"
+      ],
+      "answer": 1,
+      "after": "a new car last Saturday."
+     },
+     {
+      "id": "ts47_5",
+      "before": "Shh! The baby",
+      "options": [
+       "has just fallen",
+       "fell"
+      ],
+      "answer": 0,
+      "after": "asleep."
+     },
+     {
+      "id": "ts47_6",
+      "before": "Antônio",
+      "options": [
+       "has never seen",
+       "didn't see"
+      ],
+      "answer": 0,
+      "after": "snow. He wants to see it one day."
+     },
+     {
+      "id": "ts47_7",
+      "before": "I",
+      "options": [
+       "have lost",
+       "lost"
+      ],
+      "answer": 1,
+      "after": "my keys two hours ago, but I found them."
+     },
+     {
+      "id": "ts47_8",
+      "before": "They",
+      "options": [
+       "haven't finished",
+       "didn't finish"
+      ],
+      "answer": 0,
+      "after": "the new bridge yet."
+     }
+    ]
+   }
+  },
+  {
+   "key": "zerofirst",
+   "title": "Zero or first? · finish the sentence",
+   "tags": {
+    "content": [
+     "Conditionals (0 & 1)"
+    ],
+    "levels": [
+     "A2",
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "ZERO OR FIRST? · FINISH IT",
+    "html": "Finish the sentence. Then reveal.",
+    "items": [
+     {
+      "id": "ts47_9",
+      "q": "If cows don't eat well, …",
+      "a": "Zero · they give less milk."
+     },
+     {
+      "id": "ts47_10",
+      "q": "If it rains on Saturday, …",
+      "a": "First · we'll stay home."
+     },
+     {
+      "id": "ts47_11",
+      "q": "If you don't water plants, …",
+      "a": "Zero · they die."
+     },
+     {
+      "id": "ts47_12",
+      "q": "If I finish work early today, …",
+      "a": "First · I'll go to the gym."
+     },
+     {
+      "id": "ts47_13",
+      "q": "If you mix blue and yellow, …",
+      "a": "Zero · you get green."
+     },
+     {
+      "id": "ts47_14",
+      "q": "If my boss calls me tonight, …",
+      "a": "First · I won't answer!"
+     },
+     {
+      "id": "ts47_15",
+      "q": "If I'm tired after class, …",
+      "a": "First · I'll go to bed early."
+     },
+     {
+      "id": "ts47_16",
+      "q": "If you heat ice, …",
+      "a": "Zero · it melts."
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "What Would You Do? Second Conditional",
+  "subtitle": "Present perfect mix · zero and first · second conditional",
+  "plan": "Feedback da aula 46: second conditional + continuar zero/first e present perfect em todos os usos. 1) Warm-up (present perfect e if). 2) Present perfect × past simple nos três usos (experiência, novidade com just/already/yet, resultado). 3) Zero ou first, terminando frases. 4) A parte da second conditional que ficou pendente na aula 46 (tabela, real × imaginário, bilhete de loteria, construção de frases, dilemas e jogos). As 6 pendências da aula 45 continuam na ficha.",
+  "level": "A2",
+  "number": 47,
+  "tags": [
+   "Conditionals (2 & 3)",
+   "Conditionals (0 & 1)",
+   "Present Perfect",
+   "Conversation"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "ppmix"
+   },
+   {
+    "model": "zerofirst"
+   },
+   {
+    "ref": "5QtegOjU",
+    "pending": "vSV-zU7c"
+   },
+   {
+    "ref": "JRZ35H6K",
+    "pending": "kS8DaFmx"
+   },
+   {
+    "ref": "JJdfzwcd",
+    "pending": "e9SelKnQ"
+   },
+   {
+    "ref": "RDztYpW9",
+    "pending": "oSYVI7rk"
+   },
+   {
+    "ref": "8ZB-QNFA",
+    "pending": "kc6qP-Wy"
+   },
+   {
+    "ref": "khAuQ7Y8",
+    "pending": "MpGGCHkf"
+   },
+   {
+    "ref": "JanHWet_",
+    "pending": "-Clogl9i"
+   },
+   {
+    "ref": "TEnUKhsT",
+    "pending": "kGZHg4u9"
+   },
+   {
+    "ref": "Cj32iCUa",
+    "pending": "TxL09zqZ"
+   },
+   {
+    "ref": "puXR5Jkp",
+    "pending": "4NBdtJcZ"
+   },
+   {
+    "ref": "MB64ZySF",
+    "pending": "pm75FKDp"
+   },
+   {
+    "ref": "8FcYZzyi",
+    "pending": "Bw2Y_n9D"
+   },
+   {
+    "ref": "pdzIqgcK",
+    "pending": "v606tUAo"
+   },
+   {
+    "ref": "n0v6taws",
+    "pending": "uGZzmSzf"
+   },
+   {
+    "ref": "iLRudrbE",
+    "pending": "0D9agLyj"
+   },
+   {
+    "ref": "3XBb0vak",
+    "pending": "hABoIk9-"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

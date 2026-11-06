@@ -5,6 +5,7 @@ import { appShell } from './layout.js';
 import { newLessonDialog, studentDialog } from './new-lesson.js';
 import { newModelMenu } from './models.js';
 import { BLOCKS, MENU } from './blocks/index.js';
+import { courseRoad } from './course.js';
 
 const greeting = () => {
   const hr = new Date().getHours();
@@ -13,8 +14,7 @@ const greeting = () => {
 
 export async function renderHome(root) {
   document.title = 'TalkBox';
-  const data = await api.overview();
-  const models = await api.models();
+  const [data, models, course] = await Promise.all([api.overview(), api.models(), api.course()]);
 
   const action = (icon, title, text, onClick, primary) =>
     h('button.quick' + (primary ? '.primary' : ''), { type: 'button', onClick },
@@ -26,7 +26,17 @@ export async function renderHome(root) {
     { 'aria-label': 'Atalhos' },
     action('plus', 'Nova aula', 'Escolha o aluno e comece', () => newLessonDialog(), true),
     action('users', 'Novo aluno', 'Cadastre um aluno ou turma', () => studentDialog()),
-    action('layers', 'Novo modelo', 'Crie uma atividade para reusar', (e) => newModelMenu(e.currentTarget))
+    action('layers', 'Novo modelo', 'Veja os formatos com exemplos', () => newModelMenu()),
+    action('image', 'Enviar imagens', 'Fotos para o acervo e os pacotes', () => { location.hash = '#/imagens/enviar'; })
+  );
+
+  // ---------- o curso: roteiro das 100 aulas ----------
+  const courseCard = h(
+    'section.card.panel-card.course-card',
+    h('div.card-head', h('h2', 'Curso TalkBox · 100 aulas'),
+      h('span.muted', `${course.length} ${course.length === 1 ? 'pronta' : 'prontas'}`),
+      h('a.link', { href: '#/curso' }, 'Abrir o roteiro')),
+    courseRoad(course, { compact: true })
   );
 
   // ---------- aulas recentes ----------
@@ -76,6 +86,16 @@ export async function renderHome(root) {
     )
   );
 
+  // ---------- nivelamento ----------
+  const placementCard = h(
+    'section.card.placement-card',
+    h('div.placement-intro',
+      h('h2', 'Nivelamento'),
+      h('p', 'Aluno novo? Um teste de 15 minutos em 4 etapas, do básico ao avançado: conversa, leitura, escuta e gramática. No fim sai o nível e o cadastro já preenchido.')),
+    h('ol.placement-stages', ['Básico', 'Intermediário', 'Interm. avançado', 'Avançado'].map((n, i) => h('li', h('span', String(i + 1)), n))),
+    h('a.btn.primary', { href: '#/nivelamento' }, 'Começar nivelamento', svgIcon(ICONS.arrow, 16))
+  );
+
   root.replaceChildren(
     appShell(
       'home',
@@ -88,8 +108,10 @@ export async function renderHome(root) {
           )
         ),
         quick,
+        courseCard,
         h('div.home-grid', recent, studentsCard),
-        modelsCard
+        modelsCard,
+        placementCard
       )
     )
   );

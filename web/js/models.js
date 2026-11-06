@@ -8,11 +8,45 @@ import { LEVELS, SKILLS, CONTENT_SUGGESTIONS, splitContentQuery, normalizeTerm, 
 import { toggleChips, tagInput, modal, field, toast, emptyState, confirmDialog } from './ui.js';
 import { toText } from './sanitize.js';
 import { copyBlock } from './block-view.js';
+import { stripBlockMarks, countLiveMarks, toMaterialColors } from './marks.js';
 
 export const FORMATS = MENU.filter((t) => t !== 'notes');
 export const formatName = (t) => BLOCKS[t]?.name || t;
 
-const DEFAULT_SKILLS = { fill: ['Escrita'], choice: ['Leitura'], match: ['Leitura'], deck: ['Fala'], challenge: ['Fala'], image: ['Fala'], explanation: ['Leitura'], table: ['Leitura'], text: ['Leitura'] };
+export const DEFAULT_SKILLS = {
+  fill: ['Escrita'], choice: ['Leitura'], match: ['Leitura'], deck: ['Fala'], challenge: ['Fala'], image: ['Fala'], explanation: ['Leitura'],
+  table: ['Leitura'], text: ['Leitura'], tense: ['Leitura'], timeline: ['Leitura'], reveal: ['Fala'], order: ['Escrita'], transform: ['Escrita'],
+  spot: ['Leitura'], sort: ['Leitura'], scale: ['Fala'], roleplay: ['Fala'], timer: ['Fala'],
+};
+
+/** "means of transport, Car, blue" → ['means of transport', 'car', 'blue'] (como o servidor guarda). */
+export const splitKeywords = (text) =>
+  [...new Set(String(text || '').split(',').map((x) => x.trim().toLowerCase().replace(/\s+/g, ' ')).filter(Boolean))];
+
+/** Todas as etiquetas livres já usadas, das mais usadas para as menos. */
+export function keywordUniverse(models) {
+  const n = {};
+  for (const m of models) for (const k of m.tags.keywords || []) n[k] = (n[k] || 0) + 1;
+  return Object.keys(n).sort((a, b) => n[b] - n[a] || a.localeCompare(b));
+}
+
+/** Campo de etiquetas livres: texto separado por vírgula, com sugestões das que já existem. */
+export function keywordsField(tags, onChange, models = [], { label = 'Etiquetas livres', hint } = {}) {
+  const listId = 'kw' + Math.random().toString(36).slice(2, 8);
+  const input = h('input', {
+    type: 'text',
+    value: (tags.keywords || []).join(', '),
+    placeholder: 'Ex.: means of transport, car, blue',
+    autocomplete: 'off',
+    list: listId,
+    onInput: (e) => { tags.keywords = splitKeywords(e.target.value); onChange?.(tags.keywords); },
+    onBlur: (e) => { e.target.value = (tags.keywords || []).join(', '); },
+  });
+  const known = keywordUniverse(models).slice(0, 60);
+  return h('div.field', h('label', { for: (input.id = 'f' + listId) }, label), input,
+    h('datalist', { id: listId }, known.map((k) => h('option', { value: k }))),
+    h('div.field-hint', hint || 'Separe por vírgula. Do geral para o específico, em inglês: a categoria, a coisa, a cor, o lugar.'));
+}
 
 export const formatBadge = (type) => h('span.format-badge', { class: `f-${type}` }, svgIcon(ICONS[type], 15), formatName(type));
 
@@ -23,7 +57,7 @@ export const contentUniverse = (models) =>
 /** Filtro combinado: "ou" dentro de cada eixo, "e" entre eixos (requisitos 7.1). */
 export function matchModel(m, f) {
   if ((f.q || '').trim()) {
-    const hay = normalizeTerm([m.title, formatName(m.type), ...m.tags.content, ...m.tags.levels, ...m.tags.skills, ...summarize(m.block).lines].join(' '));
+    const hay = normalizeTerm([m.title, formatName(m.type), ...m.tags.content, ...m.tags.levels, ...m.tags.skills, ...(m.tags.keywords || []), ...summarize(m.block).lines].join(' '));
     // conteúdos citados na busca valem pelo nome oficial e por qualquer sinônimo ("simple past" acha Past Simple)
     const { contents, rest } = splitContentQuery(f.q);
     for (const c of contents) {
@@ -51,6 +85,7 @@ export function modelCard(m, { href, compact = false, selected, onToggle } = {})
     h('div.mc-tags',
       m.tags.levels.map((l) => h('span.level', l)),
       m.tags.content.slice(0, compact ? 3 : 5).map((c) => h('span.chip', c)),
+      (m.tags.keywords || []).slice(0, compact ? 3 : 4).map((k) => h('span.chip.kw', k)),
       m.tags.skills.length ? h('span.mc-skills', m.tags.skills.join(' · ')) : null),
     h('div.mc-foot',
       h('span', s.count || ''),
@@ -64,48 +99,26 @@ export function modelCard(m, { href, compact = false, selected, onToggle } = {})
   return h('a.model-card', { href: href || `#/modelos/${m.id}` }, h('div.mc-body', inner));
 }
 
-// ---------- criar um modelo novo: escolher o formato ----------
-export function newModelMenu(anchor) {
-  document.querySelector('.menu.format-menu')?.remove();
-  const menu = h('div.menu.format-menu', { role: 'menu', 'aria-label': 'Formato do novo modelo' },
-    h('div.menu-label', 'Qual formato?'),
-    FORMATS.map((t) =>
-      h('button', {
-        type: 'button',
-        role: 'menuitem',
-        onClick: async () => {
-          menu.remove();
-          const block = { id: uid(), type: t, ...BLOCKS[t].create() };
-          const m = await api.createModel({ title: '', type: t, block, tags: { content: [], levels: [], skills: DEFAULT_SKILLS[t] || [] } });
-          location.hash = `#/modelos/${m.id}?novo=1`;
-        },
-      }, h('span.menu-title', svgIcon(ICONS[t], 16), BLOCKS[t].name), h('small', BLOCKS[t].hint))
-    ));
-  const r = anchor.getBoundingClientRect();
-  menu.style.left = Math.max(8, Math.min(r.left + window.scrollX, window.scrollX + document.documentElement.clientWidth - 296)) + 'px';
-  menu.style.top = r.bottom + window.scrollY + 6 + 'px';
-  document.body.append(menu);
-  menu.querySelector('button').focus();
-  const close = (e) => {
-    if (e.type === 'keydown' ? e.key === 'Escape' : !menu.contains(e.target)) {
-      menu.remove();
-      document.removeEventListener('mousedown', close);
-      document.removeEventListener('keydown', close);
-    }
-  };
-  setTimeout(() => { document.addEventListener('mousedown', close); document.addEventListener('keydown', close); }, 0);
+// ---------- criar um modelo novo: a galeria de formatos, com dois exemplos de cada ----------
+// Nada é criado aqui: o modelo só nasce quando a professora clica em "Salvar modelo".
+export function newModelMenu() {
+  location.hash = '#/modelos/novo';
 }
 
 // ---------- salvar um bloco da aula como modelo (requisitos 8.3) ----------
-export async function saveAsModelDialog(block, { level, onSaved } = {}) {
+export async function saveAsModelDialog(block, { level, onSaved, onlyNew = false } = {}) {
   const models = await api.models().catch(() => []);
-  const origin = block.source?.modelId ? models.find((m) => m.id === block.source.modelId) : null;
-  const base = origin?.tags || { content: [], levels: level ? [level] : [], skills: DEFAULT_SKILLS[block.type] || [] };
-  const tags = { content: [...base.content], levels: [...base.levels], skills: [...base.skills] };
+  // da aula, sempre um modelo novo: o que se escreve na aula nunca muda um modelo que já existe
+  const src = block.source?.modelId ? models.find((m) => m.id === block.source.modelId) : null;
+  const origin = onlyNew ? null : src;
+  const base = src?.tags || { content: [], levels: level ? [level] : [], skills: DEFAULT_SKILLS[block.type] || [] };
+  const tags = { content: [...base.content], levels: [...base.levels], skills: [...base.skills], keywords: [...(base.keywords || [])] };
+  const live = countLiveMarks(block);
+  const stripBox = h('input', { type: 'checkbox', checked: true });
   const label = toText(block.label || '').trim();
   const title = h('input', {
     type: 'text', required: true, maxlength: '200',
-    value: origin?.title || (label ? label.charAt(0) + label.slice(1).toLowerCase() : formatName(block.type)),
+    value: src?.title || (label ? label.charAt(0) + label.slice(1).toLowerCase() : formatName(block.type)),
   });
   const mode = origin
     ? h('fieldset.radio-group',
@@ -125,11 +138,17 @@ export async function saveAsModelDialog(block, { level, onSaved } = {}) {
         tagInput({ value: tags.content, suggestions: contentUniverse(models), normalize: canonicalContent, onChange: (v) => (tags.content = v), label: 'Conteúdo', placeholder: 'Ex.: Past Simple (Enter para adicionar)' })),
       h('div.field', h('span.field-label', 'Nível'), toggleChips({ options: LEVELS, value: tags.levels, onChange: (v) => (tags.levels = v), label: 'Nível' })),
       h('div.field', h('span.field-label', 'Habilidade'), toggleChips({ options: SKILLS, value: tags.skills, onChange: (v) => (tags.skills = v), label: 'Habilidade' })),
-      h('p.muted.small', 'O modelo guarda o bloco como está agora. As aulas que já usam este modelo não mudam.'),
+      keywordsField(tags, null, models),
+      live ? h('label.check-row', stripBox, `Tirar o marca-texto feito na aula (${live} ${live === 1 ? 'destaque' : 'destaques'}). As cores do material ficam.`) : null,
+      h('p.muted.small', 'O modelo guarda o bloco como está agora, e este bloco da aula passa a apontar para ele. Atualizar um modelo muda todas as aulas que usam ele.'),
     ],
     onSubmit: async (form) => {
-      const clean = copyBlock(block, uid);
-      delete clean.source;
+      // o modelo fica com os mesmos ids de itens do bloco: a aula passa a apontar para ele sem perder as respostas
+      const clean = JSON.parse(JSON.stringify(block));
+      delete clean.source; delete clean.ref; delete clean.local; delete clean.pending;
+      // o que foi destacado na aula sai (ou, se ficar, vira cor do material)
+      if (live && stripBox.checked) stripBlockMarks(clean);
+      else toMaterialColors(clean);
       const update = origin && form.querySelector('input[name=mode]:checked')?.value === 'update';
       const saved = update
         ? await api.saveModel(origin.id, { title: title.value, block: clean, tags })

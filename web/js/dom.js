@@ -97,11 +97,16 @@ export const ICONS = {
   reveal: '<path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/>',
   order: '<rect x="3" y="5" width="6" height="5" rx="1.5"/><rect x="11" y="5" width="10" height="5" rx="1.5"/><path d="M4 16h16M16 13l4 3-4 3"/>',
   transform: '<path d="M4 7h12l-3-3M20 17H8l3 3"/>',
+  chevron: '<path d="M6 9l6 6 6-6"/>',
   spot: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8M8.5 8.5l4 4M12.5 8.5l-4 4"/>',
   sort: '<rect x="3" y="4" width="7" height="16" rx="2"/><rect x="14" y="4" width="7" height="16" rx="2"/><path d="M5.5 9h2M16.5 9h2M16.5 13h2"/>',
   scale: '<path d="M3 12h18"/><circle cx="5" cy="12" r="1.6" fill="currentColor"/><circle cx="12" cy="12" r="3"/><circle cx="19" cy="12" r="1.6" fill="currentColor"/>',
   roleplay: '<circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M2.5 19a5.5 5.5 0 0 1 11 0M13 18.5a4 4 0 0 1 8 0"/>',
   timer: '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9.5 2.5h5"/>',
+  gallery: '<rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/>',
+  more: '<circle cx="5" cy="12" r="1.6" fill="currentColor"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/><circle cx="19" cy="12" r="1.6" fill="currentColor"/>',
+  eraser: '<path d="M16 3l5 5-11 11H5l-2-2 13-14Z"/><path d="M9 21h12"/>',
+  upload: '<path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v4h16v-4"/>',
 };
 
 export const uid = (p = 'b') => p + Math.random().toString(16).slice(2, 12);

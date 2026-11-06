@@ -6,7 +6,9 @@ import { toast } from './ui.js';
 const NAV = [
   { key: 'home', href: '#/', label: 'Início', icon: 'home' },
   { key: 'students', href: '#/alunos', label: 'Alunos', icon: 'users' },
+  { key: 'course', href: '#/curso', label: 'Curso', icon: 'book' },
   { key: 'models', href: '#/modelos', label: 'Modelos', icon: 'layers' },
+  { key: 'images', href: '#/imagens', label: 'Imagens', icon: 'image' },
 ];
 
 export function appShell(active, ...content) {
@@ -30,7 +32,7 @@ export function appShell(active, ...content) {
           },
         }, 'Fazer cópia de segurança'),
         h('a.link-btn', { href: '/api/export?download=1', title: 'Todos os dados num arquivo só (as imagens ficam em data/uploads)' }, 'Baixar todos os dados')),
-      h('span', 'Versão local · 0.6'))
+      h('span', 'Versão local · 1.2'))
   );
   return h('div.app', nav, h('main.app-main', { id: 'main' }, content));
 }

@@ -34,6 +34,7 @@ export function mountBlock(block, opts) {
       rerender: (x) => paint(x),
       toast,
       slashKey: opts.slashKey ? (e) => opts.slashKey(e, block) : undefined,
+      pickImage: opts.pickImage, // escolher do acervo de imagens (na aula e no editor de modelos)
     };
     const out = def.render(ctx);
     const tools = opts.tools?.length
@@ -62,10 +63,21 @@ export function mountBlock(block, opts) {
 }
 
 /** Copia um bloco com ids novos (para entrar numa aula ou virar modelo). */
+/**
+ * Um bloco da biblioteca dentro da aula (v0.8): o conteúdo do modelo + ref. Os itens ficam com os ids do modelo,
+ * porque a aula guarda só a referência.
+ */
+export function refBlock(model, uidFn, extra = {}) {
+  const copy = JSON.parse(JSON.stringify(model.block));
+  return { ...copy, ...extra, id: uidFn(), type: model.type, ref: model.id, source: { modelId: model.id, title: model.title } };
+}
+
 export function copyBlock(block, uidFn) {
+  // duplicar um bloco da biblioteca = mais uma referência ao mesmo modelo
+  if (block.ref) { const { pending, ...rest } = JSON.parse(JSON.stringify(block)); return { ...rest, id: uidFn() }; }
   const copy = JSON.parse(JSON.stringify(block));
   copy.id = uidFn();
   delete copy.pending; // a cópia não é a retomada da pendência
-  (copy.items || []).forEach((it) => (it.id = uidFn('i')));
+  for (const key of ['items', 'pairs', 'images']) (copy[key] || []).forEach((it) => it && (it.id = uidFn('i')));
   return copy;
 }

@@ -5,6 +5,15 @@ import { toText, sanitize } from '../sanitize.js';
 
 const lines = (s) => s.split('\n').map((x) => x.trim()).filter(Boolean);
 
+/**
+ * Palavra-desafio da própria pergunta: "What is your dream job? [try: ambitious]".
+ * Devolve { q: pergunta sem a marca, word: 'ambitious' | '' }.
+ */
+export function splitTry(q) {
+  const m = String(q || '').match(/^(.*?)\s*\[try:\s*([^\]]+)\]\s*$/i);
+  return m ? { q: m[1], word: m[2].trim() } : { q: String(q || ''), word: '' };
+}
+
 export const deck = {
   name: 'Baralho de perguntas',
   hint: 'Uma carta por vez: Próxima, Anterior, Aleatória',
@@ -42,14 +51,16 @@ export const deck = {
           )
         : null;
 
-    const word = b.words.length ? b.words[(local.cat * 5 + local.q * 7) % b.words.length] : '';
+    // a palavra da própria pergunta ([try: …]) vale mais que a lista geral do baralho
+    const cur = splitTry(cat.qs[local.q]);
+    const word = cur.word || (b.words.length ? b.words[(local.cat * 5 + local.q * 7) % b.words.length] : '');
     const card = h(
       'div.deck-card' + (ctx.pop ? '.pop' : ''),
       h('div.deck-meta', h('span', cat.name), h('span', `${local.q + 1} / ${cat.qs.length}`)),
       editable(h('div.deck-q'), {
-        value: cat.qs[local.q],
+        value: cur.q,
         placeholder: 'Escreva a pergunta…',
-        onChange: (v) => { cat.qs[local.q] = v; ctx.changed(); },
+        onChange: (v) => { cat.qs[local.q] = cur.word ? `${v} [try: ${cur.word}]` : v; ctx.changed(); },
       }),
       h(
         'div.deck-foot',
@@ -76,7 +87,7 @@ export const deck = {
       'div.print-only',
       b.cats.map((c) => [
         b.cats.length > 1 ? h('div.print-group', c.name) : null,
-        h('ol.print-list', c.qs.filter((q) => toText(q).trim()).map((q) => { const li = h('li'); li.innerHTML = sanitize(q); return li; })),
+        h('ol.print-list', c.qs.map((q) => splitTry(q).q).filter((q) => toText(q).trim()).map((q) => { const li = h('li'); li.innerHTML = sanitize(q); return li; })),
       ])
     );
 
@@ -125,14 +136,14 @@ function deckPanel(ctx) {
   return h(
     'div.panel',
     h('h4', 'CARTAS'),
-    h('div.help', 'Uma pergunta por linha. Cada tema vira uma aba.'),
+    h('div.help', 'Uma pergunta por linha. Cada tema vira uma aba. Para a carta pedir uma palavra que combine com ela, termine a linha com [try: palavra] (ex.: What is your dream job? [try: ambitious]).'),
     h('div.cols', cats),
     h('div', h('button.btn.small', {
       type: 'button',
       onClick: () => { b.cats.push({ name: 'Novo tema', qs: ['New question?'] }); ctx.changed(); ctx.rerender(); },
     }, '+ tema')),
     h('h4', 'PALAVRAS-DESAFIO (OPCIONAL)'),
-    h('div.help', 'Uma por linha. Aparece "Try to use: …" em cada carta. Deixe vazio para não mostrar.'),
+    h('div.help', 'Uma por linha. Aparece "Try to use: …" nas cartas que não têm [try: …]. Deixe vazio para não mostrar.'),
     h('textarea', {
       'aria-label': 'Palavras-desafio',
       style: { minHeight: '80px' },

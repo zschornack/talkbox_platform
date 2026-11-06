@@ -21,12 +21,10 @@ export function readBody(req, limit) {
     let size = 0;
     req.on('data', (c) => {
       size += c.length;
-      if (size > limit) {
-        reject(new HttpError(413, 'Arquivo grande demais'));
-        req.destroy();
-      } else chunks.push(c);
+      // passou do limite: para de guardar, mas termina de ler (para a resposta 413 chegar ao navegador)
+      if (size <= limit) chunks.push(c);
     });
-    req.on('end', () => resolve(Buffer.concat(chunks)));
+    req.on('end', () => (size > limit ? reject(new HttpError(413, 'Arquivo grande demais')) : resolve(Buffer.concat(chunks))));
     req.on('error', reject);
   });
 }
@@ -61,7 +59,12 @@ export function router() {
       if (!m) continue;
       pathMatched = true;
       if (r.method !== req.method) continue;
-      const params = Object.fromEntries(r.keys.map((k, i) => [k, decodeURIComponent(m[i + 1])]));
+      let params;
+      try {
+        params = Object.fromEntries(r.keys.map((k, i) => [k, decodeURIComponent(m[i + 1])]));
+      } catch {
+        throw new HttpError(400, 'Endereço inválido');
+      }
       const out = await r.handler(req, params, url);
       // [status, corpo] ou [status, corpo, cabeçalhos] (ex.: arquivo para baixar)
       const [status, body, headers] = Array.isArray(out) && typeof out[0] === 'number' ? out : [200, out];

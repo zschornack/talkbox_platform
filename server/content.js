@@ -25,9 +25,21 @@
 // de priorLessons + 1. Alunos inativos ou que não existem são pulados.
 // Copiar de outro aluno: { "name": "Letícia", "copyFrom": "William" } cria o aluno com o nível, o objetivo e o mapa
 // de conteúdos do outro (as aulas continuam só no original).
+// Pacotes de imagens: "imagePacks": [ { "name": "Animals", "description": "...", "keywords": ["animals"], "images": [
+//   { "file": "images/animals/dog.webp" (ou "src": "https://…"), "title": "Dog", "keywords": ["dog", "pet"] } ] } ]
+// cria o pacote (ou usa o que já tem esse nome) e põe as imagens nele, como modelos do tipo imagem.
+// Limpar uma aula ainda não dada: "clean": [ { "student", "lesson" (título ou começo), "original": true,
+// "keep": ["WARM-UP"] (rótulos de blocos que ficam como estão), "onlyIfUntouched": true } ] volta os blocos da
+// biblioteca ao original, tira o marca-texto e esvazia as anotações. Com onlyIfUntouched, só mexe se a aula
+// ainda não foi aberta e editada desde que foi criada.
+// Aula do curso: "course": { "number": 1 } no lugar de "student" (a aula fica sem aluno, no roteiro do curso).
+// Com "course": { "number": 1, "replace": true }, a aula do curso que já existe com esse número é arquivada
+// (sai da lista, mas fica guardada) e a nova toma o lugar dela.
 // Imagens: { "type": "image", "file": "images/x.webp", "caption": "...", "layout": "full" | "half" }, com o arquivo
 // em WebP dentro de content/. Na importação ele é copiado para data/uploads/ (uma vez só) e vira "src".
+// Galeria: { "type": "gallery", "images": [ { "file": "images/x.webp", "caption": "dog" } ] } (o mesmo, imagem por imagem).
 // Modelos sem etiqueta de conteúdo recebem as que forem citadas no título ou no texto (pelos sinônimos).
+import { stripEmojiDeep } from './emoji.js';
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -54,11 +66,21 @@ function withIds(block) {
  * então a mesma imagem nunca é guardada duas vezes.
  */
 function withMedia(block, dir) {
-  if (block.type !== 'image' || !block.file) return block;
-  const src = path.resolve(dir, block.file);
-  if (!src.startsWith(path.resolve(dir) + path.sep)) throw new Error(`Imagem fora da pasta content/: ${block.file}`);
-  if (!fs.existsSync(src)) throw new Error(`Imagem não encontrada: ${block.file}`);
-  if (path.extname(src).toLowerCase() !== '.webp') throw new Error(`A imagem precisa estar em WebP: ${block.file}`);
+  // galeria: cada imagem pode trazer o próprio "file"
+  if (block.type === 'gallery' && Array.isArray(block.images)) {
+    return { ...block, images: block.images.map(({ file, ...img }) => (file ? { ...img, src: mediaSrc(file, dir) } : img)) };
+  }
+  if (block.type !== 'image') return block;
+  const { file, ...rest } = block;
+  return file ? { ...rest, src: mediaSrc(file, dir) } : rest;
+}
+
+/** Copia o WebP do pacote para data/uploads/ (uma vez só) e devolve o endereço dele. */
+function mediaSrc(file, dir) {
+  const src = path.resolve(dir, file);
+  if (!src.startsWith(path.resolve(dir) + path.sep)) throw new Error(`Imagem fora da pasta content/: ${file}`);
+  if (!fs.existsSync(src)) throw new Error(`Imagem não encontrada: ${file}`);
+  if (path.extname(src).toLowerCase() !== '.webp') throw new Error(`A imagem precisa estar em WebP: ${file}`);
   const buf = fs.readFileSync(src);
   const name = `${crypto.createHash('sha256').update(buf).digest('hex').slice(0, 32)}.webp`;
   const dst = path.join(db.UPLOADS_DIR, name);
@@ -66,12 +88,12 @@ function withMedia(block, dir) {
     fs.mkdirSync(db.UPLOADS_DIR, { recursive: true });
     fs.writeFileSync(dst, buf);
   }
-  const { file, ...rest } = block;
-  return { ...rest, src: `/uploads/${name}` };
+  return `/uploads/${name}`;
 }
 
 export function importPack(pack, file = '', dir = CONTENT_DIR) {
   if (!pack?.id) throw new Error(`Pacote sem "id" (${file})`);
+  pack = stripEmojiDeep(pack); // emojis são proibidos no material
   if (db.db.prepare('SELECT 1 FROM imports WHERE id = ?').get(pack.id)) return null;
 
   return db.transaction(() => {
@@ -127,18 +149,19 @@ export function importPack(pack, file = '', dir = CONTENT_DIR) {
     }
 
     let lesson = null;
+    if (pack.lesson && pack.course?.number && pack.course.replace) {
+      const old = db.db.prepare('SELECT id FROM lessons WHERE course_number = ? AND archived_at IS NULL').all(pack.course.number);
+      for (const o of old) db.archiveLesson(o.id);
+    }
     if (pack.lesson) {
       const keyOfBlock = [];
       const blocks = (pack.lesson.blocks || []).map((entry) => {
         if (entry.model) {
           const m = models[entry.model];
           if (!m) throw new Error(`Modelo "${entry.model}" não existe no pacote ${pack.id}`);
-          const copy = JSON.parse(JSON.stringify(m.block));
-          copy.id = bid();
-          for (const key of ['items', 'pairs']) (copy[key] || []).forEach((it) => (it.id = bid()));
-          copy.source = { modelId: m.id, title: m.title };
+          // a aula guarda só a referência ao modelo (v0.8)
           keyOfBlock.push(entry.model);
-          return copy;
+          return { id: bid(), ref: m.id };
         }
         keyOfBlock.push(entry.key || null);
         return withMedia(withIds(entry), dir);
@@ -148,10 +171,12 @@ export function importPack(pack, file = '', dir = CONTENT_DIR) {
         studentId: student?.id || null,
         date: pack.lesson.date,
         number: pack.lesson.number,
+        courseNumber: pack.course?.number ?? null,
         doc: {
           v: 1,
           title: pack.lesson.title,
           subtitle: pack.lesson.subtitle || '',
+          plan: pack.lesson.plan || '',
           level: pack.lesson.level || student?.level || '',
           tags: pack.lesson.tags || [],
           blocks,
@@ -169,6 +194,39 @@ export function importPack(pack, file = '', dir = CONTENT_DIR) {
         db.finishLesson(lesson.id, { lastBlockId, assessments: fin.assessments || {}, message: fin.message || '' });
       }
     }
+    // Pacotes de imagens
+    for (const ip of pack.imagePacks || []) {
+      if (!String(ip.name || '').trim()) throw new Error(`"imagePacks" sem nome (${pack.id})`);
+      const found = db.listPacks().find((x) => db.nameKey(x.name) === db.nameKey(ip.name));
+      const target = found || db.createPack({ name: ip.name, description: ip.description || '', keywords: ip.keywords || [] });
+      const ids = [];
+      for (const img of ip.images || []) {
+        const block = withMedia({ type: 'image', file: img.file, src: img.src || '', caption: img.caption || '', layout: img.layout || 'full' }, dir);
+        if (!block.src) throw new Error(`Imagem sem "file" nem "src" no pacote "${ip.name}" (${pack.id})`);
+        const m = db.createModel({
+          title: String(img.title || '').trim() || 'Imagem',
+          type: 'image',
+          block: { id: bid(), ...block },
+          tags: { content: img.content || ip.content || [], levels: img.levels || ip.levels || [], skills: img.skills || ['Fala'], keywords: [...(ip.keywords || []), ...(img.keywords || [])] },
+          status: pack.review ? 'review' : 'published',
+          importId: pack.id,
+        });
+        ids.push(m.id);
+      }
+      db.addToPack(target.id, ids);
+    }
+
+    // Limpar aulas ainda não dadas (ex.: uma cópia que veio com marcações da aula de outro aluno)
+    for (const c of pack.clean || []) {
+      const who = byName(c.student);
+      if (!who) continue;
+      const want = String(c.lesson || '').trim().toLowerCase();
+      const target = db.listLessons({ studentId: who.id }).find((l) => l.title.toLowerCase() === want || (want && l.title.toLowerCase().startsWith(want)));
+      if (!target || target.status !== 'preparing') continue;
+      if (c.onlyIfUntouched && target.updatedAt !== target.createdAt) continue;
+      db.cleanLesson(target.id, { original: c.original !== false, keepLabels: c.keep || [], keepMarks: c.marks === false, keepNotes: c.notes === false });
+    }
+
     // Acrescentar a uma aula que já existe: "append": { "student": "Thiago Santos", "lesson": "Present Perfect (part 1)…", "blocks": [ { "model": "x" } ] }
     // Os blocos entram antes do bloco de anotações (ou no fim). Procura a aula pelo título (ou pelo começo dele), a mais recente.
     if (pack.append) {
@@ -214,7 +272,7 @@ export function importContentDir(dir = CONTENT_DIR) {
       const out = importPack(pack, name, dir);
       if (out?.created) console.log(`  Alunos cadastrados: ${out.created} (${name})`);
       if (out && (out.lesson || out.models)) {
-        const who = out.student ? ` para ${out.student.name}` : '';
+        const who = out.student ? ` para ${out.student.name}` : pack.course ? ` para o curso (aula ${pack.course.number})` : '';
         console.log(`  Conteúdo novo importado${who}: ${out.lesson ? `${pack.append ? 'blocos novos na aula' : 'aula'} "${out.lesson.title}"` : 'sem aula'} + ${out.models} modelos (${name})`);
       }
     } catch (err) {

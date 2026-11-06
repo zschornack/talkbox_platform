@@ -2,6 +2,7 @@
 // um verbo só, todas as pessoas (uma por linha, He / She / It juntos) e cores diferentes para regras diferentes.
 import { h } from '../dom.js';
 import { editable } from '../editable.js';
+import { columnTemplate } from './kit.js';
 
 // Verbos irregulares mais comuns: base → [passado, particípio]
 const IRREGULAR = {
@@ -110,8 +111,8 @@ export const tense = {
     const verb = String(b.verb || 'work').trim().toLowerCase();
     const hasAux = PEOPLE.some((_, p) => t.row(verb, p)[0]);
     const cols = hasAux ? 4 : 3;
-    const grid = `repeat(${cols}, minmax(110px, 1fr))`;
     const head = ['PERSON', ...(hasAux ? ['AUXILIARY'] : []), 'VERB', ''];
+    const grid = columnTemplate([head, ...PEOPLE.map((person, p) => { const [aux, , form] = t.row(verb, p); return [person, ...(hasAux ? [aux || ''] : []), form, b.complement || '']; })], cols);
     const cell = (html) => { const el = h('div.tcell'); el.innerHTML = html; return el; };
     const rows = [
       h('div.trow.head', { style: { gridTemplateColumns: grid } }, head.map((x) => h('div.tcell', x))),

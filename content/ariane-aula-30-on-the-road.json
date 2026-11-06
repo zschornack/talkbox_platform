@@ -1,0 +1,1220 @@
+{
+ "id": "ariane-aula-30-past-continuous-neg-question-2026-11-06",
+ "student": {
+  "name": "Ariane"
+ },
+ "models": [
+  {
+   "key": "review",
+   "title": "Review · last classes words through questions",
+   "tags": {
+    "content": [
+     "Past Simple",
+     "Past Continuous",
+     "Conversation",
+     "Quantifiers"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "REVIEW · LAST CLASSES",
+    "html": "Answer in full sentences.",
+    "words": [],
+    "cats": [
+     {
+      "name": "The lights went out",
+      "qs": [
+       "What were you doing the last time the lights went out? [try: I was… when]",
+       "Do you keep candles at home? Where?",
+       "Do you watch any soap operas? Which one?",
+       "Do you know your neighbors? Tell me about one of them."
+      ]
+     },
+     {
+      "name": "Getting around",
+      "qs": [
+       "How long is your commute in the rush hour?",
+       "How much is the bus fare in your city?",
+       "When was the last time you missed a bus or a flight? What happened?",
+       "Is there enough public transport where you live?"
+      ]
+     },
+     {
+      "name": "Quantities",
+      "qs": [
+       "What do you have too much of at home? [try: too much / too many]",
+       "Do you drink enough water every day?",
+       "What did you buy a few of last week? [try: a few]",
+       "Was there a lot of traffic this morning? [try: there was]"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "context",
+   "title": "Past continuous · from the affirmative (I / she, cook)",
+   "tags": {
+    "content": [
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "explanation",
+    "label": "LAST CLASS · THE AFFIRMATIVE",
+    "html": "I <span style=\"background-color: #CBE4D8\"><b>was</b></span> cooking at 8 p.m. · She <span style=\"background-color: #CBE4D8\"><b>was</b></span> cooking at 8 p.m.<br>Today: the <b>negative</b> and the <b>question</b>."
+   }
+  },
+  {
+   "key": "neg-table",
+   "title": "Past continuous · negative (cook)",
+   "tags": {
+    "content": [
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "PAST CONTINUOUS · NEGATIVE",
+    "header": true,
+    "rows": [
+     [
+      "PERSON",
+      "WASN'T / WEREN'T",
+      "VERB + -ING"
+     ],
+     [
+      "I",
+      "<span style=\"background-color: #CBE4D8\"><b>wasn't</b></span>",
+      "cooking at 8 p.m."
+     ],
+     [
+      "You",
+      "<span style=\"background-color: #FFC9A3\"><b>weren't</b></span>",
+      "cooking at 8 p.m."
+     ],
+     [
+      "He / She / It",
+      "<span style=\"background-color: #CBE4D8\"><b>wasn't</b></span>",
+      "cooking at 8 p.m."
+     ],
+     [
+      "We",
+      "<span style=\"background-color: #FFC9A3\"><b>weren't</b></span>",
+      "cooking at 8 p.m."
+     ],
+     [
+      "They",
+      "<span style=\"background-color: #FFC9A3\"><b>weren't</b></span>",
+      "cooking at 8 p.m."
+     ],
+     [
+      "Colors",
+      "<span style=\"background-color: #CBE4D8\"><b>was / wasn&#39;t</b></span> = I, he, she, it · <span style=\"background-color: #FFC9A3\"><b>were / weren&#39;t</b></span> = you, we, they",
+      "wasn't = was not · weren't = were not"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "neg-contrast",
+   "title": "Past continuous · affirmative × negative (each person)",
+   "tags": {
+    "content": [
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "AFFIRMATIVE × NEGATIVE",
+    "header": true,
+    "rows": [
+     [
+      "AFFIRMATIVE",
+      "NEGATIVE"
+     ],
+     [
+      "I <span style=\"background-color: #CBE4D8\"><b>was</b></span> cooking.",
+      "I <span style=\"background-color: #CBE4D8\"><b>wasn&#39;t</b></span> cooking."
+     ],
+     [
+      "You <span style=\"background-color: #FFC9A3\"><b>were</b></span> cooking.",
+      "You <span style=\"background-color: #FFC9A3\"><b>weren&#39;t</b></span> cooking."
+     ],
+     [
+      "She <span style=\"background-color: #CBE4D8\"><b>was</b></span> cooking.",
+      "She <span style=\"background-color: #CBE4D8\"><b>wasn&#39;t</b></span> cooking."
+     ],
+     [
+      "We <span style=\"background-color: #FFC9A3\"><b>were</b></span> cooking.",
+      "We <span style=\"background-color: #FFC9A3\"><b>weren&#39;t</b></span> cooking."
+     ],
+     [
+      "They <span style=\"background-color: #FFC9A3\"><b>were</b></span> cooking.",
+      "They <span style=\"background-color: #FFC9A3\"><b>weren&#39;t</b></span> cooking."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "neg-5",
+   "title": "Past continuous · 5 basic sentences to the negative",
+   "tags": {
+    "content": [
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "5 BASIC SENTENCES · MAKE IT NEGATIVE",
+    "html": "Say it in the negative. Then reveal.",
+    "items": [
+     {
+      "id": "a30_1",
+      "q": "I was sleeping.",
+      "a": "I wasn't sleeping."
+     },
+     {
+      "id": "a30_2",
+      "q": "She was working.",
+      "a": "She wasn't working."
+     },
+     {
+      "id": "a30_3",
+      "q": "We were watching TV.",
+      "a": "We weren't watching TV."
+     },
+     {
+      "id": "a30_4",
+      "q": "They were eating.",
+      "a": "They weren't eating."
+     },
+     {
+      "id": "a30_5",
+      "q": "He was driving.",
+      "a": "He wasn't driving."
+     }
+    ]
+   }
+  },
+  {
+   "key": "q-table",
+   "title": "Past continuous · question (cook)",
+   "tags": {
+    "content": [
+     "Past Continuous",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "PAST CONTINUOUS · QUESTION",
+    "header": true,
+    "rows": [
+     [
+      "WAS / WERE",
+      "PERSON",
+      "VERB + -ING"
+     ],
+     [
+      "<span style=\"background-color: #CBE4D8\"><b>Was</b></span>",
+      "I",
+      "cooking at 8 p.m.?"
+     ],
+     [
+      "<span style=\"background-color: #FFC9A3\"><b>Were</b></span>",
+      "you",
+      "cooking at 8 p.m.?"
+     ],
+     [
+      "<span style=\"background-color: #CBE4D8\"><b>Was</b></span>",
+      "he / she / it",
+      "cooking at 8 p.m.?"
+     ],
+     [
+      "<span style=\"background-color: #FFC9A3\"><b>Were</b></span>",
+      "we",
+      "cooking at 8 p.m.?"
+     ],
+     [
+      "<span style=\"background-color: #FFC9A3\"><b>Were</b></span>",
+      "they",
+      "cooking at 8 p.m.?"
+     ],
+     [
+      "Colors",
+      "<span style=\"background-color: #CBE4D8\"><b>was / wasn&#39;t</b></span> = I, he, she, it · <span style=\"background-color: #FFC9A3\"><b>were / weren&#39;t</b></span> = you, we, they",
+      "Short answers: Yes, I was. · No, I wasn't. · Yes, they were. · No, they weren't."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "q-contrast",
+   "title": "Past continuous · affirmative × question (each person)",
+   "tags": {
+    "content": [
+     "Past Continuous",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "AFFIRMATIVE × QUESTION",
+    "header": true,
+    "rows": [
+     [
+      "AFFIRMATIVE",
+      "QUESTION"
+     ],
+     [
+      "I <span style=\"background-color: #CBE4D8\"><b>was</b></span> cooking.",
+      "<span style=\"background-color: #CBE4D8\"><b>Was</b></span> I cooking?"
+     ],
+     [
+      "You <span style=\"background-color: #FFC9A3\"><b>were</b></span> cooking.",
+      "<span style=\"background-color: #FFC9A3\"><b>Were</b></span> you cooking?"
+     ],
+     [
+      "She <span style=\"background-color: #CBE4D8\"><b>was</b></span> cooking.",
+      "<span style=\"background-color: #CBE4D8\"><b>Was</b></span> she cooking?"
+     ],
+     [
+      "We <span style=\"background-color: #FFC9A3\"><b>were</b></span> cooking.",
+      "<span style=\"background-color: #FFC9A3\"><b>Were</b></span> we cooking?"
+     ],
+     [
+      "They <span style=\"background-color: #FFC9A3\"><b>were</b></span> cooking.",
+      "<span style=\"background-color: #FFC9A3\"><b>Were</b></span> they cooking?"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "q-5",
+   "title": "Past continuous · 5 basic sentences to questions",
+   "tags": {
+    "content": [
+     "Past Continuous",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "5 BASIC SENTENCES · MAKE A QUESTION",
+    "html": "Make the question. Then reveal.",
+    "items": [
+     {
+      "id": "a30_6",
+      "q": "You were sleeping.",
+      "a": "Were you sleeping?"
+     },
+     {
+      "id": "a30_7",
+      "q": "She was working.",
+      "a": "Was she working?"
+     },
+     {
+      "id": "a30_8",
+      "q": "They were playing.",
+      "a": "Were they playing?"
+     },
+     {
+      "id": "a30_9",
+      "q": "He was driving.",
+      "a": "Was he driving?"
+     },
+     {
+      "id": "a30_10",
+      "q": "You were studying.",
+      "a": "Were you studying?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "ask",
+   "title": "Past continuous questions · ask the teacher",
+   "tags": {
+    "content": [
+     "Past Continuous",
+     "Question formation",
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "ASK THE TEACHER",
+    "html": "Make the question and ask. The teacher answers. Then reveal.",
+    "items": [
+     {
+      "id": "a30_11",
+      "q": "you / sleep / at 6 a.m. today",
+      "a": "Were you sleeping at 6 a.m. today?"
+     },
+     {
+      "id": "a30_12",
+      "q": "you / work / at 3 p.m. yesterday",
+      "a": "Were you working at 3 p.m. yesterday?"
+     },
+     {
+      "id": "a30_13",
+      "q": "what / you / do / at 9 p.m. last night",
+      "a": "What were you doing at 9 p.m. last night?"
+     },
+     {
+      "id": "a30_14",
+      "q": "it / rain / when you woke up",
+      "a": "Was it raining when you woke up?"
+     },
+     {
+      "id": "a30_15",
+      "q": "where / you / live / in 2020",
+      "a": "Where were you living in 2020?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "pv-table",
+   "title": "Phrasal verbs · road trip (8)",
+   "tags": {
+    "content": [
+     "Phrasal verbs",
+     "Travel"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "NEW · 8 PHRASAL VERBS FOR A TRIP",
+    "header": true,
+    "rows": [
+     [
+      "PHRASAL VERB",
+      "PORTUGUÊS",
+      "EXAMPLE"
+     ],
+     [
+      "set off",
+      "sair, partir (de viagem)",
+      "We set off at 6 a.m."
+     ],
+     [
+      "break down",
+      "quebrar, dar pane (carro)",
+      "The car broke down on the highway."
+     ],
+     [
+      "run out of",
+      "ficar sem",
+      "We ran out of gas."
+     ],
+     [
+      "look for",
+      "procurar",
+      "I was looking for my keys."
+     ],
+     [
+      "pick up",
+      "buscar (alguém)",
+      "I picked up my sister at the airport."
+     ],
+     [
+      "get off",
+      "descer (de ônibus, trem, avião)",
+      "We got off the bus in the center."
+     ],
+     [
+      "turn back",
+      "dar meia-volta, voltar",
+      "It was raining a lot, so we turned back."
+     ],
+     [
+      "fall over",
+      "cair (tropeçar)",
+      "He fell over while he was running."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "pv-match",
+   "title": "Phrasal verbs · match the meaning",
+   "tags": {
+    "content": [
+     "Phrasal verbs"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "match",
+    "label": "PHRASAL VERBS · MATCH",
+    "html": "Match. Then make a sentence with two of them.",
+    "pairs": [
+     {
+      "id": "a30_16",
+      "left": "set off",
+      "right": "start a trip"
+     },
+     {
+      "id": "a30_17",
+      "left": "break down",
+      "right": "stop working (a car, a machine)"
+     },
+     {
+      "id": "a30_18",
+      "left": "run out of",
+      "right": "have no more of something"
+     },
+     {
+      "id": "a30_19",
+      "left": "look for",
+      "right": "try to find"
+     },
+     {
+      "id": "a30_20",
+      "left": "pick up",
+      "right": "go and get someone in your car"
+     },
+     {
+      "id": "a30_21",
+      "left": "get off",
+      "right": "leave a bus, a train or a plane"
+     },
+     {
+      "id": "a30_22",
+      "left": "turn back",
+      "right": "go back the way you came"
+     },
+     {
+      "id": "a30_23",
+      "left": "fall over",
+      "right": "fall to the ground"
+     }
+    ]
+   }
+  },
+  {
+   "key": "vocab",
+   "title": "Road trip words · what is it?",
+   "tags": {
+    "content": [
+     "Travel",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "ROAD TRIP WORDS · WHAT IS IT?",
+    "html": "Guess the word. Then reveal.",
+    "items": [
+     {
+      "id": "a30_24",
+      "q": "A lot of cars, and nobody moves.",
+      "a": "a traffic jam"
+     },
+     {
+      "id": "a30_25",
+      "q": "The place where you buy gas.",
+      "a": "a gas station"
+     },
+     {
+      "id": "a30_26",
+      "q": "A tire with no air in it.",
+      "a": "a flat tire"
+     },
+     {
+      "id": "a30_27",
+      "q": "The money you pay to use some roads.",
+      "a": "a toll"
+     },
+     {
+      "id": "a30_28",
+      "q": "The bags and suitcases you take on a trip.",
+      "a": "luggage"
+     },
+     {
+      "id": "a30_29",
+      "q": "It tells you the way on your phone.",
+      "a": "GPS"
+     },
+     {
+      "id": "a30_30",
+      "q": "You put it on in the car for safety.",
+      "a": "a seatbelt"
+     }
+    ]
+   }
+  },
+  {
+   "key": "reading",
+   "title": "Reading · the worst road trip ever",
+   "tags": {
+    "content": [
+     "Reading",
+     "Past Continuous",
+     "Past Simple",
+     "Phrasal verbs"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "READING · THE WORST ROAD TRIP EVER",
+    "html": "Last summer, my friends Bruno and Carla <b>set off</b> for the beach at 6 a.m. They <b>weren't</b> worried: the car was new and the weather was perfect. At 8 o'clock, they <b>were driving</b> on the highway and singing when the car <b>broke down</b>. Bruno opened the hood, but he didn't know what to do.<br><br>While they <b>were waiting</b> for help, it started to rain. Carla <b>was looking for</b> the umbrella in the luggage when she <b>fell over</b> on the wet road. She wasn't hurt, but she was very angry!<br><br>A truck driver stopped and helped them. The problem? They <b>ran out of</b> gas! The car was fine, but Bruno wasn't looking at the fuel gauge. Two hours later, in a traffic jam, Carla said, \"Let's <b>turn back</b>.\" But they didn't. They arrived at 4 p.m., and the sun was shining.<br><br><i>A made-up story.</i>"
+   }
+  },
+  {
+   "key": "read-tf",
+   "title": "Reading · road trip · true or false",
+   "tags": {
+    "content": [
+     "Reading",
+     "Past Continuous"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "READING · TRUE OR FALSE?",
+    "html": "Then correct the false ones out loud.",
+    "instant": false,
+    "items": [
+     {
+      "id": "a30_31",
+      "before": "Bruno and Carla were worried before the trip.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "a30_32",
+      "before": "They were singing when the car broke down.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "a30_33",
+      "before": "It was raining while they were waiting for help.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "a30_34",
+      "before": "Carla was looking for her phone when she fell over.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "a30_35",
+      "before": "The car was broken.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "a30_36",
+      "before": "They turned back.",
+      "options": [
+       "True",
+       "False"
+      ],
+      "answer": 1,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "read-q",
+   "title": "Reading · road trip · answer with short answers",
+   "tags": {
+    "content": [
+     "Reading",
+     "Past Continuous",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "READING · SHORT ANSWERS",
+    "html": "Answer with a short answer and one more sentence. Then reveal.",
+    "items": [
+     {
+      "id": "a30_37",
+      "q": "Were they driving when the car broke down?",
+      "a": "Yes, they were. They were driving on the highway."
+     },
+     {
+      "id": "a30_38",
+      "q": "Was it raining when they set off?",
+      "a": "No, it wasn't. The weather was perfect."
+     },
+     {
+      "id": "a30_39",
+      "q": "Was Carla looking for the umbrella when she fell over?",
+      "a": "Yes, she was. It was in the luggage."
+     },
+     {
+      "id": "a30_40",
+      "q": "Was Bruno looking at the fuel gauge?",
+      "a": "No, he wasn't. That's why they ran out of gas."
+     },
+     {
+      "id": "a30_41",
+      "q": "What was the weather like when they arrived?",
+      "a": "The sun was shining."
+     }
+    ]
+   }
+  },
+  {
+   "key": "fill",
+   "title": "Phrasal verbs · complete the story (past simple and past continuous)",
+   "tags": {
+    "content": [
+     "Phrasal verbs",
+     "Past Continuous",
+     "Past Simple"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "MY TRIP TO THE MOUNTAINS · COMPLETE",
+    "html": "Complete with the phrasal verb in the past simple or the past continuous.",
+    "items": [
+     {
+      "id": "a30_42",
+      "before": "We",
+      "hint": "set off",
+      "after": "at 5 a.m. on Saturday.",
+      "answers": [
+       "set off"
+      ]
+     },
+     {
+      "id": "a30_43",
+      "before": "At 7 o'clock, we were driving up the mountain when the car",
+      "hint": "break down",
+      "after": ".",
+      "answers": [
+       "broke down"
+      ]
+     },
+     {
+      "id": "a30_44",
+      "before": "My husband called a mechanic while I",
+      "hint": "look for",
+      "after": "a café.",
+      "answers": [
+       "was looking for"
+      ]
+     },
+     {
+      "id": "a30_45",
+      "before": "Then my son ran to the café and",
+      "hint": "fall over",
+      "after": ", but he was OK.",
+      "answers": [
+       "fell over"
+      ]
+     },
+     {
+      "id": "a30_46",
+      "before": "The mechanic said, \"You",
+      "hint": "run out of",
+      "after": "oil!\"",
+      "answers": [
+       "ran out of"
+      ]
+     },
+     {
+      "id": "a30_47",
+      "before": "It was late, so we",
+      "hint": "turn back",
+      "after": "and went home.",
+      "answers": [
+       "turned back"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "spot",
+   "title": "Spot the mistake · past continuous negative and question",
+   "tags": {
+    "content": [
+     "Past Continuous",
+     "Question formation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "spot",
+    "label": "SPOT THE MISTAKE",
+    "html": "Find the mistake. Say the sentence correctly.",
+    "items": [
+     {
+      "id": "a30_48",
+      "words": [
+       "I",
+       "wasn't",
+       "sleep",
+       "at",
+       "10",
+       "p.m."
+      ],
+      "wrong": 2,
+      "fix": "sleeping"
+     },
+     {
+      "id": "a30_49",
+      "words": [
+       "Was",
+       "you",
+       "working",
+       "yesterday?"
+      ],
+      "wrong": 1,
+      "fix": "Were"
+     },
+     {
+      "id": "a30_50",
+      "words": [
+       "They",
+       "wasn't",
+       "listening",
+       "to",
+       "me."
+      ],
+      "wrong": 1,
+      "fix": "weren't"
+     },
+     {
+      "id": "a30_51",
+      "words": [
+       "Were",
+       "she",
+       "driving",
+       "when",
+       "it",
+       "happened?"
+      ],
+      "wrong": 0,
+      "fix": "Was"
+     },
+     {
+      "id": "a30_52",
+      "words": [
+       "We",
+       "ran",
+       "out",
+       "from",
+       "gas."
+      ],
+      "wrong": 3,
+      "fix": "of"
+     },
+     {
+      "id": "a30_53",
+      "words": [
+       "The",
+       "car",
+       "broke",
+       "up",
+       "on",
+       "the",
+       "highway."
+      ],
+      "wrong": 3,
+      "fix": "down"
+     }
+    ]
+   }
+  },
+  {
+   "key": "alibi",
+   "title": "Game · the alibi (was / were, yes or no)",
+   "tags": {
+    "content": [
+     "Past Continuous",
+     "Question formation",
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · THE ALIBI",
+    "html": "Draw a time. The teacher asks \"Were you…?\" Answer: Yes, I was. / No, I wasn't. I was…",
+    "promptLabel": "THE TEACHER ASKS ABOUT",
+    "lines": [
+     "Yesterday at 7 a.m.",
+     "Yesterday at 1 p.m.",
+     "Last night at 11 p.m.",
+     "Last Sunday at 10 a.m.",
+     "Last Friday at 9 p.m.",
+     "This morning at 8 a.m."
+    ],
+    "prompts": [
+     "sleeping",
+     "working",
+     "cooking",
+     "driving",
+     "watching TV",
+     "having a shower",
+     "walking the dog",
+     "looking for something"
+    ]
+   }
+  },
+  {
+   "key": "talk",
+   "title": "Conversation · trips and phrasal verbs",
+   "tags": {
+    "content": [
+     "Phrasal verbs",
+     "Past Continuous",
+     "Past Simple",
+     "Conversation"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "CONVERSATION · YOUR TRIPS",
+    "html": "Answer with two or three sentences.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Trips",
+      "qs": [
+       "What time do you usually set off on a trip? [try: set off]",
+       "Did your car ever break down? What were you doing?",
+       "Did you ever run out of gas or phone battery on a trip? [try: ran out of]",
+       "Who picked you up the last time you traveled? [try: picked up]"
+      ]
+     },
+     {
+      "name": "Small disasters",
+      "qs": [
+       "When was the last time you fell over? What were you doing? [try: fell over]",
+       "What do you always look for in the morning? [try: look for]",
+       "Did you ever turn back on the way to a party? Why?",
+       "Were you sleeping when your alarm went off today?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "roleplay",
+   "title": "Role-play · on the phone: the car broke down",
+   "tags": {
+    "content": [
+     "Past Continuous",
+     "Past Simple",
+     "Phrasal verbs"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "roleplay",
+    "label": "ROLE-PLAY · \"THE CAR BROKE DOWN!\"",
+    "html": "A phone call. Then change roles.",
+    "roles": [
+     {
+      "name": "Ariane",
+      "card": "Your car broke down on the way to the beach. Call your friend. Say what you were doing when it happened, where you are now and what you need."
+     },
+     {
+      "name": "Friend",
+      "card": "Ask questions: Were you driving fast? Was it raining? Did you run out of gas? Then offer to pick her up."
+     }
+    ]
+   }
+  },
+  {
+   "key": "minute",
+   "title": "One minute · a trip that went wrong",
+   "tags": {
+    "content": [
+     "Past Continuous",
+     "Past Simple",
+     "Phrasal verbs"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "ONE MINUTE · A TRIP THAT WENT WRONG",
+    "html": "Talk for one minute. Use two phrasal verbs.",
+    "seconds": 60,
+    "topics": [
+     "A real trip that went wrong",
+     "An invented disaster trip",
+     "Your best trip and one problem on it",
+     "A day when you lost something"
+    ]
+   }
+  },
+  {
+   "key": "wrapup",
+   "title": "Wrap-up · past continuous negative and question",
+   "tags": {
+    "content": [
+     "Past Continuous",
+     "Phrasal verbs"
+    ],
+    "levels": [
+     "A2"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "Make a negative sentence: what weren't you doing at 7 a.m. today?",
+       "Ask me a question with \"Were you…?\"",
+       "Say three phrasal verbs from today and their meanings.",
+       "Tell the road trip story in three sentences."
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Were You Driving? On the Road",
+  "subtitle": "Past continuous: negative and question · 8 phrasal verbs · a road trip that went wrong",
+  "plan": "Revisão do vocabulário das últimas aulas por perguntas (a noite em que a luz acabou, transporte, quantidades). Past Continuous Tipo 2, como ficou combinado na aula 29: negativo (tabela, afirmativo × negativo, 5 frases) e pergunta (tabela, afirmativo × pergunta, 5 frases, perguntas para o professor). Tema novo: viagem de carro que deu errado, com 8 phrasal verbs (set off, break down, run out of, look for, pick up, get off, turn back, fall over), palavras de estrada, leitura, história para completar, jogo do álibi, conversa e role-play.",
+  "level": "A2",
+  "number": 30,
+  "tags": [
+   "Past Continuous",
+   "Phrasal verbs",
+   "Question formation",
+   "Travel",
+   "Reading",
+   "Conversation"
+  ],
+  "blocks": [
+   {
+    "model": "review"
+   },
+   {
+    "model": "context"
+   },
+   {
+    "model": "neg-table"
+   },
+   {
+    "model": "neg-contrast"
+   },
+   {
+    "model": "neg-5"
+   },
+   {
+    "model": "q-table"
+   },
+   {
+    "model": "q-contrast"
+   },
+   {
+    "model": "q-5"
+   },
+   {
+    "model": "ask"
+   },
+   {
+    "model": "pv-table"
+   },
+   {
+    "model": "pv-match"
+   },
+   {
+    "model": "vocab"
+   },
+   {
+    "model": "reading"
+   },
+   {
+    "model": "read-tf"
+   },
+   {
+    "model": "read-q"
+   },
+   {
+    "model": "fill"
+   },
+   {
+    "model": "spot"
+   },
+   {
+    "model": "alibi"
+   },
+   {
+    "model": "talk"
+   },
+   {
+    "model": "roleplay"
+   },
+   {
+    "model": "minute"
+   },
+   {
+    "model": "wrapup"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

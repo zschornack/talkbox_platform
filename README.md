@@ -40,6 +40,130 @@ A pasta `data/` fica só no seu computador.
 Por enquanto o TalkBox roda **só neste computador**, com um professor só. Nada vai para o GitHub.
 Tudo o que você faz no app grava na hora no banco `data/talkbox.db`: editar a aula, finalizar, reabrir, preparar a próxima, o mapa, as notas da ficha e os modelos.
 
+## Novidades da versão 1.2
+
+**Nivelamento.** Na Início, embaixo dos modelos, o botão **Começar nivelamento** abre um teste de uns 15 minutos para aluno novo, em 4 etapas: Básico (A1 · A2), Intermediário (B1), Intermediário avançado (B2) e Avançado (C1 · C2). Cada etapa tem:
+- **Conversa:** 3 perguntas.
+- **Leitura:** um parágrafo e 2 perguntas de escolher.
+- **Escuta:** 2 frases para você ler em voz alta (ficam borradas na tela; **Mostrar frase** revela). O aluno diz o que ouviu.
+- **Gramática:** 6 frases para escolher a opção certa.
+
+Quando ficar difícil, **Parar aqui e ver o resultado**. Leitura e gramática o app corrige sozinho; fala e escuta você anota no papel e dá a nota no fim (0 a 3 por etapa). O resultado mostra o nível sugerido (dá para trocar), os pontos de cada etapa e o mapa da ficha já marcado (o que acertou numa etapa em que passou fica "Já está bom", o que errou fica "Praticando"; clique para mudar). Embaixo, **Cadastrar aluno** cria o aluno com o nível, o objetivo, o mapa e o resumo do teste nas observações. O andamento fica guardado no navegador até cadastrar ou **Recomeçar**.
+
+## Novidades da versão 1.1
+
+**Aula mais larga.** A folha da aula acompanha o tamanho da letra: com letra 28 cabem umas 80 letras por linha (antes eram umas 45, porque a folha ficava presa em 860 px). Com **A+** a folha alarga junto, até o limite da janela. A barra de cima acompanha a folha.
+
+**Botões com espaço.** Nenhum grupo de botões fica mais grudado (Conferir · Revelar · Limpar, Próxima · Aleatória, Começar · Zerar · Outro tema, as abas do baralho). Os botões, as abas e as opções crescem junto com a letra, e os botões de cada bloco ficam sempre à direita, na mesma altura do enunciado.
+
+**Tela mais limpa.**
+- O **plano da aula** fica fechado numa linha (**Plano da aula · só você vê**). Um clique abre; o app lembra se você deixou aberto.
+- "Pendente da aula anterior" virou um traço laranja na margem do bloco; o nome aparece com o mouse em cima. O selo "Mudado nesta aula" também só aparece com o mouse em cima.
+- O enunciado fica um pouco menor e mais claro que o exercício, e o placar ("Acertou 3 de 5") virou uma etiqueta discreta.
+- Mais respiro entre os blocos, com uma linha fina separando um do outro.
+
+**Tabelas.** As colunas seguem o conteúdo: palavra curta fica numa coluna estreita, frase fica numa coluna larga, e nenhuma palavra quebra no meio. Na tabela de tempo verbal, pessoa, auxiliar e verbo ficam juntos. Vale na tela e no PDF.
+
+**Imagens** grandes cabem inteiras na tela, sem rolar.
+
+**Ligar colunas.** As duas colunas aparecem embaralhadas pelo próprio app (de verdade, sem padrão), em qualquer aula ou modelo: o material pode vir na ordem certa. Cada par que você faz, certo ou errado, desce para baixo, lado a lado, ligado por uma linha; o que sobra em cima vai se juntando. Clique num par para desfazer. **Limpar** desfaz tudo e embaralha de novo. No PDF, as colunas saem inteiras, com a letra escolhida ao lado do número (em branco, uma linha). O embaralhamento novo também vale para "ordenar frases" e "separar em grupos".
+
+**Atenção:** desenhos de caneta de aulas antigas podem aparecer fora do lugar, porque a folha mudou de largura.
+
+## Novidades da versão 1.0
+
+**O que você escreve na aula some depois do PDF.** Escreva, apague e destaque à vontade durante a aula. Ao **Exportar PDF**, o PDF sai com tudo; quando a janela de impressão fecha, o app pergunta **"PDF salvo?"**: em **Sim, descartar**, os blocos voltam ao original (em **Não salvei**, nada sai).
+- **Nenhum caminho muda um modelo a partir da aula.** Saiu o "Só nesta aula". "Salvar como modelo" dentro da aula cria sempre um modelo novo. Modelo só muda na aba Modelos.
+- O resumo do **Finalizar aula** tem só **Exportar PDF** e **Fechar**.
+
+**PDF consertado.** No modo **em branco** não sobra nenhuma resposta: as respostas reveladas viram linhas para escrever (antes sobrava a caixa verde), e saem também as palavras marcadas no "encontrar o erro", os itens já colocados nos grupos, as frases montadas, os nomes revelados na galeria e as notas da escala. No modo **preenchido**, a opção escolhida aparece marcada. Os dois modos ficaram sem caixas coloridas, sem os placares ("Acertou 2 de 5"), sem o fundo verde no fim da última página, e com o cartão do role-play e os grupos sem quebrar de página.
+
+**Tela da aula.** A barra de cima agora tem fundo: o texto da aula não passa mais por baixo dos botões ao rolar.
+
+**Sem emojis.** Emojis são proibidos no material. A migração 7 tirou todos os emojis dos modelos, das aulas ainda não dadas, das aulas do curso e das pendências (a versão anterior de cada modelo fica no histórico, e o banco antes da mudança fica em `data/backups/talkbox-antes-v1.0.db`). Pacotes novos também chegam sem emojis. Setas e ✓ ✗ continuam.
+
+**Como planejar aulas:** `docs/como-planejar-aulas.md` (tela limpa, quem explica é o professor; sem emojis; fotos reais; fatos verificados).
+
+## Novidades da versão 0.9
+
+**O que você escreve na aula fica só na aula.** Um bloco da biblioteca só muda de verdade na aba Modelos. O que você escreve ou destaca nele durante a aula fica guardado só naquela aula (o bloco ganha o selo "Mudado nesta aula") e nunca vai para o modelo nem para as outras aulas.
+- No **Finalizar aula**, o resumo oferece **"Exportar PDF e voltar ao original"**: o PDF sai com tudo o que foi escrito e, depois que a janela de impressão fecha, os blocos voltam ao original. Também dá para **"Só voltar ao original, sem PDF"**.
+- Se você fechar sem exportar, a aula finalizada mostra uma faixa com os mesmos dois botões.
+- Um bloco só: menu do bloco → **Voltar ao original**. A aula inteira, a qualquer hora: **Mais → Voltar tudo ao original**.
+- As respostas dos exercícios, a caneta e as anotações ficam.
+
+**Curso TalkBox.** Novo item **Curso** no menu e o roteiro no Início: os 10 níveis (A1.1 a C2) com as 100 aulas do currículo (`docs/curriculo-100-aulas.md`). Cada aula mostra o assunto, o que revisar, o vocabulário e o que o aluno consegue no fim. As aulas prontas abrem direto e têm **"Dar esta aula para um aluno…"** (a cópia vai sem anotações). As 10 primeiras (nível 1) já estão prontas, com ilustrações originais. Pacotes de conteúdo podem criar aulas do curso com `"course": { "number": 1 }` no lugar de `"student"` (migração 6: `lessons.course_number`).
+
+## Novidades da versão 0.8
+
+**A aula aponta para a biblioteca.** Um bloco que veio de Modelos não é mais copiado para dentro da aula: a aula guarda só a referência (o id do modelo). Por isso:
+- **mudou o modelo, mudou em todas as aulas** que usam ele, inclusive as antigas;
+- **mudar o texto de um bloco da biblioteca dentro da aula muda o modelo** (passe o mouse no bloco: ele avisa). Para mudar só naquela aula, use **Só nesta aula** no canto do bloco;
+- **o marca-texto feito na aula fica só na aula** (junto com as respostas), nunca vai para o modelo nem para uma cópia;
+- **Da biblioteca ↗** abre o modelo numa aba nova;
+- as pendências também guardam só a referência.
+
+Na primeira vez que você rodar a 0.8, as aulas que já existem são convertidas sozinhas: cada bloco igual ao modelo de onde veio vira referência; os que você tinha mudado na aula ficam como estão, com **Voltar ao original** para voltar a apontar para o modelo. Antes de converter, o banco é copiado para `data/backups/talkbox-antes-v0.8.db`. O banco das aulas ficou cerca de 5 vezes menor.
+
+**Plano da aula**: no topo de cada aula, um campo para escrever sobre o que é a aula e os objetivos. Só você vê; não sai no PDF. Pacotes podem trazer `"plan"` na aula.
+
+**Baralho com a palavra certa em cada carta**: termine a pergunta com `[try: palavra]` (ex.: `Who is your role model? [try: a role model]`) e a carta mostra "Try to use: a role model". Sem isso, vale a lista geral do baralho, como antes.
+
+## Novidades da versão 0.7
+
+**Copiar uma aula vai limpa.** Em **⋯ Mais → Copiar esta aula…** (ou no histórico da ficha), escolha o aluno e o tema. A cópia vai **sem**:
+- as respostas dos exercícios e os desenhos da caneta;
+- o que foi escrito nas anotações (o bloco vai vazio);
+- a anotação para a próxima aula e as pendências;
+- o **marca-texto feito na aula** (os destaques que você faz com a barra de formatação). As cores que já vêm no material ficam.
+
+Com **Voltar os blocos da biblioteca ao original** marcado (vem marcado), os blocos que vieram de um modelo voltam a ficar iguais ao modelo; a janela mostra quais mudaram. Desmarque se você mudou um bloco de propósito e quer levar a mudança. Ao terminar, a cópia abre sozinha.
+
+Também na aula:
+- **⋯ Mais → Limpar o marca-texto da aula**: tira os destaques feitos na aula, com Desfazer.
+- **Voltar ao original**, no canto de um bloco que veio da biblioteca: o bloco volta a ficar como o modelo, com Desfazer.
+
+**Imagens** (novo item no menu):
+- **Enviar imagens**: arraste várias de uma vez (ou cole com Ctrl+V). Cada uma tem **título** e **etiquetas separadas por vírgula**; dá para escolher o pacote e as etiquetas que valem para todas. **Nada entra no acervo antes de clicar em Fazer upload.**
+- **Pacotes**: junte as imagens de um tema (Animals, Food, Jobs…). Uma imagem pode estar em vários pacotes; tirar de um pacote não apaga a imagem. As etiquetas do pacote entram sozinhas nas imagens enviadas para ele.
+- Busca por título, etiqueta, conteúdo e pacote. Filtros **Sem pacote** e **Sem etiquetas** mostram o que falta organizar. Selecione várias imagens para pôr num pacote ou acrescentar etiquetas de uma vez.
+- Imagens que estão na internet ganham o aviso "na internet" e o botão **Guardar no computador** (uma ou todas): elas passam a funcionar sem internet, e as aulas que já usavam a imagem são atualizadas.
+- **Na aula**: + Inserir bloco → **Imagens do acervo…** → uma imagem, várias (uma em cada bloco) ou o **pacote inteiro como galeria**. Um bloco de imagem vazio também tem **Escolher do acervo de imagens**.
+- Bloco novo **Galeria de imagens**: várias imagens em grade (2, 3 ou 4 colunas). Os nomes podem começar escondidos: o aluno fala, você clica em **Revelar** (um por um ou todos). Clique numa imagem para ver grande, com setas, Espaço para revelar e Esc para fechar. No PDF, os nomes escondidos viram uma linha para escrever.
+
+Como etiquetar: do geral para o específico, em inglês, uma ideia por etiqueta. Fusca azul na rua → `means of transport, car, beetle, blue, old, street`. O tema maior (Animals, Transport) vira **pacote**.
+
+**Novo modelo = galeria de formatos.** **Modelos → Novo modelo** mostra todos os formatos, em três grupos (Explicar e mostrar, Exercícios com correção, Fala e conversa). Cada um tem para que serve, como funciona na aula, como editar e **dois exemplos que funcionam na tela**. Comece de um exemplo ou em branco.
+- O modelo novo **só é salvo quando você clica em Salvar modelo** (e precisa de nome). Sair sem salvar pergunta antes, se você mudou alguma coisa. Entrar e sair não cria nada.
+- Antes de salvar não aparecem "Uso" nem "Histórico de versões" (no lugar, o guia do formato). O histórico só aparece quando existe alguma versão.
+- Modelos ganharam **etiquetas livres** (como as das imagens), que entram na busca.
+- Na aula, **⋯ Mais → Ver exemplos dos formatos** abre a mesma galeria e insere o exemplo escolhido.
+
+**Menus**:
+- **+ Inserir bloco** agora é separado em grupos, com "Da biblioteca de modelos…", "Imagens do acervo…" e "Ver exemplos de cada formato…".
+- Botão **⋯ Mais** na barra da aula: copiar a aula, limpar o marca-texto, ver os formatos.
+- No Início, os atalhos **Novo modelo** (com os exemplos) e **Enviar imagens**.
+
+**Correções no banco e no servidor**:
+- **Arquivar uma aula finalizada desfaz o Finalizar** (mapa e pendências voltam ao que eram) e libera o número dela para a próxima aula.
+- **Juntar dois alunos** continua a contagem das aulas a partir das aulas anteriores ao TalkBox.
+- **Nome de aluno repetido é recusado** (sem diferenciar acento e maiúscula). Se o outro estiver inativo, o aviso sugere reativar.
+- Uma pendência descartada não conta mais como "resolvida" ao finalizar.
+- A data da "última aula" na lista de alunos usa a última aula **dada** (não uma aula futura em preparo).
+- Aula sem tema vira "Sem título" (não fica em branco).
+- Envio de imagem: só WebP de verdade; arquivo grande demais dá um aviso claro; endereço quebrado não derruba a rota.
+- Restaurar uma versão de modelo confere se o modelo não foi arquivado e recalcula o "falta conteúdo".
+- Os modelos vazios "Sem título" (criados só por entrar e sair do menu antigo) foram arquivados.
+- "Baixar todos os dados" inclui os pacotes de imagens.
+
+**Aulas dadas antes do TalkBox**: cada aluno ativo ganhou o nível e o mapa tirados do histórico do Drive (pacote `historico-drive.json`), e a numeração das aulas continua de onde parou (ex.: 24 aulas no Drive → a primeira no TalkBox é a 25).
+
+**Pacotes de conteúdo** ganharam:
+- `"profiles"`: atualiza nível, mapa (só sobe, nunca desce) e as aulas anteriores (`"priorLessons"`) de alunos que já existem.
+- `"merge"`: junta dois cadastros do mesmo aluno (aulas, mapa e histórico vão para um só).
+- `"imagePacks"`: cria (ou completa) pacotes de imagens com título e etiquetas.
+- `"clean"`: limpa uma aula que já existe, do mesmo jeito que a cópia (blocos da biblioteca de volta ao original, sem o marca-texto da aula e sem o que foi escrito nas anotações). `"keep"` lista os blocos que ficam como estão. Com `"onlyIfUntouched": true`, só limpa se a aula não foi mexida desde que foi criada.
+
 ## Novidades da versão 0.6
 
 **10 tipos novos de bloco** (lista oficial nos requisitos, seção 7.1.1). Todos aparecem no **+ Inserir bloco** e nos Modelos:
@@ -97,8 +221,8 @@ Depois aparece o resumo, com o botão de exportar o PDF e o link para a ficha.
 ## O que já funciona (versão 0.2 e 0.3)
 
 **Início**
-- Menu lateral com Início, Alunos e Modelos.
-- Atalhos para criar uma nova aula, um novo aluno ou um novo modelo.
+- Menu lateral com Início, Alunos, Modelos e Imagens.
+- Atalhos para criar uma nova aula, um novo aluno, um novo modelo ou enviar imagens.
 - Aulas recentes, alunos com a data da última aula e o resumo da biblioteca por formato.
 
 **Alunos**
@@ -206,7 +330,7 @@ Depois aparece o resumo, com o botão de exportar o PDF e o link para a ficha.
 1. **Importação do Google Drive**, em lotes, usando a fila "a revisar".
 2. **Modelos de aula**: salvar uma aula inteira como modelo e começar aulas novas a partir dele.
 3. Tabela e imagem como elementos livres, que podem entrar soltos na aula ou dentro de uma explicação.
-4. Novos formatos: ordenar frases, áudio, imagens lado a lado e cards de foto para revelar.
+4. Novos formatos: áudio e vídeo.
 5. Vários professores: login, servidor compartilhado e "quem mudou" no histórico de versões.
 
 ## Para quem for programar
@@ -221,15 +345,20 @@ server/               servidor (Node puro + SQLite embutido)
   content.js          importa as aulas prontas da pasta content/
 content/              aulas prontas (uma por arquivo .json)
 web/                  app do professor (JavaScript puro, sem build)
-  js/main.js          rotas: #/  #/alunos  #/alunos/:id  #/modelos  #/modelos/:id  #/aula/:id
+  js/main.js          rotas: #/  #/alunos  #/alunos/:id  #/modelos  #/modelos/novo  #/modelos/:id
+                      #/imagens  #/imagens/enviar  #/imagens/pacote/:id  #/aula/:id
   js/home.js          Início
   js/students.js      lista de alunos       js/student.js       ficha
-  js/models.js        biblioteca de modelos js/model-editor.js  editar modelo
+  js/models.js        biblioteca de modelos js/model-editor.js  editar modelo (o novo só salva no "Salvar modelo")
+  js/gallery.js       galeria de formatos (Novo modelo e "Ver exemplos" na aula)
+  js/images.js        acervo de imagens, pacotes, enviar imagens e o painel "Imagens do acervo"
+  js/marks.js         marca-texto da aula x cores do material (usado também pelo servidor)
   js/model-picker.js  painel "Inserir modelos" na aula
   js/editor.js        a aula: salvar automático, caneta, menus
   js/handover.js      Finalizar aula
   js/block-view.js    mostra/edita um bloco (usado na aula e nos modelos)
-  js/blocks/          um arquivo por tipo de bloco (registrados em index.js)
+  js/blocks/          um arquivo por tipo de bloco (registrados em index.js);
+                      examples.js tem o guia e os dois exemplos de cada formato
   js/catalog.js       listas fixas: níveis, habilidades, conteúdos oficiais com sinônimos (usado também pelo servidor)
   css/app.css         todo o visual: paleta, tipografia e PDF (@media print)
 test/                 testes (npm test)
@@ -237,11 +366,15 @@ test/                 testes (npm test)
 
 Na aula, o **conteúdo** (`doc`: os blocos) fica separado do que **acontece na aula** (`state`: respostas das lacunas, caneta, tamanho da fonte). Isso segue o item 9.10 dos requisitos e prepara a versão 2, em que cada aluno terá as próprias respostas.
 
-Um **modelo** guarda um bloco pronto. Quando entra numa aula, o bloco é copiado com ids novos e ganha `source: { modelId, title }`. A cada salvamento da aula, a tabela `block_uses` registra a posição de cada bloco e de qual modelo veio: é dela que saem o "usado em", o "visto em" e os conteúdos da aula. Um bloco que é retomada de uma pendência tem `pending: <id>`.
+Um **modelo** guarda um bloco pronto. Na aula, o bloco que veio da biblioteca fica guardado só como `{ id, ref }` (v0.8); `getLesson` monta o bloco inteiro a partir do modelo, com `source: { modelId, title }`. Editar esse bloco na aula atualiza o modelo; o marca-texto da aula fica em `state.blocks[id].live`. Blocos feitos na aula (e os marcados "Só nesta aula", `local: true`) ficam inteiros no `doc`. A cada salvamento da aula, a tabela `block_uses` registra a posição de cada bloco e de qual modelo veio: é dela que saem o "usado em", o "visto em" e os conteúdos da aula. Um bloco que é retomada de uma pendência tem `pending: <id>`.
 
 O **mapa de conteúdos** vem da tabela `assessments`: cada avaliação (do Finalizar aula ou de um clique na ficha) é uma linha, e o status atual é a mais recente. A versão do banco fica em `PRAGMA user_version`; cada migração nova sobe esse número.
 
-Para criar um tipo de bloco novo, crie um arquivo em `web/js/blocks/` com `name`, `hint`, `create()` e `render(ctx)`, registre-o em `web/js/blocks/index.js` e adicione um resumo dele em `web/js/blocks/summary.js`. Ele passa a aparecer na aula e nos Modelos automaticamente.
+Para criar um tipo de bloco novo, crie um arquivo em `web/js/blocks/` com `name`, `hint`, `create()` e `render(ctx)`, registre-o em `web/js/blocks/index.js` adicione um resumo dele em `web/js/blocks/summary.js` e o guia com dois exemplos em `web/js/blocks/examples.js` (o teste confere). Ele passa a aparecer na aula e nos Modelos automaticamente.
+
+**Marca-texto da aula x cores do material.** O destaque feito na aula (barra de formatação) é gravado pelo navegador como `background-color: rgb(…)`; "remover destaque" grava `transparent`. As cores do material (pacotes e modelos) ficam em `#RRGGBB`. Por isso a cópia sabe o que tirar: `rgb(…)` e `transparent` saem, `#RRGGBB` fica. Ao salvar um modelo, o editor converte `rgb(…)` em `#RRGGBB` (`toMaterialColors` em `web/js/marks.js`), porque no modelo tudo é material.
+
+**Imagens** são modelos do tipo `image` (com etiquetas livres em `tags.keywords`). Os pacotes ficam nas tabelas `packs` e `pack_items`; tirar uma imagem do pacote marca `removed_at`, e o banco recusa apagar pacotes e itens.
 
 Se o Node for antigo, o `npm start` avisa e explica como atualizar.
 

@@ -1,0 +1,1836 @@
+{
+ "id": "curso-001-hello-v2-2026-11-05",
+ "course": {
+  "number": 1,
+  "replace": true
+ },
+ "models": [
+  {
+   "key": "greetings",
+   "title": "Greetings · say hello, ask, answer, say goodbye",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "GREETINGS",
+    "header": true,
+    "rows": [
+     [
+      "SAY HELLO",
+      "ANSWER",
+      "SAY GOODBYE"
+     ],
+     [
+      "Hello! · Hi!",
+      "Hi!",
+      "Bye!"
+     ],
+     [
+      "Hey! · What's up?",
+      "Hey!",
+      "See you!"
+     ],
+     [
+      "Good morning! · Good afternoon! · Good evening!",
+      "Good morning!",
+      "Good night!"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "say-answer",
+   "title": "Greetings · say it, then the answer",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "SAY IT · THEN THE ANSWER",
+    "html": "What is the answer? Say it, then reveal.",
+    "items": [
+     {
+      "id": "c1_1",
+      "q": "Hello!",
+      "a": "Hi!"
+     },
+     {
+      "id": "c1_2",
+      "q": "What's your name?",
+      "a": "My name is… · I'm…"
+     },
+     {
+      "id": "c1_3",
+      "q": "Nice to meet you.",
+      "a": "Nice to meet you, too!"
+     },
+     {
+      "id": "c1_4",
+      "q": "How are you?",
+      "a": "I'm fine, thanks. And you?"
+     },
+     {
+      "id": "c1_5",
+      "q": "Bye!",
+      "a": "See you!"
+     }
+    ]
+   }
+  },
+  {
+   "key": "feelings",
+   "title": "How are you? · feelings",
+   "tags": {
+    "content": [
+     "Verb to be",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "HOW ARE YOU?",
+    "header": true,
+    "rows": [
+     [
+      "I'M…",
+      "PORTUGUÊS"
+     ],
+     [
+      "happy",
+      "feliz"
+     ],
+     [
+      "tired",
+      "cansado(a)"
+     ],
+     [
+      "sad",
+      "triste"
+     ],
+     [
+      "great · good · okay · fine",
+      "ótimo · bem · ok · bem"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "dialogue1",
+   "title": "Dialogue · Maria and João (complete)",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "DIALOGUE · MARIA AND JOÃO",
+    "html": "Complete. Then read it with the teacher.",
+    "items": [
+     {
+      "id": "c1_6",
+      "before": "Maria: Hello! My",
+      "hint": "",
+      "after": "is Maria.",
+      "answers": [
+       "name"
+      ]
+     },
+     {
+      "id": "c1_7",
+      "before": "João: Hi! I",
+      "hint": "",
+      "after": "João.",
+      "answers": [
+       "am",
+       "'m"
+      ]
+     },
+     {
+      "id": "c1_8",
+      "before": "Maria: What is",
+      "hint": "",
+      "after": "name?",
+      "answers": [
+       "your"
+      ]
+     },
+     {
+      "id": "c1_9",
+      "before": "João: My name is João,",
+      "hint": "",
+      "after": "you?",
+      "answers": [
+       "and"
+      ]
+     },
+     {
+      "id": "c1_10",
+      "before": "Maria:",
+      "hint": "",
+      "after": "to meet you, João.",
+      "answers": [
+       "Nice"
+      ]
+     },
+     {
+      "id": "c1_11",
+      "before": "João: Nice to meet you,",
+      "hint": "",
+      "after": "!",
+      "answers": [
+       "too"
+      ]
+     },
+     {
+      "id": "c1_12",
+      "before": "Maria: How",
+      "hint": "",
+      "after": "you?",
+      "answers": [
+       "are"
+      ]
+     },
+     {
+      "id": "c1_13",
+      "before": "João: I am",
+      "hint": "",
+      "after": ", thanks. And you?",
+      "answers": [
+       "fine",
+       "good",
+       "great"
+      ]
+     },
+     {
+      "id": "c1_14",
+      "before": "Maria: I am",
+      "hint": "",
+      "after": "!",
+      "answers": [
+       "happy",
+       "fine",
+       "good",
+       "great"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "meet",
+   "title": "Speaking · you don't know me, I don't know you!",
+   "tags": {
+    "content": [
+     "Conversation",
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "roleplay",
+    "label": "LET'S TALK · NICE TO MEET YOU!",
+    "html": "You don't know me, I don't know you!",
+    "roles": [
+     {
+      "name": "Student",
+      "card": "Say hello. Ask the name. Say \"Nice to meet you.\" Ask \"How are you?\" Say goodbye."
+     },
+     {
+      "name": "Teacher",
+      "card": "You are a new person. Answer and ask the same questions back: \"And you?\""
+     }
+    ]
+   }
+  },
+  {
+   "key": "possessive",
+   "title": "'s · my father's name",
+   "tags": {
+    "content": [
+     "Possessives",
+     "Family"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "'S · WHOSE NAME?",
+    "header": true,
+    "rows": [
+     [
+      "",
+      "EXAMPLE"
+     ],
+     [
+      "one person · 's",
+      "My father<span style=\"background-color: #FFC9A3\"><b>'s</b></span> name is Paulo. · My mother<span style=\"background-color: #FFC9A3\"><b>'s</b></span> name is Monica."
+     ],
+     [
+      "two or more · s'",
+      "My sister<span style=\"background-color: #CBE4D8\"><b>s'</b></span> names are Laura and Luana."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "names-talk",
+   "title": "Speaking · what's your mother's name?",
+   "tags": {
+    "content": [
+     "Possessives",
+     "Conversation"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "NAMES IN YOUR FAMILY",
+    "html": "Answer with a full sentence.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Names",
+      "qs": [
+       "What's your mother's name? [try: My mother's name is]",
+       "What's your father's name?",
+       "What's your best friend's name?",
+       "What's your dog's or cat's name?",
+       "What are your brothers' or sisters' names?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "alphabet",
+   "title": "The alphabet · TalkBox chart",
+   "tags": {
+    "content": [
+     "Pronunciation",
+     "Vocabulary"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Escuta",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "image",
+    "file": "images/curso-001/alphabet.webp",
+    "layout": "full",
+    "caption": "My name is Ana. A – N – A."
+   }
+  },
+  {
+   "key": "spell",
+   "title": "Spell it! · names and words",
+   "tags": {
+    "content": [
+     "Pronunciation"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "SPELL IT!",
+    "html": "Spell it. Then reveal.",
+    "items": [
+     {
+      "id": "c1_15",
+      "q": "your name",
+      "a": "…"
+     },
+     {
+      "id": "c1_16",
+      "q": "book",
+      "a": "B – O – O – K"
+     },
+     {
+      "id": "c1_17",
+      "q": "computer",
+      "a": "C – O – M – P – U – T – E – R"
+     },
+     {
+      "id": "c1_18",
+      "q": "e-book",
+      "a": "E – hyphen – B – O – O – K"
+     },
+     {
+      "id": "c1_19",
+      "q": "iPhone",
+      "a": "small I – capital P – H – O – N – E"
+     },
+     {
+      "id": "c1_20",
+      "q": "teacher",
+      "a": "T – E – A – C – H – E – R"
+     },
+     {
+      "id": "c1_21",
+      "q": "Brazil",
+      "a": "B – R – A – Z – I – L"
+     }
+    ]
+   }
+  },
+  {
+   "key": "spell-game",
+   "title": "Game · the teacher spells, you write",
+   "tags": {
+    "content": [
+     "Pronunciation"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Escuta",
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "GAME · LISTEN AND WRITE",
+    "html": "The teacher spells. You write. Then reveal.",
+    "items": [
+     {
+      "id": "c1_22",
+      "q": "Word 1",
+      "a": "PIZZA"
+     },
+     {
+      "id": "c1_23",
+      "q": "Word 2",
+      "a": "HAPPY"
+     },
+     {
+      "id": "c1_24",
+      "q": "Word 3",
+      "a": "JUICE"
+     },
+     {
+      "id": "c1_25",
+      "q": "Word 4",
+      "a": "QUEEN"
+     },
+     {
+      "id": "c1_26",
+      "q": "Word 5",
+      "a": "WI-FI"
+     },
+     {
+      "id": "c1_27",
+      "q": "Word 6",
+      "a": "YOUTUBE"
+     }
+    ]
+   }
+  },
+  {
+   "key": "numbers",
+   "title": "Numbers 0–10 · TalkBox chart",
+   "tags": {
+    "content": [
+     "Vocabulary"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "image",
+    "file": "images/curso-001/numbers.webp",
+    "layout": "full",
+    "caption": "three (3) · tree"
+   }
+  },
+  {
+   "key": "numbers-race",
+   "title": "Numbers race · 0 to 10",
+   "tags": {
+    "content": [
+     "Vocabulary"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "NUMBERS RACE",
+    "html": "Draw a challenge. Say it before the time is up!",
+    "seconds": 20,
+    "topics": [
+     "From 0 to 10",
+     "From 10 to 0",
+     "Only even numbers: 0, 2, 4…",
+     "Only odd numbers: 1, 3, 5…",
+     "Your phone number",
+     "Your age: I am … years old."
+    ]
+   }
+  },
+  {
+   "key": "pronouns-sg",
+   "title": "Subject pronouns · singular (TalkBox chart)",
+   "tags": {
+    "content": [
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "image",
+    "file": "images/curso-001/pronouns-singular.webp",
+    "layout": "full",
+    "caption": "I · you · he · she · it"
+   }
+  },
+  {
+   "key": "pronouns-pl",
+   "title": "Subject pronouns · plural (TalkBox chart)",
+   "tags": {
+    "content": [
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "image",
+    "file": "images/curso-001/pronouns-plural.webp",
+    "layout": "full",
+    "caption": "we · you · they"
+   }
+  },
+  {
+   "key": "pronouns-pick",
+   "title": "Subject pronouns · who is it?",
+   "tags": {
+    "content": [
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "WHO IS IT?",
+    "html": "Choose the pronoun.",
+    "instant": true,
+    "items": [
+     {
+      "id": "c1_28",
+      "before": "Maria →",
+      "options": [
+       "he",
+       "she",
+       "it"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "c1_29",
+      "before": "João →",
+      "options": [
+       "he",
+       "she",
+       "we"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "c1_30",
+      "before": "Maria and João →",
+      "options": [
+       "we",
+       "you",
+       "they"
+      ],
+      "answer": 2,
+      "after": ""
+     },
+     {
+      "id": "c1_31",
+      "before": "The dog →",
+      "options": [
+       "he",
+       "it",
+       "they"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "c1_32",
+      "before": "The book →",
+      "options": [
+       "it",
+       "she",
+       "they"
+      ],
+      "answer": 0,
+      "after": ""
+     },
+     {
+      "id": "c1_33",
+      "before": "Pedro and I →",
+      "options": [
+       "they",
+       "we",
+       "you"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "c1_34",
+      "before": "My friends →",
+      "options": [
+       "we",
+       "they",
+       "it"
+      ],
+      "answer": 1,
+      "after": ""
+     },
+     {
+      "id": "c1_35",
+      "before": "You and Maria →",
+      "options": [
+       "you",
+       "they",
+       "we"
+      ],
+      "answer": 0,
+      "after": ""
+     }
+    ]
+   }
+  },
+  {
+   "key": "be-chart",
+   "title": "Verb to be · affirmative (TalkBox chart)",
+   "tags": {
+    "content": [
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "image",
+    "file": "images/curso-001/to-be-affirmative.webp",
+    "layout": "full",
+    "caption": ""
+   }
+  },
+  {
+   "key": "be-use",
+   "title": "Verb to be · when we use it (name, job, nationality, feeling, age)",
+   "tags": {
+    "content": [
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "VERB TO BE · WHEN WE USE IT",
+    "header": true,
+    "rows": [
+     [
+      "USE",
+      "EXAMPLE"
+     ],
+     [
+      "name",
+      "I <span style=\"background-color: #CBE4D8\"><b>am</b></span> Miguel. · She <span style=\"background-color: #FFC9A3\"><b>is</b></span> Ana."
+     ],
+     [
+      "job",
+      "I <span style=\"background-color: #CBE4D8\"><b>am</b></span> a teacher. · He <span style=\"background-color: #FFC9A3\"><b>is</b></span> a doctor."
+     ],
+     [
+      "nationality",
+      "I <span style=\"background-color: #CBE4D8\"><b>am</b></span> Brazilian. · She <span style=\"background-color: #FFC9A3\"><b>is</b></span> American."
+     ],
+     [
+      "feeling",
+      "I <span style=\"background-color: #CBE4D8\"><b>am</b></span> happy. · He <span style=\"background-color: #FFC9A3\"><b>is</b></span> tired."
+     ],
+     [
+      "age",
+      "I <span style=\"background-color: #CBE4D8\"><b>am</b></span> 25 years old. · She <span style=\"background-color: #FFC9A3\"><b>is</b></span> 10 years old."
+     ],
+     [
+      "Colors",
+      "<span style=\"background-color: #CBE4D8\"><b>am</b></span> = I · <span style=\"background-color: #FFC9A3\"><b>is</b></span> = he, she, it · <span style=\"background-color: #FFDB8F\"><b>are</b></span> = you, we, they"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "be-basics",
+   "title": "Verb to be · 5 basic sentences",
+   "tags": {
+    "content": [
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "5 BASIC SENTENCES",
+    "html": "Say it in English. Then reveal.",
+    "items": [
+     {
+      "id": "c1_36",
+      "q": "Eu sou estudante.",
+      "a": "I'm a student."
+     },
+     {
+      "id": "c1_37",
+      "q": "Ela é médica.",
+      "a": "She's a doctor."
+     },
+     {
+      "id": "c1_38",
+      "q": "Nós somos brasileiros.",
+      "a": "We're Brazilian."
+     },
+     {
+      "id": "c1_39",
+      "q": "Ele está cansado.",
+      "a": "He's tired."
+     },
+     {
+      "id": "c1_40",
+      "q": "Eles estão felizes.",
+      "a": "They're happy."
+     }
+    ]
+   }
+  },
+  {
+   "key": "be-pick",
+   "title": "Verb to be · am, is or are?",
+   "tags": {
+    "content": [
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "AM, IS OR ARE?",
+    "html": "Choose.",
+    "instant": true,
+    "items": [
+     {
+      "id": "c1_41",
+      "before": "I",
+      "options": [
+       "am",
+       "is",
+       "are"
+      ],
+      "answer": 0,
+      "after": "a student."
+     },
+     {
+      "id": "c1_42",
+      "before": "She",
+      "options": [
+       "am",
+       "is",
+       "are"
+      ],
+      "answer": 1,
+      "after": "a doctor."
+     },
+     {
+      "id": "c1_43",
+      "before": "They",
+      "options": [
+       "am",
+       "is",
+       "are"
+      ],
+      "answer": 2,
+      "after": "happy."
+     },
+     {
+      "id": "c1_44",
+      "before": "He",
+      "options": [
+       "am",
+       "is",
+       "are"
+      ],
+      "answer": 1,
+      "after": "tired."
+     },
+     {
+      "id": "c1_45",
+      "before": "We",
+      "options": [
+       "am",
+       "is",
+       "are"
+      ],
+      "answer": 2,
+      "after": "Brazilian."
+     },
+     {
+      "id": "c1_46",
+      "before": "You",
+      "options": [
+       "am",
+       "is",
+       "are"
+      ],
+      "answer": 2,
+      "after": "my friend."
+     },
+     {
+      "id": "c1_47",
+      "before": "It",
+      "options": [
+       "am",
+       "is",
+       "are"
+      ],
+      "answer": 1,
+      "after": "a dog."
+     },
+     {
+      "id": "c1_48",
+      "before": "I",
+      "options": [
+       "am",
+       "is",
+       "are"
+      ],
+      "answer": 0,
+      "after": "ready."
+     },
+     {
+      "id": "c1_49",
+      "before": "They",
+      "options": [
+       "am",
+       "is",
+       "are"
+      ],
+      "answer": 2,
+      "after": "at home."
+     },
+     {
+      "id": "c1_50",
+      "before": "She",
+      "options": [
+       "am",
+       "is",
+       "are"
+      ],
+      "answer": 1,
+      "after": "my sister."
+     },
+     {
+      "id": "c1_51",
+      "before": "We",
+      "options": [
+       "am",
+       "is",
+       "are"
+      ],
+      "answer": 2,
+      "after": "in class."
+     },
+     {
+      "id": "c1_52",
+      "before": "I",
+      "options": [
+       "am",
+       "is",
+       "are"
+      ],
+      "answer": 0,
+      "after": "excited."
+     }
+    ]
+   }
+  },
+  {
+   "key": "jobs",
+   "title": "Jobs · teacher, doctor, student, police officer (photos)",
+   "tags": {
+    "content": [
+     "Vocabulary",
+     "Work"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "gallery",
+    "label": "JOBS",
+    "html": "What is the job? Say it, then reveal.",
+    "columns": 2,
+    "hidden": true,
+    "images": [
+     {
+      "id": "j1",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/French_Class_Teacher_in_Zimbabwe.jpg/960px-French_Class_Teacher_in_Zimbabwe.jpg",
+      "caption": "a teacher · Photo: Trust Sayi, CC BY-SA 4.0 (Wikimedia Commons)"
+     },
+     {
+      "id": "j2",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Woman_in_a_white_coat_with_a_stethoscope_smiles_in_a_bright_medical_office.jpg/960px-Woman_in_a_white_coat_with_a_stethoscope_smiles_in_a_bright_medical_office.jpg",
+      "caption": "a doctor · Photo: Shixart1985, CC BY 2.0 (Wikimedia Commons)"
+     },
+     {
+      "id": "j3",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Laptop_and_girl_biting_pencil-pixabay.jpg",
+      "caption": "a student · Photo: Jan Vašek, CC0 (Wikimedia Commons)"
+     },
+     {
+      "id": "j4",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/New_York_Police_Department_officers.jpg/960px-New_York_Police_Department_officers.jpg",
+      "caption": "police officers · Photo: Nick.Allen, CC BY 2.0 (Wikimedia Commons)"
+     }
+    ]
+   }
+  },
+  {
+   "key": "jobs-talk",
+   "title": "Speaking · what is your job?",
+   "tags": {
+    "content": [
+     "Vocabulary",
+     "Work",
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WHAT IS YOUR JOB?",
+    "html": "Answer with a full sentence.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Jobs",
+      "qs": [
+       "What is your job? [try: I am a…]",
+       "Are you a student?",
+       "What is your mother's job?",
+       "What is your best friend's job?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "nat-chart",
+   "title": "Countries and nationalities (TalkBox chart)",
+   "tags": {
+    "content": [
+     "Vocabulary",
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "image",
+    "file": "images/curso-001/nationalities.webp",
+    "layout": "full",
+    "caption": ""
+   }
+  },
+  {
+   "key": "nat-say",
+   "title": "Nationalities · country → nationality",
+   "tags": {
+    "content": [
+     "Vocabulary"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "COUNTRY → NATIONALITY",
+    "html": "Say the nationality. Then reveal.",
+    "items": [
+     {
+      "id": "c1_53",
+      "q": "Brazil",
+      "a": "Brazilian"
+     },
+     {
+      "id": "c1_54",
+      "q": "Argentina",
+      "a": "Argentinian"
+     },
+     {
+      "id": "c1_55",
+      "q": "the USA",
+      "a": "American"
+     },
+     {
+      "id": "c1_56",
+      "q": "Canada",
+      "a": "Canadian"
+     },
+     {
+      "id": "c1_57",
+      "q": "the UK",
+      "a": "British"
+     },
+     {
+      "id": "c1_58",
+      "q": "England",
+      "a": "English"
+     },
+     {
+      "id": "c1_59",
+      "q": "Germany",
+      "a": "German"
+     },
+     {
+      "id": "c1_60",
+      "q": "Portugal",
+      "a": "Portuguese"
+     }
+    ]
+   }
+  },
+  {
+   "key": "dialogue2",
+   "title": "Dialogue · Lucas and Ana",
+   "tags": {
+    "content": [
+     "Verb to be",
+     "Conversation"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "DIALOGUE · LUCAS AND ANA",
+    "html": "<b>Lucas:</b> Hello! My name is Lucas.<br><b>Ana:</b> Hi, Lucas! I am Ana. Nice to meet you.<br><b>Lucas:</b> Nice to meet you, too. Where are you from?<br><b>Ana:</b> I am Brazilian. And you?<br><b>Lucas:</b> I am Argentinian.<br><b>Ana:</b> What is your job?<br><b>Lucas:</b> I am a police officer.<br><b>Ana:</b> That's interesting! I am a teacher.<br><b>Lucas:</b> Are you tired today?<br><b>Ana:</b> No, I am great! And you?<br><b>Lucas:</b> I am tired."
+   }
+  },
+  {
+   "key": "dialogue2-q",
+   "title": "Dialogue · Lucas and Ana · questions",
+   "tags": {
+    "content": [
+     "Verb to be",
+     "Conversation"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "LUCAS AND ANA · QUESTIONS",
+    "html": "Answer. Then reveal.",
+    "items": [
+     {
+      "id": "c1_61",
+      "q": "Where is Ana from?",
+      "a": "She is Brazilian."
+     },
+     {
+      "id": "c1_62",
+      "q": "Where is Lucas from?",
+      "a": "He is Argentinian."
+     },
+     {
+      "id": "c1_63",
+      "q": "What is Lucas's job?",
+      "a": "He is a police officer."
+     },
+     {
+      "id": "c1_64",
+      "q": "What is Ana's job?",
+      "a": "She is a teacher."
+     },
+     {
+      "id": "c1_65",
+      "q": "How is Ana?",
+      "a": "She is great."
+     },
+     {
+      "id": "c1_66",
+      "q": "How is Lucas?",
+      "a": "He is tired."
+     }
+    ]
+   }
+  },
+  {
+   "key": "hidden",
+   "title": "Hidden dialogue · Mark and Julia (you are Julia)",
+   "tags": {
+    "content": [
+     "Verb to be",
+     "Conversation"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "HIDDEN DIALOGUE · YOU ARE JULIA",
+    "html": "The teacher is Mark. Answer, then reveal.",
+    "items": [
+     {
+      "id": "c1_67",
+      "q": "Mark: Hello! I am Mark.",
+      "a": "Julia: Hi, Mark! I am Julia."
+     },
+     {
+      "id": "c1_68",
+      "q": "Mark: Are you a student?",
+      "a": "Julia: Yes, I am. And you?"
+     },
+     {
+      "id": "c1_69",
+      "q": "Mark: I am a doctor.",
+      "a": "Julia: Wow! Are you tired today?"
+     },
+     {
+      "id": "c1_70",
+      "q": "Mark: Yes, I am tired.",
+      "a": "Julia: I am happy today."
+     }
+    ]
+   }
+  },
+  {
+   "key": "reading",
+   "title": "Reading · Daniel",
+   "tags": {
+    "content": [
+     "Verb to be",
+     "Reading"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "READING · DANIEL",
+    "html": "My name is Daniel. I am Brazilian. I am a student. I am happy today because my class is interesting. My teacher is very good. She is American. My friends are nice and they are great students. We are in class now and we are ready to learn."
+   }
+  },
+  {
+   "key": "reading-q",
+   "title": "Reading · Daniel · questions",
+   "tags": {
+    "content": [
+     "Verb to be",
+     "Reading"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "DANIEL · QUESTIONS",
+    "html": "Answer. Then reveal.",
+    "items": [
+     {
+      "id": "c1_71",
+      "q": "What is his name?",
+      "a": "His name is Daniel."
+     },
+     {
+      "id": "c1_72",
+      "q": "Where is he from?",
+      "a": "He is Brazilian."
+     },
+     {
+      "id": "c1_73",
+      "q": "How is he today?",
+      "a": "He is happy."
+     },
+     {
+      "id": "c1_74",
+      "q": "What is his teacher's nationality?",
+      "a": "She is American."
+     },
+     {
+      "id": "c1_75",
+      "q": "Are his friends good students?",
+      "a": "Yes, they are great students."
+     },
+     {
+      "id": "c1_76",
+      "q": "And you: are you happy today?",
+      "a": "Yes, I am. / No, I am tired."
+     }
+    ]
+   }
+  },
+  {
+   "key": "listening",
+   "title": "Listening · Carla (the teacher reads)",
+   "tags": {
+    "content": [
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Escuta"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "LISTENING · CARLA",
+    "html": "Listen to the teacher. Answer. Then reveal.",
+    "items": [
+     {
+      "id": "c1_77",
+      "q": "The text (teacher only)",
+      "a": "My name is Carla. I am a doctor. I am Brazilian. I am tired today because I work a lot. My friends are happy. They are students. My brother is a police officer and he is okay today."
+     },
+     {
+      "id": "c1_78",
+      "q": "What is her job?",
+      "a": "She is a doctor."
+     },
+     {
+      "id": "c1_79",
+      "q": "How is she today?",
+      "a": "She is tired."
+     },
+     {
+      "id": "c1_80",
+      "q": "What are her friends?",
+      "a": "They are students."
+     },
+     {
+      "id": "c1_81",
+      "q": "What is her brother's job?",
+      "a": "He is a police officer."
+     }
+    ]
+   }
+  },
+  {
+   "key": "dictation",
+   "title": "Dictation · write what you hear",
+   "tags": {
+    "content": [
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Escuta",
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "DICTATION",
+    "html": "Write what you hear. Then reveal.",
+    "items": [
+     {
+      "id": "c1_82",
+      "q": "1",
+      "a": "I am a student."
+     },
+     {
+      "id": "c1_83",
+      "q": "2",
+      "a": "She is a teacher."
+     },
+     {
+      "id": "c1_84",
+      "q": "3",
+      "a": "They are happy."
+     },
+     {
+      "id": "c1_85",
+      "q": "4",
+      "a": "He is tired."
+     },
+     {
+      "id": "c1_86",
+      "q": "5",
+      "a": "We are Brazilian."
+     }
+    ]
+   }
+  },
+  {
+   "key": "transform",
+   "title": "Change the person · verb to be",
+   "tags": {
+    "content": [
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "transform",
+    "label": "CHANGE THE PERSON",
+    "html": "Write the new sentence.",
+    "items": [
+     {
+      "id": "c1_87",
+      "sentence": "I am a teacher.",
+      "instruction": "he",
+      "answers": [
+       "He is a teacher.",
+       "He's a teacher."
+      ]
+     },
+     {
+      "id": "c1_88",
+      "sentence": "She is happy.",
+      "instruction": "they",
+      "answers": [
+       "They are happy.",
+       "They're happy."
+      ]
+     },
+     {
+      "id": "c1_89",
+      "sentence": "We are students.",
+      "instruction": "I",
+      "answers": [
+       "I am a student.",
+       "I'm a student."
+      ]
+     },
+     {
+      "id": "c1_90",
+      "sentence": "He is tired.",
+      "instruction": "she",
+      "answers": [
+       "She is tired.",
+       "She's tired."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "spot",
+   "title": "Spot the mistake · verb to be",
+   "tags": {
+    "content": [
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "spot",
+    "label": "SPOT THE MISTAKE",
+    "html": "Find the mistake. Say it correctly.",
+    "items": [
+     {
+      "id": "c1_91",
+      "words": [
+       "I",
+       "are",
+       "a",
+       "student."
+      ],
+      "wrong": 1,
+      "fix": "am"
+     },
+     {
+      "id": "c1_92",
+      "words": [
+       "She",
+       "am",
+       "happy."
+      ],
+      "wrong": 1,
+      "fix": "is"
+     },
+     {
+      "id": "c1_93",
+      "words": [
+       "He",
+       "are",
+       "a",
+       "doctor."
+      ],
+      "wrong": 1,
+      "fix": "is"
+     },
+     {
+      "id": "c1_94",
+      "words": [
+       "They",
+       "is",
+       "tired."
+      ],
+      "wrong": 1,
+      "fix": "are"
+     },
+     {
+      "id": "c1_95",
+      "words": [
+       "We",
+       "is",
+       "Brazilian."
+      ],
+      "wrong": 1,
+      "fix": "are"
+     }
+    ]
+   }
+  },
+  {
+   "key": "build",
+   "title": "Make a sentence · I / Brazilian",
+   "tags": {
+    "content": [
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala",
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "MAKE A SENTENCE",
+    "html": "Make a sentence. Then reveal.",
+    "items": [
+     {
+      "id": "c1_96",
+      "q": "I / Brazilian",
+      "a": "I am Brazilian."
+     },
+     {
+      "id": "c1_97",
+      "q": "She / teacher",
+      "a": "She is a teacher."
+     },
+     {
+      "id": "c1_98",
+      "q": "He / tired",
+      "a": "He is tired."
+     },
+     {
+      "id": "c1_99",
+      "q": "They / happy",
+      "a": "They are happy."
+     },
+     {
+      "id": "c1_100",
+      "q": "We / students",
+      "a": "We are students."
+     }
+    ]
+   }
+  },
+  {
+   "key": "situations",
+   "title": "Real situations · introduce yourself",
+   "tags": {
+    "content": [
+     "Verb to be",
+     "Conversation"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "REAL SITUATIONS",
+    "html": "Draw a situation. Introduce yourself.",
+    "promptLabel": "SAY",
+    "lines": [
+     "A new classmate.",
+     "A new coworker.",
+     "A tourist in your city.",
+     "Your new neighbor.",
+     "An English class on the first day."
+    ],
+    "prompts": [
+     "your name",
+     "your nationality",
+     "your job",
+     "how you are today",
+     "your age"
+    ]
+   }
+  },
+  {
+   "key": "writing",
+   "title": "Writing · about you",
+   "tags": {
+    "content": [
+     "Verb to be"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "transform",
+    "label": "WRITING · ABOUT YOU",
+    "html": "Write a sentence about you.",
+    "items": [
+     {
+      "id": "c1_101",
+      "sentence": "your name",
+      "instruction": "write",
+      "answers": [
+       "My name is …"
+      ]
+     },
+     {
+      "id": "c1_102",
+      "sentence": "your nationality",
+      "instruction": "write",
+      "answers": [
+       "I am …"
+      ]
+     },
+     {
+      "id": "c1_103",
+      "sentence": "your job",
+      "instruction": "write",
+      "answers": [
+       "I am a …"
+      ]
+     },
+     {
+      "id": "c1_104",
+      "sentence": "how you are today",
+      "instruction": "write",
+      "answers": [
+       "I am …"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "feedback",
+   "title": "Feedback · first class",
+   "tags": {
+    "content": [
+     "Conversation"
+    ],
+    "levels": [
+     "A1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "scale",
+    "label": "FEEDBACK",
+    "html": "Choose a number.",
+    "left": "Easy",
+    "right": "Difficult",
+    "statements": [
+     "Today's class was…"
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Hello!",
+  "subtitle": "Greetings · alphabet · numbers 0–10 · subject pronouns · verb to be",
+  "plan": "Refeita da aula 01 original do Miguel, com as imagens dele. Pouco texto por vez. Ordem: cumprimentos e diálogo → nomes com 's → alfabeto (soletrar) → números 0–10 → pronomes → verb to be (quadro, usos, prática) → profissões (fotos) → nacionalidades → diálogos, leitura, escuta, ditado, frases e situações reais. A escuta e o ditado ficam escondidos: só o professor revela. As fotos das profissões vêm da internet (Wikimedia Commons).",
+  "level": "A1",
+  "tags": [
+   "Verb to be",
+   "Possessives",
+   "Vocabulary",
+   "Conversation",
+   "Pronunciation"
+  ],
+  "blocks": [
+   {
+    "model": "greetings"
+   },
+   {
+    "model": "say-answer"
+   },
+   {
+    "model": "feelings"
+   },
+   {
+    "model": "dialogue1"
+   },
+   {
+    "model": "meet"
+   },
+   {
+    "model": "possessive"
+   },
+   {
+    "model": "names-talk"
+   },
+   {
+    "model": "alphabet"
+   },
+   {
+    "model": "spell"
+   },
+   {
+    "model": "spell-game"
+   },
+   {
+    "model": "numbers"
+   },
+   {
+    "model": "numbers-race"
+   },
+   {
+    "model": "pronouns-sg"
+   },
+   {
+    "model": "pronouns-pl"
+   },
+   {
+    "model": "pronouns-pick"
+   },
+   {
+    "model": "be-chart"
+   },
+   {
+    "model": "be-use"
+   },
+   {
+    "model": "be-basics"
+   },
+   {
+    "model": "be-pick"
+   },
+   {
+    "model": "jobs"
+   },
+   {
+    "model": "jobs-talk"
+   },
+   {
+    "model": "nat-chart"
+   },
+   {
+    "model": "nat-say"
+   },
+   {
+    "model": "dialogue2"
+   },
+   {
+    "model": "dialogue2-q"
+   },
+   {
+    "model": "hidden"
+   },
+   {
+    "model": "reading"
+   },
+   {
+    "model": "reading-q"
+   },
+   {
+    "model": "listening"
+   },
+   {
+    "model": "dictation"
+   },
+   {
+    "model": "transform"
+   },
+   {
+    "model": "spot"
+   },
+   {
+    "model": "build"
+   },
+   {
+    "model": "situations"
+   },
+   {
+    "model": "writing"
+   },
+   {
+    "model": "feedback"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

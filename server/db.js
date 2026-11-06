@@ -4,11 +4,13 @@
 //   - o modelo é copiado para a aula, e a tabela block_uses registra de onde veio cada bloco;
 //   - o mapa de conteúdos é o resultado das avaliações (handover ou ajuste manual na ficha);
 //   - "usado em" e "visto em" são calculados, nunca digitados.
+import { stripEmoji, stripEmojiDeep } from './emoji.js';
 import { DatabaseSync } from 'node:sqlite';
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { canonicalContent, MAP_SECTIONS } from '../web/js/catalog.js';
+import { stripBlockMarks, countLiveMarks, comparable } from '../web/js/marks.js';
 
 export const DATA_DIR = path.resolve(process.env.TALKBOX_DATA || 'data');
 export const UPLOADS_DIR = path.join(DATA_DIR, 'uploads');
@@ -118,7 +120,7 @@ export function transaction(fn) {
 }
 
 // ---------- migração 1 (v0.4): banco "pra valer" ----------
-const SCHEMA_VERSION = 3;
+const SCHEMA_VERSION = 7;
 if (db.prepare('PRAGMA user_version').get().user_version < 1) {
   transaction(() => {
     // aulas: data, número, situação e arquivamento. Aulas que já existiam contam como dadas.
@@ -251,6 +253,43 @@ if (db.prepare('PRAGMA user_version').get().user_version < 3) {
   });
 }
 
+// ---------- migração 4 (v0.7): pacotes de imagens ----------
+// Um pacote junta imagens do acervo (ex.: "Animals"). Uma imagem pode estar em vários pacotes.
+// Tirar uma imagem do pacote só marca removed_at (nada é apagado).
+if (db.prepare('PRAGMA user_version').get().user_version < 4) {
+  transaction(() => {
+    db.exec(`
+      CREATE TABLE packs (
+        id          TEXT PRIMARY KEY,
+        name        TEXT NOT NULL,
+        description TEXT NOT NULL DEFAULT '',
+        keywords    TEXT NOT NULL DEFAULT '[]',   -- etiquetas que valem para o pacote inteiro
+        created_at  TEXT NOT NULL,
+        updated_at  TEXT NOT NULL,
+        archived_at TEXT
+      );
+      CREATE TABLE pack_items (
+        pack_id    TEXT NOT NULL,
+        model_id   TEXT NOT NULL,
+        position   INTEGER NOT NULL,
+        added_at   TEXT NOT NULL,
+        removed_at TEXT,                          -- preenchido = saiu do pacote
+        PRIMARY KEY (pack_id, model_id)
+      );
+      CREATE INDEX pack_items_by_model ON pack_items (model_id);
+      CREATE TRIGGER keep_packs      BEFORE DELETE ON packs      BEGIN SELECT RAISE(ABORT, 'Pacotes não são apagados: arquive.'); END;
+      CREATE TRIGGER keep_pack_items BEFORE DELETE ON pack_items BEGIN SELECT RAISE(ABORT, 'Itens de pacote não saem assim: tire do pacote.'); END;
+    `);
+    // O menu "Novo modelo" criava o modelo antes de ter conteúdo: quem entrava e saía deixava um "Sem título" vazio.
+    // Esses modelos vão para o arquivo (imagem sem imagem, ou modelo que nunca foi mexido), se nenhuma aula os usa.
+    db.prepare(`UPDATE models SET status = 'archived', updated_at = ?
+      WHERE status <> 'archived' AND title = 'Sem título' AND import_id IS NULL
+        AND id NOT IN (SELECT model_id FROM block_uses WHERE model_id IS NOT NULL)
+        AND ((type = 'image' AND COALESCE(json_extract(block, '$.src'), '') = '') OR updated_at = created_at)`).run(now());
+    db.exec('PRAGMA user_version = 4');
+  });
+}
+
 db.exec('CREATE INDEX IF NOT EXISTS lessons_by_student ON lessons (student_id, lesson_date)');
 
 // ---------- a aluna de exemplo "Julia" é a Júlia de verdade (pasta JÚLIA no Drive) ----------
@@ -311,7 +350,7 @@ const studentOut = (r) => {
 };
 
 const STUDENT_SELECT = `
-  SELECT s.*, MAX(l.lesson_date) AS last_lesson_at, COUNT(l.id) AS lesson_count
+  SELECT s.*, COALESCE(MAX(CASE WHEN l.status = 'done' THEN l.lesson_date END), MAX(l.lesson_date)) AS last_lesson_at, COUNT(l.id) AS lesson_count
   FROM students s LEFT JOIN lessons l ON l.student_id = s.id AND l.archived_at IS NULL`;
 
 export function listStudents({ active } = {}) {
@@ -324,6 +363,17 @@ export function listStudents({ active } = {}) {
 
 export function getStudent(id) {
   return studentOut(db.prepare(`${STUDENT_SELECT} WHERE s.id = ? GROUP BY s.id`).get(id));
+}
+
+/** Nome para comparar: sem acentos, sem diferença de maiúsculas e de espaços ("Júlia" = "julia"). */
+export const nameKey = (s) => String(s ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
+
+/** Aluno (ativo ou inativo) com o mesmo nome, para não cadastrar duas vezes. */
+export function findStudentByName(name, exceptId = null) {
+  const key = nameKey(name);
+  if (!key) return null;
+  const row = db.prepare('SELECT id, name, active FROM students').all().find((r) => r.id !== exceptId && nameKey(r.name) === key);
+  return row ? { id: row.id, name: row.name, active: !!row.active } : null;
 }
 
 export function createStudent({ name, level = '', goal = '', notes = '' }) {
@@ -376,11 +426,13 @@ export function mergeStudents(fromId, intoId, name) {
     const moved = db.prepare('UPDATE lessons SET student_id = ? WHERE student_id = ?').run(intoId, fromId).changes;
     db.prepare('UPDATE assessments SET student_id = ? WHERE student_id = ?').run(intoId, fromId);
     db.prepare('UPDATE pending SET student_id = ? WHERE student_id = ?').run(intoId, fromId);
-    // aulas que vieram do outro cadastro: renumera tudo pela ordem das datas
+    // aulas que vieram do outro cadastro: renumera pela ordem das datas, continuando as aulas de antes da plataforma
     if (moved) {
-      const rows = db.prepare('SELECT id FROM lessons WHERE student_id = ? ORDER BY lesson_date, created_at').all(intoId);
+      const prior = Math.max(into.priorLessons || 0, from.priorLessons || 0);
+      if (prior !== (into.priorLessons || 0)) db.prepare('UPDATE students SET prior_lessons = ? WHERE id = ?').run(prior, intoId);
+      const rows = db.prepare('SELECT id FROM lessons WHERE student_id = ? AND archived_at IS NULL ORDER BY lesson_date, created_at').all(intoId);
       const setNum = db.prepare('UPDATE lessons SET number = ? WHERE id = ?');
-      rows.forEach((r, i) => setNum.run(i + 1, r.id));
+      rows.forEach((r, i) => setNum.run(prior + i + 1, r.id));
     }
     const fill = (a, b) => (String(a || '').trim() ? a : b || '');
     db.prepare("UPDATE students SET name = ?, active = 0, notes = ?, updated_at = ? WHERE id = ?")
@@ -459,7 +511,159 @@ function syncUses(lessonId, doc) {
   db.prepare('DELETE FROM block_uses WHERE lesson_id = ?').run(lessonId);
   const ins = db.prepare('INSERT OR IGNORE INTO block_uses (lesson_id, block_id, model_id, position) VALUES (?, ?, ?, ?)');
   (doc.blocks || []).forEach((b, i) => {
-    if (b?.id) ins.run(lessonId, String(b.id), b.source?.modelId ? String(b.source.modelId) : null, i + 1);
+    const model = b?.ref || b?.source?.modelId;
+    if (b?.id) ins.run(lessonId, String(b.id), model ? String(model) : null, i + 1);
+  });
+}
+
+// ============================== AULA QUE APONTA PARA A BIBLIOTECA (v0.8) ==============================
+// No banco, um bloco que veio da biblioteca é só { id, ref } (+ pending, se for retomada de pendência).
+// Quem lê a aula (getLesson) recebe o bloco inteiro, montado a partir do modelo. Mudou o modelo, mudou em todas as aulas.
+// O modelo só muda na aba Modelos. O que é escrito ou destacado num bloco da biblioteca durante a aula (v0.9) fica
+// só nesta aula, no state (state.blocks[id].live), como as respostas: nunca vai para o modelo e nunca é copiado.
+// "Voltar ao original" (no bloco ou na aula inteira, depois de exportar o PDF) apaga essa versão da aula.
+// Blocos criados na própria aula (anotações, um bloco em branco, "Só nesta aula") continuam inteiros no doc.
+const modelRow = db.prepare('SELECT id, title, type, block, status FROM models WHERE id = ?');
+const META = ['id', 'type', 'ref', 'source', 'pending', 'local', 'edited'];
+const content = (b) => { const c = JSON.parse(JSON.stringify(b || {})); for (const k of META) delete c[k]; return c; };
+const unmarked = (b) => { const c = content(b); stripBlockMarks(c); return c; };
+
+/** O bloco inteiro de uma entrada { id, ref } da aula. */
+function resolveBlock(entry, state) {
+  if (!entry?.ref) return entry;
+  const m = modelRow.get(String(entry.ref));
+  if (!m) return { ...entry, type: entry.type || 'text', html: '<i>(o modelo desta atividade não foi encontrado)</i>' };
+  const live = state?.blocks?.[entry.id]?.live;
+  return { ...(live || json(m.block, {})), id: entry.id, type: m.type, ref: m.id, source: { modelId: m.id, title: m.title }, ...(entry.pending ? { pending: entry.pending } : {}), ...(live ? { edited: true } : {}) };
+}
+
+/** Ids dos itens do bloco antigo → ids dos itens do modelo (mesma ordem), para as respostas da aula continuarem valendo. */
+function remapItemState(state, blockId, from, to) {
+  const st = state.blocks?.[blockId];
+  if (!st) return;
+  let txt = JSON.stringify(st);
+  for (const key of ['items', 'pairs', 'images']) {
+    (from[key] || []).forEach((it, i) => { const nid = to[key]?.[i]?.id; if (it?.id && nid && it.id !== nid) txt = txt.split(JSON.stringify(it.id)).join(JSON.stringify(nid)); });
+  }
+  state.blocks[blockId] = JSON.parse(txt);
+}
+
+/**
+ * Deixa a aula só com referências: { id, ref } para cada bloco da biblioteca. Mexe no state (marca-texto da aula).
+ */
+function compactDoc(doc, state) {
+  const blocks = (doc.blocks || []).map((b0) => {
+    if (!b0 || typeof b0 !== 'object') return b0;
+    const b = { ...b0 };
+    if (b.local) { delete b.ref; return b; }
+    // já é só a referência (ex.: uma pendência voltando para a aula)
+    if (b.ref && !Object.keys(content(b)).length) return { id: b.id, ref: b.ref, ...(b.pending ? { pending: b.pending } : {}) };
+    let m = b.ref ? modelRow.get(String(b.ref)) : null;
+    if (!b.ref && b.source?.modelId) {
+      // bloco antigo (ou de um pacote): vira referência se for igual ao modelo, fora o marca-texto da aula
+      const cand = modelRow.get(String(b.source.modelId));
+      const mb = cand && json(cand.block, {});
+      if (cand && cand.type === b.type && comparable(unmarked(b)) === comparable(content(mb))) {
+        m = cand;
+        remapItemState(state, b.id, b, mb);
+        b.ref = cand.id;
+        // os itens passam a ser os do modelo
+        for (const key of ['items', 'pairs', 'images']) if (Array.isArray(mb[key])) b[key] = b[key]?.map((it, i) => ({ ...it, id: mb[key][i]?.id ?? it.id }));
+      }
+    }
+    if (!b.ref) return b;
+    if (!m) { delete b.ref; return b; }
+    // diferente do modelo (texto mudado ou marca-texto da aula): a versão da aula fica no state, o modelo não muda
+    if (comparable(content(b)) !== comparable(content(json(m.block, {})))) ((state.blocks ||= {})[b.id] ||= {}).live = content(b);
+    else if (state.blocks?.[b.id]) delete state.blocks[b.id].live;
+    return { id: b.id, ref: m.id, ...(b.pending ? { pending: b.pending } : {}) };
+  });
+  // marca-texto de blocos que saíram da aula não precisa ficar
+  const ids = new Set(blocks.map((b) => b?.id));
+  for (const [k, v] of Object.entries(state.blocks || {})) if (v?.live && !ids.has(k)) delete v.live;
+  const { blocks: _, ...rest } = doc;
+  return { ...rest, blocks };
+}
+
+/** O bloco que a pendência guarda: só a referência, se veio da biblioteca. */
+const pendingBlock = (b) => { const { pending, ...rest } = b; return rest.ref ? { id: rest.id, type: rest.type, ref: rest.ref } : rest; };
+
+const resolveDoc = (doc, state) => ({ ...doc, blocks: (doc.blocks || []).map((b) => resolveBlock(b, state)) });
+const stateOut = (state) => {
+  const st = JSON.parse(JSON.stringify(state || {}));
+  for (const v of Object.values(st.blocks || {})) if (v && typeof v === 'object') delete v.live;
+  return st;
+};
+
+// ---------- migração 5 (v0.8): aulas que apontam para a biblioteca ----------
+// Cada bloco de aula que é igual ao modelo de onde veio (fora o marca-texto da aula) vira só { id, ref }.
+// Blocos que foram mudados na aula ficam como estão (com "Voltar ao original" para virar referência).
+if (db.prepare('PRAGMA user_version').get().user_version < 5) {
+  // antes de reescrever as aulas, uma cópia do banco como ele estava (data/backups/talkbox-antes-v0.8.db)
+  const before = path.join(BACKUP_DIR, 'talkbox-antes-v0.8.db');
+  if (!fs.existsSync(before) && db.prepare('SELECT COUNT(*) AS n FROM lessons').get().n) {
+    fs.mkdirSync(BACKUP_DIR, { recursive: true });
+    db.exec(`VACUUM INTO '${before.replace(/'/g, "''")}'`);
+  }
+  transaction(() => {
+    const save = db.prepare('UPDATE lessons SET doc = ?, state = ? WHERE id = ?');
+    for (const r of db.prepare('SELECT id, doc, state FROM lessons').all()) {
+      const state = json(r.state, {});
+      const doc = compactDoc(json(r.doc, { blocks: [] }), state);
+      save.run(JSON.stringify(doc), JSON.stringify(state), r.id);
+    }
+    const savePending = db.prepare('UPDATE pending SET block = ? WHERE id = ?');
+    for (const p of db.prepare('SELECT id, block FROM pending').all()) {
+      const b = json(p.block, {});
+      const out = compactDoc({ blocks: [b] }, {}).blocks[0];
+      if (out?.ref) savePending.run(JSON.stringify({ id: out.id, type: b.type, ref: out.ref }), p.id);
+    }
+    db.exec('PRAGMA user_version = 5');
+  });
+}
+
+// ---------- migração 6 (v0.9): aulas do curso ----------
+// course_number = número da aula no currículo do curso (1 a 100). Aula do curso não tem aluno: ela é o padrão
+// que você copia para um aluno ("Dar esta aula"). Não aparece nas listas de aulas dos alunos.
+if (db.prepare('PRAGMA user_version').get().user_version < 6) {
+  transaction(() => {
+    if (!cols('lessons').includes('course_number')) db.exec('ALTER TABLE lessons ADD COLUMN course_number INTEGER');
+    db.exec('PRAGMA user_version = 6');
+  });
+}
+
+// ---------- migração 7 (v1.0): sem emojis no material ----------
+// Emojis são proibidos no material. Sai todo emoji dos modelos (a versão anterior fica no histórico do modelo),
+// das aulas ainda não dadas, das aulas do curso e das pendências abertas. Aulas já dadas ficam como foram.
+if (db.prepare('PRAGMA user_version').get().user_version < 7) {
+  const before = path.join(BACKUP_DIR, 'talkbox-antes-v1.0.db');
+  if (!fs.existsSync(before) && db.prepare('SELECT COUNT(*) AS n FROM models').get().n) {
+    fs.mkdirSync(BACKUP_DIR, { recursive: true });
+    db.exec(`VACUUM INTO '${before.replace(/'/g, "''")}'`);
+  }
+  transaction(() => {
+    const keep = db.prepare('INSERT INTO model_versions (model_id, title, block, tags, saved_at) VALUES (?, ?, ?, ?, ?)');
+    const saveModel = db.prepare('UPDATE models SET title = ?, block = ? WHERE id = ?');
+    for (const m of db.prepare('SELECT id, title, block, tags FROM models').all()) {
+      const title = stripEmoji(m.title);
+      const block = JSON.stringify(stripEmojiDeep(json(m.block, {})));
+      if (title === m.title && block === JSON.stringify(json(m.block, {}))) continue;
+      keep.run(m.id, m.title, m.block, m.tags, now());
+      saveModel.run(title, block, m.id);
+    }
+    const saveLesson = db.prepare('UPDATE lessons SET title = ?, doc = ?, state = ? WHERE id = ?');
+    for (const l of db.prepare("SELECT id, title, doc, state FROM lessons WHERE status <> 'done' OR course_number IS NOT NULL").all()) {
+      const title = stripEmoji(l.title);
+      const doc = JSON.stringify(stripEmojiDeep(json(l.doc, {})));
+      const state = JSON.stringify(stripEmojiDeep(json(l.state, {})));
+      if (title !== l.title || doc !== JSON.stringify(json(l.doc, {})) || state !== JSON.stringify(json(l.state, {}))) saveLesson.run(title, doc, state, l.id);
+    }
+    const savePending = db.prepare('UPDATE pending SET block = ? WHERE id = ?');
+    for (const p of db.prepare("SELECT id, block FROM pending WHERE status = 'open'").all()) {
+      const block = JSON.stringify(stripEmojiDeep(json(p.block, {})));
+      if (block !== JSON.stringify(json(p.block, {}))) savePending.run(block, p.id);
+    }
+    db.exec('PRAGMA user_version = 7');
   });
 }
 
@@ -473,8 +677,9 @@ const lessonOut = (row) =>
     date: row.lesson_date,
     status: row.status,
     receivedMessage: row.received_message,
-    doc: json(row.doc, { blocks: [] }),
-    state: json(row.state, {}),
+    courseNumber: row.course_number ?? null,
+    doc: resolveDoc(json(row.doc, { blocks: [] }), json(row.state, {})),
+    state: stateOut(json(row.state, {})),
     handover: handoverOut(db.prepare('SELECT * FROM handovers WHERE lesson_id = ? AND undone_at IS NULL').get(row.id)),
     createdAt: row.created_at,
     updatedAt: row.updated_at,
@@ -513,8 +718,8 @@ const lessonSummary = (r) => {
 };
 const LESSON_SELECT = 'SELECT l.*, s.name AS student_name FROM lessons l LEFT JOIN students s ON s.id = l.student_id';
 
-export function listLessons({ studentId, limit } = {}) {
-  const where = ['l.archived_at IS NULL'];
+export function listLessons({ studentId, limit, course = false } = {}) {
+  const where = ['l.archived_at IS NULL', course ? 'l.course_number IS NOT NULL' : 'l.course_number IS NULL'];
   if (studentId) where.push('l.student_id = ?');
   const order = studentId ? 'ORDER BY l.lesson_date DESC, l.created_at DESC' : 'ORDER BY l.updated_at DESC';
   const lim = limit ? `LIMIT ${Number(limit) | 0}` : '';
@@ -524,22 +729,35 @@ export function listLessons({ studentId, limit } = {}) {
     .map(lessonSummary);
 }
 
+/** As aulas do curso que já existem (uma por número; se houver duas, vale a mais recente). */
+export function listCourse() {
+  const out = new Map();
+  for (const r of db.prepare('SELECT id, title, course_number, doc, updated_at FROM lessons WHERE course_number IS NOT NULL AND archived_at IS NULL ORDER BY updated_at').all()) {
+    const doc = json(r.doc, { blocks: [] });
+    out.set(r.course_number, { number: r.course_number, id: r.id, title: r.title, subtitle: doc.subtitle || '', blocks: (doc.blocks || []).length, updatedAt: r.updated_at });
+  }
+  return [...out.values()].sort((a, b) => a.number - b.number);
+}
+
 export function getLesson(id) {
   return lessonOut(db.prepare(`${LESSON_SELECT} WHERE l.id = ? AND l.archived_at IS NULL`).get(id));
 }
 
-export function createLesson({ id = newId(), title, studentId = null, doc, state = {}, date, number, status = 'preparing', receivedMessage = '' }) {
+export function createLesson({ id = newId(), title, studentId = null, doc, state = {}, date, number, status = 'preparing', receivedMessage = '', courseNumber = null }) {
   const name = studentId ? db.prepare('SELECT name FROM students WHERE id = ?').get(studentId)?.name || '' : '';
   if (number === undefined && studentId) {
-    const max = db.prepare('SELECT MAX(number) AS n FROM lessons WHERE student_id = ?').get(studentId).n || 0;
+    // aula arquivada ("excluída") não conta: a próxima aula pega o número dela
+    const max = db.prepare('SELECT MAX(number) AS n FROM lessons WHERE student_id = ? AND archived_at IS NULL').get(studentId).n || 0;
     const prior = db.prepare('SELECT prior_lessons AS p FROM students WHERE id = ?').get(studentId)?.p || 0;
     number = Math.max(max, prior) + 1;
   }
+  state = JSON.parse(JSON.stringify(state || {}));
+  doc = compactDoc(doc, state);
   return transaction(() => {
     db.prepare(
-      `INSERT INTO lessons (id, title, student, student_id, doc, state, lesson_date, number, status, received_message, created_at, updated_at)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
-    ).run(id, title, name, studentId, JSON.stringify(doc), JSON.stringify(state), date || today(), number ?? null, status, receivedMessage, now(), now());
+      `INSERT INTO lessons (id, title, student, student_id, doc, state, lesson_date, number, status, received_message, created_at, updated_at, course_number)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+    ).run(id, title, name, studentId, JSON.stringify(doc), JSON.stringify(state), date || today(), number ?? null, status, receivedMessage, now(), now(), courseNumber ?? null);
     syncUses(id, doc);
     return getLesson(id);
   });
@@ -548,23 +766,62 @@ export function createLesson({ id = newId(), title, studentId = null, doc, state
 export function updateLesson(id, patch) {
   const cur = getLesson(id);
   if (!cur) return null;
+  const row = db.prepare('SELECT doc, state FROM lessons WHERE id = ?').get(id);
+  const stored = json(row.state, {});
   return transaction(() => {
+    const title = patch.title === undefined ? cur.title : String(patch.title).trim() || 'Sem título';
+    // o marca-texto dos blocos da biblioteca (state.blocks[id].live) é do servidor: o que vem do navegador não vale
+    const state = patch.state ? JSON.parse(JSON.stringify(patch.state)) : stored;
+    state.blocks ||= {};
+    for (const v of Object.values(state.blocks)) if (v && typeof v === 'object') delete v.live;
+    for (const [k, v] of Object.entries(stored.blocks || {})) if (v?.live) (state.blocks[k] ||= {}).live = v.live;
+    const doc = patch.doc ? compactDoc(patch.doc, state) : json(row.doc, { blocks: [] });
     db.prepare('UPDATE lessons SET title = ?, doc = ?, state = ?, lesson_date = ?, updated_at = ? WHERE id = ?').run(
-      patch.title ?? cur.title,
-      JSON.stringify(patch.doc ?? cur.doc),
-      JSON.stringify(patch.state ?? cur.state),
+      title,
+      JSON.stringify(doc),
+      JSON.stringify(state),
       patch.date ?? cur.date,
       now(),
       id
     );
-    if (patch.doc) syncUses(id, patch.doc);
+    if (patch.doc) syncUses(id, doc);
     return getLesson(id);
   });
 }
 
-/** "Excluir" uma aula: ela sai das listas, mas fica guardada (regra 2.1). */
+/**
+ * Volta os blocos da biblioteca ao original: apaga o que foi escrito e destacado neles nesta aula (state.blocks[id].live).
+ * blockIds: só esses blocos; sem blockIds, a aula inteira. As respostas, a caneta e os blocos só desta aula ficam.
+ */
+export function resetLesson(id, { blockIds = null } = {}) {
+  const row = db.prepare('SELECT state FROM lessons WHERE id = ? AND archived_at IS NULL').get(id);
+  if (!row) return null;
+  const state = json(row.state, {});
+  const only = blockIds ? new Set(blockIds.map(String)) : null;
+  let reset = 0;
+  for (const [k, v] of Object.entries(state.blocks || {})) {
+    if (v?.live && (!only || only.has(k))) { delete v.live; reset++; }
+  }
+  if (reset) db.prepare('UPDATE lessons SET state = ?, updated_at = ? WHERE id = ?').run(JSON.stringify(state), now(), id);
+  return { reset, lesson: getLesson(id) };
+}
+
+/**
+ * "Excluir" uma aula: ela sai das listas, mas fica guardada (regra 2.1).
+ * Se ela já tinha sido finalizada, o finalizar é desfeito antes (como no Reabrir): as avaliações dela saem do mapa,
+ * os pendentes que ela criou são descartados e os que ela resolveu voltam a ficar pendentes. Assim o mapa e a
+ * ficha não ficam apontando para uma aula que não aparece mais.
+ */
 export function archiveLesson(id) {
-  return db.prepare('UPDATE lessons SET archived_at = ?, updated_at = ? WHERE id = ? AND archived_at IS NULL').run(now(), now(), id).changes > 0;
+  const l = getLesson(id);
+  if (!l) return false;
+  return transaction(() => {
+    if (l.status === 'done') {
+      undoHandover(id, now());
+      db.prepare("UPDATE lessons SET status = 'preparing' WHERE id = ?").run(id);
+    }
+    return db.prepare('UPDATE lessons SET archived_at = ?, updated_at = ? WHERE id = ? AND archived_at IS NULL').run(now(), now(), id).changes > 0;
+  });
 }
 export const deleteLesson = archiveLesson;
 
@@ -620,15 +877,16 @@ export function finishLesson(lessonId, { lastBlockId = null, assessments = {}, m
     blocks.forEach((b, i) => {
       const done = i < cut;
       if (b.pending) {
+        // uma pendência descartada na ficha não volta a contar, mesmo que o bloco ainda esteja na aula
         if (done) {
-          db.prepare("UPDATE pending SET status = 'resolved', resolved_lesson_id = ?, closed_at = ? WHERE id = ? AND status = 'open'").run(lessonId, t, b.pending);
-          summary.resolvedPending++;
+          const ch = db.prepare("UPDATE pending SET status = 'resolved', resolved_lesson_id = ?, closed_at = ? WHERE id = ? AND status = 'open'").run(lessonId, t, b.pending).changes;
+          summary.resolvedPending += ch;
         } else {
-          db.prepare('UPDATE pending SET block = ? WHERE id = ?').run(JSON.stringify(b), b.pending);
-          summary.stillPending++;
+          const ch = db.prepare("UPDATE pending SET block = ? WHERE id = ? AND status = 'open'").run(JSON.stringify(pendingBlock(b)), b.pending).changes;
+          summary.stillPending += ch;
         }
       } else if (!done && !skipsPending(b)) {
-        db.prepare('INSERT INTO pending (id, student_id, lesson_id, block, created_at) VALUES (?, ?, ?, ?, ?)').run(newId(), l.studentId, lessonId, JSON.stringify(b), t);
+        db.prepare('INSERT INTO pending (id, student_id, lesson_id, block, created_at) VALUES (?, ?, ?, ?, ?)').run(newId(), l.studentId, lessonId, JSON.stringify(pendingBlock(b)), t);
         summary.newPending++;
       }
     });
@@ -649,13 +907,19 @@ export function reopenLesson(lessonId) {
   if (l.status !== 'done') throw new RuleError('Esta aula ainda não foi finalizada.');
   return transaction(() => {
     const t = now();
-    db.prepare('UPDATE handovers SET undone_at = ? WHERE lesson_id = ? AND undone_at IS NULL').run(t, lessonId);
-    db.prepare('UPDATE assessments SET voided_at = ? WHERE lesson_id = ? AND voided_at IS NULL').run(t, lessonId);
-    const discarded = db.prepare("UPDATE pending SET status = 'discarded', closed_at = ? WHERE lesson_id = ? AND status = 'open'").run(t, lessonId).changes;
-    const reopened = db.prepare("UPDATE pending SET status = 'open', resolved_lesson_id = NULL, closed_at = NULL WHERE resolved_lesson_id = ? AND status = 'resolved'").run(lessonId).changes;
+    const out = undoHandover(lessonId, t);
     db.prepare("UPDATE lessons SET status = 'preparing', updated_at = ? WHERE id = ?").run(t, lessonId);
-    return { discarded, reopened };
+    return out;
   });
+}
+
+/** O que o Reabrir (e o arquivar de uma aula finalizada) desfaz: handover, avaliações e pendências da aula. */
+function undoHandover(lessonId, t) {
+  db.prepare('UPDATE handovers SET undone_at = ? WHERE lesson_id = ? AND undone_at IS NULL').run(t, lessonId);
+  db.prepare('UPDATE assessments SET voided_at = ? WHERE lesson_id = ? AND voided_at IS NULL').run(t, lessonId);
+  const discarded = db.prepare("UPDATE pending SET status = 'discarded', closed_at = ? WHERE lesson_id = ? AND status = 'open'").run(t, lessonId).changes;
+  const reopened = db.prepare("UPDATE pending SET status = 'open', resolved_lesson_id = NULL, closed_at = NULL WHERE resolved_lesson_id = ? AND status = 'resolved'").run(lessonId).changes;
+  return { discarded, reopened };
 }
 
 /** "Onde paramos" na ficha. */
@@ -669,7 +933,7 @@ export function whereWeStopped(studentId) {
               WHERE p.student_id = ? AND p.status = 'open' ORDER BY p.created_at`)
     .all(studentId)
     .map((p) => {
-      const b = json(p.block, {});
+      const b = resolveBlock(json(p.block, {}), {});
       return { id: p.id, type: b.type, title: b.source?.title || b.label || '', since: p.lesson_date };
     });
   return {
@@ -697,14 +961,115 @@ export function discardPending(id) {
   return db.prepare("UPDATE pending SET status = 'discarded', closed_at = ? WHERE id = ? AND status = 'open'").run(now(), id).changes > 0;
 }
 
+// ============================== COPIAR AULA ==============================
+// Copiar uma aula (para o mesmo aluno ou para outro) leva só o material, nunca o que aconteceu na aula:
+//   - respostas, caneta e tamanho da fonte ficam de fora (estão no "state", que não é copiado);
+//   - o bloco de anotações vai vazio e a anotação para a próxima aula não vai;
+//   - pendências não vão (a cópia não é a retomada);
+//   - blocos que vieram da biblioteca voltam ao modelo original (tira o que foi escrito ou marcado na aula);
+//   - nos outros blocos sai o marca-texto feito na aula (as cores do material, em #RRGGBB, ficam).
+const textOf = (html) => String(html || '').replace(/<[^>]*>|&nbsp;/g, '').trim();
+const liveModel = (id) => (id ? db.prepare("SELECT id, title, block FROM models WHERE id = ? AND status <> 'archived'").get(String(id)) : null);
+
+/** Ids novos para o bloco e para os itens dele. */
+function withFreshIds(b) {
+  b.id = 'b' + crypto.randomBytes(5).toString('hex');
+  for (const key of ['items', 'pairs']) (b[key] || []).forEach((it) => it && (it.id = 'i' + crypto.randomBytes(5).toString('hex')));
+  return b;
+}
+
+/** O que a cópia vai mudar (para a janela de copiar mostrar antes). */
+export function copyInfo(lessonId) {
+  const l = getLesson(lessonId);
+  if (!l) return null;
+  let fromModels = 0, marks = 0, marksFree = 0;
+  const changed = [];
+  for (const b of l.doc.blocks) {
+    if (b.type === 'notes') continue;
+    const n = countLiveMarks(b);
+    marks += n;
+    const m = liveModel(b.source?.modelId);
+    if (!m) { marksFree += n; continue; }
+    fromModels++;
+    if (comparable(json(m.block, {})) !== comparable(b)) changed.push(b.source.title || b.label || b.type);
+  }
+  return {
+    lessonId,
+    title: l.title,
+    studentId: l.studentId,
+    blocks: l.doc.blocks.length,
+    fromModels,
+    changed,
+    marks, // marca-texto feito na aula, em todos os blocos
+    marksFree, // só nos blocos que não vieram da biblioteca (os outros voltam ao original)
+    notes: l.doc.blocks.some((b) => b.type === 'notes' && textOf(b.html)),
+  };
+}
+
+/** Os blocos limpos de uma aula (usado na cópia e na limpeza de uma aula). */
+function cleanBlocks(blocks, { original = true, keepMarks = false, keepNotes = false, keepLabels = [], freshIds = true } = {}) {
+  const report = { restored: 0, marks: 0, notesCleared: false };
+  const keep = new Set(keepLabels.map((x) => String(x).trim().toLowerCase()));
+  const out = blocks.map((b0) => {
+    let b = JSON.parse(JSON.stringify(b0));
+    delete b.pending;
+    if (b.type === 'notes') {
+      if (!keepNotes && textOf(b.html)) { report.notesCleared = true; b.html = ''; }
+    } else {
+      const m = original && !keep.has(String(b.label || '').trim().toLowerCase()) ? liveModel(b.source?.modelId) : null;
+      if (m) {
+        const fresh = json(m.block, {});
+        if (comparable(fresh) !== comparable(b)) report.restored++;
+        b = { ...fresh, id: b.id, type: b.type, source: { modelId: m.id, title: m.title } };
+      } else if (!keepMarks) {
+        report.marks += stripBlockMarks(b);
+      }
+    }
+    return freshIds ? withFreshIds(b) : b;
+  });
+  return { blocks: out, report };
+}
+
+/**
+ * Copia uma aula. studentId: para quem (null = sem aluno). original: blocos da biblioteca voltam ao modelo.
+ * keepMarks: mantém o marca-texto feito na aula. Devolve { lesson, report }.
+ */
+export function copyLesson(lessonId, { studentId = null, title, original = true, keepMarks = false } = {}) {
+  const src = getLesson(lessonId);
+  if (!src) return null;
+  const name = String(title ?? '').trim() || src.title;
+  const { blocks, report } = cleanBlocks(src.doc.blocks, { original, keepMarks });
+  const lesson = createLesson({ title: name, studentId, doc: { ...src.doc, title: name, blocks } });
+  return { lesson, report };
+}
+
+/**
+ * Limpa uma aula que ainda não foi dada (pacote "clean"): volta os blocos da biblioteca ao original, menos os de
+ * keepLabels, tira o marca-texto e esvazia as anotações. Os ids dos blocos ficam os mesmos.
+ */
+export function cleanLesson(lessonId, opts = {}) {
+  const l = getLesson(lessonId);
+  if (!l) return null;
+  const { blocks, report } = cleanBlocks(l.doc.blocks, { ...opts, freshIds: false });
+  updateLesson(lessonId, { doc: { ...l.doc, blocks } });
+  return report;
+}
+
 // ============================== MODELOS ==============================
 // Um modelo é uma atividade pronta (um bloco) com etiquetas. Ao entrar numa aula ele é COPIADO;
 // a cópia guarda de onde veio em block.source.modelId (requisitos 7.4).
+/** Etiquetas livres: "means of transport, Car, blue" → ['means of transport', 'car', 'blue']. */
+export function cleanKeywords(list) {
+  const raw = Array.isArray(list) ? list : String(list ?? '').split(',');
+  return [...new Set(raw.map((x) => String(x ?? '').trim().toLowerCase().replace(/\s+/g, ' ').slice(0, 60)).filter(Boolean))].slice(0, 40);
+}
+
 function cleanTags(t = {}) {
   return {
     content: [...new Set((t.content || []).map((x) => canonicalContent(x)).filter(Boolean))],
     levels: [...new Set((t.levels || []).map(String))],
     skills: [...new Set((t.skills || []).map(String))],
+    keywords: cleanKeywords(t.keywords),
   };
 }
 
@@ -746,14 +1111,24 @@ const allUses = db.prepare(`
   WHERE model_id IS NOT NULL AND lesson_id NOT IN (SELECT id FROM lessons WHERE archived_at IS NOT NULL)
   GROUP BY model_id`);
 
+const allPackItems = db.prepare(`
+  SELECT i.model_id, i.pack_id FROM pack_items i JOIN packs p ON p.id = i.pack_id
+  WHERE i.removed_at IS NULL AND p.archived_at IS NULL ORDER BY p.name COLLATE NOCASE`);
+const packsOfModel = () => {
+  const map = new Map();
+  for (const r of allPackItems.all()) (map.get(r.model_id) || map.set(r.model_id, []).get(r.model_id)).push(r.pack_id);
+  return map;
+};
+
 export function listModels({ studentId, status } = {}) {
   const seen = studentId ? new Map(seenOf.all(studentId).map((r) => [r.model_id, r.at])) : null;
   const uses = new Map(allUses.all().map((r) => [r.model_id, r.n]));
+  const packs = packsOfModel();
   const where = status && MODEL_STATUSES[status] ? 'status = ?' : "status IN ('published', 'review')";
   return db
     .prepare(`SELECT * FROM models WHERE ${where} ORDER BY updated_at DESC`)
     .all(...(status && MODEL_STATUSES[status] ? [status] : []))
-    .map((r) => modelOut(r, { uses: uses.get(r.id) || 0, ...(seen ? { seenAt: seen.get(r.id) || null } : {}) }));
+    .map((r) => modelOut(r, { uses: uses.get(r.id) || 0, packs: packs.get(r.id) || [], ...(seen ? { seenAt: seen.get(r.id) || null } : {}) }));
 }
 
 export function getModel(id) {
@@ -763,17 +1138,20 @@ export function getModel(id) {
     .prepare('SELECT id, title, saved_at FROM model_versions WHERE model_id = ? ORDER BY saved_at DESC LIMIT 30')
     .all(id)
     .map((v) => ({ id: v.id, title: v.title, savedAt: v.saved_at }));
-  return modelOut(r, { uses: usesOf.get(id).n, versions });
+  return modelOut(r, { uses: usesOf.get(id).n, versions, packs: packsOfModel().get(id) || [] });
 }
 
-export function createModel({ title, type, block, tags, status = 'published', importId = null }) {
+export function createModel({ title, type, block, tags, status = 'published', importId = null, packIds = [] }) {
   const id = newId();
   const { source, pending, ...clean } = block || {};
   const t = cleanTags(tags);
-  db.prepare(
-    'INSERT INTO models (id, title, type, block, tags, status, import_id, needs_content, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
-  ).run(id, title, type, JSON.stringify({ ...clean, type }), JSON.stringify(t), status, importId, t.content.length ? 0 : 1, now(), now());
-  return getModel(id);
+  return transaction(() => {
+    db.prepare(
+      'INSERT INTO models (id, title, type, block, tags, status, import_id, needs_content, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+    ).run(id, title, type, JSON.stringify({ ...clean, type }), JSON.stringify(t), status, importId, t.content.length || t.keywords.length ? 0 : 1, now(), now());
+    for (const p of packIds || []) addToPack(p, [id]);
+    return getModel(id);
+  });
 }
 
 // Guarda uma versão anterior no histórico, no máximo uma a cada 10 minutos de edição.
@@ -795,7 +1173,7 @@ export function updateModel(id, patch) {
     patch.title ?? cur.title,
     patch.block ? JSON.stringify({ ...patch.block, type: cur.type }) : cur.block,
     JSON.stringify(tags),
-    (tags.content || []).length ? 0 : 1,
+    (tags.content || []).length || (tags.keywords || []).length ? 0 : 1,
     now(),
     id
   );
@@ -803,15 +1181,19 @@ export function updateModel(id, patch) {
 }
 
 export function restoreModelVersion(id, versionId) {
-  const v = db.prepare('SELECT * FROM model_versions WHERE id = ? AND model_id = ?').get(versionId, id);
+  const cur = db.prepare("SELECT * FROM models WHERE id = ? AND status <> 'archived'").get(id);
+  const v = cur && db.prepare('SELECT * FROM model_versions WHERE id = ? AND model_id = ?').get(versionId, id);
   if (!v) return null;
-  // a versão atual também vai para o histórico, para dar para voltar atrás
-  const cur = db.prepare('SELECT * FROM models WHERE id = ?').get(id);
-  db.prepare('INSERT INTO model_versions (model_id, title, block, tags, saved_at) VALUES (?, ?, ?, ?, ?)').run(
-    id, cur.title, cur.block, cur.tags, now()
-  );
-  db.prepare('UPDATE models SET title = ?, block = ?, tags = ?, updated_at = ? WHERE id = ?').run(v.title, v.block, v.tags, now(), id);
-  return getModel(id);
+  return transaction(() => {
+    // a versão atual também vai para o histórico, para dar para voltar atrás
+    db.prepare('INSERT INTO model_versions (model_id, title, block, tags, saved_at) VALUES (?, ?, ?, ?, ?)').run(
+      id, cur.title, cur.block, cur.tags, now()
+    );
+    const tags = cleanTags(json(v.tags, {}));
+    db.prepare('UPDATE models SET title = ?, block = ?, tags = ?, needs_content = ?, updated_at = ? WHERE id = ?')
+      .run(v.title, v.block, JSON.stringify(tags), tags.content.length || tags.keywords.length ? 0 : 1, now(), id);
+    return getModel(id);
+  });
 }
 
 /** "Excluir" um modelo: sai da biblioteca, mas as versões e o histórico de uso ficam (regra 2.1). */
@@ -827,6 +1209,139 @@ export function approveModel(id) {
 }
 
 export const countModels = () => db.prepare("SELECT COUNT(*) AS n FROM models WHERE status = 'published'").get().n;
+
+// ============================== PACOTES DE IMAGENS ==============================
+// Um pacote junta imagens do acervo (modelos do tipo imagem), como "Animals". Uma imagem pode estar em vários.
+const packItemsOf = db.prepare(`
+  SELECT m.* FROM pack_items i JOIN models m ON m.id = i.model_id
+  WHERE i.pack_id = ? AND i.removed_at IS NULL AND m.status <> 'archived' ORDER BY i.position, i.added_at`);
+
+const packOut = (r) => {
+  if (!r) return r;
+  const items = packItemsOf.all(r.id);
+  return {
+    id: r.id,
+    name: r.name,
+    description: r.description,
+    keywords: cleanKeywords(json(r.keywords, [])),
+    count: items.length,
+    cover: items.slice(0, 4).map((m) => json(m.block, {}).src).filter(Boolean),
+    createdAt: r.created_at,
+    updatedAt: r.updated_at,
+  };
+};
+
+export function listPacks() {
+  return db.prepare('SELECT * FROM packs WHERE archived_at IS NULL ORDER BY name COLLATE NOCASE').all().map(packOut);
+}
+
+export function getPack(id) {
+  const r = db.prepare('SELECT * FROM packs WHERE id = ? AND archived_at IS NULL').get(id);
+  if (!r) return null;
+  const uses = new Map(allUses.all().map((x) => [x.model_id, x.n]));
+  const packs = packsOfModel();
+  return { ...packOut(r), items: packItemsOf.all(id).map((m) => modelOut(m, { uses: uses.get(m.id) || 0, packs: packs.get(m.id) || [] })) };
+}
+
+const packByName = (name, exceptId = null) =>
+  db.prepare('SELECT id, name FROM packs WHERE archived_at IS NULL').all().find((p) => p.id !== exceptId && nameKey(p.name) === nameKey(name));
+
+export function createPack({ name, description = '', keywords = [] }) {
+  const clean = String(name ?? '').trim().slice(0, 80);
+  if (!clean) throw new RuleError('Dê um nome ao pacote.');
+  if (packByName(clean)) throw new RuleError(`Já existe um pacote chamado "${packByName(clean).name}".`);
+  const id = newId();
+  db.prepare('INSERT INTO packs (id, name, description, keywords, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?)')
+    .run(id, clean, String(description ?? '').trim().slice(0, 500), JSON.stringify(cleanKeywords(keywords)), now(), now());
+  return getPack(id);
+}
+
+export function updatePack(id, { name, description, keywords } = {}) {
+  const cur = db.prepare('SELECT * FROM packs WHERE id = ? AND archived_at IS NULL').get(id);
+  if (!cur) return null;
+  const next = name === undefined ? cur.name : String(name).trim().slice(0, 80);
+  if (!next) throw new RuleError('O nome do pacote não pode ficar vazio.');
+  if (packByName(next, id)) throw new RuleError(`Já existe um pacote chamado "${packByName(next, id).name}".`);
+  db.prepare('UPDATE packs SET name = ?, description = ?, keywords = ?, updated_at = ? WHERE id = ?').run(
+    next,
+    description === undefined ? cur.description : String(description).trim().slice(0, 500),
+    keywords === undefined ? cur.keywords : JSON.stringify(cleanKeywords(keywords)),
+    now(), id);
+  return getPack(id);
+}
+
+/** "Excluir" um pacote: ele some, as imagens continuam no acervo (e nos outros pacotes). */
+export function archivePack(id) {
+  return db.prepare('UPDATE packs SET archived_at = ?, updated_at = ? WHERE id = ? AND archived_at IS NULL').run(now(), now(), id).changes > 0;
+}
+
+/** Põe imagens num pacote (no fim). Quem já está fica onde está. Só entram modelos de imagem. */
+export function addToPack(packId, modelIds = []) {
+  const pack = db.prepare('SELECT id FROM packs WHERE id = ? AND archived_at IS NULL').get(packId);
+  if (!pack) throw new RuleError('Pacote não encontrado.');
+  return transaction(() => {
+    let added = 0;
+    let pos = db.prepare('SELECT COALESCE(MAX(position), 0) AS n FROM pack_items WHERE pack_id = ?').get(packId).n;
+    for (const mid of modelIds) {
+      const m = db.prepare("SELECT id, type FROM models WHERE id = ? AND status <> 'archived'").get(String(mid));
+      if (!m || m.type !== 'image') continue;
+      const cur = db.prepare('SELECT removed_at FROM pack_items WHERE pack_id = ? AND model_id = ?').get(packId, m.id);
+      if (cur && cur.removed_at === null) continue;
+      if (cur) db.prepare('UPDATE pack_items SET removed_at = NULL, position = ?, added_at = ? WHERE pack_id = ? AND model_id = ?').run(++pos, now(), packId, m.id);
+      else db.prepare('INSERT INTO pack_items (pack_id, model_id, position, added_at) VALUES (?, ?, ?, ?)').run(packId, m.id, ++pos, now());
+      added++;
+    }
+    if (added) db.prepare('UPDATE packs SET updated_at = ? WHERE id = ?').run(now(), packId);
+    return added;
+  });
+}
+
+/** Tira imagens de um pacote (elas continuam no acervo). */
+export function removeFromPack(packId, modelIds = []) {
+  return transaction(() => {
+    let n = 0;
+    for (const mid of modelIds) {
+      n += db.prepare('UPDATE pack_items SET removed_at = ? WHERE pack_id = ? AND model_id = ? AND removed_at IS NULL').run(now(), packId, String(mid)).changes;
+    }
+    if (n) db.prepare('UPDATE packs SET updated_at = ? WHERE id = ?').run(now(), packId);
+    return n;
+  });
+}
+
+/**
+ * Troca o endereço de uma imagem em todo lugar (acervo, aulas e pendências). Usado ao guardar no computador
+ * uma imagem que estava na internet: as aulas que já a usam passam a funcionar sem internet.
+ */
+export function replaceImageSrc(from, to) {
+  if (!from || !to || from === to) return { models: 0, lessons: 0, pending: 0 };
+  // a imagem pode estar num bloco de imagem ou dentro de uma galeria
+  const swap = (b) => {
+    if (b?.type === 'image' && b.src === from) { b.src = to; return true; }
+    if (b?.type === 'gallery' && Array.isArray(b.images)) {
+      let hit = false;
+      for (const img of b.images) if (img?.src === from) { img.src = to; hit = true; }
+      return hit;
+    }
+    return false;
+  };
+  return transaction(() => {
+    const out = { models: 0, lessons: 0, pending: 0 };
+    for (const m of db.prepare("SELECT id, block FROM models WHERE type IN ('image', 'gallery')").all()) {
+      const b = json(m.block, {});
+      if (swap(b)) { db.prepare('UPDATE models SET block = ? WHERE id = ?').run(JSON.stringify(b), m.id); out.models++; }
+    }
+    for (const l of db.prepare('SELECT id, doc FROM lessons').all()) {
+      if (!l.doc.includes(from.slice(0, 40))) continue;
+      const doc = json(l.doc, {});
+      if ((doc.blocks || []).map(swap).some(Boolean)) { db.prepare('UPDATE lessons SET doc = ? WHERE id = ?').run(JSON.stringify(doc), l.id); out.lessons++; }
+    }
+    for (const p of db.prepare('SELECT id, block FROM pending').all()) {
+      const b = json(p.block, {});
+      if (swap(b)) { db.prepare('UPDATE pending SET block = ? WHERE id = ?').run(JSON.stringify(b), p.id); out.pending++; }
+    }
+    return out;
+  });
+}
 
 // ============================== IMPORTAÇÃO ==============================
 export function listImports() {
@@ -868,7 +1383,7 @@ export function backupNow({ keep = 30 } = {}) {
   return file;
 }
 
-const EXPORT_TABLES = ['students', 'lessons', 'models', 'model_versions', 'imports', 'block_uses', 'assessments', 'handovers', 'pending'];
+const EXPORT_TABLES = ['students', 'lessons', 'models', 'model_versions', 'imports', 'block_uses', 'assessments', 'handovers', 'pending', 'packs', 'pack_items'];
 
 /** O banco inteiro em JSON (as imagens ficam em data/uploads/). */
 export function exportAll() {
@@ -889,5 +1404,7 @@ export function stats() {
     models: n("SELECT COUNT(*) AS n FROM models WHERE status = 'published'"),
     modelsToReview: n("SELECT COUNT(*) AS n FROM models WHERE status = 'review'"),
     openPending: n("SELECT COUNT(*) AS n FROM pending WHERE status = 'open'"),
+    images: n("SELECT COUNT(*) AS n FROM models WHERE type = 'image' AND status = 'published'"),
+    packs: n('SELECT COUNT(*) AS n FROM packs WHERE archived_at IS NULL'),
   };
 }

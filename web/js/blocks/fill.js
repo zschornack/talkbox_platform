@@ -87,7 +87,7 @@ export const fill = {
           input,
           pr,
           ' ',
-          h('span.hint', '(', editable(h('span'), { value: it.hint, rich: false, single: true, onChange: (v) => { it.hint = v; ctx.changed(); } }), ')'),
+          h('span.hint', { class: String(it.hint ?? '').trim() ? '' : 'empty' }, '(', editable(h('span'), { value: it.hint, rich: false, single: true, onChange: (v) => { it.hint = v; ctx.changed(); } }), ')'),
           ' ',
           editable(h('span.seg'), { value: it.after, single: true, onChange: (v) => { it.after = v; ctx.changed(); } }),
           mark

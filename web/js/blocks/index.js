@@ -19,8 +19,10 @@ import { scale } from './scale.js';
 import { timer } from './timer.js';
 import { tense } from './tense.js';
 import { timeline } from './timeline.js';
+// v0.7: galeria (um pacote de imagens na aula)
+import { gallery } from './gallery.js';
 
-export const BLOCKS = { text, explanation, table, tense, timeline, fill, choice, match, reveal, order, transform, spot, sort, deck, challenge, scale, roleplay, timer, image, notes };
+export const BLOCKS = { text, explanation, table, tense, timeline, fill, choice, match, reveal, order, transform, spot, sort, deck, challenge, scale, roleplay, timer, image, gallery, notes };
 
 /** Ordem do menu "inserir bloco". */
-export const MENU = ['text', 'explanation', 'table', 'tense', 'timeline', 'fill', 'choice', 'match', 'reveal', 'order', 'transform', 'spot', 'sort', 'deck', 'challenge', 'scale', 'roleplay', 'timer', 'image', 'notes'];
+export const MENU = ['text', 'explanation', 'table', 'tense', 'timeline', 'fill', 'choice', 'match', 'reveal', 'order', 'transform', 'spot', 'sort', 'deck', 'challenge', 'scale', 'roleplay', 'timer', 'image', 'gallery', 'notes'];

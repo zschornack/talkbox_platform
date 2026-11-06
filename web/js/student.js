@@ -2,7 +2,7 @@
 import { h, svgIcon, ICONS, formatDate, relativeDate, shortDate } from './dom.js';
 import { api, autosaver, saveOnExit } from './api.js';
 import { appShell } from './layout.js';
-import { newLessonDialog, studentDialog } from './new-lesson.js';
+import { newLessonDialog, studentDialog, copyLessonDialog } from './new-lesson.js';
 import { toast, confirmDialog, emptyState, modal } from './ui.js';
 import { BLOCKS } from './blocks/index.js';
 import { MAP_SECTIONS, MAP_STATUS } from './catalog.js';
@@ -163,15 +163,17 @@ export async function renderStudent(root, id) {
               h('td', h('div.actions',
                 h('a.btn.small', { href: `#/aula/${l.id}` }, 'Abrir'),
                 h('a.btn.small', { href: `#/aula/${l.id}/pdf`, title: 'Abre a aula e a janela de exportar' }, 'PDF'),
-                h('button.icon-btn', { type: 'button', title: 'Duplicar como nova aula', 'aria-label': `Duplicar ${l.title}`,
-                  onClick: async () => { const c = await api.duplicateLesson(l.id, {}); location.hash = `#/aula/${c.id}`; } }, svgIcon(ICONS.copy)),
+                h('button.icon-btn', { type: 'button', title: 'Copiar a aula (para este ou outro aluno)', 'aria-label': `Copiar ${l.title}`,
+                  onClick: () => copyLessonDialog({ id: l.id, title: l.title, studentId: id }) }, svgIcon(ICONS.copy)),
                 h('button.icon-btn', { type: 'button', title: 'Arquivar aula', 'aria-label': `Arquivar ${l.title}`,
                   onClick: async () => {
-                    if (!(await confirmDialog(`A aula "${l.title}" de ${formatDate(l.date || l.createdAt)} sai da ficha. Ela continua guardada no banco.`, { title: 'Arquivar aula?', confirmLabel: 'Arquivar aula' }))) return;
+                    const extra = l.status === 'done' ? ' Como ela já foi finalizada, o finalizar é desfeito: o mapa e as pendências voltam a ficar como antes dela.' : '';
+                    if (!(await confirmDialog(`A aula "${l.title}" de ${formatDate(l.date || l.createdAt)} sai da ficha. Ela continua guardada no banco.${extra}`, { title: 'Arquivar aula?', confirmLabel: 'Arquivar aula' }))) return;
                     await api.deleteLesson(l.id);
+                    toast('Aula arquivada.');
+                    if (l.status === 'done') return rerender();
                     s.lessons = s.lessons.filter((x) => x.id !== l.id);
                     paintHistory();
-                    toast('Aula arquivada.');
                   } }, svgIcon(ICONS.archive))
               ))
             )

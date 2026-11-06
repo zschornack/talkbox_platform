@@ -9,10 +9,11 @@ import { CONTENT_SUGGESTIONS, officialContent } from './catalog.js';
 const blockName = (b) => b.title || BLOCKS[b.type]?.name || b.type;
 
 /**
- * openFinishDialog({ lesson, flush, onFinished, onExport })
+ * openFinishDialog({ lesson, flush, onFinished, onExport, edited })
  * flush: salva o que estiver pendente antes de ler a aula.
+ * edited: quantos blocos da biblioteca foram mudados na aula. O que foi escrito neles é descartado depois do PDF.
  */
-export async function openFinishDialog({ lesson, flush, onFinished, onExport }) {
+export async function openFinishDialog({ lesson, flush, onFinished, onExport, edited = 0 }) {
   await flush?.();
   const info = await api.finishInfo(lesson.id);
   // anotações e textos vazios não contam (nem viram pendência)
@@ -107,7 +108,7 @@ export async function openFinishDialog({ lesson, flush, onFinished, onExport }) 
       const assessments = Object.fromEntries(Object.entries(marks).filter(([, v]) => v));
       const out = await api.finishLesson(lesson.id, { lastBlockId: last, assessments, message: message.value });
       onFinished?.(out);
-      setTimeout(() => showSummary(out, { lesson, onExport, rated: Object.keys(assessments).length, message: message.value.trim() }), 0);
+      setTimeout(() => showSummary(out, { lesson, onExport, edited, rated: Object.keys(assessments).length, message: message.value.trim() }), 0);
     },
   });
   // começa pelo topo, com o bloco escolhido à vista na lista
@@ -121,7 +122,7 @@ export async function openFinishDialog({ lesson, flush, onFinished, onExport }) 
   }
 }
 
-function showSummary(out, { lesson, onExport, rated, message }) {
+function showSummary(out, { lesson, onExport, edited, rated, message }) {
   const line = (icon, text) => h('li', svgIcon(ICONS[icon], 16), text);
   const items = [
     line('check', out.done ? `${out.done} ${out.done === 1 ? 'bloco feito' : 'blocos feitos'}` : 'Nenhum bloco feito'),
@@ -132,12 +133,14 @@ function showSummary(out, { lesson, onExport, rated, message }) {
     line('layers', rated ? `${rated} ${rated === 1 ? 'conteúdo atualizado' : 'conteúdos atualizados'} no mapa` : 'Mapa sem mudanças'),
     line('notes', message ? 'Anotação guardada para a próxima aula' : 'Sem anotação: está tudo certo'),
   ];
+  // o que foi escrito nos blocos da biblioteca sai no PDF e depois é descartado (o modelo nunca muda)
   const m = modal({
     title: 'Aula concluída',
     submitLabel: 'Exportar PDF',
     cancelLabel: 'Fechar',
     body: [
       h('ul.fin-summary', items),
+      edited ? h('p.muted.small', 'Depois do PDF, o que foi escrito nos blocos durante a aula é descartado.') : null,
       lesson.studentId ? h('a.btn', { href: `#/alunos/${lesson.studentId}`, onClick: () => m.close() }, svgIcon(ICONS.users), 'Ver a ficha') : null,
     ],
     onSubmit: () => { setTimeout(() => onExport?.(), 0); },

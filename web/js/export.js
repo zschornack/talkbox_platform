@@ -3,7 +3,8 @@ import { h } from './dom.js';
 
 let last = { blanks: 'filled', pen: false };
 
-export function openExportDialog({ lesson, doc, flush }) {
+export function openExportDialog({ lesson, doc, flush, after }) {
+  // after: o que fazer depois que a janela de impressão fechar (ex.: voltar os blocos ao original)
   const radio = (name, value, label, checked) =>
     h('label', h('input', { type: 'radio', name, value, checked }), label);
 
@@ -19,7 +20,7 @@ export function openExportDialog({ lesson, doc, flush }) {
         last = { blanks: data.get('blanks'), pen: data.get('pen') === 'on' };
         close();
         await flush();
-        print(lesson, doc, last);
+        print(lesson, doc, last, after);
       },
     },
     h('h2', { id: 'exp-title' }, 'Exportar PDF'),
@@ -50,7 +51,7 @@ export function openExportDialog({ lesson, doc, flush }) {
   form.querySelector('button[type=submit]').focus();
 }
 
-function print(lesson, doc, opts) {
+function print(lesson, doc, opts, after) {
   const before = document.title;
   const date = new Date().toLocaleDateString('pt-BR').replace(/\//g, '-');
   // O nome do arquivo PDF vem do título da página.
@@ -63,6 +64,7 @@ function print(lesson, doc, opts) {
     document.title = before;
     document.body.classList.remove('print-blank', 'print-no-pen');
     window.removeEventListener('afterprint', restore);
+    if (after) setTimeout(after, 0);
   };
   window.addEventListener('afterprint', restore);
   setTimeout(() => window.print(), 30);

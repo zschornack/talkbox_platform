@@ -1,6 +1,7 @@
 // Tabela com estilo fixo. Toda célula é editável; Tab passa para a próxima.
 import { h } from '../dom.js';
 import { editable } from '../editable.js';
+import { columnTemplate } from './kit.js';
 
 export const table = {
   name: 'Tabela',
@@ -17,7 +18,7 @@ export const table = {
   render(ctx) {
     const b = ctx.block;
     const cols = Math.max(1, ...b.rows.map((r) => r.length));
-    const grid = `repeat(${cols}, minmax(120px, 1fr))`;
+    const grid = columnTemplate(b.rows, cols);
 
     const rows = b.rows.map((row, ri) =>
       h(

@@ -1,0 +1,1275 @@
+{
+ "id": "isabel-larissa-aula-23-present-perfect-2026-11-05",
+ "student": {
+  "name": "Isabel & Larissa"
+ },
+ "models": [
+  {
+   "key": "warmup",
+   "title": "Warm-up · have you ever…? (sister vs sister)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Comparatives & superlatives",
+     "Conversation"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WARM-UP · HAVE YOU EVER…?",
+    "html": "Answer fast. Then ask your sister.",
+    "words": [],
+    "cats": [
+     {
+      "name": "Ever",
+      "qs": [
+       "Have you ever fallen asleep in a movie theater? [try: Yes, I have.]",
+       "Have you ever forgotten a friend's birthday?",
+       "Have you ever dyed your hair? What color?",
+       "Have you ever won a prize? What for?"
+      ]
+     },
+     {
+      "name": "The most… ever",
+      "qs": [
+       "What's the funniest video you've ever watched? [try: the funniest]",
+       "What's the scariest thing you've ever done? [try: the scariest]",
+       "What's the worst gift you've ever received? [try: the worst]",
+       "Who is the most famous person you've ever seen? [try: the most famous]"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "speed",
+   "title": "Speed round · form 3 (new verbs)",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "SPEED ROUND · NEW FORM 3",
+    "html": "Sister vs sister! Form 2 and form 3. One point each.",
+    "items": [
+     {
+      "id": "il23_1",
+      "q": "forget",
+      "a": "forgot · forgotten"
+     },
+     {
+      "id": "il23_2",
+      "q": "hide",
+      "a": "hid · hidden"
+     },
+     {
+      "id": "il23_3",
+      "q": "steal",
+      "a": "stole · stolen"
+     },
+     {
+      "id": "il23_4",
+      "q": "fall",
+      "a": "fell · fallen"
+     },
+     {
+      "id": "il23_5",
+      "q": "choose",
+      "a": "chose · chosen"
+     },
+     {
+      "id": "il23_6",
+      "q": "wake up",
+      "a": "woke up · woken up"
+     },
+     {
+      "id": "il23_7",
+      "q": "give",
+      "a": "gave · given"
+     },
+     {
+      "id": "il23_8",
+      "q": "know",
+      "a": "knew · known"
+     },
+     {
+      "id": "il23_9",
+      "q": "hear",
+      "a": "heard · heard"
+     },
+     {
+      "id": "il23_10",
+      "q": "send",
+      "a": "sent · sent"
+     },
+     {
+      "id": "il23_11",
+      "q": "spend",
+      "a": "spent · spent"
+     },
+     {
+      "id": "il23_12",
+      "q": "leave",
+      "a": "left · left"
+     }
+    ]
+   }
+  },
+  {
+   "key": "uses",
+   "title": "Present perfect · more ways to use it (news, result, already / yet)",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "THE PRESENT PERFECT · MORE WAYS TO USE IT",
+    "header": true,
+    "rows": [
+     [
+      "USE",
+      "EXAMPLE"
+     ],
+     [
+      "Life experience (you know it!)",
+      "I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>seen</b></span> a whale. · She <span style=\"background-color: #FFC9A3\"><b>has</b></span> <span style=\"background-color: #FFDB8F\"><b>seen</b></span> a whale."
+     ],
+     [
+      "News: it happened a moment ago (just)",
+      "I <span style=\"background-color: #CBE4D8\"><b>have</b></span> just <span style=\"background-color: #FFDB8F\"><b>finished</b></span> my homework. · She <span style=\"background-color: #FFC9A3\"><b>has</b></span> just <span style=\"background-color: #FFDB8F\"><b>finished</b></span> her homework."
+     ],
+     [
+      "Before now, sooner than expected (already)",
+      "I <span style=\"background-color: #CBE4D8\"><b>have</b></span> already <span style=\"background-color: #FFDB8F\"><b>eaten</b></span>. · She <span style=\"background-color: #FFC9A3\"><b>has</b></span> already <span style=\"background-color: #FFDB8F\"><b>eaten</b></span>."
+     ],
+     [
+      "Not until now (yet: negative and question)",
+      "I <span style=\"background-color: #CBE4D8\"><b>have</b></span>n't <span style=\"background-color: #FFDB8F\"><b>finished</b></span> yet. · <span style=\"background-color: #FFC9A3\"><b>Has</b></span> she <span style=\"background-color: #FFDB8F\"><b>finished</b></span> yet?"
+     ],
+     [
+      "Past action, result now",
+      "I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>lost</b></span> my phone. (I can't call you now.) · She <span style=\"background-color: #FFC9A3\"><b>has</b></span> <span style=\"background-color: #FFDB8F\"><b>broken</b></span> her leg. (She can't walk now.)"
+     ],
+     [
+      "Colors",
+      "<span style=\"background-color: #CBE4D8\"><b>have</b></span> = I, you, we, they · <span style=\"background-color: #FFC9A3\"><b>has</b></span> = he, she, it · <span style=\"background-color: #FFDB8F\"><b>form 3</b></span>"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "jay",
+   "title": "Just · already · yet · where in the sentence",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "JUST · ALREADY · YET",
+    "header": true,
+    "rows": [
+     [
+      "WORD",
+      "WHERE",
+      "EXAMPLE"
+     ],
+     [
+      "just",
+      "between <span style=\"background-color: #CBE4D8\"><b>have</b></span> / <span style=\"background-color: #FFC9A3\"><b>has</b></span> and <span style=\"background-color: #FFDB8F\"><b>form 3</b></span>",
+      "The movie <span style=\"background-color: #FFC9A3\"><b>has</b></span> just <span style=\"background-color: #FFDB8F\"><b>started</b></span>."
+     ],
+     [
+      "already",
+      "between <span style=\"background-color: #CBE4D8\"><b>have</b></span> / <span style=\"background-color: #FFC9A3\"><b>has</b></span> and <span style=\"background-color: #FFDB8F\"><b>form 3</b></span>",
+      "I <span style=\"background-color: #CBE4D8\"><b>have</b></span> already <span style=\"background-color: #FFDB8F\"><b>seen</b></span> this episode."
+     ],
+     [
+      "yet",
+      "at the end (negative and question)",
+      "<span style=\"background-color: #CBE4D8\"><b>Have</b></span> you <span style=\"background-color: #FFDB8F\"><b>done</b></span> the dishes yet? · No, I <span style=\"background-color: #CBE4D8\"><b>have</b></span>n't <span style=\"background-color: #FFDB8F\"><b>done</b></span> them yet."
+     ]
+    ]
+   }
+  },
+  {
+   "key": "jay5",
+   "title": "Just / already / yet · 5 basic sentences",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "5 BASIC SENTENCES · SAY IT IN ENGLISH",
+    "html": "Say it in English. Then reveal.",
+    "items": [
+     {
+      "id": "il23_13",
+      "q": "Eu acabei de acordar.",
+      "a": "I've just woken up."
+     },
+     {
+      "id": "il23_14",
+      "q": "Ela já terminou a lição.",
+      "a": "She has already finished her homework."
+     },
+     {
+      "id": "il23_15",
+      "q": "Você já almoçou? (até agora)",
+      "a": "Have you had lunch yet?"
+     },
+     {
+      "id": "il23_16",
+      "q": "Eu ainda não vi esse filme.",
+      "a": "I haven't seen this movie yet."
+     },
+     {
+      "id": "il23_17",
+      "q": "Eu perdi minhas chaves. (e ainda estão perdidas)",
+      "a": "I've lost my keys."
+     }
+    ]
+   }
+  },
+  {
+   "key": "jaychoice",
+   "title": "Just, already or yet? · choose (sister vs sister)",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "JUST, ALREADY OR YET?",
+    "html": "Each sister chooses before clicking. One point each.",
+    "instant": true,
+    "items": [
+     {
+      "id": "il23_18",
+      "before": "Shh! The baby has",
+      "options": [
+       "just",
+       "yet"
+      ],
+      "answer": 0,
+      "after": "fallen asleep."
+     },
+     {
+      "id": "il23_19",
+      "before": "My sister hasn't woken up",
+      "options": [
+       "already",
+       "yet"
+      ],
+      "answer": 1,
+      "after": ". It's noon!"
+     },
+     {
+      "id": "il23_20",
+      "before": "No pizza for me, thanks. I've",
+      "options": [
+       "already",
+       "yet"
+      ],
+      "answer": 0,
+      "after": "eaten."
+     },
+     {
+      "id": "il23_21",
+      "before": "I haven't watched the new episode",
+      "options": [
+       "just",
+       "yet"
+      ],
+      "answer": 1,
+      "after": ". No spoilers!"
+     },
+     {
+      "id": "il23_22",
+      "before": "Look! It has",
+      "options": [
+       "just",
+       "yet"
+      ],
+      "answer": 0,
+      "after": "started to rain."
+     },
+     {
+      "id": "il23_23",
+      "before": "Mom, I've",
+      "options": [
+       "already",
+       "yet"
+      ],
+      "answer": 0,
+      "after": "cleaned my room. Can I go out now?"
+     },
+     {
+      "id": "il23_24",
+      "before": "I haven't decided what to wear",
+      "options": [
+       "already",
+       "yet"
+      ],
+      "answer": 1,
+      "after": "."
+     },
+     {
+      "id": "il23_25",
+      "before": "Wow, you've",
+      "options": [
+       "already",
+       "yet"
+      ],
+      "answer": 0,
+      "after": "finished the book? It has 500 pages!"
+     }
+    ]
+   }
+  },
+  {
+   "key": "jayorder",
+   "title": "Already / yet · put the words in order",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "order",
+    "label": "PUT IT IN ORDER",
+    "html": "Put the words in order.",
+    "items": [
+     {
+      "id": "il23_26",
+      "answer": "I / have / already / sent / the message."
+     },
+     {
+      "id": "il23_27",
+      "answer": "She / hasn't / answered / my message / yet."
+     },
+     {
+      "id": "il23_28",
+      "answer": "Have / you / chosen / a costume / yet?"
+     },
+     {
+      "id": "il23_29",
+      "answer": "We / have / just / heard / the news!"
+     },
+     {
+      "id": "il23_30",
+      "answer": "My sister / has / already / spent / all her money."
+     }
+    ]
+   }
+  },
+  {
+   "key": "result",
+   "title": "What has happened? · the result now",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "WHAT HAS HAPPENED?",
+    "html": "Explain it with the present perfect. Then reveal.",
+    "items": [
+     {
+      "id": "il23_31",
+      "q": "Your sister is crying and her phone screen is in pieces.",
+      "a": "She has dropped her phone. / She has broken her phone."
+     },
+     {
+      "id": "il23_32",
+      "q": "The fridge is empty and your brother is smiling.",
+      "a": "He has eaten all the food!"
+     },
+     {
+      "id": "il23_33",
+      "q": "Your friend is wet from head to toe.",
+      "a": "She has just come in from the rain. / She has fallen into the pool."
+     },
+     {
+      "id": "il23_34",
+      "q": "Your mom can't open the car.",
+      "a": "She has lost the car keys."
+     },
+     {
+      "id": "il23_35",
+      "q": "The whole class is screaming and jumping.",
+      "a": "The teacher has just cancelled the test!"
+     },
+     {
+      "id": "il23_36",
+      "q": "Your hair is green.",
+      "a": "I have dyed my hair. / My sister has put something in my shampoo!"
+     }
+    ]
+   }
+  },
+  {
+   "key": "mystery",
+   "title": "Mystery · who has eaten the cake? (present perfect)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Reading"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "text",
+    "label": "MYSTERY · WHO HAS EATEN THE CAKE?",
+    "html": "It's Grandma Rosa's 80th birthday. At 3 p.m., Mom put a big chocolate cake on the kitchen table. Now it's 4 p.m. Mom is back in the kitchen and... the cake has disappeared! There are only crumbs on the plate.<br><br><b>Uncle Beto:</b> \"I've just arrived! I haven't been in the kitchen yet. Look, my car is still in front of the house.\"<br><br><b>Cousin Lucas (12):</b> \"I haven't eaten anything since breakfast! I've been in the garden for two hours. I've played football all afternoon.\"<br><br><b>Aunt Carla:</b> \"I've already had a piece of cake today, at the bakery. I've been on the phone with my boss since three o'clock.\"<br><br><b>Max, the dog:</b> \"Woof!\"<br><br><b>The clues</b><br>1. The engine of Uncle Beto's car is still hot.<br>2. It has rained all afternoon, but Lucas's sneakers are clean and dry.<br>3. Aunt Carla's phone: three calls since 3 p.m., all to her boss.<br>4. Max has slept on the sofa all afternoon. His mouth is clean.<br>5. There is chocolate on Lucas's T-shirt.<br><br><i>A made-up story.</i>"
+   }
+  },
+  {
+   "key": "detective",
+   "title": "Mystery · detective questions",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Reading",
+     "Question formation"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "DETECTIVE QUESTIONS",
+    "html": "Answer with a short answer. Then reveal.",
+    "items": [
+     {
+      "id": "il23_37",
+      "q": "Has Uncle Beto been in the kitchen?",
+      "a": "No, he hasn't. He has just arrived."
+     },
+     {
+      "id": "il23_38",
+      "q": "How long has Lucas been in the garden? (he says)",
+      "a": "For two hours."
+     },
+     {
+      "id": "il23_39",
+      "q": "Has Aunt Carla had cake today?",
+      "a": "Yes, she has. She has already had a piece at the bakery."
+     },
+     {
+      "id": "il23_40",
+      "q": "Since when has Carla been on the phone?",
+      "a": "Since three o'clock."
+     },
+     {
+      "id": "il23_41",
+      "q": "Has it rained this afternoon?",
+      "a": "Yes, it has. It has rained all afternoon."
+     },
+     {
+      "id": "il23_42",
+      "q": "Has Max eaten the cake?",
+      "a": "No, he hasn't. He has slept all afternoon and his mouth is clean."
+     }
+    ]
+   }
+  },
+  {
+   "key": "culprit",
+   "title": "Mystery · who is the thief?",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Reading"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura",
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "choice",
+    "label": "WHO HAS EATEN THE CAKE?",
+    "html": "Each sister chooses and explains with two clues.",
+    "instant": true,
+    "items": [
+     {
+      "id": "il23_43",
+      "before": "The thief is",
+      "options": [
+       "Uncle Beto",
+       "Cousin Lucas",
+       "Aunt Carla",
+       "Max"
+      ],
+      "answer": 1,
+      "after": "."
+     }
+    ]
+   }
+  },
+  {
+   "key": "solution",
+   "title": "Mystery · the solution",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Reading"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "THE SOLUTION",
+    "html": "Explain it first. Then reveal.",
+    "items": [
+     {
+      "id": "il23_44",
+      "q": "Why is it Lucas?",
+      "a": "He says he has played football in the garden for two hours, but it has rained all afternoon and his sneakers are clean and dry. And he has chocolate on his T-shirt!"
+     },
+     {
+      "id": "il23_45",
+      "q": "Now you! Invent a new ending.",
+      "a": "Lucas has... / Grandma has... / Max has..."
+     }
+    ]
+   }
+  },
+  {
+   "key": "forsince",
+   "title": "For and since · how long?",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "table",
+    "label": "FOR · SINCE · HOW LONG?",
+    "header": true,
+    "rows": [
+     [
+      "WORD",
+      "USE IT WITH",
+      "EXAMPLE"
+     ],
+     [
+      "for",
+      "a period of time (how much time)",
+      "I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>known</b></span> Ana for five years. · She <span style=\"background-color: #FFC9A3\"><b>has</b></span> <span style=\"background-color: #FFDB8F\"><b>known</b></span> Ana for five years."
+     ],
+     [
+      "since",
+      "the start (when it started)",
+      "I <span style=\"background-color: #CBE4D8\"><b>have</b></span> <span style=\"background-color: #FFDB8F\"><b>known</b></span> Ana since 2021. · She <span style=\"background-color: #FFC9A3\"><b>has</b></span> <span style=\"background-color: #FFDB8F\"><b>known</b></span> Ana since 2021."
+     ],
+     [
+      "How long…?",
+      "the question",
+      "How long <span style=\"background-color: #CBE4D8\"><b>have</b></span> you <span style=\"background-color: #FFDB8F\"><b>known</b></span> Ana? · How long <span style=\"background-color: #FFC9A3\"><b>has</b></span> she <span style=\"background-color: #FFDB8F\"><b>known</b></span> Ana?"
+     ],
+     [
+      "Colors",
+      "<span style=\"background-color: #CBE4D8\"><b>have</b></span> = I, you, we, they · <span style=\"background-color: #FFC9A3\"><b>has</b></span> = he, she, it · <span style=\"background-color: #FFDB8F\"><b>form 3</b></span>"
+     ]
+    ]
+   }
+  },
+  {
+   "key": "forsince5",
+   "title": "For / since · 5 basic sentences",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "reveal",
+    "label": "5 BASIC SENTENCES · FOR OR SINCE?",
+    "html": "Say it in English. Then reveal.",
+    "items": [
+     {
+      "id": "il23_46",
+      "q": "Eu moro aqui há dez anos.",
+      "a": "I have lived here for ten years."
+     },
+     {
+      "id": "il23_47",
+      "q": "Ela conhece a Bia desde 2020.",
+      "a": "She has known Bia since 2020."
+     },
+     {
+      "id": "il23_48",
+      "q": "Nós estudamos inglês há três anos.",
+      "a": "We have studied English for three years."
+     },
+     {
+      "id": "il23_49",
+      "q": "Ele tem esse celular desde janeiro.",
+      "a": "He has had this phone since January."
+     },
+     {
+      "id": "il23_50",
+      "q": "Há quanto tempo você mora aqui?",
+      "a": "How long have you lived here?"
+     }
+    ]
+   }
+  },
+  {
+   "key": "sortfs",
+   "title": "For or since? · sort the time expressions",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "sort",
+    "label": "FOR OR SINCE?",
+    "html": "Put each one in the right group.",
+    "groups": [
+     "for",
+     "since"
+    ],
+    "items": [
+     {
+      "id": "il23_51",
+      "text": "two weeks",
+      "group": 0
+     },
+     {
+      "id": "il23_52",
+      "text": "a long time",
+      "group": 0
+     },
+     {
+      "id": "il23_53",
+      "text": "ten minutes",
+      "group": 0
+     },
+     {
+      "id": "il23_54",
+      "text": "ages",
+      "group": 0
+     },
+     {
+      "id": "il23_55",
+      "text": "three years",
+      "group": 0
+     },
+     {
+      "id": "il23_56",
+      "text": "half an hour",
+      "group": 0
+     },
+     {
+      "id": "il23_57",
+      "text": "2019",
+      "group": 1
+     },
+     {
+      "id": "il23_58",
+      "text": "Monday",
+      "group": 1
+     },
+     {
+      "id": "il23_59",
+      "text": "I was a child",
+      "group": 1
+     },
+     {
+      "id": "il23_60",
+      "text": "last summer",
+      "group": 1
+     },
+     {
+      "id": "il23_61",
+      "text": "8 o'clock",
+      "group": 1
+     },
+     {
+      "id": "il23_62",
+      "text": "my birthday",
+      "group": 1
+     }
+    ]
+   }
+  },
+  {
+   "key": "howlong",
+   "title": "How long have you…? · interview your sister",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Conversation"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "HOW LONG HAVE YOU…?",
+    "html": "Ask your sister. She answers with for or since.",
+    "words": [],
+    "cats": [
+     {
+      "name": "You",
+      "qs": [
+       "How long have you lived in your house? [try: since]",
+       "How long have you had your phone? [try: for]",
+       "How long have you known your best friend? [try: since]",
+       "How long have you studied English? [try: for]"
+      ]
+     },
+     {
+      "name": "Your sister",
+      "qs": [
+       "How long has your sister had her favorite T-shirt?",
+       "How long has she liked her favorite singer?",
+       "How long has she been awake today?",
+       "How long has she had her hair like this?"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "fill",
+   "title": "Present perfect · complete (just, already, yet, for, since)",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Escrita"
+    ]
+   },
+   "block": {
+    "type": "fill",
+    "label": "COMPLETE THE CHAT",
+    "html": "Complete the messages.",
+    "items": [
+     {
+      "id": "il23_63",
+      "before": "Isa: Hey! Where are you? I",
+      "hint": "just / arrive",
+      "after": "at the mall.",
+      "answers": [
+       "'ve just arrived",
+       "have just arrived"
+      ]
+     },
+     {
+      "id": "il23_64",
+      "before": "Lari: Sorry! I",
+      "hint": "not / leave",
+      "after": "home yet.",
+      "answers": [
+       "haven't left",
+       "have not left"
+      ]
+     },
+     {
+      "id": "il23_65",
+      "before": "Isa: What?! I",
+      "hint": "wait",
+      "after": "for you for twenty minutes!",
+      "answers": [
+       "'ve waited",
+       "have waited",
+       "'ve been waiting",
+       "have been waiting"
+      ]
+     },
+     {
+      "id": "il23_66",
+      "before": "Lari: I know, I know. Mom",
+      "hint": "already / call",
+      "after": "me twice.",
+      "answers": [
+       "has already called"
+      ]
+     },
+     {
+      "id": "il23_67",
+      "before": "Isa:",
+      "hint": "you / choose",
+      "after": "a movie yet?",
+      "answers": [
+       "Have you chosen"
+      ]
+     },
+     {
+      "id": "il23_68",
+      "before": "Lari: Yes! The new one with Zendaya. I've wanted to see it",
+      "hint": "for / since",
+      "after": "last month!",
+      "answers": [
+       "since"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "spot",
+   "title": "Spot the mistake · present perfect",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Leitura"
+    ]
+   },
+   "block": {
+    "type": "spot",
+    "label": "SPOT THE MISTAKE",
+    "html": "Find the mistake and say it correctly.",
+    "items": [
+     {
+      "id": "il23_69",
+      "words": [
+       "I",
+       "have",
+       "saw",
+       "this",
+       "movie."
+      ],
+      "wrong": 2,
+      "fix": "seen"
+     },
+     {
+      "id": "il23_70",
+      "words": [
+       "She",
+       "has",
+       "yet",
+       "finished",
+       "her",
+       "homework."
+      ],
+      "wrong": 2,
+      "fix": "already"
+     },
+     {
+      "id": "il23_71",
+      "words": [
+       "I",
+       "have",
+       "known",
+       "her",
+       "since",
+       "five",
+       "years."
+      ],
+      "wrong": 4,
+      "fix": "for"
+     },
+     {
+      "id": "il23_72",
+      "words": [
+       "Have",
+       "you",
+       "finished",
+       "already?"
+      ],
+      "wrong": 3,
+      "fix": "yet"
+     },
+     {
+      "id": "il23_73",
+      "words": [
+       "He",
+       "have",
+       "just",
+       "arrived."
+      ],
+      "wrong": 1,
+      "fix": "has"
+     },
+     {
+      "id": "il23_74",
+      "words": [
+       "I",
+       "have",
+       "lived",
+       "here",
+       "for",
+       "2020."
+      ],
+      "wrong": 4,
+      "fix": "since"
+     }
+    ]
+   }
+  },
+  {
+   "key": "liar",
+   "title": "Game · liar, liar! (already / yet / just)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Conversation"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · LIAR, LIAR!",
+    "html": "Draw a card. Say a sentence (true or a lie). Your sister guesses!",
+    "promptLabel": "USE",
+    "lines": [
+     "have breakfast today",
+     "do the homework for tomorrow",
+     "answer all my messages",
+     "watch the new episode",
+     "tidy my room this week",
+     "buy a gift for Mom's birthday",
+     "finish the book I'm reading",
+     "charge my phone today",
+     "practice English this week",
+     "decide what to wear tomorrow"
+    ],
+    "prompts": [
+     "already",
+     "yet",
+     "just",
+     "never"
+    ]
+   }
+  },
+  {
+   "key": "ever",
+   "title": "Game · the most… you have ever… (superlatives)",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Comparatives & superlatives",
+     "Conversation"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "challenge",
+    "label": "GAME · THE MOST… EVER",
+    "html": "Draw a card. Ask your sister: What's the ___ you've ever ___?",
+    "promptLabel": "ADJECTIVE",
+    "lines": [
+     "movie / seen",
+     "food / eaten",
+     "trip / taken",
+     "song / heard",
+     "gift / received",
+     "game / played",
+     "place / visited",
+     "thing / bought"
+    ],
+    "prompts": [
+     "the best",
+     "the worst",
+     "the funniest",
+     "the scariest",
+     "the most boring",
+     "the most expensive",
+     "the strangest",
+     "the most beautiful"
+    ]
+   }
+  },
+  {
+   "key": "roleplay",
+   "title": "Role-play · the influencer interview",
+   "tags": {
+    "content": [
+     "Present Perfect",
+     "Conversation"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "roleplay",
+    "label": "ROLE-PLAY · THE INFLUENCER INTERVIEW",
+    "html": "One sister is a famous influencer, the other is a reporter. Then change roles!",
+    "roles": [
+     {
+      "name": "Reporter",
+      "card": "Ask at least 6 questions: How long have you…? Have you ever…? What have you just…? Have you … yet? Then tell the teacher one surprising thing you found out."
+     },
+     {
+      "name": "Influencer",
+      "card": "You are famous on the internet. Invent your story: how long you have had your channel, the craziest thing you have ever done, what you have just posted and what you haven't done yet."
+     }
+    ]
+   }
+  },
+  {
+   "key": "minute",
+   "title": "One minute · my day so far",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "timer",
+    "label": "ONE MINUTE · MY DAY SO FAR",
+    "html": "Talk for one minute. Use just, already, yet, for or since.",
+    "seconds": 60,
+    "topics": [
+     "Things I have already done today",
+     "Things I haven't done yet this week",
+     "Things I have had for a long time",
+     "People I have known since I was a child"
+    ]
+   }
+  },
+  {
+   "key": "wrapup",
+   "title": "Wrap-up · present perfect",
+   "tags": {
+    "content": [
+     "Present Perfect"
+    ],
+    "levels": [
+     "B1"
+    ],
+    "skills": [
+     "Fala"
+    ]
+   },
+   "block": {
+    "type": "deck",
+    "label": "WRAP-UP",
+    "html": "",
+    "words": [],
+    "cats": [
+     {
+      "name": "Today",
+      "qs": [
+       "Who has eaten the cake? Why?",
+       "Just, already or yet: say one sentence with each.",
+       "For or since: two weeks? 2019? Monday?",
+       "Who has won more points today?"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "lesson": {
+  "title": "Who Has Eaten the Cake? Present Perfect, Part 2",
+  "subtitle": "Just · already · yet · result · for and since",
+  "plan": "Feedback da aula 22: tacar o present perfect e juntar yet, already e os outros usos. 1) Warm-up (ever + superlativo) e speed round com 12 verbos novos. 2) Novos usos: novidade (just), already / yet, resultado agora; tabela de posição, prática e \"o que aconteceu?\". 3) Mistério do bolo: ler, perguntas de detetive, cada irmã acusa alguém com duas pistas, solução. 4) For / since e How long…? (com verbos de estado). 5) Chat, erros, jogos (liar liar, the most… ever), role-play e um minuto.",
+  "level": "B1",
+  "number": 23,
+  "tags": [
+   "Present Perfect",
+   "Comparatives & superlatives",
+   "Reading",
+   "Conversation"
+  ],
+  "blocks": [
+   {
+    "model": "warmup"
+   },
+   {
+    "model": "speed"
+   },
+   {
+    "model": "uses"
+   },
+   {
+    "model": "jay"
+   },
+   {
+    "model": "jay5"
+   },
+   {
+    "model": "jaychoice"
+   },
+   {
+    "model": "jayorder"
+   },
+   {
+    "model": "result"
+   },
+   {
+    "model": "mystery"
+   },
+   {
+    "model": "detective"
+   },
+   {
+    "model": "culprit"
+   },
+   {
+    "model": "solution"
+   },
+   {
+    "model": "forsince"
+   },
+   {
+    "model": "forsince5"
+   },
+   {
+    "model": "sortfs"
+   },
+   {
+    "model": "howlong"
+   },
+   {
+    "model": "fill"
+   },
+   {
+    "model": "spot"
+   },
+   {
+    "model": "liar"
+   },
+   {
+    "model": "ever"
+   },
+   {
+    "model": "roleplay"
+   },
+   {
+    "model": "minute"
+   },
+   {
+    "model": "wrapup"
+   },
+   {
+    "type": "notes",
+    "label": "ANOTAÇÕES",
+    "html": ""
+   }
+  ]
+ }
+}

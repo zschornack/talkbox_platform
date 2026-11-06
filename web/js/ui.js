@@ -74,13 +74,14 @@ export function modal({ title, body, submitLabel = 'Salvar', onSubmit, cancelLab
   return { close, form };
 }
 
-export function confirmDialog(message, { title = 'Tem certeza?', confirmLabel = 'Confirmar', danger = false } = {}) {
+export function confirmDialog(message, { title = 'Tem certeza?', confirmLabel = 'Confirmar', cancelLabel, danger = false } = {}) {
   return new Promise((resolve) => {
     let answered = false;
     const m = modal({
       title,
       body: h('p.modal-text', message),
       submitLabel: confirmLabel,
+      ...(cancelLabel ? { cancelLabel } : {}),
       danger,
       onSubmit: () => { answered = true; resolve(true); },
     });

@@ -29,9 +29,12 @@ export const api = {
   saveLesson: (id, data) => call('PUT', `/api/lessons/${id}`, data),
   deleteLesson: (id) => call('DELETE', `/api/lessons/${id}`),
   duplicateLesson: (id, data) => call('POST', `/api/lessons/${id}/duplicate`, data || {}),
+  copyInfo: (id) => call('GET', `/api/lessons/${id}/copy`),
   finishInfo: (id) => call('GET', `/api/lessons/${id}/finish`),
   finishLesson: (id, data) => call('POST', `/api/lessons/${id}/finish`, data),
   reopenLesson: (id) => call('POST', `/api/lessons/${id}/reopen`),
+  course: () => call('GET', '/api/course'),
+  resetLesson: (id, blockIds) => call('POST', `/api/lessons/${id}/reset`, blockIds ? { blockIds } : {}),
 
   models: (studentId) => call('GET', '/api/models' + (studentId ? `?student=${studentId}` : '')),
   approveModel: (id) => call('POST', `/api/models/${id}/approve`),
@@ -46,13 +49,41 @@ export const api = {
   deleteModel: (id) => call('DELETE', `/api/models/${id}`),
 
   upload: (blob) => call('POST', '/api/uploads', blob, { 'Content-Type': 'image/webp' }),
+
+  packs: () => call('GET', '/api/packs'),
+  pack: (id) => call('GET', `/api/packs/${id}`),
+  createPack: (data) => call('POST', '/api/packs', data),
+  savePack: (id, data) => call('PUT', `/api/packs/${id}`, data),
+  deletePack: (id) => call('DELETE', `/api/packs/${id}`),
+  addToPack: (id, modelIds) => call('POST', `/api/packs/${id}/items`, { modelIds }),
+  removeFromPack: (id, modelIds) => call('POST', `/api/packs/${id}/remove`, { modelIds }),
+  replaceImage: (from, to) => call('POST', '/api/images/replace', { from, to }),
 };
+
+/** Imagem guardada neste computador (no acervo) ou na internet? */
+export const isLocalImage = (src) => /^\/(uploads|img)\//.test(String(src || ''));
 
 /** Salva ao sair da página, mesmo que a aba esteja fechando. */
 export function saveOnExit(url, data) {
   try {
     fetch(url, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data), keepalive: true });
   } catch {}
+}
+
+/**
+ * Imagem que está na internet: o servidor baixa, o navegador converte para WebP e guarda no acervo.
+ * Depois o endereço novo entra no lugar do antigo em todo lugar (acervo, aulas e pendências).
+ */
+export async function localizeImage(src) {
+  const res = await fetch('/api/images/fetch?' + new URLSearchParams({ url: src }));
+  if (!res.ok) {
+    let msg = res.statusText;
+    try { msg = (await res.json()).error || msg; } catch {}
+    throw new Error(msg);
+  }
+  const url = await uploadImage(await res.blob());
+  await api.replaceImage(src, url);
+  return url;
 }
 
 /** Converte qualquer imagem para WebP, já redimensionada, e envia. */

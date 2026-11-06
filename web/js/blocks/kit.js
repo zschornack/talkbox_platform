@@ -2,6 +2,39 @@
 import { h } from '../dom.js';
 import { editable } from '../editable.js';
 
+/**
+ * Largura das colunas de uma tabela pelo conteúdo (v1.1). Devolve o grid-template-columns.
+ * rows = linhas de células (HTML ou texto).
+ * - Coluna curta ("I / You / He", "have", "eaten"): do tamanho do conteúdo, numa linha.
+ * - Coluna de frases (exemplos, explicações): fica com o resto da largura, na proporção do texto.
+ * - Se todas são curtas (tabela de tempo verbal), a última fica com o resto.
+ * As medidas usam a letra da tabela (--cell, em px), igual em todas as linhas: o cabeçalho tem letra
+ * menor e, se a conta usasse o "em" de cada linha, as colunas do cabeçalho sairiam desalinhadas.
+ */
+export function columnTemplate(rows, cols) {
+  // texto da célula sem HTML; quebra de linha (<br>, Enter na célula) separa linhas
+  const plain = (v) => String(v ?? '').replace(/<br\s*\/?>|<\/(?:div|p|li)>/gi, '\n').replace(/<[^>]*>/g, '').replace(/&[a-z#0-9]+;/gi, ' ');
+  const line = (v) => plain(v).split('\n').reduce((m, l) => Math.max(m, l.trim().length), 0);
+  const words = (v) => plain(v).split(/\s+/).reduce((m, w) => Math.max(m, w.length), 0);
+  // teto de cada coluna: a soma nunca passa da largura da tabela (senão a última coluna some).
+  // Só numa tabela estreita demais (muitas colunas, tela pequena) uma palavra longa quebra.
+  const cap = Math.floor(10000 / Math.max(1, cols)) / 100;
+  const len = (n) => `min(calc(var(--cell, 1em) * ${n}), ${cap}%)`;
+  const SHORT = 16;
+  const info = Array.from({ length: cols }, (_, ci) => {
+    const longest = Math.max(0, ...rows.map((r) => line(r[ci])));
+    // nenhuma palavra quebra no meio: a coluna é pelo menos tão larga quanto a palavra mais longa
+    const word = Math.max(0, ...rows.map((r) => words(r[ci])));
+    return { longest, min: Math.max(3, Math.ceil(word * 0.62 + 2.8)) };
+  });
+  const allShort = info.every((c) => c.longest <= SHORT);
+  return info.map((c, ci) => {
+    const last = ci === cols - 1;
+    if (c.longest <= SHORT && !(allShort && last)) return len(Math.max(c.min, Math.ceil(c.longest * 0.56 + 2.6)));
+    return `minmax(${len(c.min)}, ${Math.min(36, Math.max(6, c.longest))}fr)`;
+  }).join(' ');
+}
+
 /** Enunciado do exercício, editável com um clique. */
 export const instructions = (ctx, placeholder = 'Enunciado do exercício') =>
   editable(h('div.muted-text'), {
@@ -17,9 +50,28 @@ export function hash(s) {
   return x >>> 0;
 }
 
-/** Embaralha de um jeito fixo pela semente; nunca devolve a ordem original (se houver mais de 1 item). */
+/** Sequência de números "aleatórios" fixa pela semente (mulberry32): a mesma semente dá sempre a mesma sequência. */
+export function seededRandom(seed) {
+  let a = hash(seed) ^ 0x9e3779b9;
+  return () => {
+    a = (a + 0x6d2b79f5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+/**
+ * Embaralha de verdade (Fisher-Yates), mas fixo pela semente: o mesmo bloco fica igual ao reabrir e no PDF.
+ * Nunca devolve a ordem original (se houver mais de 1 item). O material pode vir em qualquer ordem: quem embaralha é o app.
+ */
 export function seededShuffle(arr, seed) {
-  const out = arr.map((v, i) => ({ v, k: hash(seed + ':' + i) })).sort((a, b) => a.k - b.k).map((x) => x.v);
+  const rnd = seededRandom(seed);
+  const out = [...arr];
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(rnd() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
   if (out.length > 1 && out.every((v, i) => v === arr[i])) out.push(out.shift());
   return out;
 }
