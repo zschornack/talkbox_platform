@@ -40,6 +40,14 @@ A pasta `data/` fica só no seu computador.
 Por enquanto o TalkBox roda **só neste computador**, com um professor só. Nada vai para o GitHub.
 Tudo o que você faz no app grava na hora no banco `data/talkbox.db`: editar a aula, finalizar, reabrir, preparar a próxima, o mapa, as notas da ficha e os modelos.
 
+## Para outro professor usar no Windows (sem programar)
+
+1. Instale o **Node.js** (https://nodejs.org, botão verde LTS) e o **Git** (https://git-scm.com/download/win), clicando em "Next" em tudo.
+2. Abra o **Prompt de Comando** e cole: `git clone https://github.com/zschornack/talkbox_platform "%USERPROFILE%\Desktop\TalkBox"`
+3. Baixe o arquivo do banco (`talkbox-....db`) que o Miguel mandou e deixe na pasta Downloads ou dentro da pasta TalkBox.
+4. Na pasta **TalkBox** da Área de Trabalho, clique duas vezes em **ABRIR TALKBOX**. O navegador abre sozinho. Não feche a janela preta durante a aula.
+5. Aula nova chegou? Feche a janela preta, clique em **ATUALIZAR AULAS** e depois em **ABRIR TALKBOX**.
+
 ## Novidades da versão 1.2
 
 **Nivelamento.** Na Início, embaixo dos modelos, o botão **Começar nivelamento** abre um teste de uns 15 minutos para aluno novo, em 4 etapas: Básico (A1 · A2), Intermediário (B1), Intermediário avançado (B2) e Avançado (C1 · C2). Cada etapa tem:
